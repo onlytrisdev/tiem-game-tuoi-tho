@@ -1,0 +1,61 @@
+{
+  "scoreIncrementFactor": 1,
+  "difficulty": {
+    "currentLevel": 0,
+    "totalLevels": 4,
+    "levelUpFactor": 30,
+    "coloredParticleSequence": 4,
+    "levels": [
+      {
+        "speed": {
+          "max": 1500,
+          "min": 1500
+        },
+        "time": {
+          "max": 1500,
+          "min": 1500
+        }
+      },
+      {
+        "speed": {
+          "max": 1500,
+          "min": 1500
+        },
+        "time": {
+          "max": 1500,
+          "min": 1500
+        }
+      },
+      {
+        "speed": {
+          "max": 1500,
+          "min": 1500
+        },
+        "time": {
+          "max": 1500,
+          "min": 1500
+        }
+      },
+      {
+        "speed": {
+          "max": 1500,
+          "min": 1500
+        },
+        "time": {
+          "max": 1500,
+          "min": 1500
+        }
+      },
+      {
+        "speed": {
+          "max": 1500,
+          "min": 1500
+        },
+        "time": {
+          "max": 1500,
+          "min": 1500
+        }
+      }
+    ]
+  }
+}

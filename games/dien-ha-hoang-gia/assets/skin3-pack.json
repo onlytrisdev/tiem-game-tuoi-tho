@@ -1,0 +1,32 @@
+{
+  "initial": {
+    "files": [
+      {
+        "type": "multiatlas",
+        "key": "skin3idle",
+        "url": "assets/atlas/skin3idle.json",
+        "path": "assets/atlas/"
+      },
+      {
+        "type": "multiatlas",
+        "key": "skin3jump",
+        "url": "assets/atlas/skin3jump.json",
+        "path": "assets/atlas/"
+      },
+      {
+        "type": "multiatlas",
+        "key": "skin3fall",
+        "url": "assets/atlas/skin3fall.json",
+        "path": "assets/atlas/"
+      },
+      {
+        "type": "audio",
+        "key": "helloSkin3",
+        "url": [
+          "assets/sfx/mp3/helloHawcodile.mp3",
+          "assets/sfx/ogg/helloHawcodile.ogg"
+        ]
+      }
+    ]
+  }
+}

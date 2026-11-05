@@ -1,0 +1,31 @@
+{
+  "initial": {
+    "files": [
+      {
+        "type": "pack",
+        "key": "skin0-pack",
+        "url": "assets/skin0-pack.json"
+      },
+      {
+        "type": "pack",
+        "key": "skin1-pack",
+        "url": "assets/skin1-pack.json"
+      },
+      {
+        "type": "pack",
+        "key": "skin2-pack",
+        "url": "assets/skin2-pack.json"
+      },
+      {
+        "type": "pack",
+        "key": "skin3-pack",
+        "url": "assets/skin3-pack.json"
+      },
+      {
+        "type": "pack",
+        "key": "skin4-pack",
+        "url": "assets/skin4-pack.json"
+      }
+    ]
+  }
+}

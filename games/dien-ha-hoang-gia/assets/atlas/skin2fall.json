@@ -1,0 +1,440 @@
+{
+	"textures": [
+		{
+			"image": "skin2fall.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 254,
+				"h": 1522
+			},
+			"scale": 0.5,
+			"frames": [
+				{
+					"filename": "skin2fall/frame5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 108,
+						"w": 141,
+						"h": 91
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 141,
+						"h": 91
+					}
+				},
+				{
+					"filename": "skin2fall/frame11",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 0,
+						"w": 109,
+						"h": 199
+					},
+					"frame": {
+						"x": 144,
+						"y": 1,
+						"w": 109,
+						"h": 199
+					}
+				},
+				{
+					"filename": "skin2fall/frame6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 108,
+						"w": 141,
+						"h": 91
+					},
+					"frame": {
+						"x": 1,
+						"y": 94,
+						"w": 141,
+						"h": 91
+					}
+				},
+				{
+					"filename": "skin2fall/frame1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 108,
+						"w": 136,
+						"h": 91
+					},
+					"frame": {
+						"x": 1,
+						"y": 187,
+						"w": 136,
+						"h": 91
+					}
+				},
+				{
+					"filename": "skin2fall/frame12",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 0,
+						"w": 112,
+						"h": 199
+					},
+					"frame": {
+						"x": 139,
+						"y": 202,
+						"w": 112,
+						"h": 199
+					}
+				},
+				{
+					"filename": "skin2fall/frame2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 108,
+						"w": 136,
+						"h": 91
+					},
+					"frame": {
+						"x": 1,
+						"y": 280,
+						"w": 136,
+						"h": 91
+					}
+				},
+				{
+					"filename": "skin2fall/frame3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 108,
+						"w": 136,
+						"h": 91
+					},
+					"frame": {
+						"x": 1,
+						"y": 373,
+						"w": 136,
+						"h": 91
+					}
+				},
+				{
+					"filename": "skin2fall/frame10",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 9,
+						"w": 110,
+						"h": 190
+					},
+					"frame": {
+						"x": 139,
+						"y": 403,
+						"w": 110,
+						"h": 190
+					}
+				},
+				{
+					"filename": "skin2fall/frame4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 108,
+						"w": 136,
+						"h": 91
+					},
+					"frame": {
+						"x": 1,
+						"y": 466,
+						"w": 136,
+						"h": 91
+					}
+				},
+				{
+					"filename": "skin2fall/frame8",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 51,
+						"w": 119,
+						"h": 148
+					},
+					"frame": {
+						"x": 1,
+						"y": 559,
+						"w": 119,
+						"h": 148
+					}
+				},
+				{
+					"filename": "skin2fall/frame7",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 60,
+						"w": 119,
+						"h": 139
+					},
+					"frame": {
+						"x": 122,
+						"y": 595,
+						"w": 119,
+						"h": 139
+					}
+				},
+				{
+					"filename": "skin2fall/frame14",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 15,
+						"w": 117,
+						"h": 184
+					},
+					"frame": {
+						"x": 1,
+						"y": 709,
+						"w": 117,
+						"h": 184
+					}
+				},
+				{
+					"filename": "skin2fall/frame15",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 26,
+						"w": 117,
+						"h": 173
+					},
+					"frame": {
+						"x": 120,
+						"y": 736,
+						"w": 117,
+						"h": 173
+					}
+				},
+				{
+					"filename": "skin2fall/frame16",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 29,
+						"w": 117,
+						"h": 170
+					},
+					"frame": {
+						"x": 1,
+						"y": 895,
+						"w": 117,
+						"h": 170
+					}
+				},
+				{
+					"filename": "skin2fall/frame17",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 30,
+						"w": 117,
+						"h": 169
+					},
+					"frame": {
+						"x": 120,
+						"y": 911,
+						"w": 117,
+						"h": 169
+					}
+				},
+				{
+					"filename": "skin2fall/frame9",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 32,
+						"w": 117,
+						"h": 167
+					},
+					"frame": {
+						"x": 1,
+						"y": 1067,
+						"w": 117,
+						"h": 167
+					}
+				},
+				{
+					"filename": "skin2fall/frame18",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 37,
+						"w": 117,
+						"h": 162
+					},
+					"frame": {
+						"x": 120,
+						"y": 1082,
+						"w": 117,
+						"h": 162
+					}
+				},
+				{
+					"filename": "skin2fall/frame19",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 52,
+						"w": 117,
+						"h": 147
+					},
+					"frame": {
+						"x": 1,
+						"y": 1236,
+						"w": 117,
+						"h": 147
+					}
+				},
+				{
+					"filename": "skin2fall/frame20",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 63,
+						"w": 117,
+						"h": 136
+					},
+					"frame": {
+						"x": 1,
+						"y": 1385,
+						"w": 117,
+						"h": 136
+					}
+				},
+				{
+					"filename": "skin2fall/frame13",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 141,
+						"h": 199
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 8,
+						"w": 115,
+						"h": 191
+					},
+					"frame": {
+						"x": 120,
+						"y": 1246,
+						"w": 115,
+						"h": 191
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:853d265aeea9fe195531e865cfe9b076:e0e6d04f62bdcf9864f889c26353a817:2d90e669ea1b5cb7f17a008078dfe19f$"
+	}
+}

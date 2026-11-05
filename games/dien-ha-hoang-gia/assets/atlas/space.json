@@ -1,0 +1,370 @@
+{
+	"textures": [
+		{
+			"image": "space.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1610,
+				"h": 996
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "space/small-stars",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 524,
+						"h": 494
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 524,
+						"h": 494
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 524,
+						"h": 494
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/space-gradient",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 540,
+						"h": 437
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 437
+					},
+					"frame": {
+						"x": 527,
+						"y": 1,
+						"w": 540,
+						"h": 437
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/circles",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 540,
+						"h": 386
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 386
+					},
+					"frame": {
+						"x": 1069,
+						"y": 1,
+						"w": 540,
+						"h": 386
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/lilStars",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 540,
+						"h": 386
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 386
+					},
+					"frame": {
+						"x": 1069,
+						"y": 389,
+						"w": 540,
+						"h": 386
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/space-tile",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 540,
+						"h": 386
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 386
+					},
+					"frame": {
+						"x": 527,
+						"y": 440,
+						"w": 540,
+						"h": 386
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/static-stars",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 508,
+						"h": 218
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 508,
+						"h": 218
+					},
+					"frame": {
+						"x": 1069,
+						"y": 777,
+						"w": 508,
+						"h": 218
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/space-circles",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 514,
+						"h": 303
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 514,
+						"h": 303
+					},
+					"frame": {
+						"x": 1,
+						"y": 497,
+						"w": 514,
+						"h": 303
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/rocket",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 135,
+						"h": 181
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 135,
+						"h": 181
+					},
+					"frame": {
+						"x": 1,
+						"y": 802,
+						"w": 135,
+						"h": 181
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/planet-ring",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 148,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 148,
+						"h": 148
+					},
+					"frame": {
+						"x": 138,
+						"y": 802,
+						"w": 148,
+						"h": 148
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/planet",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 122,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 122,
+						"h": 122
+					},
+					"frame": {
+						"x": 288,
+						"y": 802,
+						"w": 122,
+						"h": 122
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/space-star-yellow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 62
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 62
+					},
+					"frame": {
+						"x": 412,
+						"y": 802,
+						"w": 64,
+						"h": 62
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/pzyun",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 64
+					},
+					"frame": {
+						"x": 412,
+						"y": 866,
+						"w": 48,
+						"h": 64
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/space-star-blue",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 53,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 53,
+						"h": 52
+					},
+					"frame": {
+						"x": 288,
+						"y": 926,
+						"w": 53,
+						"h": 52
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "space/space-star-orange",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 52,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 52,
+						"h": 53
+					},
+					"frame": {
+						"x": 343,
+						"y": 926,
+						"w": 52,
+						"h": 53
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:15c2813f01a8b346e40b26651cd77fcb:eed6ae8fa2c19514944ea6e2709f0899:5c66d13d521b19a155e36d6dbcb34ba3$"
+	}
+}

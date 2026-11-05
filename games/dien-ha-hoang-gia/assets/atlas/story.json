@@ -1,0 +1,295 @@
+{
+	"textures": [
+		{
+			"image": "story.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2906,
+				"h": 2020
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "story/bubble",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1080,
+						"h": 704
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1080,
+						"h": 704
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1080,
+						"h": 704
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/clouds",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1080,
+						"h": 580
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1080,
+						"h": 580
+					},
+					"frame": {
+						"x": 1,
+						"y": 707,
+						"w": 1080,
+						"h": 580
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/smog",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1576,
+						"h": 353
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 0,
+						"w": 1511,
+						"h": 353
+					},
+					"frame": {
+						"x": 1,
+						"y": 1289,
+						"w": 1511,
+						"h": 353
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/stuff1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 861,
+						"h": 375
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 861,
+						"h": 375
+					},
+					"frame": {
+						"x": 1,
+						"y": 1644,
+						"w": 861,
+						"h": 375
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/stuff3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1080,
+						"h": 557
+					},
+					"spriteSourceSize": {
+						"x": 103,
+						"y": 24,
+						"w": 858,
+						"h": 368
+					},
+					"frame": {
+						"x": 864,
+						"y": 1644,
+						"w": 858,
+						"h": 368
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/bg",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 540,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 960
+					},
+					"frame": {
+						"x": 1083,
+						"y": 1,
+						"w": 540,
+						"h": 960
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/speechbubble-screen2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 850,
+						"h": 578
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 850,
+						"h": 578
+					},
+					"frame": {
+						"x": 1514,
+						"y": 963,
+						"w": 850,
+						"h": 578
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/stuff2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 801,
+						"h": 475
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 801,
+						"h": 475
+					},
+					"frame": {
+						"x": 1724,
+						"y": 1543,
+						"w": 801,
+						"h": 475
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/unikitty-screen2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 545,
+						"h": 685
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 545,
+						"h": 685
+					},
+					"frame": {
+						"x": 1625,
+						"y": 1,
+						"w": 545,
+						"h": 685
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/speechbubble-screen1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 719,
+						"h": 495
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 719,
+						"h": 495
+					},
+					"frame": {
+						"x": 2172,
+						"y": 1,
+						"w": 719,
+						"h": 495
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "story/unikitty-screen1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 545,
+						"h": 685
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 46,
+						"w": 539,
+						"h": 639
+					},
+					"frame": {
+						"x": 2366,
+						"y": 498,
+						"w": 539,
+						"h": 639
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:61985710fb1afb8683097f9f3219214a:8326dcdcb66f932184ed3f559f8c7a62:96ac3bf7467ef134f431b4c4840b362b$"
+	}
+}

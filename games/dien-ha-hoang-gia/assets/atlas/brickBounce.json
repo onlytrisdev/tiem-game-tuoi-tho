@@ -1,0 +1,188 @@
+{
+	"textures": [
+		{
+			"image": "brickBounce.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 302,
+				"h": 980
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "brickBounce/frame3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 138
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 300,
+						"h": 138
+					}
+				},
+				{
+					"filename": "brickBounce/frame7",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 299,
+						"h": 136
+					},
+					"frame": {
+						"x": 1,
+						"y": 141,
+						"w": 299,
+						"h": 136
+					}
+				},
+				{
+					"filename": "brickBounce/frame1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 298,
+						"h": 138
+					},
+					"frame": {
+						"x": 1,
+						"y": 279,
+						"w": 298,
+						"h": 138
+					}
+				},
+				{
+					"filename": "brickBounce/frame6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 298,
+						"h": 138
+					},
+					"frame": {
+						"x": 1,
+						"y": 279,
+						"w": 298,
+						"h": 138
+					}
+				},
+				{
+					"filename": "brickBounce/frame2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 297,
+						"h": 138
+					},
+					"frame": {
+						"x": 1,
+						"y": 419,
+						"w": 297,
+						"h": 138
+					}
+				},
+				{
+					"filename": "brickBounce/frame8",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 296,
+						"h": 138
+					},
+					"frame": {
+						"x": 1,
+						"y": 559,
+						"w": 296,
+						"h": 138
+					}
+				},
+				{
+					"filename": "brickBounce/frame4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 294,
+						"h": 139
+					},
+					"frame": {
+						"x": 1,
+						"y": 699,
+						"w": 294,
+						"h": 139
+					}
+				},
+				{
+					"filename": "brickBounce/frame5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 147
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 291,
+						"h": 139
+					},
+					"frame": {
+						"x": 1,
+						"y": 840,
+						"w": 291,
+						"h": 139
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f157745cf6448799a43730ec586196fa:688c1196d3717ae9e1c4d415f8b3cdfc:cec77b420a13b93633931291a932a6bb$"
+	}
+}

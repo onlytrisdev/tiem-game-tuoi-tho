@@ -1,0 +1,75 @@
+{
+  "initial": {
+    "files": [
+      {
+        "type": "json",
+        "key": "gameData1",
+        "url": "assets/data/gameData1.json"
+      },
+      {
+        "type": "json",
+        "key": "gameData2",
+        "url": "assets/data/gameData2.json"
+      },
+      {
+        "type": "multiatlas",
+        "key": "general",
+        "url": "assets/atlas/general.json",
+        "path": "assets/atlas/"
+      },
+      {
+        "type": "multiatlas",
+        "key": "space",
+        "url": "assets/atlas/space.json",
+        "path": "assets/atlas/"
+      },
+      {
+        "type": "image",
+        "key": "freezeFrame",
+        "url": "assets/4NinePatch/freezeFrame.png"
+      },
+      {
+        "type": "image",
+        "key": "skinProgressBg",
+        "url": "assets/4NinePatch/skinProgressBg.png"
+      },
+      {
+        "type": "image",
+        "key": "watchAdBg",
+        "url": "assets/4NinePatch/watchAdBg.png"
+      },
+      {
+        "type": "image",
+        "key": "skinProgressFill",
+        "url": "assets/4NinePatch/skinProgressFill.png"
+      },
+      {
+        "type": "image",
+        "key": "greenBtn",
+        "url": "assets/4NinePatch/greenBtn.png"
+      },
+      {
+        "type": "image",
+        "key": "redBorder",
+        "url": "assets/4NinePatch/red-border.png"
+      },
+      {
+        "type": "image",
+        "key": "blueBorder",
+        "url": "assets/4NinePatch/blue-border.png"
+      },
+      {
+        "type": "multiatlas",
+        "key": "brickMove",
+        "url": "assets/atlas/brickMove.json",
+        "path": "assets/atlas/"
+      },
+      {
+        "type": "multiatlas",
+        "key": "brickBounce",
+        "url": "assets/atlas/brickBounce.json",
+        "path": "assets/atlas/"
+      }
+    ]
+  }
+}

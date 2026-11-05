@@ -1,0 +1,63 @@
+{
+  "skins": {
+    "count": 5,
+    "unlockedSkins": [0],
+    "skinInUse": 0
+  },
+  "statistics": {
+    "perfectJumpsCount": 0,
+    "highScoreBeat": 0,
+    "scoreInSession": 0
+  },
+  "objectives": [
+    {
+      "type": 1,
+      "condition": 500,
+      "skin": 0,
+      "notifyConditionPercent": 20,
+      "achievementID": "df1c033c-9782-4c71-b957-362e4d6591ce",
+      "sdkKey": 0,
+      "title": "Kitty Power"
+    },    
+    {
+      "type": 0,
+      "skin": 1,
+      "condition": 5,
+      "notifyConditionPercent": 20,
+      "achievementID": "425f71a1-1248-4e71-91d9-ac858c528534",
+      "sdkKey": 2,
+      "title": "Unlock Puppycorn"
+    },
+    {
+      "type": 1,
+      "condition": 100,
+      "skin": 2,
+      "notifyConditionPercent": 20,
+      "achievementID": "2ba09a91-4baf-4843-9b64-1de80e50cead",
+      "sdkKey": 1,
+      "title": "Unlock Dr. Fox"
+    },
+    {
+      "type": 2,
+      "skin": 3,
+      "condition": 50,
+      "notifyConditionPercent": 20,
+      "achievementID": "dbe1b216-e1dd-407e-869e-51c325780162",
+      "sdkKey": 3,
+      "title": "Unlock Hawkodile"
+    },
+    {
+      "type": 2,
+      "skin": 4,
+      "condition": 100,
+      "notifyConditionPercent": 20,
+      "achievementID": "0206681a-e61d-48aa-95be-714146932fc9",
+      "sdkKey": 4,
+      "title": "Unlock Richard"
+    }
+  ],
+  "settings": {
+    "sounds": true,
+    "music": true
+  }
+}

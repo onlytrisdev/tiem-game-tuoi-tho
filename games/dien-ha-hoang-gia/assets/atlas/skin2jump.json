@@ -1,0 +1,314 @@
+{
+	"textures": [
+		{
+			"image": "skin2jump.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 245,
+				"h": 927
+			},
+			"scale": 0.5,
+			"frames": [
+				{
+					"filename": "skin2jump/frame11",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 44,
+						"w": 120,
+						"h": 104
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 120,
+						"h": 104
+					}
+				},
+				{
+					"filename": "skin2jump/frame10",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 42,
+						"w": 120,
+						"h": 106
+					},
+					"frame": {
+						"x": 123,
+						"y": 1,
+						"w": 120,
+						"h": 106
+					}
+				},
+				{
+					"filename": "skin2jump/frame12",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 37,
+						"w": 121,
+						"h": 111
+					},
+					"frame": {
+						"x": 1,
+						"y": 109,
+						"w": 121,
+						"h": 111
+					}
+				},
+				{
+					"filename": "skin2jump/frame9",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 32,
+						"w": 119,
+						"h": 116
+					},
+					"frame": {
+						"x": 124,
+						"y": 109,
+						"w": 119,
+						"h": 116
+					}
+				},
+				{
+					"filename": "skin2jump/frame13",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 30,
+						"w": 121,
+						"h": 118
+					},
+					"frame": {
+						"x": 1,
+						"y": 222,
+						"w": 121,
+						"h": 118
+					}
+				},
+				{
+					"filename": "skin2jump/frame1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 20,
+						"w": 120,
+						"h": 128
+					},
+					"frame": {
+						"x": 124,
+						"y": 227,
+						"w": 120,
+						"h": 128
+					}
+				},
+				{
+					"filename": "skin2jump/frame2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 16,
+						"w": 113,
+						"h": 132
+					},
+					"frame": {
+						"x": 1,
+						"y": 342,
+						"w": 113,
+						"h": 132
+					}
+				},
+				{
+					"filename": "skin2jump/frame8",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 15,
+						"w": 118,
+						"h": 133
+					},
+					"frame": {
+						"x": 116,
+						"y": 357,
+						"w": 118,
+						"h": 133
+					}
+				},
+				{
+					"filename": "skin2jump/frame3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 0,
+						"w": 113,
+						"h": 148
+					},
+					"frame": {
+						"x": 1,
+						"y": 476,
+						"w": 113,
+						"h": 148
+					}
+				},
+				{
+					"filename": "skin2jump/frame14",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 14,
+						"w": 119,
+						"h": 134
+					},
+					"frame": {
+						"x": 116,
+						"y": 492,
+						"w": 119,
+						"h": 134
+					}
+				},
+				{
+					"filename": "skin2jump/frame7",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 3,
+						"w": 117,
+						"h": 145
+					},
+					"frame": {
+						"x": 1,
+						"y": 628,
+						"w": 117,
+						"h": 145
+					}
+				},
+				{
+					"filename": "skin2jump/frame4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 116,
+						"h": 148
+					},
+					"frame": {
+						"x": 120,
+						"y": 628,
+						"w": 116,
+						"h": 148
+					}
+				},
+				{
+					"filename": "skin2jump/frame5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 118,
+						"h": 148
+					},
+					"frame": {
+						"x": 1,
+						"y": 778,
+						"w": 118,
+						"h": 148
+					}
+				},
+				{
+					"filename": "skin2jump/frame6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 123,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 118,
+						"h": 148
+					},
+					"frame": {
+						"x": 121,
+						"y": 778,
+						"w": 118,
+						"h": 148
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:33c971bb97aff64e484495be8d6528b3:07c38b68ff3b57b13c32ee4fd085912f:4de113e14b55e74e26b032898e7370f2$"
+	}
+}

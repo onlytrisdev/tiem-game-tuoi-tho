@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+	
+
+	<title>Vẽ đường cho gấu</title>
+
+	
+
+	<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport"
+
+    content="width=device-width, initial-scale=1, maximum-scale=1,  minimum-scale=1, user-scalable=no, shrink-to-fit=no viewport-fit=cover" />
+
+
+
+  <style>
+
+    /* arabic */
+
+    @font-face {
+
+      font-family: 'Fred Fredburger Headline Black';
+
+      font-style: normal;
+
+      font-weight: 400;
+
+      src: url(./assets/fonts/FREDFREDBURGERARAHEADBLACK.woff2) format('woff2');
+
+    }
+
+
+
+    /* latin */
+
+    @font-face {
+
+      font-family: 'Fred Fredburger Headline Black';
+
+      font-style: normal;
+
+      font-weight: 400;
+
+      src: url(./assets/fonts/FREDFREDBURGERHEADLINE-BLACK.woff2) format('woff2');
+
+    }
+
+
+
+    body {
+
+      margin: 0px;
+
+      padding: 0px;
+
+    }
+
+
+
+    #turn {
+
+      width: 100%;
+
+      height: 100%;
+
+      position: fixed;
+
+      top: 0px;
+
+      left: 0px;
+
+      background-color: #7CBEDE;
+
+      background-position: center center;
+
+      display: none;
+
+      text-align: center;
+
+    }
+
+
+
+    img {
+
+      height: 80%;
+
+      position: relative;
+
+      margin: auto;
+
+      top: 10%
+
+    }
+
+  </style>
+
+
+
+
+
+
+
+
+
+  <title></title>
+
+  <script src="scripts/docready.js"></script>
+
+  <script src="scripts/phaser.2.1.0.min.js"></script>
+
+  <script src="scripts/i18next.min.js"></script>
+
+  <script src="scripts/i18nextXHRBackend.min.js"></script>
+
+  <!-- build:js -->
+
+  <script>
+
+    window.CNOverride = true;
+
+  </script>
+
+  <script src="scripts/game.js"></script>
+
+  <!-- endbuild -->
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+  <div id="turn">
+
+    <img src="assets/images/playportrait.jpg" />
+
+  </div>
+
+  <div id="font-preload" style="position:absolute;left:0px;top:0px;opacity:0">
+
+    <span style="font-family: 'Fred Fredburger Headline Black', sans-serif;">بداية</span>
+
+    <span style="font-family: 'Fred Fredburger Headline Black', sans-serif;">text</span>
+
+  </div>
+
+</body>
+
+
+
+</html>

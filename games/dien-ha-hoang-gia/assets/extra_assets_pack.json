@@ -1,0 +1,70 @@
+{
+  "initial": {
+    "files": [
+      {
+        "type": "pack",
+        "key": "skins-pack",
+        "url": "assets/skins-pack.json"
+      },
+      {
+        "type": "audio",
+        "key": "button",
+        "url": ["assets/sfx/mp3/button.mp3", "assets/sfx/ogg/button.ogg"]
+      },
+      {
+        "type": "audio",
+        "key": "falling",
+        "url": ["assets/sfx/mp3/falling.mp3", "assets/sfx/ogg/falling.ogg"]
+      },
+      {
+        "type": "audio",
+        "key": "jump",
+        "url": ["assets/sfx/mp3/jump.mp3", "assets/sfx/ogg/jump.ogg"]
+      },
+      {
+        "type": "audio",
+        "key": "perfect",
+        "url": ["assets/sfx/mp3/perfect.mp3", "assets/sfx/ogg/perfect.ogg"]
+      },
+      {
+        "type": "audio",
+        "key": "unlock",
+        "url": ["assets/sfx/mp3/unlock.mp3", "assets/sfx/ogg/unlock.ogg"]
+      },
+      {
+        "type": "audio",
+        "key": "rainbow",
+        "url": ["assets/sfx/mp3/rainbow.mp3", "assets/sfx/ogg/rainbow.ogg"]
+      },
+      {
+        "type": "audio",
+        "key": "tutorialFinger",
+        "url": [
+          "assets/sfx/mp3/tutorialFinger.mp3",
+          "assets/sfx/ogg/tutorialFinger.ogg"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "watchAdpopup",
+        "url": [
+          "assets/sfx/mp3/watchAdpopup.mp3",
+          "assets/sfx/ogg/watchAdpopup.ogg"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "jellyLanding",
+        "url": [
+          "assets/sfx/mp3/jellyLanding.mp3",
+          "assets/sfx/ogg/jellyLanding.ogg"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "inGame",
+        "url": ["assets/sfx/mp3/inGame.mp3", "assets/sfx/ogg/inGame.ogg"]
+      }
+    ]
+  }
+}

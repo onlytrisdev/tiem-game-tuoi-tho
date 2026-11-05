@@ -1,0 +1,151 @@
+/* Arcade UI — Hợp nhất gà: Gửi điểm + Xóa data (không BXH) */
+
+#gv-btn-score,
+#gv-btn-delete {
+  --gv-btn-w: 130px;
+  --gv-btn-h: 43px;
+  position: fixed;
+  top: 6%;
+  bottom: auto;
+  left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--gv-btn-w);
+  height: var(--gv-btn-h);
+  min-width: var(--gv-btn-w);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  z-index: 10045;
+  opacity: 0.9;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+#gv-btn-score {
+  right: 2%;
+}
+
+#gv-btn-delete {
+  right: calc(2% + var(--gv-btn-w) + 4px);
+}
+
+#gv-btn-score[hidden],
+#gv-btn-delete[hidden] {
+  display: none !important;
+}
+
+#gv-btn-score.gv-visible,
+#gv-btn-delete.gv-visible {
+  display: flex;
+}
+
+#gv-btn-score img,
+#gv-btn-delete img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+#gv-btn-score:hover,
+#gv-btn-delete:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+#gv-btn-score:active,
+#gv-btn-delete:active {
+  opacity: 1;
+  transform: scale(0.94);
+}
+
+#gv-delete-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#gv-delete-overlay[hidden] {
+  display: none !important;
+}
+
+#gv-delete-dialog {
+  width: min(320px, 100%);
+  background: #1e2430;
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px 16px 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#gv-delete-message {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+#gv-delete-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: stretch;
+}
+
+#gv-delete-actions button {
+  flex: 1;
+  min-height: 40px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#gv-delete-cancel {
+  background: #3a4456;
+  color: #fff;
+}
+
+#gv-delete-ok {
+  background: #e24b4b;
+  color: #fff;
+}
+
+#gv-score-toast {
+  position: fixed;
+  left: 50%;
+  top: max(16px, env(safe-area-inset-top) + 12px);
+  transform: translateX(-50%) translateY(-120%);
+  z-index: 10070;
+  max-width: min(90vw, 360px);
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(20, 24, 32, 0.92);
+  color: #fff;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+#gv-score-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

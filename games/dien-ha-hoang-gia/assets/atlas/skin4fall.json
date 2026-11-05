@@ -1,0 +1,482 @@
+{
+	"textures": [
+		{
+			"image": "skin4fall.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 242,
+				"h": 711
+			},
+			"scale": 0.5,
+			"frames": [
+				{
+					"filename": "skin4fall/frame4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 0,
+						"w": 108,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 108,
+						"h": 73
+					}
+				},
+				{
+					"filename": "skin4fall/frame16",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 111,
+						"y": 1,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame17",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 111,
+						"y": 44,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 4,
+						"w": 108,
+						"h": 73
+					},
+					"frame": {
+						"x": 1,
+						"y": 76,
+						"w": 108,
+						"h": 73
+					}
+				},
+				{
+					"filename": "skin4fall/frame18",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 111,
+						"y": 87,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame19",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 111,
+						"y": 130,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame15",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 52,
+						"w": 108,
+						"h": 70
+					},
+					"frame": {
+						"x": 1,
+						"y": 151,
+						"w": 108,
+						"h": 70
+					}
+				},
+				{
+					"filename": "skin4fall/frame20",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 111,
+						"y": 173,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame12",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 17,
+						"w": 103,
+						"h": 77
+					},
+					"frame": {
+						"x": 1,
+						"y": 223,
+						"w": 103,
+						"h": 77
+					}
+				},
+				{
+					"filename": "skin4fall/frame11",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 1,
+						"w": 101,
+						"h": 78
+					},
+					"frame": {
+						"x": 1,
+						"y": 302,
+						"w": 101,
+						"h": 78
+					}
+				},
+				{
+					"filename": "skin4fall/frame21",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 111,
+						"y": 216,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame10",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 0,
+						"w": 102,
+						"h": 76
+					},
+					"frame": {
+						"x": 1,
+						"y": 382,
+						"w": 102,
+						"h": 76
+					}
+				},
+				{
+					"filename": "skin4fall/frame13",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 37,
+						"w": 105,
+						"h": 74
+					},
+					"frame": {
+						"x": 1,
+						"y": 460,
+						"w": 105,
+						"h": 74
+					}
+				},
+				{
+					"filename": "skin4fall/frame9",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 4,
+						"w": 105,
+						"h": 74
+					},
+					"frame": {
+						"x": 1,
+						"y": 536,
+						"w": 105,
+						"h": 74
+					}
+				},
+				{
+					"filename": "skin4fall/frame14",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 46,
+						"w": 107,
+						"h": 71
+					},
+					"frame": {
+						"x": 1,
+						"y": 612,
+						"w": 107,
+						"h": 71
+					}
+				},
+				{
+					"filename": "skin4fall/frame22",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 83,
+						"w": 130,
+						"h": 41
+					},
+					"frame": {
+						"x": 106,
+						"y": 259,
+						"w": 130,
+						"h": 41
+					}
+				},
+				{
+					"filename": "skin4fall/frame6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 10,
+						"w": 108,
+						"h": 70
+					},
+					"frame": {
+						"x": 104,
+						"y": 302,
+						"w": 108,
+						"h": 70
+					}
+				},
+				{
+					"filename": "skin4fall/frame7",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 13,
+						"w": 108,
+						"h": 70
+					},
+					"frame": {
+						"x": 105,
+						"y": 374,
+						"w": 108,
+						"h": 70
+					}
+				},
+				{
+					"filename": "skin4fall/frame8",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 11,
+						"w": 107,
+						"h": 70
+					},
+					"frame": {
+						"x": 108,
+						"y": 446,
+						"w": 107,
+						"h": 70
+					}
+				},
+				{
+					"filename": "skin4fall/frame3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 0,
+						"w": 108,
+						"h": 69
+					},
+					"frame": {
+						"x": 108,
+						"y": 518,
+						"w": 108,
+						"h": 69
+					}
+				},
+				{
+					"filename": "skin4fall/frame2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 5,
+						"w": 108,
+						"h": 62
+					},
+					"frame": {
+						"x": 110,
+						"y": 589,
+						"w": 108,
+						"h": 62
+					}
+				},
+				{
+					"filename": "skin4fall/frame1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 130,
+						"h": 124
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 9,
+						"w": 108,
+						"h": 57
+					},
+					"frame": {
+						"x": 110,
+						"y": 653,
+						"w": 108,
+						"h": 57
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:1ba8c76631dc3dec6ebcfb5b38a14e5d:10b096486fbf678d279487dcb0daf4cf:c41e42490e201aff115f38fcc87580b4$"
+	}
+}
