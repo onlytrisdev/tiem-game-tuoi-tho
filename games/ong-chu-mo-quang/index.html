@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+        <title>
+
+            Ông chủ mỏ quặng
+
+        </title>
+
+		<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+		<script type="text/javascript" src="arcade-save.js?20261024v5"></script>
+
+        <link rel="stylesheet" href="TemplateData/style.css"/>
+
+    </head>
+
+    <body class="dark">
+
+        <div id="unity-container" class="unity-desktop">
+
+            <canvas id="unity-canvas" tabindex="-1">
+
+            </canvas>
+
+        </div>
+
+        <div id="loading-cover" style="display: none">
+
+            <div id="unity-loading-bar">
+
+                <div id="unity-progress-bar-empty" style="display: none">
+
+                    <div id="unity-progress-bar-full">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+                    const buildUrl = 'Build';
+
+                    const loaderUrl = buildUrl + '/loader.js';
+
+                    const config = {
+
+                        dataUrl: buildUrl + '/game.data.br',
+
+                        frameworkUrl: buildUrl + '/game.js?v=20261024v5',
+
+                        codeUrl: buildUrl + '/game.wasm.br',
+
+                        streamingAssetsUrl: '',
+
+                        companyName: 'GAME',
+
+                        productName: 'GAME',
+
+                        productVersion: '1.0',
+
+                    };
+
+
+
+                    const container = document.querySelector('#unity-container');
+
+                    const canvas = document.querySelector('#unity-canvas');
+
+                    const loadingCover = document.querySelector('#loading-cover');
+
+                    const progressBarEmpty = document.querySelector('#unity-progress-bar-empty');
+
+                    const progressBarFull = document.querySelector('#unity-progress-bar-full');
+
+
+
+                    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+
+                        container.className = 'unity-mobile';
+
+                        config.devicePixelRatio = 1;
+
+                    }
+
+                    var forcedDpr = window.ArcadeSave && ArcadeSave.getDevicePixelRatio ? ArcadeSave.getDevicePixelRatio() : 0;
+
+                    if (forcedDpr) {
+
+                        config.devicePixelRatio = forcedDpr;
+
+                    }
+
+
+
+                    function isGvUiEvent(e) {
+
+                        var t = e && e.target;
+
+                        if (!t || !t.closest) {
+
+                            return false;
+
+                        }
+
+                        return !!t.closest('#gv-hud-actions, #gv-reset-modal');
+
+                    }
+
+
+
+                    function FocusGame() {
+
+                        window.focus();
+
+                        if (canvas && canvas.focus) {
+
+                            canvas.focus();
+
+                        }
+
+                    }
+
+
+
+                    window.addEventListener('pointerdown', function (e) {
+
+                        if (isGvUiEvent(e)) {
+
+                            return;
+
+                        }
+
+                        FocusGame();
+
+                    });
+
+
+
+                    loadingCover.style.display = '';
+
+
+
+                    const script = document.createElement('script');
+
+                    script.src = loaderUrl;
+
+                    script.onload = function () {
+
+                        var unityBooted = false;
+
+                        function bootUnity() {
+
+                            if (unityBooted) {
+
+                                return;
+
+                            }
+
+                            unityBooted = true;
+
+                            window.__gvUnityStarted = true;
+
+                            createUnityInstance(canvas, config, function (progress) {
+
+                                progressBarEmpty.style.display = '';
+
+                                progressBarFull.style.width = `${100 * progress}%`;
+
+                            })
+
+                                .then(function (unityInstance) {
+
+                                    window.unityInstance = unityInstance;
+
+                                    loadingCover.style.display = 'none';
+
+                                    if (window.ArcadeSave && ArcadeSave.burstSync) {
+
+                                        ArcadeSave.burstSync();
+
+                                    }
+
+                                })
+
+                                .catch(function (message) {
+
+                                });
+
+                        }
+
+                        var watchdog = setTimeout(bootUnity, 12000);
+
+                        var startPromise = window.ArcadeSave && ArcadeSave.init ? ArcadeSave.init() : Promise.resolve();
+
+                        function finishBoot() {
+
+                                clearTimeout(watchdog);
+
+                                if (unityBooted && window.GV_SYNC_SEEDED === true) {
+
+                                    try {
+
+                                        if (sessionStorage.getItem("gv-late-seed-reload") !== "1") {
+
+                                            sessionStorage.setItem("gv-late-seed-reload", "1");
+
+                                            console.warn("[GV] GV_SEED_RELOAD: late cloud restore; reload once");
+
+                                            location.reload();
+
+                                            return;
+
+                                        }
+
+                                    } catch (e) {}
+
+                                } else if (!unityBooted) {
+
+                                    try { sessionStorage.removeItem("gv-late-seed-reload"); } catch (e) {}
+
+                                }
+
+                                bootUnity();
+
+                            }
+
+                            Promise.resolve(startPromise).then(finishBoot).catch(finishBoot);
+
+                    };
+
+                    document.body.appendChild(script);
+
+                </script>
+
+    </body>
+
+</html>
+
