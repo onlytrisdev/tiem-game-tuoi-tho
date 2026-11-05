@@ -1,0 +1,148 @@
+{
+"skeleton": {
+	"hash": "cItr12HKq8n2eCPKiEQZRSLJwjQ",
+	"spine": "3.8.99",
+	"x": -26.5,
+	"width": 47.84,
+	"height": 60,
+	"images": "./images/",
+	"audio": "D:/work/merge_td/Spine"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root", "length": 40, "rotation": 90, "color": "ff0000ff" },
+	{ "name": "helmet", "parent": "body", "length": 10, "x": 48.35, "y": 0.47, "color": "faff00ff" },
+	{
+		"name": "weapon",
+		"parent": "body",
+		"length": 19.91,
+		"rotation": -35,
+		"x": 11.71,
+		"y": -21.63,
+		"color": "0029ffff"
+	},
+	{ "name": "shield", "parent": "body", "rotation": 35, "x": 11.95, "y": 21.5, "color": "2bff00ff" },
+	{
+		"name": "weapon2",
+		"parent": "body",
+		"length": 19.91,
+		"rotation": 35,
+		"x": 11.95,
+		"y": 21.34,
+		"color": "df00ffff"
+	}
+],
+"slots": [
+	{ "name": "body", "bone": "body", "attachment": "chick1" },
+	{ "name": "helmet", "bone": "helmet", "attachment": "helmet0" },
+	{ "name": "shield", "bone": "shield", "attachment": "shield0" },
+	{ "name": "weapon2", "bone": "weapon2", "attachment": "weapon0" },
+	{ "name": "weapon", "bone": "weapon", "attachment": "weapon0" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"body": {
+				"chick1": { "x": 30, "rotation": -90, "width": 40, "height": 60 },
+				"chick2": { "x": 30, "rotation": -90, "width": 40, "height": 60 },
+				"chick3": { "x": 30.14, "rotation": -90, "width": 40, "height": 60 },
+				"chick4": { "x": 30, "rotation": -90, "width": 40, "height": 60 },
+				"chick5": { "x": 30, "rotation": -90, "width": 40, "height": 60 },
+				"chick6": { "x": 30, "rotation": -90, "width": 40, "height": 60 },
+				"chick7": { "x": 30, "rotation": -90, "width": 40, "height": 60 },
+				"chick_big1": { "x": 36, "y": 1, "rotation": -90, "width": 57, "height": 77 },
+				"chick_big2": { "x": 36, "y": 1, "rotation": -90, "width": 57, "height": 77 },
+				"chick_big3": { "x": 35.62, "y": 1.19, "rotation": -90, "width": 57, "height": 76 },
+				"chick_big4": { "x": 36, "y": 1, "rotation": -90, "width": 57, "height": 77 },
+				"chick_big5": { "x": 41.64, "y": 1, "rotation": -90, "width": 58, "height": 88 },
+				"chick_big6": { "x": 36, "y": 1.21, "rotation": -90, "width": 58, "height": 77 },
+				"chick_big7": { "x": 36, "y": 1, "rotation": -90, "width": 57, "height": 77 },
+				"chick_mini1": { "x": 27.29, "y": 1, "rotation": -90, "width": 40, "height": 51 },
+				"chick_mini2": { "x": 24.17, "y": 1, "rotation": -90, "width": 44, "height": 44 },
+				"chick_mini3": { "x": 23.17, "y": 1, "rotation": -90, "width": 40, "height": 42 }
+			},
+			"helmet": {
+				"helmet0": { "rotation": -89.89, "width": 10, "height": 10 },
+				"helmet1": { "x": -14.94, "y": 4.47, "rotation": -89.83, "width": 46, "height": 23 },
+				"helmet2": { "x": -2.6, "rotation": -90, "width": 45, "height": 29 },
+				"helmet3": { "x": -2.6, "rotation": -90, "width": 55, "height": 30 },
+				"helmet4": { "x": -3.13, "rotation": -90, "width": 47, "height": 61 },
+				"helmet5": { "x": -12, "rotation": -90, "width": 47, "height": 48 },
+				"helmet6": { "x": -12.13, "y": 1.08, "rotation": -90, "width": 55, "height": 48 },
+				"helmet7": { "x": -11.58, "y": 1.48, "rotation": -90, "width": 77, "height": 48 },
+				"helmet8": { "x": -8.21, "rotation": -90, "width": 44, "height": 58 },
+				"helmet9": { "x": -6.46, "y": 0.94, "rotation": -90, "width": 64, "height": 60 },
+				"helmet10": { "x": -1.28, "y": 1.87, "rotation": -90, "width": 58, "height": 46 },
+				"helmet11": { "x": -3.67, "y": 0.68, "rotation": -90, "width": 48, "height": 26 },
+				"helmet12": { "x": -2.46, "y": 0.27, "rotation": -90, "width": 50, "height": 30 }
+			},
+			"shield": {
+				"shield0": { "rotation": -125, "width": 10, "height": 10 },
+				"shield1": { "x": 1.75, "y": -1.22, "rotation": -125, "width": 21, "height": 21 },
+				"shield2": { "x": 0.41, "y": -0.29, "rotation": -125, "width": 20, "height": 21 },
+				"shield3": { "x": 0.41, "y": -0.29, "rotation": -125, "width": 20, "height": 21 },
+				"shield4": { "x": 0.12, "y": -0.7, "rotation": -125, "width": 23, "height": 21 },
+				"shield5": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield6": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield7": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield8": { "x": 1.76, "y": -1.23, "rotation": -125, "width": 26, "height": 26 },
+				"shield9": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield10": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield11": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield12": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield13": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield14": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield15": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 26 },
+				"shield16": { "x": 0.82, "y": -0.57, "rotation": -125, "width": 26, "height": 26 },
+				"shield17": { "x": 0.82, "y": -0.57, "rotation": -125, "width": 26, "height": 26 },
+				"shield18": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 29 },
+				"shield19": { "x": 1.64, "y": -1.15, "rotation": -125, "width": 26, "height": 29 }
+			},
+			"weapon": {
+				"weapon0": { "x": -3.04, "y": 4.34, "rotation": -55, "width": 10, "height": 10 },
+				"weapon1": { "x": 16.5, "rotation": -90, "width": 16, "height": 39 },
+				"weapon2": { "x": 16.5, "y": 0.29, "rotation": -90, "width": 16, "height": 39 },
+				"weapon3": { "x": 11, "y": 1, "rotation": -90, "width": 16, "height": 31 },
+				"weapon4": { "x": 10.7, "y": -0.12, "rotation": -99.85, "width": 20, "height": 29 },
+				"weapon5": { "x": 10.59, "y": 1.04, "rotation": -90, "width": 29, "height": 29 },
+				"weapon6": { "x": 11.24, "y": 0.62, "rotation": -90, "width": 20, "height": 29 },
+				"weapon7": { "x": 11.76, "y": -5.91, "rotation": -90, "width": 20, "height": 30 },
+				"weapon8": { "x": 15.53, "y": 0.1, "rotation": -90, "width": 19, "height": 46 },
+				"weapon9": { "x": 11.13, "rotation": -90, "width": 22, "height": 31 },
+				"weapon10": { "x": 11.79, "y": 0.09, "rotation": -90, "width": 10, "height": 33 },
+				"weapon11": { "x": 15.95, "y": 0.28, "rotation": -90, "width": 20, "height": 44 },
+				"weapon12": { "x": 10.46, "y": -3.8, "rotation": -90, "width": 15, "height": 28 },
+				"weapon13": { "x": 11.67, "y": 0.01, "rotation": -90, "width": 14, "height": 29 },
+				"weapon14": { "x": 21.92, "y": 0.3, "rotation": -90, "width": 14, "height": 58 },
+				"weapon15": { "x": 16.74, "y": -0.07, "rotation": -90, "width": 24, "height": 40 },
+				"weapon16": { "x": 15.29, "y": -3.08, "rotation": -90, "width": 28, "height": 37 },
+				"weapon17": { "x": 15.7, "y": 0.47, "rotation": -90, "width": 22, "height": 39 },
+				"weapon18": { "x": 18.27, "y": -0.09, "rotation": -90, "width": 16, "height": 43 },
+				"weapon19": { "x": 23.21, "y": 0.11, "rotation": -90, "width": 14, "height": 57 },
+				"weapon20": { "x": 17.61, "y": -0.19, "rotation": -90, "width": 18, "height": 43 },
+				"weapon21": { "x": 6.04, "y": -8.18, "rotation": -78.09, "width": 29, "height": 38 },
+				"weapon22": { "x": 15.33, "y": -0.4, "rotation": -90, "width": 31, "height": 38 },
+				"weapon23": { "x": 16.05, "y": -2.19, "rotation": -90, "width": 28, "height": 40 },
+				"weapon24": { "x": 15.92, "y": -0.46, "rotation": -90, "width": 32, "height": 40 },
+				"weapon25": { "x": 18.85, "y": -0.28, "rotation": -90, "width": 13, "height": 49 }
+			},
+			"weapon2": {
+				"weapon0": { "x": -3.04, "y": -4.34, "rotation": -125, "width": 10, "height": 10 },
+				"weapon2": { "x": 16, "y": 1, "scaleX": -1, "rotation": -90, "width": 16, "height": 39 },
+				"weapon3": { "x": 11.07, "y": 1.49, "rotation": -90, "width": 16, "height": 31 },
+				"weapon4": { "x": 10.85, "y": 2.18, "scaleX": -1, "rotation": -80, "width": 20, "height": 29 },
+				"weapon7": { "x": 11.68, "y": 7.29, "scaleX": -1, "rotation": -90, "width": 20, "height": 30 },
+				"weapon12": { "x": 9.94, "y": 5.05, "scaleX": -1, "rotation": -90, "width": 15, "height": 28 },
+				"weapon13": { "x": 11.57, "y": 2.2, "rotation": -90, "width": 14, "height": 29 },
+				"weapon17": { "x": 14.75, "y": 1.4, "rotation": -90, "width": 22, "height": 39 },
+				"weapon21": { "x": 5.14, "y": 10.9, "scaleX": -1, "rotation": -100, "width": 29, "height": 38 },
+				"weapon25": { "x": 18.57, "y": 1.08, "scaleX": -1, "rotation": -90, "width": 13, "height": 49 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {}
+}
+}

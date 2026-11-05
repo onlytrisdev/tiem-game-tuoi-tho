@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+<title>Play the original Super Mario Bros Game Online</title>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="csrf-token" content="u9ZxybFpFV01JsibONy9c8VaivIaJjKKibSL662O">
+<link rel="stylesheet" href="css/default.css?v=1.0.4">
+
+<script type="text/javascript">
+        var is_dev = false;
+
+        
+                var is_mobile = false;
+        
+                        var is_fullscreen = false;
+            </script>
+<style>
+
+        .article-card {
+            width: 100%;
+            margin: 0 auto 40px;
+        }
+
+        @media (min-width: 768px) {
+            .article-card {
+                width: calc(50% - 40px);
+                margin: 0 20px 40px;
+                float: left;
+            }
+        }
+
+
+        element.style {
+        }
+
+        .article-card header p a {
+            color: #000;
+            text-decoration: none;
+            transition: opacity .2s;
+        }
+
+        a {
+            transition: color .2s;
+            color: ;
+        }
+
+        a {
+            color: #0f7faf;
+            text-decoration: underline;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .article-card header p {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .article-card header p a {
+            color: #000;
+            text-decoration: none;
+            transition: opacity .2s;
+            font-family: "libre_franklinregular", Arial, Helvetica, sans-serif;
+        }
+
+        button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+            border: 1px solid transparent;
+            border-radius: 3px;
+            background: #363940;
+            color: #fff !important;
+            font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+            line-height: 1;
+            padding: 8px 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all .2s;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-size: 1rem;
+            font-style: normal;
+        }
+
+        .article-card.horizontal {
+            margin-bottom: 40px;
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            content: "";
+            display: table;
+            table-layout: fixed;
+        }
+
+        .article-card .excerpt {
+            margin-top: -5px;
+            margin-bottom: 20px;
+        }
+
+        .article-card .excerpt p {
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .article-card .button-container {
+            text-align: right;
+        }
+
+        .recent-articles-container .article-card .button-container {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .article-card.horizontal .image-container {
+                float: left;
+                margin-bottom: 0;
+            }
+        }
+
+        .article-card.horizontal .image-container {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto 20px;
+        }
+
+        .article-card a .image-container {
+            transition: opacity .2s;
+        }
+
+        .article-card header span a {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .article-card header span a {
+            color: #000;
+            text-decoration: none;
+            font-family: "libre_franklinregular", Arial, Helvetica, sans-serif;
+            transition: opacity .2s;
+        }
+
+        .article-card .image-container {
+            height: 260px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        @media (min-width: 768px) {
+            .article-card.horizontal .copy-container {
+                float: left;
+                margin-left: 40px;
+                width: calc(100% - 340px);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .articles-wrapper {
+                text-align: left;
+            }
+        }
+
+        .articles-wrapper {
+            margin-top: 24px;
+        }
+
+        button:hover, button:active, button:focus, input[type="button"]:hover, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus, .button:hover, .button:active, .button:focus {
+            opacity: .8;
+        }
+
+        button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+            border: 1px solid transparent;
+            border-radius: 3px;
+            background: #363940;
+            color: #fff !important;
+            font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+            line-height: 1;
+            padding: 8px 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all .2s;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-size: 1rem;
+            font-style: normal;
+        }
+
+        .recent-articles-container {
+            margin-top: 20px;
+            content: "";
+            display: table;
+            table-layout: fixed;
+        }
+
+        .loading-div {
+            background: url('assets/img/lsvg.svg') center center no-repeat #000;
+        }
+
+        .click-to-start {
+            background: url('assets/img/mariostart2.png') center center no-repeat #000;
+            background-size: auto 70%;
+            position: relative;
+        }
+
+        .run_game {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+
+    </style>
+</head>
+<body onload="start()" class=" ">
+<script>
+        if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+            top.location.href = "index-mobile.html";
+        }
+    </script>
+<div id="main">
+<style>
+
+        .modal {
+            display: none;
+            position: fixed;
+            top:0;
+            z-index: 9999999;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .modal[open] {
+            display: block;
+        }
+
+        .model-inner {
+            background-color: white;
+            border-radius: 0.5em;
+            max-width: 600px;
+            padding: 1em;
+            margin: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /*border-bottom: 2px solid black;*/
+        }
+
+        #modal-overlay {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background-color: black;
+            opacity: 0.5;
+        }
+
+    </style>
+<iframe id="game" style="background-color: transparent" loading="lazy" src="game/mario.html"></iframe>
+<script type="text/javascript">
+                var iframe = document.getElementById('game');
+                iframe.contentWindow.focus();
+            </script>
+<div id="after" class="padding-15">
+<div id="out_mapselect" class="bar1">
+<div class="label"><img alt="Map Select" src="assets/img/map_icon.png" width="16" alt=""> Map Select</div>
+<div id="in_mapselect" class="expander"></div>
+</div>
+<div id="out_editor" class="bar1" style="display: none;">
+<div class="label">- Level Editor -</div>
+<div id="in_editor" class="expander"></div>
+</div>
+<div id="out_options" class="bar1" style="display: none;">
+<div class="label">- Options -</div>
+<div id="in_options" class="expander"></div>
+</div>
+<div id="sound-toggle" class="bar1">
+<div class="label"><img alt="Sound off" src="assets/img/sound_on_icon.png" width="16" alt=""> Sound on </div>
+</div>
+<div id="out_keymapping" class="bar1" style="display: none;">
+<div class="label">- Keys Mapping - </div>
+<div id="in_keymapping" class="expander"></div>
+</div>
+</div>
+<script src="game/ui.js" type="text/javascript"></script>
+<script src="assets/jquery.min.js" type="text/javascript"></script>
+<script src="assets/jquery.validate.min.js" type="text/javascript"></script>
+<script src="assets/validation.js?v=14" type="text/javascript"></script>
+<script type="text/javascript">
+
+        $(".run_game").click(function(){
+            $(this).parent('div').attr('class', 'loading-div');
+            $(this).remove();
+
+            var iframe = $("#game");
+            iframe.attr("src", iframe.data("src"));
+            iframe.on('load', function(){
+                start();
+            });
+            iframe.focus();
+        });
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+
+        $(document).ready(function() {
+
+            $("#comment-form").submit(function(event){
+                event.preventDefault();
+                $("#submit").attr('disabled', true);
+                var post_url = $(this).attr("action");
+                var form_data = $(this).serialize();
+
+                $.post( post_url, form_data, function( response ) {
+
+                    if (response.success == true) {
+                        $(".response").html( "<div style='margin-top:10px; font-size:12px; font-weight:bold;'> Thank you! <br /> Your comment will be reviewed later today.</div>" );
+                    } else {
+                        $(".response").html( "<div style='margin-top:10px; font-size:12px; font-weight:bold;'> Your comment wasn't sent. <br /> Please, try later.</div>" );
+                    }
+                });
+            });
+
+            $(".captcha").on( "click", function() {
+                if ($('#captcha').is(':checked')) {
+                    $("#captchat").html( "Captcha is passed!" );
+                    $("#captcha").prop( "disabled", true );
+                };
+            });
+
+            var img = new Image();
+            img.src = 'assets/img/loading.gif';
+
+            $(document).on('click','.comments .pagination ul li a',function(e){
+                e.preventDefault();
+                var page_num = $(this).attr('data-page');
+                var a_href = $(this).attr('href');
+                window.history.pushState({name:'comments',page:page_num}, 'Comments Page '+page_num, a_href);
+                $.ajax({
+                    url: "/comments/page/" + page_num,
+                    method: "POST",
+                    data: { c : page_num, ajax: 1 },
+                    dataType: "html",
+                    beforeSend: function() {
+                        $(".comments .loading").show();
+                    },
+                    success: function(data) {
+                        $(".comments").html( data );
+                    },
+                    error: function(xhr) {
+                        alert(xhr.statusText + xhr.responseText);
+                    },
+                    complete: function() {
+                        $(".comments .loading").hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
