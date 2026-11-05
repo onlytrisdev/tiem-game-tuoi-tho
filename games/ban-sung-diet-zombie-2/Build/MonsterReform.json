@@ -1,0 +1,17 @@
+{
+"companyName": "AYN GAMES",
+"productName": "Monster Reform",
+"productVersion": "1.0",
+"dataUrl": "MonsterReform.data.unityweb",
+"wasmCodeUrl": "MonsterReform.wasm.code.unityweb",
+"wasmFrameworkUrl": "MonsterReform.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "MonsterReform.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.18f1"
+}
