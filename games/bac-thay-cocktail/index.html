@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<meta name="viewport"
+
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Bậc thầy Cocktail</title>
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <!-- <script type="text/javascript">document.domain='7k7k.com'</script> -->
+
+<script type="text/javascript" src="7k7k.js"></script>
+
+    <script src="./YYGGames.js"></script>
+
+    <script src="./arcade-ads.js?v=cocktail-r1"></script>
+
+
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            overflow: hidden;
+
+        }
+
+
+
+        body {
+
+            overflow: 'hidden';
+
+            /* 页面背景颜色 */
+
+            background: #628DAD
+
+        }
+
+
+
+
+
+        #unity-canvas {
+
+            width: 100%;
+
+            height: 100%;
+
+            top: 0
+
+        }
+
+
+
+        #unity-container {
+
+            position: absolute;
+
+            overflow: hidden;
+
+        }
+
+
+
+        #LoadingView {
+
+            position: absolute;
+
+            left: 50%;
+
+            top: 50%;
+
+            height: 100%;
+
+            width: 100%;
+
+            overflow: hidden;
+
+            transform: translate(-50%, -50%);
+
+
+
+            text-align: center;
+
+        }
+
+
+
+
+
+        #top-container {
+
+            flex: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            /* 距离顶部位置 */
+
+            margin-top: 20%;
+
+        }
+
+
+
+        div {
+
+            text-align: center;
+
+        }
+
+    </style>
+
+
+
+    <style>
+
+
+
+    </style>
+
+
+
+<style>
+
+  #gv-actions {
+
+    position:absolute;left:8px;top:50%;transform:translateY(-50%);
+
+    z-index:100;display:none;flex-direction:column;align-items:center;gap:10px;
+
+    pointer-events:none;overflow:visible;
+
+  }
+
+  #gv-actions button {
+
+    box-sizing:border-box;display:block;border:0;background:transparent;
+
+    width:clamp(56px,6vw,68px);height:clamp(56px,6vw,68px);
+
+    padding:2px;cursor:pointer;pointer-events:auto;touch-action:manipulation;
+
+    -webkit-tap-highlight-color:transparent;user-select:none;
+
+    transition:transform .15s ease;
+
+  }
+
+  #gv-actions button:hover {transform:translateX(3px);}
+
+  #gv-actions button:active {transform:scale(.94);}
+
+  #gv-actions img {display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;-webkit-user-drag:none;}
+
+  #gv-reset-modal[hidden] {display:none !important;}
+
+  #gv-reset-modal {
+
+    position:fixed;inset:0;z-index:20000;background:rgba(0,0,0,.72);
+
+    display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;
+
+  }
+
+  #gv-reset-dialog {
+
+    background:#fff;color:#16283a;border-radius:14px;padding:22px;width:min(360px,92vw);
+
+    box-shadow:0 8px 40px #0006;font:600 16px/1.45 system-ui,sans-serif;
+
+    box-sizing:border-box;overflow:visible;
+
+  }
+
+  #gv-reset-dialog h2 {font-size:21px;margin:0 0 12px;}
+
+  #gv-reset-dialog p {font-size:14px;margin:0 0 18px;font-weight:400;}
+
+  #gv-reset-controls {display:flex;gap:12px;}
+
+  #gv-reset-controls button {flex:1;min-height:48px;border:0;border-radius:8px;color:#fff;font-weight:700;cursor:pointer;}
+
+  #gv-reset-yes {background:#c73535;}
+
+  #gv-reset-no {background:#1976b9;}
+
+  #gv-reset-msg {min-height:18px;margin:8px 0 0!important;font-size:13px!important;color:#b02121;}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+    <script src="Adapter.js"></script>
+
+    <script src="./arcade-save.js?v=cocktail-r2"></script>
+
+    <script src="./arcade-menu.js?v=cocktail-menu-r1"></script>
+
+    <div id="unity-container">
+
+        <canvas id="unity-canvas"></canvas>
+
+        <div id="gv-actions" aria-label="Arcade">
+
+          <button type="button" id="gv-send-score" title="Gửi điểm" aria-label="Gửi điểm">
+
+            <img src="save-score.png" alt="" draggable="false">
+
+          </button>
+
+          <button type="button" id="gv-reset-data" title="Xóa dữ liệu" aria-label="Xóa dữ liệu">
+
+            <img src="reset-data.png" alt="" draggable="false">
+
+          </button>
+
+        </div>
+
+
+
+        <div id="LoadingView">
+
+            <div id="top-container">
+
+                <img id="logo" src="logo.png"></img>
+
+                <!-- //大图距离logo 的位置 margin-top: -->
+
+                <img id="thumbnail" src="thumbnail.jpg"
+
+                    style="margin-top: 100px; border-radius:10px;border:2px solid #FFF; "></img>
+
+            </div>
+
+
+
+            <div id="progress" style="position:absolute;bottom:10%;width: 100%; color:#FFF;
+
+                font-size:24px;">
+
+                Loading...
+
+            </div>
+
+            <img id="bestgames" src="bestgames.com.png" style="position:absolute;bottom:0px;left: 5px;"></img>
+
+        </div>
+
+    </div>
+
+    <div id="gv-reset-modal" role="dialog" aria-modal="true" aria-labelledby="gv-reset-title" hidden>
+
+      <div id="gv-reset-dialog">
+
+        <h2 id="gv-reset-title">Xóa dữ liệu trò chơi?</h2>
+
+        <p>Bạn có chắc chắn xóa không? Mọi dữ liệu sẽ bị xóa vĩnh viễn và không thể khôi phục.</p>
+
+        <div id="gv-reset-controls">
+
+          <button type="button" id="gv-reset-yes">Xác nhận</button>
+
+          <button type="button" id="gv-reset-no">Hủy</button>
+
+        </div>
+
+        <p id="gv-reset-msg" aria-live="polite"></p>
+
+      </div>
+
+    </div>
+
+
+
+    <script>
+
+        const loadingView = document.getElementById("LoadingView");
+
+        const progress = document.getElementById("progress");
+
+        const canvas = document.querySelector("#unity-canvas");
+
+        Adapter.init(750, 1334);
+
+        const util = {
+
+            percent: function (value) {
+
+                progress.innerHTML = "Loading: " + Math.round(value) + "%"
+
+            },
+
+            hideLoading: function () {
+
+                loadingView.style.display = "none";
+
+            }
+
+        }
+
+
+
+    </script>
+
+    <script>
+
+        const buildUrl = "Build";
+
+        const loaderUrl = buildUrl + "/BuildText.loader.js";
+
+        const config = {
+
+            dataUrl: buildUrl + "/BuildText.data.unityweb",
+
+            frameworkUrl: buildUrl + "/BuildText.framework.js.unityweb",
+
+            codeUrl: buildUrl + "/BuildText.wasm.unityweb",
+
+            streamingAssetsUrl: "StreamingAssets",
+
+            companyName: "Clawbear Games",
+
+            productName: "Shooty Race",
+
+            productVersion: "0.1",
+
+        };
+
+        function startUnity() {
+
+            var script = document.createElement("script");
+
+            script.src = loaderUrl;
+
+            script.onload = () => {
+
+                createUnityInstance(canvas, config, (value) => {
+
+                    util.percent(value * 99);
+
+                }).then((unityInstance) => {
+
+                    menuUI.onUnityReady();
+
+                    //加载交叉推荐
+
+                    // util.hideLoading();
+
+                }).catch((message) => {
+
+                
+
+                });
+
+            };
+
+            document.body.appendChild(script);
+
+        }
+
+        const actions = document.getElementById("gv-actions");
+
+        const menuUI = ArcadeMenu.attach(canvas, actions);
+
+        const modal = document.getElementById("gv-reset-modal");
+
+        const msg = document.getElementById("gv-reset-msg");
+
+        const yes = document.getElementById("gv-reset-yes");
+
+        const no = document.getElementById("gv-reset-no");
+
+        document.getElementById("gv-send-score").addEventListener("click", function (e) {
+
+            e.preventDefault(); e.stopPropagation(); ArcadeSave.sendScore();
+
+        });
+
+        document.getElementById("gv-reset-data").addEventListener("click", function (e) {
+
+            e.preventDefault(); e.stopPropagation(); msg.textContent = ""; modal.hidden = false;
+
+        });
+
+        no.addEventListener("click", function () { modal.hidden = true; });
+
+        yes.addEventListener("click", async function () {
+
+            yes.disabled = no.disabled = true;
+
+            msg.textContent = "Đang xác minh xóa dữ liệu trên tài khoản...";
+
+            const ok = await ArcadeSave.reset();
+
+            if (!ok) {
+
+                msg.textContent = "Xóa thất bại. Dữ liệu local vẫn được giữ nguyên.";
+
+                yes.disabled = no.disabled = false;
+
+            }
+
+        });
+
+        window.addEventListener("keydown", function (e) {
+
+            if (e.key === "Escape" && !no.disabled) modal.hidden = true;
+
+        });
+
+        ArcadeSave.init().then(function (result) {
+
+            if (result && result.blocked) {
+
+                progress.textContent = "Vui lòng đăng nhập Arcade để chơi và đồng bộ.";
+
+                return;
+
+            }
+
+            startUnity();
+
+        }).catch(function (error) {
+
+            console.error("GV_SYNC_LOAD_FAIL", error && error.message);
+
+            // An unexpected exception must not allow an empty save to upload.
+
+            startUnity();
+
+        });
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
