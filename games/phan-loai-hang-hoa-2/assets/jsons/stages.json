@@ -1,0 +1,85 @@
+{
+	"beginLoop": 3,
+	
+	"stages": [
+		{
+			"filled": 4,
+			"score": {
+				"baseMax": 6000,
+				"baseMin": 100,
+				"maxTime": 600,
+				"solveAdd": [
+					0
+				]
+			},
+			"stampNorma": [
+				1500,
+				2500,
+				3500,
+				4500
+			]
+		},
+		{
+			"filled": 6,
+			"score": {
+				"baseMax": 8000,
+				"baseMin": 100,
+				"maxTime": 600,
+				"solveAdd": [
+					0
+				]
+			},
+			"stampNorma": [
+				1500,
+				2500,
+				3500,
+				4500
+			]
+		},
+		{
+			"filled": 8,
+			"score": {
+				"baseMax": 16000,
+				"baseMin": 100,
+				"maxTime": 240,
+				"solveAdd": [
+					0
+				]
+			},
+			"stampNorma": [
+				5000,
+				8000
+			]
+		},
+		{
+			"filled": 9,
+			"score": {
+				"baseMax": 16000,
+				"baseMin": 100,
+				"maxTime": 240,
+				"solveAdd": [
+					0
+				]
+			},
+			"stampNorma": [
+				5000,
+				8000
+			]
+		},
+		{
+			"filled": 9,
+			"score": {
+				"baseMax": 16000,
+				"baseMin": 100,
+				"maxTime": 240,
+				"solveAdd": [
+					0
+				]
+			},
+			"stampNorma": [
+				5000,
+				8000
+			]
+		}
+	]
+}

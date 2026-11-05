@@ -1,0 +1,218 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Quán ăn nhanh - Dream Chefs</title>
+
+
+
+  <meta name="viewport"
+
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="format-detection" content="telephone=no">
+
+
+
+  <meta name="renderer" content="webkit"/>
+
+  <meta name="force-rendering" content="webkit"/>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+
+
+  <meta name="full-screen" content="yes"/>
+
+  <meta name="x5-fullscreen" content="true"/>
+
+  <meta name="360-fullscreen" content="true"/>
+
+
+
+  <meta name="screen-orientation" content="landscape"/>
+
+  <meta name="x5-orientation" content="landscape">
+
+
+
+  <meta name="x5-page-mode" content="app">
+
+
+
+  <link rel="stylesheet" type="text/css" href="style-mobile.6e9cd.css"/>
+
+
+
+  <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+  <script src="arcade-tool.js?v=9"></script>
+
+</head>
+
+<body>
+
+  <div id="splash">
+
+    <div class="progress-bar stripes"><span style="width:0%"></span></div>
+
+  </div>
+
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+
+  <script type="text/javascript">
+
+    var file_settings = "src/settings.a3e89.js";
+
+    var file_main = "main.ffcf7.js";
+
+    var file_project = "src/project.3b653.js?v=3";
+
+
+
+    var loadSingleScript = function (src, callback) {
+
+        var s = document.createElement('script');
+
+        s.async = false;
+
+        s.src = src;
+
+        s.charset = 'utf-8';
+
+        s.addEventListener('load', function () {
+
+            s.parentNode.removeChild(s);
+
+            s.removeEventListener('load', arguments.callee, false);
+
+            callback();
+
+        }, false);
+
+        document.body.appendChild(s);
+
+    };
+
+
+
+    function hideSplash() {
+
+        var splash = document.getElementById('splash');
+
+        if (splash) splash.style.display = 'none';
+
+    }
+
+
+
+    function bumpSplashProgress(pct) {
+
+        var bar = document.querySelector('#splash .progress-bar span');
+
+        if (bar) bar.style.width = Math.max(0, Math.min(100, pct)) + '%';
+
+    }
+
+
+
+    function bootCocos() {
+
+        bumpSplashProgress(10);
+
+        loadSingleScript(file_settings, function () {
+
+            bumpSplashProgress(30);
+
+            loadSingleScript(file_main, function () {
+
+                bumpSplashProgress(50);
+
+                /* main.ffcf7.js tự load project; báo tool khi canvas sẵn sàng */
+
+                var n = 0;
+
+                var t = setInterval(function () {
+
+                    n++;
+
+                    bumpSplashProgress(50 + Math.min(45, n * 2));
+
+                    if (window.cc && window.ArcadeTool && typeof window.ArcadeTool.onProjectLoaded === 'function') {
+
+                        window.ArcadeTool.onProjectLoaded();
+
+                        if (typeof window.ArcadeTool.applyViByPatchingLoadedScript === 'function') {
+
+                            window.ArcadeTool.applyViByPatchingLoadedScript();
+
+                        }
+
+                    }
+
+                    if ((window.cc && window.cc.director && window.cc.director.getScene()) || n > 100) {
+
+                        clearInterval(t);
+
+                        bumpSplashProgress(100);
+
+                        hideSplash();
+
+                    }
+
+                }, 200);
+
+            });
+
+        });
+
+    }
+
+
+
+    function start() {
+
+        var ready = (window.ArcadeTool && window.ArcadeTool.ready)
+
+            ? window.ArcadeTool.ready
+
+            : Promise.resolve();
+
+        var timeout = new Promise(function (resolve) {
+
+            setTimeout(resolve, 3000);
+
+        });
+
+        Promise.race([ready, timeout]).then(bootCocos).catch(bootCocos);
+
+    }
+
+
+
+    if (document.readyState === 'loading') {
+
+        document.addEventListener('DOMContentLoaded', start);
+
+    } else {
+
+        start();
+
+    }
+
+  </script>
+
+</body>
+
+</html>
+

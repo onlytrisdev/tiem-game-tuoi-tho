@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' />
+	<title>Among Us: Đấu súng</title>
+	<script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+	/>
+	<meta name="renderer" content="webkit"/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta name="laya" screenorientation ="landscape"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv='expires' content='0' />
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<style>
+		
+		canvas{ position:fixed;
+max-width: initial !important;
+
+        }
+		
+    </style>
+	
+ </head>
+
+<body>
+	
+	<script type="text/javascript" src="libs/laya.core.js"></script>
+    <script type="text/javascript" src="libs/min/laya.webgl.min.js"></script>
+    <script type="text/javascript" src="libs/laya.filter.js"></script>
+    <script type="text/javascript" src="libs/laya.html.js"></script>
+    <script type="text/javascript" src="libs/laya.particle.js"></script>
+    <script type="text/javascript" src="libs/laya.ui.js"></script>
+	<script type="text/javascript">
+        function loadLib(url,id) {
+			console.log("loadLib--->",url);
+            var script = document.createElement("script");
+            script.async = false;
+            script.src   = url;
+			script.id    = id;
+            document.body.appendChild(script);
+        }
+    </script>
+	 
+	<script src="js/Core/Manager/AudioManager.js"></script>
+	<script src="js/Core/Dispatcher.js"></script>
+	<script src="js/Core/UI/Layer.js"></script>
+	<script src="js/Core/UI/Scene.js"></script>
+
+
+	<script src="js/Defines/Enumic.js"></script>
+	<script src="js/GameConfig.js"></script>
+	<!--jsfile--Custom-->
+	
+
+	<!--自定义的js(src文件夹下)文件自动添加到下面jsfile模块标签里面里-->
+	<!--删除标签，ide不会自动添加js文件，请谨慎操作-->
+	<!--jsfile--startTag-->
+	<script src="js/platform/platform.js"></script>
+	<script src="js/platform/IPlatform.js"></script>
+	<script src="js/Utils/utils.js"></script>
+	<script src="js/Utils/TweenUtils.js"></script>
+	<script src="js/Utils/JSBridge.js"></script>
+	<script src="js/Properties/RoleProperties.js"></script>
+	<script src="js/Properties/EnemyProperties.js"></script>
+	<script src="js/Manager/banner_manager.js"></script>
+	<script src="js/Manager/ad_manager.js"></script>
+	<script src="js/Manager/RecorderManager.js"></script>
+	<script src="js/Manager/Audios.js"></script>
+	<script src="js/Layers/Game/buff/Protective.js"></script>
+	<script src="js/GameConfig.js"></script>
+	<script src="js/Defines/netcmd.js"></script>
+	<script src="js/Defines/httpcmd.js"></script>
+	<script src="js/Defines/Events.js"></script>
+	<script src="js/Defines/Enumic.js"></script>
+	<script src="js/Data/WeaponData.js"></script>
+	<script src="js/Data/HelmetData.js"></script>
+	<script src="js/Data/GunDB.js"></script>
+	<script src="js/Data/EnemyDB.js"></script>
+	<script src="js/Data/ClothData.js"></script>
+	<script src="js/Data/BulletData.js"></script>
+	<script src="js/Dao/dao.js"></script>
+	<script src="js/Core/Manager/AudioManager.js"></script>
+	<script src="js/Core/Dispatcher.js"></script>
+	<script src="js/Configs/WeaponConfig.js"></script>
+	<script src="js/Configs/HelmetConfig.js"></script>
+	<script src="js/Configs/ClothConfig.js"></script>
+	<script src="js/AppConfig.js"></script>
+	<script src="js/ui/layaUI.max.all.js"></script>
+	<script src="js/Components/AirGift.js"></script>
+	<script src="js/Components/Diamond.js"></script>
+	<script src="js/Components/DoubleBox.js"></script>
+	<script src="js/Components/HomeRole.js"></script>
+	<script src="js/Components/HuaFei.js"></script>
+	<script src="js/Components/MessagePop.js"></script>
+	<script src="js/Components/Power.js"></script>
+	<script src="js/Components/PowerEnoughPop.js"></script>
+	<script src="js/Components/ProgressBar.js"></script>
+	<script src="js/Core/Manager/SceneManager.js"></script>
+	<script src="js/Core/UI/Button.js"></script>
+	<script src="js/Core/UI/Layer.js"></script>
+	<script src="js/Core/UI/Scene.js"></script>
+	<script src="js/Dao/BaseDao.js"></script>
+	<script src="js/Dao/ArmorDao.js"></script>
+	<script src="js/Dao/BackgroundDao.js"></script>
+	<script src="js/Dao/DiamondDao.js"></script>
+	<script src="js/Dao/EnemyDao.js"></script>
+	<script src="js/Dao/GuideDao.js"></script>
+	<script src="js/Dao/GunDao.js"></script>
+	<script src="js/Dao/HeroDao.js"></script>
+	<script src="js/Dao/HuaFeiDao.js"></script>
+	<script src="js/Dao/LoginTimeDao.js"></script>
+	<script src="js/Dao/PowerDao.js"></script>
+	<script src="js/Dao/SettingDao.js"></script>
+	<script src="js/Dao/ShareDao.js"></script>
+	<script src="js/Dao/SignDao.js"></script>
+	<script src="js/Dao/StageDao.js"></script>
+	<script src="js/Dao/TemplateDao.js"></script>
+	<script src="js/Data/UserData.js"></script>
+	<script src="js/Guide/Guide.js"></script>
+	<script src="js/Layers/Common/DiamondPop.js"></script>
+	<script src="js/Layers/Common/HuaFeiPop..js"></script>
+	<script src="js/Layers/Common/ItemPop.js"></script>
+	<script src="js/Layers/Common/LoginLayer.js"></script>
+	<script src="js/Layers/Common/MessageLayer.js"></script>
+	<script src="js/Layers/Common/PowerLayer.js"></script>
+	<script src="js/Layers/Game/AirDropLayer.js"></script>
+	<script src="js/Layers/Game/AirMaoMiDropLayer.js"></script>
+	<script src="js/Layers/Game/AirYTDropLayer.js"></script>
+	<script src="js/Layers/Game/EnemyTable.js"></script>
+	<script src="js/Layers/Game/FailLayer.js"></script>
+	<script src="js/Layers/Game/GameRole.js"></script>
+	<script src="js/Layers/Game/RoleTable.js"></script>
+	<script src="js/Layers/Game/VictoryLayer.js"></script>
+	<script src="js/Layers/Game/sprites/BulletPool.js"></script>
+	<script src="js/Layers/Game/sprites/Enemy.js"></script>
+	<script src="js/Layers/Game/sprites/EnemyBoss.js"></script>
+	<script src="js/Layers/Game/sprites/EnemyBullet.js"></script>
+	<script src="js/Layers/Game/sprites/EnemyPan.js"></script>
+	<script src="js/Layers/Game/sprites/RoleBullet.js"></script>
+	<script src="js/Layers/Home/DefineLayer.js"></script>
+	<script src="js/Layers/Home/MoreLayer.js"></script>
+	<script src="js/Layers/Home/OnLineLayer.js"></script>
+	<script src="js/Layers/Home/RankLayer.js"></script>
+	<script src="js/Layers/Home/SelectedLayer.js"></script>
+	<script src="js/Layers/Home/SettingLayer.js"></script>
+	<script src="js/Layers/Home/ShopLayer.js"></script>
+	<script src="js/Layers/Home/SignLayer.js"></script>
+	<script src="js/Layers/Home/TurntableLayer.js"></script>
+	<script src="js/Layers/Home/WeaponLayer.js"></script>
+	<script src="js/Layers/Selected/PopSelected.js"></script>
+	<script src="js/Scenes/GameScene.js"></script>
+	<script src="js/Scenes/HomeScene.js"></script>
+	<script src="js/Scenes/LoadingScene.js"></script>
+	<script src="js/platform/SwanPlatform.js"></script>
+	<script src="js/platform/WXPatform.js"></script>
+	<script src="js/platform/WebPlatform.js"></script>
+	<!--jsfile--endTag-->
+
+	<!--启动类添加到这里-->
+	<!--jsfile--Main-->
+	<script src="js/Main.js"></script>
+	<!--jsfile--Main-->
+ </body>
+
+</html>

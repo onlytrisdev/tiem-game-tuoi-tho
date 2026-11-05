@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Phân loại hàng hóa 2</title>
+		
+		<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+		<script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+		
+		<script src="lib/createjs.1.0.0.min.js?v=1.0.0"></script>
+		<script src="lib/howler.core.2.2.3.min.js?v=2.2.3"></script>
+		<script src="lib/pixi-legacy.5.3.9.min.js?v=5.3.9"></script>
+		<script src="lib/Pixim.min.js?v=1.14.0"></script>
+		<script src="lib/Pixim-animate-container.min.js?v=1.4.0"></script>
+	</head>
+	<body style="margin:0px; overflow: hidden; background-color:#000000;">
+		<script src="lib/SCG-gd-pixim.min.js?v=1.10.14"></script>
+		<script>
+			SCG.init ( {
+				basepath : './',
+				version : 'Arcade!' ,
+				pixiOptions : { resolution : 2 }				
+			} , {
+				gameId: "b5889fb495094b3094737965f8f90030",				
+				sdk: "main.min.js",
+				contentKey: "sortmart",
+				usePrerollAd: true,
+				introOptions: {
+					icon: "icon.png",
+				}
+			} , {
+				languages: [ "en", "ja" ],
+				languageOptions: 'language.json'
+			} ) ;
+		</script>
+		<script src="bundle.js?v=202306291216"></script>
+		
+		<div id="btn-score" style="position: fixed;
+			top: 4%;
+			left: 2%;
+			z-index: 9999;
+			text-align: right;
+			width: 100%;
+			user-select: none;
+			opacity: 0.6;
+			max-width: 100px;">
+			<a title="Lưu điểm tại Arcade"><img src="score.png" width="70%"/></a>
+			<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("btn-score"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+	   </div>
+   
+
+		
+	</body>
+</html>

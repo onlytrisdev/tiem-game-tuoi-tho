@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <languages>
+        <language>en</language>
+        <language>de</language>
+        <language>es</language>
+        <language>fr</language>
+        <language>it</language>
+        <language>pt</language>
+        <language>ru</language>
+    </languages>
+    <strings>
+        <string id="1" index="0">
+            <en>en</en>
+            <de>de</de>
+            <es>es</es>
+            <fr>fr</fr>
+            <it>it</it>
+            <pt>pt</pt>
+            <ru>ru</ru>
+        </string>
+        <string id="PAUSE" index="8">
+            <en>TẠM DỪNG</en>
+            <de>PAUSE</de>
+            <es>PAUSA</es>
+            <fr>PAUSE</fr>
+            <it>PAUSA</it>
+            <pt>PAUSE</pt>
+            <ru>ПАУЗА</ru>
+        </string>
+        <string id="SCORE" index="15">
+            <en>ĐIỂM</en>
+            <de>PUNKTE</de>
+            <es>PUNTUACIÓN</es>
+            <fr>SCORE</fr>
+            <it>PUNTEGGIO</it>
+            <pt>PONTUAÇÃO</pt>
+            <ru>СЧЁТ</ru>
+        </string>
+        <string id="GAMEOVER" index="23">
+            <en>Kết thúc</en>
+            <de>Spiel über</de>
+            <es>Fin del juego</es>
+            <fr>Partie terminée</fr>
+            <it>Gioco finito</it>
+            <pt>Fim de jogo</pt>
+            <ru>ИГРА ОКОНЧЕНА!</ru>
+        </string>
+        <string id="BEST" index="30">
+            <en>Tốt nhất</en>
+            <de>Bestleistung</de>
+            <es>Récord</es>
+            <fr>Meilleur</fr>
+            <it>Record</it>
+            <pt>Melhor</pt>
+            <ru>Лучший</ru>
+        </string>
+        <string id="HALL" index="37">
+            <en>Nhà thi đấu</en>
+            <de>Halle</de>
+            <es>Salón</es>
+            <fr>Salle</fr>
+            <it>Sala</it>
+            <pt>Corredor</pt>
+            <ru>зал</ru>
+        </string>
+        <string id="STREET" index="44">
+            <en>Đường phố</en>
+            <de>Straße</de>
+            <es>Calle</es>
+            <fr>Rue</fr>
+            <it>Strada</it>
+            <pt>Rua</pt>
+            <ru>улица</ru>
+        </string>
+        <string id="CYBERPUNK" index="51">
+            <en>Cyberpunk</en>
+            <de>Cyberpunk</de>
+            <es>Cyberpunk</es>
+            <fr>Cyberpunk</fr>
+            <it>Cyberpunk</it>
+            <pt>Cyberpunk</pt>
+            <ru>Киберпанк</ru>
+        </string>
+        <string id="BEACH" index="58">
+            <en>Bãi biển</en>
+            <de>Strand</de>
+            <es>Playa</es>
+            <fr>Plage</fr>
+            <it>Spiaggia</it>
+            <pt>De Praia</pt>
+            <ru>пляж</ru>
+        </string>
+    </strings>
+</stringresources>

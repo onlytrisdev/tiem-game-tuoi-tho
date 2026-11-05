@@ -1,0 +1,138 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,share1_jpg,share2_jpg,share3_jpg,system_json,soundpress_mp3,numimage_fnt,numimage_png,texiao1_json,texiao2_json,soundadd1_mp3,soundadd2_mp3,soundpeople_mp3,soundqiang_mp3,soundstar1_mp3,soundstar2_mp3,soundshop_mp3,soundwarn_mp3,gameall1_json,gameall2_json,crazygames_png,gameall3_json",
+			"name": "preload"
+		},
+		{
+			"keys": "loading2_png,loading1_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/system/share1.jpg",
+			"type": "image",
+			"name": "share1_jpg"
+		},
+		{
+			"url": "assets/system/share2.jpg",
+			"type": "image",
+			"name": "share2_jpg"
+		},
+		{
+			"url": "assets/system/share3.jpg",
+			"type": "image",
+			"name": "share3_jpg"
+		},
+		{
+			"url": "assets/system/system.json",
+			"type": "sheet",
+			"name": "system_json",
+			"subkeys": "bg_tips_png,default-portrait_png,head_cycle_mask_png,head_square_mask_png,loading_indicator_png,rank_levelbg_png,share_challenge_head1_png,share_challenge_head2_png,share_challenge_head3_png,share_crown_png,sharehead_png"
+		},
+		{
+			"url": "assets/system/loading2.png",
+			"type": "image",
+			"name": "loading2_png"
+		},
+		{
+			"url": "assets/system/loading1.png",
+			"type": "image",
+			"name": "loading1_png"
+		},
+		{
+			"url": "assets/sound/soundpress.mp3",
+			"type": "sound",
+			"name": "soundpress_mp3"
+		},
+		{
+			"url": "assets/image/numimage.fnt",
+			"type": "font",
+			"name": "numimage_fnt"
+		},
+		{
+			"url": "assets/image/numimage.png",
+			"type": "image",
+			"name": "numimage_png"
+		},
+		{
+			"url": "assets/particle/texiao1.json",
+			"type": "json",
+			"name": "texiao1_json"
+		},
+		{
+			"url": "assets/particle/texiao2.json",
+			"type": "json",
+			"name": "texiao2_json"
+		},
+		{
+			"name": "soundadd1_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundadd1.mp3"
+		},
+		{
+			"name": "soundadd2_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundadd2.mp3"
+		},
+		{
+			"name": "soundpeople_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundpeople.mp3"
+		},
+		{
+			"name": "soundqiang_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundqiang.mp3"
+		},
+		{
+			"name": "soundstar1_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundstar1.mp3"
+		},
+		{
+			"name": "soundstar2_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundstar2.mp3"
+		},
+		{
+			"name": "soundshop_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundshop.mp3"
+		},
+		{
+			"name": "soundwarn_mp3",
+			"type": "sound",
+			"url": "assets/sound/soundwarn.mp3"
+		},
+		{
+			"name": "gameall1_json",
+			"type": "sheet",
+			"url": "assets/image/gameall1.json",
+			"subkeys": "color1_png,color3_png,color2_png,color6_png,color7_png,color5_png,titlebg1_png,color4_png,mapbg1_png,avatar3_png,avatar2_png,avatar1_png,color9_png,color8_png,texiaoyun_png,texiao1_png,texiao3_png,texiao2_png"
+		},
+		{
+			"name": "gameall2_json",
+			"type": "sheet",
+			"url": "assets/image/gameall2.json",
+			"subkeys": "hero26_png,hero25_png,hero24_png,hero23_png,hero22_png,hero21_png,hero36_png,hero35_png,hero34_png,hero33_png,hero32_png,hero31_png,hero16_png,hero15_png,hero14_png,hero13_png,hero12_png,hero11_png,penselect_png,levelbg2_png,levelbg1_png,helptip_png,progress1_png,progress2_png,colorselect_png,penbtn2_png,penbg1_png,penbtn1_png,penbg2_png,penview1_png,penview2_png,penview3_png,gamebtn2_png,pen1_png,gamebtn1_png,pen2_png,pen3_png,gameview_png,brush2_png,brush1_png,overtitle4_png,overstar2_png,overtitle5_png,overstar1_png,overtitle2_png,overtitle3_png,overtitle1_png,overlight_png,startitle_png,overbg1_png,tipbg_png"
+		},
+		{
+			"name": "crazygames_png",
+			"type": "image",
+			"url": "assets/image/crazygames.png"
+		},
+		{
+			"name": "gameall3_json",
+			"type": "sheet",
+			"url": "assets/image/gameall3.json",
+			"subkeys": "level3_png,level35_png,level21_png,picture12_png,picture8_png,picture9_png,picture13_png,level20_png,level34_png,level2_png,level22_png,picture39_png,level36_png,picture11_png,picture10_png,picture38_png,level37_png,level23_png,level1_png,level5_png,picture14_png,picture28_png,level27_png,level33_png,level32_png,picture29_png,level26_png,picture15_png,level4_png,level6_png,level18_png,picture17_png,level30_png,level24_png,level25_png,level31_png,level19_png,picture16_png,level7_png,picture59_png,level56_png,level42_png,level43_png,picture58_png,level57_png,level41_png,level55_png,level54_png,level40_png,level44_png,level50_png,level51_png,level45_png,picture60_png,level53_png,picture48_png,level47_png,picture49_png,level46_png,level52_png,picture44_png,picture50_png,picture51_png,picture45_png,level60_png,picture53_png,level48_png,picture47_png,level49_png,picture46_png,picture52_png,level59_png,picture56_png,picture42_png,picture43_png,level58_png,picture57_png,picture41_png,picture55_png,picture54_png,picture40_png,level14_png,level28_png,picture27_png,picture33_png,picture1_png,picture32_png,level29_png,picture26_png,level15_png,level9_png,picture18_png,level17_png,picture30_png,picture24_png,picture2_png,picture3_png,picture25_png,picture31_png,picture19_png,level16_png,level8_png,picture35_png,picture21_png,level12_png,picture7_png,picture6_png,level13_png,picture20_png,picture34_png,picture22_png,level39_png,picture36_png,level11_png,picture4_png,picture5_png,level10_png,level38_png,picture37_png,picture23_png,titlebg18_png,titlebg4_png,titlebg5_png,titlebg7_png,titlebg6_png,titlebg3_png,titlebg11_png,titlebg2-1_png,titlebg10_png,titlebg12_png,titlebg2-2_png,titlebg13_png,titlebg17_png,titlebg16_png,titlebg14_png,titlebg8_png,titlebg9_png,titlebg15_png,titleview4_png,titleview2_png,moregame1_png,titleview3_png,titleview1_png,moregame2_png,moregame3_png,titlebtn3_png,titlebtn2_png,titlebtn1_png,titlebtn5_png,titlebtn4_png,rankme_png,shopbtn1_png,rankshare_png,rankbtn4_png,rankbtn2_png,rankbtn3_png,rankview1_png,rankmark_png,rankview3_png,rankbtn1_png,rankview2_png,rankbg_png,tipsbg_png,overbtn6_png,overbtn7_png,overbtn5_png,overbtn4_png,overbtn1_png,imagebg1_png,overbtn3_png,overbtn2_png,imagebg2_png,overbg4_png,interbg_png,overbg2_png,overbg3_png"
+		}
+	]
+}

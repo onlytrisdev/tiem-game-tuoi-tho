@@ -1,0 +1,75 @@
+﻿{"frames": {
+
+"continue_over":
+{
+	"frame": {"x":0,"y":0,"w":408,"h":185},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":408,"h":185},
+	"sourceSize": {"w":408,"h":185}
+},
+"continue_up":
+{
+	"frame": {"x":408,"y":0,"w":408,"h":185},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":408,"h":185},
+	"sourceSize": {"w":408,"h":185}
+},
+"main_menu_over":
+{
+	"frame": {"x":0,"y":185,"w":272,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":272,"h":141},
+	"sourceSize": {"w":272,"h":141}
+},
+"main_menu_up":
+{
+	"frame": {"x":272,"y":185,"w":272,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":272,"h":141},
+	"sourceSize": {"w":272,"h":141}
+},
+"moregames_btn_over":
+{
+	"frame": {"x":0,"y":326,"w":598,"h":230},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":598,"h":230},
+	"sourceSize": {"w":598,"h":230}
+},
+"moregames_btn_up":
+{
+	"frame": {"x":0,"y":556,"w":617,"h":250},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":617,"h":250},
+	"sourceSize": {"w":617,"h":250}
+},
+"start_btn_over":
+{
+	"frame": {"x":617,"y":556,"w":347,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":116},
+	"sourceSize": {"w":347,"h":116}
+},
+"start_btn_up":
+{
+	"frame": {"x":0,"y":806,"w":367,"h":135},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":367,"h":135},
+	"sourceSize": {"w":367,"h":135}
+}},
+"meta": {
+	"app": "Adobe Flash CS6",
+	"version": "12.0.0.481",
+	"image": "buttons.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

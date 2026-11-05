@@ -1,0 +1,107 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,share1_jpg,share2_jpg,share3_jpg,system_json,numimage1_fnt,numimage1_png,numimage2_fnt,numimage2_png,soundfail_mp3,soundok_mp3,soundpress_mp3,soundwarn_mp3,soundwin_mp3,gameall2_json,gameall1_json",
+			"name": "preload"
+		},
+		{
+			"keys": "loading2_png,loading1_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/system/share1.jpg",
+			"type": "image",
+			"name": "share1_jpg"
+		},
+		{
+			"url": "assets/system/share2.jpg",
+			"type": "image",
+			"name": "share2_jpg"
+		},
+		{
+			"url": "assets/system/share3.jpg",
+			"type": "image",
+			"name": "share3_jpg"
+		},
+		{
+			"url": "assets/system/system.json",
+			"type": "sheet",
+			"name": "system_json",
+			"subkeys": "bg_tips_png,default-portrait_png,head_cycle_mask_png,head_square_mask_png,loading_indicator_png,rank_levelbg_png,share_challenge_head1_png,share_challenge_head2_png,share_challenge_head3_png,share_crown_png,sharehead_png"
+		},
+		{
+			"url": "assets/system/loading2.png",
+			"type": "image",
+			"name": "loading2_png"
+		},
+		{
+			"url": "assets/image/numimage1.fnt",
+			"type": "font",
+			"name": "numimage1_fnt"
+		},
+		{
+			"url": "assets/image/numimage1.png",
+			"type": "image",
+			"name": "numimage1_png"
+		},
+		{
+			"url": "assets/image/numimage2.fnt",
+			"type": "font",
+			"name": "numimage2_fnt"
+		},
+		{
+			"url": "assets/image/numimage2.png",
+			"type": "image",
+			"name": "numimage2_png"
+		},
+		{
+			"url": "assets/sound/soundfail.mp3",
+			"type": "sound",
+			"name": "soundfail_mp3"
+		},
+		{
+			"url": "assets/sound/soundok.mp3",
+			"type": "sound",
+			"name": "soundok_mp3"
+		},
+		{
+			"url": "assets/sound/soundpress.mp3",
+			"type": "sound",
+			"name": "soundpress_mp3"
+		},
+		{
+			"url": "assets/sound/soundwarn.mp3",
+			"type": "sound",
+			"name": "soundwarn_mp3"
+		},
+		{
+			"url": "assets/sound/soundwin.mp3",
+			"type": "sound",
+			"name": "soundwin_mp3"
+		},
+		{
+			"url": "assets/system/loading1.png",
+			"type": "image",
+			"name": "loading1_png"
+		},
+		{
+			"name": "gameall2_json",
+			"type": "sheet",
+			"url": "assets/image/gameall2.json",
+			"subkeys": "lv25_6_png,lv25_5_png,lv25_4_png,lv25_3_png,lv25_2_png,lv25_1_png,lv25_0_png,lv24_4_png,lv24_3_png,lv24_2_png,lv24_1_png,lv24_0_png,lv23_2_png,lv23_1_png,lv23_0_png,lv22_5_png,lv22_4_png,lv22_3_png,lv22_2_png,lv22_1_png,lv22_0_png,lv21_2_png,lv21_1_png,lv21_0_png,lv20_6_png,lv20_5_png,lv20_4_png,lv20_3_png,lv20_2_png,lv20_1_png,lv20_0_png,lv19_6_png,lv19_5_png,lv19_4_png,lv19_3_png,lv19_2_png,lv19_1_png,lv19_0_png,lv18_4_png,lv18_3_png,lv18_2_png,lv18_1_png,lv18_0_png,lv17_1_png,lv17_0_png,lv16_3_png,lv16_2_png,lv16_1_png,lv16_0_png,lv15_1_png,lv15_0_png,lv14_0_png,lv13_1_png,lv13_0_png,lv12_6_png,lv12_5_png,lv12_4_png,lv12_3_png,lv12_2_png,lv12_1_png,lv12_0_png,lv11_0_png,lv10_2_png,lv10_1_png,lv10_0_png,lv9_2_png,lv9_1_png,lv9_0_png,lv8_1_png,lv8_0_png,lv7_0_png,lv6_3_png,lv6_2_png,lv6_1_png,lv5_4_png,lv5_3_png,lv5_2_png,lv5_1_png,lv5_0_png,lv4_1_png,lv4_0_png,lv3_4_png,lv3_3_png,lv3_2_png,lv3_1_png,lv3_0_png,lv2_btn_4_png,lv2_2_png,lv2_1_png,lv2_0_png,lv_1_3_png,lv_1_2_png,lv_1_1_png,lv_1_0_png,lv26_0_png,lv26_1_png,lv26_2_png,lv26_3_png,lv27_1_png,lv27_3_png,lv27_4_png,lv27_5_png,lv27_6_png,lv27_7_png,lv27_8_png,lv27_9_png,lv27_10_png,lv27_11_png,lv27_12_png,lv27_13_png"
+		},
+		{
+			"name": "gameall1_json",
+			"type": "sheet",
+			"url": "assets/image/gameall1.json",
+			"subkeys": "lv30_3_png,lv30_2_png,lv30_1_png,lv30_0_png,lv29_7_png,lv29_6_png,lv29_5_png,lv29_4_png,lv29_3_png,lv29_2_png,lv29_1_png,lv29_0_png,lv28_7_png,lv28_6_png,lv28_5_png,lv28_4_png,lv28_3_png,lv28_2_png,lv28_1_png,lv28_0_png,ic_back_1_png,ic_back_3_png,ic_back_2_png,ic_lock_1_png,bg_top_1_png,ic_choice_png,bg_top_2_png,choice_frame_1_png,fram_big_png,ic_questionmark_1_png,overgameFrame_png,overgamebg_png,pic_hand_1_png,pic_hand_2_png,overgametitle_png,overgameNext_png,ic_reset_1_png,ic_reset_3_png,ic_reset_2_png,btn_3_png,ic_key_1_png,ic_list_2_png,rank_png,ic_list_3_png,ic_key_2_png,ic_list_1_png,gamebg_png,ic_key_3_png,ic_wrong_png,ic_skip_1_png,tiptitle_png,ic_skip_3_png,ic_skip_2_png,close_png,keydouble_png,watchtvkey_png,levelKey_png,skipconfirm_png,skiptitle_png,rankbtn_png,tipbg_png,rankme_png,rankshare_png,rankbtn4_png,interbg_png,rankbtn2_png,rankbtn3_png,rankview1_png,rankmark_png,rankview3_png,rankbtn1_png,rankview2_png,rankbg_png,title_wenhao_png,title_bg_sun_png,title_logo_png,title_bg_png,title_title_png,title_play_png,lv31_0_png,lv31_1_png,lv31_2_png,lv31_3_png,lv31_4_png,lv32_0_png,lv32_1_png,lv32_3_png,lv32_4_png,lv32_5_png,lv32_6_png,lv32_7_png,lv32_10_png,lv33_0_png,lv33_1_png,lv33_2_png,lv34_0_png,lv34_1_png,lv34_2_png,lv34_3_png,lv34_4_png,lv34_5_png,lv35_0_png,lv35_1_png,lv35_2_png,lv35_3_png"
+		}
+	]
+}

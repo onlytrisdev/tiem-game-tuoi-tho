@@ -1,0 +1,90 @@
+{
+	"type": "Box",
+	"props": {
+		"x": 0,
+		"width": 210,
+		"scaleY": 1,
+		"scaleX": 1,
+		"name": "name",
+		"height": 300,
+		"anchorY": 1,
+		"anchorX": 0.5
+	},
+	"compId": 286,
+	"child": [{
+		"type": "Label",
+		"props": {
+			"y": 266.5,
+			"text": "Lv.1 你的名字",
+			"strokeColor": "#000000",
+			"stroke": 4,
+			"name": "txt",
+			"fontSize": 26,
+			"font": "Arial",
+			"color": "#f9f9f9",
+			"centerX": 0,
+			"bold": true,
+			"anchorX": 0.5
+		},
+		"compId": 291
+	}, {
+		"type": "Image",
+		"props": {
+			"y": 163,
+			"visible": false,
+			"skin": "gameui/IMG_emoji_aggro.png",
+			"scaleY": 0.8,
+			"scaleX": 0.8,
+			"name": "emoji",
+			"centerX": 0,
+			"anchorY": 0.5,
+			"anchorX": 0.5
+		},
+		"compId": 292
+	}, {
+		"type": "Box",
+		"props": {
+			"y": 280,
+			"scaleY": 0.6,
+			"scaleX": 0.6,
+			"name": "hpBox",
+			"centerX": 0
+		},
+		"compId": 294,
+		"child": [{
+			"type": "Image",
+			"props": {
+				"y": 23,
+				"x": 0,
+				"width": 130,
+				"skin": "gameui/progress_bar_outline.png",
+				"height": 34
+			},
+			"compId": 295
+		}, {
+			"type": "Panel",
+			"props": {
+				"y": 23,
+				"x": 0,
+				"width": 130,
+				"name": "progress",
+				"height": 34
+			},
+			"compId": 296,
+			"child": [{
+				"type": "Image",
+				"props": {
+					"y": 1,
+					"x": 1,
+					"width": 128,
+					"skin": "gameui/progress_bar_fill_5.png",
+					"name": "img",
+					"height": 32
+				},
+				"compId": 297
+			}]
+		}]
+	}],
+	"loadList": ["gameui/IMG_emoji_aggro.png", "gameui/progress_bar_outline.png", "gameui/progress_bar_fill_5.png"],
+	"loadList3D": []
+}

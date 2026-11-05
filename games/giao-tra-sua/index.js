@@ -1,0 +1,6 @@
+window.screenOrientation = "sensor_portrait";
+var platform = "ssjjh5",
+	channel = null;
+loadLib("libs/min/laya.core.min.js"), loadLib("libs/min/laya.html.min.js"), loadLib("libs/min/laya.ui.min.js"), loadLib("libs/min/laya.d3.min.js"), loadLib("libs/min/laya.physics3D.min.js"), loadLib("fc-framework/fc.define.js"), loadLib("fc-framework/fc.framework.js"), loadLib("fc-framework/fc.ad.export.js"), loadLib("fc-framework/fc.plugin.js"), loadLib("fc-framework/fc.utils.js"), loadLib("fc-framework/platform/fc.view.js"), loadLib(`fc-framework/adapter/fc.${platform}.js`), "ssjjh5" == platform && loadLib("api.js");
+var scriptUrl = platform;
+"native" == scriptUrl && "undefined" != typeof fcn && null != fcn.getScriptUrl && (scriptUrl = fcn.getScriptUrl()), null != scriptUrl && "" != scriptUrl && scriptUrl != platform ? loadLib(`${scriptUrl}`) : loadLib(`fc-framework/platform/fc.${platform}.js`), loadLib("js/bundle.js");

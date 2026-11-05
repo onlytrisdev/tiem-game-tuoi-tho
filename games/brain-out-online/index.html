@@ -1,0 +1,726 @@
+
+
+<!DOCTYPE html><html><head>
+
+<meta charset="utf-8">
+
+<title>Brain Out Online</title>
+
+
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	<script src="arcade-save.js"></script>
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="full-screen" content="true">
+
+<meta name="screen-orientation" content="portrait">
+
+<meta name="x5-fullscreen" content="true">
+
+<meta name="360-fullscreen" content="true">
+
+<style>
+
+        html, body {
+
+            -ms-touch-action: none;
+
+            background: #5E5858;
+
+            padding: 0;
+
+            border: 0;
+
+            margin: 0;
+
+            height: 100%;
+
+        }
+
+		
+
+		canvas{
+
+		max-width:initial !important;
+
+		}
+
+
+
+		.egret-player {
+
+			position: relative;
+
+		}
+
+
+
+		#gv-send-score-wrap {
+
+			position: fixed;
+
+			top: 0;
+
+			left: 0;
+
+			z-index: 9999;
+
+			display: none;
+
+			transform-origin: top right;
+
+			pointer-events: none;
+
+			user-select: none;
+
+			-webkit-user-select: none;
+
+			-moz-user-select: none;
+
+			-ms-user-select: none;
+
+			-webkit-touch-callout: none;
+
+		}
+
+
+
+		#gv-send-score-btn {
+
+			pointer-events: auto;
+
+			display: flex;
+
+			flex-direction: column;
+
+			align-items: center;
+
+			gap: 2px;
+
+			padding: 4px 6px;
+
+			border: none;
+
+			background: transparent;
+
+			border-radius: 8px;
+
+			cursor: pointer;
+
+			-webkit-tap-highlight-color: transparent;
+
+			font-family: "Comic Sans MS", "Chalkboard SE", "Marker Felt", "Segoe UI", Tahoma, sans-serif;
+
+			color: #000;
+
+			font-size: 18px;
+
+			font-weight: 700;
+
+			line-height: 1.2;
+
+			text-shadow: 0 1px 2px rgba(254, 254, 254, 0.8);
+
+			user-select: none;
+
+			-webkit-user-select: none;
+
+			-moz-user-select: none;
+
+			-ms-user-select: none;
+
+			-webkit-touch-callout: none;
+
+			transition: transform 0.22s ease;
+
+			transform: translateY(0);
+
+		}
+
+
+
+		#gv-send-score-btn:hover {
+
+			transform: translateY(-5px);
+
+		}
+
+
+
+		#gv-send-score-btn:active {
+
+			transform: translateY(-2px);
+
+			opacity: 0.9;
+
+		}
+
+
+
+		#gv-send-score-btn img,
+
+		#gv-send-score-btn span {
+
+			user-select: none;
+
+			-webkit-user-select: none;
+
+			-moz-user-select: none;
+
+			-ms-user-select: none;
+
+			-webkit-touch-callout: none;
+
+		}
+
+
+
+		#gv-send-score-btn img {
+
+			width: 70px;
+
+			height: 60px;
+
+			display: block;
+
+			object-fit: contain;
+
+			pointer-events: none;
+
+			-webkit-user-drag: none;
+
+		}
+
+		
+
+    </style>
+
+</head>
+
+<body>
+
+<script>
+
+    window.$T_GAME_VERSION=""
+
+    window.$T_GAME_ARGS={};
+
+    window.$T__RES__FILE="resource/default.res.json";
+
+    window.$T__THE__FILE="resource/default.thm.json";
+
+    window.$T_PROGRESS = 0;
+
+    </script>
+
+<div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="60" data-content-width="640" data-content-height="1136" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+
+	<div id="gv-send-score-wrap">
+
+		<button type="button" id="gv-send-score-btn" title="Gửi điểm" aria-label="Gửi điểm">
+
+			<img src="save-score.png" alt="" width="70" height="60" draggable="false">
+
+			<span>Gửi điểm</span>
+
+		</button>
+
+	</div>
+
+</div>
+
+<script>
+
+    var loadScript = function (list, callback) {
+
+        var loaded = 0;
+
+        var loadNext = function () {
+
+            loadSingleScript(list[loaded], function () {
+
+                loaded++;
+
+                if (loaded >= list.length) {
+
+                    callback();
+
+                }
+
+                else {
+
+                    loadNext();
+
+                }
+
+            })
+
+        };
+
+        loadNext();
+
+    };
+
+
+
+    var loadSingleScript = function (src, callback) {
+
+        var s = document.createElement('script');
+
+        s.async = false;
+
+        s.src = src;
+
+        s.addEventListener('load', function () {
+
+            s.parentNode.removeChild(s);
+
+            s.removeEventListener('load', arguments.callee, false);
+
+            callback();
+
+        }, false);
+
+        document.body.appendChild(s);
+
+    };
+
+
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+
+    xhr.addEventListener("load", function () {
+
+        var manifest = JSON.parse(xhr.response);
+
+        var list = manifest.initial.concat(manifest.game);
+
+        loadScript(list, function () {
+
+            /**
+
+             * Cloud save must finish seeding localStorage before GameScene.LoadGameScore.
+
+             * Policy: Arcade cloud wins; local is fallback only.
+
+             */
+
+            var startEgret = function () {
+
+                egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+
+                    var backingStore = context.backingStorePixelRatio ||
+
+                        context.webkitBackingStorePixelRatio ||
+
+                        context.mozBackingStorePixelRatio ||
+
+                        context.msBackingStorePixelRatio ||
+
+                        context.oBackingStorePixelRatio ||
+
+                        context.backingStorePixelRatio || 1;
+
+                    return (window.devicePixelRatio || 1) / backingStore;
+
+                }});
+
+                if (window.ArcadeSave && ArcadeSave.startPeriodicSave) {
+
+                    ArcadeSave.startPeriodicSave();
+
+                }
+
+                if (window.ArcadeScoreBtn && ArcadeScoreBtn.startAnchoring) {
+
+                    ArcadeScoreBtn.startAnchoring();
+
+                }
+
+            };
+
+            if (window.ArcadeSave && ArcadeSave.init) {
+
+                ArcadeSave.init().finally(startEgret);
+
+            } else {
+
+                startEgret();
+
+            }
+
+        });
+
+    });
+
+    xhr.send(null);
+
+
+
+    (function () {
+
+        function getCurrentLevelForScore() {
+
+            if (window.ArcadeSave && typeof ArcadeSave.getLocalSnapshot === "function") {
+
+                var snap = ArcadeSave.getLocalSnapshot();
+
+                if (snap && snap.CurrentLevel != null) {
+
+                    return Math.max(0, parseInt(snap.CurrentLevel, 10) || 0);
+
+                }
+
+            }
+
+            var gate = 1;
+
+            try {
+
+                gate = parseInt(localStorage.getItem("BrainTeaser_NumGate") || "1", 10) || 1;
+
+            } catch (e) {
+
+                gate = 1;
+
+            }
+
+            return Math.max(0, gate - 1);
+
+        }
+
+
+
+        function onSendScoreClick(e) {
+
+            if (e) {
+
+                e.preventDefault();
+
+                e.stopPropagation();
+
+            }
+
+            var level = getCurrentLevelForScore();
+
+            try {
+
+                if (typeof GV !== "undefined") {
+
+                    new GV().saveScore(level);
+
+                    if (window.console && console.log) {
+
+                        console.log("[GV] saveScore CurrentLevel=", level);
+
+                    }
+
+                } else if (window.console && console.warn) {
+
+                    console.warn("[GV] GV is not available; score not sent. CurrentLevel=", level);
+
+                }
+
+            } catch (err) {
+
+                if (window.console && console.warn) {
+
+                    console.warn("[GV] saveScore failed:", err);
+
+                }
+
+            }
+
+        }
+
+
+
+        var wrap = document.getElementById("gv-send-score-wrap");
+
+        var btn = document.getElementById("gv-send-score-btn");
+
+        var player = document.querySelector(".egret-player");
+
+        var resizeObserver = null;
+
+        var pollTimer = null;
+
+        var burstRaf = null;
+
+        var burstUntil = 0;
+
+        var observedCanvas = null;
+
+
+
+        function findGameCanvas() {
+
+            if (!player) {
+
+                return null;
+
+            }
+
+            return player.querySelector("canvas");
+
+        }
+
+
+
+        function syncSendScoreBtnPosition() {
+
+            if (!wrap || !btn) {
+
+                return;
+
+            }
+
+            var canvas = findGameCanvas();
+
+            if (!canvas) {
+
+                wrap.style.display = "none";
+
+                return;
+
+            }
+
+
+
+            var rect = canvas.getBoundingClientRect();
+
+            if (!rect.width || !rect.height) {
+
+                wrap.style.display = "none";
+
+                return;
+
+            }
+
+
+
+            // showAll: canvas rect is the game area; scale vs design width 640.
+
+            var s = rect.width / 640;
+
+            wrap.style.display = "block";
+
+            wrap.style.transform = "scale(" + s + ")";
+
+
+
+            // transform-origin top right → pin unscaled top-right to canvas corner.
+
+            var pad = 8 * s;
+
+            wrap.style.top = Math.round(rect.top + pad) + "px";
+
+            wrap.style.left = Math.round(rect.right - pad - wrap.offsetWidth) + "px";
+
+
+
+            if (resizeObserver && canvas !== observedCanvas) {
+
+                try {
+
+                    if (observedCanvas) {
+
+                        resizeObserver.unobserve(observedCanvas);
+
+                    }
+
+                    resizeObserver.observe(canvas);
+
+                    observedCanvas = canvas;
+
+                } catch (err) {
+
+                    // ignore
+
+                }
+
+            }
+
+        }
+
+
+
+        function burstSync(durationMs) {
+
+            burstUntil = Date.now() + (durationMs || 400);
+
+            if (burstRaf) {
+
+                return;
+
+            }
+
+            var tick = function () {
+
+                syncSendScoreBtnPosition();
+
+                if (Date.now() < burstUntil) {
+
+                    burstRaf = requestAnimationFrame(tick);
+
+                } else {
+
+                    burstRaf = null;
+
+                    syncSendScoreBtnPosition();
+
+                }
+
+            };
+
+            burstRaf = requestAnimationFrame(tick);
+
+        }
+
+
+
+        function onLayoutChange() {
+
+            burstSync(400);
+
+        }
+
+
+
+        function startAnchoring() {
+
+            syncSendScoreBtnPosition();
+
+            burstSync(500);
+
+            var attempts = 0;
+
+            if (pollTimer) {
+
+                clearInterval(pollTimer);
+
+            }
+
+            pollTimer = setInterval(function () {
+
+                attempts++;
+
+                syncSendScoreBtnPosition();
+
+                if ((findGameCanvas() && attempts > 4) || attempts > 80) {
+
+                    clearInterval(pollTimer);
+
+                    pollTimer = null;
+
+                    burstSync(400);
+
+                }
+
+            }, 50);
+
+        }
+
+
+
+        window.ArcadeScoreBtn = {
+
+            startAnchoring: startAnchoring,
+
+            sync: syncSendScoreBtnPosition,
+
+            burstSync: burstSync
+
+        };
+
+
+
+        if (btn) {
+
+            btn.addEventListener("click", onSendScoreClick);
+
+            btn.addEventListener("touchend", function (e) {
+
+                e.preventDefault();
+
+                onSendScoreClick(e);
+
+            }, { passive: false });
+
+            btn.addEventListener("selectstart", function (e) {
+
+                e.preventDefault();
+
+            });
+
+            btn.addEventListener("dragstart", function (e) {
+
+                e.preventDefault();
+
+            });
+
+        }
+
+
+
+        window.addEventListener("resize", onLayoutChange);
+
+        window.addEventListener("orientationchange", function () {
+
+            setTimeout(onLayoutChange, 100);
+
+        });
+
+        document.addEventListener("fullscreenchange", onLayoutChange);
+
+        document.addEventListener("webkitfullscreenchange", onLayoutChange);
+
+        document.addEventListener("mozfullscreenchange", onLayoutChange);
+
+        document.addEventListener("MSFullscreenChange", onLayoutChange);
+
+
+
+        if (window.visualViewport) {
+
+            window.visualViewport.addEventListener("resize", onLayoutChange);
+
+            window.visualViewport.addEventListener("scroll", onLayoutChange);
+
+        }
+
+
+
+        if (typeof ResizeObserver !== "undefined") {
+
+            resizeObserver = new ResizeObserver(function () {
+
+                onLayoutChange();
+
+            });
+
+            if (player) {
+
+                resizeObserver.observe(player);
+
+            }
+
+        }
+
+    })();
+
+</script>
+
+</body></html>
+

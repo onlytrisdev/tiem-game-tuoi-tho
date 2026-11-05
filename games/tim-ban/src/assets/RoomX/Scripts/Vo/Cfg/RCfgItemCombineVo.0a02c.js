@@ -1,0 +1,1 @@
+window.RCfgItemCombineVo=function(){this.ID=null,this.ItemIDs=null,this.CItemID=null},window.RCfgItemCombineVo.prototype.GetKey=function(){return this.ID},window.RCfgItemCombineVo.prototype.ReadValue=function(t){this.ID=t.ID,this.ItemIDs=t.ItemIDs,this.CItemID=t.CItemID};

@@ -1,0 +1,16 @@
+{
+	"name": "RifleAssault",
+	"short_name": "RifleAssault",
+	"description": "Bạn là vị tướng! Quân đội kẻ thù đang đến! \nChạm vào các nút vũ khí để mua quân đội của bạn. Chạm vào những người lính để làm cho chúng di chuyển. Quản lý việc mua hàng và di chuyển của bạn để vượt qua kẻ thù! Tiếp cận đến cùng và sau đó bạn sẽ chiến thắng!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/splash.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}
