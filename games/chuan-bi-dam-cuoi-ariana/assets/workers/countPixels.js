@@ -1,0 +1,1 @@
+onmessage=function(a){for(var e=new Uint8ClampedArray(a.data.pixels),t=0,i=3;i<e.length;i+=4)e[i]>=20&&t++;postMessage({total:t,image:a.data.image,id:a.data.id})};

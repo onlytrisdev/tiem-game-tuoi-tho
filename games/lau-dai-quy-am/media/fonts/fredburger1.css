@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'fredburgerBlack';
+    src: local('fredburgerBlack'),
+        url('./fred_burger_black.woff');
+    font-display: 'fallback';
+}
+@font-face {
+    font-family: 'fredburgerShadow';
+    src: local('fredburgerShadow'),
+        url('./fred_burger_shadow.woff');
+    font-display: 'fallback';
+}
+@font-face {
+    font-family: 'fredburgerBlackArabic';
+    src: local('fredburgerBlackArabic'),
+        url('./fred_burger_black_arabic.woff');
+    font-display: 'fallback';
+}
+@font-face {
+    font-family: 'fredburgerShadowArabic';
+    src: local('fredburgerShadowArabic'),
+        url('./fred_burger_shadow_arabic.woff');
+    font-display: 'fallback';
+}

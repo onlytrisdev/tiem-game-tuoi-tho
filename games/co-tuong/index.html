@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	<meta charset="utf-8">
+
+<title>Cờ Tướng</title>
+
+<link href="css/chess.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width" />
+
+</head>
+
+<body>
+
+<div class="box" id="box">
+
+	<div class="chess_left">
+
+		<canvas id="chess"></canvas>
+
+		<audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+
+		<audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>
+
+		<div>
+
+			<div class="bn_box" id="bnBox">
+
+				<input type="button" name="offensivePlay" id="tyroPlay" value="Mới chơi" />
+
+				<input type="button" name="offensivePlay" id="superPlay" value="Bình thường" />
+
+
+
+
+
+				<input type="button" name="regret" id="regretBn" value="Lùi nước" />
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="chess_right" id="chessRight">
+
+		<select name="billList" id="billList">
+
+		</select>
+
+		<ol id="billBox" class="bill_box">
+
+		</ol>
+
+	</div>
+
+	<div id="moveInfo" class="move_info"> </div>
+
+</div>
+
+<script type="text/javascript" src="js/common.js"></script> 
+
+<script type="text/javascript" src="js/play.js"></script> 
+
+<script type="text/javascript" src="js/AI.js"></script> 
+
+<script type="text/javascript" src="js/bill.js"></script> 
+
+<script type="text/javascript" src="js/gambit.js"></script>
+
+
+
+
+
+
+</body>
+
+</noscript>
+
+
+
+</html>
+

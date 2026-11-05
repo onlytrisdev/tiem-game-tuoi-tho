@@ -1,0 +1,51 @@
+html, body { background-color: rgb(252, 237, 209); margin: 0px; padding: 0px; position: relative; font-family: Arial; width: 100%; }
+#game { position: absolute; left: 0px; top: 0px; z-index: 0; }
+#ajaxbar { background: url("media/graphics/loading/ajax-loader.gif") center center no-repeat; }
+#canvas { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; transform: scale3d(1, 1, 1); z-index: 1; }
+#orientate { position: absolute; float: left; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 10002; display: none; }
+#orientate img { position: absolute; float: left; width: 100%; height: 100%; }
+.play { position: absolute; float: left; width: 100%; height: 100%; z-index: 1000; background-color: rgb(255, 255, 255); left: 0px; top: 0px; display: none; }
+.play img { position: absolute; float: left; width: 100%; height: 100%; z-index: 1000; left: 0px; top: 0px; }
+#nohtml5 { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgb(0, 0, 0); z-index: 1002; visibility: hidden; }
+#nohtml5 img { position: absolute; width: 100%; height: 100%; }
+#nohtml5-bubble { position: absolute; bottom: 20px; left: 50px; width: 380px; height: 100px; z-index: 1002; color: rgb(0, 0, 0); background: rgba(255, 255, 255, 0.75); border-radius: 10px; }
+#nohtml5-text { padding: 10px; }
+.horizontal-seperator { height: 10px; width: 100%; }
+.preloadText { position: absolute; display: none; z-index: -1; }
+@font-face { font-family: mainfont; src: url("media/fonts/cronus.ttf") format("truetype"), url("media/fonts/cronus.otf") format("opentype"), url("media/fonts/cronus.woff") format("woff"); }
+#MobileAdInGamePreroll, #MobileAdInGamePreroll2, #MobileAdInGamePreroll3 { position: absolute; float: left; min-width: 320px; z-index: 10000; left: 0px; top: 0px; display: none; background: rgba(0, 0, 0, 0.7); transition: all 0.6s ease 0s; }
+#MobileAdInGamePreroll-Box, #MobileAdInGamePreroll2-Box, #MobileAdInGamePreroll3-Box { z-index: 10000; position: absolute; width: 302px; height: 250px; }
+#MobileAdInGamePreroll-Box-Body, #MobileAdInGamePreroll2-Box-Body, #MobileAdInGamePreroll3-Box-Body { z-index: 10000; position: relative; background: transparent; }
+#MobileAdInGamePreroll-Box-Footer, #MobileAdInGamePreroll2-Box-Footer, #MobileAdInGamePreroll3-Box-Footer { z-index: 10000; position: relative; font-size: 11px; height: 20px; color: rgb(255, 255, 255); background: transparent; }
+#MobileAdInGamePreroll-Box-Header, #MobileAdInGamePreroll2-Box-Header, #MobileAdInGamePreroll3-Box-Header { z-index: 10000; position: relative; margin-top: -2px; font-size: 11px; height: 20px; text-align: right; color: rgb(255, 255, 255); background: transparent; }
+#MobileAdInGamePreroll-Box-Close, #MobileAdInGamePreroll2-Box-Close, #MobileAdInGamePreroll3-Box-Close { position: absolute; z-index: 10005; background-image: url("media/graphics/generic-ad/light/close-button.png"); background-repeat: no-repeat; width: 22px; height: 22px; top: -4px; margin-right: -1px; display: none; }
+#MobileAdInGameHeader, #MobileAdInGameHeader2, #MobileAdInGameHeader3 { display: none; position: absolute; background: transparent; }
+#MobileAdInGameFooter, #MobileAdInGameFooter2, #MobileAdInGameFooter3 { display: none; position: absolute; background: transparent; }
+#MobileAdInGameEnd, #MobileAdInGameEnd2, #MobileAdInGameEnd3 { position: absolute; float: left; min-width: 320px; z-index: 10000; left: 0px; top: 0px; display: none; background: rgba(0, 0, 0, 0.7); transition: all 0.6s ease 0s; }
+#MobileAdInGameEnd-Box, #MobileAdInGameEnd2-Box, #MobileAdInGameEnd3-Box { z-index: 10000; position: absolute; width: 302px; height: 250px; }
+#MobileAdInGameEnd-Box-Body, #MobileAdInGameEnd2-Box-Body, #MobileAdInGameEnd3-Box-Body { z-index: 10000; position: relative; background: transparent; }
+#MobileAdInGameEnd-Box-Footer, #MobileAdInGameEnd2-Box-Footer, #MobileAdInGameEnd3-Box-Footer { z-index: 10000; position: relative; font-size: 11px; height: 20px; color: rgb(255, 255, 255); background: transparent; }
+#MobileAdInGameEnd-Box-Header, #MobileAdInGameEnd2-Box-Header, #MobileAdInGameEnd3-Box-Header { z-index: 10000; position: relative; margin-top: -2px; font-size: 11px; height: 20px; text-align: right; color: rgb(255, 255, 255); background: transparent; }
+#MobileAdInGameEnd-Box-Close, #MobileAdInGameEnd2-Box-Close, #MobileAdInGameEnd3-Box-Close { position: absolute; z-index: 10005; background-image: url("media/graphics/generic-ad/light/close-button.png"); background-repeat: no-repeat; width: 22px; height: 22px; top: -4px; margin-right: -1px; display: none; }
+.ig_debug { position: fixed; left: 0px; bottom: 0px; width: 100%; background-color: rgb(0, 0, 0); border-top: 2px solid rgb(245, 116, 1); font-size: 12px; color: rgb(255, 255, 255); z-index: 1000; user-select: none; display: none; }
+.ig_debug_panel_menu { height: 28px; background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(0, 0, 0)), to(rgb(51, 51, 51))); }
+.ig_debug_panel_menu div { float: left; height: 22px; padding: 6px 8px 0px; border-right: 1px solid rgb(51, 51, 51); }
+.ig_debug_panel_menu .ig_debug_head { font-weight: bold; color: rgb(136, 136, 136); }
+.ig_debug_menu_item:hover { cursor: pointer; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+.ig_debug_menu_item.active, .ig_debug_menu_item.active:hover { background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); }
+.ig_debug_stats { position: absolute; right: 0px; top: 0px; float: right; color: rgb(136, 136, 136); border-left: 1px solid rgb(51, 51, 51); text-align: right; }
+.ig_debug_stats span { width: 3em; display: inline-block; margin-right: 0.2em; margin-left: 0.3em; font-family: "bitstream vera sans mono", "courier new"; white-space: nowrap; color: rgb(255, 255, 255) !important; }
+.ig_debug_panel { height: 152px; overflow: auto; position: relative; }
+.ig_debug_panel canvas { border-bottom: 1px solid rgb(68, 68, 68); }
+.ig_debug_panel .ig_debug_panel { padding: 8px; height: auto; float: left; background-color: rgb(0, 0, 0); border-right: 2px solid rgb(34, 34, 34); }
+.ig_debug_option { padding: 2px 0px 2px 8px; cursor: pointer; }
+.ig_debug_option:first-child { margin-top: 8px; }
+.ig_debug_option:hover { background-color: rgb(17, 17, 17); }
+.ig_debug_graph_mark { position: absolute; color: rgb(136, 136, 136); left: 4px; font-size: 10px; margin-top: -12px; }
+.ig_debug_legend { color: rgb(204, 204, 204); }
+.ig_debug_label_mark { display: inline-block; width: 10px; height: 10px; margin-right: 4px; transition: all 0.1s linear 0s; }
+.ig_debug_legend_color { display: inline-block; width: 6px; height: 10px; margin-right: 4px; margin-left: 16px; }
+.ig_debug_legend_number { width: 3em; display: inline-block; text-align: right; font-family: "bitstream vera sans mono", "courier new"; color: rgb(255, 255, 255); margin-right: 0.2em; }
+.ig_debug_map_container { position: relative; overflow: hidden; border: 1px solid rgb(136, 136, 136); }
+.ig_debug_map_container canvas { position: absolute; }
+.ig_debug_map_screen { position: absolute; border: 1px solid rgb(255, 0, 255); }

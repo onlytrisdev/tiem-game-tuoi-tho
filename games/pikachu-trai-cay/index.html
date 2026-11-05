@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Pikachu Trái Cây - Arcade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=67">
+
+  <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+</head>
+
+<body>
+
+  <!-- Thông báo xoay ngang trên mobile -->
+
+  <div id="rotate-overlay" class="rotate-overlay" aria-hidden="true">
+
+    <div class="rotate-overlay__content">
+
+      <div class="rotate-overlay__icon">📱</div>
+
+      <p>Xoay ngang để có trải nghiệm tốt hơn</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div id="app" class="app">
+
+    <!-- Màn hình chọn độ khó -->
+
+    <div id="menu-screen" class="screen screen--active">
+
+      <div class="menu-content">
+
+      <header class="menu-header">
+
+        <div class="logo-wrap" aria-hidden="true">
+
+          <img src="https://localhost/themes/default/images/logo.svg" alt="Arcade" class="logo">
+
+        </div>
+
+        <h1 class="game-title">Pikachu Trái Cây</h1>
+
+        <p class="game-subtitle">Nối hai ô giống nhau</p>
+
+      </header>
+
+      <p id="load-status" class="load-status">Đang tải hình trái cây...</p>
+
+      <div id="progress-panel" class="progress-panel">
+
+        <p class="progress-panel__heading">Kỷ lục</p>
+
+        <p class="progress-panel__submit">
+
+          <strong id="total-score">0</strong>
+
+        </p>
+
+      </div>
+
+      <div class="menu-actions">
+
+        <button id="btn-start" class="btn btn--primary btn--menu-main" type="button" disabled>
+
+          Bắt đầu
+
+        </button>
+
+        <button id="btn-open-levels" class="btn btn--primary btn--menu-main" type="button" disabled>
+
+          Chọn level
+
+        </button>
+
+      </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Màn hình chọn cấp độ -->
+
+    <div id="level-select-screen" class="screen">
+
+      <div class="level-select-content">
+
+        <div class="level-select-board">
+
+          <header class="menu-header level-select-header">
+
+            <h1 class="game-title game-title--level-select">Chọn cấp độ</h1>
+
+          </header>
+
+          <div class="level-grid-scroll">
+
+            <div id="level-grid" class="level-grid" role="list"></div>
+
+          </div>
+
+          <footer class="level-select-footer">
+
+            <button id="btn-level-back" class="btn btn--primary btn--menu-main btn--level-close" type="button">Đóng</button>
+
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Màn hình chơi -->
+
+    <div id="game-screen" class="screen">
+
+      <header class="game-toolbar" role="toolbar" aria-label="Thanh điều khiển">
+
+        <div class="logo-wrap logo-wrap--compact" aria-hidden="true">
+
+          <img src="https://localhost/themes/default/images/logo.svg" alt="Arcade" class="logo logo--compact">
+
+        </div>
+
+
+
+        <div class="stat stat--score">
+
+          <span class="stat__label">Điểm</span>
+
+          <span id="score-display" class="stat__value">0</span>
+
+        </div>
+
+
+
+        <div class="stat stat--time">
+
+          <span class="stat__label">Thời gian</span>
+
+          <span id="time-display" class="stat__value">0:00</span>
+
+        </div>
+
+
+
+        <button id="btn-hint" class="btn btn--toolbar btn--hint" type="button" title="Gợi ý">
+
+          <span class="btn__icon-wrap">
+
+            <span class="btn__icon">💡</span>
+
+            <span id="hint-btn-count" class="btn__count">3</span>
+
+            <span id="hint-btn-ad-badge" class="ad-badge ad-badge--btn" hidden title="Xem QC nhận thêm">▶</span>
+
+          </span>
+
+          <span class="btn__text">Gợi ý</span>
+
+        </button>
+
+
+
+        <button id="btn-shuffle" class="btn btn--toolbar btn--shuffle" type="button" title="Xáo trộn">
+
+          <span class="btn__icon-wrap">
+
+            <span class="btn__icon">🔀</span>
+
+            <span id="shuffle-btn-count" class="btn__count">3</span>
+
+            <span id="shuffle-btn-ad-badge" class="ad-badge ad-badge--btn" hidden title="Xem QC nhận thêm">▶</span>
+
+          </span>
+
+          <span class="btn__text">Xáo trộn</span>
+
+        </button>
+
+
+
+        <div class="stat stat--level">
+
+          <span class="stat__label">Cấp</span>
+
+          <span id="level-badge" class="stat__value">1</span>
+
+        </div>
+
+
+
+        <button id="btn-pause" class="btn btn--toolbar btn--pause" type="button" title="Tạm dừng">
+
+          <span class="btn__icon">⏸</span>
+
+          <span class="btn__text">Tạm dừng</span>
+
+        </button>
+
+      </header>
+
+
+
+      <main class="game-main">
+
+        <div id="auto-shuffle-toast" class="game-toast" hidden role="status">Không còn nước đi — tự động xáo trộn (miễn phí)</div>
+
+        <div id="board-wrapper" class="board-wrapper">
+
+          <div id="board" class="board" role="grid" aria-label="Bàn chơi Pikachu"></div>
+
+          <svg id="connection-layer" class="connection-layer" aria-hidden="true"></svg>
+
+        </div>
+
+      </main>
+
+    </div>
+
+
+
+    <!-- Overlay tạm dừng -->
+
+    <div id="pause-overlay" class="modal-overlay" hidden>
+
+      <div class="modal modal--pause">
+
+        <h2>Tạm dừng</h2>
+
+        <p>Nhấn tiếp tục để quay lại game</p>
+
+        <button id="btn-resume" class="btn btn--primary">Tiếp tục</button>
+
+        <button id="btn-restart" class="btn btn--secondary">Chơi lại</button>
+
+        <button id="btn-menu" class="btn btn--secondary">Về menu</button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Overlay kết quả -->
+
+    <div id="result-overlay" class="modal-overlay" hidden>
+
+      <div class="modal modal--result">
+
+        <div id="result-icon" class="result-icon">🏆</div>
+
+        <h2 id="result-title">Chiến thắng!</h2>
+
+        <p id="result-message-lose" class="result-message-lose" hidden></p>
+
+        <p id="result-time-info" class="result-time-info" hidden>Thời gian: <strong id="result-time-value">0s</strong></p>
+
+        <p class="result-stat result-stat--grand">Số điểm: <strong id="result-score">0</strong></p>
+
+        <p class="result-stat result-stat--total">Tổng điểm: <strong id="result-total-value">0</strong></p>
+
+        <div class="result-actions">
+
+          <button id="btn-back-menu" class="btn btn--result" type="button">Về menu</button>
+
+          <button id="btn-play-again" class="btn btn--result" type="button">Chơi lại</button>
+
+          <button id="btn-next-level" class="btn btn--result" type="button" hidden>Level tiếp</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Âm thanh -->
+
+  <audio id="sfx-match" preload="auto"><source src="audio/dung.mp3" type="audio/mpeg"></audio>
+
+  <audio id="sfx-wrong" preload="auto"><source src="audio/sai.mp3" type="audio/mpeg"></audio>
+
+  <audio id="sfx-click" preload="auto"><source src="audio/click.mp3" type="audio/mpeg"></audio>
+
+  <audio id="bgm-player" preload="auto"></audio>
+
+
+
+  <script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+
+  <script src="js/pathfinder.js?v=35"></script>
+
+  <script src="js/fruitAssets.js?v=35"></script>
+
+  <script src="js/board.js?v=36"></script>
+
+  <script src="js/backgroundAssets.js?v=36"></script>
+
+  <script src="js/renderer.js?v=41"></script>
+
+  <script src="js/audio.js?v=35"></script>
+
+  <script src="js/playerProgress.js?v=38"></script>
+
+  <script src="js/gameSession.js?v=36"></script>
+
+  <script src="js/cloudSave.js?v=35"></script>
+
+  <script src="js/gameHistory.js?v=35"></script>
+
+  <script src="js/game.js?v=49"></script>
+
+</body>
+
+</html>
+

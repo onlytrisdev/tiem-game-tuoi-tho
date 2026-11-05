@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<meta name=viewport content="maximum-scale = 1, user-scalable = no, width = device-width, initial-scale = 1"/>
+
+<title>Kinh đô thời trang</title>
+
+<script type="text/javascript">
+
+	var isHalf = false;
+
+	var FScale = 1;
+
+	var FImageDir ='';
+
+	var FPageSize = {width:750, height:550};
+
+</script>
+
+<style type="text/css">
+
+	#left{position: absolute;left:0;top:0;z-index:1;}
+
+	#right{position: absolute;right:0;top:0;z-index:2;}
+
+	body{width:100%;overflow: hidden;}
+
+	.canvasHolder{position: absolute;top:0;left:0;z-index:5;}
+
+</style>
+
+<script src="createjs-2013.12.12.min.js"></script>
+
+<script src="movieclip-0.7.0.min.js"></script>
+
+<script type="text/javascript" src="library-min/core.min.js"></script>
+
+<script type="text/javascript" src="cdn.js"></script>
+
+<script type='text/javascript'>
+
+var canvas, stage, exportRoot, images,canvasWrap, bgSound, fxSound;
+
+var isGameAPIReady = false;
+
+var gameAPIObserver = new Observer;
+
+var API_READY = 'API_READY';
+
+var logoObject = null;
+
+var logoImage = new Image;
+
+var apiLinks = {};
+
+logoImage.crossOrigin = "Anonymous";
+
+logoImage.onload = function() {
+
+	logoObject.width = this.width;
+
+	logoObject.height = this.height;
+
+	gameAPIObserver.sendNotify(API_READY, {});
+
+}
+
+var SpilData = {
+
+	id:'576742227280291060'
+
+};
+
+
+
+GameAPI.loadAPI(function(API) {
+
+	isGameAPIReady = true;
+
+	var o = GameAPI.Branding.getLogo();
+
+	logoObject = {image:o.image,action:o.action};
+
+	apiLinks = GameAPI.Branding.getLinks();
+
+	if(logoObject.image === true) {
+
+		logoObject.width = 0;
+
+		logoObject.height = 0;
+
+		gameAPIObserver.sendNotify(API_READY, { });
+
+	}else {
+
+		
+
+	}
+
+}, SpilData);
+
+function PreventDefault(event) {
+
+	event.preventDefault() ;
+
+}
+
+function init() {
+
+	window.ontouchmove = PreventDefault;
+
+	canvas = document.getElementById("canvas");
+
+	canvas.style.width = FPageSize.width + 'px';
+
+	canvas.style.height = FPageSize.height + 'px';
+
+	canvasWrap = document.getElementById('canvasHolder');
+
+	images = images||{};
+
+	handleComplete();
+
+	
+
+}
+
+
+
+function handleFileLoad(event) {
+
+	if (event.item.type == "image") { images[event.item.id] = event.result; }
+
+}
+
+
+
+function handleComplete() {
+
+	exportRoot = new FandlrGame.wrap;
+
+	stage = new createjs.Stage(canvas);
+
+	stage.addChild(exportRoot);
+
+	stage.update();
+
+	ResizeManager.getInstance();
+
+	createjs.Ticker.setFPS(24);
+
+	createjs.Ticker.addEventListener('tick', stage);
+
+}
+
+function showBgSound(str, loop) {	}
+
+function showFxSound(str) {	}
+
+function loadSound() {}
+
+</script>
+
+</head>
+
+<body onload="init();" style="margin:0;padding:0">
+
+<script type="text/javascript">
+
+	document.write('<div id="left"><img src="./assets/images'+FImageDir+'/side.jpg" width="100%" /></div><div id="right"><img src="./assets/images'+FImageDir+'/side.jpg" width="100%" /></div>')
+
+</script>
+
+	<div id="canvasHolder" class="canvasHolder">
+
+		<script type="text/javascript">
+
+		document.write('<canvas id="canvas" width="'+FPageSize.width+'" height="'+FPageSize.height+'"');
+
+		document.write('style="position:absolute; margin:auto; left:0; top:0; bottom:0; right:0; width:100%; height:100%; -webkit-tap-highlight-color: transparent;"></canvas>')
+
+		</script>
+
+		 
+
+	</div>
+
+	<audio id="bgAudio"></audio>
+
+	<audio id= "fxAudio"></audio>
+
+</body>
+
+</html>

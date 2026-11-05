@@ -1,0 +1,26 @@
+{
+    "gradient": {
+        "top": "#352b0f",
+        "bottom": "#241e0d"
+    },
+    "portal": {
+        "title": "moregreatgames_farm.png",
+        "button": "btn_zibbo_01.png",
+        "url": "http://localhost/"
+    },
+    "games": [
+        {
+            "icon": "cross_sell_icon_pet.png",
+            "url": "http://m.zibbo.com/html5games/en_US/Dream+Pet+Link+2/"
+        },
+        {
+            "icon": "cross_sell_icon_farm.png",
+            "url": "http://m.zibbo.com/html5games/en_US/Dream+Farm+Link2/"
+        },
+        {
+            "icon": "cross_sell_icon_love.png",
+            "url": "http://m.zibbo.com/html5games/en_US/Dream+Love+Link+2/"
+        }
+    ],
+    "ahMark": "AH_logo_watermark_farm.png"
+}

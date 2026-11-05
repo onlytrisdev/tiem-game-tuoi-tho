@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<meta charset="utf-8" />
+<script src="game_core/phaser/Phaser.js"></script>
+<script src="start.js"></script>
+<script type="text/javascript">
+    var width = window.innerWidth;    
+var interval = setInterval(function(){    
+if (width === 0) {    
+if (typeof document.body === "object" && document.body !== null){   
+document.body.style.display = "none";   
+}   
+if (window.innerWidth > width) {    
+window.location.reload();   
+clearInterval(interval);    
+return;   
+}   
+} else {    
+clearInterval(interval);    
+}   
+},50);    
+function ga() {
+    
+}
+</script>
+<style>@font-face {
+            font-family:'BPreplay';
+            src: url('assets/fonts/BPreplayExtended.OTF');
+
+        }.fontPreload{position:absolute;top:-100px}</style>
+</head>
+<body style="margin:0;padding:0">
+<div id="content" style="width:100%; height:100%;position:absolute;top:0;left:0"></div>
+<div id="theGame" style="display:none"></div>
+<div class="fontPreload" style="font-family: 'BPreplay';">.</div>
+
+
+</body>
+</html>

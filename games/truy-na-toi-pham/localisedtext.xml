@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<use_language code="en" />
+	
+	<!-- Use pipe character "|" for new lines -->
+	
+	<!-- changeTextSize tag +/-/number of text size for change text font, examples "+10", "-10", "20" -->
+	
+	<!-- Speech -->
+	<text>
+		<original_text>Where do you think|you're going?</original_text>
+		<en>Bạn nghĩ | bạn đang đi đâu?</en>
+	</text>
+	
+	<text>
+		<original_text>Great! Now I'll never make it to|the Crime Convention on time.</original_text>
+		<en>Tuyệt quá! Bây giờ tôi sẽ không bao giờ tham gia|Công ước tội phạm đúng hạn.</en>
+	</text>
+	
+	<text>
+		<original_text>Crime Convention?</original_text>
+		<en>Công ước tội phạm?</en>
+	</text>
+	
+	<text>
+		<original_text>Guys! Guys! Great news!|The Crime Convention's in town!</original_text>
+		<en>Các bạn ơi! Các bạn ơi! Tin vui! | Công ước tội phạm đã có mặt trong thị trấn!</en>
+	</text>
+	
+	<text>
+		<original_text>Yeah, we noticed.</original_text>
+		<en>Yeah, chúng tôi đã thấy.</en>
+	</text>
+	
+	<text>
+		<original_text>Ohhh, yeah!|Let the Bad Guy|Bingo begin!</original_text>
+		<en>Ohhh, yeah!|Để kẻ xấu|bắt đầu chơi Bingo!</en>
+	</text>
+	
+	<text>
+		<original_text>What is this bingo|of the bad guys?</original_text>
+		<en>Đây có phải là trò chơi bingo|của những kẻ xấu?</en>
+	</text>
+	
+	<text>
+		<original_text>If we can take down 14|villains in one day, we'll|break Batman's world record.</original_text>
+		<en>Nếu chúng ta có thể hạ gục 14|kẻ xấu trong một ngày, chúng ta sẽ|phá kỷ lục thế giới của Batman.</en>
+	</text>
+	
+	<text>
+		<original_text>Do we have to start|with Mother Mae Eye?</original_text>
+		<en>Chúng ta có phải bắt đầu|với Mother Mae Eye không?</en>
+	</text>
+	
+	<text>
+		<original_text>Yeah, dude.|Her pies are delicious!</original_text>
+		<en>Đúng đó anh bạn.|Bánh của cô ấy rất ngon!</en>
+	</text>
+	
+	<text>
+		<original_text>Not as delicious as justice.||Titans, GO!</original_text>
+		<en>Không ngon bằng công lý.||Các Titans, Đi thôi!</en>
+	</text>
+	
+	<text>
+		<original_text>Jump City is|crawling with villains!</original_text>
+		<en>Jump City |đang có những kẻ xấu nguy hiểm!</en>
+	</text>
+	
+	<text>
+		<original_text>We'd better get down|to the convention center!</original_text>
+		<en>Tốt hơn chúng ta nên xuống|trung tâm hội nghị!</en>
+	</text>
+	
+	<text>
+		<original_text>All right, Mammoth.|Prepare to get stamped!</original_text>
+		<en>Được rồi, Mammoth.|Chuẩn bị để được đóng dấu!</en>
+	</text>
+	
+	<text>
+		<original_text>Let's just get|this over with.</original_text>
+		<en>Hãy vượt qua|chuyện này với.</en>
+	</text>
+	
+	<text>
+		<original_text>At this rate, we'll|never catch all 14|villains in a day!</original_text>
+		<en>Với tốc độ này, chúng tôi sẽ|không bao giờ bắt hết được 14|kẻ xấu trong một ngày</en>
+	</text>
+	
+	<text>
+		<original_text>We'd better split up.</original_text>
+		<en>Tốt hơn chúng ta nên tách ra.</en>
+	</text>
+	
+	<text>
+		<original_text>Star and I will head inside.|You three search the streets.|GO!</original_text>
+		<en>Star và tôi sẽ đi vào trong.|Ba bạn tìm kiếm trên đường phố.|Đi thôi!</en>
+	</text>
+	
+	<text>
+		<original_text>Now where did I park?</original_text>
+		<en>Bây giờ tôi đã đỗ xe ở đâu?</en>
+	</text>
+	
+	<text>
+		<original_text>Is that not|the Dr. Light?</original_text>
+		<en>Đó không phải là|Dr. Light? hay sao?</en>
+	</text>
+	
+	<text>
+		<original_text>Get him!</original_text>
+		<en>Bắt lấy anh ta!</en>
+	</text>
+	
+	<text>
+		<original_text>You're outnumbered,|boy wonder!</original_text>
+		<en>Bọn ta đông hơn,|cậu bé thắc mắc!</en>
+	</text>
+	
+	<text>
+		<original_text>Looks like it's lights|out for Dr. Light.</original_text>
+		<en>Có vẻ như nó tắt đèn|cho Dr. Light.</en>
+	</text>
+	
+	<text>
+		<original_text>You're mine, Jinx!</original_text>
+		<en>Em là của anh, Jinx!</en>
+	</text>
+	
+	<text>
+		<original_text>Nice to see|you too, Cyborg.</original_text>
+		<en>Tôi cũng rất vui khi|được gặp bạn, Cyborg.</en>
+	</text>
+	
+	<text>
+		<original_text>Enough with the flirting.|Let's fight!</original_text>
+		<en>Đã quá đủ với những lời tán tỉnh.|Chiến đấu thôi nào!</en>
+	</text>
+	
+	<text>
+		<original_text>Perimeter secure!</original_text>
+		<en>Phạm vi an toàn!</en>
+	</text>
+	
+	<text>
+		<original_text>Jinx - call me.</original_text>
+		<en>Jinx - gọi tôi.</en>
+	</text>
+	
+	<text>
+		<original_text>Are we done yet?</original_text>
+		<en>Chúng ta xong chưa?</en>
+	</text>
+	
+	<text>
+		<original_text>This line is ridiculous.</original_text>
+		<en>Dòng này thật nực cười.</en>
+	</text>
+	
+	<text>
+		<original_text>Your number's up,|Numerous!</original_text>
+		<en>Số của bạn đã tăng lên,|Rất nhiều!</en>
+	</text>
+	
+	<text>
+		<original_text>Get 'em!</original_text>
+		<en>Bắt lấy chúng!</en>
+	</text>
+	
+	<text>
+		<original_text>Crime alert from|Justice Java!</original_text>
+		<en>Cảnh báo tội phạm từ|Justice Java!</en>
+	</text>
+	
+	<text>
+		<original_text>Raven, Star, go with Cyborg.|Beast Boy and I will|patrol around here.</original_text>
+		<en>Raven, Star, đi cùng Cyborg.|Beast Boy và tôi sẽ|tuần tra quanh đây.</en>
+	</text>
+	
+	<text>
+		<original_text>Looking for us,|See-More?</original_text>
+		<en>Đang tìm kiếm chúng tôi,|See-More?</en>
+	</text>
+	
+	<text>
+		<original_text>Titans!</original_text>
+		<en>Titans!</en>
+	</text>
+	
+	<text>
+		<original_text>We won't see|anymore of him.</original_text>
+		<en>Chúng ta sẽ không còn|thấy anh ấy nữa.</en>
+	</text>
+	
+	<text>
+		<original_text>Hey,|I was gonna say that.</original_text>
+		<en>Này,|Tôi sẽ nói điều đó.</en>
+	</text>
+	
+	<text>
+		<original_text>Plasmus!</original_text>
+		<en>Plasmus!</en>
+	</text>
+	
+	<text>
+		<original_text>What kind of monster|orders decaf?!</original_text>
+		<en>Những loại yêu cầu|quái vật giải mã?!</en>
+	</text>
+	
+	<text>
+		<original_text>Well, that was gross.</original_text>
+		<en>Chà, điều đó thật thô thiển.</en>
+	</text>
+	
+	<text>
+		<original_text>Perhaps we should|check in on|Robin and Beast Boy.</original_text>
+		<en>Có lẽ chúng ta nên|kiểm tra |Robin and Beast Boy.</en>
+	</text>
+	
+	<text>
+		<original_text>Oh, Titans!|Can you point me|towards Hall H?|I'm giving the keynote.</original_text>
+		<en>Oh, Titans!|Bạn có thể chỉ cho tôi|về sảnh H được không?|Tôi phải đưa bài phát biểu quan trọng.</en>
+	</text>
+	
+	<text>
+		<original_text>I've got your directions|RIGHT HERE!</original_text>
+		<en>Tôi có chỉ đường của bạn|NGAY TẠI ĐÂY!</en>
+	</text>
+	
+	<text>
+		<original_text>And stay out!</original_text>
+		<en>Và tránh xa!</en>
+	</text>
+	
+	<text>
+		<original_text>We're running|out of daylight.|Let's go!\</original_text>
+		<en>Chúng ta sắp hết|ánh sáng ban ngay.|Đi thôi!\</en>
+	</text>
+	
+	<text>
+		<original_text>We just need one|more villain to|beat the record!</original_text>
+		<en>Chúng ta chỉ cần thêm một|kẻ xấu nữa|để đánh bại kỷ lục!</en>
+	</text>
+	
+	<text>
+		<original_text>Get lost, dweebs!</original_text>
+		<en>Đi lạc, dweebs!</en>
+	</text>
+	
+	<text>
+		<original_text>Bingo!</original_text>
+		<en>Bingo!</en>
+	</text>
+	
+	<text>
+		<original_text>We did it.</original_text>
+		<en>Chúng ta làm được rồi.</en>
+	</text>
+	
+	<text>
+		<original_text>Hooray!</original_text>
+		<en>Hooray!</en>
+	</text>
+	
+	<text>
+		<original_text>YES! We just broke|Batman\'s world record!</original_text>
+		<en>VÂNG! Chúng ta vừa mới phá vỡ|kỷ lục thế giới của Batman!</en>
+	</text>
+	
+	<text>
+		<original_text>Uhh, Robin.|Hive 5 have escaped!</original_text>
+		<en>Uhh, Robin.|Hive 5 đã trốn thoát!</en>
+	</text>
+	
+	<text>
+		<original_text>The H.I.V.E. Five!</original_text>
+		<en>H.I.V.E. Five!</en>
+	</text>
+	
+	<text>
+		<original_text>Is this part of|the bingo?!</original_text>
+		<en>Đây có phải là một phần của|trò chơi bingo?!</en>
+	</text>
+	
+	<text>
+		<original_text>Shut up and fight,|losers!</original_text>
+		<en>Im lặng và chiến đấu,|kẻ thua cuộc!</en>
+	</text>
+	<!-- End of speech -->
+	
+	<!-- Buttons and Titles -->
+	<text>
+		<original_text>PLEASE SELECT A LEVEL</original_text>
+		<en>VUI LÒNG CHỌN MỘT CẤP ĐỘ</en>
+	</text>
+	
+	<text>
+		<original_text>NEW GAME</original_text>
+		<en>CHƠI MỚI</en>
+	</text>
+	
+	<text>
+		<original_text>= ATTACK RANGE</original_text>
+		<en>= PHẠM VI TẤN CÔNG</en>
+	</text>
+	
+	<text>
+		<original_text>CONGRATULATIONS!</original_text>
+		<en>XIN CHÚC MỪNG!</en>
+	</text>
+	
+	<text>
+		<original_text>You've won Bad Guy Bingo and defeated H.I.V.E.5... For now</original_text>
+		<en>Bạn đã thắng Bingo và đánh bại H.I.V.E.5 ... Còn bây giờ</en>
+	</text>
+	
+	<text>
+		<original_text>NEXT</original_text>
+		<en>TIẾP THEO</en>
+	</text>
+	
+	<text>
+		<original_text>MENU</original_text>
+		<en>MENU</en>
+	</text>
+	
+	<text>
+		<original_text>CREDITS</original_text>
+		<en>THÔNG TIN</en>
+	</text>
+	
+	<text>
+		<original_text>PLAY</original_text>
+		<en>CHƠI</en>
+	</text>
+	
+	<text>
+		<original_text>YOU HAVE BEEN|DEFEATED!</original_text>
+		<en>BẠN ĐÃ BỊ|ĐÁNH BẠI!</en>
+	</text>
+	
+	<text>
+		<original_text>CRIME ALERT!</original_text>
+		<en>CẢNH BÁO TỘI PHẠM!</en>
+	</text>
+	
+	<text>
+		<original_text>Help the Titans protect Jump City.</original_text>
+		<en>Giúp các Titan bảo vệ Jump City.</en>
+	</text>
+	
+	<text>
+		<original_text>MELEE VS. RANGED</original_text>
+		<en>CẬN CHIẾN VS. TẦM XA</en>
+	</text>
+	
+	<text>
+		<original_text>Melee Attacks are better|against Ranged Villains.||Try to use Robin against the slingshot guys|and Starfire against the other thugs.</original_text>
+		<en>Tấn công cận chiến tốt hơn|khi chống lại kẻ xấu tấn công tầm xa||Cố gắng sử dụng Robin để chống lại những kẻ bắn súng cao su</en>
+	</text>
+	
+	<text>
+		<original_text>END TURN OR UNDO MOVE?</original_text>
+		<en>KẾT THÚC HOẶC DI CHUYỂN LẠI?</en>
+	</text>
+	
+	<text>
+		<original_text>End Turn will end your team's turn</original_text>
+		<en>Chọn "KẾT THÚC LƯỢT" sẽ kết thúc lượt của đội bạn</en>
+	</text>
+	
+	<text>
+		<original_text>PAUSED</original_text>
+		<en>TẠM DỪNG</en>
+	</text>
+	
+	<text>
+		<original_text>RETRY</original_text>
+		<en>THỬ LẠI</en>
+	</text>
+	
+	<text>
+		<original_text>LEVELS</original_text>
+		<en>CẤP ĐỘ</en>
+	</text>
+	
+	<text>
+		<original_text>GO!</original_text>
+		<en>ĐI THÔI!</en>
+	</text>
+	
+	<text>
+		<original_text>END TURN</original_text>
+		<en>KẾT THÚC LƯỢT</en>
+	</text>
+	
+	<text>
+		<original_text>UNDO</original_text>
+		<en>HOÀN TÁC</en>
+	</text>
+	
+	<text>
+		<original_text>CANCEL</original_text>
+		<en>HỦY</en>
+	</text>
+	
+	<text>
+		<original_text>CONTINUE</original_text>
+		<en>TIẾP TỤC</en>
+	</text>
+	
+	<text>
+		<original_text>START A NEW GAME?</original_text>
+		<en>BẮT ĐẦU TRÒ CHƠI MỚI</en>
+	</text>
+	
+	<text>
+		<original_text>All your Titans will be rest|and you will start at level 1</original_text>
+		<en>Tất cả các Titan của bạn sẽ được nghỉ ngơi|và bạn sẽ bắt đầu ở cấp độ 1</en>
+	</text>
+	
+	<text>
+		<original_text>YES</original_text>
+		<en>ĐỒNG Ý</en>
+	</text>
+	
+	<text>
+		<original_text>NO</original_text>
+		<en>KHÔNG</en>
+	</text>
+	<!-- End of Buttons and Titles -->
+	
+	<!-- Tutorials -->
+	<text>
+		<original_text>POISON ATTACK</original_text>
+		<en>TẤN CÔNG BẰNG CHẤT ĐỘC</en>
+	</text>
+	
+	<text>
+		<original_text>Beast Boy's Mosquito Bite does a little bit of damage each round.</original_text>
+		<en>Muỗi cắn của Beast Boy gây một ít sát thương mỗi hiệp.</en>
+	</text>
+	
+	<text>
+		<original_text>AREA ATTACK</original_text>
+		<en>KHU VỰC TẤN CÔNG</en>
+	</text>
+	
+	<text>
+		<original_text>Cyborg's Ground Pound will hit everyone in range, including Titans!</original_text>
+		<en>Cú đập đất của Cyborg sẽ tấn công tất cả mọi người trong phạm vi, bao gồm cả Titans!</en>
+	</text>
+	
+	<text>
+		<original_text>DASH ATTACK</original_text>
+		<en>CUỘC TẤN CÔNG LƯỚT QUA</en>
+	</text>
+	
+	<text>
+		<original_text>Cyborg's Jetpack Bash will move him to his target and damage multiple enemies.</original_text>
+		<en>Cú đấm phản lực của Cyborg sẽ di chuyển anh ta đến mục tiêu của mình và gây sát thương lên nhiều kẻ địch.</en>
+	</text>
+	
+	<text>
+		<original_text>Beast Boy's Cheetah Slash will move him to his target square.</original_text>
+		<en>Báo vồ của Beast Boy sẽ di chuyển anh ta đến ô mục tiêu.</en>
+	</text>
+	
+	<text>
+		<original_text>Click Robin to select him</original_text>
+		<en>Nhấp vào Robin để chọn anh ta</en>
+	</text>
+	
+	<text>
+		<original_text>MOVE</original_text>
+		<en>DI CHUYỂN</en>
+	</text>
+	
+	<text>
+		<original_text>Robin can move to any highlighted square.</original_text>
+		<en>Robin có thể di chuyển đến bất kỳ ô vuông được đánh dấu nào.</en>
+	</text>
+	
+	<text>
+		<original_text>Click here to move Robin.</original_text>
+		<en>Nhấn vào đây để di chuyển Robin.</en>
+	</text>
+	
+	<text>
+		<original_text>Select Robin's Punch Attack.</original_text>
+		<en>Chọn cú đấm của Robin.</en>
+	</text>
+	
+	<text>
+		<original_text>ATTACK</original_text>
+		<en>TẤN CÔNG</en>
+	</text>
+	
+	<text>
+		<original_text>Robin can attack any highlighted square.||Using this attack will end Robin's turn.</original_text>
+		<en>Robin có thể tấn công bất kỳ ô vuông được đánh dấu nào.||Sử dụng đòn tấn công này sẽ kết thúc lượt của Robin.</en>
+	</text>
+	
+	<text>
+		<original_text>Click here to Attack the Thug.</original_text>
+		<en>Bấm vào đây để tấn công Thug.</en>
+	</text>
+	
+	<text>
+		<original_text>You will automatically counterattack if an enemy is range.</original_text>
+		<en>Bạn sẽ tự động phản công nếu có kẻ thù trong tầm đánh</en>
+	</text>
+	
+	<text>
+		<original_text>Use these buttons to undo or end your turn.</original_text>
+		<en>Sử dụng các nút này để hoàn tác hoặc kết thúc lượt của bạn.</en>
+	</text>
+	
+	<text>
+		<original_text>High Ground increases Attack and Defense by 50%</original_text>
+		<en>High Ground tăng chỉ số tấn công và phòng thủ lên 50%</en>
+	</text>
+	<!-- End of Tutorials -->
+	
+	<!-- Titan Names and Actions -->
+	<text>
+		<original_text>Roll over icons for info</original_text>
+		<en>Cuộn qua các biểu tượng để biết thông tin</en>
+	</text>
+	
+	<text>
+		<original_text>Available in </original_text>
+		<en>Có sẵn trong </en>
+	</text>
+	
+	<text>
+		<original_text> turn</original_text>
+		<en> lượt</en>
+	</text>
+	
+	<text>
+		<original_text>s</original_text>
+		<en>s</en>
+	</text>
+	
+	<text>
+		<original_text>Locked</original_text>
+		<en>Đã khóa</en>
+	</text>
+	
+	<text>
+		<original_text>Robin</original_text>
+		<en>Robin</en>
+	</text>
+	
+	<text>
+		<original_text>Punch</original_text>
+		<en>Cú đấm</en>
+	</text>
+	
+	<text>
+		<original_text>Melee Attack</original_text>
+		<en>Tấn công cận chiến</en>
+	</text>
+	
+	<text>
+		<original_text>Jump Kick</original_text>
+		<en>Cú đá</en>
+	</text>
+	
+	<text>
+		<original_text>Staff Smash</original_text>
+		<en>Cú đập</en>
+	</text>
+	
+	<text>
+		<original_text>Birdarang</original_text>
+		<en>Birdarang</en>
+	</text>
+	
+	<text>
+		<original_text>Range Attack</original_text>
+		<en>Phạm vi tấn công</en>
+	</text>
+	
+	<text>
+		<original_text>Raven</original_text>
+		<en>Raven</en>
+	</text>
+	
+	<text>
+		<original_text>Demon Vortex</original_text>
+		<en>Vòng xoáy của quỷ</en>
+	</text>
+	
+	<text>
+		<original_text>Special Attack</original_text>
+		<en>Tấn công đặc biệt</en>
+	</text>
+	
+	<text>
+		<original_text>(affects surrounding squares)</original_text>
+		<en>(ảnh hưởng đến các hình vuông xung quanh)</en>
+	</text>
+	
+	<text>
+		<original_text>Heal a Titan</original_text>
+		<en>Hồi máu cho Titan</en>
+	</text>
+	
+	<text>
+		<original_text>Special Action</original_text>
+		<en>Kỹ năng đặc biệt</en>
+	</text>
+	
+	<text>
+		<original_text>Teleport</original_text>
+		<en>Dịch chuyển</en>
+	</text>
+	
+	<text>
+		<original_text>Dark Energy</original_text>
+		<en>Năng lượng bóng đêm</en>
+	</text>
+	
+	<text>
+		<original_text>Starfire</original_text>
+		<en>Starfire</en>
+	</text>
+	
+	<text>
+		<original_text>Evade</original_text>
+		<en>NÉ ĐÒN</en>
+	</text>
+	
+	<text>
+		<original_text>Eyebeams</original_text>
+		<en>Ánh mắt</en>
+	</text>
+	
+	<text>
+		<original_text>Starbolts</original_text>
+		<en>Tia laser xanh</en>
+	</text>
+	
+	<text>
+		<original_text>Starblast</original_text>
+		<en>Vụ nổ sao</en>
+	</text>
+	
+	<text>
+		<original_text>Beast Boy</original_text>
+		<en>Beast Boy</en>
+	</text>
+	
+	<text>
+		<original_text>Kitty Camo</original_text>
+		<en>Mèo con Camo</en>
+	</text>
+	
+	<text>
+		<original_text>Cheetah Slash</original_text>
+		<en>Báo vồ</en>
+	</text>
+	
+	<text>
+		<original_text>Dash Attack</original_text>
+		<en>Tấn công lướt</en>
+	</text>
+	
+	<text>
+		<original_text>Gorilla Punch</original_text>
+		<en>Cú đấm của Gorilla</en>
+	</text>
+	
+	<text>
+		<original_text>Moquito Bite</original_text>
+		<en>Muỗi đốt</en>
+	</text>
+	
+	<text>
+		<original_text>Poison Attack</original_text>
+		<en>Tấn công thuốc độc</en>
+	</text>
+	
+	<text>
+		<original_text>Cyborg</original_text>
+		<en>Cyborg</en>
+	</text>
+	
+	<text>
+		<original_text>Jetpack Bash</original_text>
+		<en>Cú đấm phản lực</en>
+	</text>
+	
+	<text>
+		<original_text>Ground Pound</original_text>
+		<en>Đập đất</en>
+	</text>
+	
+	<text>
+		<original_text>Sonic Cannon</original_text>
+		<en>Pháo Sonic</en>
+	</text>
+	
+	<text>
+		<original_text>LEVEL UP IN </original_text>
+		<en>LÊN CẤP TRONG </en>
+	</text>
+	
+	<text>
+		<original_text> Points to Spend</original_text>
+		<en> Điểm để chi tiêu</en>
+	</text>
+	
+	<text>
+		<original_text> Point to Spend</original_text>
+		<en> Điểm để chi tiêu</en>
+	</text>
+	
+	<text>
+		<original_text>Roll over action icon for info</original_text>
+		<en>Cuộn qua biểu tượng để biết thông tin</en>
+	</text>
+	
+	<text>
+		<original_text>Action locked, level up to unlock</original_text>
+		<en>Đã khóa hành động, hãy lên cấp để mở khóa</en>
+	</text>
+	<!-- End of Titan Names and Actions -->
+	
+	
+	<!-- Villains -->
+	<text>
+		<original_text>Thug</original_text>
+		<en>Thug</en>
+	</text>
+	
+	<text>
+		<original_text>Slingshot</original_text>
+		<en>Súng cao su</en>
+	</text>
+	
+	<text>
+		<original_text>Mae-Eye</original_text>
+		<en>Mae-Eye</en>
+	</text>
+	
+	<text>
+		<original_text>Pie Toss, Drops Pies</original_text>
+		<en>Pie Toss, Drops Pies</en>
+	</text>
+	
+	<text>
+		<original_text>Plasmus</original_text>
+		<en>Plasmus</en>
+	</text>
+	
+	<text>
+		<original_text>Line of Fire</original_text>
+		<en>Dòng của lửa</en>
+	</text>
+	
+	<text>
+		<original_text>Gizmo</original_text>
+		<en>Gizmo</en>
+	</text>
+	
+	<text>
+		<original_text>Rockets</original_text>
+		<en>Rockets</en>
+	</text>
+	
+	<text>
+		<original_text>Demon</original_text>
+		<en>Demon</en>
+	</text>
+	
+	<text>
+		<original_text>Scare</original_text>
+		<en>Scare</en>
+	</text>
+	
+	<text>
+		<original_text>Dr. Light</original_text>
+		<en>Dr. Light</en>
+	</text>
+	
+	<text>
+		<original_text>Beam Blast</original_text>
+		<en>Vụ nổ chùm</en>
+	</text>
+	
+	<text>
+		<original_text>Hologram</original_text>
+		<en>Ảnh ba chiều</en>
+	</text>
+	
+	<text>
+		<original_text>Billy Numerous</original_text>
+		<en>Rất nhiều Billy</en>
+	</text>
+	
+	<text>
+		<original_text>Karate Kick, Clones</original_text>
+		<en>Cú đá Karate, Nhân bản</en>
+	</text>
+	
+	<text>
+		<original_text>Mammoth</original_text>
+		<en>Mammoth</en>
+	</text>
+	
+	<text>
+		<original_text>Power Punch</original_text>
+		<en>Cú đấm sức mạnh</en>
+	</text>
+	
+	<text>
+		<original_text>See-More</original_text>
+		<en>See-More</en>
+	</text>
+	
+	<text>
+		<original_text>Laser Eye</original_text>
+		<en>Mắt laser</en>
+	</text>
+	
+	<text>
+		<original_text>Robot Soldier</original_text>
+		<en>Chiến binh robot</en>
+	</text>
+	
+	<text>
+		<original_text>Kick Smash</original_text>
+		<en>Cú đá uy lực</en>
+	</text>
+	
+	<text>
+		<original_text>Magic Pie</original_text>
+		<en>Bánh ma thuật</en>
+	</text>
+	
+	<text>
+		<original_text>Kamikaze</original_text>
+		<en>Kamikaze</en>
+	</text>
+	
+	<text>
+		<original_text>Jinx</original_text>
+		<en>Jinx</en>
+	</text>
+	
+	<text>
+		<original_text>Plasma Burst, Hex</original_text>
+		<en>Vụ nổ plazma, Lục giác</en>
+	</text>
+	
+	<text>
+		<original_text>Trigon</original_text>
+		<en>Trigon</en>
+	</text>
+	
+	<text>
+		<original_text>Flick, Mega Blast</original_text>
+		<en>Búng tay, Vụ nổ siêu cấp</en>
+	</text>
+	<!-- End of Villains -->
+	
+	<!-- Other -->
+	<text>
+		<original_text>HEAL</original_text>
+		<en>CHỮA TRỊ</en>
+	</text>
+	
+	<text>
+		<original_text>WARP</original_text>
+		<en>LÀM CONG</en>
+	</text>
+	
+	<text>
+		<original_text>COUNTER ATTACK</original_text>
+		<en>PHẢN CÔNG</en>
+	</text>
+	
+	<!-- End of Other -->
+	
+</data>

@@ -1,0 +1,208 @@
+<html>
+
+<head>
+
+<meta charset="utf-8"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+<title>Câu đố vẽ 4</title>
+
+
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+
+<script type="text/javascript">
+
+    window.yandexMetricaCounterId = 94270826;
+
+  </script>
+
+<!-- Yandex.Metrika counter -->
+
+<script type="text/javascript">
+
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+
+    m[i].l=1*new Date();
+
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r /* ,a.parentNode.insertBefore(k,a)*/ })
+
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+
+
+    ym(window.yandexMetricaCounterId, "init", {
+
+        clickmap:true,
+
+        trackLinks:true,
+
+        accurateTrackBounce:true
+
+    });
+
+  </script>
+
+<noscript><div><img src="https://mc.yandex.ru/watch/94270826" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+
+<!-- /Yandex.Metrika counter -->
+
+<script type="text/javascript">
+
+    ym(window.yandexMetricaCounterId,'reachGoal','pageOpen');
+
+
+
+    addEventListener('DOMContentLoaded', (event) => {
+
+      const pageLoadTime = performance.timing.domContentLoadedEventStart - performance.timing.navigationStart;
+
+      ym(window.yandexMetricaCounterId,'reachGoal','pageLoad', { pageLoadTime: pageLoadTime / 1000 });
+
+    });
+
+  </script>
+
+</head>
+
+<body style="margin: 0px; overflow: hidden;" oncontextmenu="return false;">
+
+<canvas id="unity-canvas" style="position: fixed; width: 100%; height: 100%; background: #231F20">
+
+</canvas>
+
+<div id="progress-bar" style="position: absolute; left: 0%; right: 100%; top: 49%; bottom: 49%; background-color: white;"></div>
+
+<script src="arcade-save.js?v=2"></script>
+
+<script src="Build/Dop.loader.js"></script>
+
+<script>
+
+    const params = new URLSearchParams(location.search);
+
+    const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
+
+    var devicePixelRatio = isMobileDevice ? 1 : 2;
+
+    if (params.has("gvdpr")) {
+
+      var forcedDpr = parseFloat(params.get("gvdpr"));
+
+      if (forcedDpr > 0) devicePixelRatio = forcedDpr;
+
+    }
+
+
+
+    const settings = {
+
+      dataUrl: "Build/2c8a4ccdadefa139bec3a4b2ea93bf07.data.br",
+
+      frameworkUrl: "Build/7a838abed0821ed5380f9a150449b904.js",
+
+      codeUrl: "Build/35c2b9c21eb6aa78569fa01d06515512.wasm.br",
+
+      streamingAssetsUrl: "StreamingAssets",
+
+      companyName: "Yelbouziani",
+
+      productName: "Delete Puzzle",
+
+      productVersion: "1.2.1",
+
+      matchWebGLToCanvasSize: true,
+
+      devicePixelRatio: devicePixelRatio,
+
+    };
+
+
+
+    const progressBar = document.querySelector("#progress-bar");
+
+
+
+    function bootUnity() {
+
+      const unityStartLoadingTime = performance.now();
+
+      createUnityInstance(document.querySelector("#unity-canvas"), settings, (progress) => {
+
+        progressBar.style.right = 100 * (1 - progress * 4) + "%";
+
+      }).then((unityInstance) => {
+
+        window.myGameInstance = unityInstance;
+
+        progressBar.style.display = "none";
+
+        window.dispatchEvent(new Event("resize"));
+
+        const unityEndLoadingTime = performance.now();
+
+        unityInstance.Module.errorHandler = (errorMessage) => {
+
+          ym(window.yandexMetricaCounterId, 'reachGoal', 'unityGameCrash', { gameCrashError: errorMessage });
+
+        };
+
+        ym(window.yandexMetricaCounterId,'reachGoal','unityStart', { unityLoadTime: (unityEndLoadingTime - unityStartLoadingTime) / 1000 });
+
+      }).catch((errorMessage) => {
+
+        ym(window.yandexMetricaCounterId, 'reachGoal', 'unityLoadingCrash', { loadingCrashError: errorMessage });
+
+        alert(errorMessage);
+
+      });
+
+    }
+
+
+
+    var bootStarted = false;
+
+    function startUnityOnce() {
+
+      if (bootStarted) return;
+
+      bootStarted = true;
+
+      if (window.ArcadeSave && ArcadeSave.markUnityStarted) ArcadeSave.markUnityStarted();
+
+      bootUnity();
+
+    }
+
+
+
+    var watchdog = setTimeout(startUnityOnce, 3000);
+
+    var initPromise = (window.ArcadeSave && ArcadeSave.init) ? ArcadeSave.init() : Promise.resolve();
+
+    Promise.resolve(initPromise).then(function () {
+
+      clearTimeout(watchdog);
+
+      startUnityOnce();
+
+    }, function () {
+
+      clearTimeout(watchdog);
+
+      startUnityOnce();
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+

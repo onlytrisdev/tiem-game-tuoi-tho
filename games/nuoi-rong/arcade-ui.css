@@ -1,0 +1,386 @@
+/* Arcade UI — Nuôi rồng (Flambe Kiziland) */
+
+.arcade-logo {
+  position: fixed;
+  left: 50%;
+  bottom: max(20px, env(safe-area-inset-bottom) + 20px);
+  transform: translateX(-50%);
+  z-index: 10040;
+  width: 88px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  box-shadow: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+  overflow: hidden;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+.arcade-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+.arcade-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.15) 44%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.15) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  animation: gv-logo-sweep 10s linear infinite;
+}
+
+@keyframes gv-logo-cycle {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  45% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes gv-logo-sweep {
+  0%,
+  4% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  6% { opacity: 1; }
+  22% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  24% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  28% { opacity: 1; }
+  44% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  46%,
+  100% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+}
+
+#gv-btn-score,
+#gv-btn-delete {
+  --gv-action-size: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--gv-action-size);
+  height: var(--gv-action-size);
+  min-width: var(--gv-action-size);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  z-index: 10045;
+  opacity: 0.88;
+  transform: scale(1);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+#gv-btn-delete {
+  position: fixed;
+  left: max(8px, env(safe-area-inset-left, 0px) + 8px);
+  bottom: max(12px, env(safe-area-inset-bottom, 0px) + 12px);
+}
+
+#gv-btn-score {
+  position: fixed;
+  right: max(8px, env(safe-area-inset-right, 0px) + 8px);
+  bottom: max(12px, env(safe-area-inset-bottom, 0px) + 12px);
+}
+
+#gv-automerge-wrap,
+#gv-autoclick-wrap {
+  position: fixed;
+  left: max(8px, env(safe-area-inset-left, 0px) + 8px);
+  z-index: 10045;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+#gv-automerge-wrap {
+  bottom: calc(max(12px, env(safe-area-inset-bottom, 0px) + 12px) + 52px);
+}
+
+#gv-autoclick-wrap {
+  bottom: calc(max(12px, env(safe-area-inset-bottom, 0px) + 12px) + 136px);
+}
+
+#gv-automerge-wrap[hidden],
+#gv-autoclick-wrap[hidden] {
+  display: none !important;
+}
+
+#gv-automerge-wrap.gv-visible,
+#gv-autoclick-wrap.gv-visible {
+  display: flex;
+}
+
+#gv-btn-automerge,
+#gv-btn-autoclick {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  min-width: 62px;
+  min-height: 62px;
+  height: auto;
+  padding: 6px 4px 6px;
+  margin: 0;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(20, 24, 32, 0.82);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  cursor: pointer;
+  opacity: 0.92;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+#gv-btn-automerge.gv-running,
+#gv-btn-autoclick.gv-running {
+  background: rgba(46, 125, 50, 0.9);
+}
+
+#gv-btn-automerge.gv-cooldown,
+#gv-btn-autoclick.gv-cooldown {
+  background: rgba(90, 90, 90, 0.85);
+  opacity: 0.7;
+}
+
+#gv-btn-automerge.gv-busy,
+#gv-btn-autoclick.gv-busy {
+  background: rgba(180, 110, 20, 0.9);
+}
+
+#gv-automerge-label,
+#gv-autoclick-label {
+  white-space: pre-line;
+  text-align: center;
+  line-height: 1.15;
+  pointer-events: none;
+}
+
+#gv-automerge-timer,
+#gv-autoclick-timer {
+  margin-top: 2px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  pointer-events: none;
+}
+
+#gv-automerge-timer[hidden],
+#gv-autoclick-timer[hidden] {
+  display: none !important;
+}
+
+#gv-automerge-free,
+#gv-autoclick-free {
+  position: absolute;
+  top: -7px;
+  right: -6px;
+  padding: 1px 4px;
+  border-radius: 6px;
+  background: #2e9d3a;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+#gv-automerge-free[hidden],
+#gv-autoclick-free[hidden] {
+  display: none !important;
+}
+
+#gv-automerge-qc,
+#gv-autoclick-qc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1px;
+  color: #ffd54a;
+  pointer-events: none;
+}
+
+#gv-automerge-qc[hidden],
+#gv-autoclick-qc[hidden] {
+  display: none !important;
+}
+
+#gv-automerge-qc svg,
+#gv-autoclick-qc svg {
+  display: block;
+}
+
+#gv-btn-score[hidden],
+#gv-btn-delete[hidden] {
+  display: none !important;
+}
+
+#gv-btn-score.gv-visible,
+#gv-btn-delete.gv-visible {
+  display: flex;
+}
+
+#gv-btn-score img,
+#gv-btn-delete img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#gv-btn-score:active,
+#gv-btn-delete:active,
+#gv-btn-automerge:active,
+#gv-btn-autoclick:active {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+#gv-delete-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.55);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+#gv-delete-overlay[hidden] {
+  display: none !important;
+}
+
+#gv-delete-dialog {
+  width: min(88vw, 380px);
+  padding: 22px;
+  border: 3px solid #c86a22;
+  border-radius: 18px;
+  background: linear-gradient(#ffad52, #ffcf62);
+  color: #5c3216;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+}
+
+#gv-delete-message {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+#gv-delete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+#gv-delete-actions button {
+  min-width: 100px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font: 700 16px/1 "Segoe UI", Tahoma, sans-serif;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#gv-delete-cancel {
+  background: #697386;
+}
+
+#gv-delete-ok {
+  background: #d94235;
+}
+
+#gv-score-toast {
+  position: fixed;
+  left: 50%;
+  bottom: max(100px, env(safe-area-inset-bottom, 0px) + 84px);
+  transform: translateX(-50%) translateY(12px);
+  z-index: 10070;
+  max-width: min(90vw, 360px);
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(20, 24, 32, 0.92);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#gv-score-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

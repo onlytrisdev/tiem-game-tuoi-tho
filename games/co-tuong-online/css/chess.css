@@ -1,0 +1,17 @@
+﻿@charset "gb2312";
+body{  font-size: 12px; line-height: 150%; background:#FFF}
+.box { margin:0 auto; width:100% !important; position: relative; }
+.chess_left {text-align:center }
+.chess_right {  float:left; display:none}
+.move_info {  float:left; margin-top:20px}
+input {background: url(../img/stype_2/bg.jpg);
+	border: 1px solid #888;
+	padding: 5px 10px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px #999;
+	color: #fff;
+	margin: 0 10px;
+	text-shadow: 1px 1px #444;
+	font-size: 1.2em;}
+#billList{ margin-top:20px}
+.bn_box{display:none}

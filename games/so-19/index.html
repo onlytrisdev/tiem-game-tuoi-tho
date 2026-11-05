@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <meta charset="UTF-8">
+    <title>Số 19</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <link rel="deprecated-manifest" href="yandex-manifest.json">
+    <style type="text/css">
+        body {
+            transition: opacity 0.5s;
+        }
+        body.hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="hidden">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter53796892 = new Ya.Metrika({id: 53796892, clickmap: true, trackLinks: true, accurateTrackBounce: true});
+                } catch(e) { }
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera === "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53796892" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="root" class="wrapper"></div>
+
+    <!-- HELP -->
+    <script id="help-ru" type="text/template">
+        <h3>Quy tắc trò chơi</h3>
+        <p>«Trò chơi số "19"». <strong>Mục tiêu của trò chơi là gạch bỏ tất cả các số.</strong></p>
+        <p><strong>Bạn có thể gạch bỏ </strong> bất kỳ <strong> chữ số </strong> nào giống nhau <strong> hoặc cho tổng là 10 </strong> đứng cạnh nhau theo chiều ngang hoặc chiều dọc.</p>
+        <p>Bạn có thể gạch bỏ <strong> số cuối cùng dòng trên với số đầu tiên ở dòng tiếp theo </strong> nếu chúng giống nhau hoặc có tổng là 10.</p>
+        <p><strong> Các số đã bị gạch bỏ không còn được tính nữa. </strong></p>
+        <p>Nếu không còn lượt di chuyển nào nữa, hãy nhấn nút <strong> "Thêm số" </strong>, tất cả các số chưa bị gạch bỏ sẽ được viết lại và bạn có thể tiếp tục chơi.</p>
+        <p><b>Ví dụ 1 (các số cạnh nhau)</b></p>
+        <table class="example">
+            <tbody><tr>
+                <td>5</td><td class="example-selected">8</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td>
+            </tr>
+            <tr>
+                <td>3</td><td class="example-selected">8</td><td>3</td><td>1</td><td>5</td><td class="example-selected">3</td><td class="example-selected">7</td><td>5</td>
+            </tr>
+            <tr>
+                <td>9</td><td>2</td><td>4</td><td>2</td><td>4</td><td>2</td><td>4</td><td>2</td>
+            </tr>
+            </tbody></table>
+        <p>Các số 8 và 8 giống nhau và đứng cạnh nhau, trong khi số 3 và 7 cộng lại thành 10 và cũng đứng cạnh nhau. Điều này có nghĩa là chúng có thể bị xóa.</p>
+
+        <p><b>Ví dụ 2</b></p>
+        <table class="example">
+            <tbody><tr>
+                <td>5</td><td class="example-crossed">8</td><td>1</td><td>2</td><td>1</td><td class="example-selected">2</td><td>1</td><td>2</td>
+            </tr>
+            <tr>
+                <td class="example-selected">3</td><td class="example-crossed">8</td><td class="example-selected">3</td><td>1</td><td class="example-selected">5</td><td class="example-crossed">3</td><td class="example-crossed">7</td><td class="example-selected">5</td>
+            </tr>
+            <tr>
+                <td>9</td><td>2</td><td>4</td><td>2</td><td>4</td><td class="example-selected">2</td><td>4</td><td>2</td>
+            </tr>
+            </tbody></table>
+        <p>Các cặp bị gạch chéo không còn được tính. Bây giờ chúng ta có thể gạch bỏ các cặp 3-3, 2-2 và 5-5.</p>
+        <p><b>Ví dụ 3 (Bắt đầu và kết thúc chuỗi)</b></p>
+        <table class="example">
+            <tbody><tr>
+                <td>5</td><td class="example-crossed">8</td><td>1</td><td>2</td><td>1</td><td class="example-crossed">2</td><td>1</td><td>2</td>
+            </tr>
+            <tr>
+                <td class="example-crossed">3</td><td class="example-crossed">8</td><td class="example-crossed">3</td><td class="example-selected">1</td><td class="example-crossed">5</td><td class="example-crossed">3</td><td class="example-crossed">7</td><td class="example-crossed">5</td>
+            </tr>
+            <tr>
+                <td class="example-selected">9</td><td>2</td><td>4</td><td>2</td><td>4</td><td class="example-crossed">2</td><td>4</td><td>2</td>
+            </tr>
+            </tbody></table>
+        <p>Số 1 ở cuối dòng, vì các số bị gạch bỏ không còn được tính đến nữa, và số 9 ở đầu. Chúng ta có thể gạch bỏ bởi vì chúng có tổng là 10.</p>
+
+        <p>Ok, bây giờ bạn đã sẵn sàng để chơi. Chúc may mắn!</p>
+        <p>&nbsp;</p>
+    </script>
+    <script id="help-en" type="text/template">
+        <h3>Rules of the game</h3><p>The goal of this game is to cross out all numbers.</p><p>It’s possible to cross out any of the same digits or giving 10 in total which are placed next to each other either horizontally or vertically.</p><p>You can cross out the last item in one line with the first one in the next line if they are the same or gives you a total of 10.</p><p>Numbers that have been struck out won’t be counted anymore.</p><p>If there are no more moves, click the “Add numbers” button. All the numbers that aren’t crossed out yet will be rewritten lower and you can continue to play.</p><p><b>Example 1 (Figures Near)</b></p><table class="example"><tbody><tr><td>5</td><td class="example-selected">8</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td></tr><tr><td>3</td><td class="example-selected">8</td><td>3</td><td>1</td><td>5</td><td class="example-selected">3</td><td class="example-selected">7</td><td>5</td></tr><tr><td>9</td><td>2</td><td>4</td><td>2</td><td>4</td><td>2</td><td>4</td><td>2</td></tr></tbody></table><p>The numbers 8 and 8 are the same and standing side by side. The numbers 3 and 7 gives us a total of 10 and also stand near each other. This means that they can be crossed out.</p><p><b>Example 2 (Continued)</b></p><table class="example"><tbody><tr><td>5</td><td class="example-crossed">8</td><td>1</td><td>2</td><td>1</td><td class="example-selected">2</td><td>1</td><td>2</td></tr><tr><td class="example-selected">3</td><td class="example-crossed">8</td><td class="example-selected">3</td><td>1</td><td class="example-selected">5</td><td class="example-crossed">3</td><td class="example-crossed">7</td><td class="example-selected">5</td></tr><tr><td>9</td><td>2</td><td>4</td><td>2</td><td>4</td><td class="example-selected">2</td><td>4</td><td>2</td></tr></tbody></table><p>Crossed out pairs are no longer taken into account. Now we can cross out pairs 3-3, 2-2 and 5-5.</p><table class="example"><tbody><tr><td>5</td><td class="example-crossed">8</td><td>1</td><td>2</td><td>1</td><td class="example-crossed">2</td><td>1</td><td>2</td></tr><tr><td class="example-crossed">3</td><td class="example-crossed">8</td><td class="example-crossed">3</td><td class="example-selected">1</td><td class="example-crossed">5</td><td class="example-crossed">3</td><td class="example-crossed">7</td><td class="example-crossed">5</td></tr><tr><td class="example-selected">9</td><td>2</td><td>4</td><td>2</td><td>4</td><td class="example-crossed">2</td><td>4</td><td>2</td></tr></tbody></table><p>The number 1 is located at the end of the line, because the crossed out numbers are no longer taken into account, and 9 is at the beginning. We can cross them out because in total they give us 10.</p><p>Well done! Now you are ready! Good luck!</p><p>&nbsp;</p>
+    </script>
+
+    <!-- PAT -->
+    <script id="pat-ru" type="text/template">
+        <h3>Trò chơi đi vào ngõ cụt</h3>
+        <p>Đã thêm số. Nhưng nó dường như không giúp hình thành các cặp mới có thể bị gạch bỏ. Đừng lo lắng, đôi khi nó xảy ra. Đây là những gì bạn có thể làm:</p>
+        <ol>
+            <li><b>Hoàn tác một vài lượt chơi cuối cùng.</b> Đó là, phép cộng cuối cùng của các số và 1 hoặc nhiều nước đi.</li>
+            <li>Bây giờ hãy thử lại <b>thêm số</b>Hoặc chơi theo cách khác.</li>
+        </ol>
+        <p>Bạn có thể gặp may mắn và "bế tắc" sẽ không xảy ra. Trong mọi trường hợp, bạn luôn có thể bắt đầu lại trò chơi. Chúc may mắn!</p>
+    </script>
+    <script id="pat-en" type="text/template">
+        <h3>Stalemate</h3>
+        <p><b>Try to undo a few moves.</b> That is, the last addition of numbers and 1 or more moves.</p>
+        <p>Now try to <b>add numbers</b> again. Or play it differently.</p>
+        <p>The goal is to avoid the path that led to the stalemate. Maybe this will help.</p>
+        <p>In any case, you can always start the game over. Good luck!</p>
+    </script>
+
+    <!-- SHUFFLE -->
+    <script id="shuffle-msg-ru" type="text/template">
+        <p>Đây là một phiên bản cổ điển của phần đầu trò chơi, khi các số từ 1 đến 19 (trừ 10) được sắp xếp theo thứ tự. Để đa dạng hóa trò chơi, bạn có thể <button class="shuffle-btn">xáo trộn</button> số.</p>
+        <p>Nếu bạn vô tình nhấp vào nút "Trò chơi mới" - hãy load lại trang mà không bắt đầu trò chơi và mọi thứ sẽ trở lại. 😊</p>
+    </script>
+    <script id="shuffle-msg-en" type="text/template">
+        <p>Here is a classic version of the beginning of the game, when the numbers from 1 to 19 (except 10) are arranged in order. To diversify the game, you can <button class="shuffle-btn">mix</button> them.</p>
+        <p>If you clicked the “New Game” button by accident - refresh the page without starting the game, and everything will return back.</p>
+    </script>
+
+    <script type="text/javascript" src="main.42cb62fae2777bf02c89.js"></script>
+    
+
+</body>
+</html>

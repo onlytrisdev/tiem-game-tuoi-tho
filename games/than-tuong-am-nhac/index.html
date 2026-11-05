@@ -1,0 +1,123 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+		<link rel="stylesheet" type="text/css" media="all" href="css/WordGuess.css" />
+
+		<script>
+		isPhonegap = false;
+		</script>
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/storage.js"></script>
+		
+		<script type="text/javascript" src="js/md5.min.js"></script>
+		<script type="text/javascript" src="audiojs/audio.min.js"></script>
+		<script type="text/javascript" src="js/base64_encode.min.js"></script>
+		
+		<title>Thần tượng âm nhạc</title>
+
+		<script>
+		window.famobi_gameID = "than-tuong-am-nhac";
+		window.famobi_gameJS = ["js/WordGuess.min.js",function(){
+			jQuery(".startscreen h1").css("background-image",' url(\'' + window.famobi.__("startscreen") + '\')');
+			jQuery(".endscreen h1").css("background-image",' url(\'' + window.famobi.__("startscreen") + '\')');
+			jQuery('body').animate({'opacity': 1.0});
+			jQuery("#more_games_image").attr("src", window.famobi.__("more_games_image"));
+		}];
+		(function (document, url, fgJS, firstJS) {
+		        fgJS = document.createElement('script');
+		        firstJS = document.getElementsByTagName('script')[0];
+		        fgJS.src = url + encodeURIComponent(document.location.href);
+		        firstJS.parentNode.insertBefore(fgJS, firstJS);
+		})(document, 'gameapi/v1.js?e=');
+		</script>
+
+		<script>
+		jQuery(function() {
+			jQuery('[data-i18n]').html('Chờ một chút &hellip;');
+		});
+		</script>
+	</head>
+	<body style="opacity: 0.1;">
+		<div class="resetOverlay hide">
+            <a href="#" class="resetCancel resetClose" data-i18n="reset_back">Schließen</a>
+            <h1 data-i18n="reset_headline">Spielstand zurücksetzen</h1>
+            <p data-i18n="reset_intro">Bist du sicher, dass du deinen erspielten Spielstand zurücksetzen und von vorne anfangen möchtest? Deine Joker behälst du natürlich.</p>
+
+            <a href="#" class="button red resetConfirm" data-i18n="reset_button_confirm">Ja, Spielstand löschen</a> 
+            <a href="#" class="button grey resetCancel" data-i18n="reset_button_reset">Nein, abbrechen</a> 
+        </div>
+		<article class="startscreen" id="startscreen">
+			<h1>Soccer Star Quiz</h1>
+
+			<h2 class="welcomeBack hide" data-i18n="welcome_back">Willkommen zurück beim tollen Soccer Star Quiz!</h2>
+			<h2 class="welcome hide" data-i18n="welcome">Willkommen beim tollen Soccer Star Quiz!</h2>
+
+			<a href="#" class="start button" data-i18n="start_game">Spiel starten!</a>
+			<a href="#" class="reset button red hide" data-i18n="delete_savegame">Spielstand löschen &amp; neu spielen!</a>
+
+			<section class="moreGames">
+				
+			</section>
+		</article>
+		<article class="gamescreen hide">
+			<header>
+				<section class="level" data-i18n="level">
+					Level <strong></strong>
+				</section>
+
+				<section class="images">
+					<h2 class="hide" data-i18n="screens">Bilder</h2>
+					<ul>
+					</ul>
+				</section>
+			</header>
+			<h1 class="hide" data-i18n="word_guess">Word Guess</h1>
+
+			<section class="fill">
+				<h2 class="hide" data-i18n="searched_letters">Searched Letters</h2>
+				<ul>
+				</ul>
+			</section>
+			<section class="answer">
+				<h2 class="hide" data-i18n="letters">Letters</h2>
+				<ul>
+				</ul>
+			</section>
+
+			<section class="helper">
+                <ul>
+                    <li class="ask wording" data-i18n="ask-friends">Freunde<br/>fragen:</li>
+                </ul>
+            </section>
+		</article>
+
+		<article class="endscreen hide">
+			<h1 data-i18n="2_pictures_1_word">Thần tượng âm nhạc</h1>
+			<h2 data-i18n="congrats">Herzlichen Glückwunsch! Du hast alle bisherigen <strong></strong> Level von "Soccer Star Quiz" erfolgreich durchgespielt!</h2>
+
+			<p class="hint" data-i18n="notice">Wir aktualisieren dieses Quiz regelmäßig, dann kannst du weitere Level spielen!</p>
+
+			<a href="#" class="reset button red" data-i18n="reset_button">Xóa lưu &amp; chơi lại!</a>
+
+			<section class="moreGames">
+				<a href="#" data-famobi-href="moreGames">
+					<img id="more_games_image" width="100" alt="" />
+				</a>
+			</section>
+		</article>
+
+		<audio src="sounds/LevelPassed.mp3" preload="auto" class="levelPassed"></audio>
+		<audio src="sounds/Fail.mp3" preload="auto" class="fail"></audio>
+		<audio src="sounds/Set.mp3" preload="auto" class="set"></audio>
+		<audio src="sounds/Set.mp3" preload="auto" class="setJoker"></audio>
+		<audio src="sounds/Delete.mp3" preload="auto" class="delete"></audio>
+
+		
+			
+	</div>	</body>
+</html>

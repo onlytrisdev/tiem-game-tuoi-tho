@@ -1,0 +1,13 @@
+
+
+@font-face {
+    font-family: 'borisblackbloxx';
+    src: url('borisblackbloxx-webfont.eot');
+    src: url('borisblackbloxx-webfont.eot?#iefix') format('embedded-opentype'),
+         url('borisblackbloxx-webfont.woff2') format('woff2'),
+         url('borisblackbloxx-webfont.woff') format('woff'),
+         url('borisblackbloxx-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

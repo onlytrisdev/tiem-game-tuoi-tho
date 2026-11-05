@@ -1,0 +1,103 @@
+<localization>
+
+	<!-- English -->
+	<language id="en" alphabet="latin">
+
+		<!-- // new strings // -->
+		<string id="click-anywhere-to-play" fontScale="0.6" offsetX="0" offsetY="0"><![CDATA[CLICK ANYWHERE TO PLAY (XML!)]]></string>
+
+		<string id="hub-connected" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[CONNECTED]]></string>
+		<string id="hub-alert" fontScale="0.8" offsetX="28" offsetY="-15"><![CDATA[BLAST<br>DOORS<br>OPEN]]></string>
+
+		<string id="squad-select-title" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[SELECT YOUR SQUAD!]]></string>
+		<string id="squad-select-character-spongebob" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[SpongeBob]]></string>
+		<string id="squad-select-character-phoebe" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Phoebe]]></string>
+		<string id="squad-select-character-max" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Max]]></string>
+		<string id="squad-select-character-nicky" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Nicky]]></string>
+		<string id="squad-select-character-ricky" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Ricky]]></string>
+		<string id="squad-select-character-dicky" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Dicky]]></string>
+		<string id="squad-select-character-dawn" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Dawn]]></string>
+		<string id="squad-select-character-kiddanger" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Kid Danger]]></string>
+		<string id="squad-select-character-lincoln" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Lincoln]]></string>
+		<string id="squad-select-character-tomika" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Tomika]]></string>
+		<string id="squad-select-character-freddy" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Freddy]]></string>
+		<string id="squad-select-character-zack" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Zack]]></string>
+		<string id="squad-select-character-summer" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Summer]]></string>
+		<string id="squad-select-character-hudson" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Hudson]]></string>
+		<string id="squad-select-character-tripleg" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Triple-G]]></string>
+		<string id="squad-select-character-kenzie" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Kenzie]]></string>
+		<string id="squad-select-character-babe" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Babe]]></string>
+		<string id="squad-select-character-lawrence" fontScale="0.5" offsetX="0" offsetY="0"><![CDATA[Lawrence]]></string>
+
+
+		<string id="a-few-moments-later" fontScale="1.25" offsetX="0" offsetY="0"><![CDATA[A FEW<br>MOMENTS LATER]]></string>
+
+
+		<!-- // new strings // -->
+
+		<string id="loading" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[Loading... (XML!)]]></string>
+		<string id="controls" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[Controls]]></string>
+		<string id="howtoplay" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[How To Play]]></string>
+		<string id="powerup" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[Power-Up]]></string>
+		<string id="paused" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[Paused]]></string>
+		<string id="gameover" fontScale="1.2" offsetX="0" offsetY="0"><![CDATA[GAME OVER!]]></string>
+		
+		<string id="test-string" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Test string!]]></string>
+		
+	</language>
+
+	<!-- French -->
+	<language id="fr" alphabet="latin">
+		<string id="test" fontScale="1" offsetX="0" offsetY="0"><![CDATA[…]]></string>
+		<string id="test1" fontScale="1" offsetX="0" offsetY="0"><![CDATA[…]]></string>
+		<string id="test2" fontScale="1" offsetX="0" offsetY="0"><![CDATA[…]]></string>
+		<string id="test3" fontScale="1" offsetX="0" offsetY="0"><![CDATA[…]]></string>
+		<string id="test4" fontScale="1" offsetX="0" offsetY="0"><![CDATA[…]]></string>
+	</language>
+
+	<!-- Russian -->
+	<language id="ru" alphabet="cyrillic">
+		<string id="loading" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ЙйЦцУуКкЕеНн]]></string>
+		<string id="controls" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[ДдЖж]]></string>
+		<string id="howtoplay" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[БбЮю]]></string>
+		<string id="powerup" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[ÅåÓô]]></string>
+		<string id="paused" fontScale="2" offsetX="0" offsetY="0"><![CDATA[МмИиТт]]></string>
+	</language>
+
+	<!-- Greek -->
+	<language id="el" alphabet="greek">
+		<string id="loading" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ΏΐΑΒΓΔΕΖΗΘ]]></string>
+		<string id="controls" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[ΧΨΩΪΫάέήί]]></string>
+		<string id="howtoplay" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[τυφχψωϊϋό]]></string>
+		<string id="powerup" fontScale="0.9" offsetX="0" offsetY="0"><![CDATA[ϒϓϔϕϖϗϘϙ]]></string>
+		<string id="paused" fontScale="2" offsetX="0" offsetY="0"><![CDATA[ΣΤΥΦΧΨ]]></string>
+	</language>
+
+</localization>
+
+
+
+
+<!--
+
+English: en (Latin)
+French: fr (Latin)
+Italian: it (Latin)
+German: de (Latin)
+Mexican Spanish: mx (Latin)
+Castilian Spanish (Spain): es (Latin)
+Danish: da (Latin)
+Dutch: nl (Latin)
+Finnish: fi (Latin)
+Norwegian: no (Latin)
+Polish: pl (Latin)
+Swedish: se (Latin)
+Portuguese: pt (Latin)
+Brazilian Portuguese: br (Latin)
+Romanian: ro (Latin)
+Turkish: tr (Latin)
+Russian: ru (Cyrillic)
+Ukrainian: uk (Cyrillic)
+Greek: el (Greek)
+
+-->

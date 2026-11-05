@@ -1,0 +1,546 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <meta http-equiv="Expires" content="0">
+
+
+
+  <title>Trận chiến của vịt con</title>
+
+  
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+  
+
+	<!-- https://www.4399.com/flash/266910.htm
+
+	https://szhong.4399.com/4399swf/upload_swf/ftp56/huangcijin/20261020/05/assets/resources3/native/49/49916af3-22ab-4f4a-a105-0164ca91028a.7aa28.png -->
+
+
+
+  <meta name="viewport"
+
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+
+
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="format-detection" content="telephone=no">
+
+
+
+  <!-- force webkit on 360 -->
+
+  <meta name="renderer" content="webkit"/>
+
+  <meta name="force-rendering" content="webkit"/>
+
+  <!-- force edge on IE -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+
+
+  <!-- force full screen on some browser -->
+
+  <meta name="full-screen" content="yes"/>
+
+  <meta name="x5-fullscreen" content="true"/>
+
+  <meta name="360-fullscreen" content="true"/>
+
+
+
+  <!--<meta name="browsermode" content="application">-->
+
+  <meta name="x5-page-mode" content="app">
+
+
+
+  <link rel="stylesheet" type="text/css" href="style.f76d1.css"/>
+
+  <!-- Existing repository font; load before Cocos/FairyGUI starts rendering. -->
+
+  <style>
+
+    @font-face {
+
+      font-family: "GVRobotoBlack";
+
+      src: url("./Roboto-Black.ttf") format("truetype");
+
+      font-style: normal;
+
+      font-weight: normal;
+
+      font-display: block;
+
+    }
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div id="GameDiv" cc_exact_fit_screen="false">
+
+      <div id="Cocos3dGameContainer">
+
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+
+      </div>
+
+    </div>
+
+
+
+<script>
+
+(function () {
+
+  var DW = 750, DH = 1334, MAXH = 1626;
+
+  var lastW = -1, lastH = -1, fitting = false;
+
+  function fit(fromResize) {
+
+    if (fitting) return;
+
+    var el = document.getElementById("GameDiv");
+
+    if (!el) return;
+
+    var ww = window.innerWidth || document.documentElement.clientWidth;
+
+    var wh = window.innerHeight || document.documentElement.clientHeight;
+
+    if (ww < 1 || wh < 1) return;
+
+    var minA = DW / MAXH, maxA = DW / DH, a = ww / wh;
+
+    var w, h;
+
+    if (a > maxA) {
+
+      h = wh;
+
+      w = Math.floor(h * DW / DH);
+
+      if (w > ww) { w = ww; h = Math.floor(w * DH / DW); }
+
+    } else if (a < minA) {
+
+      w = ww;
+
+      h = Math.floor(w * MAXH / DW);
+
+      if (h > wh) { h = wh; w = Math.floor(h * DW / MAXH); }
+
+    } else {
+
+      w = ww;
+
+      h = wh;
+
+    }
+
+    el.style.position = "absolute";
+
+    el.style.left = Math.floor((ww - w) / 2) + "px";
+
+    el.style.top = Math.floor((wh - h) / 2) + "px";
+
+    el.style.width = w + "px";
+
+    el.style.height = h + "px";
+
+    el.style.margin = "0";
+
+    el.style.transform = "none";
+
+    if (w === lastW && h === lastH) return;
+
+    lastW = w;
+
+    lastH = h;
+
+    if (fromResize) return;
+
+    fitting = true;
+
+    try { window.dispatchEvent(new Event("resize")); } catch (err) {}
+
+    fitting = false;
+
+  }
+
+  window.__fitGameDiv = fit;
+
+  fit();
+
+  window.addEventListener("resize", function () { fit(true); });
+
+  [50, 200, 800, 2000].forEach(function (t) { window.setTimeout(function () { fit(); }, t); });
+
+})();
+
+</script>
+
+<script>
+
+(function () {
+
+  var readyFont = "Arial";
+
+  window.__gvUIFontFamily = readyFont;
+
+  // Load the repo's Vietnamese-capable Roboto font; never stall the game when
+
+  // the file or FontFaceSet API is unavailable (Arial remains the fallback).
+
+  var fontLoad = document.fonts && typeof document.fonts.load === "function"
+
+    ? document.fonts.load('16px "GVRobotoBlack"', "Tiếng Việt: Đấc ă â ê ô ơ ư ạ ắ ẫ ề ố ờ ự ỹ")
+
+        .then(function (faces) { return !!(faces && faces.length); })
+
+        .catch(function () { return false; })
+
+    : Promise.resolve(false);
+
+  window.__gvUIFontReady = Promise.race([
+
+    fontLoad,
+
+    new Promise(function (resolve) { setTimeout(function () { resolve(false); }, 4000); })
+
+  ]).then(function (loaded) {
+
+    window.__gvUIFontFamily = loaded ? "GVRobotoBlack" : "Arial";
+
+  });
+
+})();
+
+</script>
+
+<script src="arcade-duck.js" charset="utf-8"></script>
+
+<script>
+
+(function () {
+
+  // Additional visible Vietnamese UI text; no game logic or data keys changed.
+
+  var gv = window.ArcadeDuck;
+
+  if (!gv || typeof gv.translateUI !== "function") return;
+
+  var original = gv.translateUI;
+
+  // Keep a tiny in-memory record of the original text and returned display
+
+  // text. This distinguishes clipped labels from absent source multipliers.
+
+  var fireBreathBuffHistory = [];
+
+  gv.fireBreathBuffText = function () { return fireBreathBuffHistory.slice(); };
+
+  var rich = {
+
+    "<color=ffffff><outline color=#0e0d0d width=3>激光射线对单体敌人造成持续高额伤害</outline></color>":
+
+      "<color=ffffff><outline color=#0e0d0d width=3>Tia laser liên tục gây sát thương lớn lên một mục tiêu</outline></color>",
+
+    "<color=ffffff><outline color=#0e0d0d width=3>投掷<color=#93E449>*4</color>个手雷，冰冻敌人</outline></color>":
+
+      "<color=ffffff><outline color=#0e0d0d width=3>Ném <color=#93E449>*4</color> lựu đạn, đóng băng kẻ địch</outline></color>"
+
+  };
+
+
+
+  // Guide text is revealed one visible character at a time, often with partial
+
+  // RichText tags. Match known Chinese prefixes BEFORE generic translation.
+
+  // Return balanced Vietnamese tags in every frame to keep the guide legible.
+
+  // One source of truth: use the early, shared guide translator.
+
+  function translateGuidePrefix(value) {
+
+    return typeof gv.translateGuidePrefix === "function"
+
+      ? gv.translateGuidePrefix(value) : null;
+
+  }
+
+  // Crystal-arrow bonus with variable rich-text outline colors.
+
+  var crystalArrow = /^(<color=ffffff><outline color=#[0-9a-f]{6} width=[34]>)每累计射出(<color=#28f27d>20<\/color>)支箭召唤魔法水晶箭(<\/outline><\/color>)$/i;
+
+  // UI phrases extracted from the compiled Cocos game/main bundles.
+
+  // Translation is only applied at the text-rendering layer.
+
+  var scannedBundleUITextVI = {"升级可提升武器属性":"Nâng cấp để tăng chỉ số vũ khí","商店购买":"Mua trong cửa hàng","商店刷新":"Làm mới cửa hàng","商店免费宝箱":"Rương miễn phí trong cửa hàng","战斗复活":"Hồi sinh trong trận","基地满血":"Căn cứ đầy máu","获得全部":"Nhận tất cả","获取银币":"Nhận bạc","广告获得武器":"Xem quảng cáo nhận vũ khí","战斗点击武器":"Nhấn chọn vũ khí khi chiến đấu","刷新武器":"Làm mới vũ khí","广告合成武器":"Xem quảng cáo ghép vũ khí","活动奖励":"Thưởng sự kiện","活动组奖励":"Thưởng chuỗi sự kiện","战斗结果双倍":"Nhân đôi thưởng trận đấu","皮肤免费宝箱":"Rương trang phục miễn phí","获取皮肤碎片":"Nhận mảnh trang phục","解锁表情":"Mở khóa biểu cảm","道具补给":"Tiếp tế vật phẩm","无尽模式挑战":"Thử thách Vô Tận","收藏品十连":"Mở 10 lần bộ sưu tập","收藏品单抽":"Mở 1 lần bộ sưu tập","金币副本扫荡":"Quét phó bản Vàng","等级礼包":"Quà theo cấp","装备全部免费":"Tất cả trang bị miễn phí","刷新天地宝库":"Làm mới kho báu","解锁装备格子":"Mở khóa ô trang bị","扭蛋机":"Máy Gacha","解锁拖动缓存区":"Mở khóa khu vực chờ","挂机关卡未通过":"Chưa vượt màn treo máy","超过7天":"Hơn 7 ngày","已过期":"Đã hết hạn","后过期":" nữa sẽ hết hạn","天前":" ngày trước","小时前":" giờ trước","分钟前":" phút trước","刚刚":"Vừa xong","天后过期":" ngày nữa hết hạn","小时后过期":" giờ nữa hết hạn","分钟后过期":" phút nữa hết hạn","今日次数不足":"Không đủ lượt hôm nay","次数不足":"Không đủ lượt","道具不足":"Không đủ vật phẩm","今日剩余次数已用完":"Đã hết lượt hôm nay","可领取":"Có thể nhận","已领取":"Đã nhận","再领一次":"Nhận thêm lần nữa","明日可领取":"Ngày mai có thể nhận","免费倒计时":"Đếm ngược miễn phí","自动刷新":"Tự động làm mới","今日分享次数已达上限":"Đã hết lượt chia sẻ hôm nay","今日广告次数已达上限":"Đã hết lượt quảng cáo hôm nay","剩余免广告次数":"Lượt miễn quảng cáo còn lại","免费碎片":"Mảnh miễn phí","解锁新皮肤":"Mở khóa trang phục mới","上阵成功":"Ra trận thành công","兑换码不存在":"Mã quà tặng không tồn tại","兑换码已领取":"Đã nhận mã quà tặng","兑换码不能为空":"Vui lòng nhập mã quà tặng","分享成功":"Chia sẻ thành công","分享失败":"Chia sẻ thất bại","已售罄":"Đã bán hết","每个装备碎片的概率":"Tỉ lệ nhận mỗi mảnh trang bị","普通装备盒":"Hộp trang bị thường","豪华装备盒":"Hộp trang bị cao cấp","解锁新活动":"Mở khóa sự kiện mới","技能尚未完成充能":"Kỹ năng chưa nạp đủ năng lượng","是否观看视频获得强力空格":"Xem quảng cáo để nhận ô trang bị mạnh?","是否观看视频获得强力装备":"Xem quảng cáo để nhận trang bị mạnh?","至少上阵一个装备后可开战":"Cần trang bị ít nhất 1 vũ khí để chiến đấu","开战后将不再进入备战阶段，是否确认":"Bắt đầu trận sẽ không thể quay lại chuẩn bị. Xác nhận?","退出挑战将不会获得任何奖励，确认退出":"Rời thử thách sẽ không nhận thưởng. Xác nhận thoát?","格子不可放在暂存处":"Không thể đặt ô trang bị vào khu chờ","拖动到战斗区获取装备":"Kéo vào khu chiến đấu để nhận trang bị","获取格子":"Nhận ô","可选择词条":"Bổ trợ có thể chọn","备选区没有需要免费的装备":"Không có trang bị cần miễn phí ở khu dự bị","备选区有免费装备尚未使用":"Vẫn còn trang bị miễn phí chưa dùng","自动选择增益":"Tự chọn bổ trợ","在线奖励":"Thưởng online","累计奖励":"Thưởng tích lũy","获得新装备":"Nhận trang bị mới","解锁新装备":"Mở khóa trang bị mới","上阵装备":"Trang bị ra trận","已通关":"Đã vượt màn","最高记录":"Kỷ lục cao nhất","通关章节":"Vượt chương","通关精英章节":"Vượt chương Tinh Anh","解锁新功能":"Mở khóa tính năng mới","累计在线":"Thời gian online tích lũy","累计观看广告":"Tổng lượt xem quảng cáo","是否确认退出":"Xác nhận thoát?","提前解锁":"Mở khóa sớm","普通领取":"Nhận thường","广告解锁":"Mở khóa bằng quảng cáo","正在装配":"Đang lắp trang bị","装配成功":"Lắp trang bị thành công","该头像未解锁":"Ảnh đại diện chưa mở khóa","该头像框未解锁":"Khung đại diện chưa mở khóa","昵称不能为空":"Tên nhân vật không được để trống","昵称限2-10字":"Tên nhân vật phải dài 2–10 ký tự","昵称已修改":"Đã đổi tên nhân vật","表情已解锁":"Đã mở khóa biểu cảm","快速巡逻次数":"Lượt tuần tra nhanh","最长巡视时间":"Thời gian tuần tra tối đa","胜场":"Trận thắng","未上阵任意装备，无法进行挑战":"Cần trang bị vũ khí trước khi thử thách","有未上阵的装备槽位":"Vẫn còn ô trang bị chưa đưa vào trận","该段位下将不再获得段位积分":"Bậc này không được cộng điểm xếp hạng","不断战斗提升您的王者排名":"Liên tục chiến đấu để tăng hạng Vương Giả","您上赛季结算段位为":"Bậc cuối mùa trước của bạn là","本赛季段位被重置为":"Bậc mùa này được đặt lại thành","战斗结束，血量高胜":"Hết trận, bên còn nhiều máu hơn sẽ thắng","时间结束，战斗失败":"Hết giờ, trận đấu thất bại","时间过半，双方伤害提升":"Qua nửa thời gian, sát thương hai bên tăng","时间将尽，双方伤害翻倍":"Sắp hết giờ, sát thương hai bên nhân đôi","完成波数":"Số đợt hoàn thành","删除成功":"Xóa thành công","没有邮件可以删除":"Không có thư để xóa","没有奖励可领取":"Không có phần thưởng để nhận","金币副本 阶段":"Giai đoạn phó bản Vàng","击杀进度":"Tiến độ tiêu diệt","虚位以待":"Chưa có người đứng hạng","未上榜":"Chưa vào BXH","赛季倒计时":"Đếm ngược mùa giải","匿名用户":"Người chơi ẩn danh","需领取前置礼包":"Cần nhận gói quà trước","历史最高":"Kỷ lục cao nhất","赛季已结束":"Mùa giải đã kết thúc","总等级":"Tổng cấp","已满级，请先升级其他属性":"Đã đạt cấp tối đa, hãy nâng chỉ số khác trước","当前已经最大等级":"Đã đạt cấp tối đa","天赋升级成功":"Nâng thiên phú thành công","技能升级":"Nâng kỹ năng","新藏品解锁":"Mở khóa vật phẩm sưu tập mới","已达最大":"Đã đạt giới hạn","限购":"Giới hạn mua","造成伤害":"Gây sát thương","最高伤害":"Sát thương cao nhất","剩余视频挑战次数":"Lượt xem quảng cáo để thử thách còn lại","本期倒计时":"Đếm ngược kỳ này","进入玩法获得积分后可上榜":"Tham gia chơi và nhận điểm để lên BXH","升级全部":"Nâng cấp tất cả","登录失败，请检查网络后重试":"Đăng nhập thất bại, hãy kiểm tra mạng và thử lại","战斗结算双倍":"Nhân đôi thưởng kết thúc trận","直接领取所有奖励":"Nhận ngay toàn bộ phần thưởng","加载失败":"Tải thất bại","获取资源失败，重试中":"Tải tài nguyên thất bại, đang thử lại","预加载资源加载失败":"Không tải được tài nguyên chuẩn bị trước"};
+
+  var scannedBundleKeys = Object.keys(scannedBundleUITextVI).sort(function (a,b) { return b.length - a.length; });
+
+  function translateScannedUI(value) {
+
+    if (typeof value !== "string" || !/[\u3400-\u9fff]/.test(value)) return null;
+
+    if (Object.prototype.hasOwnProperty.call(scannedBundleUITextVI,value)) return scannedBundleUITextVI[value];
+
+    var result = value.split(/(<[^>]*>)/g).map(function (part) {
+
+      if (!/[\u3400-\u9fff]/.test(part) || /^</.test(part)) return part;
+
+      if (Object.prototype.hasOwnProperty.call(scannedBundleUITextVI,part)) return scannedBundleUITextVI[part];
+
+      for (var j=0; j<scannedBundleKeys.length; j++) {
+
+        var key=scannedBundleKeys[j];
+
+        if (key.length >= 3 && part.indexOf(key)>=0) part=part.split(key).join(scannedBundleUITextVI[key]);
+
+      }
+
+      return part;
+
+    }).join('');
+
+    return result !== value && !/[\u3400-\u9fff]/.test(result) ? result : null;
+
+  }
+
+  // Localize the rendered shop equipment skill descriptions, leaving source
+
+  // config IDs, damage formulas, formatting tags and percentage values intact.
+
+  var equipmentShopUITextVI = {"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv1解锁</color><color=#FFE680>【堕落强化】</color>堕落王子剑伤害<color=#28f27d>+50%</color></outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 1</color><color=#FFE680>【Cường Hóa Sa Ngã】</color>Sát thương Kiếm Hoàng Tử Sa Ngã <color=#28f27d>+50%</color></outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv1解锁</color><color=#FFE680>【强化炎爆】</color>炎爆球伤害<color=#28f27d>+30%</color></outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 1</color><color=#FFE680>【Cường Hóa Hỏa Bạo】</color>Sát thương Quả Cầu Hỏa Bạo <color=#28f27d>+30%</color></outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv2解锁</color><color=#FFE680>【天灾强化】</color>召唤的天灾军团属性<color=#28f27d>+25%</color></outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 2</color><color=#FFE680>【Cường Hóa Thiên Tai】</color>Chỉ số quân đoàn Thiên Tai được triệu hồi <color=#28f27d>+25%</color></outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv2解锁</color><color=#FFE680>【快速吟唱】</color>炎爆球延迟时间<color=#28f27d>-50%</color></outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 2</color><color=#FFE680>【Niệm Chú Nhanh】</color>Thời gian chờ Quả Cầu Hỏa Bạo <color=#28f27d>-50%</color></outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv3解锁</color><color=#FFE680>【冲击回响】</color>炎爆结束后，令所有击中的敌人眩晕<color=#28f27d>2</color>秒</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 3</color><color=#FFE680>【Dư Chấn Xung Kích】</color>Sau khi Hỏa Bạo kết thúc, mọi địch trúng đòn bị choáng <color=#28f27d>2</color> giây</outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv3解锁</color><color=#FFE680>【天灾爆破】</color>所有天灾军团死亡后会造成小范围爆炸</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 3</color><color=#FFE680>【Thiên Tai Bùng Nổ】</color>Mỗi đơn vị quân đoàn Thiên Tai khi chết gây nổ trong phạm vi nhỏ</outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv4解锁</color><color=#FFE680>【天灾进化】</color>小食尸鬼有概率升级为女妖</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 4</color><color=#FFE680>【Tiến Hóa Thiên Tai】</color>Tiểu Quỷ Ăn Xác có cơ hội tiến hóa thành Nữ Yêu</outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv4解锁</color><color=#FFE680>【顷刻炼化】</color>炎爆球每击杀1个敌人则叠加<color=#28f27d>1%</color>火球范围和<color=#28f27d>1%</color>火球增伤;整局生效</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 4</color><color=#FFE680>【Luyện Hóa Tức Thì】</color>Mỗi địch bị Quả Cầu Hỏa Bạo hạ gục: cộng dồn <color=#28f27d>1%</color> phạm vi và <color=#28f27d>1%</color> sát thương cầu lửa; hiệu lực cả trận</outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv5解锁</color><color=#FFE680>【天灾超进化】</color>小食尸鬼有概率升级为憎恶</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 5</color><color=#FFE680>【Siêu Tiến Hóa Thiên Tai】</color>Tiểu Quỷ Ăn Xác có cơ hội tiến hóa thành Quái Ghê Tởm</outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv5解锁</color><color=#FFE680>【炎术师之威】</color>场上所有武器造成的火焰伤害<color=#28f27d>+50%</color></outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 5</color><color=#FFE680>【Uy Lực Pháp Sư Lửa】</color>Sát thương Lửa của mọi vũ khí trên sân <color=#28f27d>+50%</color></outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv6解锁</color><color=#FFE680>【天灾统御】</color>提升堕落王子剑的充能速度，提升高级天灾的进化概率</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 6</color><color=#FFE680>【Thống Lĩnh Thiên Tai】</color>Tăng tốc nạp năng lượng Kiếm Hoàng Tử Sa Ngã và tăng tỉ lệ tiến hóa Thiên Tai cấp cao</outline></color>","<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Lv6解锁</color><color=#FFE680>【进化链】</color>解锁炎爆魔杖的进化选项：</outline></color>":"<color=ffffff><outline color=#000000 width=3><color=#61E7F6>Mở ở cấp 6</color><color=#FFE680>【Chuỗi Tiến Hóa】</color>Mở các nhánh tiến hóa cho Trượng Hỏa Bạo:</outline></color>","【陨石魔杖】":"【Trượng Thiên Thạch】","【魔导师权杖】":"【Quyền Trượng Đại Pháp Sư】","召唤巨大火球轰击指定区域":"Triệu hồi cầu lửa khổng lồ oanh tạc khu vực chỉ định","堕落之力攻击敌人，并召唤天灾为自身作战":"Dùng sức mạnh sa ngã tấn công địch, triệu hồi quân đoàn Thiên Tai hỗ trợ chiến đấu","【堕落强化】":"【Cường Hóa Sa Ngã】","【强化炎爆】":"【Cường Hóa Hỏa Bạo】","【天灾强化】":"【Cường Hóa Thiên Tai】","【快速吟唱】":"【Niệm Chú Nhanh】","【冲击回响】":"【Dư Chấn Xung Kích】","【天灾爆破】":"【Thiên Tai Bùng Nổ】","【天灾进化】":"【Tiến Hóa Thiên Tai】","【顷刻炼化】":"【Luyện Hóa Tức Thì】","【天灾超进化】":"【Siêu Tiến Hóa Thiên Tai】","【炎术师之威】":"【Uy Lực Pháp Sư Lửa】","【天灾统御】":"【Thống Lĩnh Thiên Tai】","【进化链】":"【Chuỗi Tiến Hóa】","陨石魔杖":"Trượng Thiên Thạch","魔导师权杖":"Quyền Trượng Đại Pháp Sư","炎爆魔杖":"Trượng Hỏa Bạo","堕落王子剑":"Kiếm Hoàng Tử Sa Ngã","强化炎爆":"Cường Hóa Hỏa Bạo","炎爆球":"Quả Cầu Hỏa Bạo","小食尸鬼":"Tiểu Quỷ Ăn Xác","天灾军团":"Quân Đoàn Thiên Tai"};
+
+  var equipmentShopPhrasesVI = {"堕落王子剑伤害":"Sát thương Kiếm Hoàng Tử Sa Ngã ","炎爆球伤害":"Sát thương Quả Cầu Hỏa Bạo ","召唤的天灾军团属性":"Chỉ số quân đoàn Thiên Tai được triệu hồi ","炎爆球延迟时间":"Thời gian chờ Quả Cầu Hỏa Bạo ","炎爆结束后，令所有击中的敌人眩晕":"Sau khi Hỏa Bạo kết thúc, mọi địch trúng đòn bị choáng ","所有天灾军团死亡后会造成小范围爆炸":"Mỗi đơn vị quân đoàn Thiên Tai khi chết gây nổ trong phạm vi nhỏ","小食尸鬼有概率升级为女妖":"Tiểu Quỷ Ăn Xác có cơ hội tiến hóa thành Nữ Yêu","炎爆球每击杀1个敌人则叠加":"Mỗi địch bị Quả Cầu Hỏa Bạo hạ gục: cộng dồn ","火球范围和":" phạm vi và ","火球增伤;整局生效":" sát thương cầu lửa; hiệu lực cả trận","小食尸鬼有概率升级为憎恶":"Tiểu Quỷ Ăn Xác có cơ hội tiến hóa thành Quái Ghê Tởm","场上所有武器造成的火焰伤害":"Sát thương Lửa của mọi vũ khí trên sân ","提升堕落王子剑的充能速度，提升高级天灾的进化概率":"Tăng tốc nạp năng lượng Kiếm Hoàng Tử Sa Ngã và tăng tỉ lệ tiến hóa Thiên Tai cấp cao","解锁炎爆魔杖的进化选项：":"Mở các nhánh tiến hóa cho Trượng Hỏa Bạo:","【堕落强化】":"【Cường Hóa Sa Ngã】","【强化炎爆】":"【Cường Hóa Hỏa Bạo】","【天灾强化】":"【Cường Hóa Thiên Tai】","【快速吟唱】":"【Niệm Chú Nhanh】","【冲击回响】":"【Dư Chấn Xung Kích】","【天灾爆破】":"【Thiên Tai Bùng Nổ】","【天灾进化】":"【Tiến Hóa Thiên Tai】","【顷刻炼化】":"【Luyện Hóa Tức Thì】","【天灾超进化】":"【Siêu Tiến Hóa Thiên Tai】","【炎术师之威】":"【Uy Lực Pháp Sư Lửa】","【天灾统御】":"【Thống Lĩnh Thiên Tai】","【进化链】":"【Chuỗi Tiến Hóa】","【陨石魔杖】":"【Trượng Thiên Thạch】","【魔导师权杖】":"【Quyền Trượng Đại Pháp Sư】","召唤巨大火球轰击指定区域":"Triệu hồi cầu lửa khổng lồ oanh tạc khu vực chỉ định","堕落之力攻击敌人，并召唤天灾为自身作战":"Dùng sức mạnh sa ngã tấn công địch, triệu hồi quân đoàn Thiên Tai hỗ trợ chiến đấu","陨石魔杖":"Trượng Thiên Thạch","魔导师权杖":"Quyền Trượng Đại Pháp Sư","炎爆魔杖":"Trượng Hỏa Bạo","堕落王子剑":"Kiếm Hoàng Tử Sa Ngã","强化炎爆":"Cường Hóa Hỏa Bạo","炎爆球":"Quả Cầu Hỏa Bạo","小食尸鬼":"Tiểu Quỷ Ăn Xác","天灾军团":"Quân Đoàn Thiên Tai"};
+
+  var equipmentShopPhrasesKeys = Object.keys(equipmentShopPhrasesVI).sort(function (a,b) { return b.length - a.length; });
+
+  function translateEquipmentShopText(value) {
+
+    if (typeof value !== 'string' || !/[\u3400-\u9fff]/.test(value)) return null;
+
+    if (Object.prototype.hasOwnProperty.call(equipmentShopUITextVI, value)) return equipmentShopUITextVI[value];
+
+    // Only the specific equipment fragments below are substituted; unrelated
+
+    // Chinese strings continue to the existing translation and audit logic.
+
+    var translated = value.split(/(<[^>]*>)/g).map(function (part) {
+
+      if (/^</.test(part) || !/[\u3400-\u9fff]/.test(part)) return part;
+
+      part = part.replace(/Lv(\d+)解锁/g, 'Mở ở cấp $1');
+
+      for (var i=0; i<equipmentShopPhrasesKeys.length; i++) {
+
+        var k = equipmentShopPhrasesKeys[i];
+
+        if (part.indexOf(k)>=0) part = part.split(k).join(equipmentShopPhrasesVI[k]);
+
+      }
+
+      return part.replace(/(\d+)秒/g, '$1 giây');
+
+    }).join('');
+
+    return !/[\u3400-\u9fff]/.test(translated) ? translated : null;
+
+  }
+
+  gv.translateUI = function (value) {
+
+    if (typeof value === "string") {
+
+      var equipmentVI = translateEquipmentShopText(value);
+
+      if (equipmentVI !== null) return equipmentVI;
+
+      var guideVI = translateGuidePrefix(value);
+
+      if (guideVI !== null) return guideVI;
+
+      var scanned = translateScannedUI(value);
+
+      if (scanned !== null) return scanned;
+
+      var arrow = crystalArrow.exec(value);
+
+      if (arrow) return arrow[1] + "Cứ bắn đủ " + arrow[2] + " mũi tên sẽ triệu hồi Tên Pha Lê" + arrow[3];
+
+      if (Object.prototype.hasOwnProperty.call(rich, value)) return rich[value];
+
+      if (value === "冰冻术") return "Thuật Đóng Băng";
+
+    }
+
+
+
+    var translated = original(value);
+
+    if (typeof value === "string" && value.indexOf("喷吐持续时间") !== -1) {
+
+      // The original Chinese caption is short, but its longer Vietnamese
+
+      // replacement can fill a fixed-width FairyGUI field before the number.
+
+      // Abbreviate only this buff caption; never fabricate a multiplier.
+
+      translated = translated.replace(/Thời gian phun\s*/g, "TG phun ");
+
+      fireBreathBuffHistory.push({ source: value, output: translated });
+
+      if (fireBreathBuffHistory.length > 8) fireBreathBuffHistory.shift();
+
+    }
+
+    // The Cocos guide reveals Chinese dialog character by character. The
+
+    // translator used to return unstyled Vietnamese, dropping the dark color
+
+    // on white dialog panels, which made the opening story appear blank.
+
+    // Only a source that already carries the dark guide RichText markup may
+
+    // receive a styled replacement. Ordinary shop labels such as "血量" (Máu)
+
+    // can be prefixes of tutorial sentences but MUST stay plain text; otherwise
+
+    // their GTextField displays the injected <color=...> markup literally.
+
+    if (typeof value === "string" && typeof translated === "string" &&
+
+        /^\s*<color=#?2a292f>/i.test(value) &&
+
+        /[\u3400-\u9fff]/.test(value) &&
+
+        !/<color(?:=|>)/i.test(translated)) {
+
+      var visible = value.replace(/<[^>]*>/g, "").replace(/<[^>]*$/, "").replace(/\s+/g, "");
+
+      var stories = [
+
+        "这是我们的家园！你和鱼人别想前进一步！",
+
+        "挣扎无用，整个小岛都会被我的鱼人军团吞噬！",
+
+        "鱼人大军来袭，拖动上阵反曲弓，守卫小岛！",
+
+        "鱼人大军来袭，拖动反曲弓上阵，守卫小岛！",
+
+        "选择这个强力的词条，让战斗如虎添翼！",
+
+        "合成可以让装备变得更强",
+
+        "血量道具大大提升我们的生存，上阵后可恢复基地血量",
+
+        "主角技能已解锁，可以让我们的速度大幅提升！",
+
+        "主角功能已解锁，快来看看吧！",
+
+        "恭喜合成彩色武器，快选择这个进化路线试试吧！"
+
+      ];
+
+      for (var i = 0; i < stories.length; i++) {
+
+        if (visible && stories[i].indexOf(visible) === 0) {
+
+          // Always produce balanced rich-text tags, including partial lines.
+
+          return "<color=#2a292f>" + translated + "</color>";
+
+        }
+
+      }
+
+    }
+
+    return translated;
+
+  };
+
+})();
+
+</script>
+
+
+
+<script src="local-offline.js" charset="utf-8"></script>
+
+<script src="4399-bridge.js" charset="utf-8"></script>
+
+<!-- <script src="../../assets/vendor/clean-runtime.js?v=4"></script> -->
+
+
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.346e4.js" charset="utf-8"> </script>
+
+
+
+<!-- SystemJS support. -->
+
+<script src="src/system.bundle.543e6.js" charset="utf-8"> </script>
+
+
+
+<!-- Import map -->
+
+<script src="src/import-map.bfc27.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+
+
+<script>
+
+    // Retrieve Arcade cloud metadata before Cocos initializes SaveManager.
+
+    Promise.all([
+
+      Promise.resolve(window.ArcadeDuck ? window.ArcadeDuck.init() : null)
+
+        .catch(function (err) { console.warn("[Arcade] Offline fallback", err); }),
+
+      window.__gvUIFontReady || Promise.resolve()
+
+    ]).then(function () { return System.import('./index.1f9d3.js'); })
+
+      .catch(function(err) { console.error(err); });
+
+</script>
+
+
+
+</body>
+
+</html>
+

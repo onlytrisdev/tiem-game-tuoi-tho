@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    border: '1px solid red';
+
+}
+
+
+.word{
+    border: 1px solid black;
+}
+.letter{
+    border: 1px solid black;
+}
+canvas{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: '1px solid red';
+}
+.hide{
+    display: none;
+}

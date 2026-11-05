@@ -1,0 +1,1054 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#stage-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#rotate-screen {
+    position: absolute;
+    width: 100% ;
+    height: 100% ;
+    top: 0;
+    left: 0;
+    z-index: 2147483647;
+    background-color: #040707;
+    background-image: url('../images/platform/rotate_overlay.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#brim {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99999999px;
+    z-index: 2147483648;
+    background-image: url('../images/platform/brim.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+progress:not([value]) {
+   /* Styling here */
+}
+
+.hidden {
+    display: none ;
+}
+
+/* SUBTITLES */
+
+.subtitles {
+    position: fixed;
+    bottom: 4%;
+    left:10%;
+    width: 80%;
+    text-align: center;
+    font-size: 2.0em;
+    color: white;
+    background-color: black;
+}
+
+/* PANEL */
+
+.meter {
+    opacity: 0;
+    right: 4%;
+    top: 20%;
+    height: 48px;
+    width: 202px;
+    position: absolute;
+    background-size: inherit;
+    text-align: center;
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    bottom: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    overflow: hidden;
+    background-size: inherit;
+}
+
+.meter > img {
+    top: 19px;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    max-width: 90%;
+    max-height: 22px;
+}
+
+.uiPanel {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.uiPanel.horizontal * {
+    position: relative;
+    display: inline-block;
+}
+
+.uiPanel.vertical {
+    text-align: center;
+}
+
+.uiPanel.vertical * {
+    position: relative;
+    display: block;
+}
+
+.uiPanel.vertical.bottom.left * {
+    margin-top: 2px ;
+}
+
+.uiPanel.vertical.bottom.right * {
+    margin-top: 2px ;
+}
+
+.uiPanel.fillscreen {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.uiPanel.horizontal.left *{
+
+}
+
+.uiPanel.horizontal.right * {
+
+}
+
+.uiPanel.left {
+    left: 2%;
+}
+
+.uiPanel.right {
+    right: 2%;
+}
+
+.uiPanel.top {
+    top: 3%;
+}
+
+.uiPanel.bottom {
+    bottom: 2%;
+}
+
+.uiPanel.icons {
+    width:64px;
+}
+
+.uiPanel.center {
+    top: 50.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+/* BUTTONS */
+.uiButton, .uiIcon {
+    background-color: transparent;
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+}
+
+.uiIcon {
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    margin-left: 32px;
+    border: none;
+    outline: 0;
+    text-align: center;
+}
+
+.uiButton img {
+    position: absolute;
+    max-height: 100%;
+    min-width: 42px;
+    min-height: 42px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.uiIcon img {
+    position: absolute;
+    min-width: 72px;
+    min-height: 72px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.uiButton button {
+    position: absolute;
+    min-width: 64px;
+    min-height: 64px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.uiButton.overrideImgAnchor img {
+    top:inherit;
+    right:inherit;
+    bottom:inherit;
+    left:inherit;
+    -ms-transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0,0);
+    margin: auto;
+}
+
+.uiButton.overrideImgAnchor.imgLeft img {
+    left:0;
+}
+
+.uiButton.overrideImgAnchor.imgRight img {
+    right:0;
+}
+
+.uiButton.overrideImgAnchor.imgTop img {
+    top:0;
+}
+
+.uiButton.overrideImgAnchor.imgBottom img {
+    bottom:0;
+}
+
+.uiButton.overrideImgAnchor.imgCenterX img {
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.uiButton.std, .uiIcon {
+    width: 64px;
+    height: 64px;
+}
+
+.uiButton.std img, .uiIcon img {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+}
+
+.uiButton.wide {
+    width: 194px;
+    height: 64px;
+}
+
+.uiButton.wide img {
+    height: 42px;
+}
+
+.uiButton.right, .uiIcon.right {
+    right: 2%;
+}
+
+.uiButton.top, .uiIcon.top {
+    top: 2%;
+}
+
+.uiButton.left, .uiIcon.left {
+    left: 2%;
+}
+
+.uiButton.bottom, .uiIcon.bottom {
+    bottom: 5%;
+}
+
+.uiButton.centerX, .uiIcon.centerX {
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.uiButton.centerY, .uiIcon.centerY {
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.uiButton.next, .uiIcon.next {
+    right: 10%;
+    top: 45.4%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.uiButton.previous, .uiIcon.previous {
+    left: 10%;
+    top: 45.4%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+
+
+/*Kindle Fire HD 7" Fix*/
+@media only screen and (min-device-width: 800px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .meter {
+        top: 20%;
+     }
+}
+/*Hudl Fix*/
+@media only screen and (min-device-width: 932px) and (max-device-width: 1234px){
+    .meter {
+        top: 17%;
+     }
+}
+
+/* SETTINGS PANEL */
+
+div.ui_settings_container {
+    position: absolute;
+    padding: 0;
+    margin: 0 ;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+div.ui_settings_panel {
+    font-family: Helvetica,Arial,sans-serif;
+    color: rgb(66,77,77);
+    font-size: 15px;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    bottom: 4%;
+    right: 4%;
+    width: 96vw;
+    height: 93vh;
+    border-radius: 6px ;
+    background-color: rgb(255,249,249);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    padding: 0 ;
+    margin: 0;
+}
+
+div.ui_settings_panel h1, div.ui_settings_panel h2 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+div.ui_settings_panel h2 {
+    font-size: 15px;
+}
+
+div.ui_settings_panel div.column_wrap {
+    width: 100%;
+    height: 100%;
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div.ui_settings_panel div.column {
+    height: 100%;
+    display: inline-block;
+    padding: 0 ;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+div.ui_settings_panel div.column.left {
+    width: 15%;
+    float: left;
+    position: relative;
+}
+
+div.ui_settings_panel div.column.center {
+    width: 62%;
+}
+
+div.ui_settings_panel div.column.right {
+    width: 15%;
+    float: right;
+    position: relative;
+}
+
+div.ui_settings_panel div.title_container {
+    overflow: hidden;
+    height: 18%;
+    width: 100%;
+    position: relative;
+}
+
+div.ui_settings_panel div.title_container>div.title {
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+    padding: 1px;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div.ui_settings_panel div.title_container>div.title>span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+div.ui_settings_panel div.title_container>div.title>div.gear {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    background-image: url("../images/ui/ui_settings_gear.png");
+    background-size: cover;
+    vertical-align:middle;
+    display: inline-block;
+}
+
+div.ui_settings_panel div.items {
+    height: 71%;
+    overflow: auto;
+}
+
+div.ui_settings_panel div.item_container {
+    height: 36%;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+
+div.ui_settings_panel div.item_inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div.ui_settings_panel div.item_container p {
+    color: rgb(101, 113, 113);
+    width: 86%;
+    line-height: 18px;
+    margin-top: 6px ;
+    padding: 0;
+    font-size: 14px;
+}
+
+div.ui_settings_panel div.item_container {
+    border-bottom: 1px solid rgba(66,77,77,0.1) ;
+}
+
+div.ui_settings_panel div.item_inner div.toggle {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 64px;
+    height: 32px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ui/ui_settings_toggle.png');
+}
+
+div.ui_settings_panel div.item_inner div.toggle[data-state='on'] {
+    background-position: 0 100% ;
+}
+
+div.ui_settings_panel div.item_inner div.toggle[data-state='off'] {
+    background-position: 0 0 ;
+}
+
+div.ui_settings_panel div.pagination {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    display: table;
+}
+
+div.ui_settings_panel div.pagination>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.ui_settings_panel div.nav {
+    position: absolute;
+    width: 42px ;
+    height: 42px ;
+    background-size: cover;
+}
+
+*.hoverGrow {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+
+    transition: transform 0.1s ease;
+    -ms-transition: -ms-transform 0.1s ease;
+    -moz-transition: -moz-transform 0.1s ease;
+    -webkit-transition: -webkit-transform 0.1s ease;
+}
+
+*.hoverGrow:hover {
+    transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    transition: transform 0.1s ease;
+    -ms-transition: -ms-transform 0.1s ease;
+    -moz-transition: -moz-transform 0.1s ease;
+    -webkit-transition: -webkit-transform 0.1s ease;
+}
+
+*.hoverGrow:focus {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+div.ui_settings_panel div.nav.left {
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div.ui_settings_panel div.nav.right {
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div.ui_settings_panel div.nav.close {
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+}
+
+div.ui_settings_panel div.toggle button {
+    width: 63px;
+    height: 31px;
+}
+
+.uiButton.nav.close {
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+/* DOM UI ELEMENTS... */
+
+/* STATE INDICATOR PANEL */
+#indicator_panel {
+    margin-right: 100px;
+}
+
+
+/* TITLE */
+#ui_title_play, #ui_title_play:focus {
+    top: 35%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#ui_title_play img {
+    width: auto;
+    height: auto;
+}
+
+
+/* PAUSE */
+#ui_pause_resume {
+    width: 90px;
+    height: 90px;
+}
+
+#ui_pause_resume img {
+    width: auto;
+    height: auto;
+}
+
+#ui_pause_restart {
+    width: 90px;
+    height: 90px;
+    margin-right: 22px;
+}
+
+#ui_pause_restart img {
+    width: auto;
+    height: auto;
+}
+
+#ui_pause_levels {
+    width: 90px;
+    height: 90px;
+    margin-left: 22px;
+}
+
+#ui_pause_levels img {
+    width: auto;
+    height: auto;
+}
+
+
+/* SUMMARY */
+
+#summary_panel {
+    top: auto;
+    bottom: 3%;
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+/* LARGER SCREEN STYLES */
+@media only screen and (min-device-width:815px) {
+
+    .meter {
+        height: 70px;
+        width: 300px;
+        right: 2.5%;
+        top: 12%;
+        -ms-transform: scale(1.2,1.2);
+        -webkit-transform: scale(1.2,1.2);
+        transform: scale(1.2,1.2);
+    }
+
+    .meter > img {
+        top: 32px;
+        max-height: 70px;
+        max-width: 260px;
+    }
+
+    .uiPanel.horizontal.left * {
+        margin-right: 18px ;
+    }
+
+    .uiPanel.horizontal.right * {
+        margin-left: 18px ;
+    }
+
+    .uiPanel.left {
+        left: 2%;
+    }
+
+    .uiPanel.right {
+        right: 2%;
+    }
+
+    .uiPanel.top {
+        top: 2.6%;
+    }
+
+    .uiPanel.bottom {
+        bottom: 5.5%;
+    }
+
+    .uiPanel.bottom.left {
+        left: 4.5%;
+    }
+
+    .uiPanel.bottom.right {
+        right: 4.5%;
+    }
+
+    .uiPanel.bottom.right.skip {
+        right: 2%;
+    }
+
+    .uiButton.std, .uiIcon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .uiButton.wide img {
+        height: 70px;
+    }
+
+    .uiButton.std img, .uiIcon img {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+    }
+
+    .uiButton.wide {
+        width: 254px;
+        height: 70px;
+    }
+
+    div.ui_settings_panel {
+        top: 55.5%;
+        left: 48%;
+        width: 84vw ;
+        height: 69vh ;
+        position: absolute;
+        margin-left: -40vw;
+        margin-top: -40vh;
+    }
+
+    div.ui_settings_panel h1 {
+        font-size: 24px;
+    }
+
+    div.ui_settings_panel h2 {
+        font-size: 18px;
+    }
+
+    div.ui_settings_panel p {
+        font-size: 15px;
+    }
+
+    div.ui_settings_panel div.nav {
+        width: 64px;
+        height: 64px;
+    }
+
+    div.ui_settings_panel div.item_inner div.toggle {
+        width: 95px;
+        height: 48px;
+        background-size: 95px 95px;
+    }
+
+    div.ui_settings_panel div.toggle button {
+        width: 95px;
+        height: 48px;
+    }
+
+    div.ui_settings_panel div.column.center {
+        width: 57%;
+    }
+
+    div.ui_settings_panel div.item_inner{
+        top: 40%;
+    }
+
+    div.ui_settings_panel div.title_container>div.title{
+        left: 46%;
+    }
+
+    div.ui_settings_panel div.title_container>div.title>span {
+        font-size: 18px;
+        margin-top: 10px;
+        vertical-align: baseline;
+    }
+
+    div.ui_settings_panel div.title_container>div.title>div.gear{
+        width: 25px;
+        height: 25px;
+        margin-right: 35px;
+    }
+
+    div.ui_settings_panel div.item_container {
+        height: 33%
+    }
+
+    div.ui_settings_panel div.nav.close {
+        top: 7px;
+        right: 6px;
+        margin: 10px;
+    }
+
+    .uiButton.nav.close {
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+
+    #indicator_panel {
+        margin-right: 130px;
+    }
+
+    #ui_title_play, #ui_title_play:focus {
+        width: 180px;
+        height: 180px;
+    }
+
+    #ui_pause_resume {
+        width: 180px;
+        height: 180px;
+    }
+
+    #ui_pause_restart {
+        width: 180px;
+        height: 180px;
+        margin-right: 32px;
+    }
+
+    #ui_pause_levels {
+        width: 180px;
+        height: 180px;
+        margin-left: 32px;
+    }
+
+    #summary_panel {
+        bottom: 5.5%;
+    }
+
+    #ui_summary_restart {
+        margin-right: 7px;
+    }
+
+    #ui_summary_continue {
+        margin-left: 7px;
+    }
+}
+
+/* SETTINGS FALLBACK */
+
+.mp-settings__wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+.mp-settings {
+	position: absolute;
+	left: 15%;
+	top: 15%;
+	width: 70%;
+	min-width: 325px;
+	height: 70%;
+	min-height: 150px;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 110%;
+}
+
+.mp-settings__title {
+	margin: 0 auto;
+	padding: 0;
+	color: #3F3E4A;
+	text-align: center;
+	border-bottom: 1px solid #B7BBBB;
+}
+
+.mp-settings__title-text {
+	text-align: center;
+	padding: 1.1em 3em;
+	font: bold 1.3em arial,sans-serif;
+	color: #3F3E4A;
+	outline: 0;
+}
+
+.mp-settings__close-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 2px 2px 0;
+	border: 0;
+	background-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+.mp-settings__close-button:hover .mp-settings__close-icon-circle{
+	fill:#B3B3B5
+}
+
+.mp-settings__close-button:focus{
+	-webkit-focus-ring-color:#bfbfc2
+}
+
+.mp-settings__close-icon-circle{
+	transition: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	fill: #F0F0F4
+}
+
+.mp-settings__list {
+	overflow-y: auto;
+	outline: none;
+	height: 85%;
+}
+
+.mp-settings__list::-webkit-scrollbar {
+	-webkit-appearance:none
+}
+
+.mp-settings__list::-webkit-scrollbar:vertical {
+	width: 12px
+}
+
+.mp-settings__list::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	border: 2px solid #fff
+}
+
+.mp-settings__list::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent
+}
+
+.mp-settings__subheading {
+	padding: 1em 2.2em;
+	font: bold 0.9em arial,sans-serif;
+	text-transform: uppercase;
+	color: #939397;
+	background-color: #F0F0F4;
+}
+
+.mp-setting {
+	position: relative;
+	padding: 1em 2.2em;
+	border-bottom: 1px solid #F0F0F4;
+}
+
+.mp-setting__info {
+	display: block;
+	padding-right: 86px;
+	font: normal 1em arial,sans-serif;
+}
+
+.mp-setting__title {
+	padding-bottom: 0.3em;
+	font-weight: bold;
+	color: #323232;
+}
+
+.mp-setting__description {
+	font-size: 1em;
+	color: #939397;
+}
+
+.mp-setting__toggle {
+	position: absolute;
+	right: 1.8em;
+	top: 10px;
+}
+
+.mp-setting__toggle_button {
+	margin-top: 0.4em;
+	padding: 0.4em 0.4em 0.2em;
+	border: 0;
+	background-color: rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.mp-setting__toggle_button:active,.mp-setting__toggle_button:focus {
+	background-color: rgba(0,0,0,0);
+	-webkit-focus-ring-color: #bfbfc2
+}
+
+.mp-setting__toggle_button .mp-setting__toggle-slider,.mp-setting__toggle_button .mp-setting__toggle-outline {
+	transition: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out
+}
+
+.mp-setting__toggle_button--on .mp-setting__toggle-outline {
+	fill: #44D6DA
+}
+
+.mp-setting__toggle_button--off .mp-setting__toggle-outlin {
+	fill: #D8D8D8
+}
+
+.mp-setting__toggle_button--on .mp-setting__toggle-slider {
+	cx: 36;
+}
+
+.mp-setting__toggle_button--off .mp-setting__toggle-slider {
+	cx: 16;
+}
+
+.mp-setting:last-child{
+	border-bottom:0
+}

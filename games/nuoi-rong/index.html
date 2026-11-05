@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nuôi rồng</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png">
+
+    <link rel="stylesheet" href="arcade-ui.css?v=6" />
+    <script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+    <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <script type="text/javascript">
+        function GET_SOCIAL_GIFT_CODE() {
+            if (window.getParameterByName != null)
+                return window.getParameterByName("sgc");
+            else
+                return "";
+        }
+        function GET_SOCIAL_GIFT_KEY() {
+            if (window.getParameterByName != null)
+                return window.getParameterByName("sgk");
+            else
+                return "";
+        }
+
+        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+        var portraitWidth = Math.min(screen.availWidth, screen.availHeight);
+        if ((iOS ? portraitWidth * window.devicePixelRatio : portraitWidth) <= 360) {
+            var viewport = document.querySelector("meta[name=viewport]");
+            viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no, minimal-ui, viewport-fit=cover');
+        }
+    </script>
+
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            background: black;
+            color: #404040;
+            font-family: sans-serif;
+            font-size: 10pt;
+        }
+
+        a {
+            color: #F88113;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #content {
+            width: 360px;
+            height: 640px;
+            margin: 0px auto 0px auto;
+            box-shadow: 0px 4px 16px -4px #333;
+        }
+
+        html {
+            overflow: hidden;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        #content {
+            height: 100%;
+            width: 100%;
+            margin: inherit;
+            box-shadow: none;
+        }
+
+        .no-mobile {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div id="gv-autoclick-wrap" hidden>
+    <button type="button" id="gv-btn-autoclick" aria-label="Tự động click" title="Tự động click">
+        <span id="gv-autoclick-free">FREE</span>
+        <span id="gv-autoclick-qc" hidden aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" focusable="false">
+                <rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <polygon points="10,9 17,12 10,15" fill="currentColor"></polygon>
+            </svg>
+        </span>
+        <span id="gv-autoclick-label">Tự động
+Click</span>
+        <span id="gv-autoclick-timer" hidden aria-live="polite"></span>
+    </button>
+</div>
+<div id="gv-automerge-wrap" hidden>
+    <button type="button" id="gv-btn-automerge" aria-label="Tự động gộp" title="Tự động gộp">
+        <span id="gv-automerge-free">FREE</span>
+        <span id="gv-automerge-qc" hidden aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" focusable="false">
+                <rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <polygon points="10,9 17,12 10,15" fill="currentColor"></polygon>
+            </svg>
+        </span>
+        <span id="gv-automerge-label">Tự động
+gộp</span>
+        <span id="gv-automerge-timer" hidden aria-live="polite"></span>
+    </button>
+</div>
+<button type="button" id="gv-btn-delete" hidden aria-label="Xóa dữ liệu" title="Xóa dữ liệu">
+    <img src="xoa-data-gv.png" alt="" draggable="false">
+</button>
+<button type="button" id="gv-btn-score" hidden aria-label="Gửi điểm" title="Gửi điểm">
+    <img src="assets/gv-gui-diem.png" alt="" draggable="false">
+</button>
+
+
+
+<div id="gv-score-toast" aria-live="polite"></div>
+
+<div id="content"></div>
+
+<script src="arcade-save.js?v=8"></script>
+<script src="arcade-score.js?v=4"></script>
+<script src="arcade-adapter.js?v=3"></script>
+<script src="arcade-automerge.js?v=6"></script>
+<script src="arcade-autoclick.js?v=2"></script>
+<script src="arcade-ui.js?v=6"></script>
+<script>
+    if (window.ArcadeAdapter && typeof window.ArcadeAdapter.startGame === 'function') {
+        window.ArcadeAdapter.startGame();
+    } else {
+        var s = document.createElement('script');
+        s.src = 'flambe.js';
+        s.onload = function () {
+            flambe.embed(['targets/main-html.js'], 'content');
+        };
+        document.body.appendChild(s);
+    }
+</script>
+
+</body>
+</html>

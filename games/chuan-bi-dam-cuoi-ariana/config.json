@@ -1,0 +1,209 @@
+{
+  "id": 735,
+  "name": "Chuẩn bị đám cưới Ariana",
+  "title": "Chuẩn bị đám cưới Ariana",
+  "rebrandName": "Chuẩn bị đám cưới Ariana",
+  "prinxySlug": "",
+  "portal": "Gamerina",
+  "core": "v1.1",
+  "sdks": [],
+  "publishers": [
+    {
+      "id": 0,
+      "name": "OpenMarket",
+      "domain": "yandex",
+      "domain_id": 0,
+      "ads_positions": [
+        "pre2",
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "replay1",
+        "reward1",
+        "reward2",
+        "reward3",
+        "reward4",
+        "reward5",
+        "reward6",
+        "reward7",
+        "reward8",
+        "ls1"
+      ],
+      "timer_ads_positions": [
+        "pre2",
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "ls1"
+      ],
+      "timer_between_ads": "30",
+      "first_timer": "0",
+      "timer_resets_on_click": 0,
+      "ad_unit": "",
+      "ads_locked": "0",
+      "whitelist": "0",
+      "locked": "0",
+      "ads_cap": "0",
+      "optional": {
+        "outgoing": [
+          {
+            "zone": "logo_button",
+            "unit": "",
+            "url": "https://localhost",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "1",
+            "show": "1"
+          },
+          {
+            "zone": "preloader_button",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "level_select",
+            "url": "https://localhost",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          },
+          {
+            "zone": "facebook",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "youtube",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "end_screen",
+            "url": "https://okgmaehay.com",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          }
+        ],
+        "fullscreen": {
+          "hide": true
+        }
+      },
+      "rebrand": "1",
+      "hide_splash": "0",
+      "force_language": "",
+      "needs_consent": "0",
+      "show_related": "1",
+      "bsense": false,
+      "bsense_channel": ""
+    }
+  ],
+  "related": [
+    {
+      "title": "Insta Makeup: Bride",
+      "url": "https://game.digitap.eu/577755f1-d6ca-54d1-bf32-2aa8091a99e6/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/Insta_Makeup_Bride_Gif_474x300.gif",
+      "position": 1
+    },
+    {
+      "title": "TikTok Trends: Boyfriend Fashion",
+      "url": "https://game.digitap.eu/4a455617-7730-5f4c-b08d-236ddc0956a8/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/TikTok_Trends_Fashion_Gif_320x220.gif",
+      "position": 2
+    },
+    {
+      "title": "Cyberpunk City Fashion",
+      "url": "https://game.digitap.eu/f0229414-aa9d-5652-97d3-e3442fe4e606/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/Cyberpunk_City_Fashion_Gif_320x220.gif",
+      "position": 3
+    },
+    {
+      "title": "New Lifestyle: Minimalism",
+      "url": "https://game.digitap.eu/8a14266d-7699-59de-9d22-cfd01cd0fa52/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/New_Lifestyle_Minimalism_340x220.gif",
+      "position": 5
+    },
+    {
+      "title": "Princess Homeland",
+      "url": "https://game.digitap.eu/ceafbe0b-8ec7-502c-b12e-02265e96d775/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/Princess_Homeland_340x220.gif",
+      "position": 4
+    }
+  ],
+  "languages": [
+    "English",
+    "Russian",
+    "Portuguese",
+    "Spanish"
+  ],
+  "translations": {
+    "English": [],
+    "Russian": [],
+    "Portuguese": [],
+    "Spanish": []
+  }
+}

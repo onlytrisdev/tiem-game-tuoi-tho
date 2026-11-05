@@ -1,0 +1,17 @@
+{
+	"skipTutorial": false,
+
+	"upgradeCosts": [250, 500, 1000],
+
+	"startingMovementSpeed": 400,
+	"finalMovementSpeed": 600,
+	"startingBossHealth": 2,
+	"finalBossHealth": 5,
+	"bossesUntilFinalValues": 6,
+
+	"cookieLink": "https://www.lego.com/kids/legal/cookie-policy",
+	"privacyLink": "https://www.lego.com/kids/legal/privacy-policy-short",
+	"legoButtonLink": "https://www.lego.com/kids",
+
+	"legoSiteBuild": false
+}

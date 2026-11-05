@@ -1,0 +1,118 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <title>Pikachu nông trại</title>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+	<script type="text/javascript" src="cdn.js"></script>
+
+<!--
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+-->
+
+     
+
+    <script>
+
+            GameAPI.loadAPI(function(API){});
+
+        </script>
+
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        body {
+
+            background:#144398 url('background_tile.png');
+
+        }
+
+        #container {
+
+            position: absolute;
+
+        }
+
+    </style>
+
+  
+
+    <!-- cordova goes here -->
+
+    <script src="code/dependencies/mobile-boilerplate/js/helper.js"></script>
+
+    <script>
+
+        (function (w, p, d, s, id) {
+
+            if (p === w || d.getElementById(id)) return;
+
+            var js, fjs = d.getElementsByTagName(s)[0];
+
+            js = d.createElement(s); js.id = id;
+
+            js.src = 'http://cdn.gameplayer.io/api/js/developer.js';
+
+            fjs.parentNode.insertBefore(js, fjs);
+
+        }(window, window.parent, window.document, 'script', 'gameplayer-developer'));
+
+    </script>
+
+    <script>
+
+        window.AH_navigate = function (url) {
+
+            window.open(url, "_system");
+
+        };
+
+        window.AH_canShowAd = function (resumeGame) {
+
+            // place ad code here
+
+            resumeGame();
+
+        };
+
+    </script>
+
+ <!-- Block Outgoing links -->
+
+   
+
+
+
+</head>
+
+<body>
+
+<div id="container"></div>
+
+<script data-main="code/main.js" src="code/dependencies/bower_components/requirejs/require.js"></script>
+
+</body>
+
+</html>
+

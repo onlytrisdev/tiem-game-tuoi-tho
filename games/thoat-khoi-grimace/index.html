@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <title>Thoát khỏi Grimace</title>
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- <script src="Fbad.js"></script> -->
+    <script src="game-min.js"></script>
+    <style>
+	canvas{ position:fixed;
+		max-width: initial !important;
+		}
+
+	</style>
+</head>
+
+<body id="xibalba" class="desktop webgl">
+    <div id="game" class="webgl-only">
+        <canvas id="canvas" class="landscape-only"></canvas>
+
+        <div id="overlay">
+            <div id="hud">DIEM: <span id="score_div">0</span> LEVEL: <span id="level_div">1</span> MUI TEN: <span id="ammo_div">20</span><br>
+                <div id="health_meter"></div>
+                <div id="health_meter_bg"></div>
+            </div>
+            <div id="menu"></div>
+        </div>
+
+        <div id="rotate-to-play" class="mobile-only portrait-only">
+            <div>
+                
+                
+                <img data-cfsrc="media/rotate.png" style="display:none;visibility:hidden;" /><noscript><img src="media/rotate.png" /></noscript></div>
+            Rotate to Landscape to play!
+        </div>
+    </div>
+
+    <div class="no-webgl-only">
+        <div id="no-webgl-notice" class="panel">
+            <p>
+                Your browser does not support WebGL. Try
+                <a href="https://www.google.com/chrome">Chrome</a> or
+                <a href="http://www.mozilla.com/firefox/">Firefox</a>.
+            </p>
+            <p>
+                Mobile Safari has WebGL support in iOS 8
+            </p>
+        </div>
+    </div>
+
+
+    <!-- <script src="invite.js"></script> -->
+    <script type="text/javascript">
+        window.SDK_OPTIONS = {
+            gameId: "zfi43hwcd7th9zlgr1occj1oi6b6ccg3",
+            onEvent: function(a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        break;
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        break;
+                    case "SDK_READY":
+                        // when sdk is ready
+                        break;
+                }
+            }
+        };
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c
+			, a.src = "https://api.gamemonetize.com/sdk.js"
+			<!-- , d.parentNode.insertBefore(a, d) -->
+			)
+        })(document, "script", "gamemonetize-sdk");
+    </script>
+
+    
+
+</body>
+
+</html>

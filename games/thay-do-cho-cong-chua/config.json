@@ -1,0 +1,203 @@
+{
+  "id": 455,
+  "title": "Style Battle: Disney Princesses",
+  "name": "style_battle_disney_princesses",
+  "languages": [],
+  "rebrandName": "Style Battle: Princesses",
+  "portal": "Enjoydressup",
+  "core": "v0.2",
+  "ga": {
+    "key1": "7d4773fe34e30676f62be8ff5c94a259",
+    "key2": "2740e117a06961ab21061af96ce436297ab4b940"
+  },
+  "publishers": [
+    {
+      "domain": "www.dressupgames.com",
+      "publisher": 3,
+      "publisher_name": "Inga",
+      "force_language": "",
+      "whitelist": 0,
+      "hide_splash": 0,
+      "ads_positions": [
+        "unit2"
+      ],
+      "timer_ads_positions": [
+        "unit1",
+        "unit3",
+        "end1",
+        "unit2",
+        "unit4",
+        "replay1",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "pre2"
+      ],
+      "first_timer": "",
+      "timer_between_ads": "35",
+      "timer_resets_on_click": "0",
+      "ads_cap": 1,
+      "ad_tag": "//pubads.g.doubleclick.net/gampad/ads?sz=730x400&iu=/14162828/AFG-Ingame&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&hl=en-US",
+      "ads_locked": 0,
+      "description_url": "default",
+      "custom_description_url": "",
+      "lock_count": 0,
+      "locked": 0,
+      "rebrand": 0,
+      "optional": {
+        "outgoing": [
+          {
+            "zone": "logo_button",
+            "unit": "",
+            "block": "0",
+            "utm": "1",
+            "show": "1",
+            "url": "http://localhost",
+            "image": "logo.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "preloader",
+            "unit": "",
+            "block": "1",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_1",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_2",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_3",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_4",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_5",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_6",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "facebook",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "youtube",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "mg",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "mg",
+            "unit": "level_select",
+            "block": "0",
+            "utm": "1",
+            "show": "0",
+            "url": "http://",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "mg",
+            "unit": "end_screen",
+            "block": "0",
+            "utm": "1",
+            "show": "0",
+            "url": "http://",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          }
+        ],
+        "dontAdblock": 1
+      },
+      "adglare_campaign": ""
+    }
+  ]
+}

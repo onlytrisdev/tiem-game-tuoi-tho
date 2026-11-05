@@ -1,0 +1,418 @@
+
+# First quest
+- quest:
+  - jump: main
+
+  - label: penny_text
+  - set_quest_text: help_penny
+  - end
+
+  - label: fulfilling_penny_request
+  - wait: { arrival: hw4_classroom, markers: true }
+  - lock_door: { door: hw3, locked: true }
+  - lock_door: { door: hw4, locked: true }
+  - wait: { prop_request_fulfillment: { room: hw4_classroom, name: phone_coin, id: 0 }}
+  - wait: { item_picked_up: coin, room: hw4_classroom }
+  - lock_door: { door: hw4, locked: false }
+  - wait: { arrival: hw5_artroom, markers: true }
+  - lock_door: { door: hw4, locked: true }
+  - wait: { prop_request_fulfillment: { room: hw5_artroom, name: juice, id: 0 }}
+  - wait: { item_picked_up: juice, room: hw5_artroom }
+  - lock_door: { door: hw4, locked: false }
+  - wait: { arrival: hw4_classroom, markers: true }
+  - lock_door: { door: hw4, locked: true }
+  - end
+
+  - label: main
+  - enable_player_control: false
+  - add_character: { type: mowdown, pos: { room: hw2_gym, x: 30, y: 235 } }
+  - add_character: { type: penny, pos: { room: hw4_classroom, x: 18, y: 225 } }
+  - enable_prop: {prop: {room: hw2_gym, name: generator, id: 0}}
+  - enable_prop: {prop: {room: hw3_stairs, name: locker_1, id: 0}}
+  - enable_prop: {prop: {room: hw5_artroom, name: vent, id: 0}}
+  - enable_prop: {prop: {room: hw5_artroom, name: locker_2, id: 0}}
+  - enable_prop: {prop: {room: hw5_artroom, name: door_lock, id: 0}}
+  - enable_prop: {prop: {room: hw3_stairs, name: generator, id: 0}}
+  - set_character_idle_clip: { clip: LOOP_penny1, type: penny }
+  - set_character_request: { type: penny, item: juice }
+  - set_quest_text: find_darwin
+  - wait: 1.5
+
+  # Tutorial 1
+  - show_tutorial: move
+  - show_tutorial: objective
+  - show_tutorial: room
+  - enable_player_control: true
+
+  # Tutorial 2
+  - wait: { arrival: hw2_gym, markers: true }
+  - lock_door: { door: hw1, locked: true }
+  - lock_door: { door: hw2, locked: true }
+  - show_tutorial: clues
+  - wait: {
+      character_interaction: mowdown,
+      markers: true
+      }
+  - lock_door: { door: hw2, locked: false }
+  - show_tutorial: gym
+
+  # Tutorial 3:
+  - start_fiber: { id: penny_tutorial, entry_point: fulfilling_penny_request }
+  - wait: {
+      character_request_fulfillment: penny,
+      on_first_interaction: penny_text,
+      props_of_interest: [
+        { room: hw4_classroom, name: "phone_coin", id: 0 },
+        { room: hw5_artroom, name: "juice", id: 0 }
+      ],
+      markers: true
+      }
+  - play_sfx: mission_completed_penny1
+  - play_character_animation: { type: penny, clip_list: [ PLAY_pennyjuice, LOOP_pennyjuice ]}
+
+  - enable_player_control: false
+  - set_quest_text_icon: tick-keep
+  - fade_in: 2
+  - remove_character: penny
+  - fade_out: 1
+  - set_quest_text_icon: tick-hide
+  - set_quest_text: find_darwin
+  - show_tutorial: final
+  - play_map_button_animation
+  - enable_player_control: true
+  - lock_door: { door: hw1, locked: false }
+  - lock_door: { door: hw3, locked: false }
+  - lock_door: { door: hw4, locked: false }
+  - lock_door: { door: classroom, locked: false }
+  - enable_prop: {prop: {room: classroom, name: chairs, id: 0}}
+  - enable_prop: {prop: {room: classroom, name: paint_green, id: 0}}
+  - enable_prop: {prop: {room: hw4_classroom, name: trashcan, id: 0}}
+  - enable_prop: {prop: {room: hw9_library, name: door_lock_2, id: 0}}
+  - enable_prop: {prop: {room: nursing, name: door_lock_3, id: 0}}
+  - enable_prop: {prop: {room: nursing, name: cabinet, id: 0}}
+  - enable_prop: {prop: {room: hw7_roof, name: locker_1, id: 0}}
+  - enable_prop: {prop: {room: hw6_nurse, name: poster, id: 0}}
+  - enable_prop: {prop: {room: rooftop, name: broom, id: 0}}
+  - enable_prop: {prop: {room: artroom, name: paint_red, id: 0}}
+  - enable_prop: {prop: {room: artroom, name: paint_blue, id: 0}}
+  - enable_prop: {prop: {room: artroom, name: tv, id: 0}}
+  - enable_prop: {prop: {room: artroom, name: blackboard, id: 0}}
+  - save_game
+
+# Help Tobias
+- quest:
+  - jump: main_tobias
+  - label: tobias_text
+  - set_quest_text: help_tobias
+  - end
+  - label: main_tobias
+  - add_character: {type: tobias, pos: {room: classroom, x: -79, y: 195}}
+  - set_character_idle_clip: {clip: LOOP_tobias, type: tobias}
+  - set_character_request: {type: tobias, item: headband}
+  - wait: {
+      character_request_fulfillment: tobias,
+      on_first_interaction: tobias_text,
+      props_of_interest: [
+        {room: hw5_artroom, name: vent, id: 0}
+      ],
+      markers: false
+      }
+  - enable_player_control: false
+  - set_quest_text_icon: tick-keep
+  - play_sfx: mission_completed_tobias
+  - play_character_animation: { type: tobias, clip_list: [ PLAY_tobias, LOOP_tobias2 ]}
+  - fade_in: 2
+  - player_look_at_character: { type: tobias }
+  - remove_character: tobias
+  - spawn_item: {type: lockpick ,pos: {room: classroom, x: -79, y: 175}}
+  - fade_out: 1
+  - set_quest_text_icon: tick-hide
+  - enable_player_control: true
+  - save_game
+
+# Open the artroom
+- quest:
+  - set_quest_text: open_artroom
+  - wait: {minigame_done: {room: hw5_artroom, name: door_lock, id: 0}}
+  - set_quest_text_icon: tick
+  - lock_door: { door: artroom, locked: false }
+  - set_quest_text: find_darwin
+  - save_game
+
+# Fix Bobert
+- quest:
+  - jump: main_bobert
+  - label: bobert_text
+  - set_quest_text: "help_bobert"
+  - end
+  - label: main_bobert
+  - add_character: {type: bobert, pos: {room: artroom, x: 0.7, y: 163}}
+  - set_character_idle_clip: {clip: LOOP_bobert1, type: bobert}
+  - set_character_request: {type: bobert, item: chip}
+  - wait: {
+      character_request_fulfillment: bobert,
+      on_first_interaction: bobert_text,
+      props_of_interest: [
+        {room: hw5_artroom, name: locker_2, id: 0}
+      ],
+      markers: false
+      }
+  - enable_player_control: false
+  - play_sfx: mission_completed_bobert
+  - play_character_animation: { type: bobert, clip_list: [ PLAY_bobert_fix, LOOP_bobert2 ]}
+  - set_quest_text_icon: tick-keep
+  - fade_in: 2
+  - player_look_at_character: { type: bobert }
+  - remove_character: bobert
+  - spawn_item: {type: screwdriver, pos: {room: artroom, x: 0.7, y: 153}}
+  - fade_out: 1
+  - set_quest_text_icon: tick-hide
+  - enable_player_control: true
+  - save_game
+
+# Go to the second floor
+- quest:
+  - set_quest_text: go_2nd_floor
+  - wait: {minigame_done: {room: hw3_stairs, name: generator, id: 0}}
+  - lock_door: { door: stairs, locked: false }
+  - wait: {arrival: hw8_stairs}
+  - set_quest_text_icon: tick
+  - save_game 
+
+# Unlock the nurse
+- quest:
+  - set_quest_text: open_nurse
+  - lock_door: { door: nurse, locked: true}
+  - add_character: {type: alan, pos: {room: hw9_library, x: 601, y: 183}}
+  - set_character_idle_clip: {clip: LOOP_alan, type: alan}
+  - set_character_request: {type: alan, item: blowgun}
+  - add_character: { type: penny, pos: { room: nursing, x: -10, y: 212 } }
+  - set_character_request: { type: penny, item: padlock }
+  - set_character_idle_clip: { clip: LOOP_pennyangry, type: penny }
+  - wait: {minigame_done: {room: nursing, name: door_lock_3, id: 0}}
+  - enable_player_control: false
+  - play_sfx: mission_completed_penny2
+  - play_character_animation: { type: penny, clip_list: [ PLAY_celebration, LOOP_penny3 ]}
+  - set_quest_text_icon: tick-keep
+  - fade_in: 2
+  - remove_character: penny
+  - fade_out: 1
+  - enable_player_control: true
+  - set_quest_text_icon: tick-hide
+  - save_game
+
+# Poster painting quest
+- quest:
+  - set_quest_text: open_library
+  - force_quest_room: hw9_library
+  - add_character: { type: penny, pos: {room: hw6_nurse, x: -330, y: 225}}
+  - set_character_idle_clip: {clip: LOOP_penny2, type: penny }
+  - start_fiber: { id: text_update_penny, entry_point: text_update_penny }
+  - start_fiber: { id: text_update_lock, entry_point: text_update_lock }
+  - start_fiber: { id: red_brush, entry_point: red_brush_1 }
+  - start_fiber: { id: blue_brush, entry_point: blue_brush_1 }
+  - start_fiber: { id: green_brush, entry_point: green_brush_1 }
+  - start_fiber: { id: main, entry_point: main }
+  - jump: quest_end
+
+  - label: text_update_penny
+  # Update text if interacted with Penny
+  - wait: { character_interaction: penny }
+  - set_quest_text: help_penny_poster
+  - force_quest_room: hw6_nurse
+  - kill_fiber: text_update_lock
+  - end
+
+  - label: text_update_lock
+  # Update text if interacted with combination lock
+  - wait: { prop_interaction: { room: hw9_library, name: door_lock_2, id: 0 }}
+  - set_quest_text: help_penny_poster
+  - force_quest_room: hw6_nurse
+  - kill_fiber: text_update_penny
+  - end
+
+  - label: red_brush_1
+  - jump_if_player_has_item: { item: red_brush, label: red_brush_2 }
+  # Red brush logic (when Gumball starts the quest without the brush painted)
+  - wait: { prop_request_fulfillment: { room: artroom, name: paint_red, id: 0 }}
+  - wait: { item_picked_up: red_brush, room: artroom }
+  - set_character_request: { type: penny, item: red_brush }
+  - wait: { character_request_fulfillment: penny }
+  - jump: red_brush_end
+
+  - label: red_brush_2
+  # Red brush logic (when Gumball starts the quest having the brush painted)
+  - wait: { character_request_fulfillment: penny }
+  - jump: red_brush_end
+
+  - label: red_brush_end
+  - wait: 2
+  - set_environment_flag: { flag: poster_red_painted, enabled: true }
+  - end
+
+  - label: blue_brush_1
+  - jump_if_player_has_item: { item: blue_brush, label: blue_brush_2 }
+  # Blue brush logic
+  - wait: { prop_request_fulfillment: { room: artroom, name: paint_blue, id: 0 }}
+  - wait: { item_picked_up: blue_brush, room: artroom }
+  - set_character_request: { type: penny, item: blue_brush }
+  - wait: { character_request_fulfillment: penny }
+  - jump: blue_brush_end
+
+  - label: blue_brush_2
+  # Blue brush logic (when Gumball starts the quest having the brush painted)
+  - wait: { character_request_fulfillment: penny }
+  - jump: blue_brush_end
+
+  - label: blue_brush_end
+  - wait: 2
+  - set_environment_flag: { flag: poster_blue_painted, enabled: true }
+  - end
+
+  - label: green_brush_1
+  - jump_if_player_has_item: { item: green_brush, label: green_brush_2 }
+  # Green brush logic
+  - wait: { prop_request_fulfillment: { room: classroom, name: paint_green, id: 0 }}
+  - wait: { item_picked_up: green_brush, room: classroom }
+  - set_character_request: { type: penny, item: green_brush }
+  - wait: { character_request_fulfillment: penny }
+  - jump: green_brush_end
+
+  - label: green_brush_2
+  # Green brush logic (when Gumball starts the quest having the brush painted)
+  - wait: { character_request_fulfillment: penny }
+  - jump: green_brush_end
+
+  - label: green_brush_end
+  - wait: 2
+  - set_environment_flag: { flag: poster_green_painted, enabled: true }
+  - end
+
+  - label: on_brush_delivered
+  # This happens when you deliver a brush
+  - enable_player_control: false
+  - fade_in: 2
+  - set_player_position: { x: -200, y: 165, direction: left }
+  - spawn_item: { type: brush, pos: { room: hw6_nurse, x: -545, y: 175 }}
+  - set_character_request: { type: penny, item: painted_brush }
+  - fade_out: 1
+  - play_sfx: paint_after_fade
+  - enable_player_control: true
+  - end
+
+  - label: main
+  # Delivering brushes to Penny
+  - set_character_request: { type: penny, item: painted_brush }
+  - wait: { character_request_fulfillment: penny }
+  - play_sfx: paint_wall1
+  - start_fiber: { id: deliver_1, entry_point: on_brush_delivered }
+  - wait: { character_request_fulfillment: penny }
+  - play_sfx: paint_wall2
+  - start_fiber: { id: deliver_2, entry_point: on_brush_delivered }
+  - wait: { character_request_fulfillment: penny }
+  - play_sfx: paint_wall3
+  - enable_player_control: false
+  - set_quest_text_icon: tick-keep
+  - fade_in: 2
+  - remove_character: penny
+  - fade_out: 1
+  - play_sfx: paint_after_fade
+  - set_quest_text_icon: tick-hide
+  - enable_player_control: true
+  - set_quest_text: open_library
+  - force_quest_room: hw9_library
+  - wait: 5
+  - save_game
+  - end
+
+  - label: quest_end
+  # Open the library
+  - wait: { minigame_done: { room: hw9_library, name: door_lock_2, id: 0 }}
+  - force_quest_room: null
+  - set_quest_text_icon: tick
+  - set_quest_text: explore_library
+  - save_game
+
+# Get tobias out of the library
+- quest:
+  - add_character: { type: tobias, pos: { room: library_1, x: 147, y: 186 }}
+  - set_character_facing_scale: { type: tobias, direction: -1 }
+  - set_character_idle_clip: { type: tobias, clip: LOOP_tobias2 }
+  - wait: { arrival: library_1 }
+  - set_quest_text: tobias_out
+  - start_fiber: { id: move_tobias, entry_point: move_tobias }
+  - set_prop_blocker: { npc: tobias, blacklist: [{ room: library_2, name: extinguisher, id: 0 }]}
+  - jump: main
+
+  - label: move_tobias
+  - wait: { arrival: library_2 }
+  - add_character: { type: tobias, pos: { room: library_2, x: 108, y: 230 }}
+  - set_character_facing_scale: { type: tobias, direction: -1 }
+  - wait: { arrival: library_1 }
+  - add_character: { type: tobias, pos: { room: library_1, x: 147, y: 186 }}
+  - set_character_facing_scale: { type: tobias, direction: -1 }
+  - jump: move_tobias
+
+  - label: main
+  - force_quest_room: rooftop
+  - wait: { prop_request_fulfillment: { room: library_2, name: extinguisher, id: 0 }}
+  - give_item: fire_extinguisher
+  - wait: { prop_request_fulfillment: { room: rooftop, name: ac, id: 0 }}
+  - show_panel: { type: fire_extinguisher }
+  - kill_fiber: move_tobias
+  - force_quest_room: null
+  - clear_prop_blocker
+  - remove_character: tobias
+  - wait: { arrival: library_1 }
+  - set_quest_text_icon: tick
+  - set_quest_text: explore_library
+  - save_game
+
+# Fix the computer
+- quest:
+  - wait: { arrival: library_2 }
+  - set_quest_text: fix_pc
+  - wait: { prop_request_fulfillment: { room: library_2, name: screen, id: 0 }}
+  - enable_prop: { prop: { room: library_2, name: screen, id: 1 }}
+  - set_quest_text_icon: tick
+  - save_game
+
+# Get the password
+- quest:
+  - jump: main
+
+  - label: alan_popped
+  - show_panel: { type: default, image: popping_alan }
+  - play_sfx: alan_pop
+  - play_character_animation: { type: alan, clip_list: [ PLAY_alan_pop ]}
+  - remove_character: alan
+  - end
+
+  - label: main
+  - set_quest_text: get_password
+  - wait: { character_request_fulfillment: alan }
+  - start_fiber: { id: alan_popped, entry_point: alan_popped }
+  - enable_prop: { prop: { room: hw9_library, name: note, id: 0 }}
+  - wait: { minigame_done: { room: hw9_library, name: note, id: 0 }}
+  - wait: { prop_request_fulfillment: { room: library_2, name: screen, id: 1 }}
+  - show_panel: { type: pc_video_hint }
+  - set_environment_flag: { flag: gym_hall_panel_open, enabled: true }
+  - enable_prop: { prop: { room: hw2_gym, name: generator, id: 0 }, enabled: false }
+  - enable_prop: { prop: { room: hw2_gym, name: generator, id: 1 }}
+  - set_quest_text_icon: tick
+  - save_game
+
+# Get Mowdown out of the damn way
+- quest:
+  - set_quest_text: ring_bell
+  - wait: { prop_request_fulfillment: { room: hw2_gym, name: generator, id: 2 }}
+  - enable_player_control: false
+  - show_panel: { type: bell }
+  - play_sfx: mowdown_leaves
+  - play_character_animation: { type: mowdown, clip_list: [ PLAY_mdn_surprise, PLAY_mdn_leave ]}
+  - remove_character: mowdown
+  - enable_player_control: true
+  - enable_prop: { prop: { room: hw2_gym, name: barrier, id: 0 }}
+  - set_quest_text_icon: tick
+  - set_quest_text: save_darwin
+  - save_game

@@ -1,0 +1,52 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    overflow: hidden; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    /*background-color: #000;*/
+    background-color: #ec008c;
+    background-image: url("bg_pattern.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font: normal 55px borisblackbloxx;
+}
+#gamediv {
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    width: 100%;
+    display: block;
+}
+
+#canvas {
+    background-color: #ED84B0;
+    margin-left: -320px;
+    margin-top: -500px;
+    top:50%;
+    left:50%;
+    padding: 0;
+    z-index: 1;
+    /*visibility: hidden;*/
+}
+#loader {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    /*background: url('loader.gif') no-repeat 50% 50%;*/
+    display: block !important;
+    z-index: 3;
+}

@@ -1,0 +1,213 @@
+{
+  "id": 681,
+  "name": "Xu hướng holographic",
+  "title": "Xu hướng holographic",
+  "rebrandName": "Xu hướng holographic",
+  "prinxySlug": "",
+  "portal": "Gamerina",
+  "core": "v0.3",
+  "sdks": [
+    {
+      "type": "crazy-games",
+      "data": {
+        "banner": {
+          "size_large": "300x250",
+          "size_small": "320x50",
+          "position": "bot-left"
+        }
+      }
+    }
+  ],
+  "publishers": [
+    {
+      "id": 0,
+      "name": "OpenMarket",
+      "domain": "yandex",
+      "domain_id": 0,
+      "ads_positions": [
+        "pre2",
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "replay1",
+        "reward1",
+        "reward2",
+        "reward3",
+        "reward4",
+        "reward5",
+        "reward6",
+        "reward7",
+        "reward8",
+        "ls1"
+      ],
+      "timer_ads_positions": [
+        "pre2",
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "ls1"
+      ],
+      "timer_between_ads": "30",
+      "first_timer": "0",
+      "timer_resets_on_click": 0,
+      "ad_unit": "",
+      "ads_locked": "0",
+      "whitelist": "0",
+      "locked": "0",
+      "ads_cap": "0",
+      "optional": {
+        "outgoing": [
+          {
+            "zone": "logo_button",
+            "unit": "",
+            "url": "https://okgmaehay.com/",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          },
+          {
+            "zone": "preloader_button",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "level_select",
+            "url": "https://okgmaehay.com/",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          },
+          {
+            "zone": "facebook",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "youtube",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "end_screen",
+            "url": "https://okgmaehay.com/",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          }
+        ],
+        "fullscreen": {
+          "hide": true
+        }
+      },
+      "rebrand": "1",
+      "hide_splash": "0",
+      "force_language": "",
+      "needs_consent": "0",
+      "show_related": "1",
+      "bsense": false,
+      "bsense_channel": ""
+    }
+  ],
+  "related": [
+    {
+      "title": "Ellie: Maskne Face Care",
+      "url": "https://game.digitap.eu/e8e228d9-111e-5722-89da-d0627bcef73d/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/ellie_maskne_face_care_thumbnail_340x220_v2.webm",
+      "position": 1
+    },
+    {
+      "title": "Home Decor: Indoor Jungle",
+      "url": "https://game.digitap.eu/e15c4283-14b4-5058-9496-632cca333737/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/House_Deco_Indoor_Jungle_320x220-gif.gif",
+      "position": 2
+    },
+    {
+      "title": "Lotta The Otter Rescue",
+      "url": "https://game.digitap.eu/f8611bf0-acea-5663-a104-9ef96ea08c0e/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/Lotta_The_Otter_Rescue_Gif_320x220.gif",
+      "position": 3
+    },
+    {
+      "title": "Easter Glamping Trip",
+      "url": "https://game.digitap.eu/46674736-e7a3-5f68-9baf-c0c5185ce160/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/Easter_Glamping_Trip_340x220.gif",
+      "position": 5
+    },
+    {
+      "title": "Princess Homeland",
+      "url": "https://game.digitap.eu/ceafbe0b-8ec7-502c-b12e-02265e96d775/index.html",
+      "thumb": "https://cms.gamerina.eu/storage/app/media/related_thumbs/Princess_Homeland_340x220.gif",
+      "position": 4
+    }
+  ],
+  "languages": [
+    "Russian",
+    "English"
+  ],
+  "translations": []
+}

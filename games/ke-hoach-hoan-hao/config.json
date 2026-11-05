@@ -1,0 +1,301 @@
+{
+    "id": 722,
+    "title": "Kế hoạch hoàn hảo",
+    "name": "my_perfect_year_planner",
+    "prinxySlug": "",
+    "languages": ["English","Russian"],
+    "rebrandName": "Kế hoạch hoàn hảo",
+    "portal": "Prinxy",
+    "core": "v0.3",
+    "ga": {
+        "key1": "",
+        "key2": ""
+    },
+    "okru": {
+        "app_id": "",
+        "app_key": ""
+    },
+    "publishers": [
+        {
+            "domain": "yandex",
+            "domain_id": 1238,
+            "publisher": 0,
+            "publisher_name": "none",
+            "force_language": "",
+            "whitelist": 0,
+            "hide_splash": 0,
+            "ads_positions": [
+                "pre2",
+                "unit1",
+                "unit2",
+                "unit3",
+                "unit4",
+                "unit5",
+                "unit6",
+                "unit7",
+                "unit8",
+                "unit9",
+                "unit10",
+                "unit11",
+                "unit12",
+                "reward1",
+                "reward2",
+                "reward3",
+                "reward4",
+                "reward5",
+                "reward6",
+                "reward7"
+            ],
+            "timer_ads_positions": [
+                "pre2",
+                "unit1",
+                "unit2",
+                "unit3",
+                "unit4",
+                "unit5",
+                "unit6",
+                "unit7",
+                "unit8",
+                "unit9",
+                "unit10",
+                "unit11",
+                "unit12"
+            ],
+            "first_timer": "",
+            "timer_between_ads": "180",
+            "timer_resets_on_click": "0",
+            "ads_cap": 0,
+            "ad_unit": "",
+            "ads_locked": 0,
+            "description_url": "default",
+            "custom_description_url": "",
+            "locked": 0,
+            "rebrand": 1,
+            "needs_consent": 0,
+            "show_related": 0,
+            "optional": {
+                "outgoing": [
+                    {
+                        "zone": "logo_button",
+                        "unit": "",
+                        "block": "1",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "preloader",
+                        "unit": "",
+                        "block": "1",
+                        "utm": "0",
+                        "show": "1",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "preloader_button",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "thumb_1",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                        "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/test_design1_gold.png",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "thumb_2",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/elsa",
+                        "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/Elsa_Design5_gold.png",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "thumb_3",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/elsa",
+                        "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/Elsa_design1_gold.png",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "thumb_4",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                        "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/game_anna_vs_elsa_design1_gold.png",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "thumb_5",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/ariel",
+                        "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/Ariel_Design5_gold.png",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "thumb_6",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                        "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/ariel_vs_belle.png",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "facebook",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "youtube",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "mg",
+                        "unit": "",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "mg",
+                        "unit": "level_select",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "mg",
+                        "unit": "end_screen",
+                        "block": "0",
+                        "utm": "0",
+                        "show": "0",
+                        "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": ""
+                    },
+                    {
+                        "zone": "music",
+                        "unit": "",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": "",
+                        "block": "1",
+                        "remove": "0",
+                        "utm": "0",
+                        "show": "1"
+                    },
+                    {
+                        "zone": "idea",
+                        "unit": "",
+                        "url": "",
+                        "image": "",
+                        "xpos": "",
+                        "ypos": "",
+                        "block": "1",
+                        "remove": "0",
+                        "utm": "0",
+                        "show": "1"
+                    }
+                ],
+                "dontAdblock": 1,
+                "fullscreen": {
+                    "hide": 1
+                }
+            }
+        }
+    ],
+    "related": [
+        {
+            "title": "Extreme Makeover",
+            "url": "https:\/\/game.digitap.eu\/499793a7-6110-5946-a101-f8780e4474c1\/index.html",
+            "thumb": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Related Games\/Extreme Makeover\/extreme_makeover.gif",
+            "webm": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/related_thumbs\/Zoo_Chefs_Thumbnail_V2.webm",
+            "position": 1
+        },
+        {
+            "title": "Miruna's Adventure: Vet",
+            "url": "https:\/\/www.gameswf.com\/webgl\/mirunas_adventure_vet\/",
+            "thumb": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Related Games\/Mirunas Adventure Vet\/mirunas_adventure_vet_small.gif",
+            "webm": null,
+            "position": 2
+        },
+        {
+            "title": "Ollie Goes to School",
+            "url": "https:\/\/www.gameswf.com\/webgl\/ollie_goes_to_school\/",
+            "thumb": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Related Games\/Ollie Goes to School\/ollie_goes_to_school_small.gif",
+            "webm": null,
+            "position": 3
+        },
+        {
+            "title": "Summertime Celebration",
+            "url": "https:\/\/www.gameswf.com\/webgl\/summertime_celebration\/",
+            "thumb": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Related Games\/Summertime Celebration\/summertime_celebration_small.gif",
+            "webm": null,
+            "position": 5
+        },
+        {
+            "title": "Princesses Emergency Room",
+            "url": "https:\/\/www.gameswf.com\/webgl\/princesses_emergency_room\/",
+            "thumb": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Related Games\/Princesses Emergency Room\/princesses_emergency_room_small.gif",
+            "webm": null,
+            "position": 4
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệp sĩ Apple: Nông trại</title>
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <script src="./arcade-save.js?1"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Cd91ki0c.css">
+</head>
+
+<body>
+    <canvas id="canvas" tabindex="0"></canvas>
+
+    <div id="game-ui" style="visibility: hidden;">
+        <div id="ui-overlay" class="hidden"></div>
+
+        <div id="hierarchy-container">
+            <!-- scene hierarchy -->
+            <div id="scene-hierarchy">
+                <div id="scene-hierarchy-title">Scene Hierarchy</div>
+                <div id="scene-hierarchy-list">
+                    <ul id="scene-hierarchy-list-ul">
+                        <li>
+                            <span class="expandable">Group 1</span>
+                            <ul class="nested">
+                                <li>Object 1</li>
+                                <li>Object 2</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="expandable">Group 2</span>
+                            <ul class="nested">
+                                <li>Object 3</li>
+                                <li>Object 4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- other scene items -->
+            <div id="additional-items">
+                <div id="additional-items-title">Additional Items</div>
+                <div id="additional-items-list">
+                    <ul id="additional-items-list-ul"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="fps-count">
+            <span id="fps-count-number">0</span>
+        </div>
+
+        <div id="joystick-container">
+            <div id="joystick"></div>
+        </div>
+    </div>
+
+    <div id="error-message" style="display: none; color: black; font-weight: bold; background-color: white; border: 2px solid red; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 10px; text-align: center; font-size: 2vw;"></div>
+
+</body>
+
+</html>

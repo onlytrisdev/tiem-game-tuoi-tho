@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chiến Trường Xe Tăng</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+<meta name="generator" content="Construct 3">
+	<meta name="author" content="Artem Goldov (Mugle Studio)">
+	<meta name="description" content="Time of Tanks - Battlefield">
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+<link rel="stylesheet" href="style.css">
+
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<script>
+function YaGamesShow() {
+	console.info('adv show!');
+        YaGames.init({
+            adv: {
+                onAdvClose: wasShown => {
+                    console.info('adv closed!');
+                }
+            }
+        })
+        .then(ysdk => {
+          ysdk.adv.showFullscreenAdv();
+        });
+}
+
+var lastTime = 0;
+
+function YaGamesCheck() {
+	console.info('adv check!');
+    if ( Math.floor((new Date() - lastTime)/60000) < 3 ) {
+	console.info('adv not ready:' + Math.floor((new Date() - lastTime)/60000));
+    } else {
+        lastTime =  new Date();
+		YaGamesShow();
+    }
+}
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	
+	
+
+</body>
+</html>

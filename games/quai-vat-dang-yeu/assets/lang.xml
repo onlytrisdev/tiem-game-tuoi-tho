@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+<languages>
+<language>en</language>
+<language>fr</language>
+<language>de</language>
+<language>es</language>
+<language>pt</language>
+<language>it</language>
+</languages>
+<strings>
+    <string id="1">
+        <en>en</en>
+        <fr>fr</fr>
+        <de>de</de>
+        <es>es</es>
+        <pt>pt</pt>
+        <it>it</it>
+    </string>
+    <string id="7">
+        <en>TIẾP TỤC</en>
+        <no>FORTSETT</no>
+        <es>CONTINUAR</es>
+        <de>WEITER</de>
+        <it>CONTINUA</it>
+        <fr>CONTINUER</fr>
+        <pt>CONTINUAR</pt>
+        <br>CONTINUAR</br>
+    </string>
+    <string id="8">
+        <en>ĐÃ THU THẬP</en>
+        <no>SAMLET</no>
+        <fr>RECUEILLIES</fr>
+        <de>GESAMMELT</de>
+        <es>RECOGIDO</es>
+        <pt>COLETADO</pt>
+        <it>RACCOLTO</it>
+    </string>
+    <string id="9">
+        <en>PHIÊN BẢN</en>
+        <no>VERSJON</no>
+        <fr>VERSION</fr>
+        <de>VERSION</de>
+        <es>VERSIÓN</es>
+        <pt>VERSÃO</pt>
+        <it>VERSIONE</it>
+    </string>
+    <string id="10">
+        <en>DỄ</en>
+        <no>LETT</no>
+        <fr>FACILE</fr>
+        <de>EINFACH</de>
+        <es>FÁCIL</es>
+        <pt>FÁCIL</pt>
+        <it>FACILE</it>
+        <br>FÁCIL</br>
+    </string>
+    <string id="11">
+        <en>BÌNH THƯỜNG</en>
+        <no>MELLOM</no>
+        <fr>MOYEN</fr>
+        <de>MEDIUM</de>
+        <es>MEDIO</es>
+        <pt>MÉDIA</pt>
+        <it>NORMALE</it>
+        <br>MÉDIO</br>
+    </string>
+    <string id="12">
+        <en>KHÓ</en>
+        <no>VANSKELIG</no>
+        <fr>DIFFICILE</fr>
+        <de>HARD</de>
+        <es>DIFÍCIL</es>
+        <pt>DIFÍCIL</pt>
+        <it>DIFFICILE</it>
+        <br>DIFÍCIL</br>
+    </string>
+    <string id="13">
+        <en>HOÀN HẢO!</en>
+        <no>PERFEKT!</no>
+        <fr>PARFAIT!</fr>
+        <de>PERFEKT!</de>
+        <es>¡PERFECTO!</es>
+        <pt>PERFEITO!</pt>
+        <it>PERFETTO!</it>
+    </string>
+    <string id="14">
+        <en>CẤP ĐỘ</en>
+        <no>NIVÅ</no>
+        <es>NIVEL</es>
+        <de>LEVEL</de>
+        <fr>NIVEAU</fr>
+        <pt>NIVEL</pt>
+        <it>LIVELLO</it>
+        <br>NÍVEL</br>
+    </string>
+    <string id="15">
+        <en>NỐI</en>
+        <no>TREKK</no>
+        <fr>Coups</fr>
+        <de>Züge</de>
+        <es>Movimientos</es>
+        <pt>Movimentos</pt>
+        <it>Mosse</it>
+    </string>
+    <string id="16">
+        <en>KẾT NỐI</en>
+        <no>FORBINDELSER</no>
+        <fr>Connexions</fr>
+        <de>Verbindungen</de>
+        <es>Conexiones</es>
+        <pt>Ligações</pt>
+        <it>Connessioni</it>
+    </string>
+    <string id="17">
+        <en>TỐT NHẤT</en>
+        <no>BESTE</no>
+        <fr>RECORD</fr>
+        <de>REKORD</de>
+        <es>RECORD</es>
+        <pt>MELHOR</pt>
+        <it>MIGLIOR</it>
+        <br>MELHOR</br>
+    </string>
+    <string id="18">
+        <en>HOÀN THÀNH</en>
+        <no>DEKNING</no>
+        <fr>Remplissage</fr>
+        <de>Gefüllt</de>
+        <es>Cobertura</es>
+        <pt>Cobertura</pt>
+        <it>Copertura</it>
+    </string>
+    <string id="19">
+        <en>NHẤN ĐỂ TIẾP TỤC</en>
+        <no>TRYKK FOR Å FORTSETTE</no>
+        <fr>Touchez pour\ncontinuer</fr>
+        <de>Zum Fortfahren\nberühren</de>
+        <es>Toca para continuar</es>
+        <pt>Toca para continuar</pt>
+        <it>Tocca per continuare</it>
+        <br>Toque para continuar</br>
+    </string>
+    <string id="20">
+        <en>HOÀN THÀNH CẤP ĐỘ!</en>
+        <no>NIVÅ FULLFØRT!</no>
+        <fr>NIVEAU TERMINÉ!</fr>
+        <de>LEVEL ABGESCHLOSSEN!</de>
+        <es>¡NIVEL COMPLETADO!</es>
+        <pt>NÍVEL CONCLUÍDO!</pt>
+        <it>LIVELLO COMPLETATO!</it>
+    </string>
+    <string id="21">
+        <en>KHÔNG HOÀN THÀNH!</en>
+        <no>IKKE KLAR!</no>
+        <fr>PAS FINIS !</fr>
+        <de>NICHT ABGESCHLOSSEN!</de>
+        <es>¡NO COMPLETADO!</es>
+        <pt>NÃO COMPLETADO!</pt>
+        <it>NON COMPLETATO!</it>
+    </string>
+    <string id="22">
+        <en>Bạn đã sử dụng {0} lần nối.</en>
+        <no>DU HAR BRUKT {0} TREKK.</no>
+        <fr>Vous avez utilisé {0} coups.</fr>
+        <de>Du hast {0} Züge verwendet.</de>
+        <es>Has utilizado {0} movimientos.</es>
+        <pt>Você usou {0} movimentos.</pt>
+        <it>Hai utilizzato {0} mosse.</it>
+    </string>
+    <string id="23">
+        <en>(HOÀN HẢO: {0} lần nối)</en>
+        <no>(PERFEKT: {0} TREKK)</no>
+        <fr>(Parfait: {0} coups)</fr>
+        <de>(Perfekt: {0} Züge)</de>
+        <es>(Perfecta: {0} movimientos)</es>
+        <pt>(Perfeito: {0} movimentos)</pt>
+        <it>(Perfetto: {0} mosse)</it>
+    </string>
+    <string id="24">
+        <en>Tốt lắm, nhưng bạn phải bao phủ toàn bộ bằng các đường năng lượng!</en>
+        <no>BRA, MEN DU MÅ DEKKE HELE FELTET MED ENERGILINJER!</no>
+        <fr>Bien, mais vous devez remplir le plateau de jeu de courant !</fr>
+        <de>Gut, du musst aber das gesamte Spielfeld mit Energie-Linien füllen!</de>
+        <es>¡Muy bien, pero tienes que cubrir todo el tablero con flujo de energía!</es>
+        <pt>Excelente, mas deves cobrir o campo todo com um fluxo de energia!</pt>
+        <it>Bene, ma devi coprire l'intero campo con un flusso di energia!</it>
+    </string>
+    <string id="25">
+        <en>Kết nối các quái vật Poke cùng loại với một luồng năng lượng. Bạn phải lấp đầy toàn bộ các ô với các đường năng lượng để có một cấp độ hoàn chỉnh.</en>
+        <no>KOPLE POKEMONSTRE AV SAMME TYPE MED EN STRØM AV ENERGI. DU MÅ FYLLE HELE FELTET MED ENERGILINJER FOR EN KOMPLETT NIVÅLØSNING.</no>
+        <fr>Reliez les Pokémonstres de même type avec de l'énergie. Vous devez remplir le plateau de jeu de courant pour terminer le niveau.</fr>
+        <de>Verbinde gleichartige Poke-Monster mit einem Energiestrahl. Du musst das ganze Feld mit Energie-Linien füllen, um das Level abzuschließen.</de>
+        <es>Conecta monstruos Poke del mismo tipo con un flujo de energía. Para resolver el nivel, tendrás que llenar todo el campo con flujos de energía.</es>
+        <pt>Conecte monstros Poke do mesmo tipo com um fluxo de energia. Você tem que preencher todo o campo com um fluxo de energia para concluir um nível.</pt>
+        <it>Unisci i mostri Poke dello stesso tipo con un flusso di energia. Riempi tutto il campo con linee di energia per risolvere completamente il livello.</it>
+    </string>
+
+    <string id="26">
+        <en>Xin chúc mừng! Bạn đã hoàn thành tất cả các màn chơi! Nhưng vẫn còn nhiều việc phải làm! Bạn có thể đạt được xếp hạng 3 sao trong tất cả các màn chơi không?</en>
+        <no>GRATULERER! DU HAR FULLFØRT ALLE STADIER! MEN DET ER FORTSATT MER Å GJØRE. KAN DU OPPNÅ 3 STJERNERS RANGERING I ALLE STADIER?</no>
+        <de>Glückwunsch! Du hast alle Levels abgeschlossen! Aber es gibt noch mehr zu tun. Kannst du in allen Levels eine Sterne-Bewertung erreichen?</de>
+        <es>¡Enhorabuena! ¡Has completado todos los niveles! Pero queda más por hacer. ¿Podrás conseguir 3 estrellas en todos los niveles?</es>
+        <fr>Félicitations ! Vous avez terminé tous les niveaux ! Mais il reste encore beaucoup à faire ! Pouvez-vous obtenir 3 étoiles dans chaque niveau ?</fr>
+        <it>Congratulazioni! Hai completato tutti i livelli! Ma c'è ancora altro da fare! Riesci a ottenere 3 stelle in tutti i livelli?</it>
+        <pt>Parabéns! Você concluiu todas as etapas! Mas ainda há muito trabalho pela frente! Você consegue a classificação de 3 estrelas em todas as etapas?</pt>
+    </string>
+
+    <string id="27">
+        <en>Trò chơi đã hoàn thành! Tất cả các ngôi sao được thu thập!</en>
+        <no>SPILL FULLFØRT! ALLE STJERNER SAMLET!</no>
+        <de>Spiel abgeschlossen! Du hast alle Sterne gesammelt!</de>
+        <es>¡Juego completado! ¡Has recogido todas las estrellas!</es>
+        <fr>Jeu terminé ! Vous avez obtenu toutes les étoiles !</fr>
+        <it>Partita completata! Tutte le stelle raccolte!</it>
+        <pt>Jogo concluído. Todas as estrelas coletadas!</pt>
+    </string>
+</strings>
+</stringresources>

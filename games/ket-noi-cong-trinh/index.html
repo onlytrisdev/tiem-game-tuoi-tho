@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <title>Kết nối công trình</title>
+
+		
+
+		<!-- <script src="../../assets/vendor/clean-runtime.js?v=4"></script> -->
+
+		<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+		
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <link href="styles/style.css" rel="stylesheet">
+
+        <script type="text/javascript" src="scripts/paper-full.min.js"></script>
+
+        <script type="text/javascript" src="scripts/code.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="content">
+
+            <canvas id="canvas" resize>Nâng cấp trình duyệt của bạn</canvas>
+
+            <div id="pause-text">
+
+                <span id="start">ĐANG TẢI 0%</span>
+
+                <span id="touch">BẤM ĐỂ BẮT ĐẦU</span>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            (function(d) {
+
+                var t = d.getElementsByTagName('script')[0];
+
+                var s = d.createElement('script');
+
+                s.src = 'https://yandex.ru/games/sdk/v2';
+
+                s.async = true;
+
+                //t.parentNode.insertBefore(s, t);
+
+                s.onload = initSDK;
+
+            })(document);
+
+        </script>
+
+    </body>
+
+</html>

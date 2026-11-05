@@ -1,0 +1,66 @@
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui" /> 
+  <meta http-equiv="Content-Type" content="text/html" /> 
+  <meta name="robots" content="index,nofollow" /> 
+  <meta name="apple-touch-fullscreen" content="yes" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <title>Triệu hồi Công chúa</title>
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>  
+ 
+  <link rel="stylesheet" type="text/css" href="./html5/css/style.css?x" /> 
+  <script src="./html5/games-api/functions.js?x"></script> 
+  <script>
+	var debug = false;
+	var acc = '2';
+	var pid = 50; 
+	var gid = 328;
+	var dev = 1;
+	var premiumGame = 0;
+	var endlessGame = 1;
+	var autoInitGame = true;
+	var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+	var adBlocked = true;
+	var gameAtlasURL = 'images/game_atlas_' + (isMobile?'tiny':'') + '.png';
+	var upNextGames = [{s:'gwen-college-room-prep', n:'Gwen College Room Prep'},{s:'summer-fresh-smoothies', n:'Summer Fresh Smoothies'},{s:'pirate-princess-treasure-adventure', n:'Pirate Princess Treasure Adventure'},{s:'audrey-pony-daycare', n:'Audrey Pony Daycare'},{s:'blonde-princess-wedding-fashion', n:'Blonde Princess Wedding Fashion'}];
+	var imageLoaderCssData = 'data:image/png;base64,YTBkMGIzZDcwMjU2MzdjNjE2NjYwMmQzMDI1NjY3OTY0NzM2MTRjNmM2ZjYyNzQ2OTZkNmUyNzY2NjM0Mzc0NjE2MDJkMzAyNTY2Nzk2NDczNjE0YzZjNmY2Mjc1NjI3MDdlMjc2NjYzNDM3NDYxNjAyYjcwMjkyMDI5MmQ1NzI4N2Q2ZTI5NjA3NTY5NzcyMDJjMjcyZDZmNjM2ZTI0NzY2ZjYzNzQzMDc5NjY3NzIwMmMyNzJkNmY2MzZlMjAzMTM5NjM3OTYzNzcyMDJjMjcyZDZmNjM2ZTIwMzEzNTYwNzU2MDc3MjAyYzI3MjI3MjZlMmQ2ZjYzNmUyNTZlNjk2YzZlNmY2MzdmNjc2ZjZhNjk2YTc5NmI2NzIwMmMyNzI4N2Q2ZTI5NmE3OTZiNjcyMDJjMjcyNDc1NmU2ZTIzNzU2ZDYxNjc2OTY5NjE2NzcxNmI2NzIwMmMyNzJkNmY2MzZlMjMzOTYwNzU2OTczN2Y2NzY1NjU3YTY3MjAyYzI3MmY2MzZlMmQ2ZjYzNmUyMzMzMzczMzdmNjc2NTY1N2E2NzIwMmMyNzI0NzA3ZTIzNzE2NjYzN2Y2NzZmNmE2NzIwMmMyNzJkNmY2MzZlMmY2YzYxNjc2ZjZhNjcyMDJjMjcyZjYyN2UyOTZhNzk2ZDI5NjI3NTczNmY2YTY3MjAyYzI3Mjc2MjdmNmUyMzc1NmQ2MTY3NmQyNTYzNzI3ZjY4NjcyMDJjMjcyYzYwN2UyMTY5NjQ2ZTYxNmM2MTYyNzc2NzIwMmMyNzIyNzQ3ZTJkNmY2MzZlMjY3OTYyNzY2NzIwMmMyNzI0NzU2ZTZlMjI3MTZjNmU2NTc5N2Y2YzY1NmE3NTc3NmU2NTY3MjAyYzI3MmQ2ZjYzNmUyOTc4NmQ2MjcxNjcyYjU4Mjk0MjU1NTk3MTYyNzI3MTRlNjk2MDI4MjY2OTYwMjAyMDIwMmEwZDAwMjAyMDIwMmEwZDBiM2Q1MDJkNzcyMDdmNjg2MzdkMjQ3NTYwN2QyNDY5NjE2ZDYyNzU2ZDY3MmEzNjYzNzAyYzI3MjA3ZjY4NjM3ZDI0NzU2MDdkMjQ2OTYxNmQ2Mjc1NmQ2NzJhMzM3MDJjMjIzYTM0NmI3MDJjMmQ3NzI1Njk2NjZjNjU2MzdkMjM3Mzc1NjM2ZTY5NjI3MDdkMjk3ZDY3MmEzNjYzNzAyYzI3MjU2OTY2NmM2NTYzN2QyMzczNzU2MzZlNjk2MjcwN2QyOTdkNjcyYTMzNzAyYzIxM2EzNDZiNzAyYzJkNzcyMzc0NzU3MzYyNzk2MTY4NmQyYzYxNjU2MjdkMjM3Mzc1NjM2ZTY5NjI3MDdkMmU2MTY5NjM3NTZlNjk3YzZmNjA3NzJhMzY2MzcwMmMyNzIzNzQ3NTczNjI3OTYxNjg2ZDJjNjE2NTYyN2QyMzczNzU2MzZlNjk2MjcwN2QyZTYxNjk2Mzc1NmU2OTdjNmY2MDc3MmEzMzcwMmMyMjNhMzQ2YjcwMmMyZDc3MjU2Mjc1NzQ3ZTY1NjY3NDYxNmQyMTY5NjQ2NTZkNmQyYzYxNjk2MzZmNjM3ZDIzNzQ2ZTY1NjI3NDdkMmM2MTZkNjk2ZTYxNjcyYTM2NjM3MDJjMjcyNTYyNzU3NDdlNjU2Njc0NjE2ZDIxNjk2NDY1NmQ2ZDJjNjE2OTYzNmY2MzdkMjM3NDZlNjU2Mjc0N2QyYzYxNmQ2OTZlNjE2NzJhMzM3MDJjMjIzYTM0NmI3MDJjMmQ3NzIyNzU2NjdmNjU2YjYxNmQ2ZDJjNjE2NTYyN2QyMzc1NjM3Mzc1NjM2ZTY5NjI3MDdkMmY2ODZmNjI2NzJhMzY2MzcwMmMyNzIyNzU2NjdmNjU2YjYxNmQ2ZDJjNjE2NTYyN2QyMzc1NjM3Mzc1NjM2ZTY5NjI3MDdkMmY2ODZmNjI2NzJhMzM3MDJjMjEzYTM0NmI3MDIwMmI1MDJkMzAyMzcyNmQ2NTc4NjQ1NTZkNjE2NzZlNjk2MDIyNzE2Njc5MDAyYjNkNzcyZjJkNzc2NTdjNjM3YjdmMjM3NTZkNjE2NzZmMmQ2ZjYzNmUyNDZmNjA3OTcxNmM2MDdlMmQ2ZjJmMmEzMDc0NzQ3ODY3MjAyYTMyNmY2ZDYwMmMyNzJjNmQ2NDc4NmUyZDc3NjU3YzYzN2I3ZjI4Nzk2ZDZmMmQ2ZjYzNmUyNDZmNjA3OTcxNmM2MDdlMjc3Nzc3N2YyZjJhMzA3NDc0Nzg2NzIwMmEzYjYzNzU2NDZiNzAyZDMwMmQ1NDNiNTM3YzYyNzU1MjZkNjU3ODY0NzAyYjNkNzcyZjJkNzc2NTdjNjM3YjdmMjM3NTZkNjE2NzZmMjM3NTZkNjE2NzZlMjA3ZjYwN2UyZDZmMmYyYTMwNzQ3NDc4NjcyMDJhMzI2ZjZkNjAyYzI3MmM2ZDY0Nzg2ZTJkNzc2NTdjNjM3YjdmMjU2ZDYxNjc2ZjIzNzU2ZDYxNjc2ZTIwN2Y2MDdlMjc3Nzc3N2YyZjJhMzA3NDc0Nzg2NzIwMmEzYjYzNzU2NDZiNzAyZDMwMmQ1MzNiNTM3YzYyNzU1MjZkNjU3ODY0NzAyYjNkNzcyZjJkNzc2NTdjNjM3YjdmMjM3NTZkNjE2NzZmMmQ2ZjYzNmUyNzZjNjI3OTY3NmUyZDZmMmYyYTMwNzQ3NDc4NjcyMDJhMzI2ZjZkNjAyYzI3MmM2ZDY0Nzg2ZTJkNzc2NTdjNjM3YjdmMjU2ZDYxNjc2ZjJkNmY2MzZlMjc2YzYyNzk2NzZlMjc3Nzc3N2YyZjJhMzA3NDc0Nzg2NzIwMmEzYjYzNzU2NDZiNzAyZDMwMmQ1MjNiNTM3YzYyNzU1MjZkNjU3ODY0NzAyYjNkNzcyZjJkNzc2NTdjNjM3YjdmMjM3NTZkNjE2NzZmMmQ2ZjYzNmUyOTcxNmM2MDczN2M2Mjc5Njc2ZTJkNmYyZjJhMzA3NDc0Nzg2NzIwMmEzMjZmNmQ2MDJjMjcyZjJkNzc2NTdjNjM3YjdmMjU2ZDYxNjc2ZjJkNmY2MzZlMjk3MTZjNjA3MzdjNjI3OTY3NmUyNzc3Nzc3ZjJmMmEzMDc0NzQ3ODY3MjAyYTNiNjM3NTY0NmI3MDJkMzAyZDUxM2I1MzdjNjI3NTUyNmQ2NTc4NjQ3OTBhMGQwYjNkNWI1MDJkMzAyMzdjNjI3NTUyNmQ2NTc4NjQ3MDIyNzE2Njc5MGEwZDBiM2Q3MDNhMzIzNDdjMjAzYTMxMzQ3YjcwMmQzMDJjNjA3ZTJiNmM2NzYwMjkyOTJiNmM2NzYwMmU2OTYwMjcyYzYwNzcyODIxMjgyNjY5NjkwZDdhMGQwYjM3MmM2YzYxNjcyZDNiNmM2MjYwMjI3MTY2N2EwZDBiNzAyOTIwMjEzZDIwMmQzMTIwMjkyMjIzNzU2ZDYxNjc2ZTIwN2Y2MDcyMjgyNjZmNDg3NTY0NmU2OTZlMjI3NTYyNzI3NTY2NjU2MjdlMjQ3ZTY1NmQ2NTczNmY2NDYwMjgyNjY5NjkwYTBkMGIzZDdiNzAyZDMwMmI2YzY3NjAyMjcxNjY3OTBhMGQwYjNkNzcyMjc1NjY3ZjY1NmQ2MTY3NjAyYzJjNjU2Njc1NmM2Mjc1NjQ3ZTY5NjAyYzI1NmQ2MTY3NmU2OTYwMmMyMjc1NjQ2MTZmNmM2NTYyNzA3NzIwMmEzZTZmNjk2NDcxNjM2ZjZjNDM3YzY5NjE2ZTYyNmQ2NTc4NjQ3MDJjMjcyYjYzNmY2YzZlNjU3MDIwMmMyYzY1NjY3NTZjNjI3NTY0N2U2OTYwMmMyZjYyNzQ3ZTY5NjcyMDJhM2U2ZjY5NjQ3MTYzNmY2YzRjNmM2ZjYyNzQ2OTZkNjAyYzI1NjU3Mjc0NzAyYTM1NjY3OTY0NzM2MTRjNmM2ZjYyNzQ2OTZkNjAyYzI1NjM3YzYxNjY2MDJhMzU2Njc5NjQ3MzYxNGM2YzZmNjI3NTYyNzA3MDJjMjAzMTMwMmEzNzZlNjk2MDcwNzE2MzYwMmMyNTMwMmEzMjc1NmQ2OTY0NTA3OTZiNjM3MDJjMjUzMTMwMmEzMjc1NmQ2OTY0NTU2MzdmNmM2MzZmNjQ3NTcxNjAyYzIzNjM2MTZhMzM2MzYxNjAyYzI0Njk2NzZhMzQ2OTY3NjAyYzIwMzUzYTM0Njk2MDdiNzAyZDMwMjc2NjYzNDM3NDYxNjAyMjcxNjY3OTBhMGQwYjM3Mjk3MjdmNjQ3MzYxNjY2ZDJjNmM2NTYwNzM3ZDIzNzM3NTYzNmU2OTYyNzA3ZDNlNjc2OTYxNjA3ZDYxNjM2ZjVkNjQ3NTc2MmU2ZjY5NjQ3MTY1NjI3MzZmNTU2MjcxNjg2MzdmNTUzYzZkNjQ3ODZkM2Q2NTc5NjQ2NTZkNmY1ZDY0NzU3NjI3MmIyOTI4MmM0MjU1NTQ3MzdmNjg0NDc1Njc2YjI3MmQzNTYzNjI3NTdmNjM3ZjVkNjQ3NTdmM2M2ZDY0Nzg2ZTI5NzI3ZjY0NzM2MTY2NmQyYzZjNjU2MDczN2QyMzczNzU2MzZlNjk2MjcwN2YyNTZkNjE2NzZmMjM3NTZkNjE2NzZlMjA3ZjYwN2UyNzc3Nzc3ZjJmMmEzMDc0NzQ3ODY3MjAyZDMwMmM0MjU1NTU2MjcxNjg2MzcwMjI3MTY2NzkwYTBkMGIzNzI3MjAyZDMwMmM0MjU1NWY2NzZmNmM0Mjc1NmU2NDcyNzE2MDcwMjI3MTY2N2YyZjI5MGEwZDBiMzcyNzIwMmQzMDI1Njc2MTZkNjk0ZjY3NmY2YzQyNzU2ZTY0NzI3MTYwNzAyMjcxNjY3OTBhMGQwOTBhMGQwYjM3Mjc2ZTYwN2UyMTNmNjc2ZjZjNmYyMzc1Njc2MTZkNjk2ZDIzNzU2ZDYxNjc2ZjI1M2M2ZDY0Nzg2ZjI3MjAyZDMwMmY2NzZmNmM0NzZlNjk2NDZlNjE2MjcyNjAyMjcxNjY3OTBhMGQwYjM3Mjc2MDdhNmUyMTMyNzU2NDYxNmY2YzY1NjI3MDdmMjM3NTY3NjE2ZDY5NmQyMzc1NmQ2MTY3NmYyNTNjNmQ2NDc4NmYyNzIwMmQzMDI3NjI0Mjc1NjQ2MTZmNmM2NTYyNzA3MDIyNzE2Njc5MGEwZDBiMzcyZDZmNjM2ZTI5NzE2YzYwNzM3YzYyNzk2NzZlMjc3Nzc3N2YyZjJhMzA3NDc0Nzg2NzIwMmQzMDJjNDI1NTU3NmU2OTY0NmU2MTYyNzI2MDIyNzE2Njc5MGEwZDBiMzcyMjNkNGE2ZTQwMzk1NDVhNTk3NTUyM2U0MzM5NTQ1ZjQzMzE1YTZlNGE3OTU0NGY0MjM3NmE3ZTQxMzM2NDRlNDk3NTVkNmU0YTc5NWE2YTUyMzE1ZDZkNGE2YTVhN2Q0MjMxNWE2ZTRjNmE0NDVhNTMzMTRhNmU0YTZhNTQ1ZDQzM2I2YTdlNDc3OTVhNmE1MjMxNWE2ZDRjNmE1YTdkNDIzOTVkNmU0YjZhNGE3OTVhNzU0YTdkNDk3ZDRhN2U0OTc1NTIzZDQ3Nzk0NDVhNWE3MTRhNmQ0YzZlNDQ1ZDQ3MjAyZDMwMjg2ZTY0NjM2MDIyNzE2Njc5MA==';
+   
+	</script> 
+   
+    
+  <script src="./html5/games-api/init-witchhut-game-animate-v5.0.js"></script> 
+ </head> 
+ <body class="animate"> 
+  <div id="game-container"> 
+   <a id="spinner">
+    <div class="tinyloader">
+     <img src="./html5/games-images/loader-girl.jpg" width="200" height="257" />
+    </div></a> 
+   <div class="img-loader">
+    <img src="./html5/games-images/preloader1.jpg" />
+   </div> 
+   <canvas id="canvas" width="800" height="600"></canvas> 
+  </div> 
+  <script type="text/javascript">
+	var gameSlug = 'princess-spell-factory'; var gameName = 'Princess Spell Factory';
+ 
+	</script> 
+  
+   
+  
+  <script src="./html5/games-api/easeljs-1.0.0.min.js"></script> 
+  <script src="./html5/games-api/tweenjs-1.0.0.min.js"></script> 
+  <script src="./html5/games-api/preloadjs-1.0.0.min.js"></script> 
+  <script src="./html5/games-api/soundjs-1.0.0.min.js"></script> 
+  <script src="./html5/games-api/movieclip-1.0.0.min.js"></script> 
+  <script src="./html5/games-api/proton-1.0.0.min.js"></script> 
+  <script src="./html5/games-api/bitmapdata-1.1.1.min.js"></script> 
+  <script src="game.js"></script> 
+  <script>
+	  initGame();
+		 
+	</script>  
+ </body>
+</html>

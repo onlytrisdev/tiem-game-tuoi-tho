@@ -1,0 +1,204 @@
+{
+  "id": 463,
+  "title": "Thời trang barbie",
+  "name": "multiverse_barbie",
+  "languages": [],
+  "rebrandName": "Multiverse Ellie",
+  "portal": "Enjoydressup",
+  "core": "v0.2",
+  "ga": {
+    "key1": "782d3e4756ccc0e124ce65154588eb45",
+    "key2": "818066101d0502e47150703e30139560256f3c0c"
+  },
+  "publishers": [
+    {
+      "domain": "www.dressupgames.com",
+      "publisher": 3,
+      "publisher_name": "Inga",
+      "force_language": "",
+      "whitelist": 0,
+      "hide_splash": 0,
+      "ads_positions": [
+        "unit2"
+      ],
+      "timer_ads_positions": [
+        "pre2",
+        "unit1",
+        "unit3",
+        "end1",
+        "unit2",
+        "unit4",
+        "replay1",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "pre2"
+      ],
+      "first_timer": "",
+      "timer_between_ads": "35",
+      "timer_resets_on_click": "0",
+      "ads_cap": 1,
+      "ad_tag": "//pubads.g.doubleclick.net/gampad/ads?sz=730x400&iu=/14162828/AFG-Ingame&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&hl=en-US",
+      "ads_locked": 0,
+      "description_url": "default",
+      "custom_description_url": "",
+      "lock_count": 0,
+      "locked": 0,
+      "rebrand": 0,
+      "optional": {
+        "outgoing": [
+          {
+            "zone": "logo_button",
+            "unit": "",
+            "block": "0",
+            "utm": "1",
+            "show": "1",
+            "url": "http://localhost/",
+            "image": "logo.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "preloader",
+            "unit": "",
+            "block": "1",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_1",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_2",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_3",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_4",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_5",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "thumb_6",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "http://",
+            "image": "FF4D00-0.png",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "facebook",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "youtube",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "mg",
+            "unit": "",
+            "block": "0",
+            "utm": "0",
+            "show": "0",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "mg",
+            "unit": "level_select",
+            "block": "0",
+            "utm": "1",
+            "show": "0",
+            "url": "http://",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          },
+          {
+            "zone": "mg",
+            "unit": "end_screen",
+            "block": "0",
+            "utm": "1",
+            "show": "0",
+            "url": "http://",
+            "image": "",
+            "xpos": "",
+            "ypos": ""
+          }
+        ],
+        "dontAdblock": 1
+      },
+      "adglare_campaign": ""
+    }
+  ]
+}

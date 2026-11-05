@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta name="description" content="Chinh phục ái tình — Giải ô chữ tình yêu, mở khóa câu nói lãng mạn qua manh mối và mã số chữ cái.">
+
+  <meta name="theme-color" content="#E91E63">
+
+  <title>Chinh phục ái tình</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+
+
+  <!-- Màn hình tải -->
+
+  <div id="screen-splash" class="screen screen-full active">
+
+    <div class="splash-inner">
+
+      <div class="splash-heart">💕</div>
+
+      <h1 class="splash-title">Chinh phục ái tình</h1>
+
+      <p class="splash-sub">Giải manh mối — Chinh phục trái tim</p>
+
+      <div class="loading-bar"><div id="loading-fill" class="loading-fill"></div></div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Menu chính -->
+
+  <div id="screen-menu" class="screen screen-full">
+
+    <header class="top-bar">
+
+      <div class="top-bar-left"></div>
+
+      <div class="header-logo" aria-hidden="true">
+
+        <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" width="110" height="26">
+
+      </div>
+
+      <div class="top-bar-right">
+
+        <span class="menu-best-chip">🏆 Kỷ lục: <strong id="menu-best">0</strong></span>
+
+        <button class="icon-btn" id="btn-settings" aria-label="Cài đặt">⚙️</button>
+
+      </div>
+
+    </header>
+
+
+
+    <div class="menu-body">
+
+      <section class="menu-hero">
+
+        <h1 class="menu-title">Chinh phục ái tình</h1>
+
+        <p class="menu-tagline">Mỗi ô chữ là một bước chinh phục trái tim</p>
+
+      </section>
+
+
+
+      <nav class="menu-grid">
+
+        <button class="btn btn-primary btn-menu-main" id="btn-start">▶ Bắt đầu</button>
+
+        <button class="btn btn-secondary btn-menu-pick" id="btn-pick-level">🎯 Chọn cấp độ</button>
+
+        <button class="btn btn-secondary" id="btn-map">🗺️ Bản đồ</button>
+
+        <button class="btn btn-secondary" id="btn-achievements">🏆 Thành tựu</button>
+
+        <button class="btn btn-secondary btn-menu-wide" id="btn-stats">📊 Thống kê</button>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Bản đồ màn chơi -->
+
+  <div id="screen-map" class="screen screen-full">
+
+    <header class="screen-head">
+
+      <div class="screen-head-left">
+
+        <button class="back-btn" data-target="menu">←</button>
+
+        <h2>Bản đồ màn chơi</h2>
+
+      </div>
+
+      <div class="header-logo" aria-hidden="true">
+
+        <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" width="110" height="26">
+
+      </div>
+
+      <div class="screen-head-right"></div>
+
+    </header>
+
+    <div class="landscape-body map-body">
+
+      <div class="chapter-list" id="chapter-list"></div>
+
+      <div class="level-panel hidden" id="level-panel">
+
+        <div class="level-panel-head">
+
+          <button class="back-btn" id="btn-back-chapters">←</button>
+
+          <h3 id="chapter-title"></h3>
+
+        </div>
+
+        <div class="level-grid" id="level-grid"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Màn chơi — bố cục ngang -->
+
+  <div id="screen-game" class="screen screen-full screen-game">
+
+    <header class="game-head">
+
+      <div class="game-head-left">
+
+        <button class="back-btn" id="btn-quit">←</button>
+
+        <div class="game-head-mid">
+
+          <span id="game-level-label">Màn 1</span>
+
+          <span class="badge" id="game-category">Tình yêu</span>
+
+        </div>
+
+      </div>
+
+      <div class="header-logo" aria-hidden="true">
+
+        <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" width="110" height="26">
+
+      </div>
+
+      <div class="game-head-right">
+
+        <div class="game-head-stats">
+
+          <span class="stat-chip" id="game-difficulty">Dễ</span>
+
+          <span class="stat-chip" id="game-score">0 đ</span>
+
+        </div>
+
+        <div class="lives" id="lives-display" aria-label="Trái tim còn lại"></div>
+
+      </div>
+
+    </header>
+
+
+
+    <div class="game-body">
+
+      <!-- Trái: câu nói + nhập liệu -->
+
+      <aside class="game-panel phrase-panel">
+
+        <h3 class="section-label">💬 Câu nói bí ẩn</h3>
+
+        <div class="phrase-board" id="phrase-board"></div>
+
+        <div class="input-bar">
+
+          <div class="active-clue" id="active-clue-label">Chọn manh mối</div>
+
+          <div class="answer-slots" id="answer-slots"></div>
+
+          <div class="keyboard" id="keyboard"></div>
+
+          <div class="action-row">
+
+            <button class="btn btn-game" id="btn-hint" type="button">
+
+              <span id="btn-hint-icon">💡</span> <span class="btn-label">Gợi ý</span> <small id="btn-hint-count">3</small>
+
+            </button>
+
+            <button class="btn btn-game" id="btn-check" type="button">✓ <span class="btn-label">Kiểm tra</span></button>
+
+            <button class="btn btn-game" id="btn-clear-word" type="button">Xóa</button>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+
+
+      <!-- Phải: chỉ manh mối -->
+
+      <aside class="game-panel side-panel">
+
+        <section class="clues-section">
+
+          <h3 class="section-label">🔍 Manh mối</h3>
+
+          <div class="clues-list" id="clues-list"></div>
+
+          <div class="clues-footer">
+
+            <button class="btn-submit-score" id="btn-submit-score" type="button" title="Gửi điểm kỷ lục">
+
+              <img src="score.png" alt="Gửi điểm" width="140" height="48">
+
+            </button>
+
+          </div>
+
+        </section>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Chiến thắng -->
+
+  <div id="screen-win" class="screen screen-full overlay">
+
+    <div class="modal-card result-card win-card">
+
+      <div class="result-emoji win-emoji" aria-hidden="true">💖</div>
+
+      <h2>Chiến thắng!</h2>
+
+      <p class="result-sub">Bạn đã giải mã trọn vẹn câu nói bí ẩn</p>
+
+      <p class="win-phrase" id="win-phrase"></p>
+
+      <div class="reward-row">
+
+        <div class="reward-item">
+
+          <span class="reward-icon" aria-hidden="true">⭐</span>
+
+          <strong id="win-stars">0</strong>
+
+          <span class="reward-unit">Sao</span>
+
+        </div>
+
+        <div class="reward-item">
+
+          <span class="reward-icon" aria-hidden="true">🏅</span>
+
+          <strong id="win-score">0</strong>
+
+          <span class="reward-unit">Điểm</span>
+
+        </div>
+
+      </div>
+
+      <div class="result-actions">
+
+        <button class="btn btn-primary btn-xl" id="btn-next">Màn tiếp →</button>
+
+        <button class="btn btn-ghost" id="btn-win-menu">Về menu</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Thất bại -->
+
+  <div id="screen-gameover" class="screen screen-full overlay">
+
+    <div class="modal-card result-card gameover-card">
+
+      <div class="result-emoji go-emoji" aria-hidden="true">💔</div>
+
+      <h2>Thất bại</h2>
+
+      <p class="result-sub">Ba lần sai rồi… Đừng bỏ cuộc — tình yêu đáng để thử lại!</p>
+
+      <div class="result-actions">
+
+        <button class="btn btn-primary btn-xl" id="btn-retry">Thử lại ↻</button>
+
+        <button class="btn btn-secondary" id="btn-go-menu">Về menu</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Thành tựu -->
+
+  <div id="screen-achievements" class="screen screen-full">
+
+    <header class="screen-head">
+
+      <div class="screen-head-left">
+
+        <button class="back-btn" data-target="menu">←</button>
+
+        <h2>Thành tựu</h2>
+
+        <span id="ach-count" class="muted"></span>
+
+      </div>
+
+      <div class="header-logo" aria-hidden="true">
+
+        <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" width="110" height="26">
+
+      </div>
+
+      <div class="screen-head-right"></div>
+
+    </header>
+
+    <div class="landscape-body scroll-body">
+
+      <div class="ach-grid" id="achievements-list"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Thống kê -->
+
+  <div id="screen-stats" class="screen screen-full">
+
+    <header class="screen-head">
+
+      <div class="screen-head-left">
+
+        <button class="back-btn" data-target="menu">←</button>
+
+        <h2>Thống kê</h2>
+
+      </div>
+
+      <div class="header-logo" aria-hidden="true">
+
+        <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" width="110" height="26">
+
+      </div>
+
+      <div class="screen-head-right"></div>
+
+    </header>
+
+    <div class="landscape-body scroll-body">
+
+      <div class="stats-grid" id="stats-grid"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Chọn cấp độ -->
+
+  <div id="screen-level-pick" class="screen screen-full">
+
+    <header class="screen-head">
+
+      <div class="screen-head-left">
+
+        <button class="back-btn" data-target="menu">←</button>
+
+        <h2>Chọn cấp độ</h2>
+
+      </div>
+
+      <div class="header-logo" aria-hidden="true">
+
+        <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" width="110" height="26">
+
+      </div>
+
+      <div class="screen-head-right"></div>
+
+    </header>
+
+    <div class="landscape-body scroll-body level-pick-body">
+
+      <div class="level-grid level-pick-grid" id="level-pick-grid"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Cài đặt -->
+
+  <div id="screen-settings" class="screen overlay">
+
+    <div class="modal-card">
+
+      <header class="modal-head">
+
+        <h2>Cài đặt</h2>
+
+        <button class="close-btn" id="btn-close-settings">✕</button>
+
+      </header>
+
+      <label class="toggle"><span>🔊 Hiệu ứng âm thanh</span><input type="checkbox" id="toggle-sfx" checked><span class="slider"></span></label>
+
+      <label class="toggle"><span>🎵 Nhạc nền</span><input type="checkbox" id="toggle-music" checked><span class="slider"></span></label>
+
+      <label class="toggle"><span>✨ Hiệu ứng tim</span><input type="checkbox" id="toggle-particles" checked><span class="slider"></span></label>
+
+      <button class="btn btn-danger btn-ghost" id="btn-reset">Xóa tiến trình</button>
+
+    </div>
+
+  </div>
+
+
+
+  <div id="toast-box" aria-live="polite"></div>
+
+  <div id="ach-popup" class="ach-popup hidden"></div>
+
+
+
+  <!-- Xác nhận (thay cho confirm() trình duyệt) -->
+
+  <div id="screen-confirm" class="screen overlay overlay-confirm">
+
+    <div class="modal-card confirm-card">
+
+      <p id="confirm-message" class="confirm-message"></p>
+
+      <div class="confirm-actions">
+
+        <button class="btn btn-ghost" id="confirm-cancel" type="button">Hủy</button>
+
+        <button class="btn btn-primary" id="confirm-ok" type="button">Xác nhận</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+
+  <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+  <script src="js/levels-data.js"></script>
+
+  <script src="js/vi-input.js"></script>
+
+  <script src="js/gv-ads.js"></script>
+
+  <script src="js/storage.js"></script>
+
+  <script src="js/audio.js"></script>
+
+  <script src="js/particles.js"></script>
+
+  <script src="js/ui.js"></script>
+
+  <script src="js/game.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
+

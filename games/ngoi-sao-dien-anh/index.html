@@ -1,0 +1,2178 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+<meta name="viewport" id="metatagviewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no"/>
+
+    <title></title>
+
+    <style type="text/css">
+
+    input:focus{outline:none;}
+
+    html {-webkit-text-size-adjust:none}
+
+    body{margin:0;}
+
+    #loadLayer{position: absolute;z-index: 99999;width:204px;height:24px;background:#fff;border: 1px solid #669;top:248px;left:271px;font-size: 0;text-indent: -999px}
+
+    #progress{width:0;height:20px;margin:2px;background: #3820B4;font-size: 1px;text-indent: -999px}
+
+    #gameWrap{position:absolute;width:750px;height:550px;top:0;left:0;}
+
+    #info{position: absolute;z-index:99999;width:700px;height:100px;top:5px;left:5px;display: none}
+
+        #Button1
+
+        {
+
+            top: 91px;
+
+            left: 107px;
+
+        }
+
+        #Button2
+
+        {
+
+            top: 143px;
+
+            left: 105px;
+
+        }
+
+        #shengyin
+
+        {
+
+            left: 663px;
+
+        }
+
+        #reset
+
+        {
+
+            top: -946px;
+
+            left: 548px;
+
+        }
+
+        #show
+
+        {
+
+            top: -883px;
+
+            left: 438px;
+
+        }
+
+       #shengyin2
+
+        {
+
+            left: 663px;
+
+        }
+
+        #shengyin22
+
+        {
+
+            top: -970px;
+
+            left: 690px;
+
+        }
+
+        #print
+
+        {
+
+            top: -1127px;
+
+            left: -22px;
+
+        }
+
+        #down
+
+        {
+
+            top: -1061px;
+
+            left: -95px;
+
+        }
+
+        #replay
+
+        {
+
+            top: -560px;
+
+            left: 621px;
+
+        }
+
+        #more2
+
+        {
+
+            top: -501px;
+
+            left: 512px;
+
+        }
+
+        #show0
+
+        {
+
+            top: -1045px;
+
+            left: 623px;
+
+        }
+
+       </style>
+
+      <script type="text/javascript" src="/jq-1.9.1.min.js"></script>
+
+    <script type="text/javascript">
+
+        var times = 1;
+
+        var basepath = './img/';
+
+        var manifest = ['bb.png','bg.png','bg1.png','bg2.png','bt.png','down.png','eh-1.png','eh-2.png','eh-3.png','eh-4.png','eh-5.png','eh-6.png','kaishi.png','logo.png','ly-1.png','ly-2.png','ly-21.png','ly-3.png','ly-4.png','ly-5.png','ly-6.png','ly-7.png','ly-8.png','ly-81.png','more.png','peijue.png','play.png','print.png','ptren.png','replay.png','reset.png','shou.png','show.png','sl-1.png','sl-2.png','sl-3.png','sl-4.png','sl-5.png','sl-6.png','sy-1.png','sy-11.png','sy-2.png','sy-21.png','sy-3.png','sy-31.png','sy-4.png','sy-41.png','sy-5.png','sy-51.png','sy-6.png','sy-61.png','sy-7.png','sy-71.png','sy-8.png','sy-81.png','sz-1.png','sz-11.png','sz-2.png','sz-21.png','sz-3.png','sz-31.png','sz-4.png','sz-41.png','sz-5.png','sz-51.png','sz-6.png','sz-61.png','ts-1.png','ts-2.png','ts-3.png','ts-4.png','ts-5.png','ts-6.png','tshi-1.png','tshi-2.png','tshi-3.png','tshi-4.png','tshi-5.png','tshi-6.png','tx-1.png','tx-11.png','tx-2.png','tx-21.png','tx-3.png','tx-31.png','tx-4.png','tx-41.png','tx-5.png','tx-51.png','tx-6.png','tx-61.png','xie-1.png','xie-11.png','xie-2.png','xie-22.png','xie-3.png','xie-4.png','xie-5.png','xie-6.png','xie-7.png','xie-8.png','xl-1.png','xl-11.png','xl-2.png','xl-3.png','xl-4.png','xl-5.png','xl-6.png','xuanze-1.png','xuanze-2.png','xuanze-3.png','xuanze-4.png','xuanze-5.png','xy-1.png','xy-11.png','xy-2.png','xy-21.png','xy-3.png','xy-31.png','xy-4.png','xy-41.png','xy-5.png','xy-51.png','xy-6.png','xy-61.png','xy-7.png','xy-71.png','xy-8.png','xy-81.png','yyg.png','yyk.png','zhujue.png'];
+
+        function load() {
+
+          
+
+           resize_game();
+
+            var orientationEvent=("onorientationchange" in window) ? "orientationchange" : "resize";
+
+            window.addEventListener(orientationEvent,function(e){
+
+            setTimeout(function(){
+
+                resize_game();
+
+            },200);
+
+            },false);
+
+           start_load();
+
+        }
+
+        function resize_game() {
+
+            var w = window.innerWidth;
+
+            var h = window.innerHeight;
+
+            var ratio = w / h;
+
+            var newW = 750;
+
+            var newH = 550;
+
+            var sRatio = newW / newH;
+
+            if(ratio > 1) {
+
+               if(newH > h)
+
+                {
+
+                    newH = h;
+
+                    newW = newH * sRatio;
+
+                }
+
+            } else {
+
+                 if(newW > w) {
+
+                    newW = w;
+
+                    newH = w / sRatio
+
+                }
+
+                
+
+            }
+
+            var zoomVal = Math.round(newW / 750 * 100)/100;
+
+            var lft = (w -newW)/2 / zoomVal;
+
+            var t = (h -newH)/2 / zoomVal;
+
+            var gw = document.getElementById('gameWrap');
+
+            gw.style.zoom = zoomVal;
+
+            gw.style.left = Math.round(lft) + 'px';
+
+            gw.style.top = Math.round(t) + 'px';
+
+            /*document.getElementById('info').innerHTML = 'w=' + window.innerWidth + ';h=' + window.innerHeight + ';zoom=' + zoomVal + ';lft'+lft + ';top='+t + ';w=' + gw.clientWidth;*/
+
+        }
+
+        function start_game()
+
+        {
+
+            document.getElementById('bg').style.backgroundImage = 'img/bg1.png';
+
+            document.getElementById('bg1').style.backgroundImage = 'img/bg1.png';
+
+            document.getElementById('bg4').style.backgroundImage = 'img/bg1.png';
+
+            document.getElementById('loadLayer').style.display = 'none';
+
+            document.getElementById('bg').style.display='block'
+
+            document.getElementById('bg5').style.display = 'none';
+
+
+
+        }
+
+        var loadTotal = manifest.length;
+
+        var loadCount = 0;
+
+        var loadImg = null;
+
+        function start_load() {
+
+            if(loadCount >= loadTotal) {
+
+               
+
+                start_game();
+
+                return;
+
+            }
+
+            if(!loadImg) {
+
+                loadImg = new Image();
+
+                loadImg.onload = imgLoaded;
+
+                loadImg.onerror = imgLoadErr;
+
+            }
+
+            
+
+            loadImg.src = basepath + manifest[loadCount];
+
+        }
+
+        function imgLoaded() {
+
+            loadCount ++;
+
+           
+
+            document.getElementById('progress').style.width = Math.round(loadCount / loadTotal * 200) + 'px'
+
+            start_load();
+
+        }
+
+        function imgLoadErr() {
+
+            setTimeout(start_load, 800);
+
+        }
+
+	
+
+        function xuanze1() {
+
+            show1();
+
+            hidden2();
+
+            hidden3();
+
+            hidden4();
+
+            hidden5();
+
+        };
+
+        function xuanze2() {
+
+            //alter("hhhh");
+
+            show2();
+
+ 
+
+            hidden1();
+
+            hidden3();
+
+            hidden4();
+
+            hidden5();
+
+        };
+
+        function xuanze3() {
+
+            
+
+            show3();
+
+            hidden1();
+
+            hidden2();
+
+            hidden4();
+
+            hidden5();
+
+        };
+
+        function xuanze4() {
+
+            show4();
+
+            hidden1();
+
+            hidden2();
+
+            hidden3();
+
+            hidden5();
+
+        };
+
+        function xuanze5() {
+
+            show5();
+
+            hidden1();
+
+            hidden2();
+
+            hidden3();
+
+            hidden4();
+
+        }
+
+        function next() {
+
+            this.document.getElementById("bg").style.display = "none";
+
+            this.document.getElementById("bg1").style.display = "";
+
+            this.document.getElementById("ly").style.display = "";
+
+            this.document.getElementById("s").style.display = "";
+
+            this.document.getElementById("s").style.visibility = "visible";
+
+	       this.document.getElementById("bg1").style.backgroundImage = "url('img/bg1.png')";
+
+	       show1();
+
+            
+
+        }
+
+     
+
+        function show1() {
+
+            this.document.getElementById("ts1").style.visibility = "visible";
+
+            this.document.getElementById("ts2").style.visibility = "visible";
+
+            this.document.getElementById("ts3").style.visibility = "visible";
+
+            this.document.getElementById("ts4").style.visibility = "visible";
+
+            this.document.getElementById("ts5").style.visibility = "visible";
+
+            this.document.getElementById("ts6").style.visibility = "visible";
+
+            this.document.getElementById("tfs1").style.visibility = "visible";
+
+            this.document.getElementById("tfs2").style.visibility = "visible";
+
+            this.document.getElementById("tfs3").style.visibility = "visible";
+
+            this.document.getElementById("tfs4").style.visibility = "visible";
+
+            this.document.getElementById("tfs5").style.visibility = "visible";
+
+            this.document.getElementById("tfs6").style.visibility = "visible";
+
+            this.document.getElementById("tfs7").style.visibility = "visible";
+
+            this.document.getElementById("tfs8").style.visibility = "visible";
+
+            this.document.getElementById("xl1").style.visibility = "visible";
+
+            this.document.getElementById("xl2").style.visibility = "visible";
+
+            this.document.getElementById("xl3").style.visibility = "visible";
+
+            this.document.getElementById("xl4").style.visibility = "visible";
+
+            this.document.getElementById("xl5").style.visibility = "visible";
+
+            this.document.getElementById("xl6").style.visibility = "visible";
+
+            this.document.getElementById("sl1").style.visibility = "visible";
+
+            this.document.getElementById("sl2").style.visibility = "visible";
+
+            this.document.getElementById("sl3").style.visibility = "visible";
+
+            this.document.getElementById("sl4").style.visibility = "visible";
+
+            this.document.getElementById("sl5").style.visibility = "visible";
+
+            this.document.getElementById("sl6").style.visibility = "visible";
+
+            this.document.getElementById("eh1").style.visibility = "visible";
+
+            this.document.getElementById("eh2").style.visibility = "visible";
+
+            this.document.getElementById("eh3").style.visibility = "visible";
+
+            this.document.getElementById("eh4").style.visibility = "visible";
+
+            this.document.getElementById("eh5").style.visibility = "visible";
+
+            this.document.getElementById("sz1").style.visibility = "visible";
+
+            this.document.getElementById("sz2").style.visibility = "visible";
+
+            this.document.getElementById("sz3").style.visibility = "visible";
+
+            this.document.getElementById("sz4").style.visibility = "visible";
+
+            this.document.getElementById("sz5").style.visibility = "visible";
+
+            this.document.getElementById("sz6").style.visibility = "visible";
+
+        }
+
+        function hidden1() {
+
+            this.document.getElementById("ts1").style.visibility = "hidden";
+
+            this.document.getElementById("ts2").style.visibility = "hidden";
+
+            this.document.getElementById("ts3").style.visibility = "hidden";
+
+            this.document.getElementById("ts4").style.visibility = "hidden";
+
+            this.document.getElementById("ts5").style.visibility = "hidden";
+
+            this.document.getElementById("ts6").style.visibility = "hidden";
+
+            this.document.getElementById("tfs1").style.visibility = "hidden";
+
+            this.document.getElementById("tfs2").style.visibility = "hidden";
+
+            this.document.getElementById("tfs3").style.visibility = "hidden";
+
+            this.document.getElementById("tfs4").style.visibility = "hidden";
+
+            this.document.getElementById("tfs5").style.visibility = "hidden";
+
+            this.document.getElementById("tfs6").style.visibility = "hidden";
+
+            this.document.getElementById("tfs7").style.visibility = "hidden";
+
+            this.document.getElementById("tfs8").style.visibility = "hidden";
+
+            this.document.getElementById("xl1").style.visibility = "hidden";
+
+            this.document.getElementById("xl2").style.visibility = "hidden";
+
+            this.document.getElementById("xl3").style.visibility = "hidden";
+
+            this.document.getElementById("xl4").style.visibility = "hidden";
+
+            this.document.getElementById("xl5").style.visibility = "hidden";
+
+            this.document.getElementById("xl6").style.visibility = "hidden";
+
+            this.document.getElementById("sl1").style.visibility = "hidden";
+
+            this.document.getElementById("sl2").style.visibility = "hidden";
+
+            this.document.getElementById("sl3").style.visibility = "hidden";
+
+            this.document.getElementById("sl4").style.visibility = "hidden";
+
+            this.document.getElementById("sl5").style.visibility = "hidden";
+
+            this.document.getElementById("sl6").style.visibility = "hidden";
+
+            this.document.getElementById("eh1").style.visibility = "hidden";
+
+            this.document.getElementById("eh2").style.visibility = "hidden";
+
+            this.document.getElementById("eh3").style.visibility = "hidden";
+
+            this.document.getElementById("eh4").style.visibility = "hidden";
+
+            this.document.getElementById("eh5").style.visibility = "hidden";
+
+            this.document.getElementById("sz1").style.visibility = "hidden";
+
+            this.document.getElementById("sz2").style.visibility = "hidden";
+
+            this.document.getElementById("sz3").style.visibility = "hidden";
+
+            this.document.getElementById("sz4").style.visibility = "hidden";
+
+            this.document.getElementById("sz5").style.visibility = "hidden";
+
+            this.document.getElementById("sz6").style.visibility = "hidden";
+
+        }
+
+        function hidden2() {
+
+            this.document.getElementById("sy1").style.visibility = "hidden";
+
+            this.document.getElementById("sy2").style.visibility = "hidden";
+
+            this.document.getElementById("sy3").style.visibility = "hidden";
+
+            this.document.getElementById("sy4").style.visibility = "hidden";
+
+            this.document.getElementById("sy5").style.visibility = "hidden";
+
+            this.document.getElementById("sy6").style.visibility = "hidden";
+
+            this.document.getElementById("sy7").style.visibility = "hidden";
+
+            this.document.getElementById("sy8").style.visibility = "hidden";
+
+            this.document.getElementById("xie1").style.visibility = "hidden";
+
+            this.document.getElementById("xie2").style.visibility = "hidden";
+
+            this.document.getElementById("xie3").style.visibility = "hidden";
+
+            this.document.getElementById("xie4").style.visibility = "hidden";
+
+            this.document.getElementById("xie5").style.visibility = "hidden";
+
+            this.document.getElementById("xie6").style.visibility = "hidden";
+
+            this.document.getElementById("xie7").style.visibility = "hidden";
+
+            this.document.getElementById("xie8").style.visibility = "hidden";
+
+        }
+
+        function show2() {
+
+            this.document.getElementById("sy1").style.visibility = "visible";
+
+            this.document.getElementById("sy2").style.visibility = "visible";
+
+            this.document.getElementById("sy3").style.visibility = "visible";
+
+            this.document.getElementById("sy4").style.visibility = "visible";
+
+            this.document.getElementById("sy5").style.visibility = "visible";
+
+            this.document.getElementById("sy6").style.visibility = "visible";
+
+            this.document.getElementById("sy7").style.visibility = "visible";
+
+            this.document.getElementById("sy8").style.visibility = "visible";
+
+            this.document.getElementById("xie1").style.visibility = "visible";
+
+            this.document.getElementById("xie2").style.visibility = "visible";
+
+            this.document.getElementById("xie3").style.visibility = "visible";
+
+            this.document.getElementById("xie4").style.visibility = "visible";
+
+            this.document.getElementById("xie5").style.visibility = "visible";
+
+            this.document.getElementById("xie6").style.visibility = "visible";
+
+            this.document.getElementById("xie7").style.visibility = "visible";
+
+            this.document.getElementById("xie8").style.visibility = "visible";
+
+        }
+
+        function show3() {
+
+            this.document.getElementById("xz1").style.visibility = "visible";
+
+            this.document.getElementById("xz2").style.visibility = "visible";
+
+            this.document.getElementById("xz3").style.visibility = "visible";
+
+            this.document.getElementById("xz4").style.visibility = "visible";
+
+            this.document.getElementById("xz5").style.visibility = "visible";
+
+            this.document.getElementById("xz6").style.visibility = "visible";
+
+            this.document.getElementById("xz7").style.visibility = "visible";
+
+            this.document.getElementById("xz8").style.visibility = "visible";
+
+        }
+
+        function hidden3() {
+
+            this.document.getElementById("xz1").style.visibility = "hidden";
+
+            this.document.getElementById("xz2").style.visibility = "hidden";
+
+            this.document.getElementById("xz3").style.visibility = "hidden";
+
+            this.document.getElementById("xz4").style.visibility = "hidden";
+
+            this.document.getElementById("xz5").style.visibility = "hidden";
+
+            this.document.getElementById("xz6").style.visibility = "hidden";
+
+            this.document.getElementById("xz7").style.visibility = "hidden";
+
+            this.document.getElementById("xz8").style.visibility = "hidden";
+
+        }
+
+        function hidden4() {
+
+            this.document.getElementById("ly5").style.visibility = "hidden";
+
+            this.document.getElementById("ly6").style.visibility = "hidden";
+
+            this.document.getElementById("ly4").style.visibility = "hidden";
+
+            this.document.getElementById("ly3").style.visibility = "hidden";
+
+            this.document.getElementById("ly7").style.visibility = "hidden";
+
+        }
+
+        function show4() {
+
+            this.document.getElementById("ly5").style.visibility = "visible";
+
+            this.document.getElementById("ly6").style.visibility = "visible";
+
+            this.document.getElementById("ly4").style.visibility = "visible";
+
+            this.document.getElementById("ly3").style.visibility = "visible";
+
+            this.document.getElementById("ly7").style.visibility = "visible";
+
+        }
+
+        function hidden5() {
+
+            this.document.getElementById("ly1").style.visibility = "hidden";
+
+            this.document.getElementById("ly2").style.visibility = "hidden";
+
+            this.document.getElementById("ly8").style.visibility = "hidden";
+
+        }
+
+        function show5() {
+
+            this.document.getElementById("ly1").style.visibility = "visible";
+
+            this.document.getElementById("ly2").style.visibility = "visible";
+
+            this.document.getElementById("ly8").style.visibility = "visible";
+
+        }
+
+        function reset() {
+
+            this.document.getElementById("sy").style.backgroundImage = "url('')";
+
+            this.document.getElementById("ly").style.backgroundImage = "url('')";
+
+            this.document.getElementById("xz").style.backgroundImage = "url('')";
+
+            this.document.getElementById("ts").style.backgroundImage = "url('img/ts-1.png')";
+
+	    this.document.getElementById("tx").style.backgroundImage = "url('img/tx-1.png')";
+
+	    this.document.getElementById("bg1").style.backgroundImage = "url('img/bg1.png')";		
+
+            this.document.getElementById("tshi").style.backgroundImage = "url('')";
+
+            this.document.getElementById("xl").style.backgroundImage = "url('')";
+
+            this.document.getElementById("sl").style.backgroundImage = "url('')";
+
+            this.document.getElementById("sz").style.backgroundImage = "url('')";
+
+            this.document.getElementById("xie").style.backgroundImage = "url('')";
+
+            this.document.getElementById("eh").style.backgroundImage = "url('')";
+
+        }
+
+        function showing() {
+
+            this.document.getElementById("bg4").style.display = "";
+
+            this.document.getElementById("bg1").style.display = "none";
+
+            this.document.getElementById("bg").style.display = "none";
+
+            this.document.getElementById("ly").style.display = "none";
+
+            this.document.getElementById("s").style.display = "none";
+
+	    this.document.getElementById("bg4").style.backgroundImage = this.document.getElementById("bg1").style.backgroundImage;
+
+            this.document.getElementById("sy22").style.backgroundImage = this.document.getElementById("sy").style.backgroundImage;
+
+            this.document.getElementById("sy22").style.visibility = this.document.getElementById("sy").style.visibility;
+
+            this.document.getElementById("sz22").style.backgroundImage = this.document.getElementById("sz").style.backgroundImage;
+
+            this.document.getElementById("sz22").style.visibility = this.document.getElementById("sz").style.visibility;
+
+            this.document.getElementById("ly22").style.backgroundImage = this.document.getElementById("ly").style.backgroundImage;
+
+            this.document.getElementById("ly22").style.visibility = this.document.getElementById("ly").style.visibility;
+
+            this.document.getElementById("xz22").style.backgroundImage = this.document.getElementById("xz").style.backgroundImage;
+
+            this.document.getElementById("xz22").style.visibility = this.document.getElementById("xz").style.visibility;
+
+            this.document.getElementById("ts22").style.backgroundImage = this.document.getElementById("ts").style.backgroundImage;
+
+            this.document.getElementById("tshi22").style.backgroundImage = this.document.getElementById("tshi").style.backgroundImage;
+
+            this.document.getElementById("xl22").style.backgroundImage = this.document.getElementById("xl").style.backgroundImage;
+
+            this.document.getElementById("sl22").style.backgroundImage = this.document.getElementById("sl").style.backgroundImage;
+
+            this.document.getElementById("eh22").style.backgroundImage = this.document.getElementById("eh").style.backgroundImage;
+
+            this.document.getElementById("xie22").style.backgroundImage = this.document.getElementById("xie").style.backgroundImage;
+
+            this.document.getElementById("tx22").style.backgroundImage = this.document.getElementById("tx").style.backgroundImage;
+
+            this.document.getElementById("tx22").style.visibility = this.document.getElementById("tx").style.visibility;
+
+
+
+        }
+
+        function change() {
+
+            if (this.document.getElementById("bg1").style.backgroundImage.indexOf("img/bg1.png")>0) {
+
+                this.document.getElementById("bg1").style.backgroundImage = "url('img/bg2.png')";
+
+            } else {
+
+                this.document.getElementById("bg1").style.backgroundImage = "url('img/bg1.png')";
+
+            }
+
+        }
+
+        function tshi(x) {
+
+            this.document.getElementById("tshi").style.backgroundImage = "url(img/tshi-" + x + ".png)";
+
+
+
+        }
+
+
+
+        function tfs(x) {
+
+            this.document.getElementById("ts").style.backgroundImage = "url(img/ts-" + x + ".png)";
+
+            this.document.getElementById("tx").style.backgroundImage = "url(img/tx-" + x + ".png)";
+
+        }
+
+
+
+        function xl(x) {
+
+            this.document.getElementById("xl").style.backgroundImage = "url(img/xl-"+x+".png)";
+
+        }
+
+
+
+        function eh(x) {
+
+            this.document.getElementById("eh").style.backgroundImage = "url(img/eh-"+x+".png)";
+
+        }
+
+
+
+        function sl(x) {
+
+            this.document.getElementById("sl").style.backgroundImage = "url(img/sl-"+x+".png)";
+
+        }
+
+
+
+        function sz(x) {
+
+            this.document.getElementById("sz").style.backgroundImage = "url(img/sz-"+x+".png)";
+
+        }
+
+
+
+        function sy(x) {
+
+            this.document.getElementById("sy").style.backgroundImage = "url(img/sy-"+x+".png)";
+
+            this.document.getElementById("sy").style.visibility = "visible";
+
+            this.document.getElementById("ly").style.visibility = "hidden";
+
+        }
+
+
+
+
+
+        function xie(x) {
+
+            this.document.getElementById("xie").style.backgroundImage = "url(img/xie-"+x+".png)";
+
+        }
+
+        function xz(x) {
+
+            this.document.getElementById("xz").style.backgroundImage = "url(img/xy-"+x+".png)";
+
+            this.document.getElementById("xz").style.visibility = "visible";
+
+            this.document.getElementById("ly").style.visibility = "hidden";
+
+        }
+
+
+
+
+
+        function ly(x) {
+
+            this.document.getElementById("ly").style.backgroundImage = "url(img/ly-"+x+".png)";
+
+            this.document.getElementById("ly").style.visibility = "visible";
+
+            this.document.getElementById("xz").style.visibility = "hidden";
+
+            this.document.getElementById("sy").style.visibility = "hidden";
+
+        }
+
+
+
+        function replay_onclick() {
+
+	    this.document.getElementById("bg").style.display = "";
+
+	    this.document.getElementById("bg1").style.display = "none";
+
+            this.document.getElementById("bg4").style.display = "none";
+
+            this.document.getElementById("ly").style.display = "none";
+
+            this.document.getElementById("s").style.display = "none";
+
+	    show1();
+
+	    reset();
+
+            
+
+            hidden2();
+
+            hidden3();
+
+            hidden4();
+
+            hidden5();
+
+        }
+
+        
+
+		function output_ele(selector) {
+
+			var rtn = {};
+
+			var offset = $(selector).offset();
+
+			$(selector).children().each(function() {
+
+				var offset1 = $(this).offset();
+
+				rtn[$(this).attr('id')] = {left:offset1.left - offset.left, top:offset1.top - offset.top};
+
+				
+
+			})
+
+			return rtn;
+
+		}
+
+		function print_obj(obj) {
+
+			var str = '{';
+
+			var arr = [];
+
+			for(var m in obj) {
+
+				var tmpstr = m + ':';
+
+				var val = obj[m];
+
+				if(typeof(obj[m]) == 'object') {
+
+					tmpstr += print_obj(obj[m]);
+
+				} else {
+
+					tmpstr += obj[m]
+
+				}
+
+				arr.push(tmpstr);
+
+			}
+
+			str += arr.join(',') + '}';
+
+			return str;
+
+		}
+
+
+
+    </script>
+
+</head>
+
+<body onload="load();" style="width:100%;height:100%;">
+
+<div id="gameWrap">
+
+<div id="info"></div>
+
+    <div id="loadLayer">
+
+        <div id="progress"></div>
+
+    </div>
+
+    <div id="bg" 
+
+        style="display:none;margin:0 auto;background-image: url('img/bg1.png'); background-repeat: no-repeat; width: 750px; height: 550px;">
+
+        <div id="bt" 
+
+            style="width: 271px; background-image: url('img/bt.png'); height: 289px; position: relative; top: 23px; left: 36px; z-index: 1;">
+
+            </div>
+
+        <input id="Button1" 
+
+            style="border-style: none; background-image: url('img/play.png'); background-color: transparent; background-repeat: no-repeat; width: 109px; height: 43px; position: relative" 
+
+            type="button" onclick="next();" /><input id="Button2" 
+
+            style="border-style: none;background-image: url('img/more.png'); background-color: transparent;background-repeat: no-repeat; width: 109px; height: 43px; position: relative; left: -2px;" 
+
+            type="button" onclick="javascript:window.open('http://localhost','','');"  /><div id="ptren" 
+
+            
+
+            
+
+            style="background-image: url('img/ptren.png');background-color: transparent; background-repeat: no-repeat; width: 540px; height: 500px; position: relative; top: -283px; left: 191px; z-index: 0;">
+
+            <div id="logo1" 
+
+                style="background-position: -22px center; background-image: url('img/logo.png'); background-repeat: no-repeat; position: relative;z-index: 5; width: 350px; height: 51px; top: 415px; left: -189px;" onclick="javascript:window.open('http://localhost','','');" >
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="bg1" style="margin:0 auto;height: 550px; position:relative;/*background-image: url('img/bg1.png');*/ background-repeat: no-repeat; width: 750px;display:none;">
+
+    
+
+        <div id = "ren"style="height: 490px; width: 159px; position: absolute; top: 35px; left: 404px; background-image: url('img/zhujue.png'); background-repeat: no-repeat; z-index: 1;">
+
+            <div style="width: 144px; height: 150px; background-image: url(''); position: relative; z-index: 2;top: 64px; left: 17px; background-repeat: no-repeat; visibility: visible;" 
+
+                id="sy">
+
+            </div>
+
+            <div id="xz"  
+
+                
+
+                
+
+                style="height: 332px; width: 143px; position: relative;  background-repeat: no-repeat; top: -1px; left: 23px; z-index: 1; visibility: visible;">
+
+                
+
+            </div>
+
+            <div id="xie"  
+
+                style="width: 41px; height: 83px; position: relative;  background-repeat: no-repeat; top: -75px; left: 64px; z-index: 0;">
+
+                </div>
+
+        </div>
+
+
+
+    
+
+        <div style="width: 333px; position: absolute; height: 470px; background-image: url('img/bb.png'); background-repeat: no-repeat; top: 40px; left:0;" 
+
+            id="bb">
+
+            <div id="xuanze1" 
+
+                
+
+                style="height: 52px; width: 52px; position: absolute; background-image: url('img/xuanze-1.png'); background-repeat: no-repeat; top: -15px; left: 40px; " onclick = "xuanze1();">
+
+            </div>
+
+            <div id="xuanze2" 
+
+                
+
+                style="height: 52px; width: 52px; position: absolute; background-image: url('img/xuanze-2.png'); background-repeat: no-repeat; top: -15px; left: 92px;" onclick = "xuanze2();">
+
+            </div>
+
+            <div id="xuanze3" 
+
+                
+
+                style="height: 52px; width: 52px; position: absolute; background-image: url('img/xuanze-3.png'); background-repeat: no-repeat; top: -15px; left: 144px;" onclick = "xuanze3();">
+
+                &nbsp;</div>
+
+            <div id="xuanze4" 
+
+                
+
+                style="height: 52px; width: 52px; position: relative; background-image: url('img/xuanze-4.png'); background-repeat: no-repeat; top: -15px; left: 196px;" onclick = "xuanze4();">
+
+            </div>
+
+            <div id="xuanze5" 
+
+                
+
+                style="height: 52px; width: 52px; position: absolute; background-image: url('img/xuanze-5.png'); background-repeat: no-repeat; top: -15px; left: 248px;" onclick = "xuanze5();">
+
+            </div>
+
+            <div id="ts" 
+
+                style="width: 101px; height: 150px; position: absolute; background-image: url('img/ts-1.png'); background-repeat: no-repeat; top: -18px; left: 438px; z-index: 4;">
+
+            </div>
+
+            
+
+            <div id="ts1" 
+
+                
+
+                style="visibility: hidden;width: 46px; height: 53px; position: absolute; background-image: url('img/tshi-1.png'); background-repeat: no-repeat; top: 20px; left: 25px;" onclick="tshi(1);">
+
+            </div>
+
+            <div id="ts2" 
+
+                
+
+                style="visibility: hidden;width: 46px; height: 53px; position: absolute; background-image: url('img/tshi-2.png'); background-repeat: no-repeat; top: 20px; left: 71px;" onclick="tshi(2);" >
+
+            </div>
+
+            <div id="ts3" 
+
+                
+
+                style="visibility: hidden;width: 46px; height: 53px; position: absolute; background-image: url('img/tshi-3.png'); background-repeat: no-repeat; top: 20px; left: 117px;" onclick="tshi(3);">
+
+            </div>
+
+            <div id="ts4" 
+
+                
+
+                style="visibility: hidden;width: 46px; height: 53px; position: absolute; background-image: url('img/tshi-4.png'); background-repeat: no-repeat; top: 20px; left: 163px;" onclick="tshi(4);">
+
+            </div>
+
+            <div id="ts5" 
+
+                
+
+                style="visibility: hidden;width: 46px; height: 53px; position: absolute; background-image: url('img/tshi-5.png'); background-repeat: no-repeat; top: 20px; left: 209px;" onclick="tshi(5);">
+
+            </div>
+
+            <div id="ts6" 
+
+                
+
+                style="visibility: hidden;width: 46px; height: 53px; position: absolute; background-image: url('img/tshi-6.png'); background-repeat: no-repeat; top: 20px; left: 255px;" onclick="tshi(6);">
+
+            </div>
+
+            <div id="tfs1" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: right center; width: 101px; height: 140px; position: absolute; top: 73px;left:0; background-image: url('img/tx-11.png'); background-repeat: no-repeat;" 
+
+                onclick="tfs(1);">
+
+            </div>
+
+            <div id="tfs2" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center; width: 71px; height: 140px; position: absolute; top: 73px; left: 101px; background-image: url('img/tx-21.png'); background-repeat: no-repeat;" 
+
+                onclick="tfs(2);">
+
+            </div>
+
+            <div id="tfs3" 
+
+                
+
+                
+
+                style="visibility: hidden;z-index:5;background-position: center; width: 81px; height: 140px; position: absolute; top: 73px; left: 172px; background-image: url('img/tx-31.png'); background-repeat: no-repeat;" 
+
+                onclick="tfs(3);">
+
+            </div>
+
+            
+
+            <div id="tfs6" 
+
+                
+
+                style="visibility: hidden;background-position: center; width: 81px; height: 140px; position: absolute; top: 73px; left: 253px; background-image: url('img/tx-61.png'); background-repeat: no-repeat; z-index: 4;" 
+
+                onclick="tfs(6);">
+
+            </div>
+
+            <div id="tfs5" 
+
+                
+
+                style="visibility: hidden;background-position: center top; width: 80px; height: 110px; position: absolute; top: 213px; left: 0px; background-image: url('img/tx-51.png'); background-repeat: no-repeat;" 
+
+                onclick="tfs(5);">
+
+            </div>
+
+            <div id="tfs4" 
+
+                
+
+                style="visibility: hidden;background-position: center 27px; width: 66px; height: 90px; position: absolute; top: 213px; left: 81px; background-image: url('img/tx-41.png'); background-repeat: no-repeat;" 
+
+                onclick="tfs(4);">
+
+            </div>
+
+            <div id="tfs7" 
+
+                style="visibility:hidden;background-position: center; width: 81px; height: 140px; position: absolute; top: 133px; left: 162px;">
+
+            </div>
+
+            <div id="tfs8" 
+
+                style="visibility:hidden;background-position: center center; background-position: center; width: 81px; height: 140px; position: absolute; top: 133px; left: 243px; ">
+
+            </div>
+
+            
+
+            <div id="xl1" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/xl-11.png'); width: 29px; height: 70px; top: 230px; position: absolute; background-repeat: no-repeat; left: 150px;" 
+
+                onclick="xl(1);">
+
+            </div>
+
+            
+
+            <div id="xl2" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center top; background-image: url('img/xl-2.png'); width: 49px; height: 30px; top: 238px; position: absolute; background-repeat: no-repeat; left: 179px;" 
+
+                onclick="xl(2);">
+
+            </div>
+
+            
+
+            <div id="xl3" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center top; background-image: url('img/xl-3.png'); width: 49px; height: 30px; top: 238px; position: absolute; background-repeat: no-repeat; left: 228px;" 
+
+                onclick="xl(3);">
+
+            </div>
+
+            
+
+            <div id="xl4" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center top; background-image: url('img/xl-4.png'); width: 49px; height: 30px; top: 273px; position: absolute; background-repeat: no-repeat; left: 177px;" 
+
+                onclick="xl(4);">
+
+            </div>
+
+            
+
+            <div id="xl5" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center top; background-image: url('img/xl-5.png'); width: 49px; height: 30px; top: 273px; position: absolute; background-repeat: no-repeat; left: 226px;" 
+
+                onclick="xl(5);">
+
+            </div>
+
+            
+
+            <div id="xl6" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center top; background-image: url('img/xl-6.png'); width: 49px; height: 30px; top: 273px; position: absolute; background-repeat: no-repeat; left: 275px; z-index: 4;" 
+
+                onclick="xl(6);">
+
+            </div>
+
+            
+
+            <div id="eh1" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/eh-1.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 55px; height: 25px; top: 303px; left: 100px;" 
+
+                onclick="eh(1);">
+
+            </div>
+
+            <div id="eh2" 
+
+                style="visibility: hidden;background-image: url('img/eh-2.png'); background-repeat: no-repeat; background-position: left top; position: absolute; width: 25px; height: 25px; top: 303px; left: 154px;" 
+
+                onclick="eh(2);">
+
+            </div>
+
+            <div id="eh3" 
+
+                
+
+                style="visibility: hidden;background-image: url('img/eh-3.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 55px; height: 25px; top: 303px; left: 179px;" 
+
+                onclick="eh(3);">
+
+            </div>
+
+            <div id="eh4" 
+
+                
+
+                style="visibility: hidden;background-image: url('img/eh-4.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 55px; height: 25px; top: 303px; left: 234px;" 
+
+                onclick="eh(4);">
+
+            </div>
+
+            <div id="eh5" 
+
+                
+
+                style="visibility: hidden;background-image: url('img/eh-5.png'); background-repeat: no-repeat; background-position: left 7px; position: absolute; width: 25px; height: 25px; top: 303px; left: 289px; z-index: 4;" 
+
+                onclick="eh(5);">
+
+            </div>
+
+            
+
+            <div id="sl1" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/sl-1.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 30px; height: 20px; top: 328px; left: 30px;" 
+
+                onclick="sl(1);">
+
+            </div>
+
+            
+
+            <div id="sl2" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/sl-2.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 30px; height: 20px; top: 328px; left: 79px;" 
+
+                onclick="sl(2);">
+
+            </div>
+
+            
+
+            <div id="sl3" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/sl-3.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 30px; height: 20px; top: 328px; left: 129px;" 
+
+                onclick="sl(3);">
+
+            </div>
+
+            
+
+            <div id="sl4" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/sl-4.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 30px; height: 20px; top: 328px; left: 179px;" 
+
+                onclick="sl(4);">
+
+            </div>
+
+            
+
+            <div id="sl5" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/sl-5.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 30px; height: 20px; top: 328px; left: 229px;" 
+
+                onclick="sl(5);">
+
+            </div>
+
+            
+
+            <div id="sl6" 
+
+                
+
+                
+
+                style="visibility: hidden;background-image: url('img/sl-6.png'); background-repeat: no-repeat; background-position: center top; position: absolute; width: 30px; height: 20px; top: 328px; left: 279px; z-index: 4;" 
+
+                onclick="sl(6);">
+
+            </div>
+
+            
+
+            <div id="sz1" 
+
+                
+
+                style="visibility: hidden;position: absolute; width: 47px; height: 85px; background-image: url('img/sz-11.png'); background-repeat: no-repeat; background-position: center center; top: 353px; left: 10px;" 
+
+                onclick="sz(1);">
+
+            </div>
+
+            <div id="sz2" 
+
+                
+
+                style="visibility: hidden;position: absolute; width: 47px; height: 85px; background-image: url('img/sz-21.png'); background-repeat: no-repeat; background-position: center center; top: 353px; left: 57px;" 
+
+                onclick="sz(2);">
+
+            </div>
+
+            <div id="sz3" 
+
+                
+
+                style="visibility: hidden;position: absolute; width: 47px; height: 85px; background-image: url('img/sz-31.png'); background-repeat: no-repeat; background-position: center center; top: 353px; left: 104px;" 
+
+                onclick="sz(3);">
+
+            </div>
+
+            <div id="sz4" 
+
+                
+
+                style="visibility: hidden;position: absolute; width: 47px; height: 85px; background-image: url('img/sz-41.png'); background-repeat: no-repeat; background-position: center center; top: 353px; left: 151px;" 
+
+                onclick="sz(4);">
+
+            </div>
+
+            <div id="sz5" 
+
+                
+
+                style="visibility: hidden;position: absolute; width: 47px; height: 85px; background-image: url('img/sz-51.png'); background-repeat: no-repeat; background-position: center center; top: 353px; left: 198px;" 
+
+                onclick="sz(5);">
+
+            </div>
+
+            <div id="sz6" 
+
+                
+
+                style="visibility: hidden;position: absolute; width: 47px; height: 85px; background-image: url('img/sz-61.png'); background-repeat: no-repeat; background-position: center center; top: 353px; left: 245px; z-index: 4;" 
+
+                onclick="sz(6);">
+
+            </div>
+
+            
+
+            <div id="sy1" 
+
+                
+
+                
+
+                style="visibility: hidden;background-position: center center; background-image: url('img/sy-11.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 68px; left: 25px;" 
+
+                onclick="sy(1);">
+
+            </div>
+
+            <div id="sy2" 
+
+                
+
+                style="visibility: hidden; background-position: center; background-image: url('img/sy-21.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 68px; left: 95px;" 
+
+                onclick="sy(2);">
+
+            </div>
+
+            <div id="sy3" 
+
+                
+
+                style="visibility: hidden;background-position: center center; background-image: url('img/sy-31.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 68px; left: 165px;" 
+
+                onclick="sy(3);">
+
+            </div>
+
+            <div id="sy4" 
+
+                
+
+                style="visibility: hidden;background-position: center center; background-image: url('img/sy-41.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 68px; left: 235px;" 
+
+                onclick="sy(4);">
+
+            </div>
+
+            <div id="sy5" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/sy-51.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 188px; left: 25px;" 
+
+                onclick="sy(5);">
+
+            </div>
+
+            <div id="sy6" 
+
+                
+
+                style="visibility: hidden;background-position: center center; background-image: url('img/sy-61.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 188px; left: 95px;" 
+
+                onclick="sy(6);">
+
+            </div>
+
+            <div id="sy7" 
+
+                
+
+                style="visibility: hidden;background-position: center center; background-image: url('img/sy-71.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 188px; left: 165px;" 
+
+                onclick="sy(7);">
+
+            </div>
+
+            <div id="sy8" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/sy-81.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 110px; top: 188px; left: 235px;" 
+
+                onclick="sy(8);">
+
+            </div>
+
+            <div id="xie1" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-11.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 3px;" 
+
+                onclick="xie(1);">
+
+            </div>
+
+            <div id="xie2" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-22.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 44px;" 
+
+                onclick="xie(2);">
+
+            </div>
+
+            <div id="xie3" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-3.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 85px;" 
+
+                onclick="xie(3);">
+
+            </div>
+
+            <div id="xie4" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-4.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 126px;" 
+
+                onclick="xie(4);">
+
+            </div>
+
+            <div id="xie5" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-5.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 167px;" 
+
+                onclick="xie(5);">
+
+            </div>
+
+            <div id="xie6" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-6.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 208px;" 
+
+                onclick="xie(6);">
+
+            </div>
+
+            <div id="xie7" 
+
+                
+
+                style="visibility: hidden; background-position: center center; background-image: url('img/xie-7.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 249px;" 
+
+                onclick="xie(7);">
+
+            </div>
+
+            <div id="xie8" 
+
+                
+
+                
+
+                style=" visibility: hidden;background-position: center center; background-image: url('img/xie-8.png'); background-repeat: no-repeat; position: absolute; width: 41px; height: 150px; top: 298px; left: 290px; z-index: 5;" 
+
+                onclick="xie(8);">
+
+            </div>
+
+            
+
+            <div id="xz5" 
+
+                
+
+                style= "visibility: hidden;background-position: center -1px; background-image: url('img/xy-51.png'); background-repeat: no-repeat; position: absolute; height: 333px; width: 100px; top: 48px; left: 20px;" 
+
+                onclick="xz(5);">
+
+            </div>
+
+            <div id="xz8" 
+
+                
+
+                style="visibility: hidden;background-position: center -7px; background-image: url('img/xy-81.png'); background-repeat: no-repeat; position: absolute; height: 333px; width: 100px; top: 48px; left: 120px;" 
+
+                onclick="xz(8);">
+
+            </div>
+
+            <div id="xz3" 
+
+                
+
+                style="visibility: hidden; background-position: center -13px; background-image: url('img/xy-31.png'); background-repeat: no-repeat; position: absolute; height: 100px; width: 100px; top: 43px; left: 220px; z-index: 4;" 
+
+                onclick="xz(3);">
+
+            </div>
+
+            <div id="xz1" 
+
+                
+
+                style="visibility: hidden;background-position: center -13px; background-image: url('img/xy-11.png'); background-repeat: no-repeat; position: absolute; height: 100px; width: 100px; top: 148px; left: 220px; z-index: 4;" 
+
+                onclick="xz(1);">
+
+            </div>
+
+            <div id="xz7" 
+
+                
+
+                style="visibility: hidden; background-position: center -5px; background-image: url('img/xy-71.png'); background-repeat: no-repeat; position: absolute; height: 100px; width: 100px; top: 248px; left: 220px; z-index: 4;" 
+
+                onclick="xz(7);">
+
+            </div>
+
+            <div id="xz4" 
+
+                
+
+                style="visibility: hidden; background-position: center -21px; background-image: url('img/xy-4.png'); background-repeat: no-repeat; position: absolute; height: 80px; width: 100px; top: 379px; left: 20px;" 
+
+                onclick="xz(4);">
+
+            </div>
+
+            <div id="xz6" 
+
+                
+
+                style="visibility: hidden; background-position: center -3px; background-image: url('img/xy-61.png'); background-repeat: no-repeat; position: absolute; height: 80px; width: 100px; top: 379px; left: 120px;" 
+
+                onclick="xz(6);">
+
+            </div>
+
+            <div id="xz2" 
+
+                
+
+                style="visibility: hidden; background-position: center -1px; background-image: url('img/xy-21.png'); background-repeat: no-repeat; position: absolute; height: 90px; width: 100px; top: 346px; left: 220px; z-index: 4;" 
+
+                onclick="xz(2);">
+
+            </div>
+
+            
+
+            <div id="ly5" 
+
+                
+
+                
+
+                style="visibility: hidden; background-position: -161px -13px; background-image: url('img/ly-5.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 400px; top: 29px; left: 10px;" 
+
+                onclick="ly(5);">
+
+            </div>
+
+            
+
+            <div id="ly6" 
+
+                
+
+                
+
+                style=" visibility: hidden;background-position: -161px -13px; background-image: url('img/ly-6.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 400px; top: 29px; left: 70px;" 
+
+                onclick="ly(6);">
+
+            </div>
+
+            
+
+            <div id="ly4" 
+
+                
+
+                
+
+                style="visibility: hidden; background-position: -161px -13px; background-image: url('img/ly-4.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 400px; top: 29px; left: 130px;" 
+
+                onclick="ly(4);">
+
+            </div>
+
+            
+
+            <div id="ly3" 
+
+                
+
+                
+
+                style="visibility: hidden; background-position: -161px -13px; background-image: url('img/ly-3.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 400px; top: 29px; left: 190px;" 
+
+                onclick="ly(3);">
+
+            </div>
+
+            
+
+            <div id="ly7" 
+
+                
+
+                
+
+                style="visibility: hidden; background-position: -161px -13px; background-image: url('img/ly-7.png'); background-repeat: no-repeat; position: absolute; width: 70px; height: 400px; top: 29px; left: 250px; z-index: 4;" 
+
+                onclick="ly(7);">
+
+            </div>
+
+            
+
+            <div id="ly1" 
+
+                style="z-index:8; visibility: hidden;background-position: center -32px; background-image: url('img/ly-1.png'); background-repeat: no-repeat; width: 100px; height: 200px; position: absolute; top: 29px; left: 20px;" onclick="ly(1);">
+
+            </div>
+
+            <div id="ly2" 
+
+                
+
+                style="z-index:7; visibility: hidden;background-position: center 11px; background-image: url('img/ly-21.png'); background-repeat: no-repeat; width: 150px; height: 200px; position: absolute; top: 29px; left: 180px;" 
+
+                onclick="ly(2);">
+
+            </div>
+
+            <div id="ly8" 
+
+                
+
+                style=" visibility: hidden; background-poisition:0 -20px;background-image: url('img/ly-81.png'); background-repeat: no-repeat; width: 240px; height: 300px; position: relative; top: 139px; left: 50px;z-index: 4;" 
+
+                onclick="ly(8);">
+
+            </div>
+
+            
+
+        </div>
+
+
+
+    
+
+        <div id="sl" 
+
+            
+
+            
+
+            style="width: 22px; height: 29px; background-image: url(''); background-repeat: no-repeat; position: absolute; z-index: 5; top: 201px; left: 509px;">
+
+        </div>
+
+        <div id="eh" 
+
+            
+
+            style="width: 55px; height: 39px; position: absolute; background-repeat: no-repeat; top: 84px; left: 455px; z-index: 2;">
+
+        </div>
+
+        <div id="xl" 
+
+            
+
+            
+
+            style="width: 44px; height: 105px; position: absolute; z-index: 3; background-repeat: no-repeat; top: 109px; left: 462px;">
+
+        </div>
+
+        <div id="sz" 
+
+            
+
+            
+
+            
+
+            style="width: 68px; height: 117px; position: absolute; background-repeat: no-repeat; top: 73px; left: 386px; z-index: 2; background-image: url('');">
+
+        </div>
+
+        <div id="tshi" 
+
+            
+
+            
+
+            style="position: absolute; width: 56px; height: 53px; background-image: url(''); background-repeat: no-repeat; top: 33px; left: 454px; z-index: 4;">
+
+        </div>
+
+
+
+    
+
+        <input id="change" 
+
+            style="border-style: none;background-image: url('img/bg.png');background-color: transparent; background-repeat: no-repeat; width: 76px; height: 64px; position: absolute; top: 294px; left: 655px; margin-top: 0px;z-index:1000" 
+
+            type="button" onclick="change();" /><input id="reset" 
+
+            style="border-style: none;background-image: url('img/reset.png');background-color: transparent; background-repeat: no-repeat; width: 109px; height: 47px; position: absolute;z-index: 6;top:374px;left:624px" 
+
+            type="button" onclick="reset();"/><input id="show" 
+
+            style="border-style: none;background-image: url('img/show.png'); background-color: transparent;background-repeat: no-repeat; width: 109px; height: 43px; position: absolute; z-index: 4;left:623px;top:441px" 
+
+            type="button"  onclick="showing();" />
+
+            <div id="tx"  
+
+            style="width: 115px; height: 162px; position: absolute; background-image: url('img/tx-1.png'); background-repeat: no-repeat; top: 23px; left: 433px; z-index: 0;">
+
+            </div>
+
+            
+
+            <input id="show0" 
+
+            style="border-style: none;background-image: url('img/more.png'); background-color: transparent;background-repeat: no-repeat; width: 109px; height: 43px; position: absolute; z-index: 4;left:623px;top:486px" 
+
+            type="button" onclick="javascript:window.open('http://localhost','','');"  />
+
+        <div id="logo3" 
+
+            
+
+            style="background-image: url('img/logo.png'); background-repeat: no-repeat; background-position: -22px center; position: absolute;z-index: 5; width: 350px; height: 51px; top: 497px; left: 2px;" 
+
+            onclick="javascript:window.open('http://localhost','','');">
+
+        </div>
+
+        <div id="s" 
+
+            
+
+            
+
+            style="margin:0 auto;width: 64px; height: 37px; position: absolute; z-index: 4; background-image: url('img/shou.png'); background-repeat: no-repeat; top: 189px; left: 479px;">
+
+        </div>
+
+        <div id="ly"
+
+            
+
+            
+
+            
+
+            style="margin:0 auto;background-image: url('img/'); background-repeat: no-repeat; position: absolute; width: 393px; height: 437px; top: 105px; z-index: 2; left: 294.5px;">
+
+        </div>
+
+    </div>
+
+
+
+    <div id="bg4" style="margin:0 auto;height: 550px; position:relative;/*background-image: url('img/bg1.png'); */background-repeat: no-repeat;position: relative;width: 750px;display:none;">
+
+        <div style="height: 490px; width: 159px; position: absolute; top: 28px; left: 256px; background-image: url('img/zhujue.png'); background-repeat: no-repeat; z-index: 1;" 
+
+            id="zhujue22">
+
+            <div style="width: 144px; height: 150px; background-image: url(''); position: relative; z-index: 3;top: 64px; left: 17px; background-repeat: no-repeat; visibility: visible;" 
+
+                id="sy22">
+
+            </div>
+
+            <div id="xz22"  
+
+                
+
+                style="height: 332px; width: 143px; position: relative; background-image: url(''); background-repeat: no-repeat; top: -1px; left: 23px; z-index: 2; visibility: visible;">
+
+                
+
+            </div>
+
+            <div id="ts22" 
+
+                
+
+                
+
+                style="width: 101px; height: 150px; position: relative; background-image: url('img/ts-5.png'); background-repeat: no-repeat; top: -498px; left: 30px; z-index: 5;">
+
+            </div>
+
+            <div id="sl22" 
+
+            
+
+                style="background-position: center center; width: 20px; height: 20px; background-image: url('img/sl-1.png'); background-repeat: no-repeat; position: relative; z-index: 5; top: -463px; left: 110px;">
+
+        	</div>
+
+        	<div id="eh22" 
+
+            
+
+                style="width: 55px; height: 39px; position: relative;z-index: 5; background-image: url('img/eh-1.png'); background-repeat: no-repeat; top: -601px; left: 51px;">
+
+        	</div>
+
+        	<div id="xl22" 
+
+            
+
+                style="width: 44px; height: 105px; position: relative; z-index:4; background-image: url('img/xl-1.png'); background-repeat: no-repeat; top: -618px; left: 57px;">
+
+        	</div>
+
+        	<div id="sz22" 
+
+            
+
+                
+
+                style="width: 68px; height: 117px; position: relative; background-image: url('img/sz-1.png'); background-repeat: no-repeat; top: -755px; left: -16px;">
+
+        	</div>
+
+        	<div id="tshi22" 
+
+                
+
+                style="position: relative; width: 56px; height: 53px; background-image: url('img/tshi-4.png'); background-repeat: no-repeat; top: -910px; left: 45px; z-index: 6;">
+
+        	</div>
+
+        	<div id="ly22" 
+
+            
+
+                style="background-image: url('img/ly-1.png'); background-repeat: no-repeat; position: relative; width: 393px; height: 437px; top: -900px; left: -110px; z-index:2;">
+
+            </div>
+
+            <div id="xie22"   style="width: 41px; height: 83px; position: relative; background-image: url('img/xie-1.png'); background-repeat: no-repeat; top: -995px; left: 63px; z-index: 1;">
+
+                </div>
+
+            <div id="shou" 
+
+                style="width: 64px; height: 37px; position: relative; z-index: 4; background-image: url('img/shou.png'); background-repeat: no-repeat; top: -1336px; left: 78px;">
+
+    		</div>
+
+        </div>
+
+         
+
+    
+
+    
+
+        <div id="peijue" 
+
+            style="background-image: url('img/peijue.png'); background-repeat: no-repeat; width: 183px; height: 490px; position: absolute; top: 21px; left: 337px; z-index: 0;">
+
+        </div>
+
+        <input id="replay" 
+
+            style="border-style: none; position: absolute;left:621px;top:420px; width: 109px; height: 43px; background-color: transparent; background-image: url('img/replay.png'); background-repeat: no-repeat; z-index: 4; bottom: 560px;" 
+
+            type="button" onclick="return replay_onclick()" /><input id="more2" 
+
+            style="border-style: none;background-image: url('img/more.png'); background-color: transparent;background-repeat: no-repeat; position: absolute;left:621px;top:479px; width: 109px; height: 43px" 
+
+            type="button" onclick="javascript:window.open('http://localhost','','');" />
+
+            <div id="tx22" 
+
+
+
+            style="width: 115px; height: 162px; position: absolute; background-image: url('img/tx-5.png'); background-repeat: no-repeat; top: 11px; left: 281px; z-index: 0;">
+
+            </div>
+
+            <div id="logo2" 
+
+            
+
+            style="background-image: url('img/logo.png'); background-repeat: no-repeat; background-position: -22px center; position: absolute; width: 350px; height: 51px; top: 497px; left: 1px; z-index: 5;" 
+
+            onclick="javascript:window.open('http://localhost','','');" >
+
+           </div>
+
+       </div>
+
+      <div id="bg5" 
+
+        style="margin:0 auto;background-image: url('img/kaishi.png'); background-repeat: no-repeat; width: 750px; height: 550px; position: relative; z-index: 3; top: 0px; left: 0px;" onclick="javascript:window.open('http://localhost','','');">    
+
+    </div>
+
+</div><!-- gamewrap -->
+
+   
+
+   <audio id = "audio1" preload="preload" src="" autoplay="false" ></audio>
+
+   <audio id = "audio2" src="" autoplay="false" playcount="-1"></audio>
+
+</body>
+
+</html>
+

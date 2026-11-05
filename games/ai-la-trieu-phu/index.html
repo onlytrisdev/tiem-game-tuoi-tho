@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0d2a" />
+    <title>Ai là triệu phú (H5)</title>
+    <link rel="preload" as="image" href="./images/background.jpg" />
+    <link rel="preload" as="image" href="./images/cau-hoi.png" />
+    <link rel="preload" as="image" href="./images/logo-ai-la-trieu-phu.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+    <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+  </head>
+  <body>
+    <!-- Logo Arcade -->
+    <div class="arcade-logo" aria-hidden="true">
+      <img src="https://localhost/themes/default/images/logo-2022.svg" alt="" />
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loading-content">
+        <img src="./images/logo-ai-la-trieu-phu.png" alt="AI Là Triệu Phú" class="logo-game altp-logo loading-logo" />
+        
+        <div class="logo">
+          <div class="logo__title">AI LÀ TRIỆU PHÚ</div>
+          <div class="logo__subtitle">Millionaire Quiz (H5)</div>
+        </div>
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Đang tải trò chơi...</div>
+      </div>
+    </div>
+
+    <div id="app" class="app" style="display:none">
+      <!-- Background -->
+      <div class="bg" aria-hidden="true"></div>
+      <div class="bg-overlay" aria-hidden="true"></div>
+
+      <!-- Screens container -->
+      <main class="screen-host" id="screenHost">
+        <!-- Start Screen -->
+        <section class="screen screen--active" data-screen="start" aria-label="Màn hình bắt đầu">
+          <div class="panel panel--center">
+            <img src="./images/logo-ai-la-trieu-phu.png" alt="AI Là Triệu Phú" class="logo-game altp-logo start-logo" />
+            
+            <div class="logo">
+              <div class="logo__title">AI LÀ TRIỆU PHÚ</div>
+              <div class="logo__subtitle">Millionaire Quiz (H5)</div>
+            </div>
+
+            <div class="stack">
+              <button class="btn btn--primary" id="btnStartNew" type="button">Bắt đầu</button>
+              <button class="btn" id="btnContinue" type="button" hidden>Chơi tiếp</button>
+              <button class="btn btn--ghost" id="btnIntro" type="button">Giới thiệu</button>
+            </div>
+
+            <div class="hint">
+              Ưu tiên ngang (landscape) trên mobile. Có hỗ trợ touch và bàn phím.
+            </div>
+          </div>
+        </section>
+
+        <!-- Intro Screen -->
+        <section class="screen" data-screen="intro" aria-label="Màn hình giới thiệu">
+          <div class="panel">
+            <div class="panel__header">
+              <div class="panel__title">Giới thiệu</div>
+              <button class="icon-btn" id="btnIntroBack" type="button" aria-label="Quay lại">
+                <span aria-hidden="true">←</span>
+              </button>
+            </div>
+
+            <div class="panel__body">
+              <div class="card">
+                <div class="card__title">Luật chơi</div>
+                <ul class="list">
+                  <li>Trả lời <b>15 câu hỏi</b> để trở thành triệu phú</li>
+                  <li>Mỗi câu có <b>30 giây</b> để suy nghĩ. Nếu hết giờ, bạn có thêm <b>3 giây</b> để chọn đáp án</li>
+                  <li>Chọn đáp án A/B/C/D. Hết thời gian mà không chọn sẽ thua cuộc</li>
+                  <li>Câu hỏi được chọn ngẫu nhiên: 5 dễ (câu 1-5), 5 trung bình (câu 6-10), 5 khó (câu 11-15)</li>
+                  <li>Có thể <b>dừng cuộc chơi</b> để nhận tiền thưởng hiện tại (trừ câu 5, 10, 15)</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card__title">Trợ giúp</div>
+                <ul class="list">
+                  <li><b>50-50:</b> Loại bỏ 2 đáp án sai (chỉ dùng 1 lần)</li>
+                  <li><b>Hỏi khán giả:</b> Xem bình chọn của khán giả (chỉ dùng 1 lần)</li>
+                  <li><b>Gọi điện:</b> Nhận gợi ý từ người thân (chỉ dùng 1 lần)</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <div class="card__title">Mốc tiền thưởng</div>
+                <ul class="list">
+                  <li>Câu 1-5: 1tr - 5tr (mốc an toàn: <b>5 triệu</b>)</li>
+                  <li>Câu 6-10: 6tr - 22tr (mốc an toàn: <b>22 triệu</b>)</li>
+                  <li>Câu 11-15: 30tr - 500tr (thắng cuộc: <b>500 triệu đồng!</b>)</li>
+                  <li>Trả lời sai hoặc hết giờ: nhận tiền theo mốc an toàn gần nhất</li>
+                </ul>
+              </div>
+
+              <div class="stack stack--row stack--wrap">
+                <button class="btn btn--primary" id="btnIntroStart" type="button">Vào game</button>
+                <button class="btn" id="btnToggleSound" type="button" aria-pressed="true">Âm thanh: Bật</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Game Screen -->
+        <section class="screen" data-screen="game" aria-label="Màn hình chơi game">
+          <div class="hud">
+            <!-- Logo ở góc trên trái -->
+            <img src="./images/logo-ai-la-trieu-phu.png" alt="AI Là Triệu Phú" class="logo-game altp-logo game-logo" />
+            
+            <div class="hud__left">
+              <div class="pill">
+                <span class="pill__label">Câu</span>
+                <span class="pill__value" id="qIndex">1/15</span>
+              </div>
+              <div class="pill pill--timer" role="timer" aria-live="polite">
+                <span class="pill__label">⏱</span>
+                <span class="pill__value" id="timerText">30</span>
+              </div>
+              <div class="pill">
+                <span class="pill__label">Chủ đề</span>
+                <span class="pill__value" id="qCategory">—</span>
+              </div>
+            </div>
+
+            <div class="hud__right">
+              <button class="life" id="life5050" type="button" title="50-50" aria-label="Trợ giúp 50-50">50-50</button>
+              <button class="life" id="lifeAudience" type="button" title="Hỏi khán giả" aria-label="Trợ giúp hỏi khán giả">Khán giả</button>
+              <button class="life" id="lifePhone" type="button" title="Gọi điện" aria-label="Trợ giúp gọi điện">Gọi điện</button>
+              <button class="life life--stop" id="btnStop" type="button" title="Dừng cuộc chơi" aria-label="Dừng cuộc chơi">Dừng cuộc chơi</button>
+              <button class="icon-btn" id="btnQuit" type="button" aria-label="Thoát về màn hình bắt đầu">
+                <span aria-hidden="true">✕</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="game-layout">
+            <section class="stage">
+              <!-- Phần quiz board giữ nguyên -->
+              <div class="quiz-board" id="quizBoard" aria-label="Bảng câu hỏi và đáp án">
+                <div class="quiz-board__slot quiz-board__slot--q">
+                  <div class="q-text q-text--board" id="qText">Đang tải câu hỏi…</div>
+                </div>
+
+                <button class="quiz-answer quiz-answer--a" type="button" data-idx="0" aria-label="Đáp án A">
+                  <span class="quiz-answer__key">A</span>
+                  <span class="quiz-answer__text" id="ansText0">—</span>
+                </button>
+
+                <button class="quiz-answer quiz-answer--b" type="button" data-idx="1" aria-label="Đáp án B">
+                  <span class="quiz-answer__key">B</span>
+                  <span class="quiz-answer__text" id="ansText1">—</span>
+                </button>
+
+                <button class="quiz-answer quiz-answer--c" type="button" data-idx="2" aria-label="Đáp án C">
+                  <span class="quiz-answer__key">C</span>
+                  <span class="quiz-answer__text" id="ansText2">—</span>
+                </button>
+
+                <button class="quiz-answer quiz-answer--d" type="button" data-idx="3" aria-label="Đáp án D">
+                  <span class="quiz-answer__key">D</span>
+                  <span class="quiz-answer__text" id="ansText3">—</span>
+                </button>
+              </div>
+
+              <div class="overlay-panel" id="overlayPanel" hidden>
+                <div class="overlay-panel__inner" role="dialog" aria-modal="true">
+                  <div class="overlay-panel__title" id="overlayTitle">Trợ giúp</div>
+                  <div class="overlay-panel__body" id="overlayBody"></div>
+                  <div class="overlay-panel__actions">
+                    <button class="btn btn--primary" id="btnOverlayYes" type="button" hidden>Có</button>
+                    <button class="btn" id="btnOverlayNo" type="button" hidden>Không</button>
+                    <button class="btn btn--primary" id="btnOverlayClose" type="button">Đóng</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <aside class="ladder" aria-label="Thang tiền thưởng">
+              <div class="ladder__title">TIỀN THƯỞNG</div>
+              <ol class="ladder__list" id="ladderList"></ol>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section class="screen" data-screen="result" aria-label="Màn hình kết quả">
+          <div class="panel panel--center">
+            <div class="result">
+              <div class="result__title" id="resultTitle">Kết quả</div>
+              <div class="result__money" id="resultMoney">$0</div>
+              <div class="result__desc" id="resultDesc">—</div>
+            </div>
+
+            <div class="stack stack--row stack--wrap">
+              <button class="btn btn--primary" id="btnPlayAgain" type="button">Chơi lại</button>
+              <button class="btn" id="btnBackHome" type="button">Về màn hình đầu</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

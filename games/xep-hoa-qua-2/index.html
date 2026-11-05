@@ -1,0 +1,60 @@
+
+<!Doctype html>
+<html>
+	<head>
+		<title>Xếp hoa quả 2</title>
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+		<meta charset="utf-8" />
+		<script src="assets/js/jquery-3.2.0.min.js"></script>
+		<script src="assets/js/TweenMax.min.js"></script>
+		<script src="assets/js/howler.core.min.js"></script>
+		<script src="assets/js/game.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/game.css">
+ 
+	</head>
+	<body>
+	<style>
+	canvas{ position:fixed;
+		max-width: initial !important;
+		}
+	</style>
+		<div id="GameAppend"></div>
+		<script>
+		$(document).ready(function(){
+		AddGame({
+		/* DOM Element to which the game will be added */
+		add: "#GameAppend",
+		/* You can change the stage width and height of the game here. */
+		gameSize: {width:720, height:900},
+		/* The size of the object box in the game must be added here. */
+		boxSize: 94,
+		/* Total time in the game must be entered here. */
+		totalTime: 25,
+		/* The number of rows and columns required in the game must be entered here. */
+		rowCount: 7,
+		columnCount:7,
+		/* You can add 9 kinds of objects to the game. Add the object images to the "assets/img" folder.*/
+		typeCount:5,
+		/* Earned bonus time animation end position. */
+		bonusTimeEndAniPosition: {left:285, top:228},
+		/* Maximum number of time Box */
+		maxBonusTimeBox:4,
+		/* maximum time earned */
+		maxBonusTimeDuration:3,
+		/* bonus time probability [0 to 9] */
+		maxBonusTimeChange:6,
+		/* You can change the language settings here. */
+		gameInfo_scoreText: "Điểm",
+		endWindow_HighScoreText: "Kỷ lục",
+		endWindow_NewScoreText: "Điểm",
+		howToPlay_TitleText: "HƯỚNG DẪN!",
+		howToPlay_Comment1Text: "Ghép 3 quả giống nhau trở lên trước khi hết giờ!",
+		howToPlay_Comment2Text: "Ghép quả có số bên cạnh để kéo dài thời gian."
+		})
+		});
+		</script>
+	</body>
+</html>

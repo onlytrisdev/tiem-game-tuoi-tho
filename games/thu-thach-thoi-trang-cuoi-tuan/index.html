@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<script src="initGame.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<title>Thử thách thời trang cuối tuần</title>
+<script type="text/javascript" src="vendor/phaser.min.js"></script>
+<script src="plugins/phaser-capture.js"></script>
+<script src="plugins/canvasimagesaver.min.js"></script>
+<script src="plugins/filters.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        #theGame {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+        </style>
+<script type="text/javascript">
+        var width = window.innerWidth;    
+var interval = setInterval(function(){    
+if (width === 0) {    
+if (typeof document.body === "object" && document.body !== null){   
+document.body.style.display = "none";   
+}   
+if (window.innerWidth > width) {    
+window.location.reload();   
+clearInterval(interval);    
+return;   
+}   
+} else {    
+clearInterval(interval);    
+}   
+},50);   </script>
+</head>
+<body>
+<div id='theGame'></div>
+<script src="states/titlescreen.js"></script>
+<script src="states/levelselect.js"></script>
+<script src="states/game.js"></script>
+<script src="states/endscreen.js"></script>
+<script src="settingfile.js"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>

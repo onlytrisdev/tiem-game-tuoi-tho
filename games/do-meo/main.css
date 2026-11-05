@@ -1,0 +1,107 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: FontContent;
+	font-size:14px;
+	max-width: 648px;
+	background: url(bg.jpg) no-repeat;
+}
+@font-face {
+    font-family: myFont;
+    src: url(UVNMangCau.TTF);
+}
+@font-face {
+    font-family: FontContent;
+    src: url(UVNCatBienNhe_R.TTF);
+}
+
+#navContent{
+margin:auto;	
+position:relative;
+}
+
+#game1{
+margin: auto;
+width:600px;
+position:absolute;
+}
+
+#game2{
+margin:auto;	
+width:600px;
+right:-800px;
+position:absolute;
+} 
+.resumeText {
+font-size: 3em;
+color: yellow;
+margin: 0 auto 40px;
+text-align: center;
+}
+
+.questionText{
+font-size:1.8em;
+font-weight: 700;
+}
+
+.option {
+position:relative;
+line-height: 30px;
+height:30px;
+margin:15px;
+font-size:18px;
+color:#FFFFFF; 
+padding:2px;
+padding-left:10px;
+border: 2px solid white;
+cursor:pointer;
+background-color:#3399FF;
+}
+
+.option:hover{
+color:yellow;
+}
+
+
+#topbar{
+background: url(http://www.localhost/themes/default/images/logo.png) no-repeat center 20px;
+margin: 0 auto;
+padding-top: 80px;
+font-size: 3.6em;
+font-family: myFont;
+text-align: center;
+color: green;
+border-bottom: solid #666 1px;
+
+}
+ 
+.spacer{
+height:30px;
+}
+
+.feedback1,.feedback2{
+width:250px;
+padding:5px;
+margin: 0 auto;
+font-size:30px;
+color:#FFFFCC;
+background-color:#009900;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+}
+.feedback2{
+background-color:red;
+}
+ 
+@media screen and (max-width:800px) {
+	#topbar{margin-left:1%;margin-right:1%;font-size: 2.5em;}
+	.questionText {font-size:1.4em}
+	#navContent{margin:1%;	width:98%;}
+	#game1{margin:auto;	width:98%;}
+	#game2{margin:auto;	width:98%;}
+
+
+}
+@media screen and (max-width:460px) {
+	.option{margin:5%;font-size:1.2em}}
+}

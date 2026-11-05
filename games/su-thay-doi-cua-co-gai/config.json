@@ -1,0 +1,209 @@
+{
+  "id": 664,
+  "name": "Sự thay đổi của cô gái",
+  "title": "Sự thay đổi của cô gái",
+  "rebrandName": "",
+  "prinxySlug": "",
+  "portal": "Gamerina",
+  "core": "v0.3",
+  "sdks": [],
+  "publishers": [
+    {
+      "id": 0,
+      "name": "OpenMarket",
+      "domain": "yandex",
+      "domain_id": 0,
+      "ads_positions": [
+        "pre2",
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "replay1",
+        "reward1",
+        "reward2",
+        "reward3",
+        "reward4",
+        "reward5",
+        "reward6",
+        "reward7",
+        "reward8",
+        "ls1"
+      ],
+      "timer_ads_positions": [
+        "pre2",
+        "unit1",
+        "unit2",
+        "unit3",
+        "unit4",
+        "unit5",
+        "unit6",
+        "unit7",
+        "unit8",
+        "unit9",
+        "unit10",
+        "unit11",
+        "unit12",
+        "ls1"
+      ],
+      "timer_between_ads": "30",
+      "first_timer": "0",
+      "timer_resets_on_click": 0,
+      "ad_unit": "",
+      "ads_locked": "0",
+      "whitelist": "0",
+      "locked": "0",
+      "ads_cap": "0",
+      "optional": {
+        "outgoing": [
+          {
+            "zone": "logo_button",
+            "unit": "",
+            "url": "https://localhost/",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          },
+          {
+            "zone": "preloader_button",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "level_select",
+            "url": "https://localhost/",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          },
+          {
+            "zone": "facebook",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "youtube",
+            "unit": "",
+            "url": "",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "0",
+            "remove": "0",
+            "utm": "0",
+            "show": "0"
+          },
+          {
+            "zone": "mg",
+            "unit": "end_screen",
+            "url": "https://localhost/",
+            "image": "",
+            "xpos": "",
+            "ypos": "",
+            "block": "1",
+            "remove": "0",
+            "utm": "1",
+            "show": "0"
+          }
+        ],
+        "fullscreen": {
+          "hide": true
+        }
+      },
+      "rebrand": "1",
+      "hide_splash": "0",
+      "force_language": "",
+      "needs_consent": "0",
+      "show_related": "1",
+      "bsense": false,
+      "bsense_channel": ""
+    }
+  ],
+  "related": [
+    {
+      "title": "Extreme Makeover",
+      "url": "https://game.digitap.eu/499793a7-6110-5946-a101-f8780e4474c1/index.html",
+      "thumb": "https://cms.ideastudios.ro/october/storage/app/media/Related Games/Extreme Makeover/extreme_makeover.gif",
+      "position": 1
+    },
+    {
+      "title": "Miruna's Adventure: Vet",
+      "url": "https://www.gameswf.com/webgl/mirunas_adventure_vet/",
+      "thumb": "https://cms.ideastudios.ro/october/storage/app/media/Related Games/Mirunas Adventure Vet/mirunas_adventure_vet_small.gif",
+      "position": 2
+    },
+    {
+      "title": "Ollie Goes to School",
+      "url": "https://www.gameswf.com/webgl/ollie_goes_to_school/",
+      "thumb": "https://cms.ideastudios.ro/october/storage/app/media/Related Games/Ollie Goes to School/ollie_goes_to_school_small.gif",
+      "position": 3
+    },
+    {
+      "title": "Summertime Celebration",
+      "url": "https://www.gameswf.com/webgl/summertime_celebration/",
+      "thumb": "https://cms.ideastudios.ro/october/storage/app/media/Related Games/Summertime Celebration/summertime_celebration_small.gif",
+      "position": 5
+    },
+    {
+      "title": "Princesses Emergency Room",
+      "url": "https://www.gameswf.com/webgl/princesses_emergency_room/",
+      "thumb": "https://cms.ideastudios.ro/october/storage/app/media/Related Games/Princesses Emergency Room/princesses_emergency_room_small.gif",
+      "position": 4
+    }
+  ],
+  "languages": [
+    "English",
+    "Russian",
+    "Portuguese",
+    "Spanish"
+  ],
+  "translations": {
+    "English": [],
+    "Russian": [],
+    "Portuguese": [],
+    "Spanish": []
+  }
+}
