@@ -1,0 +1,59 @@
+﻿{"frames": {
+
+"bow0":
+{
+	"frame": {"x":0,"y":411,"w":346,"h":71},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":4,"w":355,"h":83},
+	"sourceSize": {"w":355,"h":83}
+},
+"bow1":
+{
+	"frame": {"x":0,"y":331,"w":349,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":355,"h":83},
+	"sourceSize": {"w":355,"h":83}
+},
+"bow2":
+{
+	"frame": {"x":0,"y":249,"w":349,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":83},
+	"sourceSize": {"w":355,"h":83}
+},
+"bow3":
+{
+	"frame": {"x":0,"y":83,"w":349,"h":83},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":83},
+	"sourceSize": {"w":355,"h":83}
+},
+"bow4":
+{
+	"frame": {"x":0,"y":166,"w":349,"h":83},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":83},
+	"sourceSize": {"w":355,"h":83}
+},
+"bow5":
+{
+	"frame": {"x":0,"y":0,"w":355,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":83},
+	"sourceSize": {"w":355,"h":83}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "upgradeBow.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1"
+}
+}

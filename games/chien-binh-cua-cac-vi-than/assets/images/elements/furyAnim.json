@@ -1,0 +1,91 @@
+﻿{"frames": {
+
+"unit0":
+{
+	"frame": {"x":0,"y":0,"w":142,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":33,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit1":
+{
+	"frame": {"x":142,"y":0,"w":165,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":58,"y":5,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit2":
+{
+	"frame": {"x":307,"y":0,"w":208,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":0,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit3":
+{
+	"frame": {"x":515,"y":0,"w":208,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":0,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit4":
+{
+	"frame": {"x":723,"y":0,"w":208,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":6,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit5":
+{
+	"frame": {"x":0,"y":218,"w":228,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":6,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit6":
+{
+	"frame": {"x":228,"y":218,"w":256,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":6,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit7":
+{
+	"frame": {"x":484,"y":218,"w":246,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":6,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit8":
+{
+	"frame": {"x":0,"y":426,"w":301,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+},
+"unit9":
+{
+	"frame": {"x":301,"y":426,"w":301,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":301,"h":219},
+	"sourceSize": {"w":301,"h":219}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "furyAnim.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

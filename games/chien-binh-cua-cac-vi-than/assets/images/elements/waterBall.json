@@ -1,0 +1,99 @@
+﻿{"frames": {
+
+"unit0":
+{
+	"frame": {"x":0,"y":0,"w":84,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":0,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit1":
+{
+	"frame": {"x":84,"y":0,"w":76,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":3,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit2":
+{
+	"frame": {"x":160,"y":0,"w":76,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":3,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit3":
+{
+	"frame": {"x":236,"y":0,"w":77,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":0,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit4":
+{
+	"frame": {"x":313,"y":0,"w":79,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":1,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit5":
+{
+	"frame": {"x":392,"y":0,"w":0,"h":0},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":-231,"y":-221,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit6":
+{
+	"frame": {"x":0,"y":115,"w":121,"h":105},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":21,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit7":
+{
+	"frame": {"x":121,"y":115,"w":128,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":20,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit8":
+{
+	"frame": {"x":249,"y":115,"w":134,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":18,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit9":
+{
+	"frame": {"x":0,"y":223,"w":141,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":16,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+},
+"unit10":
+{
+	"frame": {"x":141,"y":223,"w":144,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":25,"w":144,"h":128},
+	"sourceSize": {"w":144,"h":128}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "waterBall.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1"
+}
+}

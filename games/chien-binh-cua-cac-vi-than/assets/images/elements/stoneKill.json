@@ -1,0 +1,67 @@
+﻿{"frames": {
+
+"unit0":
+{
+	"frame": {"x":0,"y":0,"w":39,"h":71},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":2,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+},
+"unit1":
+{
+	"frame": {"x":39,"y":0,"w":48,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":11,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+},
+"unit2":
+{
+	"frame": {"x":0,"y":71,"w":52,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":20,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+},
+"unit3":
+{
+	"frame": {"x":52,"y":71,"w":56,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":7,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+},
+"unit4":
+{
+	"frame": {"x":0,"y":141,"w":55,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+},
+"unit5":
+{
+	"frame": {"x":55,"y":141,"w":55,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+},
+"unit6":
+{
+	"frame": {"x":55,"y":141,"w":55,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":77},
+	"sourceSize": {"w":57,"h":77}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "16.0.1.119",
+	"image": "stoneKill.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":256},
+	"scale": "1"
+}
+}

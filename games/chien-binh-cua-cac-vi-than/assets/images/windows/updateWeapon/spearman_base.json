@@ -1,0 +1,27 @@
+﻿{"frames": {
+
+"pikeMan_img0":
+{
+	"frame": {"x":0,"y":110,"w":94,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":10,"w":95,"h":110},
+	"sourceSize": {"w":95,"h":110}
+},
+"pikeMan_img1":
+{
+	"frame": {"x":0,"y":0,"w":93,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":110},
+	"sourceSize": {"w":95,"h":110}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "spearman_base.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":256},
+	"scale": "1"
+}
+}

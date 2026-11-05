@@ -1,0 +1,27 @@
+﻿{"frames": {
+
+"swordsMan_img instance 10000":
+{
+	"frame": {"x":0,"y":116,"w":62,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":14,"w":70,"h":116},
+	"sourceSize": {"w":70,"h":116}
+},
+"swordsMan_img instance 10001":
+{
+	"frame": {"x":0,"y":0,"w":70,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":116},
+	"sourceSize": {"w":70,"h":116}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "swordsman_base.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":256},
+	"scale": "1"
+}
+}

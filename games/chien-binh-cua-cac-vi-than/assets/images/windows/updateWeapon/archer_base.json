@@ -1,0 +1,27 @@
+﻿{"frames": {
+
+"archer_img instance 10000":
+{
+	"frame": {"x":0,"y":106,"w":76,"h":101},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":5,"w":80,"h":106},
+	"sourceSize": {"w":80,"h":106}
+},
+"archer_img instance 10001":
+{
+	"frame": {"x":0,"y":0,"w":80,"h":106},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":106},
+	"sourceSize": {"w":80,"h":106}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "archer_base.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":256},
+	"scale": "1"
+}
+}
