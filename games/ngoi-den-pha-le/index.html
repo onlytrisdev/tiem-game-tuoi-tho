@@ -1,0 +1,312 @@
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+
+    <meta name="apple-mobile-web-app-title" content="Fireboy & Watergirl 4 Crystal Temple">
+
+    <title>Chú bé lửa và Cô gái nước 4 - Ngôi đền pha lê</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="icon" sizes="60x60" href="icon-60x60.png">
+
+    <link rel="icon" sizes="256x256" href="icon-256x256.png">
+
+    <link rel="icon" sizes="512x512" href="icon-512x512.png">
+
+    <link rel="apple-touch-icon" href="icon-60x60.png">
+
+    <style>
+
+        html, body {
+
+            margin: 0;
+
+            padding: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            overflow: hidden;
+
+            background: #000;
+
+            position: fixed;
+
+            inset: 0;
+
+            touch-action: none;
+
+            overscroll-behavior: none;
+
+        }
+
+        #root, #container {
+
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            overflow: hidden;
+
+            background: #000;
+
+        }
+
+        #container canvas {
+
+            display: block;
+
+            touch-action: none;
+
+        }
+
+        #hammer {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            overflow: hidden;
+
+        }
+
+        #debug-fps {
+
+            pointer-events: none;
+
+        }
+
+        #gv-rotate {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 100000;
+
+            background: #111;
+
+            color: #fff;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            font-family: sans-serif;
+
+            font-size: 22px;
+
+            line-height: 1.4;
+
+            padding: 24px;
+
+        }
+
+        #gv-clear-notice {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 100001;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            font-family: sans-serif;
+
+            touch-action: auto;
+
+        }
+
+        #gv-clear-notice.gv-show {
+
+            display: flex;
+
+        }
+
+        #gv-clear-notice .gv-clear-box {
+
+            background: #2a2a2a;
+
+            color: #fff;
+
+            border: 2px solid #f5c542;
+
+            border-radius: 12px;
+
+            max-width: 420px;
+
+            width: 86%;
+
+            padding: 22px 20px 18px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+
+        }
+
+        #gv-clear-notice .gv-clear-msg {
+
+            font-size: 18px;
+
+            line-height: 1.45;
+
+            margin: 0 0 18px;
+
+        }
+
+        #gv-clear-notice .gv-clear-actions {
+
+            display: flex;
+
+            gap: 12px;
+
+            justify-content: center;
+
+        }
+
+        #gv-clear-notice .gv-clear-btn {
+
+            min-width: 110px;
+
+            padding: 10px 16px;
+
+            border: 0;
+
+            border-radius: 8px;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            color: #1a1a1a;
+
+            background: #f5c542;
+
+        }
+
+        #gv-clear-notice .gv-clear-btn.gv-clear-cancel {
+
+            background: #888;
+
+            color: #fff;
+
+        }
+
+    </style>
+
+    <script src="gv-bridge.js"></script>
+
+    <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <script>window.GVBridge && window.GVBridge.lockViewport();</script>
+
+</head>
+
+
+
+<body>
+
+    <div id="gv-rotate">Bạn vui lòng xoay ngang màn hình để chơi</div>
+
+    <script type="text/javascript">
+
+        window.requireNode = window.require;
+
+        window.require = undefined;
+
+    </script>
+
+    <script src="bower_components/requirejs/require.js"></script>
+
+
+
+    <div id="root">
+
+        <div id="container"></div>
+
+        <div id="hammer"></div>
+
+        <div id="debug-fps" style="color:#ff0000; position: absolute; top: 0;"></div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        var gameName = "fireboy-and-watergirl-crystal-temple.min.js";
+
+
+
+        function addScript(src, buster, callback) {
+
+            var s = document.createElement('script');
+
+            s.setAttribute('src', src + '?v=' + buster);
+
+            if (typeof callback === 'function') {
+
+                s.onload = callback;
+
+            }
+
+            document.body.appendChild(s);
+
+        }
+
+
+
+        window.GVBridge.ready.then(function () {
+
+            addScript('version.js', Date.now(), function () {
+
+                require(["fireboy-and-watergirl-crystal-temple.min.js"]);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>
+

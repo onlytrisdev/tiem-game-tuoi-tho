@@ -1,0 +1,280 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 720,
+        "runtime": "PanelWin.js",
+        "height": 1280
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Image",
+            "props": {
+                "width": 3000,
+                "skin": "UIRes/repeat/Image_repeat_03.png",
+                "height": 3000,
+                "centerY": 0,
+                "centerX": 0
+            },
+            "compId": 49
+        },
+        {
+            "type": "Image",
+            "props": {
+                "width": 1,
+                "height": 1,
+                "centerY": -98,
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 5,
+            "child": [
+                {
+                    "type": "Box",
+                    "props": {
+                        "width": 100,
+                        "var": "title",
+                        "height": 100,
+                        "centerY": -185,
+                        "centerX": 0
+                    },
+                    "compId": 72,
+                    "child": [
+                        {
+                            "type": "Label",
+                            "props": {
+                                "centerY": 0,
+                                "centerX": 0,
+                                "fontSize":52,
+                                "color":"white",
+                                "stroke":5,
+                                "strokeColor":"#a22120",
+                                "bold":true,
+                                "text": "THẮNG!",
+                                "font": "Arial"
+                            },
+                            "compId": 73
+                        }
+                    ]
+                },
+                {
+                    "type": "Button",
+                    "props": {
+                        "var": "fangQi",
+                        "stateNum": 1,
+                        "skin": "UIRes/repeat/Button_repeat_03.png",
+                        "centerY": 233,
+                        "centerX": 140
+                    },
+                    "compId": 22,
+                    "child": [
+                        {
+                            "type": "Label",
+                            "props": {
+                                "centerY": 0,
+                                "centerX": 0,
+                                "fontSize":46,
+                                "color":"white",
+                                "bold":true,
+                                "text": "x 1",
+                                "stroke":5,
+                                "strokeColor":"#d6900c",
+                                "font": "Arial"
+                            },
+                            "compId": 24
+                        }
+                    ]
+                },
+                {
+                    "type": "Button",
+                    "props": {
+                        "var": "shuangBei",
+                        "stateNum": 1,
+                        "skin": "UIRes/repeat/Button_repeat_02.png",
+                        "centerY": 233,
+                        "centerX": -140,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                    },
+                    "compId": 23,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 28.5,
+                                "x": 30,
+                                "skin": "UIRes/add/Image_add_11.png"
+                            },
+                            "compId": 25
+                        },
+                        {
+                            "type": "Label",
+                            "props": {
+                                "centerY": 0,
+                                "centerX": 10,
+                                "fontSize":46,
+                                "color":"white",
+                                "stroke":5,
+                                "strokeColor":"#3281d2",
+                                "bold":true,
+                                "text": "x 2",
+                                "font": "Arial"
+                            },
+                            "compId": 26
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "skin": "UIRes/win/Image_win_01.png",
+                        "centerY": 19,
+                        "centerX": 0
+                    },
+                    "compId": 55,
+                    "child": [
+                        {
+                            "type": "Label",
+                            "props": {
+                                "width": 137,
+                                "var": "addQian",
+                                "valign": "middle",
+                                "text": "1000",
+                                "height": 51,
+                                "font": "font01",
+                                "centerY": 55,
+                                "centerX": 0,
+                                "align": "center"
+                            },
+                            "compId": 12
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "y": 126,
+                "x": 535,
+                "top": 126,
+                "skin": "UIRes/repeat/Image_repeat_05.png",
+                "right": 38
+            },
+            "compId": 82,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 5,
+                        "x": 11.5,
+                        "width": 109,
+                        "var": "qian",
+                        "valign": "middle",
+                        "text": "99999",
+                        "height": 40,
+                        "font": "font01",
+                        "align": "center"
+                    },
+                    "compId": 83
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": -3,
+                        "x": 123,
+                        "skin": "UIRes/repeat/Image_repeat_04.png"
+                    },
+                    "compId": 84
+                }
+            ]
+        }
+    ],
+    "animations": [
+        {
+            "nodes": [
+                {
+                    "target": 5,
+                    "keyframes": {
+                        "scaleY": [
+                            {
+                                "value": 0,
+                                "tweenMethod": "linearNone",
+                                "tween": false,
+                                "target": 5,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.5,
+                                "tweenMethod": "backOut",
+                                "tween": true,
+                                "target": 5,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 5
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 5,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 20
+                            }
+                        ],
+                        "scaleX": [
+                            {
+                                "value": 0,
+                                "tweenMethod": "linearNone",
+                                "tween": false,
+                                "target": 5,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.5,
+                                "tweenMethod": "backOut",
+                                "tween": true,
+                                "target": 5,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 5
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 5,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 20
+                            }
+                        ]
+                    }
+                }
+            ],
+            "name": "ani1",
+            "id": 1,
+            "frameRate": 24,
+            "action": 1
+        }
+    ],
+    "loadList": [
+        "UIRes/repeat/Image_repeat_03.png",
+        "UIRes/win/Image_win_03.png",
+        "UIRes/repeat/Button_repeat_03.png",
+        "UIRes/add/Image_add_06.png",
+        "UIRes/repeat/Button_repeat_02.png",
+        "UIRes/add/Image_add_11.png",
+        "UIRes/add/Image_add_03.png",
+        "UIRes/win/Image_win_01.png",
+        "UIRes/repeat/Image_repeat_05.png",
+        "UIRes/repeat/Image_repeat_04.png"
+    ],
+    "loadList3D": []
+}

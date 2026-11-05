@@ -1,0 +1,779 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 720,
+        "runtime": "PanelShop2.js",
+        "height": 1280
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Image",
+            "props": {
+                "y": -860,
+                "x": -1140,
+                "width": 3000,
+                "skin": "UIRes/repeat/Image_repeat_03.png",
+                "height": 3000,
+                "centerY": 0,
+                "centerX": 0
+            },
+            "compId": 7
+        },
+        {
+            "type": "Image",
+            "props": {
+                "skin": "UIRes/shop/Image_shop_15.png",
+                "centerY": -78,
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 4,
+            "child": [
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": -379,
+                        "x": -45.5,
+                        "width": 720,
+                        "var": "showBg",
+                        "height": 600
+                    },
+                    "compId": 2188
+                },
+                {
+                    "type": "Box",
+                    "props": {
+                        "width": 600,
+                        "var": "allBg",
+                        "height": 500,
+                        "centerY": 138,
+                        "centerX": 0
+                    },
+                    "compId": 307,
+                    "child": [
+                        {
+                            "type": "Box",
+                            "props": {
+                                "width": 600,
+                                "var": "bg",
+                                "height": 250,
+                                "centerY": 0,
+                                "centerX": 0
+                            },
+                            "compId": 61,
+                            "child": [
+                                {
+                                    "type": "Box",
+                                    "props": {
+                                        "width": 174,
+                                        "name": "btn1",
+                                        "height": 230,
+                                        "centerY": 0,
+                                        "centerX": -185
+                                    },
+                                    "compId": 13,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "skin": "UIRes/shop/Image_shop_05.png",
+                                                "centerY": -37,
+                                                "centerX": 0
+                                            },
+                                            "compId": 562
+                                        },
+                                        {
+                                            "type": "Box",
+                                            "props": {
+                                                "width": 174,
+                                                "name": "yongYou",
+                                                "height": 230,
+                                                "centerY": 0,
+                                                "centerX": 0
+                                            },
+                                            "compId": 66,
+                                            "child": [
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "shiYong1",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_03.png",
+                                                        "name": "shiYong",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 62,
+                                                    "child": [
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "centerY": 0,
+                                                                "centerX": 0,
+                                                                "fontSize":30,
+                                                                "color":"white",
+                                                                "stroke":5,
+                                                                "strokeColor":"#d6900c",
+                                                                "bold":true,
+                                                                "text": "Chọn",
+                                                                "font": "Arial"
+                                                            },
+                                                            "compId": 63
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Image",
+                                                    "props": {
+                                                        "var": "yiYong1",
+                                                        "skin": "UIRes/shop/Button_shop_04.png",
+                                                        "name": "yiYong",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 67,
+                                                    "child": [
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "centerY": 0,
+                                                                "centerX": 0,
+                                                                "fontSize":30,
+                                                                "color":"white",
+                                                                "stroke":3,
+                                                                "bold":true,
+                                                                "text": "Đã chọn",
+                                                                "font": "Arial"
+                                                            },
+                                                            "compId": 467
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Box",
+                                            "props": {
+                                                "width": 174,
+                                                "name": "gouMai",
+                                                "height": 230,
+                                                "centerY": 0,
+                                                "centerX": 0
+                                            },
+                                            "compId": 122,
+                                            "child": [
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "shiPin1",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_02.png",
+                                                        "name": "shiPin",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 10,
+                                                    "child": [
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "skin": "UIRes/add/Image_add_02.png",
+                                                                "centerY": -1,
+                                                                "centerX": 1
+                                                            },
+                                                            "compId": 11
+                                                        },
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "y": 15.5,
+                                                                "x": 65,
+                                                                "skin": "UIRes/shop/Image_shop_04.png"
+                                                            },
+                                                            "compId": 12
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "xiaoHao1",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_02.png",
+                                                        "name": "xiaoHao",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 128,
+                                                    "child": [
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "skin": "UIRes/shop/Image_shop_04.png",
+                                                                "centerY": 0,
+                                                                "centerX": -40
+                                                            },
+                                                            "compId": 129
+                                                        },
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "y": 11,
+                                                                "x": 59,
+                                                                "width": 103,
+                                                                "var": "xiaoHaoNum1",
+                                                                "valign": "middle",
+                                                                "text": "3000",
+                                                                "scaleY": 0.9,
+                                                                "scaleX": 0.9,
+                                                                "name": "xiaoHaoNum",
+                                                                "height": 46,
+                                                                "font": "font01",
+                                                                "align": "center"
+                                                            },
+                                                            "compId": 131
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "skin": "UIRes/shop/Image_shop_12.png",
+                                                "centerY": -37,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2037
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Box",
+                                    "props": {
+                                        "width": 174,
+                                        "name": "btn2",
+                                        "height": 230,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 2455,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "skin": "UIRes/shop/Image_shop_05.png",
+                                                "centerY": -37,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2456
+                                        },
+                                        {
+                                            "type": "Box",
+                                            "props": {
+                                                "width": 174,
+                                                "name": "yongYou",
+                                                "height": 230,
+                                                "centerY": 0,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2457,
+                                            "child": [
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "shiYong2",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_03.png",
+                                                        "name": "shiYong",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2458,
+                                                    "child": [
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "centerY": 0,
+                                                                "centerX": 0,
+                                                                "fontSize":30,
+                                                                "color":"white",
+                                                                "stroke":5,
+                                                                "strokeColor":"#d6900c",
+                                                                "bold":true,
+                                                                "text": "Chọn",
+                                                                "font": "Arial"
+                                                            },
+                                                            "compId": 2459
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Image",
+                                                    "props": {
+                                                        "var": "yiYong2",
+                                                        "skin": "UIRes/shop/Button_shop_04.png",
+                                                        "name": "yiYong",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2460,
+                                                    "child": [
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "centerY": 0,
+                                                                "centerX": 0,
+                                                                "fontSize":30,
+                                                                "color":"white",
+                                                                "stroke":3,
+                                                                "bold":true,
+                                                                "text": "Đã chọn",
+                                                                "font": "Arial"
+                                                            },
+                                                            "compId": 2461
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Box",
+                                            "props": {
+                                                "width": 174,
+                                                "name": "gouMai",
+                                                "height": 230,
+                                                "centerY": 0,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2462,
+                                            "child": [
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "shiPin2",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_02.png",
+                                                        "name": "shiPin",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2463,
+                                                    "child": [
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "skin": "UIRes/add/Image_add_02.png",
+                                                                "centerY": -1,
+                                                                "centerX": 1
+                                                            },
+                                                            "compId": 2464
+                                                        },
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "y": 15.5,
+                                                                "x": 65,
+                                                                "skin": "UIRes/shop/Image_shop_04.png"
+                                                            },
+                                                            "compId": 2465
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "xiaoHao2",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_02.png",
+                                                        "name": "xiaoHao",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2466,
+                                                    "child": [
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "skin": "UIRes/shop/Image_shop_04.png",
+                                                                "centerY": 0,
+                                                                "centerX": -40
+                                                            },
+                                                            "compId": 2467
+                                                        },
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "y": 11,
+                                                                "x": 59,
+                                                                "width": 103,
+                                                                "var": "xiaoHaoNum2",
+                                                                "valign": "middle",
+                                                                "text": "3000",
+                                                                "scaleY": 0.9,
+                                                                "scaleX": 0.9,
+                                                                "name": "xiaoHaoNum",
+                                                                "height": 46,
+                                                                "font": "font01",
+                                                                "align": "center"
+                                                            },
+                                                            "compId": 2468
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "skin": "UIRes/shop/Image_shop_13.png",
+                                                "centerY": -37,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2469
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Box",
+                                    "props": {
+                                        "width": 174,
+                                        "name": "btn3",
+                                        "height": 230,
+                                        "centerY": 0,
+                                        "centerX": 185
+                                    },
+                                    "compId": 2470,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "skin": "UIRes/shop/Image_shop_05.png",
+                                                "centerY": -37,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2471
+                                        },
+                                        {
+                                            "type": "Box",
+                                            "props": {
+                                                "width": 174,
+                                                "name": "yongYou",
+                                                "height": 230,
+                                                "centerY": 0,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2472,
+                                            "child": [
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "shiYong3",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_03.png",
+                                                        "name": "shiYong",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2473,
+                                                    "child": [
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "centerY": 0,
+                                                                "centerX": 0,
+                                                                "fontSize":30,
+                                                                "color":"white",
+                                                                "stroke":5,
+                                                                "strokeColor":"#d6900c",
+                                                                "bold":true,
+                                                                "text": "Chọn",
+                                                                "font": "Arial"
+                                                            },
+                                                            "compId": 2474
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Image",
+                                                    "props": {
+                                                        "var": "yiYong3",
+                                                        "skin": "UIRes/shop/Button_shop_04.png",
+                                                        "name": "yiYong",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2475,
+                                                    "child": [
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "centerY": 0,
+                                                                "centerX": 0,
+                                                                "fontSize":30,
+                                                                "color":"white",
+                                                                "stroke":3,
+                                                                "bold":true,
+                                                                "text": "Đã chọn",
+                                                                "font": "Arial"
+                                                            },
+                                                            "compId": 2476
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Box",
+                                            "props": {
+                                                "width": 174,
+                                                "name": "gouMai",
+                                                "height": 230,
+                                                "centerY": 0,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2477,
+                                            "child": [
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "shiPin3",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_02.png",
+                                                        "name": "shiPin",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2478,
+                                                    "child": [
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "skin": "UIRes/add/Image_add_02.png",
+                                                                "centerY": -1,
+                                                                "centerX": 1
+                                                            },
+                                                            "compId": 2479
+                                                        },
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "y": 15.5,
+                                                                "x": 65,
+                                                                "skin": "UIRes/shop/Image_shop_04.png"
+                                                            },
+                                                            "compId": 2480
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Button",
+                                                    "props": {
+                                                        "var": "xiaoHao3",
+                                                        "stateNum": 1,
+                                                        "skin": "UIRes/shop/Button_shop_02.png",
+                                                        "name": "xiaoHao",
+                                                        "centerY": 80,
+                                                        "centerX": 0
+                                                    },
+                                                    "compId": 2481,
+                                                    "child": [
+                                                        {
+                                                            "type": "Image",
+                                                            "props": {
+                                                                "skin": "UIRes/shop/Image_shop_04.png",
+                                                                "centerY": 0,
+                                                                "centerX": -40
+                                                            },
+                                                            "compId": 2482
+                                                        },
+                                                        {
+                                                            "type": "Label",
+                                                            "props": {
+                                                                "y": 11,
+                                                                "x": 59,
+                                                                "width": 103,
+                                                                "var": "xiaoHaoNum3",
+                                                                "valign": "middle",
+                                                                "text": "3000",
+                                                                "scaleY": 0.9,
+                                                                "scaleX": 0.9,
+                                                                "name": "xiaoHaoNum",
+                                                                "height": 46,
+                                                                "font": "font01",
+                                                                "align": "center"
+                                                            },
+                                                            "compId": 2483
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "skin": "UIRes/shop/Image_shop_14.png",
+                                                "centerY": -37,
+                                                "centerX": 0
+                                            },
+                                            "compId": 2484
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Button",
+                    "props": {
+                        "var": "fangQi",
+                        "stateNum": 1,
+                        "skin": "UIRes/repeat/Button_repeat_01.png",
+                        "left": -30,
+                        "centerY": -77
+                    },
+                    "compId": 48
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "y": 126,
+                "x": 535,
+                "top": 126,
+                "skin": "UIRes/repeat/Image_repeat_05.png",
+                "right": 38
+            },
+            "compId": 2540,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 5,
+                        "x": 11.5,
+                        "width": 109,
+                        "var": "qian",
+                        "valign": "middle",
+                        "text": "99999",
+                        "height": 40,
+                        "font": "font01",
+                        "align": "center"
+                    },
+                    "compId": 2541
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": -3,
+                        "x": 123,
+                        "skin": "UIRes/repeat/Image_repeat_04.png"
+                    },
+                    "compId": 2542
+                }
+            ]
+        }
+    ],
+    "animations": [
+        {
+            "nodes": [
+                {
+                    "target": 4,
+                    "keyframes": {
+                        "scaleY": [
+                            {
+                                "value": 0,
+                                "tweenMethod": "linearNone",
+                                "tween": false,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.5,
+                                "tweenMethod": "backOut",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 5
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 20
+                            }
+                        ],
+                        "scaleX": [
+                            {
+                                "value": 0,
+                                "tweenMethod": "linearNone",
+                                "tween": false,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.5,
+                                "tweenMethod": "backOut",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 5
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 20
+                            }
+                        ]
+                    }
+                }
+            ],
+            "name": "ani1",
+            "id": 1,
+            "frameRate": 24,
+            "action": 1
+        },
+        {
+            "nodes": [],
+            "name": "ani2",
+            "id": 2,
+            "frameRate": 24,
+            "action": 2
+        }
+    ],
+    "loadList": [
+        "UIRes/repeat/Image_repeat_03.png",
+        "UIRes/shop/Image_shop_15.png",
+        "UIRes/shop/Image_shop_05.png",
+        "UIRes/shop/Button_shop_03.png",
+        "UIRes/shop/Image_shop_01.png",
+        "UIRes/shop/Button_shop_04.png",
+        "UIRes/shop/Image_shop_03.png",
+        "UIRes/shop/Button_shop_02.png",
+        "UIRes/add/Image_add_02.png",
+        "UIRes/shop/Image_shop_04.png",
+        "UIRes/shop/Image_shop_12.png",
+        "UIRes/shop/Image_shop_13.png",
+        "UIRes/shop/Image_shop_14.png",
+        "UIRes/repeat/Button_repeat_01.png",
+        "UIRes/repeat/Image_repeat_05.png",
+        "UIRes/repeat/Image_repeat_04.png"
+    ],
+    "loadList3D": []
+}

@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+
+
+  <title>PUBG bắn Zombie</title>
+
+  <!-- Lock the browser viewport; Cocos owns the portrait canvas scaling. -->
+
+  <style>
+
+    :root { width: 100%; height: 100%; overflow: hidden; }
+
+    html, body {
+
+      position: fixed;
+
+      inset: 0;
+
+      box-sizing: border-box;
+
+      width: 100%;
+
+      height: 100%;
+
+      min-width: 0;
+
+      min-height: 0;
+
+      margin: 0;
+
+      padding: 0;
+
+      overflow: hidden !important;
+
+      overscroll-behavior: none;
+
+      background: #151515;
+
+    }
+
+    body { touch-action: none; }
+
+    #Cocos2dGameContainer {
+
+      position: fixed !important;
+
+      inset: 0 auto auto 0;
+
+      margin: 0 !important;
+
+      padding: 0;
+
+      max-width: 100vw;
+
+      max-height: 100dvh;
+
+      overflow: hidden !important;
+
+    }
+
+    #GameCanvas {
+
+      display: block;
+
+      margin: 0;
+
+      padding: 0;
+
+      border: 0;
+
+      outline: 0;
+
+      max-width: 100vw;
+
+      max-height: 100dvh;
+
+      touch-action: none;
+
+    }
+
+  </style>
+
+
+
+  
+
+  <script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+
+  <meta name="viewport"
+
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="format-detection" content="telephone=no">
+
+
+
+  <!-- force webkit on 360 -->
+
+  <meta name="renderer" content="webkit"/>
+
+  <meta name="force-rendering" content="webkit"/>
+
+  <!-- force edge on IE -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+
+
+  <!-- force full screen on some browser -->
+
+  <meta name="full-screen" content="yes"/>
+
+  <meta name="x5-fullscreen" content="true"/>
+
+  <meta name="360-fullscreen" content="true"/>
+
+  
+
+  <!-- force screen orientation on some browser -->
+
+  <meta name="screen-orientation" content="portrait"/>
+
+  <meta name="x5-orientation" content="portrait">
+
+
+
+  <!--fix fireball/issues/3568 -->
+
+  <!--<meta name="browsermode" content="application">-->
+
+  <meta name="x5-page-mode" content="app">
+
+
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="style-mobile.6187c.css"/> -->
+
+  <script>
+
+        window["GD_OPTIONS"] = {
+
+          "gameId": "4d1e06cde6b34296bd63af8adce62ce4",
+
+          "onEvent": function(event) {
+
+              switch (event.name) {
+
+                  case "SDK_GAME_START":
+
+                      // advertisement done, resume game logic and unmute audio
+
+                      cc.audioEngine.resumeAll();
+
+                      //cc.director.resume();  
+
+                      break;
+
+                  case "SDK_GAME_PAUSE":
+
+                      // pause game logic / mute audio
+
+                      cc.audioEngine.pauseAll();
+
+                      //cc.director.pause();
+
+                      if(cc && cc.find("Game")){
+
+                        var _battlefield = cc.find("Game").getComponent("Battlefield");
+
+                        if(_battlefield && _battlefield.isPlaying()){
+
+                          _battlefield._uiBattle && _battlefield._uiBattle.onExitCallback();
+
+                        }
+
+                      }
+
+                      break;
+
+                  case "SDK_GDPR_TRACKING":
+
+                      // this event is triggered when your user doesn't want to be tracked
+
+                      break;
+
+                  case "SDK_GDPR_TARGETING":
+
+                      // this event is triggered when your user doesn't want personalised targeting of ads and such
+
+                      break;
+
+                  case "AD_SDK_REQUEST_ADS":
+
+                      break;
+
+                  case "AD_SDK_FINISHED":
+
+
+
+                      break;
+
+                  case "AD_SDK_ERROR":
+
+                  case "AD_CANCELED":
+
+                      
+
+                      break;
+
+              }
+
+          },
+
+        };
+
+        function loadSdk(){
+
+          var js, fjs = document.getElementsByTagName('script')[0];
+
+          if (document.getElementById('gamedistribution-jssdk')) return;
+
+          js = document.createElement('script');
+
+          js.id = 'gamedistribution-jssdk';
+
+          js.src = '';
+
+          fjs.parentNode.insertBefore(js, fjs);
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="loadSdk()">
+
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+
+  <script src="arcade-tool.js" charset="utf-8"></script>
+
+  <script src="arcade-daily.js" charset="utf-8"></script>
+
+  <script src="src/settings.c1e87.js" charset="utf-8"></script>
+
+  <script src="main.d6a7c.js" charset="utf-8"></script>
+
+</body>
+
+</html>
+

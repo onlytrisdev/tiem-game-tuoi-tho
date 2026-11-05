@@ -1,0 +1,21 @@
+{
+    "header": {
+        "version": 1
+    },
+    "data": [
+        {
+            "info": {
+                "locale": "en-US"
+            },
+            "messages": {
+                "win": "WIN",
+                "skip": "Skip",
+                "respawn": "RESPAWN",
+                "les1": "Click the red button at \nthe bottom to become red",
+                "les2": "On white platforms, \nyou can be any color",
+                "les3": "Choose the color \nyou will follow",
+                "restart": "Restart"
+            }
+        }
+    ]
+}

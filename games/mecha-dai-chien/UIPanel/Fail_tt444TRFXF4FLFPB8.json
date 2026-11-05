@@ -1,0 +1,210 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 720,
+        "runtime": "PanelFail.js",
+        "height": 1280
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Image",
+            "props": {
+                "width": 3000,
+                "skin": "UIRes/repeat/Image_repeat_03.png",
+                "height": 3000,
+                "centerY": 0,
+                "centerX": 0
+            },
+            "compId": 4
+        },
+        {
+            "type": "Box",
+            "props": {
+                "width": 100,
+                "var": "title",
+                "height": 100,
+                "centerY": -395,
+                "centerX": 0
+            },
+            "compId": 36,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "centerY": 0,
+                        "centerX": 0,
+                        "fontSize":52,
+                        "color":"white",
+                        "stroke":5,
+                        "strokeColor":"#242256",
+                        "bold":true,
+                        "text": "THẤT BẠI",
+                        "font": "Arial"
+                    },
+                    "compId": 35
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "skin": "UIRes/fail/Image_fail_01.png",
+                "centerY": -179,
+                "centerX": 29
+            },
+            "compId": 5
+        },
+        {
+            "type": "Button",
+            "props": {
+                "var": "fangQi",
+                "stateNum": 1,
+                "skin": "UIRes/repeat/Button_repeat_03.png",
+                "centerY": 13,
+                "centerX": 140
+            },
+            "compId": 6,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "centerY": 0,
+                        "centerX": 0,
+                        "fontSize":46,
+                        "color":"white",
+                        "bold":true,
+                        "text": "x 1",
+                        "stroke":5,
+                        "strokeColor":"#d6900c",
+                        "font": "Arial"
+                    },
+                    "compId": 7
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "props": {
+                "var": "tiaoGuan",
+                "stateNum": 1,
+                "skin": "UIRes/repeat/Button_repeat_02.png",
+                "centerY": 13,
+                "centerX": -140,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 8,
+            "child": [
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 30,
+                        "x": 10,
+                        "skin": "UIRes/add/Image_add_11.png"
+                    },
+                    "compId": 9
+                },
+                {
+                    "type": "Label",
+                    "props": {
+                        "centerY": 0,
+                        "centerX": 10,
+                        "fontSize":36,
+                        "color":"white",
+                        "stroke":5,
+                        "strokeColor":"#3281d2",
+                        "bold":true,
+                        "text": "Bỏ qua",
+                        "font": "Arial"
+                    },
+                    "compId": 10
+                }
+            ]
+        }
+    ],
+    "animations": [
+        {
+            "nodes": [
+                {
+                    "target": 8,
+                    "keyframes": {
+                        "scaleY": [
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 8,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 0
+                            },
+                            {
+                                "value": 1.1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 8,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 15
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 8,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 30
+                            }
+                        ],
+                        "scaleX": [
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 8,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 0
+                            },
+                            {
+                                "value": 1.1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 8,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 15
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 8,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 30
+                            }
+                        ]
+                    }
+                }
+            ],
+            "name": "ani1",
+            "id": 1,
+            "frameRate": 24,
+            "action": 0
+        }
+    ],
+    "loadList": [
+        "UIRes/repeat/Image_repeat_03.png",
+        "UIRes/fail/Image_fail_04.png",
+        "UIRes/fail/Image_fail_01.png",
+        "UIRes/repeat/Button_repeat_03.png",
+        "UIRes/add/Image_add_15.png",
+        "UIRes/repeat/Button_repeat_02.png",
+        "UIRes/add/Image_add_11.png",
+        "UIRes/add/Image_add_14.png"
+    ],
+    "loadList3D": []
+}

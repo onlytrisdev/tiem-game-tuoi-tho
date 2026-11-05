@@ -1,0 +1,60 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 720,
+        "runtime": "PanelFirst.js",
+        "height": 1280
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Image",
+            "props": {
+                "skin": "First/Image_bg.jpg",
+                "centerY": 0,
+                "centerX": 0
+            },
+            "compId": 17
+        },
+        {
+            "type": "Image",
+            "props": {
+                "width":200,
+                "height":200,
+                "bottom": 0,
+                "skin": "UIRes/ohayo2.png",
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 34
+        },
+        {
+            "type": "Image",
+            "props": {
+                "skin": "First/Image_loading_01.png",
+                "centerY": 400,
+                "centerX": 0
+            },
+            "compId": 35,
+            "child": [
+                {
+                    "type": "Image",
+                    "props": {
+                        "var": "jiaZaiTiao",
+                        "skin": "First/Image_loading_02.png",
+                        "sizeGrid": "13,60,18,45"
+                    },
+                    "compId": 36
+                }
+            ]
+        }
+    ],
+    "loadList": [
+        "First/Image_bg.jpg",
+        "First/Image_loading_01.png",
+        "First/Image_loading_02.png",
+        "First/Image_loading_03.png"
+    ],
+    "loadList3D": []
+}
