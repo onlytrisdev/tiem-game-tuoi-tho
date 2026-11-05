@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+        <title>
+
+           Hợp nhất chữ vui nhộn
+
+        </title>
+
+		<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+		<script type="text/javascript" src="arcade-save.js?7"></script>
+
+        <!-- <script type="text/javascript">document.domain='7k7k.com'</script> -->
+
+        <link rel="stylesheet" href="TemplateData/style.css"/>
+
+        <script src="TemplateData/gamepush-unity.js"></script>
+
+        <script type="text/javascript" src="./Web Audio Plugin/howler.min.js"></script>
+
+        <script type="text/javascript" src="./Web Audio Plugin/WebAudio.js"></script>
+
+
+
+    </head>
+
+    <body class="dark">
+
+        <div id="unity-container" class="unity-desktop">
+
+            <canvas id="unity-canvas" tabindex="-1">
+
+            </canvas>
+
+        </div>
+
+        <div id="loading-cover" style="display:none;">
+
+            <div id="unity-loading-bar">
+
+                <div id="unity-logo">
+
+                    <img src="logo.png"/>
+
+                </div>
+
+                <div id="unity-progress-bar-empty" style="display: none;">
+
+                    <div id="unity-progress-bar-full">
+
+                    </div>
+
+                </div>
+
+                <div class="spinner">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            const buildUrl = "Build";
+
+            const loaderUrl = buildUrl + "/WebBuild2.loader.js?v=6";
+
+            const config = {
+
+              dataUrl: buildUrl + "/WebBuild2.data.unityweb",
+
+              frameworkUrl: buildUrl + "/WebBuild2.framework.js.unityweb",
+
+              codeUrl: buildUrl + "/WebBuild2.wasm.unityweb",
+
+              streamingAssetsUrl: "StreamingAssets",
+
+              companyName: "Eccentric",
+
+              productName: "Letter Chain Word Merge!",
+
+              productVersion: "0.1",
+
+            };
+
+        
+
+            const container = document.querySelector("#unity-container");
+
+            const canvas = document.querySelector("#unity-canvas");
+
+            const loadingCover = document.querySelector("#loading-cover");
+
+            const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+
+            const progressBarFull = document.querySelector("#unity-progress-bar-full");
+
+            const spinner = document.querySelector('.spinner');
+
+        
+
+             
+
+        
+
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+
+              container.className = "unity-mobile";
+
+              config.devicePixelRatio = 1;
+
+            }
+
+            var forcedDpr = window.ArcadeSave && ArcadeSave.getDevicePixelRatio ? ArcadeSave.getDevicePixelRatio() : 0;
+
+            if (forcedDpr) {
+
+              config.devicePixelRatio = forcedDpr;
+
+            }
+
+
+
+            function isGvUiEvent(e) {
+
+              var t = e && e.target;
+
+              if (!t || !t.closest) {
+
+                return false;
+
+              }
+
+              return !!t.closest("#gv-hud-actions, #gv-reset-modal, #gv-touch-layer");
+
+            }
+
+
+
+            function FocusGame() {
+
+              window.focus();
+
+              if (container && container.focus) {
+
+                container.focus();
+
+              }
+
+              if (canvas && canvas.focus) {
+
+                canvas.focus();
+
+              }
+
+            }
+
+
+
+            loadingCover.style.display = "";
+
+
+
+            const unityLoader = document.createElement("script");
+
+            unityLoader.src = loaderUrl;
+
+            unityLoader.onload = () => {
+
+              var unityBooted = false;
+
+              function bootUnity() {
+
+                if (unityBooted) {
+
+                  return;
+
+                }
+
+                unityBooted = true;
+
+                window.__gvUnityStarted = true;
+
+                createUnityInstance(canvas, config, (progress) => {
+
+                  spinner.style.display = "none";
+
+                  progressBarEmpty.style.display = "";
+
+                  progressBarFull.style.width = `${100 * progress}%`;
+
+                }).then((unityInstance) => {
+
+                  window.unityInstance = unityInstance;
+
+                  loadingCover.style.display = "none";
+
+                  if (window.ArcadeSave && ArcadeSave.burstSync) {
+
+                    ArcadeSave.burstSync();
+
+                  }
+
+                  FocusGame();
+
+                }).catch((message) => {
+
+                  console.warn(message);
+
+                });
+
+              }
+
+              // Never boot Unity before the cloud seed completes. Unity calls
+
+              // FS.syncfs(true) only during preRun, so a 3s watchdog races the
+
+              // cloud request (which may take up to 5s).
+
+              var startPromise = window.ArcadeSave && ArcadeSave.init
+
+                ? ArcadeSave.init()
+
+                : Promise.resolve();
+
+              Promise.resolve(startPromise).then(bootUnity, function (error) {
+
+                console.warn("[GV] init failed; starting with local data only", error);
+
+                bootUnity();
+
+              });
+
+            };
+
+            document.body.appendChild(unityLoader);
+
+
+
+            document.addEventListener("pointerdown", (e) => {
+
+              if (isGvUiEvent(e)) {
+
+                return;
+
+              }
+
+              FocusGame();
+
+            });
+
+        
+
+          </script>
+
+    </body>
+
+</html>
+
