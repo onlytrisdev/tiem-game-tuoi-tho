@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<settings>
+		<font name="grobold-webfont" />
+		<asciiArt>
+</asciiArt>
+		<urls blank="false">
+			<website>Submedia</website>
+			<author></author>
+		</urls>
+		<googleAnalytics id="" enabled="true" />
+		<audioHoldDelay>0</audioHoldDelay>
+	</settings>
+	<gui>
+		<audioHoldMessage>Tap Anywhere To Continue</audioHoldMessage>
+		<buttons>
+			<instructions>How To Play</instructions>
+			<unpause>Chơi Tiếp</unpause>
+			<audio>Tiếng</audio>
+			<fullScreen>Toàn Màn Hình</fullScreen>
+			<back>Thoát</back>
+			<testMode>
+				<win>Win</win>
+				<lose>Lose</lose>
+			</testMode>
+		</buttons>
+		<scenes>
+			<game>
+				<hud>
+					<score>Score</score>
+					<time>Time</time>
+				</hud>
+			</game>
+			<instructions><![CDATA[Bắn 3 hoặc nhiều hơn quả bóng cùng màu lại với nhau!<br/><br/>Khi tất cả số bóng biến mất, bạn sẽ thắng!<br/><br/>Nếu bóng chạm vạch kẻ, hoặc hết thời gian, bạn sẽ thua!<br/><br/>Hoàn thành cấp độ nhanh hơn thì bạn sẽ có nhiều sao hơn.]]></instructions>
+			<results>
+				<message>Well done&lt;br/&gt;you scored</message>
+				<win>New high score!</win>
+				<lose>High score&lt;br/&gt;__HIGH_SCORE__</lose>
+			</results>
+		</scenes>
+	</gui>
+</data>

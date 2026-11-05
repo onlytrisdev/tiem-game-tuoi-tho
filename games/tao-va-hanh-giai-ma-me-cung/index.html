@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Giải mã mê cung</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="default.css" rel="stylesheet">
+    <script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+    <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <script type="text/javascript" src="arcade-tool.js"></script>
+</head>
+
+<body>
+    <div id="game"></div>
+    <script>
+        window.__language = 'en';
+        var mpConfig = {
+            "game": "sneakers-snatchers",
+            "partner": "miniplay"
+        };
+
+        function loadGameBundle() {
+            if (window.__gvBundleLoading) return;
+            window.__gvBundleLoading = true;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = './bin/bundle.min.js';
+            document.body.appendChild(s);
+        }
+
+        function bootAfterCloud() {
+            var tool = window.ArcadeTool;
+            if (!tool) {
+                loadGameBundle();
+                return;
+            }
+            if (typeof tool.init === 'function') tool.init();
+
+            var settled = false;
+            function go() {
+                if (settled) return;
+                settled = true;
+                loadGameBundle();
+            }
+            if (tool.ready && typeof tool.ready.then === 'function') {
+                tool.ready.then(go, go);
+            } else {
+                go();
+            }
+            setTimeout(go, 3500);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bootAfterCloud);
+        } else {
+            bootAfterCloud();
+        }
+    </script>
+</body>
+
+</html>

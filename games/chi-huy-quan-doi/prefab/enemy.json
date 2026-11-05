@@ -1,0 +1,1 @@
+{"type":"Image","props":{"y":-10,"x":4,"skin":"game/icon_enemy.png","presetID":1,"name":"enemy","isPresetRoot":true,"anchorY":0.5,"anchorX":0.5},"compId":20,"child":[{"type":"Image","props":{"y":16,"x":12,"skin":"game/icon_attack.png","presetID":2,"name":"attack","anchorY":0.5,"anchorX":0.5},"compId":22}],"loadList":["game/icon_enemy.png","game/icon_attack.png"],"loadList3D":[]}

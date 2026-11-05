@@ -1,0 +1,390 @@
+{
+    "frames": {
+        "card_1201001.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201002.png": {
+            "frame": {
+                "x": 0,
+                "y": 58,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201003.png": {
+            "frame": {
+                "x": 0,
+                "y": 116,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201004.png": {
+            "frame": {
+                "x": 0,
+                "y": 174,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201017.png": {
+            "frame": {
+                "x": 58,
+                "y": 0,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201018.png": {
+            "frame": {
+                "x": 116,
+                "y": 0,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201019.png": {
+            "frame": {
+                "x": 174,
+                "y": 0,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201020.png": {
+            "frame": {
+                "x": 232,
+                "y": 0,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201021.png": {
+            "frame": {
+                "x": 58,
+                "y": 58,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "card_1201022.png": {
+            "frame": {
+                "x": 58,
+                "y": 116,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "diamond.png": {
+            "frame": {
+                "x": 58,
+                "y": 174,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "energy.png": {
+            "frame": {
+                "x": 116,
+                "y": 58,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "exp.png": {
+            "frame": {
+                "x": 174,
+                "y": 58,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "gold.png": {
+            "frame": {
+                "x": 232,
+                "y": 58,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "hand_1001.png": {
+            "frame": {
+                "x": 116,
+                "y": 116,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "head_1001.png": {
+            "frame": {
+                "x": 116,
+                "y": 174,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "power.png": {
+            "frame": {
+                "x": 174,
+                "y": 116,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        },
+        "shoe_1001.png": {
+            "frame": {
+                "x": 232,
+                "y": 116,
+                "w": 56,
+                "h": 56,
+                "idx": 0
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 56,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 56,
+                "h": 56
+            },
+            "rotated": false,
+            "trimed": true
+        }
+    },
+    "meta": {
+        "app": "http:\/\/www.layabox.com",
+        "version": "0.1.0 alpha",
+        "format": "json",
+        "scale": 1,
+        "image": "itemIcons.png",
+        "prefix": ""
+    }
+}

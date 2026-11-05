@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html><html><head>
+
+<meta charset="utf-8">
+
+<title>Ông già đào mỏ</title>
+
+
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="format-detection" content="telephone=no">
+
+
+
+<meta name="renderer" content="webkit">
+
+<meta name="force-rendering" content="webkit">
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="msapplication-tap-highlight" content="no">
+
+
+
+<meta name="full-screen" content="yes">
+
+<meta name="x5-fullscreen" content="true">
+
+<meta name="360-fullscreen" content="true">
+
+
+
+<meta name="screen-orientation" content="landscape">
+
+<meta name="x5-orientation" content="landscape">
+
+
+
+
+
+<meta name="x5-page-mode" content="app">
+
+
+
+
+
+
+
+
+
+<script>
+
+    var jsArray = [];
+
+    g_jsIdx = 0;
+
+    window.gameData = {};
+
+    window.FBAPI = null;   
+
+
+
+    
+
+    var isMobile = {
+
+        Android: function () {
+
+            return navigator.userAgent.match(/Android/i);
+
+        },
+
+        BlackBerry: function () {
+
+            return navigator.userAgent.match(/BlackBerry/i);
+
+        },
+
+        iOS: function () {
+
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+
+        },
+
+        Opera: function () {
+
+            return navigator.userAgent.match(/Opera Mini/i);
+
+        },
+
+        Windows: function () {
+
+            return navigator.userAgent.match(/IEMobile/i);
+
+        },
+
+        any: function () {
+
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+
+        }
+
+    }
+
+
+
+  
+
+    function getJs(){
+
+        var a=document.createElement("script");
+
+        a.async=!1;
+
+        a.src=jsArray[g_jsIdx];
+
+        document.body.appendChild(a);
+
+        g_jsIdx++;
+
+        if(g_jsIdx < jsArray.length)
+
+            a.onload = getJs();
+
+    }    
+
+
+
+
+
+    function onInitFbSS(){
+
+
+
+
+
+        var splash = document.getElementById("splash");
+
+        if(splash)
+
+            splash.parentNode.removeChild(splash);
+
+       jsArray.push("Main.max.js");
+
+        
+
+        getJs();        
+
+    }
+
+
+
+
+
+
+
+    function onPageLoaded(){    
+
+        onInitFbSS();
+
+    }   
+
+</script></head>
+
+<body style="padding:0; margin: 0;" onload="onPageLoaded()">
+
+<canvas id="gameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+
+<div id="splash">
+
+</div>
+
+</body></html>

@@ -1,0 +1,415 @@
+{
+  "stringresources": {
+    "strings": {
+      "string": [
+		{
+			"-id": "easy",
+			"en": "Dễ",
+			"de": "Leicht",
+			"es": "Fácil",
+			"fr": "Facile",
+			"it": "Facile",
+			"pt": "Fácil",
+			"ru": "Легкий",
+			"tr": "Kolay"
+		},
+		{
+			"-id": "medium",
+			"en": "Trung bình",
+			"de": "Mittel",
+			"es": "Media",
+			"fr": "Moyen",
+			"it": "Normale",
+			"pt": "Intermédio",
+			"ru": "Средний",
+			"tr": "Orta"
+		},
+		{
+			"-id": "hard",
+			"en": "Khó",
+			"de": "Schwer",
+			"es": "Difícil",
+			"fr": "Difficile",
+			"it": "Difficile",
+			"pt": "Difícil",
+			"ru": "Тяжелый",
+			"tr": "Zor"
+		},
+		{
+			"-id": "quit",
+			"en": "Thoát",
+			"de": "Ende",
+			"es": "Fin",
+			"fr": "Arrêter",
+			"it": "Fine",
+			"pt": "Sair",
+			"ru": "Выйти",
+			"tr": "Çık"
+        },
+		{
+			"-id": "quit_message",
+			"en": "Bạn có chắc chắn muốn thoát?",
+			"de": "Willst du das spiel wirklich beenden?",
+			"es": "¿Seguro que quieres salir?",
+			"fr": "Voulez-vous vraiment quitter ?",
+			"it": "Vuoi davvero uscire?",
+			"pt": "Quer realmente sair?",
+			"ru": "Вы действительно хотите выйти?",
+			"tr": "Çıkmak istediğine gerçekten emin misin?"
+        },
+		{
+          "-id": "sound",
+          "en": "Âm thanh: ",
+          "de": "Ton: ",
+          "es": "Sonidos: ",
+          "fr": "Sons: ",
+          "it": "Sonoro: ",
+          "pt": "Sons: ",
+			"ru": "Звуки: ",
+			"tr": "Sesler: "
+        },
+        {
+          "-id": "music",
+          "en": "Âm nhạc: ",
+          "de": "Musik: ",
+          "es": "Música: ",
+          "fr": "Musique: ",
+          "it": "Musica: ",
+          "pt": "Música: ",
+			"ru": "Музыка: ",
+			"tr": "Müzik: "
+        },
+		{
+			"-id": "instructions",
+		    "en": "Hướng dẫn",
+		    "de": "Anweisungen",
+		    "es": "Instrucciones",
+		    "fr": "Instructions",
+		    "it": "Istruzioni",
+		    "pt": "Instruções",
+			"ru": "Инструкция",
+			"tr": "Açıklamalar"
+		},
+		{
+			"-id": "instructions_text_0",
+			"en": "Đưa bóng vào lỗ với càng ít cú đánh càng tốt. Mỗi lỗ có giới hạn số gậy lý tưởng để đạt được par. Nó cũng có số gậy tối đa. Đạt par nhận được hai sao, đạt dưới mức par để nhận được ba sao. Hoàn thành các cấp độ để mở khóa độ khó trung bình và khó, các cấp độ và sân golf khác.",
+			"de": "Loche den Ball mit so wenig Schlägen wie möglich ein. Jedes Loch hat eine vorgegebene ideale Anzahl von Schlägen, Par. Es gibt auch eine maximale Anzahl von Schlägen. Spielst du Par, erhältst du zwei Sterne. Spielst du weniger als Par, erhältst du drei Sterne. Schließe die Levels ab, um die Schwierigkeitsstufen Mittel und Schwierig, andere Levels und Spielumgebungen freizuschalten.",
+			"es": "Mete la bola en el hoyo en la menor cantidad de golpes posible. Cada hoyo tiene un límite de golpes, lo que se denomina par. Consigue un par y obtendrás dos estrellas. Si lo completas en menos golpes, conseguirás tres estrellas. Completa los niveles para desbloquear la dificultad media y difícil, así como otros niveles y escenarios.",
+			"fr": "Envoyez la balle dans le trou en un minimum de coups possible. Chaque trou a une limite de coups optimale – le par. Il a également une limite de coups maximale. Atteignez le par pour obtenir deux étoiles, terminez sous le par pour obtenir trois étoiles. Terminez les niveaux pour déverrouiller les difficultés moyenne et élevée, ainsi que d'autres niveaux et environnements.",
+			"it": "Metti la pallina nella buca con il minor numero di tiri possibile. Ogni buca ha il suo limite di tiri ottimale: par. Ha anche un limite massimo di tiri. Raggiungi il par per ottenere due stelle, arriva sotto il par per ottenerne tre. Completa i livelli per sbloccare la difficoltà normale e quella difficile, altri livelli e ambientazioni.",
+			"pt": "Coloque a bola no buraco com o menor número de tacadas possível. Cada buraco tem seu limite de tacadas ideal – par. Ele também tem um limite de tacadas. Alcance o par para obter duas estrelas, chegue a abaixo do par para obter três estrelas. Conclua os níveis para desbloquear dificuldade média e difícil, outros níveis e ambientes.",
+			"ru": "Забейте мяч в лунку, использовав как можно меньше ударов. На каждую лунку есть оптимальное количество ударов и максимальное количество. Получите в каждом уровне минимально две звезды, а когда вы станете профессионалом, то за минимальное количество ударов получите три звезды. Пройдите все уровни в данном наборе, чтобы открыть средний и тяжелый уровень сложности и другую окружающую среду.",
+			"tr": "Topu mümkün olduğunca az vuruşla deliğe sokun. Her delik kendi optimum vuruş miktarı ve vuruş limitine sahiptir. Yapmanız gereken tek atışta deliğe sokmak, yine de par sayısı kadar vuruşta deliğe sokarsanız 2 yıldız alırsınız, par sayısından aşağıda vuruşla deliğe sokarsanız üç yıldız alırsınız. Tüm bölümleri bitirin ve orta ve zor bölümleri açın, böylece diğer bölüm ve mekanlara ulaşın."
+        },
+		{
+			"-id": "instructions_text_1",
+			"en": "Điều khiển:\nNhấn vào vật phẩm để chọn nó trong menu. Kéo ngón tay để di chuyển máy ảnh xung quanh. Nhấn đúp để căn giữa máy ảnh trên quả bóng. Tạm dừng trò chơi và truy cập các tùy chọn trong trò chơi bằng cách nhấn vào biểu tượng tạm dừng. Dấu chấm cho biết góc và độ mạnh.",
+			"de": "Steuerung:\nTippe einen Menüpunkt an, um ihn auszuwählen. Bewege die Kamera durch Ziehen. Tippe das Pausensymbol an, um das Spiel zu pausieren und auf die In-Game-Optionen zuzugreifen. Punkte zeigen den Winkel und den Stärkegrad an.",
+			"es": "Controles:\nToca un objeto para seleccionarlo en el menú. Arrastra el dedo para mover la cámara alrededor. Toca el icono de pausa para detener el juego y acceder a las opciones. Los puntos indican ángulo y potencia.",
+			"fr": "Commandes :\nTouchez un élément pour le sélectionner dans le menu. Faites glisser votre doigt pour déplacer la caméra. Mettez la partie en pause et accédez aux options du jeu en touchant l'icône de pause. Les points indiquent l'angle et la puissance.",
+			"it": "Comandi:\nTocca l'oggetto per selezionarlo nel menu. Trascina il dito per spostare la telecamera. Metti il gioco in pausa e accedi alle opzioni di gioco toccando l'icona della pausa. I puntini indicano l'angolazione e la forza.",
+			"pt": "Controles:\nToque no item para selecioná-lo no menu. Arraste o dedo para girar a câmera. Pause o jogo e acesse as opções no jogo tocando no ícone de pausa. Os pontos indicam ângulo e força.",
+			"ru": "Как управлять:\nНажмите на элемент, чтобы выбрать его в меню. Водите пальцем по экрану чтобы выбирать угол обзора, нажав дважды вы вернете камеру в исходное положение. Чтобы приостановить игру и получить доступ к игровому меню, нажмите на значок пауза. Точки указывают угол и силу удара.",
+			"tr": "Kontroller:\nMenüdeki bir eşyayı seçmek için üzerine dokunun. Parmağınızı kamerayı hareket ettirmek için sürükleyin. Kameranın topa odaklanması için ekrana iki kere dokunun. Mola ikonuna tıklayarak oyunu duraklatın ve oyun-içi ayarlara ulaşın. Noktalar vuruş açısı ve gücünü belirler."
+        },
+		{
+			"-id": "instructions_text_2",
+			"en": "Mức độ dễ: chạm bóng. Kéo ngón tay về phía sau để đặt góc và độ mạnh. Thả ngón tay để bắn.",
+			"de": "Schwierigkeitsstufe Einfach: Berühre den Ball. Ziehe den Finger zurück, um Winkel und Stärke anzupassen. Lasse los, um zu schlagen.",
+			"es": "Nivel fácil: toca la bola. Arrastra el dedo hacia atrás para configurar el ángulo y la potencia. Suelta el dedo para golpear.",
+			"fr": "Difficulté faible : touchez la balle. Faites glisser votre doigt vers l'arrière pour définir l'angle et la puissance. Relâchez le doigt pour frapper.",
+			"it": "Difficoltà facile: tocca la pallina. Trascina il dito indietro per impostare l'angolazione e la forza. Rilascia il dito per tirare.",
+			"pt": "Fácil: toque na bola. Arraste o dedo para trás para ajustar o ângulo e força. Solte o dedo para atirar.",
+			"ru": "Легкая сложность: коснитесь мяча. Перемещайте свой палец назад и выберите оптимальный угол и силу удара. Отпустите палец, чтобы ударить.",
+			"tr": "Kolay zorluk: topa dokunun. Parmağınızı geriye doğru sürükleyin ve vuruş açısı ve gücünü ayarlayın. Vuruşu yapmak için parmağınızı çekin."
+        },
+		{
+			"-id": "instructions_text_3",
+			"en": "Mức độ trung bình: kéo ngón tay về phía sau để đặt góc. Thả ngón tay để dừng đồng hồ đo sức mạnh và bắn.",
+			"de": "Schwierigkeitsstufe Mittel: Ziehe den Finger zurück, um Winkel anzupassen. Lasse los, um die Stärkeanzeige zu stoppen und zu schlagen.",
+			"es": "Nivel medio: arrastra el dedo hacia atrás para configurar el ángulo. Suelta el dedo para detener la barra de potencia y golpear.",
+			"fr": "Difficulté moyenne : faites glisser votre doigt vers l'arrière pour définir l'angle. Relâchez le doigt pour arrêter le calculateur de puissance et frapper.",
+			"it": "Difficoltà normale: trascina il dito indietro per impostare l'angolazione. Rilascia il dito per fermare la barra della forza ed eseguire il tiro.",
+			"pt": "Média: arraste o dedo para trás para ajustar o ângulo. Solte o dedo para parar o medidor de força e atire.",
+			"ru": "Средняя сложность: перемещайте свой палец назад и выберите оптимальный угол и силу удара. Отпустите палец, чтобы остановить увеличение силы удара.",
+			"tr": "Orta zorluk: topa dokunun. Parmağınızı geriye doğru sürükleyin ve vuruş açısı ayarlayın. Vuruşu yapmak için uygun vuruş gücü metresindeki miktarda parmağınızı çekin."
+        },
+		{
+			"-id": "instructions_text_4",
+			"en": "Mức độ khó: chạm vào bóng. Nhấn vào phần tư mong muốn để bắt đầu đồng hồ đo góc. Nhấn để dừng đồng hồ đo góc. Nhấn để dừng đồng hồ đo cường độ và bắn.",
+			"de": "Schwierigkeitsstufe Schwierig: Berühre den Ball. Tippe auf das gewünschte Viertel, um die Winkelanzeige aufzurufen. Tippe, um die Winkelanzeige zu stoppen. Tippe, um die Stärkeanzeige zu stoppen und zu schlagen.",
+			"es": "Nivel difícil: toca la bola. Toca el cuarto que desees para iniciar la barra de ángulo. Toca para detener la barra de ángulo. Toca para detener la barra de potencia y golpear.",
+			"fr": "Difficulté élevée : touchez la balle. Touchez le quart souhaité pour démarrer le calculateur d'angle. Touchez pour arrêter le calculateur d'angle. Touchez pour arrêter le calculateur de puissance et frapper.",
+			"it": "Difficoltà difficile: tocca la pallina. Tocca il quarto desiderato per avviare la barra dell'angolazione. Tocca per fermare la barra dell'angolazione. Tocca per fermare la barra della forza ed eseguire il tiro.",
+			"pt": "Difícil: toque na bola. Toque no quadrante desejado para iniciar o medidor de ângulo. Toque para parar o medidor de ângulo. Toque para parar o medidor de força e atire.",
+			"ru": "Сложная сложность: коснитесь мяча на нужную четверть. Перемещайте свой палец назад и выберите оптимальный угол и силу удара. Отпустите палец, чтобы ударить.",
+			"tr": "Orta zorluk: topa dokunun. İstediğiniz bölgede ekrana dokunarak vuruş açısı metresini başlatın.  Uygun vuruş açısında ekrana dokunun ve bu sefer de uygun vuruş gücünde dokunarak vuruşu gerçekleştirin."
+        },
+		{
+			"-id": "about",
+		    "en": "Thông tin",
+		    "de": "Info",
+		    "es": "Información",
+		    "fr": "À propos",
+		    "it": "Info",
+		    "pt": "Sobre",
+			"ru": "Об игре",
+			"tr": "Hakkında"
+		},
+		{
+			"-id": "on",
+		    "en": "Mở",
+		    "de": "an",
+		    "es": "sí",
+		    "fr": "activé",
+		    "it": "acc.",
+		    "pt": "ativado",
+			"ru": "включены",
+			"tr": "açık"
+		},
+		{
+			"-id": "off",
+		    "en": "Tắt",
+		    "de": "aus",
+		    "es": "no",
+		    "fr": "désactivé",
+		    "it": "chiud.",
+		    "pt": "desativado",
+			"ru": "выключены",
+			"tr": "kapalı"
+		},
+		{
+			"-id": "hole",
+		    "en": "Lỗ: ",
+		    "de": "Loch: ",
+		    "es": "Hoyo: ",
+		    "fr": "Trou: ",
+		    "it": "Buca: ",
+		    "pt": "Buraco: ",
+			"ru": "Ям: ",
+			"tr": "Delik: "
+		},
+		{
+			"-id": "best",
+		    "en": "Tốt nhất: ",
+		    "de": "Beste: ",
+		    "es": "Récord: ",
+		    "fr": "Meilleur: ",
+		    "it": "Miglior: ",
+		    "pt": "Melhor: ",
+			"ru": "Лучший: ",
+			"tr": "En İyi: "
+		},
+		{
+			"-id": "par",
+		    "en": "Par: ",
+		    "de": "Par: ",
+		    "es": "Par: ",
+		    "fr": "Par: ",
+		    "it": "Par: ",
+		    "pt": "Par: ",
+			"ru": "За: ",
+			"tr": "Par: "
+		},
+		{
+			"-id": "max",
+		    "en": "Tối đa: ",
+		    "de": "Max.: ",
+		    "es": "Máx.: ",
+		    "fr": "Max: ",
+		    "it": "Max: ",
+		    "pt": "Máx: ",
+			"ru": "Макс.: ",
+			"tr": "Maks: "
+		},
+		{
+			"-id": "hits",
+		    "en": "Cú đánh: ",
+		    "de": "Schläge: ",
+		    "es": "Golpes: ",
+		    "fr": "Coups: ",
+		    "it": "Colpi: ",
+		    "pt": "Toques: ",
+			"ru": "Ударов: ",
+			"tr": "Vuruş: "
+		},
+		{
+			"-id": "paused",
+		    "en": "Tạm dừng",
+		    "de": "Spiel pausiert",
+		    "es": "Juego en pausa",
+		    "fr": "Partie en pause",
+		    "it": "Pausa",
+		    "pt": "Jogo pausado",
+			"ru": "Игра приостановлена",
+			"tr": "Oyun durdu"
+		},
+		{
+			"-id": "continue",
+		    "en": "Tiếp tục",
+		    "de": "Fortfahren",
+		    "es": "Continuar",
+		    "fr": "Continuer",
+		    "it": "Continua",
+		    "pt": "Continuar",
+			"ru": "Продолжить",
+			"tr": "Devam et"
+		},
+		{
+			"-id": "continue_question",
+		    "en": "Bạn muốn tiếp tục?",
+		    "de": "Fortfahren?",
+		    "es": "¿Continuar?",
+		    "fr": "Continuer ?",
+		    "it": "Continua?",
+		    "pt": "Continuar?",
+			"ru": "Продолжить?",
+			"tr": "Devam et?"
+		},
+		{
+			"-id": "select_hole",
+		    "en": "Chọn lỗ",
+		    "de": "Loch auswählen",
+		    "es": "Selecciona el hoyo",
+		    "fr": "Sélectionner le trou",
+		    "it": "Seleziona la buca",
+		    "pt": "Selecionar o buraco",
+			"ru": "Выбрать яму",
+			"tr": "Deliği seç"
+		},
+		{
+			"-id": "restart_hole",
+		    "en": "Chơi lại",
+		    "de": "Loch noch einmal starten",
+		    "es": "Reiniciar hoyo",
+		    "fr": "Recommencer le trou",
+		    "it": "Riavvia buca",
+		    "pt": "Reiniciar buraco",
+			"ru": "Обновить яму",
+			"tr": "Deliğe tekrar başla"
+		},
+		{
+			"-id": "restart_hole_question",
+		    "en": "Bạn muốn chọn lại lỗ?",
+		    "de": "Loch noch einmal starten?",
+		    "es": "¿Reiniciar hoyo?",
+		    "fr": "Recommencer le trou ?",
+		    "it": "Riavvia buca?",
+		    "pt": "Reiniciar buraco?",
+			"ru": "Обновить яму?",
+			"tr": "Deliğe tekrar başla?"
+		},
+		{
+			"-id": "progress_lost",
+			"en": "Bạn có chắc không? Tiến độ hiện tại sẽ bị mất.",
+			"de": "Sicher? Dein aktueller Fortschritt wird gelöscht.",
+			"es": "¿Seguro? Perderás el progreso actual.",
+			"fr": "Vous êtes sûr(e) ? Votre progression actuelle sera perdue.",
+			"it": "Confermi? Perderai i progressi attuali.",
+			"pt": "Tem certeza? O progresso atual será perdido.",
+			"ru": "Уверены ли вы? Текущий прогресс будет потерян.",
+			"tr": "Emin misin? Şu anki ilerleme kaybedilecek."
+		},
+		{
+			"-id": "levels_completed",
+		    "en": "Làm tốt lắm! Bạn đã hoàn thành bộ cấp độ này!",
+		    "de": "Klasse! Du hast diese Gruppe von Levels abgeschlossen!",
+		    "es": "¡Muy bien! ¡Has completado este conjunto de niveles!",
+		    "fr": "Bien joué ! Vous venez de terminer cette série de niveaux !",
+		    "it": "Ben fatto! Hai completato questo set di livelli!",
+		    "pt": "Parabéns! Você concluiu este conjunto de níveis!",
+			"ru": "Отлично сработано! Вы завершили этот набор уровней!",
+			"tr": "İyi iş! Tüm bölümleri tamamladın!"
+		},
+		{
+			"-id": "out_of_moves",
+		    "en": "Hết lượt!",
+		    "de": "Du hast keine Züge mehr!",
+		    "es": "¡Te has quedado sin movimientos!",
+		    "fr": "Aucun coup restant !",
+		    "it": "Mosse esaurite!",
+		    "pt": "Acabaram-se os movimentos!",
+			"ru": "Нет больше ударов!",
+			"tr": "Hamlen kalmadı!"
+		},
+		{
+			"-id": "try_again",
+		    "en": "Thử lại!",
+		    "de": "Versuche es nochmal!",
+		    "es": "¡Inténtalo otra vez!",
+		    "fr": "Réessayez !",
+		    "it": "Riprova!",
+		    "pt": "Tente novamente!",
+			"ru": "Попробуйте снова!",
+			"tr": "Tekrar dene!"
+		},
+		{
+			"-id": "result_hole_in_one",
+		    "en": "Hole-in-one!",
+		    "de": "Hole-in-One!",
+		    "es": "¡Hoyo en uno!",
+		    "fr": "Hole-in-one !",
+		    "it": "Buca in uno!",
+		    "pt": "Hole-in-one!",
+			"ru": "Туз!",
+			"tr": "Tek atışta delikte!"
+		},
+		{
+			"-id": "result_albatross",
+		    "en": "Albatross!",
+		    "de": "Albatros!",
+		    "es": "¡Albatross!",
+		    "fr": "Albatross !",
+		    "it": "Albatross!",
+		    "pt": "Albatross!",
+			"ru": "Альбатрос!",
+			"tr": "Albatross!"
+		},
+		{
+			"-id": "result_eagle",
+		    "en": "Eagle!",
+		    "de": "Eagle!",
+		    "es": "¡Eagle!",
+		    "fr": "Eagle !",
+		    "it": "Eagle!",
+		    "pt": "Eagle!",
+			"ru": "Орел!",
+			"tr": "Eagle!"
+		},
+		{
+			"-id": "result_birdie",
+		    "en": "Birdie!",
+		    "de": "Birdie!",
+		    "es": "¡Birdie!",
+		    "fr": "Birdie !",
+		    "it": "Birdie!",
+		    "pt": "Birdie!",
+			"ru": "Птичка!",
+			"tr": "Birdie!"
+		},
+		{
+			"-id": "result_par",
+		    "en": "Par!",
+		    "de": "Par!",
+		    "es": "¡Par!",
+		    "fr": "Par !",
+		    "it": "Par!",
+		    "pt": "Par!",
+			"ru": "Пар!",
+			"tr": "Par!"
+		},
+		{
+			"-id": "result_bogey",
+		    "en": "Bogey!",
+		    "de": "Bogey!",
+		    "es": "¡Bogey!",
+		    "fr": "Bogey !",
+		    "it": "Bogey!",
+		    "pt": "Bogey!",
+			"ru": "Пугало!",
+			"tr": "Bogey!"
+		}
+      ]
+    }
+  }
+}

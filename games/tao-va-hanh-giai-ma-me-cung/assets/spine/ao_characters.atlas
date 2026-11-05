@@ -1,0 +1,2631 @@
+
+ao_characters.png
+size: 1652,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+apple/apple_bicep_l
+  rotate: false
+  xy: 1234, 32
+  size: 22, 37
+  orig: 24, 40
+  offset: 1, 2
+  index: -1
+apple/apple_bicep_r
+  rotate: false
+  xy: 1234, 32
+  size: 22, 37
+  orig: 24, 40
+  offset: 1, 2
+  index: -1
+apple/apple_body
+  rotate: false
+  xy: 735, 227
+  size: 175, 169
+  orig: 188, 178
+  offset: 6, 5
+  index: -1
+apple/apple_bomb
+  rotate: true
+  xy: 663, 66
+  size: 54, 71
+  orig: 80, 88
+  offset: 13, 8
+  index: -1
+apple/apple_eye1
+  rotate: true
+  xy: 1213, 110
+  size: 59, 19
+  orig: 68, 28
+  offset: 4, 5
+  index: -1
+apple/apple_eyebrow
+  rotate: true
+  xy: 1397, 252
+  size: 46, 12
+  orig: 56, 24
+  offset: 5, 5
+  index: -1
+apple/apple_feet
+  rotate: true
+  xy: 1067, 6
+  size: 43, 40
+  orig: 48, 48
+  offset: 3, 4
+  index: -1
+apple/apple_foot_l
+  rotate: false
+  xy: 1364, 100
+  size: 43, 30
+  orig: 48, 48
+  offset: 3, 7
+  index: -1
+apple/apple_foot_r
+  rotate: false
+  xy: 1407, 101
+  size: 43, 30
+  orig: 48, 48
+  offset: 3, 7
+  index: -1
+apple/apple_forearm_l
+  rotate: false
+  xy: 1594, 124
+  size: 22, 28
+  orig: 24, 32
+  offset: 1, 2
+  index: -1
+apple/apple_forearm_r
+  rotate: false
+  xy: 1594, 124
+  size: 22, 28
+  orig: 24, 32
+  offset: 1, 2
+  index: -1
+apple/apple_freckles
+  rotate: false
+  xy: 1526, 100
+  size: 17, 21
+  orig: 20, 24
+  offset: 1, 2
+  index: -1
+apple/apple_hand_l
+  rotate: true
+  xy: 1273, 71
+  size: 29, 30
+  orig: 32, 32
+  offset: 1, 1
+  index: -1
+apple/apple_hand_l2
+  rotate: false
+  xy: 693, 46
+  size: 26, 20
+  orig: 28, 24
+  offset: 1, 2
+  index: -1
+apple/apple_hand_r
+  rotate: true
+  xy: 1450, 101
+  size: 30, 34
+  orig: 32, 38
+  offset: 1, 2
+  index: -1
+apple/apple_hand_r2
+  rotate: true
+  xy: 199, 0
+  size: 38, 34
+  orig: 44, 40
+  offset: 3, 3
+  index: -1
+apple/apple_joint_red
+  rotate: false
+  xy: 1616, 128
+  size: 20, 20
+  orig: 24, 24
+  offset: 2, 2
+  index: -1
+apple/apple_joint_white
+  rotate: false
+  xy: 1616, 108
+  size: 20, 20
+  orig: 24, 24
+  offset: 2, 2
+  index: -1
+apple/apple_leaf
+  rotate: false
+  xy: 1154, 69
+  size: 60, 37
+  orig: 64, 40
+  offset: 2, 2
+  index: -1
+apple/apple_mouth1
+  rotate: false
+  xy: 966, 0
+  size: 22, 13
+  orig: 32, 24
+  offset: 5, 6
+  index: -1
+apple/apple_nose
+  rotate: false
+  xy: 719, 46
+  size: 14, 20
+  orig: 20, 24
+  offset: 3, 2
+  index: -1
+apple/apple_pistol
+  rotate: false
+  xy: 1022, 165
+  size: 96, 82
+  orig: 136, 114
+  offset: 21, 7
+  index: -1
+apple/apple_pupil_l
+  rotate: true
+  xy: 955, 128
+  size: 10, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+apple/apple_pupil_r
+  rotate: true
+  xy: 955, 128
+  size: 10, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+apple/apple_rifle
+  rotate: false
+  xy: 1262, 298
+  size: 147, 98
+  orig: 160, 114
+  offset: 7, 7
+  index: -1
+apple/apple_shin_l
+  rotate: true
+  xy: 1320, 108
+  size: 22, 44
+  orig: 24, 48
+  offset: 1, 1
+  index: -1
+apple/apple_shin_r
+  rotate: true
+  xy: 1320, 108
+  size: 22, 44
+  orig: 24, 48
+  offset: 1, 1
+  index: -1
+apple/apple_shotgun
+  rotate: false
+  xy: 1409, 305
+  size: 138, 91
+  orig: 148, 114
+  offset: 5, 7
+  index: -1
+apple/apple_stork
+  rotate: false
+  xy: 1603, 159
+  size: 14, 58
+  orig: 16, 64
+  offset: 1, 3
+  index: -1
+apple/apple_thigh_l
+  rotate: true
+  xy: 1484, 101
+  size: 20, 42
+  orig: 24, 48
+  offset: 2, 3
+  index: -1
+apple/apple_thigh_r
+  rotate: true
+  xy: 1484, 101
+  size: 20, 42
+  orig: 24, 48
+  offset: 2, 3
+  index: -1
+dash_potato/dash_potato_bicep_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potato_bicep_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potato_forearm_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potato_forearm_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatos_bicep_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatos_bicep_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatos_forearm_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatos_forearm_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potato_bicep_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potato_bicep_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potato_forearm_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potato_forearm_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potato_bicep_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potato_bicep_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potato_forearm_l
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potato_forearm_r
+  rotate: false
+  xy: 886, 212
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potato_body
+  rotate: false
+  xy: 584, 189
+  size: 151, 207
+  orig: 156, 212
+  offset: 2, 3
+  index: -1
+hot_potato/hot_potato_body
+  rotate: false
+  xy: 584, 189
+  size: 151, 207
+  orig: 156, 212
+  offset: 2, 3
+  index: -1
+potato/potato_body
+  rotate: false
+  xy: 584, 189
+  size: 151, 207
+  orig: 156, 212
+  offset: 2, 3
+  index: -1
+dash_potato/dash_potato_circle
+  rotate: false
+  xy: 1530, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potato_circle
+  rotate: false
+  xy: 1530, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+potato/potato_circle
+  rotate: false
+  xy: 1530, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potato_eye
+  rotate: false
+  xy: 1151, 106
+  size: 62, 21
+  orig: 68, 24
+  offset: 3, 1
+  index: -1
+hot_potato/hot_potato_eye
+  rotate: false
+  xy: 1151, 106
+  size: 62, 21
+  orig: 68, 24
+  offset: 3, 1
+  index: -1
+potato/potato_eye
+  rotate: false
+  xy: 1151, 106
+  size: 62, 21
+  orig: 68, 24
+  offset: 3, 1
+  index: -1
+dash_potato/dash_potato_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+dash_potato/dash_potatob_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+dash_potato/dash_potatos_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 53, 27
+  offset: 4, 3
+  index: -1
+hot_potato/hot_potato_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+hot_potato/hot_potatob_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+hot_potato/hot_potatos_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 53, 27
+  offset: 4, 3
+  index: -1
+potato/potato_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+potato/potatob_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+potato/potatos_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 53, 27
+  offset: 4, 3
+  index: -1
+projectile_potato/projectile_potato_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+projectile_potato/projectile_potatob_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 56, 32
+  offset: 5, 6
+  index: -1
+projectile_potato/projectile_potatos_eye2
+  rotate: false
+  xy: 1232, 105
+  size: 46, 20
+  orig: 53, 27
+  offset: 4, 3
+  index: -1
+dash_potato/dash_potato_eyebrow
+  rotate: true
+  xy: 885, 10
+  size: 42, 12
+  orig: 48, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potato_eyebrow
+  rotate: true
+  xy: 885, 10
+  size: 42, 12
+  orig: 48, 20
+  offset: 3, 4
+  index: -1
+potato/potato_eyebrow
+  rotate: true
+  xy: 885, 10
+  size: 42, 12
+  orig: 48, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potato_eyebrow
+  rotate: true
+  xy: 885, 10
+  size: 42, 12
+  orig: 48, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potato_feet_l
+  rotate: true
+  xy: 1292, 118
+  size: 37, 28
+  orig: 44, 32
+  offset: 3, 2
+  index: -1
+dash_potato/dash_potatos_feet_l
+  rotate: true
+  xy: 1292, 118
+  size: 37, 28
+  orig: 44, 32
+  offset: 3, 2
+  index: -1
+hot_potato/hot_potato_feet_l
+  rotate: true
+  xy: 1292, 118
+  size: 37, 28
+  orig: 44, 32
+  offset: 3, 2
+  index: -1
+potato/potato_feet_l
+  rotate: true
+  xy: 1292, 118
+  size: 37, 28
+  orig: 44, 32
+  offset: 3, 2
+  index: -1
+dash_potato/dash_potato_feet_r
+  rotate: false
+  xy: 897, 26
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potatos_feet_r
+  rotate: false
+  xy: 897, 26
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potato_feet_r
+  rotate: false
+  xy: 897, 26
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+potato/potato_feet_r
+  rotate: false
+  xy: 897, 26
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potato_hand_l
+  rotate: false
+  xy: 1388, 7
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potatos_hand_l
+  rotate: false
+  xy: 1388, 7
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potato_hand_l
+  rotate: false
+  xy: 1388, 7
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+potato/potato_hand_l
+  rotate: false
+  xy: 1388, 7
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potato_hand_l2
+  rotate: false
+  xy: 1261, 1
+  size: 32, 33
+  orig: 36, 36
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potatos_hand_l2
+  rotate: false
+  xy: 1261, 1
+  size: 32, 33
+  orig: 36, 36
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potato_hand_l2
+  rotate: false
+  xy: 1261, 1
+  size: 32, 33
+  orig: 36, 36
+  offset: 2, 2
+  index: -1
+potato/potato_hand_l2
+  rotate: false
+  xy: 1261, 1
+  size: 32, 33
+  orig: 36, 36
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potato_hand_r
+  rotate: false
+  xy: 1214, 69
+  size: 25, 31
+  orig: 36, 36
+  offset: 5, 3
+  index: -1
+dash_potato/dash_potatos_hand_r
+  rotate: false
+  xy: 1214, 69
+  size: 25, 31
+  orig: 36, 36
+  offset: 5, 3
+  index: -1
+hot_potato/hot_potato_hand_r
+  rotate: false
+  xy: 1214, 69
+  size: 25, 31
+  orig: 36, 36
+  offset: 5, 3
+  index: -1
+potato/potato_hand_r
+  rotate: false
+  xy: 1214, 69
+  size: 25, 31
+  orig: 36, 36
+  offset: 5, 3
+  index: -1
+dash_potato/dash_potato_hand_r2
+  rotate: false
+  xy: 966, 13
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatos_hand_r2
+  rotate: false
+  xy: 966, 13
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potato_hand_r2
+  rotate: false
+  xy: 966, 13
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+potato/potato_hand_r2
+  rotate: false
+  xy: 966, 13
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potato_headband
+  rotate: false
+  xy: 1262, 252
+  size: 135, 46
+  orig: 148, 60
+  offset: 7, 6
+  index: -1
+dash_potato/dash_potato_mouth
+  rotate: false
+  xy: 975, 128
+  size: 44, 70
+  orig: 48, 72
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potato_mouth
+  rotate: false
+  xy: 975, 128
+  size: 44, 70
+  orig: 48, 72
+  offset: 1, 1
+  index: -1
+potato/potato_mouth
+  rotate: false
+  xy: 975, 128
+  size: 44, 70
+  orig: 48, 72
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potato_nose
+  rotate: false
+  xy: 999, 19
+  size: 14, 13
+  orig: 18, 18
+  offset: 2, 3
+  index: -1
+hot_potato/hot_potato_nose
+  rotate: false
+  xy: 999, 19
+  size: 14, 13
+  orig: 18, 18
+  offset: 2, 3
+  index: -1
+potato/potato_nose
+  rotate: false
+  xy: 999, 19
+  size: 14, 13
+  orig: 18, 18
+  offset: 2, 3
+  index: -1
+dash_potato/dash_potato_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potato_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatob_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatob_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatos_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatos_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potato_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potato_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potatob_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potatob_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potatos_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potatos_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+potato/potato_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+potato/potato_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+potato/potatob_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+potato/potatob_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+potato/potatos_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+potato/potatos_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potato_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potato_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatob_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatob_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatos_pupil_l
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatos_pupil_r
+  rotate: true
+  xy: 1237, 254
+  size: 9, 13
+  orig: 16, 20
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potato_shin_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potato_shin_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potato_thigh_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potato_thigh_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatos_shin_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatos_shin_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatos_thigh_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatos_thigh_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potato_shin_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potato_shin_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potato_thigh_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potato_thigh_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potato_shin_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potato_shin_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potato_thigh_l
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potato_thigh_r
+  rotate: false
+  xy: 1118, 165
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potato_slash
+  rotate: false
+  xy: 633, 0
+  size: 60, 57
+  orig: 61, 57
+  offset: 1, 0
+  index: -1
+hot_potato/hot_potato_slash
+  rotate: false
+  xy: 633, 0
+  size: 60, 57
+  orig: 61, 57
+  offset: 1, 0
+  index: -1
+potato/potato_slash
+  rotate: false
+  xy: 633, 0
+  size: 60, 57
+  orig: 61, 57
+  offset: 1, 0
+  index: -1
+projectile_potato/projectile_potato_slash
+  rotate: false
+  xy: 633, 0
+  size: 60, 57
+  orig: 61, 57
+  offset: 1, 0
+  index: -1
+dash_potato/dash_potatob_bicep_l
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatob_bicep_r
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatob_forearm_l
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatob_forearm_r
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatob_bicep_l
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatob_bicep_r
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatob_forearm_l
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatob_forearm_r
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatob_bicep_l
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatob_bicep_r
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatob_forearm_l
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatob_forearm_r
+  rotate: false
+  xy: 1617, 148
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+dash_potato/dash_potatob_body
+  rotate: false
+  xy: 231, 47
+  size: 202, 349
+  orig: 208, 356
+  offset: 3, 4
+  index: -1
+potato/potatob_body
+  rotate: false
+  xy: 231, 47
+  size: 202, 349
+  orig: 208, 356
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatob_body
+  rotate: false
+  xy: 231, 47
+  size: 202, 349
+  orig: 208, 356
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatob_circle
+  rotate: false
+  xy: 1552, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+potato/potatob_circle
+  rotate: false
+  xy: 1552, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatob_circle
+  rotate: false
+  xy: 1552, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatob_eye
+  rotate: false
+  xy: 1232, 125
+  size: 60, 30
+  orig: 72, 36
+  offset: 6, 3
+  index: -1
+potato/potatob_eye
+  rotate: false
+  xy: 1232, 125
+  size: 60, 30
+  orig: 72, 36
+  offset: 6, 3
+  index: -1
+projectile_potato/projectile_potatob_eye
+  rotate: false
+  xy: 1232, 125
+  size: 60, 30
+  orig: 72, 36
+  offset: 6, 3
+  index: -1
+dash_potato/dash_potatob_feet_l
+  rotate: true
+  xy: 938, 0
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+potato/potatob_feet_l
+  rotate: true
+  xy: 938, 0
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+projectile_potato/projectile_potatob_feet_l
+  rotate: true
+  xy: 938, 0
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+dash_potato/dash_potatob_feet_r
+  rotate: true
+  xy: 1147, 24
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+potato/potatob_feet_r
+  rotate: true
+  xy: 1147, 24
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potatob_feet_r
+  rotate: true
+  xy: 1147, 24
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potatob_hand_l
+  rotate: true
+  xy: 1584, 101
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+potato/potatob_hand_l
+  rotate: true
+  xy: 1584, 101
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potatob_hand_l
+  rotate: true
+  xy: 1584, 101
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+dash_potato/dash_potatob_hand_l2
+  rotate: false
+  xy: 1621, 238
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+potato/potatob_hand_l2
+  rotate: false
+  xy: 1621, 238
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+projectile_potato/projectile_potatob_hand_l2
+  rotate: false
+  xy: 1621, 238
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+dash_potato/dash_potatob_hand_r
+  rotate: false
+  xy: 1399, 39
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+potato/potatob_hand_r
+  rotate: false
+  xy: 1399, 39
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+projectile_potato/projectile_potatob_hand_r
+  rotate: false
+  xy: 1399, 39
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+dash_potato/dash_potatob_hand_r2
+  rotate: false
+  xy: 1293, 1
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+potato/potatob_hand_r2
+  rotate: false
+  xy: 1293, 1
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatob_hand_r2
+  rotate: false
+  xy: 1293, 1
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+dash_potato/dash_potatob_headband
+  rotate: false
+  xy: 735, 177
+  size: 151, 50
+  orig: 168, 64
+  offset: 12, 6
+  index: -1
+dash_potato/dash_potatob_mouth
+  rotate: true
+  xy: 1013, 0
+  size: 49, 54
+  orig: 56, 64
+  offset: 3, 5
+  index: -1
+potato/potatob_mouth
+  rotate: true
+  xy: 1013, 0
+  size: 49, 54
+  orig: 56, 64
+  offset: 3, 5
+  index: -1
+projectile_potato/projectile_potatob_mouth
+  rotate: true
+  xy: 1013, 0
+  size: 49, 54
+  orig: 56, 64
+  offset: 3, 5
+  index: -1
+dash_potato/dash_potatob_nose
+  rotate: true
+  xy: 1617, 163
+  size: 43, 32
+  orig: 48, 40
+  offset: 2, 4
+  index: -1
+potato/potatob_nose
+  rotate: true
+  xy: 1617, 163
+  size: 43, 32
+  orig: 48, 40
+  offset: 2, 4
+  index: -1
+projectile_potato/projectile_potatob_nose
+  rotate: true
+  xy: 1617, 163
+  size: 43, 32
+  orig: 48, 40
+  offset: 2, 4
+  index: -1
+dash_potato/dash_potatob_shin_l
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatob_shin_r
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatob_thigh_l
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatob_thigh_r
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatob_shin_l
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatob_shin_r
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatob_thigh_l
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatob_thigh_r
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatob_shin_l
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatob_shin_r
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatob_thigh_l
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatob_thigh_r
+  rotate: true
+  xy: 1121, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatos_body
+  rotate: true
+  xy: 433, 55
+  size: 127, 147
+  orig: 140, 156
+  offset: 8, 3
+  index: -1
+dash_potato/dash_potatos_circle
+  rotate: false
+  xy: 1536, 10
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+potato/potatos_circle
+  rotate: false
+  xy: 1536, 10
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatos_circle
+  rotate: false
+  xy: 1536, 10
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+dash_potato/dash_potatos_eye
+  rotate: false
+  xy: 1543, 124
+  size: 51, 28
+  orig: 60, 32
+  offset: 5, 2
+  index: -1
+potato/potatos_eye
+  rotate: false
+  xy: 1543, 124
+  size: 51, 28
+  orig: 60, 32
+  offset: 5, 2
+  index: -1
+projectile_potato/projectile_potatos_eye
+  rotate: false
+  xy: 1543, 124
+  size: 51, 28
+  orig: 60, 32
+  offset: 5, 2
+  index: -1
+dash_potato/dash_potatos_headband
+  rotate: false
+  xy: 91, 3
+  size: 108, 35
+  orig: 120, 40
+  offset: 6, 1
+  index: -1
+dash_potato/dash_potatos_mouth
+  rotate: true
+  xy: 693, 0
+  size: 46, 45
+  orig: 52, 52
+  offset: 3, 3
+  index: -1
+dash_potato/dash_potatos_nose
+  rotate: false
+  xy: 1536, 0
+  size: 12, 10
+  orig: 18, 18
+  offset: 3, 4
+  index: -1
+potato/potatos_nose
+  rotate: false
+  xy: 1536, 0
+  size: 12, 10
+  orig: 18, 18
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potatos_nose
+  rotate: false
+  xy: 1536, 0
+  size: 12, 10
+  orig: 18, 18
+  offset: 3, 4
+  index: -1
+dash_potato/dash_spawn_hand_placeholder
+  rotate: false
+  xy: 1095, 64
+  size: 59, 40
+  orig: 78, 78
+  offset: 9, 1
+  index: -1
+hot_potato/hot_spawn_hand_placeholder
+  rotate: false
+  xy: 1095, 64
+  size: 59, 40
+  orig: 78, 78
+  offset: 9, 1
+  index: -1
+potato/spawn_hand_placeholder
+  rotate: false
+  xy: 1095, 64
+  size: 59, 40
+  orig: 78, 78
+  offset: 9, 1
+  index: -1
+projectile_potato/projectile_spawn_hand_placeholder
+  rotate: false
+  xy: 1095, 64
+  size: 59, 40
+  orig: 78, 78
+  offset: 9, 1
+  index: -1
+projectile_potato/spawn_hand_placeholder
+  rotate: false
+  xy: 1095, 64
+  size: 59, 40
+  orig: 78, 78
+  offset: 9, 1
+  index: -1
+hot_potato/hot_potatob_bicep_l
+  rotate: true
+  xy: 1636, 124
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatob_bicep_r
+  rotate: true
+  xy: 1636, 124
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatob_forearm_l
+  rotate: true
+  xy: 1636, 124
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatob_forearm_r
+  rotate: true
+  xy: 1636, 124
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatob_body
+  rotate: false
+  xy: 0, 38
+  size: 231, 358
+  orig: 242, 372
+  offset: 6, 5
+  index: -1
+hot_potato/hot_potatob_circle
+  rotate: false
+  xy: 1558, 10
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatob_eye
+  rotate: false
+  xy: 388, 5
+  size: 60, 42
+  orig: 72, 52
+  offset: 5, 5
+  index: -1
+hot_potato/hot_potatob_feet_l
+  rotate: true
+  xy: 1256, 34
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+hot_potato/hot_potatob_feet_r
+  rotate: true
+  xy: 1176, 29
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potatob_hand_l
+  rotate: true
+  xy: 1511, 77
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potatob_hand_l2
+  rotate: false
+  xy: 1621, 206
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+hot_potato/hot_potatob_hand_r
+  rotate: false
+  xy: 1456, 39
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+hot_potato/hot_potatob_hand_r2
+  rotate: false
+  xy: 1303, 75
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potatob_mouth
+  rotate: true
+  xy: 1142, 169
+  size: 94, 95
+  orig: 104, 104
+  offset: 6, 4
+  index: -1
+hot_potato/hot_potatob_nose
+  rotate: false
+  xy: 1601, 55
+  size: 15, 15
+  orig: 24, 20
+  offset: 5, 2
+  index: -1
+hot_potato/hot_potatob_shin_l
+  rotate: true
+  xy: 1151, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatob_shin_r
+  rotate: true
+  xy: 1151, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatob_thigh_l
+  rotate: true
+  xy: 1151, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatob_thigh_r
+  rotate: true
+  xy: 1151, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatos_bicep_l
+  rotate: true
+  xy: 1636, 100
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatos_bicep_r
+  rotate: true
+  xy: 1636, 100
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatos_forearm_l
+  rotate: true
+  xy: 1636, 100
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatos_forearm_r
+  rotate: true
+  xy: 1636, 100
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+hot_potato/hot_potatos_body
+  rotate: false
+  xy: 910, 247
+  size: 116, 149
+  orig: 120, 156
+  offset: 2, 4
+  index: -1
+hot_potato/hot_potatos_circle
+  rotate: false
+  xy: 1574, 32
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatos_eye
+  rotate: false
+  xy: 1485, 121
+  size: 58, 30
+  orig: 60, 32
+  offset: 1, 2
+  index: -1
+hot_potato/hot_potatos_feet_l
+  rotate: false
+  xy: 1543, 77
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+hot_potato/hot_potatos_feet_r
+  rotate: false
+  xy: 1181, 0
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potatos_hand_l
+  rotate: true
+  xy: 1474, 16
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+hot_potato/hot_potatos_hand_l2
+  rotate: false
+  xy: 1336, 39
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+hot_potato/hot_potatos_hand_r
+  rotate: true
+  xy: 1443, 14
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+hot_potato/hot_potatos_hand_r2
+  rotate: false
+  xy: 1326, 7
+  size: 31, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+hot_potato/hot_potatos_mouth
+  rotate: false
+  xy: 1538, 152
+  size: 65, 65
+  orig: 72, 72
+  offset: 5, 2
+  index: -1
+hot_potato/hot_potatos_nose
+  rotate: false
+  xy: 1548, 0
+  size: 12, 10
+  orig: 18, 18
+  offset: 3, 4
+  index: -1
+hot_potato/hot_potatos_shin_l
+  rotate: false
+  xy: 1401, 70
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatos_shin_r
+  rotate: false
+  xy: 1401, 70
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatos_thigh_l
+  rotate: false
+  xy: 1401, 70
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+hot_potato/hot_potatos_thigh_r
+  rotate: false
+  xy: 1401, 70
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+onion/onion_ankle_l
+  rotate: false
+  xy: 1107, 24
+  size: 40, 40
+  orig: 44, 44
+  offset: 2, 2
+  index: -1
+onion/onion_ankle_r
+  rotate: false
+  xy: 1107, 24
+  size: 40, 40
+  orig: 44, 44
+  offset: 2, 2
+  index: -1
+onion/onion_arm_circle2
+  rotate: false
+  xy: 1107, 10
+  size: 14, 14
+  orig: 18, 18
+  offset: 2, 2
+  index: -1
+onion/onion_arm_elbow_l
+  rotate: false
+  xy: 937, 37
+  size: 18, 18
+  orig: 22, 22
+  offset: 2, 2
+  index: -1
+onion/onion_arm_elbow_r
+  rotate: false
+  xy: 937, 37
+  size: 18, 18
+  orig: 22, 22
+  offset: 2, 2
+  index: -1
+onion/onion_arm_wrist_l
+  rotate: false
+  xy: 937, 37
+  size: 18, 18
+  orig: 22, 22
+  offset: 2, 2
+  index: -1
+onion/onion_arm_wrist_r
+  rotate: false
+  xy: 937, 37
+  size: 18, 18
+  orig: 22, 22
+  offset: 2, 2
+  index: -1
+onion/onion_bicep_l
+  rotate: true
+  xy: 897, 7
+  size: 19, 41
+  orig: 24, 44
+  offset: 3, 1
+  index: -1
+onion/onion_bicep_r
+  rotate: true
+  xy: 1543, 105
+  size: 19, 41
+  orig: 24, 44
+  offset: 2, 1
+  index: -1
+onion/onion_body
+  rotate: true
+  xy: 910, 198
+  size: 49, 112
+  orig: 61, 118
+  offset: 5, 2
+  index: -1
+onion/onion_bomb
+  rotate: false
+  xy: 1547, 270
+  size: 98, 126
+  orig: 102, 132
+  offset: 2, 3
+  index: -1
+onion/onion_eyebrow
+  rotate: false
+  xy: 1067, 0
+  size: 54, 6
+  orig: 56, 24
+  offset: 1, 9
+  index: -1
+onion/onion_feet_l
+  rotate: false
+  xy: 815, 8
+  size: 70, 44
+  orig: 74, 49
+  offset: 2, 3
+  index: -1
+onion/onion_feet_r
+  rotate: false
+  xy: 815, 8
+  size: 70, 44
+  orig: 74, 49
+  offset: 2, 3
+  index: -1
+onion/onion_forearm_l
+  rotate: false
+  xy: 1284, 34
+  size: 19, 37
+  orig: 24, 44
+  offset: 2, 4
+  index: -1
+onion/onion_forearm_r
+  rotate: false
+  xy: 1284, 34
+  size: 19, 37
+  orig: 24, 44
+  offset: 2, 4
+  index: -1
+onion/onion_glasses
+  rotate: false
+  xy: 233, 4
+  size: 80, 43
+  orig: 88, 48
+  offset: 4, 2
+  index: -1
+onion/onion_glasses_arm
+  rotate: true
+  xy: 1118, 195
+  size: 52, 24
+  orig: 60, 32
+  offset: 3, 2
+  index: -1
+onion/onion_hair1
+  rotate: false
+  xy: 817, 52
+  size: 78, 58
+  orig: 82, 62
+  offset: 2, 2
+  index: -1
+onion/onion_hair2
+  rotate: true
+  xy: 667, 120
+  size: 69, 68
+  orig: 72, 72
+  offset: 1, 2
+  index: -1
+onion/onion_hand_l1
+  rotate: false
+  xy: 1357, 7
+  size: 31, 32
+  orig: 35, 36
+  offset: 2, 2
+  index: -1
+onion/onion_hand_l2
+  rotate: true
+  xy: 1580, 70
+  size: 31, 32
+  orig: 35, 36
+  offset: 2, 2
+  index: -1
+onion/onion_hand_r1
+  rotate: false
+  xy: 1457, 70
+  size: 29, 31
+  orig: 32, 36
+  offset: 1, 1
+  index: -1
+onion/onion_handr2
+  rotate: false
+  xy: 1411, 10
+  size: 32, 29
+  orig: 32, 32
+  offset: 0, 2
+  index: -1
+onion/onion_head
+  rotate: false
+  xy: 1142, 263
+  size: 120, 133
+  orig: 124, 137
+  offset: 2, 2
+  index: -1
+onion/onion_knee_l
+  rotate: false
+  xy: 1239, 71
+  size: 34, 34
+  orig: 38, 38
+  offset: 2, 2
+  index: -1
+onion/onion_knee_r
+  rotate: false
+  xy: 1239, 71
+  size: 34, 34
+  orig: 38, 38
+  offset: 2, 2
+  index: -1
+onion/onion_mouth
+  rotate: false
+  xy: 1575, 55
+  size: 26, 15
+  orig: 32, 24
+  offset: 3, 3
+  index: -1
+onion/onion_nose
+  rotate: false
+  xy: 999, 32
+  size: 14, 14
+  orig: 20, 20
+  offset: 3, 3
+  index: -1
+onion/onion_pupil_l
+  rotate: false
+  xy: 1278, 100
+  size: 18, 18
+  orig: 24, 24
+  offset: 3, 3
+  index: -1
+onion/onion_pupil_r
+  rotate: false
+  xy: 1278, 100
+  size: 18, 18
+  orig: 24, 24
+  offset: 3, 3
+  index: -1
+onion/onion_shin_l
+  rotate: true
+  xy: 313, 5
+  size: 42, 75
+  orig: 46, 79
+  offset: 2, 2
+  index: -1
+onion/onion_shin_r
+  rotate: true
+  xy: 313, 5
+  size: 42, 75
+  orig: 46, 79
+  offset: 2, 2
+  index: -1
+onion/onion_thigh_l
+  rotate: true
+  xy: 1237, 155
+  size: 36, 83
+  orig: 40, 88
+  offset: 2, 3
+  index: -1
+onion/onion_thigh_r
+  rotate: true
+  xy: 1237, 155
+  size: 36, 83
+  orig: 40, 88
+  offset: 2, 3
+  index: -1
+potato/potatos_bicep_l
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatos_bicep_r
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatos_forearm_l
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatos_forearm_r
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatos_bicep_l
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatos_bicep_r
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatos_forearm_l
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potatos_forearm_r
+  rotate: true
+  xy: 1612, 77
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+potato/potatos_body
+  rotate: false
+  xy: 1026, 247
+  size: 116, 149
+  orig: 120, 156
+  offset: 2, 4
+  index: -1
+projectile_potato/projectile_potatos_body
+  rotate: false
+  xy: 1026, 247
+  size: 116, 149
+  orig: 120, 156
+  offset: 2, 4
+  index: -1
+potato/potatos_feet_l
+  rotate: true
+  xy: 1336, 71
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+projectile_potato/projectile_potatos_feet_l
+  rotate: true
+  xy: 1336, 71
+  size: 37, 28
+  orig: 40, 32
+  offset: 1, 2
+  index: -1
+potato/potatos_feet_r
+  rotate: true
+  xy: 1205, 29
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potatos_feet_r
+  rotate: true
+  xy: 1205, 29
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+potato/potatos_hand_l
+  rotate: true
+  xy: 1511, 54
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potatos_hand_l
+  rotate: true
+  xy: 1511, 54
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+potato/potatos_hand_l2
+  rotate: true
+  xy: 1425, 70
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+projectile_potato/projectile_potatos_hand_l2
+  rotate: true
+  xy: 1425, 70
+  size: 31, 32
+  orig: 36, 36
+  offset: 2, 3
+  index: -1
+potato/potatos_hand_r
+  rotate: false
+  xy: 1486, 70
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+projectile_potato/projectile_potatos_hand_r
+  rotate: false
+  xy: 1486, 70
+  size: 25, 31
+  orig: 28, 36
+  offset: 1, 3
+  index: -1
+potato/potatos_hand_r2
+  rotate: true
+  xy: 1424, 39
+  size: 31, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+projectile_potato/projectile_potatos_hand_r2
+  rotate: true
+  xy: 1424, 39
+  size: 31, 32
+  orig: 40, 40
+  offset: 4, 4
+  index: -1
+potato/potatos_mouth
+  rotate: false
+  xy: 1101, 104
+  size: 50, 61
+  orig: 56, 66
+  offset: 3, 3
+  index: -1
+projectile_potato/projectile_potatos_mouth
+  rotate: false
+  xy: 1101, 104
+  size: 50, 61
+  orig: 56, 66
+  offset: 3, 3
+  index: -1
+potato/potatos_shin_l
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatos_shin_r
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatos_thigh_l
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/potatos_thigh_r
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatos_shin_l
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatos_shin_r
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatos_thigh_l
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potatos_thigh_r
+  rotate: false
+  xy: 1506, 24
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+potato/trainer
+  rotate: false
+  xy: 734, 119
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+dash_potato/trainer
+  rotate: false
+  xy: 734, 119
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+hot_potato/trainer
+  rotate: false
+  xy: 734, 119
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+projectile_potato/trainer
+  rotate: false
+  xy: 734, 119
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+projectile_potato/projectile_pea
+  rotate: false
+  xy: 525, 2
+  size: 53, 53
+  orig: 64, 64
+  offset: 6, 5
+  index: -1
+projectile_potato/projectile_potato_bicep_l
+  rotate: false
+  xy: 1627, 85
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potato_bicep_r
+  rotate: false
+  xy: 1627, 85
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potato_forearm_l
+  rotate: false
+  xy: 1627, 85
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potato_forearm_r
+  rotate: false
+  xy: 1627, 85
+  size: 24, 15
+  orig: 28, 18
+  offset: 2, 1
+  index: -1
+projectile_potato/projectile_potato_body
+  rotate: false
+  xy: 433, 182
+  size: 151, 214
+  orig: 156, 224
+  offset: 2, 4
+  index: -1
+projectile_potato/projectile_potato_circle
+  rotate: false
+  xy: 1580, 10
+  size: 22, 22
+  orig: 24, 24
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potato_eye
+  rotate: false
+  xy: 1151, 127
+  size: 62, 42
+  orig: 68, 48
+  offset: 4, 2
+  index: -1
+projectile_potato/projectile_potato_feet_l
+  rotate: false
+  xy: 1364, 72
+  size: 37, 28
+  orig: 44, 32
+  offset: 3, 2
+  index: -1
+projectile_potato/projectile_potato_feet_r
+  rotate: false
+  xy: 1221, 0
+  size: 40, 29
+  orig: 44, 32
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potato_fork
+  rotate: false
+  xy: 0, 0
+  size: 91, 38
+  orig: 96, 48
+  offset: 3, 2
+  index: -1
+projectile_potato/projectile_potatob_fork
+  rotate: false
+  xy: 0, 0
+  size: 91, 38
+  orig: 96, 48
+  offset: 3, 2
+  index: -1
+projectile_potato/projectile_potatos_fork
+  rotate: false
+  xy: 0, 0
+  size: 91, 38
+  orig: 96, 48
+  offset: 3, 2
+  index: -1
+projectile_potato/projectile_potato_hand_l
+  rotate: true
+  xy: 1543, 54
+  size: 23, 32
+  orig: 28, 36
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potato_hand_l2
+  rotate: false
+  xy: 1367, 39
+  size: 32, 33
+  orig: 36, 36
+  offset: 2, 2
+  index: -1
+projectile_potato/projectile_potato_hand_r
+  rotate: false
+  xy: 1481, 39
+  size: 25, 31
+  orig: 36, 36
+  offset: 5, 3
+  index: -1
+projectile_potato/projectile_potato_hand_r2
+  rotate: false
+  xy: 1303, 42
+  size: 33, 33
+  orig: 40, 40
+  offset: 3, 4
+  index: -1
+projectile_potato/projectile_potato_mouth
+  rotate: false
+  xy: 818, 110
+  size: 74, 67
+  orig: 80, 82
+  offset: 4, 7
+  index: -1
+projectile_potato/projectile_potato_mouth_shoot
+  rotate: true
+  xy: 580, 0
+  size: 68, 53
+  orig: 80, 64
+  offset: 6, 6
+  index: -1
+projectile_potato/projectile_potato_nose
+  rotate: false
+  xy: 988, 0
+  size: 14, 13
+  orig: 18, 18
+  offset: 2, 3
+  index: -1
+projectile_potato/projectile_potato_shin_l
+  rotate: true
+  xy: 1506, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potato_shin_r
+  rotate: true
+  xy: 1506, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potato_thigh_l
+  rotate: true
+  xy: 1506, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+projectile_potato/projectile_potato_thigh_r
+  rotate: true
+  xy: 1506, 0
+  size: 24, 30
+  orig: 26, 32
+  offset: 1, 1
+  index: -1
+trainers/trainer_1
+  rotate: false
+  xy: 1237, 191
+  size: 83, 61
+  orig: 88, 64
+  offset: 2, 2
+  index: -1
+trainers/trainer_10
+  rotate: false
+  xy: 735, 117
+  size: 83, 60
+  orig: 88, 64
+  offset: 2, 3
+  index: -1
+trainers/trainer_11
+  rotate: false
+  xy: 1409, 247
+  size: 82, 58
+  orig: 88, 64
+  offset: 2, 4
+  index: -1
+trainers/trainer_12
+  rotate: false
+  xy: 734, 57
+  size: 83, 60
+  orig: 88, 64
+  offset: 2, 3
+  index: -1
+trainers/trainer_13
+  rotate: true
+  xy: 1485, 151
+  size: 77, 53
+  orig: 88, 64
+  offset: 5, 6
+  index: -1
+trainers/trainer_14
+  rotate: false
+  xy: 892, 138
+  size: 83, 60
+  orig: 88, 64
+  offset: 2, 3
+  index: -1
+trainers/trainer_15
+  rotate: false
+  xy: 1403, 189
+  size: 82, 58
+  orig: 88, 64
+  offset: 2, 4
+  index: -1
+trainers/trainer_16
+  rotate: false
+  xy: 1403, 131
+  size: 82, 58
+  orig: 88, 64
+  offset: 2, 4
+  index: -1
+trainers/trainer_17
+  rotate: false
+  xy: 1544, 217
+  size: 77, 53
+  orig: 88, 64
+  offset: 5, 6
+  index: -1
+trainers/trainer_18
+  rotate: true
+  xy: 895, 55
+  size: 83, 60
+  orig: 88, 64
+  offset: 2, 3
+  index: -1
+trainers/trainer_19
+  rotate: false
+  xy: 448, 2
+  size: 77, 53
+  orig: 88, 64
+  offset: 5, 6
+  index: -1
+trainers/trainer_2
+  rotate: false
+  xy: 738, 4
+  size: 77, 53
+  orig: 88, 64
+  offset: 5, 6
+  index: -1
+trainers/trainer_20
+  rotate: false
+  xy: 580, 68
+  size: 83, 61
+  orig: 88, 64
+  offset: 2, 2
+  index: -1
+trainers/trainer_3
+  rotate: false
+  xy: 1019, 107
+  size: 82, 58
+  orig: 88, 64
+  offset: 2, 4
+  index: -1
+trainers/trainer_4
+  rotate: true
+  xy: 1491, 228
+  size: 77, 53
+  orig: 88, 64
+  offset: 5, 6
+  index: -1
+trainers/trainer_5
+  rotate: false
+  xy: 1320, 191
+  size: 83, 61
+  orig: 88, 64
+  offset: 2, 2
+  index: -1
+trainers/trainer_6
+  rotate: false
+  xy: 1320, 130
+  size: 83, 61
+  orig: 88, 64
+  offset: 2, 2
+  index: -1
+trainers/trainer_7
+  rotate: false
+  xy: 584, 129
+  size: 83, 60
+  orig: 88, 64
+  offset: 2, 3
+  index: -1
+trainers/trainer_8
+  rotate: true
+  xy: 955, 46
+  size: 82, 58
+  orig: 88, 64
+  offset: 2, 4
+  index: -1
+trainers/trainer_9
+  rotate: false
+  xy: 1013, 49
+  size: 82, 58
+  orig: 88, 64
+  offset: 2, 4
+  index: -1
