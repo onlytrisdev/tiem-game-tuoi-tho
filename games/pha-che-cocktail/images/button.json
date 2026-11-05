@@ -1,0 +1,70 @@
+{
+"frames": {
+	"btn_back1.png": {
+		"frame": {"x":0, "y":315, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_back2.png": {
+		"frame": {"x":209, "y":63, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_collect1.png": {
+		"frame": {"x":209, "y":126, "w":108, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":62},
+		"sourceSize": {"w":109,"h":62}
+	},
+	"btn_collect2.png": {
+		"frame": {"x":209, "y":189, "w":108, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":62},
+		"sourceSize": {"w":109,"h":62}
+	},
+	"btn_moregames1.png": {
+		"frame": {"x":0, "y":441, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_moregames2.png": {
+		"frame": {"x":0, "y":378, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_playag1.png": {
+		"frame": {"x":209, "y":0, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_playag2.png": {
+		"frame": {"x":0, "y":252, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_score1.png": {
+		"frame": {"x":0, "y":189, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_score2.png": {
+		"frame": {"x":0, "y":126, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_start1.png": {
+		"frame": {"x":0, "y":63, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	},
+	"btn_start2.png": {
+		"frame": {"x":0, "y":0, "w":208, "h":62},
+		"spriteSourceSize": {"x":0,"y":0,"w":209,"h":62},
+		"sourceSize": {"w":209,"h":62}
+	}
+
+},
+"meta": {
+	"image": "button.png",
+	"size": {"w": 512, "h": 512},
+	"scale": "1"
+}
+}

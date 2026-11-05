@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:bbdc7b54e36c56a2cdc7c73c4b2ea746:eed5c06c8bd1c4e927470386b55c5e5f:67395b90fedb54da3dc0c44bbd93c57b$ -->
+<TextureAtlas imagePath="Atlas1.png">
+    <SubTexture name="CloseWindowOverlay-1" x="2" y="561" width="256" height="256"/>
+    <SubTexture name="GameLogo" x="2" y="2" width="414" height="279"/>
+    <SubTexture name="PauseUnder" x="2" y="283" width="350" height="276"/>
+    <SubTexture name="ScoreUnder" x="418" y="2" width="79" height="41"/>
+</TextureAtlas>

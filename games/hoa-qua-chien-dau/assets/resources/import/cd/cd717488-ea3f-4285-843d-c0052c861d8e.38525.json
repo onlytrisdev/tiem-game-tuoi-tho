@@ -1,0 +1,30 @@
+{
+    "__type__": "cc.JsonAsset",
+    "_name": "GoodsConfig",
+    "json": {
+        "10001": {
+            "name": "Tủ lạnh",
+            "patchNum": -1,
+            "fridgeType": 1,
+            "path": "Res/AchievementUI/icon_reward_1",
+            "titleTips": "",
+            "details": "1% nhận anh hùng mới\n35% nhận điểm kinh nghiệm\n64% nhận vàng"
+        },
+        "10002": {
+            "name": "Tủ lạnh lớn",
+            "patchNum": 10,
+            "fridgeType": 2,
+            "path": "Res/AchievementUI/icon_reward_2",
+            "titleTips": "Tương đương với 3 tủ lạnh",
+            "details": "1% nhận anh hùng mới\n35% nhận điểm kinh nghiệm\n64% nhận vàng"
+        },
+        "10003": {
+            "name": "Tủ lạnh khổng lồ",
+            "patchNum": 30,
+            "fridgeType": 3,
+            "path": "Res/AchievementUI/icon_reward_3",
+            "titleTips": "Tương đương với 10 tủ lạnh",
+            "details": "1% nhận anh hùng mới\n35% nhận điểm kinh nghiệm\n64% nhận vàng"
+        }
+    }
+}

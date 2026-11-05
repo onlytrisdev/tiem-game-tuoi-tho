@@ -1,0 +1,64 @@
+{
+    "__type__": "cc.JsonAsset",
+    "_name": "BUFFConfig",
+    "json": {
+        "High": [{
+            "index": 1,
+            "num": 1,
+            "weight": 10,
+            "isNeedVideo": true,
+            "BUFFName": "Hồi Sinh",
+            "BUFFDetail": "Nhận cơ hội miễn phí để hồi sinh"
+        }, {
+            "index": 2,
+            "num": 5,
+            "weight": 10,
+            "isNeedVideo": true,
+            "BUFFName": "Thăng cấp",
+            "BUFFDetail": "Cấp độ anh hùng tạm thời tăng thêm 5"
+        }, {
+            "index": 3,
+            "num": 0.25,
+            "weight": 30,
+            "isNeedVideo": true,
+            "BUFFName": "Khôi phục lượng máu",
+            "BUFFDetail": "Phục hồi ngay lập tức 25% HP"
+        }, {
+            "index": 4,
+            "num": 0.25,
+            "weight": 30,
+            "isNeedVideo": true,
+            "BUFFName": "Tăng tấn công",
+            "BUFFDetail": "Sức tấn công tăng 25%"
+        }, {
+            "index": 5,
+            "num": 0.2,
+            "weight": 30,
+            "isNeedVideo": true,
+            "BUFFName": "Tăng tốc độ",
+            "BUFFDetail": "Tốc độ di chuyển tăng 20%"
+        }],
+        "Normal": [{
+            "index": 6,
+            "num": 0.15,
+            "weight": 50,
+            "isNeedVideo": false,
+            "BUFFName": "Khôi phục lượng máu",
+            "BUFFDetail": "Phục hồi ngay lập tức 15% HP"
+        }, {
+            "index": 7,
+            "num": 0.1,
+            "weight": 50,
+            "isNeedVideo": false,
+            "BUFFName": "Tăng tấn công",
+            "BUFFDetail": "Sức tấn công tăng 10%"
+        }, {
+            "index": 8,
+            "num": 0.1,
+            "weight": 50,
+            "isNeedVideo": false,
+            "BUFFName": "Tăng tốc độ",
+            "BUFFDetail": "Tốc độ di chuyển tăng 10%"
+        }]
+    }
+}

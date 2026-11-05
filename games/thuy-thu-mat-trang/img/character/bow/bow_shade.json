@@ -1,0 +1,43 @@
+{"frames": {
+
+"bow-color02 instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":96,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":60},
+	"sourceSize": {"w":96,"h":60}
+},
+"bow-color02 instance 10001":
+{
+	"frame": {"x":106,"y":0,"w":96,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":60},
+	"sourceSize": {"w":96,"h":60}
+},
+"bow-color02 instance 10002":
+{
+	"frame": {"x":212,"y":0,"w":96,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":60},
+	"sourceSize": {"w":96,"h":60}
+},
+"bow-color02 instance 10003":
+{
+	"frame": {"x":318,"y":0,"w":96,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":60},
+	"sourceSize": {"w":96,"h":60}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "bow_shade.png",
+	"format": "RGBA8888",
+	"size": {"w":440,"h":80},
+	"scale": "1"
+}
+}

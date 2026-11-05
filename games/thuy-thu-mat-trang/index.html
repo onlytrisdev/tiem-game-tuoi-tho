@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang = "en">
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	<meta charset = "UTF-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+<title>Sailor Girls Avatar Maker</title>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+
+
+	<style>
+		body{margin: 0px; background-color: #e5b2cc}
+	</style>
+
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false);
+		var game;
+		window.famobi_gameJS = ['js/all.js',
+		    function() {
+		        // start the game
+		        game = new Phaser.Game(960,540,Phaser.AUTO,'game');
+				game.preserveDrawingBuffer = true;
+
+				//add states
+				game.state.add("Boot",boot);
+				game.state.add("Preload",preload);
+				game.state.add("TitleScreen",titleScreen);
+				game.state.add("DressUp",dressup);
+				game.state.start("Boot");
+		    }
+		];
+		(function (document, url, fgJS, firstJS) {
+			fgJS = document.createElement('script');
+			firstJS = document.getElementsByTagName('script')[0];
+			fgJS.src = url + encodeURIComponent(document.location.href);
+			firstJS.parentNode.insertBefore(fgJS, firstJS);
+		})(document, './gameapi/v1.js?e=');
+	</script>
+	
+</head>
+</html>
+

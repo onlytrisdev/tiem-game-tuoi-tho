@@ -1,0 +1,35 @@
+{"frames": {
+
+"back_bt0000":
+{
+	"frame": {"x":0,"y":0,"w":53,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":53},
+	"sourceSize": {"w":53,"h":53}
+},
+"back_bt0001":
+{
+	"frame": {"x":63,"y":0,"w":53,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":53},
+	"sourceSize": {"w":53,"h":53}
+},
+"back_bt0002":
+{
+	"frame": {"x":126,"y":0,"w":53,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":53},
+	"sourceSize": {"w":53,"h":53}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "color_back_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":200,"h":60},
+	"scale": "1"
+}
+}

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<meta name=viewport content="maximum-scale = 1, user-scalable = no, width = device-width, initial-scale = 1"/>
+
+	<title>Bói tình yêu</title>	
+
+		      <script src="game.js"></script>
+
+			  <script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <script>
+
+            GameAPI.loadAPI(function(API){});
+
+        </script>
+
+	<script>
+
+		// prevent default pinch/touch gesture
+
+		function PreventDefault(event) {
+
+		  event.preventDefault() ;
+
+		}
+
+		
+
+		// Init events
+
+		function initEvents() {
+
+			auto_resize_area();
+
+			window.addEventListener("resize", auto_resize_area, false);
+
+			window.addEventListener("unload", ig.global.pauseBGM, false);
+
+			window.addEventListener("blur", ig.global.pauseBGM, false);
+
+			window.addEventListener("pagehide", ig.global.pauseBGM, false);
+
+			window.addEventListener("focus", ig.global.resumeBGM, false);
+
+			window.addEventListener("pageshow", ig.global.resumeBGM, false);
+
+			window.addEventListener("focus", ig.global.refocus, false);
+
+			window.addEventListener("pageshow", ig.global.refocus, false);
+
+			window.ontouchmove = PreventDefault(event);
+
+			setInterval(auto_resize_area, 5000);
+
+			//window.onresize = auto_resize_area("aaaa");
+
+		}	
+
+		
+
+		// auto resize the canvas area to match the device's browser's viewable area
+
+		function auto_resize_area() {
+
+			var default_aspect_ratio = true;
+
+			
+
+			// PLEASE ENTER YOUR DEFAULT GAME'S SIZE
+
+			var original_width = 1024; var original_height = 768;
+
+			var optimal_aspect_ratio = original_width / original_height; var device_aspect_ratio = window.innerWidth / window.innerHeight;
+
+			var optimal_width = window.innerWidth; var optimal_height = window.innerHeight;
+
+			
+
+			if (default_aspect_ratio == true) {
+
+				if (device_aspect_ratio > optimal_aspect_ratio) 
+
+					optimal_width = window.innerHeight * optimal_aspect_ratio;
+
+				 else 
+
+					optimal_height = window.innerWidth / optimal_aspect_ratio;
+
+			} else {
+
+				optimal_width = window.innerHeight / optimal_aspect_ratio;
+
+				optimal_height = window.innerWidth * optimal_aspect_ratio;
+
+			}
+
+			document.getElementById('canvas').style.width =  optimal_width + 'px';
+
+			document.getElementById('canvas').style.height =  optimal_height + 'px';
+
+		}
+
+		
+
+		// prototype log function for all devices and os
+
+		(function(){
+
+		  window.log = function(){
+
+			  log.history = log.history || []; 
+
+			  log.history.push(arguments);
+
+			  if(this.console)
+
+			  { console.log( Array.prototype.slice.call(arguments) ); }
+
+			};
+
+		})();
+
+
+
+		function clickLogo()
+
+		{
+
+			
+
+		}
+
+
+
+	</script>
+
+	 <!-- Block Outgoing links -->
+
+    <script src="blocklinks.js"></script>
+
+	<script type="text/javascript" src="lib/impact/impact.js"></script><script type="text/javascript" src="lib/game/main.js"></script>
+
+</head>
+
+<body style="margin:0; padding:0;" onload="initEvents();" >
+
+	<div id="result" style="float:left"></div>
+
+	<div id="result2" style="float:right"></div>
+
+	
+
+	<div> <canvas id="canvas" style="position:absolute; margin:auto; left:0; top:0; bottom:0; right:0; width:100%; height:100%; -webkit-tap-highlight-color: transparent;"></canvas>  </div>
+
+	
+
+</body>
+
+</html>
+

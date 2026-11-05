@@ -1,0 +1,35 @@
+{
+"frames": {
+	"fruit1.png": {
+		"frame": {"x":0, "y":59, "w":30, "h":28},
+		"spriteSourceSize": {"x":1,"y":3,"w":33,"h":34},
+		"sourceSize": {"w":33,"h":34}
+	},
+	"fruit2.png": {
+		"frame": {"x":0, "y":88, "w":30, "h":25},
+		"spriteSourceSize": {"x":1,"y":4,"w":33,"h":34},
+		"sourceSize": {"w":33,"h":34}
+	},
+	"fruit3.png": {
+		"frame": {"x":0, "y":35, "w":32, "h":23},
+		"spriteSourceSize": {"x":0,"y":5,"w":33,"h":34},
+		"sourceSize": {"w":33,"h":34}
+	},
+	"fruit4.png": {
+		"frame": {"x":31, "y":59, "w":26, "h":18},
+		"spriteSourceSize": {"x":3,"y":8,"w":33,"h":34},
+		"sourceSize": {"w":33,"h":34}
+	},
+	"fruit5.png": {
+		"frame": {"x":0, "y":0, "w":32, "h":34},
+		"spriteSourceSize": {"x":0,"y":0,"w":33,"h":34},
+		"sourceSize": {"w":33,"h":34}
+	}
+
+},
+"meta": {
+	"image": "sheet_fruit.png",
+	"size": {"w": 64, "h": 128},
+	"scale": "1"
+}
+}

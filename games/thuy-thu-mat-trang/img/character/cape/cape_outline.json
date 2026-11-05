@@ -1,0 +1,43 @@
+{"frames": {
+
+"cape-shades instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":317,"h":297},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":317,"h":297},
+	"sourceSize": {"w":317,"h":297}
+},
+"cape-shades instance 10001":
+{
+	"frame": {"x":327,"y":0,"w":317,"h":297},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":317,"h":297},
+	"sourceSize": {"w":317,"h":297}
+},
+"cape-shades instance 10002":
+{
+	"frame": {"x":0,"y":307,"w":317,"h":297},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":317,"h":297},
+	"sourceSize": {"w":317,"h":297}
+},
+"cape-shades instance 10003":
+{
+	"frame": {"x":327,"y":307,"w":317,"h":297},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":317,"h":297},
+	"sourceSize": {"w":317,"h":297}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "cape_outline.png",
+	"format": "RGBA8888",
+	"size": {"w":840,"h":800},
+	"scale": "1"
+}
+}

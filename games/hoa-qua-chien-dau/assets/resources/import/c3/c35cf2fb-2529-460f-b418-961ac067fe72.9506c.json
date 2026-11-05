@@ -1,0 +1,286 @@
+{
+    "__type__": "cc.JsonAsset",
+    "_name": "SkillConfig",
+    "json": {
+        "skill_pizza_1": {
+            "name": "Phô Mai Viên",
+            "path": "Res/icon_skills/icon_power_pizza_1",
+            "details": "Ném một quả bóng pho mát để làm chậm đối thủ"
+        },
+        "skill_pizza_2": {
+            "name": "Nhãn Hiệu",
+            "path": "Res/icon_skills/icon_power_pizza_2",
+            "details": "Mỗi viên đạn trúng đối thủ có thể chữa lành cho bạn"
+        },
+        "skill_pizza_3": {
+            "name": "Cà vạt màu đỏ",
+            "path": "Res/icon_skills/icon_power_pizza_3",
+            "details": "Mỗi viên đạn đều có tác dụng đánh bật người chơi"
+        },
+        "skill_pizza_4": {
+            "name": "Xì gà Cuba",
+            "path": "Res/icon_skills/icon_power_pizza_4",
+            "details": "Đạn xuyên thủng đối thủ"
+        },
+        "skill_broccoli_1": {
+            "name": "Lựu đạn",
+            "path": "Res/icon_skills/icon_power_broccoli_1",
+            "details": "Ném lựu đạn vào đối thủ"
+        },
+        "skill_broccoli_2": {
+            "name": "头戴式耳机",
+            "path": "Res/icon_skills/icon_power_broccoli_2",
+            "details": "如果您的健康状况少于50%，就可以治愈"
+        },
+        "skill_broccoli_3": {
+            "name": "Giày Thể Thao",
+            "path": "Res/icon_skills/icon_power_broccoli_3",
+            "details": "Tốc độ đánh tăng 20%"
+        },
+        "skill_broccoli_4": {
+            "name": "Vòng cổ vàng",
+            "path": "Res/icon_skills/icon_power_broccoli_4",
+            "details": "Sát thương tăng 30%"
+        },
+        "skill_pumpkin_1": {
+            "name": "Bí ngô ác",
+            "path": "Res/icon_skills/icon_power_pumpkin_1",
+            "details": "Trở thành một quả bí ngô độc ác, hành động nhanh hơn và tiêu diệt mạng sống của đối thủ"
+        },
+        "skill_pumpkin_2": {
+            "name": "Ngọn nến bị nguyền rủa",
+            "path": "Res/icon_skills/icon_power_pumpkin_2",
+            "details": "Tăng 50% thời gian tồn tại của quả bí ngô độc ác"
+        },
+        "skill_pumpkin_3": {
+            "name": "Nước thánh ma thuật",
+            "path": "Res/icon_skills/icon_power_pumpkin_3",
+            "details": "Tốc độ di chuyển tăng thêm 10%"
+        },
+        "skill_pumpkin_4": {
+            "name": "Con Nhện",
+            "path": "Res/icon_skills/icon_power_pumpkin_4",
+            "details": "Mỗi lần giết sẽ tăng sát thương của bạn lên 20%"
+        },
+        "skill_tomato_1": {
+            "name": "Bộ sơ cứu",
+            "path": "Res/icon_skills/icon_power_tomato_1",
+            "details": "Phục hồi 20% máu ngay lập tức"
+        },
+        "skill_tomato_2": {
+            "name": "Bộ đàm",
+            "path": "Res/icon_skills/icon_power_tomato_2",
+            "details": "Tăng 20% ​​sát thương khi khỏe mạnh"
+        },
+        "skill_tomato_3": {
+            "name": "Kính Thiên Văn",
+            "path": "Res/icon_skills/icon_power_tomato_3",
+            "details": "Tăng 25% tốc độ di chuyển khi khỏe mạnh"
+        },
+        "skill_tomato_4": {
+            "name": "Thẻ lính",
+            "path": "Res/icon_skills/icon_power_tomato_4",
+            "details": "Tăng 30% tốc độ đánh khi khỏe mạnh"
+        },
+        "skill_pickle_1": {
+            "name": "Nước ngọt",
+            "path": "Res/icon_skills/icon_power_pickle_1",
+            "details": "Đã chữa lành rất nhiều, nhưng ngăn anh ta di chuyển cùng một lúc"
+        },
+        "skill_pickle_2": {
+            "name": "Móng ngựa may mắn",
+            "path": "Res/icon_skills/icon_power_pickle_2",
+            "details": "Đạn di chuyển nhanh hơn"
+        },
+        "skill_pickle_3": {
+            "name": "Sợ in ấn",
+            "path": "Res/icon_skills/icon_power_pickle_3",
+            "details": "Khi bạn đi xa hơn, bạn gây ra nhiều thiệt hại hơn"
+        },
+        "skill_pickle_4": {
+            "name": "Huy hiệu cảnh sát trưởng",
+            "path": "Res/icon_skills/icon_power_pickle_4",
+            "details": "Tăng 30% tốc độ đánh khi khỏe mạnh"
+        },
+        "skill_potato_1": {
+            "name": "Coctail Molotov",
+            "path": "Res/icon_skills/icon_power_potato_1",
+            "details": "Đốt cháy đối thủ trong 6 giây"
+        },
+        "skill_potato_2": {
+            "name": "Giày ống",
+            "path": "Res/icon_skills/icon_power_potato_2",
+            "details": "Mỗi lần giết tăng máu tối đa của bạn lên 2%"
+        },
+        "skill_potato_3": {
+            "name": "Gấu bông",
+            "path": "Res/icon_skills/icon_power_potato_3",
+            "details": "Sát thương tăng thêm 10%"
+        },
+        "skill_potato_4": {
+            "name": "Mặt dây chuyền ngôi sao đỏ",
+            "path": "Res/icon_skills/icon_power_potato_4",
+            "details": "Thêm một tên lửa khác"
+        },
+        "skill_ananas_1": {
+            "name": "Totem chữa bệnh",
+            "path": "Res/icon_skills/icon_power_ananas_1",
+            "details": "Totem hồi máu cho đồng minh của bạn trong 4 giây"
+        },
+        "skill_ananas_2": {
+            "name": "Vỏ sò cổ đại",
+            "path": "Res/icon_skills/icon_power_ananas_2",
+            "details": "Tăng sát thương gây ra khi bay về 20%"
+        },
+        "skill_ananas_3": {
+            "name": "Chuỗi hạt",
+            "path": "Res/icon_skills/icon_power_ananas_3",
+            "details": "Sát thương tăng thêm 10%"
+        },
+        "skill_ananas_4": {
+            "name": "Lông ma thuật",
+            "path": "Res/icon_skills/icon_power_ananas_4",
+            "details": "Boomerang ngày càng lớn hơn"
+        },
+        "skill_steak_1": {
+            "name": "Rìu nhỏ",
+            "path": "Res/icon_skills/icon_power_steak_1",
+            "details": "Ném một cái rìu nhỏ trước mặt bạn"
+        },
+        "skill_steak_2": {
+            "name": "Góc",
+            "path": "Res/icon_skills/icon_power_steak_2",
+            "details": "Mỗi lần giết có thể hồi 25% sinh mệnh"
+        },
+        "skill_steak_3": {
+            "name": "Lá chắn bằng gỗ",
+            "path": "Res/icon_skills/icon_power_steak_3",
+            "details": "Giảm sát thương 20%"
+        },
+        "skill_steak_4": {
+            "name": "Vòng đeo tay",
+            "path": "Res/icon_skills/icon_power_steak_4",
+            "details": "Mỗi đòn tấn công có 20% cơ hội nhân đôi sát thương"
+        },
+        "skill_banana_1": {
+            "name": "Chuối sắt",
+            "path": "Res/icon_skills/icon_power_banana_1",
+            "details": "Loại bỏ tất cả sát thương trong 4 giây"
+        },
+        "skill_banana_2": {
+            "name": "Va li",
+            "path": "Res/icon_skills/icon_power_banana_2",
+            "details": "Máu tăng 20%"
+        },
+        "skill_banana_3": {
+            "name": "Đồng hồ thông minh",
+            "path": "Res/icon_skills/icon_power_banana_3",
+            "details": "Sau khi tấn công thành công, sát thương gây ra bởi đòn tiếp theo tăng thêm 30%"
+        },
+        "skill_banana_4": {
+            "name": "Cuộc gọi gián điệp",
+            "path": "Res/icon_skills/icon_power_banana_4",
+            "details": "Mỗi đòn tấn công có 20% cơ hội nhân đôi sát thương"
+        },
+        "skill_donut_1": {
+            "name": "Quả bom khói",
+            "path": "Res/icon_skills/icon_power_donut_1",
+            "details": "Ném bom khói, gây sát thương lên đối thủ trong 6 giây"
+        },
+        "skill_donut_2": {
+            "name": "Đèn cảnh báo",
+            "path": "Res/icon_skills/icon_power_donut_2",
+            "details": "Viên đạn đi xa hơn"
+        },
+        "skill_donut_3": {
+            "name": "Áo chống đạn",
+            "path": "Res/icon_skills/icon_power_donut_3",
+            "details": "Máu tăng 20%"
+        },
+        "skill_donut_4": {
+            "name": "Huy hiệu cảnh sát",
+            "path": "Res/icon_skills/icon_power_donut_4",
+            "details": "Thêm 2 viên đạn mỗi lần tấn công"
+        },
+        "skill_maki_1": {
+            "name": "Bóng tối",
+            "path": "Res/icon_skills/icon_power_maki_1",
+            "details": "Trở nên vô hình cho đến lần tấn công tiếp theo"
+        },
+        "skill_maki_2": {
+            "name": "Băng đô",
+            "path": "Res/icon_skills/icon_power_maki_2",
+            "details": "Gây hơn 25% sát thương lên những đối thủ còn ít máu"
+        },
+        "skill_maki_3": {
+            "name": "Cuộn",
+            "path": "Res/icon_skills/icon_power_maki_3",
+            "details": "Đặt lại tất cả thời gian hồi chiêu sau khi giết đối thủ"
+        },
+        "skill_maki_4": {
+            "name": "Mặt dây chuyền Ninja",
+            "path": "Res/icon_skills/icon_power_maki_4",
+            "details": "Bỏ qua tất cả sát thương khi tấn công"
+        },
+        "skill_pepper_1": {
+            "name": "Ớt",
+            "path": "Res/icon_skills/icon_power_pepper_1",
+            "details": "Phát nổ sau một khoảng thời gian ngắn gây sát thương"
+        },
+        "skill_pepper_2": {
+            "name": "Caravela",
+            "path": "Res/icon_skills/icon_power_pepper_2",
+            "details": "Đặt thuốc nổ khi bạn sắp chết"
+        },
+        "skill_pepper_3": {
+            "name": "Maracas",
+            "path": "Res/icon_skills/icon_power_pepper_3",
+            "details": "Tốc độ đánh tăng 20%"
+        },
+        "skill_pepper_4": {
+            "name": "Rượu tequila",
+            "path": "Res/icon_skills/icon_power_pepper_4",
+            "details": "Ném thuốc nổ khác"
+        },
+        "skill_melon_1": {
+            "name": "Cá nóc",
+            "path": "Res/icon_skills/icon_power_melon_1",
+            "details": "Bắn cá tung tăng khổng lồ"
+        },
+        "skill_melon_2": {
+            "name": "Kính thiên văn",
+            "path": "Res/icon_skills/icon_power_melon_2",
+            "details": "Tăng 20% ​​sát thương khi máu thấp"
+        },
+        "skill_melon_3": {
+            "name": "La bàn",
+            "path": "Res/icon_skills/icon_power_melon_3",
+            "details": "Tăng 20% ​​tốc độ đánh khi yếu"
+        },
+        "skill_melon_4": {
+            "name": "Cờ đen",
+            "path": "Res/icon_skills/icon_power_melon_4",
+            "details": "Tăng 20% ​​tốc độ di chuyển khi máu gần hết"
+        },
+        "skill_burger_1": {
+            "name": "King's Fury",
+            "path": "Res/icon_skills/icon_power_burger_1",
+            "details": "Trong vòng 6 giây sau khi bắn trúng, vũ khí của bạn sẽ bắn ra một đường đạn ma thuật"
+        },
+        "skill_burger_2": {
+            "name": "Áo choàng hoàng gia",
+            "path": "Res/icon_skills/icon_power_burger_2",
+            "details": "Tăng 20% ​​tốc độ di chuyển"
+        },
+        "skill_burger_3": {
+            "name": "Nhẫn vàng",
+            "path": "Res/icon_skills/icon_power_burger_3",
+            "details": "Tốc độ đánh tăng 20%"
+        },
+        "skill_burger_4": {
+            "name": "Vật thiêng",
+            "path": "Res/icon_skills/icon_power_burger_4",
+            "details": "Mỗi đòn tấn công có 5% cơ hội giết chết đối thủ ngay lập tức"
+        }
+    }
+}

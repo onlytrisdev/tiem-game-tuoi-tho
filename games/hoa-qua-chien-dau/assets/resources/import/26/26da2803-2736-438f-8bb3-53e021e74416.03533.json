@@ -1,0 +1,94 @@
+{
+    "__type__": "cc.JsonAsset",
+    "_name": "AcivityConfig",
+    "json": {
+        "config": [{
+            "index": 1,
+            "type": "EveryDay_Login",
+            "title": "Đăng nhập",
+            "details": "Đăng nhập hàng ngày",
+            "rewardNum": 5,
+            "needTimes": 1
+        }, {
+            "index": 2,
+            "type": "Luck_TurnTable",
+            "title": "Vòng quay",
+            "details": "Sử dụng một lần",
+            "rewardNum": 10,
+            "needTimes": 1
+        }, {
+            "index": 3,
+            "type": "EveryDay_Battle",
+            "title": "Trận chiến",
+            "details": "Tham gia trận đấu",
+            "rewardNum": 10,
+            "needTimes": 1
+        }, {
+            "index": 4,
+            "type": "First_Victory",
+            "title": "Chiến thắng đầu",
+            "details": "Thắng một trận đấu",
+            "rewardNum": 10,
+            "needTimes": 1
+        }, {
+            "index": 5,
+            "type": "Crazzy_Skill",
+            "title": "Sát thủ",
+            "details": "Giết ít nhất 10 anh hùng",
+            "rewardNum": 15,
+            "needTimes": 1
+        }, {
+            "index": 6,
+            "type": "Forward",
+            "title": "Dũng cảm",
+            "details": "Hoàn thành 30 lần",
+            "rewardNum": 20,
+            "needTimes": 30
+        }, {
+            "index": 7,
+            "type": "Light_Of_Victory",
+            "title": "Ánh sáng",
+            "details": "Thắng hai trận",
+            "rewardNum": 20,
+            "needTimes": 2
+        }, {
+            "index": 8,
+            "type": "Double_Hard",
+            "title": "Siêng năng",
+            "details": "Tham gia ba trận",
+            "rewardNum": 20,
+            "needTimes": 3
+        }, {
+            "index": 9,
+            "type": "Rich_Man",
+            "title": "Giàu có",
+            "details": "Tiêu 200 đồng",
+            "rewardNum": 10,
+            "needTimes": 200
+        }, {
+            "index": 10,
+            "type": "EveryDay_Fresh",
+            "title": "Tươi hàng ngày",
+            "details": "Bật tủ lạnh",
+            "rewardNum": 10,
+            "needTimes": 1
+        }, {
+            "index": 11,
+            "type": "Crazzy_TurnTable",
+            "title": "Nổi điên lên",
+            "details": "Vòng quay 3 lần",
+            "rewardNum": 20,
+            "needTimes": 3
+        }],
+        "reward": [{
+            "activityNum": 50,
+            "rewardType": 1
+        }, {
+            "activityNum": 100,
+            "rewardType": 2
+        }, {
+            "activityNum": 150,
+            "rewardType": 3
+        }]
+    }
+}

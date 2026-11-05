@@ -1,0 +1,20 @@
+{
+"frames": {
+	"btn_soundoff.png": {
+		"frame": {"x":0, "y":58, "w":57, "h":57},
+		"spriteSourceSize": {"x":0,"y":0,"w":57,"h":57},
+		"sourceSize": {"w":57,"h":57}
+	},
+	"btn_soundon.png": {
+		"frame": {"x":0, "y":0, "w":57, "h":57},
+		"spriteSourceSize": {"x":0,"y":0,"w":57,"h":57},
+		"sourceSize": {"w":57,"h":57}
+	}
+
+},
+"meta": {
+	"image": "sound.png",
+	"size": {"w": 64, "h": 128},
+	"scale": "1"
+}
+}

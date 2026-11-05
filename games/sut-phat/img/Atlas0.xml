@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:00ff6e1b45d5a2b3064076167b370fc5:8459c193739005a5c4f3b96345551505:ba1201ad2da1ebf2763dd815923bcb50$ -->
+<TextureAtlas imagePath="Atlas0.png">
+    <SubTexture name="2PlayerBtn" x="600" y="461" width="115" height="95"/>
+    <SubTexture name="ChangeOvl-1" x="600" y="98" width="241" height="241" frameX="-5" frameY="-4" frameWidth="250" frameHeight="250"/>
+    <SubTexture name="Lev" x="1" y="762" width="56" height="50"/>
+    <SubTexture name="LevelLabel" x="600" y="32" width="259" height="62" frameX="-1" frameY="-1" frameWidth="261" frameHeight="64"/>
+    <SubTexture name="RasteredBM16" x="600" y="23" width="318" height="8"/>
+    <SubTexture name="RasteredBM8" x="58" y="767" width="49" height="49"/>
+    <SubTexture name="RasteredBxM15" x="600" y="1" width="318" height="21"/>
+    <SubTexture name="ScoreInfTF15" x="917" y="121" width="75" height="32"/>
+    <SubTexture name="ScoreInfTF25" x="917" y="154" width="75" height="32"/>
+    <SubTexture name="ScoreInfTF40" x="917" y="187" width="75" height="32"/>
+    <SubTexture name="ScoreInfTF50" x="917" y="220" width="75" height="32"/>
+    <SubTexture name="ScoreInfTF70" x="916" y="253" width="75" height="32"/>
+    <SubTexture name="ScoreInfTF80" x="916" y="286" width="75" height="32"/>
+    <SubTexture name="ScoreInfTF90" x="948" y="465" width="75" height="32"/>
+    <SubTexture name="backBtn" x="600" y="340" width="115" height="120"/>
+    <SubTexture name="cc9803e4" x="1003" y="32" width="20" height="26" frameX="-4" frameY="0" frameWidth="26" frameHeight="26"/>
+    <SubTexture name="cup_2" x="842" y="319" width="140" height="136" frameX="-1" frameY="-1" frameWidth="142" frameHeight="138"/>
+    <SubTexture name="cursor" x="45" y="850" width="49" height="56"/>
+    <SubTexture name="firework1" x="983" y="340" width="34" height="35" frameX="-1" frameY="-2" frameWidth="36" frameHeight="38"/>
+    <SubTexture name="firework2" x="993" y="121" width="30" height="30" frameX="-2" frameY="-4" frameWidth="36" frameHeight="38"/>
+    <SubTexture name="firework3" x="993" y="152" width="29" height="37" frameX="-3" frameY="-1" frameWidth="36" frameHeight="38"/>
+    <SubTexture name="firework4" x="983" y="340" width="34" height="35" frameX="-1" frameY="-2" frameWidth="36" frameHeight="38"/>
+    <SubTexture name="firework5" x="993" y="121" width="30" height="30" frameX="-2" frameY="-4" frameWidth="36" frameHeight="38"/>
+    <SubTexture name="firework6" x="993" y="152" width="29" height="37" frameX="-3" frameY="-1" frameWidth="36" frameHeight="38"/>
+    <SubTexture name="fkTxt_0" x="993" y="220" width="25" height="29"/>
+    <SubTexture name="fkTxt_1" x="1003" y="59" width="17" height="28"/>
+    <SubTexture name="fkTxt_2" x="1" y="816" width="25" height="28"/>
+    <SubTexture name="fkTxt_3" x="993" y="250" width="25" height="29"/>
+    <SubTexture name="fkTxt_4" x="27" y="816" width="25" height="28"/>
+    <SubTexture name="fkTxt_5" x="993" y="190" width="26" height="29"/>
+    <SubTexture name="fkTxt_6" x="992" y="280" width="25" height="29"/>
+    <SubTexture name="fkTxt_7" x="1" y="722" width="23" height="28"/>
+    <SubTexture name="fkTxt_8" x="992" y="310" width="25" height="29"/>
+    <SubTexture name="fkTxt_9" x="983" y="435" width="25" height="29"/>
+    <SubTexture name="fkTxt_slash" x="1003" y="1" width="20" height="30"/>
+    <SubTexture name="frkcb_0 копия" x="830" y="696" width="60" height="70"/>
+    <SubTexture name="frkcb_0" x="25" y="677" width="50" height="60"/>
+    <SubTexture name="frkcb_1 копия" x="1" y="850" width="43" height="68"/>
+    <SubTexture name="frkcb_1" x="983" y="376" width="33" height="58"/>
+    <SubTexture name="frkcb_2 копия" x="948" y="569" width="62" height="69"/>
+    <SubTexture name="frkcb_2" x="777" y="642" width="52" height="59"/>
+    <SubTexture name="frkcb_3 копия" x="715" y="581" width="61" height="70"/>
+    <SubTexture name="frkcb_3" x="891" y="755" width="51" height="60"/>
+    <SubTexture name="frkcb_4 копия" x="946" y="639" width="62" height="68"/>
+    <SubTexture name="frkcb_4" x="891" y="696" width="52" height="58"/>
+    <SubTexture name="frkcb_5 копия" x="715" y="652" width="61" height="69"/>
+    <SubTexture name="frkcb_5" x="777" y="702" width="52" height="59"/>
+    <SubTexture name="frkcb_6 копия" x="944" y="708" width="60" height="70"/>
+    <SubTexture name="frkcb_6" x="1" y="600" width="50" height="60"/>
+    <SubTexture name="frkcb_7 копия" x="860" y="92" width="56" height="68"/>
+    <SubTexture name="frkcb_7" x="1" y="919" width="46" height="58"/>
+    <SubTexture name="frkcb_8 копия" x="948" y="498" width="62" height="70"/>
+    <SubTexture name="frkcb_8" x="777" y="581" width="52" height="60"/>
+    <SubTexture name="frkcb_9 копия" x="943" y="779" width="60" height="70"/>
+    <SubTexture name="frkcb_9" x="52" y="600" width="50" height="60"/>
+    <SubTexture name="frkcb_pr" x="842" y="238" width="73" height="61"/>
+    <SubTexture name="home" x="716" y="340" width="115" height="120"/>
+    <SubTexture name="lightsLogo" x="1" y="1" width="598" height="598"/>
+    <SubTexture name="many_ball копия" x="842" y="161" width="74" height="76" frameX="-3" frameY="0" frameWidth="80" frameHeight="76"/>
+    <SubTexture name="pause" x="860" y="32" width="57" height="59"/>
+    <SubTexture name="playBtn" x="831" y="577" width="114" height="118"/>
+    <SubTexture name="restart" x="832" y="456" width="115" height="120"/>
+    <SubTexture name="soundOffBtn" x="716" y="461" width="114" height="119"/>
+    <SubTexture name="soundOnBtn" x="600" y="557" width="114" height="119"/>
+    <SubTexture name="tutor_hand2" x="919" y="1" width="83" height="119"/>
+    <SubTexture name="Растровое изображение 12" x="1003" y="88" width="14" height="14"/>
+    <SubTexture name="Растровое изображение 13" x="600" y="95" width="242" height="2"/>
+    <SubTexture name="Растровое изображение 14" x="1003" y="103" width="13" height="13"/>
+</TextureAtlas>

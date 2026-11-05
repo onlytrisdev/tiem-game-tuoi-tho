@@ -1,0 +1,110 @@
+{
+"frames": {
+	"botol1.png": {
+		"frame": {"x":217, "y":148, "w":50, "h":147},
+		"spriteSourceSize": {"x":8,"y":1,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol10.png": {
+		"frame": {"x":112, "y":290, "w":53, "h":146},
+		"spriteSourceSize": {"x":6,"y":2,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol11.png": {
+		"frame": {"x":169, "y":0, "w":46, "h":134},
+		"spriteSourceSize": {"x":0,"y":0,"w":46,"h":135},
+		"sourceSize": {"w":46,"h":135}
+	},
+	"botol12.png": {
+		"frame": {"x":268, "y":139, "w":41, "h":138},
+		"spriteSourceSize": {"x":12,"y":6,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol13.png": {
+		"frame": {"x":268, "y":0, "w":41, "h":138},
+		"spriteSourceSize": {"x":12,"y":6,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol14.png": {
+		"frame": {"x":263, "y":296, "w":41, "h":138},
+		"spriteSourceSize": {"x":12,"y":6,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol15.png": {
+		"frame": {"x":58, "y":143, "w":56, "h":146},
+		"spriteSourceSize": {"x":5,"y":2,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol16.png": {
+		"frame": {"x":60, "y":0, "w":53, "h":139},
+		"spriteSourceSize": {"x":6,"y":5,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol17.png": {
+		"frame": {"x":217, "y":296, "w":45, "h":144},
+		"spriteSourceSize": {"x":10,"y":3,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol18.png": {
+		"frame": {"x":310, "y":0, "w":39, "h":134},
+		"spriteSourceSize": {"x":13,"y":8,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol19.png": {
+		"frame": {"x":305, "y":278, "w":39, "h":149},
+		"spriteSourceSize": {"x":13,"y":0,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol2.png": {
+		"frame": {"x":166, "y":147, "w":50, "h":147},
+		"spriteSourceSize": {"x":8,"y":1,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol20.png": {
+		"frame": {"x":115, "y":147, "w":49, "h":134},
+		"spriteSourceSize": {"x":8,"y":8,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol3.png": {
+		"frame": {"x":166, "y":295, "w":50, "h":147},
+		"spriteSourceSize": {"x":8,"y":1,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol4.png": {
+		"frame": {"x":217, "y":0, "w":50, "h":147},
+		"spriteSourceSize": {"x":8,"y":1,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol5.png": {
+		"frame": {"x":0, "y":143, "w":57, "h":138},
+		"spriteSourceSize": {"x":4,"y":6,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol6.png": {
+		"frame": {"x":0, "y":282, "w":57, "h":138},
+		"spriteSourceSize": {"x":4,"y":6,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol7.png": {
+		"frame": {"x":0, "y":0, "w":59, "h":142},
+		"spriteSourceSize": {"x":3,"y":4,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol8.png": {
+		"frame": {"x":58, "y":290, "w":53, "h":146},
+		"spriteSourceSize": {"x":6,"y":2,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	},
+	"botol9.png": {
+		"frame": {"x":115, "y":0, "w":53, "h":146},
+		"spriteSourceSize": {"x":6,"y":2,"w":65,"h":149},
+		"sourceSize": {"w":65,"h":149}
+	}
+
+},
+"meta": {
+	"image": "botol.png",
+	"size": {"w": 512, "h": 512},
+	"scale": "1"
+}
+}

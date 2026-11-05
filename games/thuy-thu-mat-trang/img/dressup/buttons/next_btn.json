@@ -1,0 +1,35 @@
+{"frames": {
+
+"hair_next_01_bt0000":
+{
+	"frame": {"x":0,"y":0,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+},
+"hair_next_01_bt0001":
+{
+	"frame": {"x":52,"y":0,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+},
+"hair_next_01_bt0002":
+{
+	"frame": {"x":104,"y":0,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "next_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":200,"h":60},
+	"scale": "1"
+}
+}

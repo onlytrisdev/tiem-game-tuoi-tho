@@ -1,0 +1,2465 @@
+{
+"frames": {
+	"tangan_bawah0001.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0002.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0003.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0004.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0005.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0006.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0007.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0008.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0009.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0010.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0011.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0012.png": {
+		"frame": {"x":868, "y":1393, "w":34, "h":34},
+		"spriteSourceSize": {"x":386,"y":0,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0013.png": {
+		"frame": {"x":909, "y":495, "w":124, "h":106},
+		"spriteSourceSize": {"x":549,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0014.png": {
+		"frame": {"x":818, "y":1861, "w":126, "h":98},
+		"spriteSourceSize": {"x":539,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0015.png": {
+		"frame": {"x":781, "y":606, "w":127, "h":96},
+		"spriteSourceSize": {"x":530,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0016.png": {
+		"frame": {"x":903, "y":976, "w":125, "h":95},
+		"spriteSourceSize": {"x":523,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0017.png": {
+		"frame": {"x":808, "y":1663, "w":126, "h":95},
+		"spriteSourceSize": {"x":517,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0018.png": {
+		"frame": {"x":774, "y":1059, "w":128, "h":96},
+		"spriteSourceSize": {"x":512,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0019.png": {
+		"frame": {"x":677, "y":1669, "w":130, "h":95},
+		"spriteSourceSize": {"x":510,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0020.png": {
+		"frame": {"x":651, "y":221, "w":131, "h":93},
+		"spriteSourceSize": {"x":510,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0021.png": {
+		"frame": {"x":669, "y":780, "w":130, "h":99},
+		"spriteSourceSize": {"x":511,"y":236,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0022.png": {
+		"frame": {"x":391, "y":1606, "w":156, "h":46},
+		"spriteSourceSize": {"x":494,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0023.png": {
+		"frame": {"x":0, "y":1937, "w":279, "h":44},
+		"spriteSourceSize": {"x":372,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0024.png": {
+		"frame": {"x":0, "y":1712, "w":374, "h":42},
+		"spriteSourceSize": {"x":278,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0025.png": {
+		"frame": {"x":0, "y":1368, "w":442, "h":41},
+		"spriteSourceSize": {"x":210,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0026.png": {
+		"frame": {"x":0, "y":1226, "w":482, "h":41},
+		"spriteSourceSize": {"x":170,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0027.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0028.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0029.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0030.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0031.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0032.png": {
+		"frame": {"x":0, "y":1044, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0033.png": {
+		"frame": {"x":0, "y":1268, "w":474, "h":41},
+		"spriteSourceSize": {"x":178,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0034.png": {
+		"frame": {"x":0, "y":1452, "w":408, "h":41},
+		"spriteSourceSize": {"x":243,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0035.png": {
+		"frame": {"x":0, "y":1894, "w":299, "h":42},
+		"spriteSourceSize": {"x":352,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0036.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0037.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0038.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0039.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0040.png": {
+		"frame": {"x":475, "y":1268, "w":153, "h":71},
+		"spriteSourceSize": {"x":498,"y":214,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0041.png": {
+		"frame": {"x":489, "y":1128, "w":148, "h":105},
+		"spriteSourceSize": {"x":503,"y":175,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0042.png": {
+		"frame": {"x":652, "y":67, "w":131, "h":136},
+		"spriteSourceSize": {"x":520,"y":140,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0043.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0044.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0045.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0046.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0047.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0048.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0049.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0050.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0051.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0052.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0053.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0054.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0055.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0056.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0057.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0058.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0059.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0060.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0061.png": {
+		"frame": {"x":1024, "y":1072, "w":100, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0062.png": {
+		"frame": {"x":1034, "y":331, "w":99, "h":167},
+		"spriteSourceSize": {"x":551,"y":112,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0063.png": {
+		"frame": {"x":644, "y":550, "w":136, "h":134},
+		"spriteSourceSize": {"x":516,"y":144,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0064.png": {
+		"frame": {"x":443, "y":1368, "w":155, "h":102},
+		"spriteSourceSize": {"x":498,"y":185,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0065.png": {
+		"frame": {"x":375, "y":1712, "w":157, "h":62},
+		"spriteSourceSize": {"x":496,"y":232,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0066.png": {
+		"frame": {"x":497, "y":1044, "w":147, "h":62},
+		"spriteSourceSize": {"x":504,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0067.png": {
+		"frame": {"x":784, "y":0, "w":126, "h":99},
+		"spriteSourceSize": {"x":521,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0068.png": {
+		"frame": {"x":995, "y":1252, "w":94, "h":120},
+		"spriteSourceSize": {"x":548,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0069.png": {
+		"frame": {"x":909, "y":495, "w":124, "h":106},
+		"spriteSourceSize": {"x":549,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0070.png": {
+		"frame": {"x":818, "y":1861, "w":126, "h":98},
+		"spriteSourceSize": {"x":539,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0071.png": {
+		"frame": {"x":781, "y":606, "w":127, "h":96},
+		"spriteSourceSize": {"x":530,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0072.png": {
+		"frame": {"x":903, "y":976, "w":125, "h":95},
+		"spriteSourceSize": {"x":523,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0073.png": {
+		"frame": {"x":808, "y":1663, "w":126, "h":95},
+		"spriteSourceSize": {"x":517,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0074.png": {
+		"frame": {"x":774, "y":1059, "w":128, "h":96},
+		"spriteSourceSize": {"x":512,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0075.png": {
+		"frame": {"x":677, "y":1669, "w":130, "h":95},
+		"spriteSourceSize": {"x":510,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0076.png": {
+		"frame": {"x":651, "y":221, "w":131, "h":93},
+		"spriteSourceSize": {"x":510,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0077.png": {
+		"frame": {"x":669, "y":780, "w":130, "h":99},
+		"spriteSourceSize": {"x":511,"y":236,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0078.png": {
+		"frame": {"x":391, "y":1606, "w":156, "h":46},
+		"spriteSourceSize": {"x":494,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0079.png": {
+		"frame": {"x":0, "y":1798, "w":335, "h":48},
+		"spriteSourceSize": {"x":316,"y":242,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0080.png": {
+		"frame": {"x":0, "y":1310, "w":473, "h":57},
+		"spriteSourceSize": {"x":178,"y":233,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0081.png": {
+		"frame": {"x":0, "y":756, "w":572, "h":64},
+		"spriteSourceSize": {"x":79,"y":226,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0082.png": {
+		"frame": {"x":0, "y":687, "w":631, "h":68},
+		"spriteSourceSize": {"x":20,"y":221,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0083.png": {
+		"frame": {"x":0, "y":67, "w":651, "h":71},
+		"spriteSourceSize": {"x":0,"y":218,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0084.png": {
+		"frame": {"x":0, "y":67, "w":651, "h":71},
+		"spriteSourceSize": {"x":0,"y":218,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0085.png": {
+		"frame": {"x":0, "y":67, "w":651, "h":71},
+		"spriteSourceSize": {"x":0,"y":218,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0086.png": {
+		"frame": {"x":0, "y":67, "w":651, "h":71},
+		"spriteSourceSize": {"x":0,"y":218,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0087.png": {
+		"frame": {"x":0, "y":67, "w":651, "h":71},
+		"spriteSourceSize": {"x":0,"y":218,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0088.png": {
+		"frame": {"x":0, "y":0, "w":652, "h":66},
+		"spriteSourceSize": {"x":0,"y":220,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0089.png": {
+		"frame": {"x":0, "y":821, "w":522, "h":97},
+		"spriteSourceSize": {"x":130,"y":188,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0090.png": {
+		"frame": {"x":0, "y":1602, "w":390, "h":109},
+		"spriteSourceSize": {"x":261,"y":175,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0091.png": {
+		"frame": {"x":280, "y":1937, "w":264, "h":100},
+		"spriteSourceSize": {"x":387,"y":182,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0092.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0093.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0094.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0095.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0096.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0097.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0098.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0099.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0100.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0101.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0102.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0103.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0104.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0105.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0106.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0107.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0108.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0109.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0110.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0111.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0112.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0113.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0114.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0115.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0116.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0117.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0118.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0119.png": {
+		"frame": {"x":533, "y":1700, "w":143, "h":72},
+		"spriteSourceSize": {"x":508,"y":208,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0120.png": {
+		"frame": {"x":517, "y":966, "w":143, "h":71},
+		"spriteSourceSize": {"x":508,"y":209,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0121.png": {
+		"frame": {"x":336, "y":1798, "w":264, "h":99},
+		"spriteSourceSize": {"x":387,"y":183,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0122.png": {
+		"frame": {"x":0, "y":1494, "w":390, "h":107},
+		"spriteSourceSize": {"x":261,"y":177,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0123.png": {
+		"frame": {"x":0, "y":919, "w":516, "h":124},
+		"spriteSourceSize": {"x":136,"y":161,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0124.png": {
+		"frame": {"x":0, "y":550, "w":643, "h":136},
+		"spriteSourceSize": {"x":9,"y":150,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0125.png": {
+		"frame": {"x":0, "y":426, "w":645, "h":123},
+		"spriteSourceSize": {"x":7,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0126.png": {
+		"frame": {"x":0, "y":317, "w":648, "h":108},
+		"spriteSourceSize": {"x":4,"y":178,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0127.png": {
+		"frame": {"x":0, "y":221, "w":650, "h":95},
+		"spriteSourceSize": {"x":2,"y":191,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0128.png": {
+		"frame": {"x":0, "y":139, "w":651, "h":81},
+		"spriteSourceSize": {"x":1,"y":205,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0129.png": {
+		"frame": {"x":0, "y":0, "w":652, "h":66},
+		"spriteSourceSize": {"x":0,"y":220,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0130.png": {
+		"frame": {"x":0, "y":1128, "w":488, "h":55},
+		"spriteSourceSize": {"x":164,"y":233,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0131.png": {
+		"frame": {"x":0, "y":1847, "w":322, "h":46},
+		"spriteSourceSize": {"x":329,"y":243,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0132.png": {
+		"frame": {"x":391, "y":1653, "w":156, "h":46},
+		"spriteSourceSize": {"x":494,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0133.png": {
+		"frame": {"x":738, "y":1332, "w":129, "h":95},
+		"spriteSourceSize": {"x":511,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0134.png": {
+		"frame": {"x":868, "y":1297, "w":126, "h":95},
+		"spriteSourceSize": {"x":515,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0135.png": {
+		"frame": {"x":799, "y":880, "w":126, "h":95},
+		"spriteSourceSize": {"x":520,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0136.png": {
+		"frame": {"x":783, "y":302, "w":127, "h":96},
+		"spriteSourceSize": {"x":528,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0137.png": {
+		"frame": {"x":781, "y":506, "w":127, "h":99},
+		"spriteSourceSize": {"x":538,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0138.png": {
+		"frame": {"x":909, "y":495, "w":124, "h":106},
+		"spriteSourceSize": {"x":549,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0139.png": {
+		"frame": {"x":909, "y":495, "w":124, "h":106},
+		"spriteSourceSize": {"x":549,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0140.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0141.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0142.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0143.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0144.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0145.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0146.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0147.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0148.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0149.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0150.png": {
+		"frame": {"x":638, "y":1107, "w":135, "h":92},
+		"spriteSourceSize": {"x":534,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0151.png": {
+		"frame": {"x":649, "y":317, "w":133, "h":92},
+		"spriteSourceSize": {"x":530,"y":242,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0152.png": {
+		"frame": {"x":687, "y":1871, "w":130, "h":93},
+		"spriteSourceSize": {"x":527,"y":241,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0153.png": {
+		"frame": {"x":800, "y":703, "w":126, "h":94},
+		"spriteSourceSize": {"x":525,"y":240,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0154.png": {
+		"frame": {"x":909, "y":602, "w":124, "h":96},
+		"spriteSourceSize": {"x":524,"y":238,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0155.png": {
+		"frame": {"x":911, "y":107, "w":124, "h":106},
+		"spriteSourceSize": {"x":525,"y":227,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0156.png": {
+		"frame": {"x":911, "y":214, "w":123, "h":116},
+		"spriteSourceSize": {"x":527,"y":215,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0157.png": {
+		"frame": {"x":935, "y":1627, "w":120, "h":124},
+		"spriteSourceSize": {"x":530,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0158.png": {
+		"frame": {"x":935, "y":1627, "w":120, "h":124},
+		"spriteSourceSize": {"x":530,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0159.png": {
+		"frame": {"x":935, "y":1627, "w":120, "h":124},
+		"spriteSourceSize": {"x":530,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0160.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0161.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0162.png": {
+		"frame": {"x":926, "y":798, "w":120, "h":124},
+		"spriteSourceSize": {"x":529,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0163.png": {
+		"frame": {"x":926, "y":798, "w":120, "h":124},
+		"spriteSourceSize": {"x":529,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0164.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0165.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0166.png": {
+		"frame": {"x":926, "y":798, "w":120, "h":124},
+		"spriteSourceSize": {"x":529,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0167.png": {
+		"frame": {"x":926, "y":798, "w":120, "h":124},
+		"spriteSourceSize": {"x":529,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0168.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0169.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0170.png": {
+		"frame": {"x":926, "y":798, "w":120, "h":124},
+		"spriteSourceSize": {"x":529,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0171.png": {
+		"frame": {"x":926, "y":798, "w":120, "h":124},
+		"spriteSourceSize": {"x":529,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0172.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0173.png": {
+		"frame": {"x":1029, "y":923, "w":92, "h":132},
+		"spriteSourceSize": {"x":558,"y":153,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0174.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0175.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0176.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0177.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0178.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0179.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0180.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0181.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0182.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0183.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0184.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0185.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0186.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0187.png": {
+		"frame": {"x":1036, "y":0, "w":80, "h":185},
+		"spriteSourceSize": {"x":580,"y":80,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0188.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0189.png": {
+		"frame": {"x":391, "y":1494, "w":180, "h":111},
+		"spriteSourceSize": {"x":481,"y":163,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0190.png": {
+		"frame": {"x":935, "y":1627, "w":120, "h":124},
+		"spriteSourceSize": {"x":530,"y":204,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0191.png": {
+		"frame": {"x":911, "y":214, "w":123, "h":116},
+		"spriteSourceSize": {"x":527,"y":215,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0192.png": {
+		"frame": {"x":911, "y":0, "w":124, "h":106},
+		"spriteSourceSize": {"x":524,"y":227,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0193.png": {
+		"frame": {"x":909, "y":399, "w":124, "h":95},
+		"spriteSourceSize": {"x":524,"y":239,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0194.png": {
+		"frame": {"x":820, "y":1532, "w":126, "h":94},
+		"spriteSourceSize": {"x":525,"y":240,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0195.png": {
+		"frame": {"x":712, "y":1438, "w":130, "h":93},
+		"spriteSourceSize": {"x":527,"y":241,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0196.png": {
+		"frame": {"x":646, "y":426, "w":133, "h":91},
+		"spriteSourceSize": {"x":530,"y":243,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0197.png": {
+		"frame": {"x":632, "y":687, "w":135, "h":92},
+		"spriteSourceSize": {"x":534,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0198.png": {
+		"frame": {"x":909, "y":495, "w":124, "h":106},
+		"spriteSourceSize": {"x":549,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0199.png": {
+		"frame": {"x":869, "y":1759, "w":126, "h":100},
+		"spriteSourceSize": {"x":540,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0200.png": {
+		"frame": {"x":783, "y":204, "w":127, "h":97},
+		"spriteSourceSize": {"x":532,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0201.png": {
+		"frame": {"x":843, "y":1428, "w":126, "h":96},
+		"spriteSourceSize": {"x":525,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0202.png": {
+		"frame": {"x":784, "y":100, "w":126, "h":95},
+		"spriteSourceSize": {"x":519,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0203.png": {
+		"frame": {"x":897, "y":1156, "w":126, "h":95},
+		"spriteSourceSize": {"x":515,"y":248,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0204.png": {
+		"frame": {"x":739, "y":1765, "w":129, "h":95},
+		"spriteSourceSize": {"x":511,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0205.png": {
+		"frame": {"x":689, "y":1568, "w":130, "h":94},
+		"spriteSourceSize": {"x":510,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0206.png": {
+		"frame": {"x":661, "y":966, "w":131, "h":92},
+		"spriteSourceSize": {"x":510,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0207.png": {
+		"frame": {"x":669, "y":780, "w":130, "h":99},
+		"spriteSourceSize": {"x":511,"y":236,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0208.png": {
+		"frame": {"x":391, "y":1606, "w":156, "h":46},
+		"spriteSourceSize": {"x":494,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0209.png": {
+		"frame": {"x":0, "y":1937, "w":279, "h":44},
+		"spriteSourceSize": {"x":372,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0210.png": {
+		"frame": {"x":0, "y":1712, "w":374, "h":42},
+		"spriteSourceSize": {"x":278,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0211.png": {
+		"frame": {"x":0, "y":1368, "w":442, "h":41},
+		"spriteSourceSize": {"x":210,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0212.png": {
+		"frame": {"x":0, "y":1226, "w":482, "h":41},
+		"spriteSourceSize": {"x":170,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0213.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0214.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0215.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0216.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0217.png": {
+		"frame": {"x":0, "y":1086, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0218.png": {
+		"frame": {"x":0, "y":1044, "w":496, "h":41},
+		"spriteSourceSize": {"x":156,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0219.png": {
+		"frame": {"x":0, "y":1184, "w":482, "h":41},
+		"spriteSourceSize": {"x":170,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0220.png": {
+		"frame": {"x":0, "y":1410, "w":440, "h":41},
+		"spriteSourceSize": {"x":212,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0221.png": {
+		"frame": {"x":0, "y":1755, "w":369, "h":42},
+		"spriteSourceSize": {"x":282,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0222.png": {
+		"frame": {"x":0, "y":1982, "w":272, "h":43},
+		"spriteSourceSize": {"x":379,"y":246,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0223.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0224.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0225.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0226.png": {
+		"frame": {"x":517, "y":919, "w":146, "h":46},
+		"spriteSourceSize": {"x":505,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0227.png": {
+		"frame": {"x":548, "y":1606, "w":140, "h":62},
+		"spriteSourceSize": {"x":510,"y":242,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0228.png": {
+		"frame": {"x":669, "y":880, "w":129, "h":85},
+		"spriteSourceSize": {"x":518,"y":241,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0229.png": {
+		"frame": {"x":945, "y":1860, "w":114, "h":104},
+		"spriteSourceSize": {"x":529,"y":242,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0230.png": {
+		"frame": {"x":1035, "y":214, "w":97, "h":116},
+		"spriteSourceSize": {"x":543,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0231.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0232.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0233.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0234.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0235.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0236.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0237.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0238.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0239.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0240.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0241.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0242.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0243.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0244.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0245.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0246.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0247.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0248.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0249.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0250.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0251.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0252.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0253.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0254.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0255.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0256.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0257.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0258.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0259.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0260.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0261.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0262.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0263.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0264.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0265.png": {
+		"frame": {"x":601, "y":1773, "w":137, "h":97},
+		"spriteSourceSize": {"x":506,"y":252,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0266.png": {
+		"frame": {"x":601, "y":1773, "w":137, "h":97},
+		"spriteSourceSize": {"x":506,"y":252,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0267.png": {
+		"frame": {"x":629, "y":1234, "w":137, "h":97},
+		"spriteSourceSize": {"x":506,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0268.png": {
+		"frame": {"x":629, "y":1234, "w":137, "h":97},
+		"spriteSourceSize": {"x":506,"y":247,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0269.png": {
+		"frame": {"x":523, "y":821, "w":145, "h":94},
+		"spriteSourceSize": {"x":499,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0270.png": {
+		"frame": {"x":523, "y":821, "w":145, "h":94},
+		"spriteSourceSize": {"x":499,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0271.png": {
+		"frame": {"x":545, "y":1898, "w":141, "h":95},
+		"spriteSourceSize": {"x":500,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0272.png": {
+		"frame": {"x":545, "y":1898, "w":141, "h":95},
+		"spriteSourceSize": {"x":500,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0273.png": {
+		"frame": {"x":599, "y":1340, "w":138, "h":97},
+		"spriteSourceSize": {"x":502,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0274.png": {
+		"frame": {"x":599, "y":1340, "w":138, "h":97},
+		"spriteSourceSize": {"x":502,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0275.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0276.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0277.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0278.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0279.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0280.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0281.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0282.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0283.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0284.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0285.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0286.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0287.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0288.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0289.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0290.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0291.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0292.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0293.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0294.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0295.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0296.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0297.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0298.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0299.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0300.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0301.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0302.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0303.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0304.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0305.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0306.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0307.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0308.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0309.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0310.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0311.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0312.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0313.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0314.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0315.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0316.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0317.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0318.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0319.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0320.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0321.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0322.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0323.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0324.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0325.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0326.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0327.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0328.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0329.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0330.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0331.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0332.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0333.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0334.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0335.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0336.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0337.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0338.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0339.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0340.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0341.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0342.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0343.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0344.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0345.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0346.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0347.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0348.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0349.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0350.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0351.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0352.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0353.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0354.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0355.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0356.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0357.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0358.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0359.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0360.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0361.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0362.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0363.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0364.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0365.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0366.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0367.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0368.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0369.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0370.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0371.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0372.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0373.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0374.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0375.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0376.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0377.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0378.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0379.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0380.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0381.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0382.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0383.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0384.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0385.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0386.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0387.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0388.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0389.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0390.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0391.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0392.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0393.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0394.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0395.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0396.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0397.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0398.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0399.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0400.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0401.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0402.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0403.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0404.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0405.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0406.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0407.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0408.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0409.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0410.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0411.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0412.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0413.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0414.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0415.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0416.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0417.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0418.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0419.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0420.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0421.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0422.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0423.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0424.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0425.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0426.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0427.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0428.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0429.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0430.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0431.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0432.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0433.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0434.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0435.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0436.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0437.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0438.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0439.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0440.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0441.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0442.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0443.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0444.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0445.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0446.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0447.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0448.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0449.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0450.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0451.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0452.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0453.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0454.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0455.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0456.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0457.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0458.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0459.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0460.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0461.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0462.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0463.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0464.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0465.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0466.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0467.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0468.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0469.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0470.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0471.png": {
+		"frame": {"x":767, "y":1200, "w":129, "h":96},
+		"spriteSourceSize": {"x":512,"y":243,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0472.png": {
+		"frame": {"x":767, "y":1200, "w":129, "h":96},
+		"spriteSourceSize": {"x":512,"y":243,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0473.png": {
+		"frame": {"x":572, "y":1471, "w":139, "h":96},
+		"spriteSourceSize": {"x":504,"y":243,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0474.png": {
+		"frame": {"x":572, "y":1471, "w":139, "h":96},
+		"spriteSourceSize": {"x":504,"y":243,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0475.png": {
+		"frame": {"x":780, "y":410, "w":128, "h":95},
+		"spriteSourceSize": {"x":515,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0476.png": {
+		"frame": {"x":780, "y":410, "w":128, "h":95},
+		"spriteSourceSize": {"x":515,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0477.png": {
+		"frame": {"x":780, "y":410, "w":128, "h":95},
+		"spriteSourceSize": {"x":515,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0478.png": {
+		"frame": {"x":780, "y":410, "w":128, "h":95},
+		"spriteSourceSize": {"x":515,"y":244,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0479.png": {
+		"frame": {"x":1034, "y":499, "w":86, "h":160},
+		"spriteSourceSize": {"x":563,"y":116,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0480.png": {
+		"frame": {"x":1034, "y":499, "w":86, "h":160},
+		"spriteSourceSize": {"x":563,"y":116,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0481.png": {
+		"frame": {"x":1034, "y":499, "w":86, "h":160},
+		"spriteSourceSize": {"x":563,"y":116,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0482.png": {
+		"frame": {"x":1034, "y":499, "w":86, "h":160},
+		"spriteSourceSize": {"x":563,"y":116,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0483.png": {
+		"frame": {"x":1034, "y":499, "w":86, "h":160},
+		"spriteSourceSize": {"x":563,"y":116,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0484.png": {
+		"frame": {"x":1034, "y":499, "w":86, "h":160},
+		"spriteSourceSize": {"x":563,"y":116,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0485.png": {
+		"frame": {"x":970, "y":1393, "w":113, "h":117},
+		"spriteSourceSize": {"x":535,"y":164,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0486.png": {
+		"frame": {"x":970, "y":1393, "w":113, "h":117},
+		"spriteSourceSize": {"x":535,"y":164,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0487.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0488.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0489.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0490.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	},
+	"tangan_bawah0491.png": {
+		"frame": {"x":1047, "y":660, "w":72, "h":154},
+		"spriteSourceSize": {"x":569,"y":245,"w":673,"h":399},
+		"sourceSize": {"w":673,"h":399}
+	}
+
+},
+"meta": {
+	"image": "tangan_bawah.png",
+	"size": {"w": 2048, "h": 2048},
+	"scale": "1"
+}
+}

@@ -1,0 +1,35 @@
+{"frames": {
+
+"eyebrows-color instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":87,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":15},
+	"sourceSize": {"w":87,"h":15}
+},
+"eyebrows-color instance 10001":
+{
+	"frame": {"x":97,"y":0,"w":87,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":15},
+	"sourceSize": {"w":87,"h":15}
+},
+"eyebrows-color instance 10002":
+{
+	"frame": {"x":194,"y":0,"w":87,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":15},
+	"sourceSize": {"w":87,"h":15}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "eyebrows.png",
+	"format": "RGBA8888",
+	"size": {"w":320,"h":60},
+	"scale": "1"
+}
+}

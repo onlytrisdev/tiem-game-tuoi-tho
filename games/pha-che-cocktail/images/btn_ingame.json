@@ -1,0 +1,65 @@
+{
+"frames": {
+	"btn_pour1.png": {
+		"frame": {"x":0, "y":435, "w":109, "h":90},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":90},
+		"sourceSize": {"w":109,"h":90}
+	},
+	"btn_pour2.png": {
+		"frame": {"x":0, "y":807, "w":109, "h":90},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":90},
+		"sourceSize": {"w":109,"h":90}
+	},
+	"btn_pour3.png": {
+		"frame": {"x":0, "y":716, "w":109, "h":90},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":90},
+		"sourceSize": {"w":109,"h":90}
+	},
+	"btn_serve1.png": {
+		"frame": {"x":0, "y":621, "w":109, "h":94},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":94},
+		"sourceSize": {"w":109,"h":94}
+	},
+	"btn_serve2.png": {
+		"frame": {"x":0, "y":526, "w":109, "h":94},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":94},
+		"sourceSize": {"w":109,"h":94}
+	},
+	"btn_serve3.png": {
+		"frame": {"x":0, "y":898, "w":109, "h":91},
+		"spriteSourceSize": {"x":0,"y":3,"w":109,"h":94},
+		"sourceSize": {"w":109,"h":94}
+	},
+	"btn_shake1.png": {
+		"frame": {"x":0, "y":344, "w":109, "h":90},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":90},
+		"sourceSize": {"w":109,"h":90}
+	},
+	"btn_shake2.png": {
+		"frame": {"x":0, "y":253, "w":109, "h":90},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":90},
+		"sourceSize": {"w":109,"h":90}
+	},
+	"btn_shake3.png": {
+		"frame": {"x":0, "y":162, "w":109, "h":90},
+		"spriteSourceSize": {"x":0,"y":0,"w":109,"h":90},
+		"sourceSize": {"w":109,"h":90}
+	},
+	"btn_sound1.png": {
+		"frame": {"x":0, "y":81, "w":111, "h":80},
+		"spriteSourceSize": {"x":0,"y":0,"w":111,"h":80},
+		"sourceSize": {"w":111,"h":80}
+	},
+	"btn_sound2.png": {
+		"frame": {"x":0, "y":0, "w":111, "h":80},
+		"spriteSourceSize": {"x":0,"y":0,"w":111,"h":80},
+		"sourceSize": {"w":111,"h":80}
+	}
+
+},
+"meta": {
+	"image": "btn_ingame.png",
+	"size": {"w": 128, "h": 1024},
+	"scale": "1"
+}
+}

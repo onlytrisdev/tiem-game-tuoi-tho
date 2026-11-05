@@ -1,0 +1,35 @@
+{"frames": {
+
+"glasses-button instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":65,"h":66}
+},
+"glasses-button instance 10001":
+{
+	"frame": {"x":75,"y":0,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":65,"h":66}
+},
+"glasses-button instance 10002":
+{
+	"frame": {"x":150,"y":0,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":65,"h":66}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "glasses_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":240,"h":80},
+	"scale": "1"
+}
+}
