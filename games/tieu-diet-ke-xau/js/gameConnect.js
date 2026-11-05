@@ -1,0 +1,1 @@
+!function(){var e=!1;eventToFire.registerEvent("gameConnect_requireLogin",function(){e||game.isLoggedIn()||(e=!0,window.game.setUp(),window.game.login())})}();

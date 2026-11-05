@@ -1,0 +1,1 @@
+!function e(){"function"==typeof cr_getC2Runtime&&cr_getC2Runtime()&&cr_getC2Runtime().loaderlogos&&cr_getC2Runtime().loaderlogos.logo&&cr_getC2Runtime().loaderlogos.logo.complete&&void 0!==navigator.splashscreen?navigator.splashscreen.hide():setTimeout(e,10)}();
