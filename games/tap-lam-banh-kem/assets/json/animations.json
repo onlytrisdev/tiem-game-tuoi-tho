@@ -1,0 +1,421 @@
+{
+    "flour": {
+        "targetPosition":{
+            "x":535,
+            "y":580
+        },
+
+        "firstKey": "flour_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 7,
+            "repeat": 1,
+            "speed": 45
+        },
+
+        "middleFrames": {
+            "start": 8,
+            "end": 15,
+            "repeat": 4,
+            "speed": 45
+        },
+
+        "endFrames": {
+            "start": 16,
+            "end": 30,
+            "repeat": 1,
+            "speed": 45
+        }
+    },
+
+    "mixer": {
+        "targetPosition":{
+            "x":420,
+            "y":570
+        },
+
+        "firstKey": "mixer_00000.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 1,
+            "repeat": 1,
+            "speed": 24
+        },
+
+        "middleFrames": {
+            "start": 2,
+            "end": 3,
+            "repeat": 15,
+            "speed": 24
+        },
+
+        "endFrames": {
+            "start": 4,
+            "end": 5,
+            "repeat": 1,
+            "speed": 24
+        }
+    },
+
+    "milk": {
+        "targetPosition":{
+            "x":560,
+            "y":585
+        },
+
+        "firstKey": "milk_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 5,
+            "repeat": 1,
+            "speed": 45
+        },
+
+        "middleFrames": {
+            "start": 6,
+            "end": 13,
+            "repeat": 4,
+            "speed": 45
+        },
+
+        "endFrames": {
+            "start": 14,
+            "end": 19,
+            "repeat": 1,
+            "speed": 45
+        }
+    },
+
+    "sugar": {
+        "targetPosition":{
+            "x":540,
+            "y":587
+        },
+
+        "firstKey": "Sugar_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 16,
+            "repeat": 1,
+            "speed": 45
+        },
+
+        "middleFrames": {
+            "start": 17,
+            "end": 25,
+            "repeat": 5,
+            "speed": 45
+        },
+
+        "endFrames": {
+            "start": 26,
+            "end": 30,
+            "repeat": 1,
+            "speed": 45
+        }
+    },
+
+    "vanilla": {
+        "targetPosition":{
+            "x":540,
+            "y":615
+        },
+
+        "firstKey": "vanilla_00000.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 5,
+            "repeat": 1,
+            "speed": 45
+        },
+
+        "middleFrames": {
+            "start": 6,
+            "end": 16,
+            "repeat": 1,
+            "speed": 10
+        },
+
+        "endFrames": {
+            "start": 17,
+            "end": 21,
+            "repeat": 1,
+            "speed": 45
+        }
+    },
+
+    "egg": {
+        "targetPosition":{
+            "x":520,
+            "y":625
+        },
+
+        "firstKey": "eggs_00000.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 7,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "middleFrames": {
+            "start": 8,
+            "end": 15,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 16,
+            "end": 20,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "ladle": {
+        "targetPosition":{
+            "x":425,
+            "y":490
+        },
+
+        "firstKey": "spoon_1_00000.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 1,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "middleFrames": {
+            "start": 2,
+            "end": 3,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 4,
+            "end": 8,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "ladlepoor": {
+        "targetPosition":{
+            "x":0,
+            "y":0
+        },
+
+        "firstKey": "spoon2_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 1,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "middleFrames": {
+            "start": 2,
+            "end": 3,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 4,
+            "end": 16,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "sprinkle": {
+        "targetPosition":{
+            "x":0,
+            "y":0
+        },
+
+        "firstKey": "sprinkle_1_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 1,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "middleFrames": {
+            "start": 2,
+            "end": 3,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 4,
+            "end": 17,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "frosting": {
+        "targetPosition":{
+            "x":0,
+            "y":0
+        },
+
+        "firstKey": "ICING_ANIMATION_RENDER_00000.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 1,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "middleFrames": {
+            "start": 2,
+            "end": 3,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 4,
+            "end": 27,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "spr_star_notdone": {
+        "targetPosition":{
+            "x":0,
+            "y":0
+        },
+
+        "firstKey": "STAR_ANIMATION_00000.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 1,
+            "repeat": 1,
+            "speed": 24
+        },
+
+        "middleFrames": {
+            "start": 2,
+            "end": 3,
+            "repeat": 1,
+            "speed": 24
+        },
+
+        "endFrames": {
+            "start": 4,
+            "end": 23,
+            "repeat": 1,
+            "speed": 24
+        }
+    },
+
+    "oven": {
+        "targetPosition":{
+            "x":875,
+            "y":575
+        },
+
+        "firstKey": "DOOR_ANIMATION_00002.png",
+
+        "startFrames": {
+            "start": 1,
+            "end": 2,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "middleFrames": {
+            "start": 3,
+            "end": 4,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 5,
+            "end": 14,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "clock": {
+        "targetPosition":{
+            "x":1253,
+            "y":747
+        },
+
+        "firstKey": "timer_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 4,
+            "repeat": 3,
+            "speed": 5
+        },
+
+        "middleFrames": {
+            "start": 5,
+            "end": 16,
+            "repeat": 1,
+            "speed": 20
+        },
+
+        "endFrames": {
+            "start": 17,
+            "end": 24,
+            "repeat": 1,
+            "speed": 20
+        }
+    },
+
+    "smoke": {
+        "targetPosition":{
+            "x":230,
+            "y":0
+        },
+
+        "firstKey": "smoke_00.png",
+
+        "startFrames": {
+            "start": 0,
+            "end": 4,
+            "repeat": 1,
+            "speed": 24
+        },
+
+        "middleFrames": {
+            "start": 5,
+            "end": 10,
+            "repeat": 1,
+            "speed": 24
+        },
+
+        "endFrames": {
+            "start": 11,
+            "end": 14,
+            "repeat": 1,
+            "speed": 24
+        }
+    }
+}

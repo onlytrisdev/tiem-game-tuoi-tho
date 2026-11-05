@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+	<languages>
+		<language>en</language>
+		<language>sk</language>
+		<language>es</language>
+		<language>cz</language>
+		<language>de</language>
+		<language>it</language>
+		<language>fr</language>
+		<language>ru</language>
+		<language>pt</language>
+		<language>tr</language>
+	</languages>
+	<strings>
+		<string id="PAUSE">
+			<en>Tạm dừng</en>
+			<es>Pausa</es>
+			<de>Pause</de>
+			<it>Pausa</it>
+			<fr>Pause</fr>
+			<pt>Pausar</pt>
+			<ru>Пауза</ru>
+		</string>
+
+        <string id="INSTRUCTIONS">
+            <en>Hướng dẫn</en>
+            <de>Anleitung</de>
+            <es>Instrucciones</es>
+            <fr>Instructions</fr>
+            <it>Istruzioni</it>
+            <pt>Instruções</pt>
+            <ru>Инструкции</ru>
+        </string>
+
+		<string id="INSTRUCTIONS_TEXT">
+			<en>Chiến thắng trong các trận đấu và cải thiện kỹ năng của bạn bằng số tiền bạn kiếm được. Tránh những cú đấm của đối thủ. Thu thập tất cả các danh hiệu để hoàn thành trò chơi. Nhấn vào các nút cho các hành động tương ứng.</en>
+            <de>Gewinne Kämpfe, indem du deinen Gegner k.o. schlägst. Finde deine eigene Strategie mit verschiedenen Angriffen, Blocks und Bewegungen und schreibe deine eigene Geschichte. Trainiere deine Fähigkeiten, um an besseren Turnieren teilzunehmen.</de>
+            <es>Deja KO a tus rivales para ganar los combates. Usa varios ataques, bloqueos y movimientos para crear tu propia estrategia y desarrollar tu propia historia. Perfecciona tus habilidades con recompensas para competir en torneos mejores.</es>
+            <fr>Remportez des matchs en mettant votre adversaire KO. Utilisez diverses attaques, blocages et coups pour établir votre propre stratégie et créer votre propre histoire. Entraînez-vous et améliorez vos capacités pour participer à de meilleurs tournois.</fr>
+            <it>Vinci gli incontri mandando al tappeto il tuo avversario. Usa vari attacchi, parate e movimenti per creare la tua strategia e dare forma alla tua storia. Allena le tue abilità per competere in tornei più importanti.</it>
+			<pt>Ganhe partidas nocauteando seu oponente. Use vários ataques, bloqueios e movimentos para criar sua própria estratégia e formar sua própria história. Treine suas habilidades para competir em torneios melhores.</pt>
+			<ru>Побеждайте в матчах, нокаутируя соперника. Используйте различные атаки, блокировки и движения, чтобы создать свою собственную стратегию и сформировать свою собственную историю. Тренируйте свои способности, чтобы участвовать в лучших турнирах.</ru>
+		</string>
+
+		<string id="CLOSE">
+			<en>Đóng</en>
+            <de>Schließen</de>
+            <es>Cerrar</es>
+            <fr>fermer</fr>
+            <it>Chiudi</it>
+			<pt>fechar</pt>
+            <ru>Закрыть</ru>
+		</string>
+
+        <string id="UPGRADE">
+            <en>Nâng cấp</en>
+            <de>Verbesserung</de>
+            <es>Mejorar</es>
+            <fr>amélioration</fr>
+            <it>Migliora</it>
+            <pt>Melhorar</pt>
+            <ru>Обновить</ru>
+        </string>
+
+        <string id="CONGRATULATIONS">
+            <en>Xin chúc mừng</en>
+            <de>GLÜCKWUNSCH</de>
+            <es>Enhorabuena</es>
+            <fr>Félicitations</fr>
+            <it>Complimenti</it>
+            <pt>Parabéns</pt>
+            <ru>ПОЗДРАВЛЯЕМ</ru>
+        </string>
+
+        <string id="STAY">
+            <en>Ở lại</en>
+            <de>Bleibe</de>
+            <es>Quedarse</es>
+            <fr>Rester</fr>
+            <it>Rimanere</it>
+            <pt>Ficar</pt>
+            <ru>Оставаться</ru>
+        </string>
+
+        <string id="MAX">
+            <en>TỐI ĐA</en>
+            <de>Max.</de>
+            <es>Máx.</es>
+            <fr>MAX</fr>
+            <it>MAX</it>
+            <pt>Máx</pt>
+            <ru>Макс.</ru>
+        </string>
+
+        <string id="OK">
+            <en>OK</en>
+            <de>OK</de>
+            <es>Aceptar</es>
+            <fr>OK</fr>
+            <it>OK</it>
+            <pt>OK</pt>
+            <ru>ОК</ru>
+        </string>
+
+        <string id="VOID">
+            <en></en>
+            <de></de>
+            <es></es>
+            <fr></fr>
+            <it></it>
+            <pt></pt>
+        </string>
+
+        <string id="MOVEMENT">
+            <en>Di chuyển</en>
+            <de>Bewegung</de>
+            <es>Movimiento</es>
+            <fr>Mouvement</fr>
+            <it>Movimento</it>
+            <pt>Movimento</pt>
+            <ru>Движение</ru>
+        </string>
+
+        <string id="PLAY">
+            <en>Chơi</en>
+            <de>Spielen</de>
+            <es>Jugar</es>
+            <fr>Jouer</fr>
+            <it>Gioca</it>
+            <pt>Reproduzir</pt>
+            <ru>Играть</ru>
+        </string>
+
+        <string id="WIN_X">
+            <en>Chiến thắng [X]$</en>
+            <de>Gewinne [X]$</de>
+            <es>Gana [X]$</es>
+            <fr>Gagnez [X]$</fr>
+            <it>Vinci [X]$</it>
+            <pt>Ganhe $[X]</pt>
+            <ru>Победа [X]$</ru>
+        </string>
+
+        <string id="PAY_X_TO_UNLOCK">
+            <en>Trả [X]$\nđể mở khóa</en>
+            <de>Zahle zum\nFreischalten [X]$</de>
+            <es>Paga [X]$\npara desbloquear</es>
+            <fr>Dépensez [X]$\npour déverrouiller</fr>
+            <it>Paga [X]$\nper sbloccare</it>
+            <pt>Pague $[X]\npara desbloquear</pt>
+            <ru>Заплатите [X]$, чтобы разблокировать</ru>
+        </string>
+
+        <string id="WIN_X_TROPHY_TO_UNLOCK">
+            <en>Chiến thắng cúp [X] \nđể mở khóa</en>
+            <de>Gewinne zum\nFreischalten [X] Pokale</de>
+            <es>Gana [X] trofeo\npara desbloquear</es>
+            <fr>Gagnez [X] trophées\npour déverrouiller</fr>
+            <it>Vinci [X] trofei\nper sbloccare</it>
+            <pt>Ganhe [X] troféus\npara desbloquear</pt>
+            <ru>Выиграйте [X]\nтрофеев, чтобы\nразблокировать</ru>
+        </string>
+
+        <string id="UNDERGROUND">
+            <en>Thế giới ngầm</en>
+            <de>Untergrund</de>
+            <es>Clandestino</es>
+            <fr>Clandestin</fr>
+            <it>Clandestino</it>
+            <pt>Clandestino</pt>
+            <ru>Незаконные</ru>
+        </string>
+
+        <string id="CLUB">
+            <en>Câu lạc bộ</en>
+            <de>Club</de>
+            <es>Club</es>
+            <fr>Club</fr>
+            <it>Club</it>
+            <pt>Clube</pt>
+            <ru>Клуб</ru>
+        </string>
+
+        <string id="TOURNAMENT">
+            <en>Giải dấu</en>
+            <de>Turnier</de>
+            <es>Torneo</es>
+            <fr>Tournoi</fr>
+            <it>Torneo</it>
+            <pt>Torneio</pt>
+            <ru>Турнир</ru>
+        </string>
+
+        <string id="CHAMPIONSHIP">
+            <en>Chức vô địch</en>
+            <de>Meisterschaft</de>
+            <es>Campeonato</es>
+            <fr>Championnat</fr>
+            <it>Campionato</it>
+            <pt>Campeonato</pt>
+            <ru>Чемпионат</ru>
+        </string>
+
+        <string id="UNLOCKED_IN_X">
+            <en>Mở khóa sau\n[X]</en>
+            <de>Freigeschaltet\nin [X]</de>
+            <es>Se desbloquea\nen [X]</es>
+            <fr>Déverrouillé\ndans [X]</fr>
+            <it>Si sblocca\ntra [X]</it>
+            <pt>Desbloqueado\nem [X]</pt>
+            <ru>Разблокируется\nза [X]</ru>
+        </string>
+
+        <string id="X_WINS_TO_TROPHY">
+            <en>[X] nhiều chiến thắng hơn\ncúp</en>
+            <de>Noch [X] Siege\nbis zum Pokal</de>
+            <es>[X] victorias más\npara el trofeo</es>
+            <fr>[X] autres victoires\npour le trophée</fr>
+            <it>Mancano altre [X]\nvittorie al trofeo</it>
+            <pt>[X] mais vitórias\npara ter o troféu</pt>
+            <ru>Еще [X] побед\nдо трофея</ru>
+        </string>
+
+        <string id="1_WIN_TO_TROPHY">
+            <en>1 trận thắng nữa\ncúp</en>
+            <de>Noch 1 Sieg\nbis zum Pokal</de>
+            <es>1 victoria más\npara el trofeo</es>
+            <fr>1 autre victoire\npour le trophée</fr>
+            <it>manca 1 altra\nvittoria al trofeo</it>
+            <pt>Mais 1 vitória para\nter o troféu</pt>
+            <ru>Еще 1 победа\nдо трофея</ru>
+        </string>
+
+        <string id="UNLOCK">
+            <en>Mở khóa</en>
+            <de>Freischalten</de>
+            <es>Desbloquear</es>
+            <fr>Déverrouiller</fr>
+            <it>Sblocca</it>
+            <pt>Desbloquear</pt>
+            <ru>Разблокировать</ru>
+        </string>
+
+        <string id="LOCKED">
+            <en>Đã khóa</en>
+            <de>Gesperrt</de>
+            <es>Bloqueado</es>
+            <fr>Verrouillé</fr>
+            <it>Bloccato</it>
+            <pt>Bloqueado</pt>
+            <ru>Заблокирован</ru>
+        </string>
+
+        <string id="ONE_CHANCE_ONLY">
+            <en>một cơ hội duy nhất</en>
+            <de>Nur eine Chance</de>
+            <es>Solo una oportunidad</es>
+            <fr>Une chance seulement</fr>
+            <it>Solo una possibilità</it>
+            <pt>Apenas uma chance</pt>
+            <ru>Только один шанс</ru>
+        </string>
+
+        <string id="POWER">
+            <en>Sức mạnh</en>
+            <de>Leistung</de>
+            <es>potencia</es>
+            <fr>puissance</fr>
+            <it>potenza</it>
+            <pt>potência</pt>
+            <ru>Сила</ru>
+        </string>
+
+        <string id="DEFENSE">
+            <en>Phòng thủ</en>
+            <de>Verteidigung</de>
+            <es>Defensa</es>
+            <fr>Défense</fr>
+            <it>Difesa</it>
+            <pt>Defesa</pt>
+            <ru>Защита</ru>
+        </string>
+
+        <string id="HEALTH">
+            <en>Máu</en>
+            <de>Gesundheit</de>
+            <es>Salud</es>
+            <fr>Santé</fr>
+            <it>Salute</it>
+            <pt>Saúde</pt>
+            <ru>Здоровье</ru>
+        </string>
+
+        <string id="REGEN">
+            <en>Tái tạo</en>
+            <de>Regeneration</de>
+            <es>Regeneración</es>
+            <fr>Régénération</fr>
+            <it>Rigenerazione</it>
+            <pt>Regeneração</pt>
+            <ru>Регенерация</ru>
+        </string>
+
+        <string id="FIGHT">
+            <en>Chiến đấu</en>
+            <de>Kampf</de>
+            <es>Lucha</es>
+            <fr>Combat</fr>
+            <it>Lotta</it>
+            <pt>Luta</pt>
+            <ru>Бой</ru>
+        </string>
+
+        <string id="FIGHT_OVER">
+            <en>Chiến đấu kết thúc</en>
+            <de>Kampf vorbei</de>
+            <es>Fin del combate</es>
+            <fr>Fin du combat</fr>
+            <it>Incontro terminato</it>
+            <pt>Fim da luta</pt>
+            <ru>Матч окончен</ru>
+        </string>
+
+        <string id="TIME_OUT">
+            <en>Hết giờ</en>
+            <de>Timeout</de>
+            <es>Tiempo agotado</es>
+            <fr>Temps écoulé</fr>
+            <it>Tempo scaduto</it>
+            <pt>Tempo esgotado</pt>
+            <ru>Тайм-аут</ru>
+        </string>
+
+        <string id="WIN">
+            <en>Chiến thắng</en>
+            <de>Sieg</de>
+            <es>ha ganado</es>
+            <fr>gagné</fr>
+            <it>hai vinto</it>
+            <pt>tinha vencido</pt>
+            <ru>победили</ru>
+        </string>
+
+        <string id="LOSE">
+            <en>Thua</en>
+            <de>Niederlage</de>
+            <es>ha perdido</es>
+            <fr>perdu</fr>
+            <it>hai perso</it>
+            <pt>tinha perdido</pt>
+            <ru>проиграли</ru>
+        </string>
+
+        <string id="YOU">
+            <en>Bạn</en>
+            <de>Sie</de>
+            <es>Usted</es>
+            <fr>Tu</fr>
+            <it>Voi</it>
+            <pt>Tu</pt>
+            <ru>Вы</ru>
+        </string>
+
+        <string id="CONTROLS_BTN_A">
+            <en>Cú đấm hạ gục. Tấn công có khả năng KO đối thủ.</en>
+            <de>KO-Schlag. Angriff hat die Chance, den Gegner k.o. zu schlagen.</de>
+            <es>Golpe de KO. El ataque tiene probabilidades de dejar KO al rival.</es>
+            <fr>Coup de poing. L'attaque a des chances de mettre l'adversaire KO.</fr>
+            <it>Pugno letale. Quest'attacco può mettere KO l'avversario.</it>
+            <pt>Soco de nocaute. O ataque tem a possibilidade de nocautear o oponente.</pt>
+            <ru>Нокдаун. Вы можете нокаутировать противника.</ru>
+        </string>
+
+        <string id="CONTROLS_BTN_S">
+            <en>Chặn các đòn tấn công của đói thủ. Chặn sẽ thành công hơn ở cấp độ phòng thủ cao hơn.</en>
+            <de>Gegnerische Angriffe blocken. Blocks sind bei besserer Verteidigung erfolgreicher.</de>
+            <es>Bloqueo de ataques enemigos. El bloqueo tendrá más éxito cuanto mejor sea tu nivel de defensa.</es>
+            <fr>Blocage des attaques ennemies. Le blocage sera plus efficace à un niveau de défense plus élevé.</fr>
+            <it>Para gli attacchi nemici. Più alto il livello di difesa, maggiori le probabilità di successo della parata.</it>
+            <pt>Bloqueio de ataques inimigos. O bloqueio terá mais sucesso em um nível de defesa mais alto.</pt>
+            <ru>Блокируйте атаки противника. Блок будет более эффективным на более высоких уровнях защиты.</ru>
+        </string>
+
+        <string id="CONTROLS_BTN_D">
+            <en>Cú đấm móc. Tấn công có khả năng đẩy lùi đối thủ.</en>
+            <de>Rückstoß-Schlag. Angriff hat die Chance, den Gegner zurückzudrängen.</de>
+            <es>Golpe hacia atrás. El ataque tiene probabilidades de golpear hacia atrás al rival.</es>
+            <fr>Revers. L'attaque a des chances de repousser l'adversaire.</fr>
+            <it>Pugno respingente. Quest'attacco può allontanare l'avversario.</it>
+            <pt>Soco de nocaute. O ataque tem a possibilidade de nocautear o oponente.</pt>
+            <ru>Отбрасывающий удар. Возможность отбросить противника.</ru>
+        </string>
+
+        <string id="STAT_POWER">
+            <en>các đòn tấn công mạnh mẽ hơn</en>
+            <de>stärkere Angriffe</de>
+            <es>ataques más potentes</es>
+            <fr>attaques plus puissantes</fr>
+            <it>attacchi più potenti</it>
+            <pt>ataques mais poderosos</pt>
+            <ru>более мощные удары</ru>
+        </string>
+
+        <string id="STAT_DEFENSE">
+            <en>ngăn chặn tốt hơn các ĐÒN tấn công</en>
+            <de>bessere Blocks</de>
+            <es>mejor bloqueo de ataques</es>
+            <fr>meilleur blocage des attaques</fr>
+            <it>migliore parata dei colpi</it>
+            <pt>melhor bloqueio de ataques</pt>
+            <ru>лучшее блокирование ударов</ru>
+        </string>
+
+        <string id="STAT_HEALTH">
+            <en>sức đề kháng cơ thể nhiều hơn</en>
+            <de>mehr Körperwiderstand</de>
+            <es>más resistencia corporal</es>
+            <fr>plus de résistance corporelle</fr>
+            <it>maggiore resistenza del corpo</it>
+            <pt>mais resistência do corpo</pt>
+            <ru>более прочный корпус</ru>
+        </string>
+
+        <string id="STAT_REGEN">
+            <en>tái tạo năng lượng nhanh hơn</en>
+            <de>schnellere Energieregeneration</de>
+            <es>regeneración de energía más rápida</es>
+            <fr>régénération d'énergie plus rapide</fr>
+            <it>rigenerazione dell'energia più rapida</it>
+            <pt>regeneração de energia mais rápida</pt>
+            <ru>более быстрая регенерация энергии</ru>
+        </string>
+
+        <string id="pts">
+            <en>pts.</en>
+            <de>Pkte</de>
+            <es>pts.</es>
+            <fr>pts.</fr>
+            <it>pti.</it>
+            <pt>pts.</pt>
+            <ru>оч.</ru>
+        </string>
+
+        <string id="FIGHT_MONEY">
+            <en>TIỀN CHIẾN ĐẤU</en>
+            <de>KAMPFGELD</de>
+            <es>DINERO DE LUCHA</es>
+            <fr>FIGHT MONEY</fr>
+            <it>SOLDI DALLA LOTTA</it>
+            <pt>DINHEIRO DA LUTA</pt>
+            <ru>ДЕНЬГИ ЗА БОЙ</ru>
+        </string>
+
+        <string id="HITS_LANDED">
+            <en>HITS LANDED</en>
+            <de>ERZIELTE TREFFER</de>
+            <es>GOLPES DADOS</es>
+            <fr>COUPS PORTÉS</fr>
+            <it>COLPI A SEGNO</it>
+            <pt>GOLPES DADOS</pt>
+            <ru>НАНЕСЕНО УДАРОВ</ru>
+        </string>
+
+        <string id="HITS_BLOCKED">
+            <en>ĐÃ CHẶN ĐÒN</en>
+            <de>GEBLOCKTE SCHLÄGE</de>
+            <es>GOLPES BLOQUEADOS</es>
+            <fr>COUPS BLOQUÉS</fr>
+            <it>COLPI BLOCCATI</it>
+            <pt>GOLPES BLOQUEADOS</pt>
+            <ru>УДАРОВ ЗАБЛОКИРОВАНО</ru>
+        </string>
+
+
+        <string id="COMBOS_LANDED">
+            <en>COMBOS LANDED</en>
+            <de>GEBLOCKTE COMBOS</de>
+            <es>COMBOS BLOQUEADOS</es>
+            <fr>COMBOS BLOQUÉS</fr>
+            <it>COMBO BLOCCATE</it>
+            <pt>COMBOS BLOQUEADOS</pt>
+            <ru>КОМБО ЗАБЛОКИРОВАНО</ru>
+        </string>
+
+        <string id="KNOCKDOWNS">
+            <en>KNOCKDOWNS</en>
+            <de>KOs</de>
+            <es>KO</es>
+            <fr>KO</fr>
+            <it>KOs</it>
+            <pt>KOs</pt>
+            <ru>НОКДАУНЫ</ru>
+        </string>
+
+        <string id="CLAIM">
+            <en>NHẬN</en>
+            <de>Abholen</de>
+            <es>Canjear</es>
+            <fr>Réclamer</fr>
+            <it>Riscuoti</it>
+            <pt>Reivindicar</pt>
+            <ru>ПОЛУЧИТЬ</ru>
+        </string>
+
+        <string id="TROPHY">
+            <en>CÚP</en>
+            <de>Pokal</de>
+            <es>Trofeo</es>
+            <fr>Trophée</fr>
+            <it>Trofeo</it>
+            <pt>Troféu</pt>
+            <ru>Трофей</ru>
+        </string>
+
+        <string id="PLAY">
+            <en>CHƠI</en>
+            <de>Spielen</de>
+            <es>Jugar</es>
+            <fr>Jouer</fr>
+            <it>Gioca</it>
+            <pt>Reproduzir</pt>
+            <ru>Играть</ru>
+        </string>
+
+    </strings>
+
+</stringresources>

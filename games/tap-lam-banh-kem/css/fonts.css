@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Curse Casual';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/curse_casual.eot');              /* IE 5-8 */
+    src: local('☺'),                             /* sneakily trick IE */
+    url('../assets/fonts/curse_casual.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+    url('../assets/fonts/curse_casual.ttf') format('truetype'), /* Opera, Safari */
+    url('../assets/fonts/curse_casual.svg#font') format('svg'); /* iOS */
+}

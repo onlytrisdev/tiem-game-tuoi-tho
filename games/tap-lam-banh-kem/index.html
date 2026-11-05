@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--<html manifest="cupcake_time.manifest">-->
+<head>
+    <title>Tập làm bánh kem</title>
+
+    <meta charset="utf-8"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <meta name="application-name" content="Game Template"/>
+    <meta name="msapplication-TileColor" content="#5BCBFD"/>
+    <meta name="msapplication-square70x70logo" content="assets/images/icons/AppIcon70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="assets/images/icons/AppIcon150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="assets/images/icons/AppIcon310x150.png"/>
+
+    <link rel="apple-touch-icon-precomposed"                    href="assets/images/icons/AppIcon60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76"      href="assets/images/icons/AppIcon76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"    href="assets/images/icons/AppIcon60x60@2x.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"    href="assets/images/icons/AppIcon76x76@2x.png" />
+    <link rel="icon" type="image/png"                           href="assets/images/icons/AppIcon76x76@2x.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>
+<body style="overflow:hidden" oncontextmenu="return false">
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '727381654001741',
+                xfbml      : true,
+                version    : 'v2.0'
+            });
+        };
+
+        (function(d, s, id){
+           
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="application/javascript" language="JavaScript">
+        var Booster = window.Booster || {};
+        window.Booster.ready = function() {
+            window.Booster.__initialized = true;
+        }
+    </script>
+
+    <script id="booster-api" type="text/javascript" src="./api.js"></script>
+    <script src="js/game.min.js"></script>
+    <canvas id="game_background"></canvas>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Pokemon</title>
+
+<meta name="robots" content="noindex,nofollow" />
+
+<meta name="description" content="Pokemon site" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<script>
+
+	WebFont.load({
+
+		google: {
+
+			families: ['Exo+2:400,800,800italic,400italic:latin,latin-ext,cyrillic']
+
+		}
+
+	});
+
+        </script>
+<link rel="stylesheet" href="_ui/css/minigame-mobile.css" />
+<script src="_ui/js/vendor/modernizr.custom.js"></script>
+<script>
+
+        window.pokemonUI = window.pokemonUI || {};
+
+     </script>
+<script type="text/javascript" src="media/MD5/MD5.js"></script>
+<script type="text/javascript" src="media/Localisation/Language.js"></script>
+<script>ImpactPrefix="";</script>
+<style type="text/css">
+
+        html,body {
+
+            background-color: #333;
+
+            margin: 0px;
+
+            width: 640px;
+
+            padding: 0px;
+
+        }
+
+
+
+        body {
+
+            transform-origin: 0px 0px;
+
+            -ms-transform-origin: 0px 0px;
+
+            -webkit-transform-origin: 0px 0px;
+
+            overflow: hidden;
+
+        }
+
+
+
+        #canvas {
+
+            position: absolute;
+
+            top: 0px;
+
+            left: 0px;
+
+            right: 0px;
+
+            bottom: 0px;
+
+            margin: 0px;
+
+            padding: 0px;
+
+        }
+
+
+
+        .hidden {
+
+            display: none;
+
+        }
+
+    </style>
+<script>
+
+    window.pokemonUI.isMobile=true;
+
+    </script>
+<script>
+
+		// START: GOOGLE TAG MANAGER - PAGE DETAILS
+
+		gDataLayer = [{
+
+			'pageCat': 'Page Category',
+
+			'logState': 'Not Logged In'
+
+		}];
+
+		// Path the the _ui folder
+
+		window.pokemonUI['ui-path'] = '_ui/';
+
+		//END: GOOGLE TAG MANAGER - PAGE DETAILS
+
+
+
+		// PAGE DATA
+
+		window.pokemonUI.api = {
+
+
+
+		};
+
+
+
+		window.pokemonUI.dictionary = window.pokemonUI.dictionary || {};
+
+		window.pokemonUI.dictionary.minigame = {}; // placeholder for async loaded loc strings
+
+		   window.pokemonUI.cookie = {
+
+			        set: function (name, value, days) {
+
+			            if (days) {
+
+			                var date = new Date();
+
+			                date.setTime(date.getTime()+(days*24*60*60*1000));
+
+			                var expires = "; expires="+date.toGMTString();
+
+			            }
+
+			            else var expires = "";
+
+			            document.cookie = name+"="+value+expires+"; path=/";
+
+			        },
+
+
+
+			        get:function(name){
+
+			            var nameEQ = name + '=',
+
+			                ca = document.cookie.split(';'),
+
+			                c, i = 0, ii = 0;
+
+
+
+			            for(i = 0, ii = ca.length; i < ii; i++) {
+
+			                c = ca[i];
+
+
+
+			                while(c.charAt(0) === ' '){
+
+			                    c = c.substring(1, c.length);
+
+			                }
+
+
+
+			                if(c.indexOf(nameEQ) === 0){
+
+			                    var value = c.substring(nameEQ.length, c.length);
+
+			                    if (value.charAt(0) == '"' && value.charAt(value.length-1) == '"') {
+
+			                        value = value.substring(1,value.length-1);
+
+			                    }
+
+			                    return value;
+
+			                }
+
+			            }
+
+			            return null;
+
+			        }
+
+			    };
+
+			    
+
+			    window.pokemonUI.cookie.set("django_language", "en", 365);
+
+			    
+
+
+
+	
+
+    
+
+
+
+window.pokemonUI.game = {
+
+  "id": "108", // used for analytics
+
+
+
+    "module": "game.min.js",
+
+
+
+}
+
+window.pokemonUI.popUps = {
+
+	'loginWindow':"#minigame-auth-error-modal",
+
+	'tokenEarnedWindow':"#minigame-tokens-earned-modal",
+
+	'tokenLimitWindow':"#minigame-token-limit-modal",
+
+	'tokenErrorWindow':"#minigame-data-error-modal"
+
+} 
+
+
+
+
+
+	</script>
+<script data-main="_ui/js/minigame-mobile.js" src="_ui/js/vendor/require.js"></script>
+</head>
+<body class="us fluid custom-form-elements">
+
+<div id="bigdiv" class='hidden' style='position: absolute; margin: 0px; padding: 0px; top: 0px; left: 0px; background-color: transparent'>&nbsp;</div>
+<canvas id="canvas"></canvas>
+
+<div id="game-rotate">
+<div class="paused-wrapper">
+<h2>Game Paused</h2>
+<div class="icon-rotate"></div>
+<h3>Please rotate your device to continue</h3>
+<a href="" id="btn-quit-minigame" class="button no-arrow button-white">Quit Game</a>
+</div>
+</div>
+<div id="minigame-auth-error-modal" class="popup user-alert">
+<div class="content">
+<h3>Login Required</h3>
+<p>You must be signed in to save your high score. Would you like to sign in for the next game?</p>
+<a href="/us/pokemon-trainer-club/login" class="button no-arrow button-green sign-in">Sign In</a>
+<a href="" class="button no-arrow button-red closeBtn">No Thanks</a>
+</div>
+</div>
+<div id="minigame-tokens-earned-modal" class="popup user-alert">
+<div class="content">
+<h3>Tokens Earned</h3>
+<p>You've earned <span class='token-count'></span> Trainer Tokens!</p>
+<a href="" class="button no-arrow button-green closeBtn">OK</a>
+</div>
+</div>
+<div id="minigame-token-limit-modal" class="popup user-alert">
+<div class="content">
+<h3>Daily total reached</h3>
+<p></p>
+<a href="" class="button no-arrow button-green closeBtn">OK</a>
+</div>
+</div>
+<div id="minigame-data-error-modal" class="popup user-alert">
+<div class="content">
+<h3>Error</h3>
+<p>There was a problem sending or receiving game data from the server. Please try again later.</p>
+<a href="" class="button no-arrow button-green closeBtn">OK</a>
+</div>
+</div>
+<div id='popupScreen' class="popupScreen"></div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"ba34eb72cb","agent":"js-agent.newrelic.com/nr-768.min.js","transactionName":"MgFaZkVVWBBXABIPWAtLfkdZV0IKWQ1JC1YMChZUQlpMDFgGSBBeABNLCFNRQgJfDw==","applicationID":"1087113,1087114","errorBeacon":"bam.nr-data.net","applicationTime":128}</script>
+</body>
+</html>

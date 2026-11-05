@@ -1,0 +1,73 @@
+<!doctype html><html><head><script src="../../assets/vendor/clean-runtime.js?v=4"></script><meta charset="utf-8"><title>Webpack App</title><script src="../../assets/vendor/jquery-1.9.1.min.js"></script><script src="./scripts/minified.js"></script><style>@keyframes ermite-animation {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.6;
+            }
+        }
+        #ermite {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-size: 3em;
+            color: #ff0099;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-weight: bold;
+            animation: ermite-animation 1s infinite ease-out;
+            animation-direction: alternate;
+        }
+
+        html,body{
+            height:100%;
+            color: #3f3f3f;
+            /*background: #b8c5b3;*/
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            position: relative;
+            font-family: 'American Typewriter','Marker Felt';
+            overflow: hidden;
+            background: rgba(0,0,0,0.1);
+        }
+        #root {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        #advParent {
+            width: 100%;
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            display: flex;
+            justify-content: center;
+        }
+        #advBottom {
+            align-items: flex-end;
+            justify-content: center;
+        }</style><script>window.yaContextCb=window.yaContextCb||[]</script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head><body><div id="root"></div><div id="ermite">Ermite Games</div><div id="advParent"><div id="advBottom" style="width: 100%;height:0;display: none;z-index: 100;"></div></div>
+            
+            
+</body><script>if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    // console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                });
+        });
+
+    }</script></html>

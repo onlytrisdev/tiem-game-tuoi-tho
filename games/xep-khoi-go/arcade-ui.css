@@ -1,0 +1,143 @@
+/* Arcade — logo + nút BXH ẩn (Phaser kích hoạt click) */
+
+#gv-btn-leaderboard {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  left: -9999px;
+  top: -9999px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: transparent;
+}
+
+#gv-btn-leaderboard img {
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+/* Logo Arcade — góc dưới trái; hiện 5s / ẩn 5s; vệt sáng lướt (mask theo SVG, không glow) */
+.arcade-logo {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  z-index: 10040;
+  width: 56px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none;
+  filter: none;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  display: block;
+  overflow: hidden;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+.arcade-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  pointer-events: none;
+  filter: none;
+}
+
+/* Vệt sáng lướt trái → phải; mask = logo SVG nên chỉ sáng trên chữ, không tạo hộp nền */
+.arcade-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.15) 44%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.15) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  animation: gv-logo-sweep 10s linear infinite;
+}
+
+/* 10s: hiện ~5s → ẩn ~5s */
+@keyframes gv-logo-cycle {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  45% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Trong 5s hiện: vệt sáng lướt 2 lần qua toàn logo */
+@keyframes gv-logo-sweep {
+  0%,
+  4% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  22% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  24% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  28% {
+    opacity: 1;
+  }
+  44% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  46%,
+  100% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arcade-logo {
+    animation: none;
+    opacity: 0.95;
+  }
+
+  .arcade-logo::after {
+    animation: none;
+    display: none;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Chinh Phục Thế Giới</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="format-detection" content="telephone-no" />
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        
+        <script>
+            window.GOOGLE_ANALYTICS_KEY = "1:231713697317:web:6bea8945b5b7ece78719cc";
+            window.GOOGLE_ANALYTICS_APP_VERSION = "G-BPTQG2XDY5";
+            console.log("Google analytics key: " + window.GOOGLE_ANALYTICS_KEY + ".");
+            console.log("App version: " + window.GOOGLE_ANALYTICS_APP_VERSION + ".");
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function gtag() {
+                dataLayer.push(arguments);
+            };
+            gtag("js", new Date());
+        </script>
+        <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+        <style>
+            body,
+            html {
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
+                background: black;
+            }
+
+            #game-root {
+                position: absolute;
+            }
+
+            #game-canvas,
+            #game-root {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script>
+            (function (b) {
+                var _loaded = 0;
+                Object.defineProperty(b, "loaded", {
+                    set: function (v) {
+                        _loaded = v;
+                    },
+                    get: function () {
+                        return _loaded;
+                    },
+                });
+                b.onLoaded = function (params) {
+                    b.ready = true;
+                    while (b.cbc.length) {
+                        var cb = b.cbc.pop();
+                        cb && cb(params);
+                    }
+                };
+                YaGames.init()
+                    .then(function (yasdk) {
+                        b.params = b.params || {};
+                        b.params.yasdk = yasdk;
+                        b.onLoaded(yasdk);
+                    })
+                    .catch(function (e) {
+                        console.error(e);
+                    });
+            })((window.__diffbus = { ready: false, cbc: [], params: undefined }));
+        </script>
+        <script defer="defer" src="main.js"></script>
+        <link href="main.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="game-root"><canvas id="game-canvas"></canvas></div>
+        
+    
+</body>
+</html>

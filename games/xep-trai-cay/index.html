@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' />
+
+    <title>Xếp trái cây</title>
+
+	<script src="fbinstant.6.3.js"></script>
+
+    <link href="app.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="createjs-2014.12.12.min.js"></script>
+
+    <script src="lib/viewporter.js"></script>
+
+    
+
+    <script src="astro.js"></script>
+	
+</head>
+
+<body>
+    <div id="viewporter">
+
+        <div id="canvasHolder" style="position: absolute">
+            <canvas id="canvas" width="640" height="1200" style="position: absolute"></canvas>
+        </div>
+
+        <div id="portraitLock" class="portraitLock">
+            <img class="rotatePhoneIcon" src="assets/lock.jpg" />
+        </div>
+    </div>
+	
+	<script type="text/javascript">
+        FBInstant.initializeAsync().then(function() {
+            
+            var len = 100;
+            for (var i = 0; i < len; i++) {
+                var progress = ((i + 1) / len) * 100;
+                FBInstant.setLoadingProgress(progress);
+            }
+            FBInstant.startGameAsync().then(function() {
+                //game.start();
+            });
+        });
+
+        FBInstant.onPause(function() {})
+		
+    </script>
+	
+	
+	
+	
+	<script type="text/javascript">
+   window.SDK_OPTIONS = {
+      gameId: "q44gwsdhfya9ojcdckc912bame38dkf4",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+	
+</body>
+
+</html>
