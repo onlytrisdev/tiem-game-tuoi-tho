@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="jyoon1.png">
+  <SubTexture name="元件 10000" x="0" y="0" width="178" height="184" frameX="-6" frameY="-2" frameWidth="234" frameHeight="201" hitPoint="13,21 12,168 185,175 180,39 180,26" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10001" x="178" y="0" width="227" height="192" frameX="-3" frameY="0" frameWidth="234" frameHeight="201"/>
+  <SubTexture name="元件 10002" x="0" y="192" width="228" height="198" frameX="-2" frameY="-2" frameWidth="234" frameHeight="201"/>
+  <SubTexture name="元件 10003" x="228" y="192" width="234" height="198" frameX="0" frameY="-3" frameWidth="234" frameHeight="201"/>
+</TextureAtlas>

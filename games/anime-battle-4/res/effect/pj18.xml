@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="pj18.png" px="-130" py="-100" hrad="0" end="7">
+  <SubTexture name="元件 50000" x="0" y="0" width="340" height="298" hitPoint="-82,5 -8,-59 129,-55 217,-30 211,78 119,188 -49,198 -96,189"/>
+  <SubTexture name="元件 50001" x="0" y="298" width="340" height="298" hitPoint="-120,22 -5,-71 202,-41 208,-13 197,76 126,195 1,200 -77,192"/>
+  <SubTexture name="元件 50002" x="0" y="596" width="340" height="298" hitPoint="-118,32 -27,-95 210,-35 210,86 139,194 84,201 -80,187"/>
+  <SubTexture name="元件 50003" x="340" y="0" width="340" height="298" hitPoint="-118,20 -4,-99 212,-30 211,84 137,185 98,196 -41,197 -77,179"/>
+  <SubTexture name="元件 50004" x="340" y="298" width="340" height="298" hitPoint="-117,18 -76,-36 15,-82 213,-30 205,76 143,189 92,198 -31,198 -99,183"/>
+  <SubTexture name="元件 50005" x="340" y="596" width="287" height="272" frameX="0" frameY="0" frameWidth="340" frameHeight="298" hitPoint="-114,2 -96,-59 3,-93 143,-42 154,38 112,131 58,146 -74,152 -96,137"/>
+  <SubTexture name="元件 50006" x="627" y="596" width="287" height="272" frameX="0" frameY="0" frameWidth="340" frameHeight="298" hitPoint="-93,127 -111,-43 -11,-89 150,-58 153,41 86,145"/>
+  <SubTexture name="元件 50007" x="680" y="0" width="287" height="272" frameX="0" frameY="0" frameWidth="340" frameHeight="298" hitPoint="-98,132 -108,-31 -15,-78 151,-54 149,56 75,162"/>
+</TextureAtlas>

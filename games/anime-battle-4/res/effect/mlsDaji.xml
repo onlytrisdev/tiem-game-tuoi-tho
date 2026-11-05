@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="mlsDaji.png" px="-62" py="-62" class="" sound="">
+  <SubTexture name="bao0000" x="0" y="0" width="136" height="55" frameX="-1" frameY="-32" frameWidth="137" frameHeight="118"/>
+  <SubTexture name="bao0001" x="136" y="0" width="114" height="118" frameX="-7" frameY="0" frameWidth="137" frameHeight="118"/>
+  <SubTexture name="bao0002" x="250" y="0" width="114" height="118" frameX="-7" frameY="0" frameWidth="137" frameHeight="118"/>
+  <SubTexture name="bao0003" x="0" y="118" width="114" height="118" frameX="-7" frameY="0" frameWidth="137" frameHeight="118"/>
+</TextureAtlas>

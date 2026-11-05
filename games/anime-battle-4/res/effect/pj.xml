@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="pj.png" px="-35" py="-55" class="" sound="pj">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="111" height="125"/>
+  <SubTexture name="元件 1 实例 10001" x="111" y="0" width="111" height="125"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="125" width="111" height="125"/>
+  <SubTexture name="元件 1 实例 10003" x="111" y="125" width="111" height="125"/>
+</TextureAtlas>

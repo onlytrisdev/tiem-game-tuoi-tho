@@ -1,0 +1,10 @@
+﻿<TextureAtlas imagePath="lx4.png" px="-90" py="-183" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="172" height="399"/>
+  <SubTexture name="元件 10001" x="172" y="0" width="172" height="399" hitPoint="2,190 -40,156 -37,55 -44,-12 -46,-37 -36,-102 -34,-146 -18,-147 11,-150 32,-131 45,-38 39,116 26,169" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10002" x="344" y="0" width="172" height="399" hitPoint=""/>
+  <SubTexture name="元件 10003" x="516" y="0" width="172" height="399"/>
+  <SubTexture name="元件 10004" x="688" y="0" width="172" height="399"/>
+  <SubTexture name="元件 10005" x="0" y="399" width="172" height="399" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10006" x="172" y="399" width="172" height="399" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10007" x="344" y="399" width="172" height="399" hitEffect="4" hurtInterval="0" cardFrame="0"/>
+</TextureAtlas>

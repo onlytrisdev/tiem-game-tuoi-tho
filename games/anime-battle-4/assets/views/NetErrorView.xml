@@ -1,0 +1,9 @@
+<ZBox width="100%" height="100%">
+    <ZQuad width="100%" height="100%" alpha="0.8"/>
+    <ZQuad width="400" height="340" alpha="0.9" centerX="0" centerY="0"/>
+    <ZButton id="ok" width="200" height="50" centerX="0" centerY="100">
+        <ZQuad width="200" height="50" alpha="0.8" color="0xfff000"/>
+        <ZLabel text="结束游戏" y="-3" width="200" height="50" hAlign="center" color="0xffffff" size="30"/>
+    </ZButton>
+    <ZLabel text="网络连接中断！你可能因为网络波动不稳定导致的中断问题，您可以直接重新开始游戏。" centerX="0" centerY="-50" width="300" height="50" hAlign="center" color="0xffffff" size="26"/>
+</ZBox>

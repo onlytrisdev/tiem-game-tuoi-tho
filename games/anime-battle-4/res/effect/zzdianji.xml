@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="zzdianji.png" px="-144" py="-140" class="" sound="qianyaodianji">
+  <SubTexture name="元件 40000" x="0" y="0" width="311" height="280"/>
+  <SubTexture name="元件 40001" x="311" y="0" width="311" height="280"/>
+  <SubTexture name="元件 40002" x="622" y="0" width="311" height="280"/>
+  <SubTexture name="元件 40003" x="0" y="280" width="311" height="280"/>
+  <SubTexture name="元件 40004" x="311" y="280" width="311" height="280"/>
+  <SubTexture name="元件 40005" x="622" y="280" width="311" height="280"/>
+  <SubTexture name="元件 40006" x="0" y="560" width="311" height="280"/>
+  <SubTexture name="元件 40007" x="311" y="560" width="311" height="280"/>
+  <SubTexture name="元件 40008" x="622" y="560" width="311" height="280"/>
+</TextureAtlas>

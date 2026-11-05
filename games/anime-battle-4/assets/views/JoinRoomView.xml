@@ -1,0 +1,11 @@
+<ZBox width="100%" height="100%">
+    <ZQuad width="100%" height="100%" color="0x0" alpha="0.8"/>
+    <ZQuad width="600" height="64" color="0x0" alpha="0.95" centerX="0" centerY="0"/>
+    <ZInputLabel id="input" hAlign="center" width="600" height="64" color="0xffffff" size="32" centerX="0" centerY="0"/>
+    <ZButton id="join" width="300" height="64" centerX="0" centerY="100">
+        <ZQuad width="300" height="64" color="0x0" alpha="0.95"/>
+        <ZLabel hAlign="center" width="300" height="64" size="24" color="0xffffff" text="加入房间"/>
+    </ZButton>
+    <ZLabel hAlign="center" width="300" height="64" size="24" color="0xffffff" text="请输入房间ID" centerX="0" centerY="-80"/>
+    <ZButton id="back" src="GameMain:back2"/>
+</ZBox>

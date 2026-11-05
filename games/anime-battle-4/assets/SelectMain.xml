@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:189bf17d2adcbddb867724608388e137:3c6558abfd75aedfa00f81b36dff77c3:79774f8f920d306aa665b8c7218a1250$ -->
+<TextureAtlas imagePath="SelectMain.png" width="512" height="1024">
+    <SubTexture name="back_txt" x="423" y="145" width="56" height="30"/>
+    <SubTexture name="btn_left" x="260" y="228" width="117" height="60" frameX="0" frameY="-6" frameWidth="123" frameHeight="76"/>
+    <SubTexture name="color" x="395" y="88" width="34" height="34"/>
+    <SubTexture name="fightpoint" x="395" y="124" width="26" height="25"/>
+    <SubTexture name="line" x="2" y="88" width="331" height="4" frameX="-3" frameY="0" frameWidth="334" frameHeight="4"/>
+    <SubTexture name="lockrole" x="422" y="209" width="55" height="134" frameX="0" frameY="0" frameWidth="57" frameHeight="134"/>
+    <SubTexture name="mask" x="395" y="151" width="25" height="252"/>
+    <SubTexture name="mb" x="2" y="94" width="256" height="256" frameX="0" frameY="0" frameWidth="259" frameHeight="259"/>
+    <SubTexture name="mb_top" x="2" y="394" width="211" height="211" frameX="0" frameY="0" frameWidth="214" frameHeight="214"/>
+    <SubTexture name="more" x="260" y="94" width="53" height="23" frameX="-6" frameY="-9" frameWidth="72" frameHeight="48"/>
+    <SubTexture name="select_no" x="422" y="345" width="54" height="134"/>
+    <SubTexture name="select_yes" x="335" y="88" width="58" height="138"/>
+    <SubTexture name="selected" x="433" y="2" width="60" height="141" frameX="-7" frameY="-7" frameWidth="76" frameHeight="158"/>
+    <SubTexture name="tryplay" x="2" y="607" width="188" height="66"/>
+    <SubTexture name="vs" x="215" y="405" width="194" height="259"/>
+    <SubTexture name="vstitle" x="2" y="2" width="429" height="84" frameX="-1" frameY="0" frameWidth="432" frameHeight="84"/>
+    <SubTexture name="xtxz" x="2" y="352" width="219" height="40" frameX="-7" frameY="-6" frameWidth="240" frameHeight="60"/>
+    <SubTexture name="yes" x="422" y="177" width="56" height="30"/>
+</TextureAtlas>

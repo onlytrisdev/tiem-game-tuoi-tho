@@ -1,0 +1,78 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": -544,
+			"texture": "changjing/cc7.png"
+		},
+		"compId": 13
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 269,
+			"x": 400,
+			"source": "logo.ani",
+			"scaleY": 2,
+			"scaleX": 2,
+			"name": "logo",
+			"autoPlay": true
+		},
+		"compId": 6
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 345,
+			"x": 299,
+			"stateNum": 3,
+			"skin": "an.png",
+			"scaleY": 1.5,
+			"scaleX": 1.5,
+			"name": "kaishi"
+		},
+		"compId": 7,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 10.75,
+				"x": 31,
+				"text": "BẮT ĐẦU",
+				"fontSize": 15,
+				"font": "Arial",
+				"color": "#00d6ff",
+				"bold": true
+			},
+			"compId": 9
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"source": "zc.ani",
+			"autoPlay": true
+		},
+		"compId": 10,
+		"child": [{
+			"type": "Script",
+			"props": {
+				"runtime": "san.ts"
+			},
+			"compId": 11
+		}]
+	}, {
+		"type": "Script",
+		"props": {
+			"runtime": "kaishi.ts"
+		},
+		"compId": 12
+	}],
+	"loadList": ["changjing/cc7.png", "logo.ani", "an.png", "zc.ani"],
+	"loadList3D": []
+}

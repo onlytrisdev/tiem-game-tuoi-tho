@@ -1,0 +1,36 @@
+<ZBox width="100%" height="100%">
+	<ZImage id="bg" src="bg2" left="0" right="0"/>
+	<VBox id="txt" gap="15" centerX="-80" centerY="-80" mouseEnabled="false">
+    	<ZLabel text="背景音乐播放" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+    	<ZLabel text="游戏音效播放" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+    	<ZLabel text="战斗震动环境" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+    	<ZLabel text="显示回血效果" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+        <ZLabel text="显示FPS调试" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+        <ZLabel text="2P键位上移1行" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+        <ZLabel text="全屏显示" if="mac" vAlign="top" width="200" height="24" size="18" color="0xffffff"/>
+    </VBox>
+    <TouchImageBatchsContainer id="key" src="GameMain">
+    	<VBBox gap="11" centerX="40" centerY="-80">
+    		<BButton id="music" src="GameMain:no"/>
+    		<BButton id="sound" src="GameMain:no"/>
+    		<BButton id="fightzhengdong" src="GameMain:no"/>
+    		<BButton id="hpresume" src="GameMain:no"/>
+            <BButton id="fpsshow" src="GameMain:off"/>
+            <BButton id="2pkey" src="GameMain:off"/>
+            <BButton id="full" if="mac" src="GameMain:off"/>
+    	</VBBox>
+    	<BButton id="back" src="GameMain:backhome" centerX="0" bottom="10"/>
+    </TouchImageBatchsContainer>
+    <ZTween id="play" auto="true">
+        <tween bind="bg" key="scaleY" start="0" end="10" from="0" to="1"/>
+        <tween bind="bg" key="y" start="0" end="10" from="240" to="0"/>
+        <tween bind="key" key="alpha" start="0" end="10" from="0" to="1"/>
+        <tween bind="txt" key="alpha" start="0" end="10" from="0" to="1"/>
+    </ZTween>
+    <ZTween id="hide" auto="false">
+        <tween bind="bg" key="scaleY" start="0" end="10" from="1" to="0"/>
+        <tween bind="bg" key="y" start="0" end="10" from="0" to="240"/>
+        <tween bind="key" key="alpha" start="0" end="10" from="1" to="0"/>
+        <tween bind="txt" key="alpha" start="0" end="10" from="1" to="0"/>
+    </ZTween>
+</ZBox>

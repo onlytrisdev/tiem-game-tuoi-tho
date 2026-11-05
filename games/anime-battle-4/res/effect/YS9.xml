@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="YS9.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="tou0000" x="0" y="0" width="222" height="190" frameX="0" frameY="-10" frameWidth="238" frameHeight="200"/>
+	<SubTexture name="tou0001" x="222" y="0" width="209" height="178" frameX="-13" frameY="-3" frameWidth="238" frameHeight="200"/>
+	<SubTexture name="tou0002" x="0" y="190" width="213" height="185" frameX="-23" frameY="-9" frameWidth="238" frameHeight="200"/>
+	<SubTexture name="tou0003" x="213" y="190" width="211" height="184" frameX="-27" frameY="-7" frameWidth="238" frameHeight="200"/>
+	<SubTexture name="tou0004" x="0" y="375" width="211" height="184" frameX="-27" frameY="-7" frameWidth="238" frameHeight="200"/>
+	<SubTexture name="tou0005" x="211" y="375" width="222" height="192" frameX="-8" frameY="0" frameWidth="238" frameHeight="200"/>
+</TextureAtlas>

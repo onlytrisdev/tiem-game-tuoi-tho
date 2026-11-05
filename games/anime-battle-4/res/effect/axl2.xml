@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="axl2.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="294" height="154" hitPoint="118,83 150,142 295,147 271,46 228,-6 201,-14" hitEffect="4" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10001" x="0" y="154" width="294" height="154"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="308" width="294" height="154"/>
+  <SubTexture name="元件 1 实例 10003" x="0" y="462" width="294" height="154"/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="616" width="294" height="154"/>
+</TextureAtlas>

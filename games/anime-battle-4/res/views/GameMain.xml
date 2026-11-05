@@ -1,0 +1,30 @@
+<ZBox width="100%" height="100%">
+	<!-- <ZImage id="bg" src="mainbg" centerX="0" left="0" right="0"/> -->
+    <TouchImageBatchsContainer src="GameMain"> 
+    	<HBBox id="box1" gap="-20" centerX="30" centerY="-50" scaleX="0.8" scaleY="0.8">
+	        <BButton id="drms" mouseEnabled="false" src="GameMain:btn_up" content="GameMain:drms"/>
+            <BButton id="1vsb" mouseEnabled="false" src="GameMain:btn_up" content="GameMain:lianximoshi"/>
+			<BButton id="server" mouseEnabled="false" src="GameMain:btn_up" content="GameMain:onlinefight"/>
+    	</HBBox>
+    	<HBBox id="box2" gap="-20" centerX="-50" centerY="50" scaleX="0.8" scaleY="0.8">
+    		<BButton id="srms" mouseEnabled="false" src="GameMain:btn_up" content="GameMain:srms"/>
+			<BButton id="roles" mouseEnabled="false" src="GameMain:btn_up" content="GameMain:roles"/>
+			<BButton id="rank" mouseEnabled="false" src="GameMain:btn_up" content="GameMain:rank"/>
+    	</HBBox>
+        <BImage id="select" visible="false" mouseEnabled="false" src="GameMain:btn_down"/>
+    	<BImage id="title" src="GameMain:title" top="10" centerX="0" scaleX="0.7" scaleY="0.7"/>
+        <BButton id="ad" src="GameMain:ad" scaleX="0.4" scaleY="0.4" right="5" top="115"/>
+		<HBBox scaleX="0.45" scaleY="0.45" gap="-25" right="0" bottom="30">
+			<BButton id="log" src="GameMain:btn_up" content="GameMain:gg"/>
+			<BButton id="setting" mouseEnabled="true" src="GameMain:btn_up" content="GameMain:setting"/>
+		</HBBox>
+    </TouchImageBatchsContainer>
+	<ZHaxe id="super">
+		<!-- bg.scaleY = bg.scaleX; -->
+	</ZHaxe>
+	<ZTween id="selectAnmin" auto="true">
+		<tween bind="select" key="alpha" start="0" end="30" from="1" to="0"/>
+	</ZTween>
+	<ZQuad width="100%" height="32" alpha="0.8" bottom="0"/>
+	<ZLabel id="version" width="100%" height="32" bottom="3" left="10" text="构造版本时间:20.25" size="12" color="0xffffff"/>
+</ZBox>

@@ -1,0 +1,13 @@
+<TextureAtlas imagePath="lxww.png">
+  <SubTexture name="gif0" x="0" y="0" width="300" height="260" hitPoint="117,38 60,64 46,147 79,219 176,227 235,210 253,122 206,55 125,35" hitEffect="10" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="gif1" x="0" y="260" width="300" height="260"/>
+  <SubTexture name="gif2" x="0" y="520" width="300" height="260"/>
+  <SubTexture name="gif3" x="0" y="780" width="300" height="260"/>
+  <SubTexture name="gif4" x="0" y="1040" width="300" height="260"/>
+  <SubTexture name="gif5" x="0" y="1300" width="300" height="260"/>
+  <SubTexture name="gif6" x="0" y="1560" width="300" height="260"/>
+  <SubTexture name="gif7" x="0" y="1820" width="300" height="260"/>
+  <SubTexture name="gif8" x="0" y="2080" width="300" height="260"/>
+  <SubTexture name="gif9" x="0" y="2340" width="300" height="260"/>
+  <SubTexture name="gif10" x="0" y="2600" width="300" height="260"/>
+</TextureAtlas>

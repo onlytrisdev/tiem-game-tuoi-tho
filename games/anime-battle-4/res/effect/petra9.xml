@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="petra9.png" px="-124" py="-128" class="" sound="">
+  <SubTexture name="元件 100000" x="1" y="1" width="180" height="180" frameX="-39" frameY="-37" frameWidth="260" frameHeight="260"/>
+  <SubTexture name="元件 100001" x="182" y="1" width="224" height="224" frameX="-19" frameY="-18" frameWidth="260" frameHeight="260"/>
+  <SubTexture name="元件 100002" x="1" y="226" width="244" height="244" frameX="-11" frameY="-7" frameWidth="260" frameHeight="260"/>
+  <SubTexture name="元件 100003" x="246" y="226" width="260" height="260"/>
+  <SubTexture name="元件 100004" x="1" y="487" width="260" height="260"/>
+  <SubTexture name="元件 100005" x="1" y="748" width="260" height="260"/>
+</TextureAtlas>

@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="lian2.png" px="-53" py="-77" class="" sound="bm12">
+  <SubTexture name="元件 30000" x="1" y="1" width="128" height="129"/>
+  <SubTexture name="元件 30001" x="130" y="1" width="128" height="129"/>
+  <SubTexture name="元件 30002" x="259" y="1" width="128" height="129" hitPoint="-31,-39 10,-67 52,-65 66,-20 34,51 -38,33" hitEffect="4" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="元件 30003" x="1" y="131" width="128" height="129"/>
+  <SubTexture name="元件 30004" x="130" y="131" width="128" height="129"/>
+  <SubTexture name="元件 30005" x="259" y="131" width="128" height="129"/>
+  <SubTexture name="元件 30006" x="1" y="261" width="128" height="129"/>
+</TextureAtlas>

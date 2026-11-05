@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="CiTu.png" px="-154" py="-134" class="" sound="">
+  <SubTexture name="元件 60000" x="0" y="0" width="254" height="185" hitPoint="104,16 92,-37 31,-118 -87,-170 -105,-126 -114,-36 -114,24 -57,56 29,70 93,62" hitEffect="4" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 60001" x="254" y="0" width="254" height="185"/>
+  <SubTexture name="元件 60002" x="0" y="185" width="254" height="185"/>
+  <SubTexture name="元件 60003" x="254" y="185" width="254" height="185"/>
+  <SubTexture name="元件 60004" x="0" y="370" width="254" height="185"/>
+  <SubTexture name="元件 60005" x="254" y="370" width="254" height="185"/>
+  <SubTexture name="元件 60006" x="0" y="555" width="254" height="185"/>
+  <SubTexture name="元件 60007" x="0" y="555" width="254" height="185"/>
+</TextureAtlas>

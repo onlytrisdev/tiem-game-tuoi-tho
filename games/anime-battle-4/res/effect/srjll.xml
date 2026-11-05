@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="srjll.png" fuck="3" px="-200" py="-236">
+  <SubTexture name="元件 10000" x="0" y="0" width="445" height="374" frameX="0" frameY="0" frameWidth="592" frameHeight="374"/>
+  <SubTexture name="元件 10001" x="445" y="0" width="445" height="374" frameX="0" frameY="0" frameWidth="592" frameHeight="374"/>
+  <SubTexture name="元件 10002" x="0" y="374" width="445" height="374" frameX="0" frameY="0" frameWidth="592" frameHeight="374"/>
+  <SubTexture name="元件 10003" x="445" y="374" width="303" height="176" frameX="-233" frameY="-117" frameWidth="592" frameHeight="374" hitPoint="32,-30 90,-111 322,-100 325,27 111,48" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10004" x="0" y="748" width="358" height="188" frameX="-234" frameY="-104" frameWidth="592" frameHeight="374"/>
+  <SubTexture name="元件 10005" x="358" y="748" width="151" height="132" frameX="-236" frameY="-135" frameWidth="592" frameHeight="374"/>
+  <SubTexture name="元件 10006" x="509" y="748" width="83" height="78" frameX="-236" frameY="-167" frameWidth="592" frameHeight="374"/>
+  <SubTexture name="元件 10007" x="592" y="748" width="36" height="40" frameX="-236" frameY="-186" frameWidth="592" frameHeight="374"/>
+</TextureAtlas>

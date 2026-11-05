@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="YLDJ.png" px="-99" py="-96" class="" sound="">
+  <SubTexture name="元件 30000" x="0" y="0" width="208" height="196"/>
+  <SubTexture name="元件 30001" x="208" y="0" width="191" height="196" frameX="0" frameY="0" frameWidth="208" frameHeight="196"/>
+  <SubTexture name="元件 30002" x="0" y="196" width="208" height="195" frameX="0" frameY="0" frameWidth="208" frameHeight="196"/>
+  <SubTexture name="元件 30003" x="208" y="196" width="194" height="195" frameX="0" frameY="0" frameWidth="208" frameHeight="196"/>
+</TextureAtlas>

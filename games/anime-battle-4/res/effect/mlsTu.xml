@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="mlsTu.png" px="-91" py="-100" class="" sound="">
+  <SubTexture name="tuci0000" x="0" y="0" width="109" height="59" frameX="-18" frameY="-47" frameWidth="130" frameHeight="122" hitPoint="31,-1 13,-114 -24,-74 -101,-4 -15,10" hitEffect="4" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="tuci0001" x="109" y="0" width="129" height="122" frameX="0" frameY="0" frameWidth="130" frameHeight="122"/>
+  <SubTexture name="tuci0002" x="238" y="0" width="130" height="122"/>
+  <SubTexture name="tuci0003" x="0" y="122" width="129" height="122" frameX="0" frameY="0" frameWidth="130" frameHeight="122"/>
+</TextureAtlas>

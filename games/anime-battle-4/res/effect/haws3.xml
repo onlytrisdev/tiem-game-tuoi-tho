@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="haws3.png" px="-34" py="-160">
+  <SubTexture name="元件 40000" x="0" y="0" width="205" height="217" hitPoint="93,-42 0,-118 80,-137 136,-130 162,-68 167,5 125,47 30,57 -32,16" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 40001" x="205" y="0" width="205" height="217"/>
+  <SubTexture name="元件 40002" x="0" y="217" width="205" height="217"/>
+  <SubTexture name="元件 40003" x="205" y="217" width="205" height="217"/>
+</TextureAtlas>

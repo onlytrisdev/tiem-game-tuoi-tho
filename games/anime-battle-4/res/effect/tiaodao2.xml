@@ -1,0 +1,29 @@
+<TextureAtlas imagePath="tiaodao2.png" px="-67" py="-108" class="" sound="">
+  <SubTexture name="元件 30000" x="0" y="0" width="129" height="128" frameX="0" frameY="-19" frameWidth="130" frameHeight="185" hitPoint="-84,-101 -83,15 -76,64 14,87 40,76 71,46 97,-6 89,-94 51,-132" hitEffect="10" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="元件 30001" x="129" y="0" width="129" height="128" frameX="0" frameY="-38" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30002" x="258" y="0" width="129" height="128" frameX="0" frameY="-38" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30003" x="387" y="0" width="129" height="128" frameX="0" frameY="-49" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30004" x="516" y="0" width="129" height="128" frameX="0" frameY="-30" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30005" x="645" y="0" width="129" height="128" frameX="0" frameY="-18" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30006" x="774" y="0" width="129" height="128" frameX="-1" frameY="0" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30007" x="0" y="128" width="129" height="128" frameX="-1" frameY="-22" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30008" x="129" y="128" width="129" height="128" frameX="-1" frameY="-34" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30009" x="258" y="128" width="129" height="128" frameX="0" frameY="-26" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30010" x="387" y="128" width="129" height="128" frameX="0" frameY="-39" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30011" x="516" y="128" width="129" height="128" frameX="0" frameY="-52" frameWidth="130" frameHeight="185" hitPoint="78,17 37,-88 -8,-88 -67,-85 -90,12 -75,82 -7,91 80,87" hitEffect="10" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="元件 30012" x="645" y="128" width="129" height="128" frameX="0" frameY="-34" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30013" x="774" y="128" width="129" height="128" frameX="0" frameY="-23" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30014" x="0" y="256" width="129" height="128" frameX="0" frameY="-31" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30015" x="129" y="256" width="129" height="128" frameX="0" frameY="-41" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30016" x="258" y="256" width="129" height="128" frameX="0" frameY="-53" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30017" x="387" y="256" width="129" height="128" frameX="0" frameY="-39" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30018" x="516" y="256" width="129" height="128" frameX="0" frameY="-30" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30019" x="645" y="256" width="129" height="128" frameX="0" frameY="-18" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30020" x="774" y="256" width="129" height="128" frameX="0" frameY="-30" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30021" x="0" y="384" width="129" height="128" frameX="-1" frameY="-48" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30022" x="129" y="384" width="129" height="128" frameX="-1" frameY="-55" frameWidth="130" frameHeight="185" hitPoint="73,4 65,-38 21,-86 -66,-79 -87,-28 -102,45 -63,96 0,101 47,102 72,88" hitEffect="4" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 30023" x="258" y="384" width="129" height="128" frameX="-1" frameY="-36" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30024" x="387" y="384" width="129" height="128" frameX="0" frameY="-27" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30025" x="516" y="384" width="129" height="128" frameX="0" frameY="-45" frameWidth="130" frameHeight="185"/>
+  <SubTexture name="元件 30026" x="645" y="384" width="129" height="128" frameX="0" frameY="-57" frameWidth="130" frameHeight="185"/>
+</TextureAtlas>

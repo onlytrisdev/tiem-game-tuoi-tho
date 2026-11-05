@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="YL1.png">
+  <SubTexture name="元件 30000" x="0" y="0" width="138" height="130" hitPoint=""/>
+  <SubTexture name="元件 30001" x="138" y="0" width="127" height="130" frameX="0" frameY="0" frameWidth="138" frameHeight="130"/>
+  <SubTexture name="元件 30002" x="265" y="0" width="138" height="129" frameX="0" frameY="0" frameWidth="138" frameHeight="130"/>
+  <SubTexture name="元件 30003" x="0" y="130" width="129" height="129" frameX="0" frameY="0" frameWidth="138" frameHeight="130"/>
+</TextureAtlas>

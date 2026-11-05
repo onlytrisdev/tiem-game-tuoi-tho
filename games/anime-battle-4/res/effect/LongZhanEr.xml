@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="LongZhanEr.png" px="-134" py="-150">
+  <SubTexture name="元件 130000" x="0" y="0" width="263" height="300" hitPoint="106,73 110,-35 80,-119 -86,-85 -105,42 -72,150 47,132" hitEffect="4" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 130001" x="263" y="0" width="263" height="300"/>
+  <SubTexture name="元件 130002" x="526" y="0" width="263" height="300"/>
+  <SubTexture name="元件 130003" x="0" y="300" width="263" height="300"/>
+  <SubTexture name="元件 130004" x="263" y="300" width="263" height="300"/>
+  <SubTexture name="元件 130005" x="526" y="300" width="263" height="300"/>
+  <SubTexture name="元件 130006" x="0" y="600" width="263" height="300"/>
+</TextureAtlas>

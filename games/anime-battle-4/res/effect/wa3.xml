@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="wa3.png" px="-115" py="-112" class="" sound="">
+  <SubTexture name="元件 30000" x="1" y="1" width="249" height="189" frameX="0" frameY="-3" frameWidth="271" frameHeight="192" hitPoint="-84,77 128,-61 130,-118 81,-125 -85,27" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 30001" x="1" y="191" width="173" height="125" frameX="-94" frameY="0" frameWidth="271" frameHeight="192"/>
+  <SubTexture name="元件 30002" x="1" y="317" width="105" height="93" frameX="-166" frameY="-6" frameWidth="271" frameHeight="192"/>
+</TextureAtlas>

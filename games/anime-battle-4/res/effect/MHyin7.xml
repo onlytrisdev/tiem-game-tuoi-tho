@@ -1,0 +1,15 @@
+<TextureAtlas imagePath="MHyin7.png" px="-200" py="-360" class="" sound="">
+  <SubTexture name="元件 70000" x="1" y="1" width="365" height="324" frameX="0" frameY="-158" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70001" x="367" y="1" width="383" height="367" frameX="-2" frameY="-118" frameWidth="431" frameHeight="490" hitPoint="-207,127 163,131 204,-236 -125,-249" hitEffect="8" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="元件 70002" x="751" y="1" width="396" height="428" frameX="-8" frameY="-59" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70003" x="1148" y="1" width="416" height="484" frameX="-8" frameY="-3" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70004" x="1565" y="1" width="416" height="479" frameX="-10" frameY="-5" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70005" x="1" y="486" width="413" height="483" frameX="-9" frameY="-3" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70006" x="415" y="486" width="417" height="483" frameX="-8" frameY="-1" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70007" x="833" y="486" width="421" height="479" frameX="-10" frameY="-6" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70008" x="1255" y="486" width="415" height="484" frameX="-10" frameY="0" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70009" x="1" y="971" width="411" height="478" frameX="-13" frameY="-3" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70010" x="413" y="971" width="393" height="473" frameX="-21" frameY="-10" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70011" x="807" y="971" width="369" height="482" frameX="-44" frameY="-8" frameWidth="431" frameHeight="490"/>
+  <SubTexture name="元件 70012" x="1177" y="971" width="364" height="469" frameX="-48" frameY="-6" frameWidth="431" frameHeight="490"/>
+</TextureAtlas>

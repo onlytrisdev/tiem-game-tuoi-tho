@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="blade.png" px="-109" py="-100" class="" sound="blade">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="202" height="192" pivotX="112" pivotY="103"/>
+  <SubTexture name="元件 1 实例 10001" x="202" y="0" width="202" height="192"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="192" width="202" height="192"/>
+  <SubTexture name="元件 1 实例 10003" x="202" y="192" width="202" height="192"/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="384" width="202" height="192"/>
+  <SubTexture name="元件 1 实例 10005" x="202" y="384" width="202" height="192"/>
+</TextureAtlas>

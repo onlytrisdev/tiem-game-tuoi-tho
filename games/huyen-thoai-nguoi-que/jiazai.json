@@ -1,0 +1,114 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Animation",
+		"props": {
+			"y": 435,
+			"x": 50,
+			"source": "jindutiao.ani",
+			"name": "jindutiao"
+		},
+		"compId": 6
+	}, {
+		"type": "Script",
+		"props": {
+			"runtime": "jiazai.ts"
+		},
+		"compId": 7
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 230,
+			"x": 272.5,
+			"text": "Nỗ lực để tải, hãy kiên nhẫn ~",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#00fdde",
+			"bold": true
+		},
+		"compId": 8
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 407,
+			"x": 698,
+			"text": "99%",
+			"name": "jiazaizi",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#00eaff",
+			"bold": true
+		},
+		"compId": 10
+	}],
+	"animations": [{
+		"nodes": [{
+			"target": 8,
+			"keyframes": {
+				"y": [{
+					"value": 230,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "y",
+					"index": 0
+				}],
+				"x": [{
+					"value": 272.5,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "x",
+					"index": 0
+				}, {
+					"value": 272.5,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "x",
+					"index": 30
+				}, {
+					"value": 272.5,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "x",
+					"index": 60
+				}],
+				"alpha": [{
+					"value": 1,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "alpha",
+					"index": 0
+				}, {
+					"value": 0,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "alpha",
+					"index": 30
+				}, {
+					"value": 1,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 8,
+					"key": "alpha",
+					"index": 60
+				}]
+			}
+		}],
+		"name": "ani1",
+		"id": 1,
+		"frameRate": 30,
+		"action": 2
+	}],
+	"loadList": ["jindutiao.ani"],
+	"loadList3D": []
+}

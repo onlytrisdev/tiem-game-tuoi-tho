@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="srjll1.png" px="-136" py="-111">
+  <SubTexture name="元件 100000" x="0" y="0" width="288" height="150" hitPoint="-108,2 3,27 114,9 120,-36 -37,-45" hitEffect="0" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 100001" x="0" y="150" width="288" height="150" hitPoint="-95,6 -79,-55 96,-55 115,18 -7,31 -20,37" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 100002" x="0" y="300" width="288" height="150"/>
+  <SubTexture name="元件 100003" x="0" y="450" width="288" height="150"/>
+  <SubTexture name="元件 100004" x="0" y="600" width="288" height="150"/>
+  <SubTexture name="元件 100005" x="0" y="750" width="288" height="150"/>
+</TextureAtlas>

@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="mlsTuji.png" px="-72" py="-60" class="" sound="">
+  <SubTexture name="突击波0000" x="0" y="0" width="129" height="105" hitPoint="62,-22 25,-81 -124,-16 43,46" hitEffect="4" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="突击波0001" x="129" y="0" width="129" height="105"/>
+  <SubTexture name="突击波0002" x="258" y="0" width="129" height="105"/>
+  <SubTexture name="突击波0003" x="0" y="105" width="127" height="105" frameX="0" frameY="0" frameWidth="129" frameHeight="105"/>
+</TextureAtlas>

@@ -1,0 +1,122 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480,
+		"autoDestroyAtClosed": true
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": -65,
+			"texture": "changjing/cc5.png"
+		},
+		"compId": 3
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 428,
+			"x": 50,
+			"width": 0,
+			"source": "jindutiao.ani",
+			"name": "jindutiao",
+			"height": 0,
+			"autoPlay": true
+		},
+		"compId": 4
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 413,
+			"x": 660,
+			"source": "pao.ani",
+			"autoPlay": true
+		},
+		"compId": 5
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 393,
+			"x": 477,
+			"text": "Đang cố gắng tải...",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#00fdde",
+			"bold": true
+		},
+		"compId": 6
+	}, {
+		"type": "Script",
+		"props": {
+			"runtime": "jiazai2.ts"
+		},
+		"compId": 7
+	}],
+	"animations": [{
+		"nodes": [{
+			"target": 6,
+			"keyframes": {
+				"x": [{
+					"value": 477,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 6,
+					"key": "x",
+					"index": 0
+				}, {
+					"value": 477,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 6,
+					"key": "x",
+					"index": 10
+				}, {
+					"value": 477,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 6,
+					"key": "x",
+					"index": 20
+				}],
+				"blendMode": [{
+					"value": "lighter",
+					"tweenMethod": "linearNone",
+					"tween": false,
+					"target": 6,
+					"key": "blendMode",
+					"index": 0
+				}],
+				"alpha": [{
+					"value": 1,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 6,
+					"key": "alpha",
+					"index": 0
+				}, {
+					"value": 0,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 6,
+					"key": "alpha",
+					"index": 10
+				}, {
+					"value": 1,
+					"tweenMethod": "linearNone",
+					"tween": true,
+					"target": 6,
+					"key": "alpha",
+					"index": 20
+				}]
+			}
+		}],
+		"name": "ani1",
+		"id": 1,
+		"frameRate": 24,
+		"action": 2
+	}],
+	"loadList": ["changjing/cc5.png", "jindutiao.ani", "pao.ani"],
+	"loadList3D": []
+}

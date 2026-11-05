@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="lktx.png" px="-150" py="-60">
+  <SubTexture name="元件 50000" x="0" y="0" width="298" height="117"/>
+  <SubTexture name="元件 50001" x="298" y="0" width="298" height="117" hitPoint="" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 50002" x="596" y="0" width="298" height="117" hitPoint="" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 50003" x="0" y="117" width="298" height="117"/>
+  <SubTexture name="元件 50004" x="298" y="117" width="298" height="117"/>
+</TextureAtlas>

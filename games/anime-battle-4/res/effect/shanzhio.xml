@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="shanzhio.png">
+  <SubTexture name="gif0" x="0" y="0" width="320" height="263" hitPoint="30,97 98,44 166,35 253,41 368,77 383,146 334,205 212,232 114,228 43,173" hitEffect="4" hurtInterval="4" cardFrame="0"/>
+  <SubTexture name="gif1" x="0" y="263" width="320" height="263"/>
+  <SubTexture name="gif2" x="0" y="526" width="320" height="263"/>
+  <SubTexture name="gif3" x="0" y="789" width="320" height="263"/>
+  <SubTexture name="gif4" x="0" y="1052" width="320" height="263"/>
+  <SubTexture name="gif5" x="0" y="1315" width="320" height="263"/>
+  <SubTexture name="gif6" x="0" y="1578" width="320" height="263"/>
+</TextureAtlas>

@@ -1,0 +1,318 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480,
+		"autoDestroyAtClosed": true
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": -647,
+			"texture": "changjing/cc2.png"
+		},
+		"compId": 3
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 65,
+			"x": 49,
+			"texture": "xiaocj/xx1.png",
+			"name": "guan1"
+		},
+		"compId": 10,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 56,
+				"x": -189,
+				"texture": "diren/d0002.png"
+			},
+			"compId": 17
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 65,
+			"x": 236,
+			"texture": "xiaocj/xx2.png",
+			"name": "guan2"
+		},
+		"compId": 11,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 56,
+				"x": -167,
+				"texture": "diren/d0039.png"
+			},
+			"compId": 18
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 14,
+				"x": 45,
+				"width": 65,
+				"texture": "suo.png",
+				"name": "suo",
+				"height": 75
+			},
+			"compId": 37
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 65,
+			"x": 422,
+			"texture": "xiaocj/xx3.png",
+			"name": "guan3"
+		},
+		"compId": 12,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 85,
+				"x": -139,
+				"width": 371,
+				"texture": "diren/d0072.png",
+				"height": 292
+			},
+			"compId": 19
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 14,
+				"x": 43,
+				"width": 65,
+				"texture": "suo.png",
+				"name": "suo",
+				"height": 75
+			},
+			"compId": 38
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 65,
+			"x": 609,
+			"texture": "xiaocj/xx4.png",
+			"name": "guan4"
+		},
+		"compId": 13,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 56,
+				"x": -174,
+				"texture": "diren/d0119.png"
+			},
+			"compId": 20
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 14,
+				"x": 40,
+				"width": 65,
+				"texture": "suo.png",
+				"name": "suo",
+				"height": 75
+			},
+			"compId": 39
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -403,
+			"x": 536,
+			"texture": "xiaocj/xx7.png",
+			"name": "guan7"
+		},
+		"compId": 14,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 60,
+				"x": -147,
+				"width": 393,
+				"texture": "diren/d0233.png",
+				"height": 319
+			},
+			"compId": 23
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 14,
+				"x": 42,
+				"width": 65,
+				"texture": "suo.png",
+				"name": "suo",
+				"height": 75
+			},
+			"compId": 42
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -408,
+			"x": 109,
+			"texture": "xiaocj/xx6.png",
+			"name": "guan5"
+		},
+		"compId": 15,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 57,
+				"x": -134,
+				"texture": "diren/d0155.png"
+			},
+			"compId": 21
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 14,
+				"x": 43,
+				"width": 65,
+				"texture": "suo.png",
+				"name": "suo",
+				"height": 75
+			},
+			"compId": 40
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -403,
+			"x": 322,
+			"texture": "xiaocj/xx5.png",
+			"name": "guan6"
+		},
+		"compId": 16,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 66,
+				"x": -121,
+				"width": 406,
+				"texture": "diren/d0195.png",
+				"height": 327
+			},
+			"compId": 22
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 14,
+				"x": 48,
+				"width": 65,
+				"texture": "suo.png",
+				"name": "suo",
+				"height": 75
+			},
+			"compId": 41
+		}]
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 430.6666666666667,
+			"x": 653,
+			"skin": "an.png",
+			"name": "xiayiye"
+		},
+		"compId": 31,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 9,
+				"x": 30,
+				"text": "Tiếp",
+				"fontSize": 20,
+				"font": "Arial",
+				"color": "#00ffff",
+				"bold": true
+			},
+			"compId": 32
+		}]
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 430.6666666666667,
+			"x": 39,
+			"skin": "an.png",
+			"name": "shangyiye"
+		},
+		"compId": 33,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 9,
+				"x": 30,
+				"text": "Trước",
+				"fontSize": 20,
+				"font": "Arial",
+				"color": "#00ffff",
+				"bold": true
+			},
+			"compId": 34
+		}]
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 11,
+			"x": 28,
+			"width": 120,
+			"skin": "an.png",
+			"name": "fanhui",
+			"height": 43
+		},
+		"compId": 35
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 23.5,
+			"x": 67,
+			"text": "Trở về",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#00fff4",
+			"bold": true
+		},
+		"compId": 36
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 58,
+			"x": 875,
+			"visible": false,
+			"source": "fanye.ani",
+			"scaleY": 1.8,
+			"scaleX": 1.8,
+			"rotation": 90,
+			"name": "fanye1"
+		},
+		"compId": 43
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 60,
+			"x": -67,
+			"visible": false,
+			"source": "fanye2.ani",
+			"scaleY": 1.8,
+			"scaleX": 1.8,
+			"rotation": 90,
+			"name": "fanye2"
+		},
+		"compId": 44
+	}, {
+		"type": "Script",
+		"props": {
+			"dianji": "@Prefab:prefab/dianjitexiao.prefab",
+			"runtime": "jyxuanguan.ts"
+		},
+		"compId": 45
+	}],
+	"loadList": ["changjing/cc2.png", "xiaocj/xx1.png", "diren/d0002.png", "xiaocj/xx2.png", "diren/d0039.png", "suo.png", "xiaocj/xx3.png", "diren/d0072.png", "xiaocj/xx4.png", "diren/d0119.png", "xiaocj/xx7.png", "diren/d0233.png", "xiaocj/xx6.png", "diren/d0155.png", "xiaocj/xx5.png", "diren/d0195.png", "an.png", "fanye.ani", "fanye2.ani", "prefab/dianjitexiao.prefab"],
+	"loadList3D": []
+}

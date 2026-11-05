@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="defense.png" px="-75" py="-95" sound="fangyu">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="防御0000" x="0" y="0" width="153" height="176"/>
+	<SubTexture name="防御0000" x="0" y="0" width="153" height="176"/>
+	<SubTexture name="防御0001" x="153" y="0" width="153" height="176"/>
+	<SubTexture name="防御0001" x="153" y="0" width="153" height="176"/>
+	<SubTexture name="防御0002" x="306" y="0" width="153" height="176"/>
+	<SubTexture name="防御0002" x="306" y="0" width="153" height="176"/>
+	<SubTexture name="防御0003" x="0" y="176" width="153" height="176"/>
+	<SubTexture name="防御0003" x="0" y="176" width="153" height="176"/>
+	<SubTexture name="防御0004" x="153" y="176" width="153" height="176"/>
+	<SubTexture name="防御0004" x="153" y="176" width="153" height="176"/>
+</TextureAtlas>

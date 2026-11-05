@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="haws5.png" px="-20" py="-177">
+  <SubTexture name="元件 110000" x="0" y="0" width="189" height="186" frameX="0" frameY="-47" frameWidth="189" frameHeight="233"/>
+  <SubTexture name="元件 110001" x="189" y="0" width="163" height="227" frameX="-25" frameY="-4" frameWidth="189" frameHeight="233" hitPoint="131,-61 4,-183 51,-182 131,-167 156,-116 174,-48 150,5 103,58 20,68 -37,24"/>
+  <SubTexture name="元件 110002" x="352" y="0" width="129" height="193" frameX="-60" frameY="-2" frameWidth="189" frameHeight="233"/>
+  <SubTexture name="元件 110003" x="0" y="227" width="147" height="214" frameX="-42" frameY="0" frameWidth="189" frameHeight="233"/>
+</TextureAtlas>

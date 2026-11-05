@@ -1,0 +1,46 @@
+<ZBox width="100%" height="100%">
+	<ZQuad width="100%" height="100%"/>
+	<ZImage id="bg" src="selectbg" centerX="0"/>
+    <TouchImageBatchsContainer src="SelectMain">
+    	<BImage src="SelectMain:line" scaleX="-1" x="330" y="186"/>
+    	<BImage src="SelectMain:line" scaleX="-1" x="330" y="228"/>
+    	<BImage src="SelectMain:line" right="0" y="186"/>
+    	<BImage src="SelectMain:line" right="0" y="207"/>
+    	<BImage src="SelectMain:line" right="0" y="307"/>
+
+      <BButton id="back" src="SelectMain:btn_left" bottom="50" left="-20" content="SelectMain:back_txt"/>
+      <BButton id="yes" src="SelectMain:btn_left" bottom="120" left="-20" content="SelectMain:yes"/>
+      <BButton id="tryplay" src="SelectMain:tryplay" bottom="128" left="100"/>
+    </TouchImageBatchsContainer>
+    <ZLabel id="name" text="左眼" size="28" color="0xffffff" width="100%" height="32" x="10" y="173"/>
+    <ZLabel id="cp" text="cp:木姐" size="12" color="0xffffff" width="100%" height="32" x="10" y="183"/>
+    <ZLabel id="skilldesc" text="技能：咕咕咕(lv999) 制作幻纹(lv1) 跳票(lv999)" hAlign="right" size="12" color="0xffffff" width="260" height="32" right="10" y="180"/>
+    <ZLabel id="roleskill" text="被动：左眼想跳票的时候，无法被阻止。" vAlign="center" hAlign="right" size="12" color="0xffffff" width="260" height="100" right="10" y="207"/>
+    <ZLabel id="desc" text="简介：幻想纹章4的技术力。" vAlign="center" hAlign="right" size="12" color="0xffffff" width="260" height="165" right="10" y="307"/>
+    <ZImage id="mb" src="SelectMain:mb" bottom="0" centerX="0">
+	    <ZImage src="SelectMain:mb_top" centerY="0" centerX="0"/>
+        <TouchImageBatchsContainer src="font-export" width="100%" height="100%">
+        	<BLabel  hAlign="center" width="40" id="t1" src="font-export" x="115" y="33" text="A" scaleX="0.6" scaleY="0.6"/>
+   			<BLabel hAlign="center" width="40" id="t2" src="font-export" x="187" y="70" text="B+" scaleX="0.6" scaleY="0.6"/>
+   			<BLabel  hAlign="center" width="40" id="t6" src="font-export" x="48" y="70" text="D" scaleX="0.6" scaleY="0.6"/>
+   			<BLabel hAlign="center" width="40" id="t3" src="font-export" x="182" y="153" text="C" scaleX="0.6" scaleY="0.6"/>
+   			<BLabel hAlign="center" width="40" id="t5" src="font-export" x="48" y="153" text="E" scaleX="0.6" scaleY="0.6"/>
+   			<BLabel hAlign="center" width="40" id="t4" src="font-export" x="115" y="190" text="D+" scaleX="0.6" scaleY="0.6"/>
+
+   			<BLabel hAlign="center"  width="60" id="tt1" src="font-export" x="115" y="53" text="9.8" scaleX="0.4" scaleY="0.4"/>
+   			<BLabel  hAlign="center"  width="60" id="tt2" src="font-export" x="185" y="90" text="1.3" scaleX="0.4" scaleY="0.4"/>
+   			<BLabel hAlign="center"  width="60" id="tt3" src="font-export" x="182" y="173" text="6.0" scaleX="0.4" scaleY="0.4"/>
+   			<BLabel hAlign="center"  width="60" id="tt4" src="font-export" x="115" y="210" text="1.3" scaleX="0.4" scaleY="0.4"/>
+   			<BLabel hAlign="center" width="60" id="tt5" src="font-export" x="48" y="173" text="1.3" scaleX="0.4" scaleY="0.4"/>
+   			<BLabel  hAlign="center" width="60" id="tt6" src="font-export" x="48" y="90" text="1.1" scaleX="0.4" scaleY="0.4"/>
+        </TouchImageBatchsContainer>
+    </ZImage>
+    <HBox centerX="0" top="5">
+      <ZImage src="GameMain:rwsuipian" centerX="0" scaleX="0.7" scaleY="0.7"/>
+      <ZLabel id="suipian" text="x0" size="18" color="0xffffff" width="200" height="32" y="5" vAlign="top"/>
+    </HBox>
+    <HBox id="buy" left="5" centerY="35" >
+      <ZImage src="GameMain:rwsuipian" centerX="0" scaleX="0.6" scaleY="0.6"/>
+      <ZLabel id="suipian_buy" text="x0 解锁" size="18" color="0xffffff" width="300" height="32" y="0" vAlign="top"/>
+    </HBox>
+</ZBox>

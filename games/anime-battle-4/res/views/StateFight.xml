@@ -1,0 +1,165 @@
+<ZBox width="100%" height="100%">
+    <TouchImageBatchsContainer src="hpmp">
+        <BBox left="10" top="10">
+            <BImage src="hpmp:bg_img" scaleX="0.35" scaleY="0.35" top="-8"/>
+            <BImage src="hpmp:frame_hp" y="0"/>
+            <BImage id="1phpline_red" src="hpmp:frame_hp_line_red" left="50" top="9"/>
+            <BImage id="1phpline" src="hpmp:frame_hp_line" left="50" top="9"/>
+            <BImage id="1net" src="hpmp:wifi_3" top="34" scaleX="0.5" scaleY="0.5" left="325"/>
+            <HBBox top="20" left="275" gap="-20">
+                <BImage id="1pwin1" src="hpmp:win_icon" scaleX="0.5" scaleY="0.5"/>
+                <BImage id="1pwin2" src="hpmp:win_icon" scaleX="0.5" scaleY="0.5"/>
+            </HBBox>
+            <BImage id="1pqili" src="hpmp:aline" top="48" scaleX="0.85" scaleY="0.85" left="5"/>
+            <BImage id="1ppoint" src="hpmp:aline" top="40" scaleX="0.8" scaleY="0.8" left="5"/>
+            <BImage src="hpmp:mpframe" top="40" scaleX="0.8" scaleY="0.8" left="0"/>
+            <BImage src="hpmp:mpframe" top="48" scaleX="0.85" scaleY="0.85" left="0"/>
+            <BLabel id="1php" src="hpmp" scaleX="0.25" scaleY="0.25" left="55" top="2" text="99999" width="200" hAlign="left"/>
+            <HBBox id="1pmp" gap="10" top="30" left="60">
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+            </HBBox>
+            <HBBox gap="-40" top="45" left="60" visible="true" scaleX="0.35" scaleY="0.35">
+                <BImage src="hpmp:J"/>
+                <BImage src="hpmp:U"/>
+                <BImage src="hpmp:I"/>
+                <BImage src="hpmp:P"/>
+                <BImage src="hpmp:O"/>
+                <BImage src="hpmp:L"/>
+            </HBBox>
+            <HBBox id="1pcds" gap="40" top="54" left="76" visible="true" scaleX="0.35" scaleY="0.35">
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+            </HBBox>
+        </BBox>
+        <BBox top="10" right="-339" scaleX="-1">
+            <BImage src="hpmp:bg_img" scaleX="0.35" scaleY="0.35" top="-8"/>
+            <BImage src="hpmp:frame_hp" y="0"/>
+            <BImage id="2phpline_red" src="hpmp:frame_hp_line_red" left="50" top="9"/>
+            <BImage id="2phpline" src="hpmp:frame_hp_line" left="50" top="9"/>
+            <BImage id="2net" src="hpmp:wifi_3" top="34" scaleX="0.5" scaleY="0.5" left="325"/>
+            <HBBox top="20" left="275" gap="-20">
+                <BImage id="2pwin1" src="hpmp:win_icon" scaleX="0.5" scaleY="0.5"/>
+                <BImage id="2pwin2" src="hpmp:win_icon" scaleX="0.5" scaleY="0.5"/>
+            </HBBox>
+            <BImage id="2pqili" src="hpmp:aline" top="48" scaleX="0.85" scaleY="0.85" left="5"/>
+            <BImage id="2ppoint" src="hpmp:aline" top="40" scaleX="0.8" scaleY="0.8" left="5"/>
+            <BImage src="hpmp:mpframe" top="40" scaleX="0.8" scaleY="0.8" left="0"/>
+            <BImage src="hpmp:mpframe" top="48" scaleX="0.85" scaleY="0.85" left="0"/>
+            <BLabel id="2php" src="hpmp" scaleX="-0.25" scaleY="0.25" left="105" top="2" text="99999" width="200" hAlign="right"/>
+            <HBBox id="2pmp" gap="10" top="30" left="60">
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+                <BImage src="hpmp:mpspr"/>
+            </HBBox>
+            <HBBox gap="-40" top="45" left="300" visible="true" scaleX="-0.35" scaleY="0.35">
+                <BImage src="hpmp:J"/>
+                <BImage src="hpmp:U"/>
+                <BImage src="hpmp:I"/>
+                <BImage src="hpmp:P"/>
+                <BImage src="hpmp:O"/>
+                <BImage src="hpmp:L"/>
+            </HBBox>
+             <HBBox id="2pcds" gap="40" top="54" left="284" visible="true" scaleX="-0.35" scaleY="0.35">
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+                <VBBox gap="6">
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                    <BImage src="hpmp:cd_line1"/>
+                </VBBox>
+            </HBBox>
+        </BBox>
+
+        <!-- 3P 4P的迷你血条 -->
+        <HBBox id="3p4p" top="80">
+        </HBBox>
+
+        <BImage src="hpmp:enter_pause" scaleX="0.5" scaleY="0.5" centerX="0" top="50"/>
+        <BLabel id="netms" visible="false" src="hpmp" width="0" hAlign="center" size="18" scaleX="0.5" scaleY="0.5" centerX="0" top="95" text="200"/>
+        <BLabel visible="false" src="hpmp" scaleX="0.5" scaleY="0.5" centerX="-8" top="0" text="120" width="200" hAlign="center"/>
+        <BImage visible="true" src="hpmp:N" scaleX="0.3" scaleY="0.3" centerX="0" top="20" text="120" hAlign="center"/>
+        <BImage id="ready" src="hpmp:READY" centerX="0" centerY="0" alpha="0"/>
+        <BImage id="fight" src="hpmp:FIGHT" centerX="0" centerY="0" alpha="0"/>
+        <ZTween id="readyfight" auto="false">
+            <tween bind="ready" key="alpha" from="0" to="1" start="0" end="30"/>
+            <add bind="ready" key="x" to="-50" start="60" end="65" type="backOut"/>
+            <add bind="ready" key="x" to="2048" start="65" end="100" type="backOut"/>
+            <tween bind="fight" key="alpha" from="0" to="1" start="100" end="130"/>
+            <add bind="fight" key="x" to="-50" start="160" end="165" type="backOut"/>
+            <add bind="fight" key="x" to="2048" start="165" end="200" type="backOut"/>
+            
+        </ZTween>
+        <BImage id="debug" src="hpmp:sb_tips" left="15" bottom="15"/>
+        <BButton id="pause" src="hpmp:pause" centerX="0" top="70"/>
+    </TouchImageBatchsContainer>
+    <ZBox id="uibox">
+        <!-- 扩展UI显示区域 -->
+    </ZBox>
+</ZBox>

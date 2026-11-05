@@ -1,0 +1,16 @@
+<TextureAtlas imagePath="jiao2.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10001" x="161" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10002" x="322" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10003" x="483" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10004" x="644" y="0" width="161" height="996" hitPoint="0,992 163,990 157,1 -2,-2" hitEffect="5" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10005" x="805" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10006" x="966" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10007" x="1127" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10008" x="1288" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10009" x="1449" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10010" x="1610" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10011" x="1771" y="0" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10012" x="0" y="996" width="161" height="996"/>
+  <SubTexture name="元件 1 实例 10013" x="161" y="996" width="161" height="996"/>
+</TextureAtlas>

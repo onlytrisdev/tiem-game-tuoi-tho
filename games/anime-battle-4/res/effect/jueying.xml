@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="jueying.png" px="-316" py="-161" class="">
+  <SubTexture name="元件 10000" x="0" y="0" width="567" height="307" hitPoint="-169,91 8,23 45,-33 -70,-78 -102,-87 16,-98 72,-89 142,-61 174,-21 150,41 18,90 -82,106 -178,109" hitEffect="2" hurtInterval="0" cardFrame="3"/>
+  <SubTexture name="元件 10001" x="567" y="0" width="567" height="307"/>
+  <SubTexture name="元件 10002" x="1134" y="0" width="567" height="307"/>
+  <SubTexture name="元件 10003" x="0" y="307" width="567" height="307" hitPoint="" hitEffect="2" hurtInterval="0" cardFrame="5"/>
+  <SubTexture name="元件 10004" x="567" y="307" width="567" height="307" hitPoint="46,95 122,84 188,38 205,1 187,-63 117,-104 57,-113 0,-111 -51,-115 -134,-86 -185,-73 -116,-68 -27,-49 21,3" hitEffect="2" hurtInterval="0" cardFrame="5"/>
+  <SubTexture name="元件 10005" x="1134" y="307" width="567" height="307"/>
+  <SubTexture name="元件 10006" x="0" y="614" width="567" height="307"/>
+  <SubTexture name="元件 10007" x="567" y="614" width="567" height="307"/>
+</TextureAtlas>

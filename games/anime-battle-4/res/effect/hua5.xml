@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="hua5.png" px="-63" py="-102" class="" sound="">
+  <SubTexture name="元件 50000" x="1" y="1" width="88" height="96" frameX="-20" frameY="-54" frameWidth="145" frameHeight="181" hitPoint="-52,50 62,53 52,-72 -67,-75" hitEffect="3" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 50001" x="90" y="1" width="101" height="126" frameX="-16" frameY="-35" frameWidth="145" frameHeight="181"/>
+  <SubTexture name="元件 50002" x="192" y="1" width="108" height="148" frameX="-13" frameY="-27" frameWidth="145" frameHeight="181"/>
+  <SubTexture name="元件 50003" x="301" y="1" width="126" height="170" frameX="-6" frameY="-11" frameWidth="145" frameHeight="181"/>
+  <SubTexture name="元件 50004" x="1" y="172" width="135" height="158" frameX="-6" frameY="-15" frameWidth="145" frameHeight="181"/>
+  <SubTexture name="元件 50005" x="137" y="172" width="145" height="169" frameX="0" frameY="0" frameWidth="145" frameHeight="181"/>
+</TextureAtlas>

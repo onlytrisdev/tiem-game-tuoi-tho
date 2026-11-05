@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="axl20.png" px="-36" py="-135" hred="2" end="5">
+  <SubTexture name="元件 40000" x="0" y="0" width="225" height="224"/>
+  <SubTexture name="元件 40001" x="225" y="0" width="225" height="224"/>
+  <SubTexture name="元件 40002" x="450" y="0" width="225" height="224" hitPoint="83,-28 12,-77 60,-106 121,-84 147,-41 146,10 136,41 92,53 44,40 7,13 0,-52 8,-72"/>
+  <SubTexture name="元件 40003" x="675" y="0" width="225" height="224" hitPoint="77,-30 47,-97 108,-105 151,-62 161,-18 146,33 116,51 86,57 39,34 -1,-23 12,-78 37,-87 45,-89"/>
+  <SubTexture name="元件 40004" x="0" y="224" width="225" height="224" hitPoint="85,-30 15,-95 75,-96 151,-78 174,-11 152,32 114,53 48,50 0,15 6,-47 20,-77"/>
+  <SubTexture name="元件 40005" x="225" y="224" width="225" height="224" hitPoint="75,-31 37,-98 117,-103 153,-58 169,5 149,32 119,59 79,59 22,32 2,-40 19,-79 33,-88"/>
+  <SubTexture name="元件 40006" x="450" y="224" width="225" height="224" hitPoint="71,-31 31,-105 112,-119 166,-60 172,4 145,46 94,62 10,37 -21,-27 -3,-90 26,-104"/>
+  <SubTexture name="元件 40007" x="675" y="224" width="225" height="224"/>
+  <SubTexture name="元件 40008" x="0" y="448" width="225" height="224"/>
+</TextureAtlas>

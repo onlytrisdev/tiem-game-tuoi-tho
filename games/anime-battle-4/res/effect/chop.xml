@@ -1,0 +1,12 @@
+<TextureAtlas imagePath="chop.png" px="-96" py="-73" class="" sound="">
+  <SubTexture name="元件 160000" x="0" y="0" width="196" height="140" frameX="96" frameY="73" frameWidth="196" frameHeight="196" hitPoint=""/>
+  <SubTexture name="元件 160001" x="196" y="0" width="196" height="140"/>
+  <SubTexture name="元件 160002" x="0" y="140" width="196" height="140"/>
+  <SubTexture name="元件 160003" x="196" y="140" width="196" height="140"/>
+  <SubTexture name="元件 160004" x="0" y="280" width="196" height="140"/>
+  <SubTexture name="元件 160005" x="196" y="280" width="196" height="140"/>
+  <SubTexture name="元件 160006" x="0" y="420" width="196" height="140"/>
+  <SubTexture name="元件 160007" x="196" y="420" width="196" height="140"/>
+  <SubTexture name="元件 160008" x="0" y="560" width="196" height="140"/>
+  <SubTexture name="元件 160009" x="196" y="560" width="196" height="140"/>
+</TextureAtlas>

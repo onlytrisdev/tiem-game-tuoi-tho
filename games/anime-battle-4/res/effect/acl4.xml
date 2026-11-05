@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="acl4.png" px="-260" py="-335" class="" sound="">
+  <SubTexture name="元件 40000" x="1" y="1" width="386" height="418" frameX="0" frameY="0" frameWidth="386" frameHeight="419" hitPoint="-115,50 -192,-197 -167,-246 -68,-221 84,-127 136,51 30,87" hitEffect="4" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 40001" x="388" y="1" width="372" height="419" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+  <SubTexture name="元件 40002" x="1" y="421" width="356" height="419" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+  <SubTexture name="元件 40003" x="358" y="421" width="343" height="407" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+  <SubTexture name="元件 40004" x="1" y="841" width="341" height="398" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+  <SubTexture name="元件 40005" x="343" y="841" width="323" height="401" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+  <SubTexture name="元件 40006" x="667" y="841" width="317" height="399" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+  <SubTexture name="元件 40007" x="1" y="1243" width="317" height="370" frameX="0" frameY="0" frameWidth="386" frameHeight="419"/>
+</TextureAtlas>

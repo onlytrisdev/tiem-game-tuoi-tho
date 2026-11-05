@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="baoqi.png">
+  <SubTexture name="gif0" x="0" y="0" width="220" height="236" hitPoint="53,230 -13,175 27,166 22,93 117,-3 174,71 189,121 181,169 228,153 187,240" hitEffect="3" hurtInterval="1" cardFrame="0"/>
+  <SubTexture name="gif1" x="220" y="0" width="220" height="236"/>
+  <SubTexture name="gif2" x="440" y="0" width="220" height="236"/>
+  <SubTexture name="gif3" x="660" y="0" width="220" height="236"/>
+</TextureAtlas>

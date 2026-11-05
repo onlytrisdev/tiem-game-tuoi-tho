@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="tishen3.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="元件 10000" x="0" y="0" width="102" height="122"/>
+	<SubTexture name="元件 10001" x="102" y="0" width="102" height="121" frameX="0" frameY="0" frameWidth="102" frameHeight="122"/>
+	<SubTexture name="元件 10002" x="204" y="0" width="101" height="121" frameX="0" frameY="0" frameWidth="102" frameHeight="122"/>
+	<SubTexture name="元件 10003" x="102" y="121" width="102" height="117" frameX="0" frameY="0" frameWidth="102" frameHeight="122"/>
+	<SubTexture name="元件 10004" x="0" y="122" width="101" height="117" frameX="0" frameY="0" frameWidth="102" frameHeight="122"/>
+	<SubTexture name="元件 10005" x="204" y="121" width="101" height="117" frameX="0" frameY="0" frameWidth="102" frameHeight="122"/>
+</TextureAtlas>

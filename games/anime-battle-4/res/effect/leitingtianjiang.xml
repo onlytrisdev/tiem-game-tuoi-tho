@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="leitingtianjiang.png" px="-31" py="-40" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="63" height="64"/>
+  <SubTexture name="元件 10001" x="63" y="0" width="63" height="64" hitPoint="31,26 31,11 33,-19 3,-29 -32,-26 -34,-2 -28,29" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10002" x="126" y="0" width="63" height="64"/>
+  <SubTexture name="元件 10003" x="189" y="0" width="63" height="64"/>
+  <SubTexture name="元件 10004" x="252" y="0" width="63" height="64"/>
+</TextureAtlas>

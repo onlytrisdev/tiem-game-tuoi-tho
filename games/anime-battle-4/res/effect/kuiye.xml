@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="kuiye.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="330" height="176" frameX="0" frameY="-3" frameWidth="330" frameHeight="179" hitPoint="174,78 73,21 103,-3 214,3 284,34 318,70 303,122 238,166 102,194 20,167 13,125 42,101" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10001" x="0" y="176" width="319" height="179" frameX="0" frameY="0" frameWidth="330" frameHeight="179"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="355" width="317" height="179" frameX="0" frameY="0" frameWidth="330" frameHeight="179"/>
+</TextureAtlas>

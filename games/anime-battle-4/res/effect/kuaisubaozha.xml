@@ -1,0 +1,16 @@
+<TextureAtlas imagePath="kuaisubaozha.png">
+  <SubTexture name="元件 10000" x="0" y="0" width="433" height="421" hitPoint="" hitEffect="7" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10001" x="0" y="0" width="433" height="421" hitPoint=""/>
+  <SubTexture name="元件 10002" x="433" y="0" width="433" height="421" hitPoint="70,201 87,97 103,50 148,40 192,39 283,39 350,55 406,97 412,112 419,172 419,221 391,269 355,292 329,310 271,331 222,332 162,321 123,291" hitEffect="5" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10003" x="433" y="0" width="433" height="421"/>
+  <SubTexture name="元件 10004" x="0" y="421" width="433" height="421"/>
+  <SubTexture name="元件 10005" x="0" y="421" width="433" height="421"/>
+  <SubTexture name="元件 10006" x="433" y="421" width="433" height="421"/>
+  <SubTexture name="元件 10007" x="433" y="421" width="433" height="421"/>
+  <SubTexture name="元件 10008" x="0" y="842" width="433" height="421"/>
+  <SubTexture name="元件 10009" x="0" y="842" width="433" height="421"/>
+  <SubTexture name="元件 10010" x="433" y="842" width="433" height="421"/>
+  <SubTexture name="元件 10011" x="433" y="842" width="433" height="421"/>
+  <SubTexture name="元件 10012" x="0" y="1263" width="433" height="421"/>
+  <SubTexture name="元件 10013" x="0" y="1263" width="433" height="421"/>
+</TextureAtlas>

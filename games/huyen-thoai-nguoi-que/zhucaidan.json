@@ -1,0 +1,435 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480,
+		"autoDestroyAtClosed": true
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": -1040,
+			"texture": "changjing/cc7.png"
+		},
+		"compId": 46
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 240,
+			"x": 400,
+			"source": "logo.ani",
+			"scaleY": 1.5,
+			"scaleX": 1.5,
+			"name": "logo",
+			"autoPlay": true
+		},
+		"compId": 4
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 280,
+			"x": 271,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "cgms"
+		},
+		"compId": 7
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 280,
+			"x": 419,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "wjms"
+		},
+		"compId": 8
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 375.6666666666667,
+			"x": 271,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "gdyx"
+		},
+		"compId": 9
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 375.6666666666667,
+			"x": 419,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "tjsd"
+		},
+		"compId": 10
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 422,
+			"x": 271,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "fx"
+		},
+		"compId": 11
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 422,
+			"x": 419,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "phb"
+		},
+		"compId": 12
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 291.5,
+			"x": 301,
+			"text": "Vượt qua",
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 13
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 291.5,
+			"x": 448,
+			"text": "Vô tận",
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 15
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 433.3333333333333,
+			"x": 294.5,
+			"width": 75,
+			"text": "Chia sẻ",
+			"height": 15,
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 16
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 433,
+			"x": 456,
+			"width": 72,
+			"text": "Xếp hạng",
+			"height": 14,
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 17
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 387,
+			"x": 286,
+			"width": 75,
+			"text": "Game khác",
+			"height": 15,
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 18
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 387,
+			"x": 440.5,
+			"width": 75,
+			"text": "Thành tích",
+			"height": 15,
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 19
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 8,
+			"x": 637,
+			"width": 155,
+			"texture": "beijin.png",
+			"height": 44,
+			"alpha": 1
+		},
+		"compId": 20
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 12.5,
+			"x": 643,
+			"width": 38,
+			"texture": "tili.png",
+			"height": 35
+		},
+		"compId": 21
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 7,
+			"x": 742,
+			"width": 50,
+			"stateNum": 2,
+			"skin": "jiahao.png",
+			"name": "jiahao",
+			"height": 47
+		},
+		"compId": 22
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 21.5,
+			"x": 685,
+			"text": "999",
+			"name": "tilizi",
+			"italic": true,
+			"fontSize": 25,
+			"font": "Arial",
+			"color": "#ffe000",
+			"bold": true
+		},
+		"compId": 23
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 13,
+			"x": 19,
+			"width": 297,
+			"texture": "beijin.png",
+			"height": 39
+		},
+		"compId": 25
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 25,
+			"x": 37,
+			"text": "Số mạng tích lũy： 9999",
+			"name": "leijishadi",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#ffff00",
+			"bold": true
+		},
+		"compId": 26
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 327.6666666666667,
+			"x": 271,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "jycg"
+		},
+		"compId": 29
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 327.6666666666667,
+			"x": 419,
+			"stateNum": 3,
+			"skin": "an.png",
+			"name": "wqqh"
+		},
+		"compId": 30
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 337.5,
+			"x": 302,
+			"text": "Đột phá",
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 31
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 338.5,
+			"x": 449,
+			"text": "Nâng cấp",
+			"fontSize": 15,
+			"font": "Arial",
+			"color": "#00bdf9",
+			"bold": true
+		},
+		"compId": 32
+	}, {
+		"type": "Script",
+		"props": {
+			"dianji": "@Prefab:prefab/dianjitexiao.prefab",
+			"runtime": "zhucaidan.ts"
+		},
+		"compId": 33
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -700,
+			"x": 223,
+			"name": "kggjm"
+		},
+		"compId": 41,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 505,
+				"x": 252,
+				"width": 317,
+				"texture": "beijin.png",
+				"height": 124
+			},
+			"compId": 34
+		}, {
+			"type": "Label",
+			"props": {
+				"y": 552,
+				"x": 313,
+				"text": "Xem QC nhận 20",
+				"fontSize": 15,
+				"font": "Arial",
+				"color": "#e0ff00",
+				"bold": true
+			},
+			"compId": 35
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 541,
+				"x": 469,
+				"width": 36,
+				"texture": "tili.png",
+				"height": 34
+			},
+			"compId": 36
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 580,
+				"x": 349,
+				"skin": "an.png",
+				"name": "kgg"
+			},
+			"compId": 37
+		}, {
+			"type": "Label",
+			"props": {
+				"y": 590,
+				"x": 381,
+				"text": "Nhận ngay",
+				"fontSize": 15,
+				"font": "Arial",
+				"color": "#00ffd6",
+				"bold": true
+			},
+			"compId": 38
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 512,
+				"x": 508,
+				"width": 54,
+				"skin": "an.png",
+				"name": "kgggb",
+				"height": 26
+			},
+			"compId": 39
+		}, {
+			"type": "Label",
+			"props": {
+				"y": 520,
+				"x": 522,
+				"width": 30,
+				"text": "Đóng",
+				"height": 12,
+				"fontSize": 12,
+				"font": "Arial",
+				"color": "#00ffd6",
+				"bold": true
+			},
+			"compId": 40
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"name": "buzu"
+		},
+		"compId": 45,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 651,
+				"x": 316,
+				"width": 198,
+				"texture": "beijin.png",
+				"height": 83
+			},
+			"compId": 42
+		}, {
+			"type": "Label",
+			"props": {
+				"y": 687,
+				"x": 408,
+				"text": "Không đủ",
+				"fontSize": 15,
+				"font": "Arial",
+				"color": "#f4ff00",
+				"bold": true
+			},
+			"compId": 43
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 678,
+				"x": 371,
+				"width": 31,
+				"texture": "tili.png",
+				"height": 29
+			},
+			"compId": 44
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"source": "zc.ani",
+			"autoPlay": true
+		},
+		"compId": 27,
+		"child": [{
+			"type": "Script",
+			"props": {
+				"runtime": "san.ts"
+			},
+			"compId": 28
+		}]
+	}],
+	"loadList": ["changjing/cc7.png", "logo.ani", "an.png", "beijin.png", "tili.png", "jiahao.png", "prefab/dianjitexiao.prefab", "zc.ani"],
+	"loadList3D": []
+}

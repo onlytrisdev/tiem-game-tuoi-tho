@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="mh13.png" px="-102" py="-172" class="" sound="">
+  <SubTexture name="元件 110000" x="0" y="0" width="242" height="262" hitPoint="-82,76 -58,92 50,98 71,93 119,34 155,-112 160,-151 84,-168 -35,-146 -96,31" hitEffect="4" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 110001" x="242" y="0" width="242" height="262"/>
+  <SubTexture name="元件 110002" x="0" y="262" width="242" height="262"/>
+  <SubTexture name="元件 110003" x="242" y="262" width="242" height="262"/>
+  <SubTexture name="元件 110004" x="0" y="524" width="242" height="262"/>
+</TextureAtlas>

@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="YL3.png">
+  <SubTexture name="元件 40000" x="0" y="0" width="512" height="256" frameX="-76" frameY="-33" frameWidth="594" frameHeight="289" hitPoint="396,278 542,285 580,271 583,220 477,113 392,66 173,29 77,58 94,151" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 40001" x="0" y="256" width="576" height="256" frameX="-18" frameY="-31" frameWidth="594" frameHeight="289"/>
+  <SubTexture name="元件 40002" x="576" y="256" width="448" height="181" frameX="0" frameY="0" frameWidth="594" frameHeight="289"/>
+</TextureAtlas>

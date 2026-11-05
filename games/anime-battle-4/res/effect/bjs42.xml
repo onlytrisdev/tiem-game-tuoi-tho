@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="bjs42.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="312" height="246" hitPoint="148,147 50,186 220,225 295,190 298,141 208,102 125,117" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10001" x="0" y="246" width="312" height="246"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="492" width="312" height="246"/>
+</TextureAtlas>

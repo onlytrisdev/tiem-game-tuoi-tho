@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="pj9.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="198" height="198" hitPoint="89,93 70,6 164,24 191,85 176,155 132,203 68,183 11,142 13,55 65,11" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10001" x="198" y="0" width="198" height="198"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="198" width="198" height="198" hitPoint="92,104 72,17 160,28 195,99 183,156 128,189 28,173 20,77 53,25 69,24" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10003" x="198" y="198" width="198" height="198"/>
+</TextureAtlas>

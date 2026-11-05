@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="tiaodao1.png" px="-68" py="-184" class="" sound="">
+  <SubTexture name="元件 30000" x="0" y="0" width="129" height="128" frameX="0" frameY="-9" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30001" x="129" y="0" width="129" height="128" frameX="0" frameY="-9" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30002" x="258" y="0" width="129" height="128" frameX="0" frameY="-9" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30003" x="0" y="128" width="129" height="128" frameX="0" frameY="-9" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30004" x="129" y="128" width="129" height="128" frameX="0" frameY="-9" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30005" x="258" y="128" width="129" height="128" frameX="-43" frameY="0" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30006" x="0" y="256" width="129" height="128" frameX="-91" frameY="-30" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30007" x="129" y="256" width="129" height="128" frameX="-124" frameY="-85" frameWidth="273" frameHeight="227"/>
+  <SubTexture name="元件 30008" x="258" y="256" width="129" height="128" frameX="-144" frameY="-99" frameWidth="273" frameHeight="227"/>
+</TextureAtlas>

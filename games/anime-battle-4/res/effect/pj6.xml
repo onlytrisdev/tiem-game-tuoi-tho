@@ -1,0 +1,15 @@
+<TextureAtlas imagePath="pj6.png" px="-127" py="-112">
+  <SubTexture name="元件 20000" x="0" y="0" width="240" height="232"/>
+  <SubTexture name="元件 20001" x="240" y="0" width="240" height="232" hitPoint="4,6 -33,-66 25,-73 70,-37 85,8 78,47 53,66 16,85 -33,81 -73,31 -84,-21 -67,-55 -43,-65" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 20002" x="480" y="0" width="240" height="232"/>
+  <SubTexture name="元件 20003" x="720" y="0" width="240" height="232" hitPoint="0,9 -37,-78 31,-78 81,-35 83,18 70,59 26,85 -61,61 -82,7 -66,-45 -46,-72" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 20004" x="0" y="232" width="240" height="232"/>
+  <SubTexture name="元件 20005" x="240" y="232" width="240" height="232"/>
+  <SubTexture name="元件 20006" x="480" y="232" width="240" height="232"/>
+  <SubTexture name="元件 20007" x="720" y="232" width="240" height="232"/>
+  <SubTexture name="元件 20008" x="0" y="464" width="240" height="232"/>
+  <SubTexture name="元件 20009" x="240" y="464" width="240" height="232"/>
+  <SubTexture name="元件 20010" x="480" y="464" width="240" height="232"/>
+  <SubTexture name="元件 20011" x="720" y="464" width="240" height="232"/>
+  <SubTexture name="元件 20012" x="0" y="696" width="240" height="232"/>
+</TextureAtlas>

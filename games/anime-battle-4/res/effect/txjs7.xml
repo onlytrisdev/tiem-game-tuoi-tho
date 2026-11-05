@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="txjs7.png">
+  <SubTexture name="t018004506f08ab3ccf.gif" x="0" y="0" width="240" height="269"/>
+  <SubTexture name="位图 16" x="240" y="0" width="240" height="269" hitPoint="17,12 17,220 226,201 209,6" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="位图 17" x="480" y="0" width="240" height="269"/>
+  <SubTexture name="位图 18" x="720" y="0" width="240" height="269"/>
+  <SubTexture name="位图 19" x="0" y="269" width="240" height="269"/>
+  <SubTexture name="位图 20" x="240" y="269" width="240" height="269"/>
+  <SubTexture name="位图 21" x="480" y="269" width="240" height="269"/>
+  <SubTexture name="位图 22" x="720" y="269" width="240" height="269"/>
+</TextureAtlas>

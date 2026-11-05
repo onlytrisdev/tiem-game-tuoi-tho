@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="TuLongShan.png" px="-86" py="-166">
+  <SubTexture name="元件 30000" x="0" y="0" width="198" height="185" hitPoint="-76,2 58,20 111,9 114,-73 56,-142 -76,-101" hitEffect="8" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="元件 30001" x="198" y="0" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30002" x="0" y="185" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30003" x="198" y="185" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30004" x="0" y="370" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30005" x="198" y="370" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30006" x="0" y="555" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30007" x="198" y="555" width="198" height="185" hitPoint=""/>
+  <SubTexture name="元件 30008" x="198" y="555" width="198" height="185" hitPoint=""/>
+</TextureAtlas>

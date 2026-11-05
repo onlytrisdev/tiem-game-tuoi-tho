@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="zhan.png" px="-98" py="-74" sound="zhan" class="">
+  <SubTexture name="元件 10000" x="0" y="0" width="193" height="149" hitPoint="-100,62 -28,1 94,-74 90,-45 -8,34 -95,78" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10001" x="0" y="149" width="193" height="149"/>
+  <SubTexture name="元件 10002" x="0" y="298" width="193" height="149"/>
+</TextureAtlas>

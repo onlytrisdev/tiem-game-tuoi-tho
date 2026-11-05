@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="dianzi.png" px="-117" py="-110" class="">
+  <SubTexture name="gif0" x="0" y="0" width="224" height="141" hitPoint="46,1 -32,-2 -80,-21 -80,-51 -45,-109 2,-100 110,-25"/>
+  <SubTexture name="gif1" x="224" y="0" width="224" height="141" hitPoint="102,-46 35,-80 -39,-60 -129,-56 10,-1 112,-25" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif2" x="448" y="0" width="224" height="141"/>
+  <SubTexture name="gif3" x="672" y="0" width="224" height="141"/>
+  <SubTexture name="gif4" x="896" y="0" width="224" height="141"/>
+  <SubTexture name="gif5" x="1120" y="0" width="224" height="141"/>
+  <SubTexture name="gif6" x="1344" y="0" width="224" height="141"/>
+</TextureAtlas>

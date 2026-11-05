@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="llls4.png" px="-210" py="-40" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="705" height="58" hitPoint="501,-11 316,12 35,9 -134,6 -217,-8 -177,-31 52,-37 262,-36" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10001" x="0" y="58" width="705" height="58"/>
+  <SubTexture name="元件 10002" x="0" y="116" width="705" height="58"/>
+</TextureAtlas>

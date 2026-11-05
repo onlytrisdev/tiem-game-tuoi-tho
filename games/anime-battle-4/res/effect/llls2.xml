@@ -1,0 +1,12 @@
+<TextureAtlas imagePath="llls2.png" px="-207" py="-156" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="387" height="299" hitPoint="-130,-109 -128,102 116,103 115,-98 113,-104 116,-106" hitEffect="9" hurtInterval="1" cardFrame="0"/>
+  <SubTexture name="元件 10001" x="387" y="0" width="387" height="299"/>
+  <SubTexture name="元件 10002" x="0" y="299" width="387" height="299"/>
+  <SubTexture name="元件 10003" x="387" y="299" width="387" height="299"/>
+  <SubTexture name="元件 10004" x="0" y="598" width="387" height="299"/>
+  <SubTexture name="元件 10005" x="387" y="598" width="387" height="299"/>
+  <SubTexture name="元件 10006" x="0" y="897" width="387" height="299"/>
+  <SubTexture name="元件 10007" x="387" y="897" width="387" height="299"/>
+  <SubTexture name="元件 10008" x="0" y="1196" width="387" height="299"/>
+  <SubTexture name="元件 10009" x="387" y="1196" width="387" height="299"/>
+</TextureAtlas>

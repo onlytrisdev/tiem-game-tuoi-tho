@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="sayaka9.png" px="-222" py="-226" class="" sound="">
+  <SubTexture name="元件 80000" x="0" y="0" width="445" height="444"/>
+  <SubTexture name="元件 80001" x="445" y="0" width="445" height="444"/>
+  <SubTexture name="元件 80002" x="0" y="444" width="445" height="444"/>
+  <SubTexture name="元件 80003" x="445" y="444" width="445" height="444"/>
+  <SubTexture name="元件 80004" x="0" y="888" width="445" height="444"/>
+  <SubTexture name="元件 80005" x="445" y="888" width="445" height="444"/>
+  <SubTexture name="元件 80006" x="0" y="1332" width="445" height="444"/>
+  <SubTexture name="元件 80007" x="445" y="1332" width="445" height="444"/>
+</TextureAtlas>

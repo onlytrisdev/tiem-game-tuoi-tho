@@ -1,0 +1,33 @@
+<ZBox width="166%" height="166%" scaleX="0.6" scaleY="0.6">
+    <TouchImageBatchsContainer id="keytouch" src="KeyUIAtlas" width="100%" height="100%">
+        <BImage id="key" src="KeyUIAtlas:key" left="20" bottom="20"/>
+        <BBox id="keys" width="600" height="420" right="20" bottom="20">
+            <BImage id="attack" src="KeyUIAtlas:attack" centerX="77" centerY="59" />
+            <BImage id="jump" src="KeyUIAtlas:cd" centerX="222.5" centerY="-52.5" />
+            <BImage id="O" src="KeyUIAtlas:cd" centerX="112.5" centerY="-137.5" />
+            <BImage id="P" src="KeyUIAtlas:cd" centerX="-23.5" centerY="-102.5" />
+            <BImage id="I" src="KeyUIAtlas:cd" centerX="-108.5" centerY="3.5" />
+            <BImage id="L" src="KeyUIAtlas:cd" centerX="-222.5" centerY="89.5" />
+            <BImage id="U" src="KeyUIAtlas:cd" centerX="-92.5" centerY="136.5" />
+            <BBox width="100%" height="100%" mouseEnabled="false">
+                <BImage src="KeyUIAtlas:K" centerX="222.5" centerY="-52.5" />
+                <BImage src="KeyUIAtlas:L" centerX="-222" centerY="89.5" />
+                <BImage src="KeyUIAtlas:O" centerX="113.5" centerY="-137.5" />
+                <BImage src="KeyUIAtlas:P" centerX="-16" centerY="-101.5" />
+                <BImage src="KeyUIAtlas:U" centerX="-92" centerY="140" />
+                <BImage src="KeyUIAtlas:I" centerX="-109" centerY="4.5" />
+                <BImage id="Ling" src="KeyUIAtlas:cding" centerX="-222.5" centerY="89.5" />
+                <BImage id="Iing" src="KeyUIAtlas:cding" centerX="-108.5" centerY="3.5" />
+                <BImage id="Ping" src="KeyUIAtlas:cding" centerX="-22.5" centerY="-102.5" />
+                <BImage id="Oing" src="KeyUIAtlas:cding" centerX="113.5" centerY="-137.5" />
+                <BImage id="Uing" src="KeyUIAtlas:cding" centerX="-91.5" centerY="136.5" />
+            </BBox>
+        </BBox>
+        <BBox width="350" mouseEnabled="false" height="350" left="20" bottom="20">
+            <BImage id="up" src="KeyUIAtlas:down4" centerX="0" centerY="-80" />
+            <BImage id="right" src="KeyUIAtlas:down3" centerX="83" centerY="3" />
+            <BImage id="down" src="KeyUIAtlas:down2" centerX="0" centerY="86" />
+            <BImage id="left" src="KeyUIAtlas:down1" centerX="-83" centerY="3" />
+        </BBox>
+    </TouchImageBatchsContainer>
+    </ZBox>

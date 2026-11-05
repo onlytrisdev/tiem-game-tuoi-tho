@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="JiuTouLong.png" px="-250" py="-164">
+  <SubTexture name="元件 20000" x="0" y="0" width="503" height="249" hitPoint="246,-38 184,-68 123,-95 12,-106 -90,-87 -139,-48 -186,-34 -160,-19 -113,3 -45,55 40,47 235,-20" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 20001" x="503" y="0" width="503" height="249"/>
+  <SubTexture name="元件 20002" x="0" y="249" width="503" height="249" hitPoint="221,-40 188,-49 163,-62 119,-68 34,-66 -23,-40 -146,-44 -93,-18 12,17 105,0 219,-4" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 20003" x="503" y="249" width="503" height="249"/>
+  <SubTexture name="元件 20004" x="0" y="498" width="503" height="249"/>
+  <SubTexture name="元件 20005" x="503" y="498" width="503" height="249"/>
+</TextureAtlas>

@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="tongrenkan.png" px="-48" py="-200">
+  <SubTexture name="元件 50000" x="0" y="0" width="238" height="242" hitPoint="-5,-173 44,-174 80,-157 116,-112 150,-57 160,-17 149,12 122,25 78,22 28,20 0,11 -17,2" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 50001" x="238" y="0" width="101" height="177" frameX="-95" frameY="-58" frameWidth="238" frameHeight="242"/>
+  <SubTexture name="元件 50002" x="0" y="242" width="238" height="242"/>
+</TextureAtlas>

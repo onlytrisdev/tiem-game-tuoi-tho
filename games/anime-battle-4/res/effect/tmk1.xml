@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="tmk1.png" px="-134" py="-466" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="300" height="482" frameX="-12" frameY="-28" frameWidth="324" frameHeight="520"/>
+  <SubTexture name="元件 10001" x="300" y="0" width="280" height="486" frameX="-32" frameY="-26" frameWidth="324" frameHeight="520"/>
+  <SubTexture name="元件 10002" x="580" y="0" width="300" height="520" frameX="-18" frameY="0" frameWidth="324" frameHeight="520"/>
+  <SubTexture name="元件 10003" x="0" y="520" width="324" height="472" frameX="0" frameY="-36" frameWidth="324" frameHeight="520"/>
+  <SubTexture name="元件 10004" x="324" y="520" width="284" height="416" frameX="-28" frameY="-80" frameWidth="324" frameHeight="520"/>
+  <SubTexture name="元件 10005" x="608" y="520" width="282" height="448" frameX="-28" frameY="-56" frameWidth="324" frameHeight="520"/>
+  <SubTexture name="元件 10006" x="0" y="992" width="272" height="428" frameX="-30" frameY="-68" frameWidth="324" frameHeight="520"/>
+</TextureAtlas>

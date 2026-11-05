@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="wangshe9.png" px="-31" py="-117" class="" sound="">
+  <SubTexture name="元件 90000" x="1" y="1" width="67" height="66" frameX="-1" frameY="-85" frameWidth="278" frameHeight="248"/>
+  <SubTexture name="元件 90001" x="69" y="1" width="195" height="142" frameX="-4" frameY="-44" frameWidth="278" frameHeight="248" hitPoint="-19,-28 -22,25 24,32 107,26 185,25 204,-5 193,-30 155,-39" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 90002" x="1" y="144" width="247" height="167" frameX="0" frameY="-27" frameWidth="278" frameHeight="248" hitPoint="" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 90003" x="1" y="312" width="271" height="248" frameX="-7" frameY="0" frameWidth="278" frameHeight="248"/>
+  <SubTexture name="元件 90004" x="273" y="312" width="48" height="56" frameX="-9" frameY="-91" frameWidth="278" frameHeight="248"/>
+  <SubTexture name="元件 90005" x="322" y="312" width="48" height="54" frameX="-6" frameY="-84" frameWidth="278" frameHeight="248"/>
+</TextureAtlas>

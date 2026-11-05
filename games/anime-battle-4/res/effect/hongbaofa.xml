@@ -1,0 +1,14 @@
+<TextureAtlas imagePath="hongbaofa.png" px="-241" py="-246" class="" start="0" end="1">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10001" x="483" y="0" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10002" x="966" y="0" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10003" x="1449" y="0" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="489" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10005" x="483" y="489" width="483" height="489" hitPoint="-2,197 -108,160 -180,84 -184,-92 -97,-175 131,-175 161,-105 190,6 142,147"/>
+  <SubTexture name="元件 1 实例 10006" x="966" y="489" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10007" x="1449" y="489" width="483" height="489" hitPoint="68,201 -50,200 -172,120 -185,-113 -157,-116 -101,-174 49,-173 151,-160 225,12 155,177"/>
+  <SubTexture name="元件 1 实例 10008" x="0" y="978" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10009" x="483" y="978" width="483" height="489" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10010" x="966" y="978" width="483" height="489"/>
+  <SubTexture name="元件 1 实例 10011" x="1449" y="978" width="483" height="489" hitPoint="17,241 -154,180 -190,11 -164,-177 169,-173 249,46 138,209"/>
+</TextureAtlas>

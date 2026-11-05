@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:6340657cfa9ed1d8e90de15be594676d:b269a1549ada700897384c96d7439c5d:354b03b24ef5228b4301b8c78b1cf1db$ -->
+<TextureAtlas imagePath="GameMain.png" width="1024" height="1024">
+    <SubTexture name="1Pkey" x="604" y="302" width="126" height="132" frameX="-13" frameY="-10" frameWidth="155" frameHeight="157"/>
+    <SubTexture name="1v1" x="844" y="560" width="124" height="119" frameX="-6" frameY="-2" frameWidth="140" frameHeight="140"/>
+    <SubTexture name="1v1mode" x="844" y="441" width="125" height="117" frameX="-6" frameY="-2" frameWidth="140" frameHeight="131"/>
+    <SubTexture name="1v1online" x="512" y="700" width="123" height="114" frameX="-6" frameY="-2" frameWidth="138" frameHeight="136"/>
+    <SubTexture name="1v3mode" x="387" y="551" width="125" height="119" frameX="-8" frameY="-2" frameWidth="139" frameHeight="140"/>
+    <SubTexture name="2Pkey" x="364" y="417" width="126" height="132" frameX="-12" frameY="-10" frameWidth="156" frameHeight="157"/>
+    <SubTexture name="2v2mode" x="717" y="441" width="125" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="138"/>
+    <SubTexture name="2v2online" x="717" y="561" width="124" height="115" frameX="-5" frameY="-2" frameWidth="138" frameHeight="138"/>
+    <SubTexture name="ad" x="2" y="215" width="600" height="200"/>
+    <SubTexture name="align" x="129" y="677" width="123" height="129" frameX="-14" frameY="-10" frameWidth="154" frameHeight="156"/>
+    <SubTexture name="back2" x="2" y="485" width="138" height="138"/>
+    <SubTexture name="backhome" x="128" y="891" width="124" height="129" frameX="-13" frameY="-10" frameWidth="154" frameHeight="156"/>
+    <SubTexture name="btn_down" x="745" y="2" width="196" height="219" frameX="-11" frameY="-8" frameWidth="225" frameHeight="227"/>
+    <SubTexture name="btn_up" x="733" y="223" width="196" height="216" frameX="-10" frameY="-8" frameWidth="220" frameHeight="224"/>
+    <SubTexture name="chanel" x="589" y="436" width="126" height="131" frameX="-12" frameY="-10" frameWidth="156" frameHeight="157"/>
+    <SubTexture name="createroom" x="639" y="678" width="123" height="116" frameX="-6" frameY="-2" frameWidth="138" frameHeight="127"/>
+    <SubTexture name="danbei" x="254" y="677" width="123" height="129" frameX="-13" frameY="-10" frameWidth="154" frameHeight="156"/>
+    <SubTexture name="drms" x="615" y="816" width="115" height="120" frameX="-10" frameY="-2" frameWidth="140" frameHeight="142"/>
+    <SubTexture name="gg" x="732" y="796" width="117" height="113" frameX="-8" frameY="-1" frameWidth="140" frameHeight="132"/>
+    <SubTexture name="goongame" x="2" y="891" width="124" height="131" frameX="-13" frameY="-10" frameWidth="155" frameHeight="158"/>
+    <SubTexture name="head" x="2" y="8" width="709" height="32" frameX="0" frameY="0" frameWidth="710" frameHeight="32"/>
+    <SubTexture name="head2" x="2" y="42" width="708" height="32" frameX="-2" frameY="0" frameWidth="710" frameHeight="32"/>
+    <SubTexture name="headimg" x="943" y="142" width="53" height="53"/>
+    <SubTexture name="headline" x="2" y="2" width="741" height="4"/>
+    <SubTexture name="joinroom" x="387" y="672" width="123" height="117" frameX="-8" frameY="-2" frameWidth="138" frameHeight="129"/>
+    <SubTexture name="lianximoshi" x="379" y="791" width="117" height="128" frameX="-9" frameY="-2" frameWidth="140" frameHeight="140"/>
+    <SubTexture name="next" x="254" y="868" width="123" height="129" frameX="-13" frameY="-10" frameWidth="154" frameHeight="156"/>
+    <SubTexture name="no" x="129" y="808" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="off" x="129" y="838" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="ok2" x="142" y="544" width="125" height="131" frameX="-13" frameY="-10" frameWidth="155" frameHeight="157"/>
+    <SubTexture name="onlinefight" x="498" y="816" width="115" height="126" frameX="-10" frameY="-1" frameWidth="140" frameHeight="162"/>
+    <SubTexture name="overbar" x="192" y="417" width="170" height="125" frameX="0" frameY="0" frameWidth="171" frameHeight="125"/>
+    <SubTexture name="rank" x="492" y="417" width="95" height="115" frameX="-19" frameY="-5" frameWidth="140" frameHeight="140"/>
+    <SubTexture name="roles" x="632" y="76" width="101" height="123" frameX="-20" frameY="-2" frameWidth="142" frameHeight="135"/>
+    <SubTexture name="rwsuipian" x="943" y="197" width="46" height="46" frameX="0" frameY="0" frameWidth="49" frameHeight="50"/>
+    <SubTexture name="save1" x="632" y="201" width="99" height="99"/>
+    <SubTexture name="save2" x="931" y="366" width="44" height="44"/>
+    <SubTexture name="select_yes" x="943" y="2" width="58" height="138"/>
+    <SubTexture name="setting" x="931" y="245" width="91" height="119" frameX="-21" frameY="-3" frameWidth="140" frameHeight="132"/>
+    <SubTexture name="srms" x="269" y="551" width="116" height="124" frameX="-10" frameY="-8" frameWidth="140" frameHeight="142"/>
+    <SubTexture name="title" x="2" y="76" width="628" height="137"/>
+    <SubTexture name="tryplay" x="2" y="417" width="188" height="66"/>
+    <SubTexture name="unlock2" x="2" y="625" width="125" height="131" frameX="-13" frameY="-10" frameWidth="155" frameHeight="157"/>
+    <SubTexture name="unlockrole" x="2" y="758" width="125" height="131" frameX="-13" frameY="-10" frameWidth="155" frameHeight="158"/>
+    <SubTexture name="video" x="514" y="569" width="123" height="129" frameX="-14" frameY="-10" frameWidth="154" frameHeight="156"/>
+</TextureAtlas>

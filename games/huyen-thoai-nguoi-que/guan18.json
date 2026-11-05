@@ -1,0 +1,1488 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480,
+		"autoDestroyAtClosed": true
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Animation",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"source": "cj.ani",
+			"scaleX": 1.2,
+			"name": "ditu",
+			"index": 4
+		},
+		"compId": 3,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 427,
+				"x": 0,
+				"width": 1907,
+				"texture": "fangkuai.png",
+				"height": 53,
+				"alpha": 1
+			},
+			"compId": 26,
+			"child": [{
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": -8,
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 27
+			}, {
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": 226,
+					"wrapMode": "2",
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 28
+			}, {
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": 462,
+					"wrapMode": "1",
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 29
+			}, {
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": 724,
+					"wrapMode": "2",
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 30
+			}, {
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": 1018,
+					"wrapMode": "0",
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 31
+			}, {
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": 1300,
+					"wrapMode": "2",
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 32
+			}, {
+				"type": "Animation",
+				"props": {
+					"y": -53,
+					"x": 1602,
+					"wrapMode": "1",
+					"source": "cao.ani",
+					"autoPlay": true
+				},
+				"compId": 33
+			}]
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 23,
+			"x": 36,
+			"source": "xue.ani",
+			"skewX": 30,
+			"scaleX": 2,
+			"name": "xuetiao"
+		},
+		"compId": 4
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 51,
+			"x": 51,
+			"source": "lengque1.ani",
+			"name": "lengque1"
+		},
+		"compId": 5
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 51,
+			"x": 152,
+			"source": "lengque2.ani",
+			"name": "lengque2"
+		},
+		"compId": 6
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 51,
+			"x": 253,
+			"source": "lengque3.ani",
+			"name": "lengque3"
+		},
+		"compId": 7
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 44,
+			"x": 42,
+			"width": 108,
+			"source": "lengquewanbi.ani",
+			"scaleY": 0.4,
+			"scaleX": 0.8,
+			"name": "lengque1wc",
+			"height": 119,
+			"blendMode": "lighter",
+			"autoPlay": true
+		},
+		"compId": 9
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 44,
+			"x": 143,
+			"width": 108,
+			"source": "lengquewanbi.ani",
+			"scaleY": 0.4,
+			"scaleX": 0.8,
+			"name": "lengque2wc",
+			"height": 119,
+			"blendMode": "lighter",
+			"autoPlay": true
+		},
+		"compId": 10
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 44,
+			"x": 244,
+			"width": 108,
+			"source": "lengquewanbi.ani",
+			"scaleY": 0.4,
+			"scaleX": 0.8,
+			"name": "lengque3wc",
+			"height": 119,
+			"blendMode": "lighter",
+			"autoPlay": true
+		},
+		"compId": 11
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 283,
+			"width": 175,
+			"skewX": 0,
+			"presetID": 1,
+			"pivotY": 97,
+			"pivotX": 47,
+			"name": "diren1",
+			"height": 136,
+			"isPresetRoot": true
+		},
+		"compId": 12,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 98,
+				"x": 45,
+				"source": "diren/diren1.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 38
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 3,
+				"y": 0,
+				"x": 1,
+				"speed": 5,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 39
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 4,
+				"y": -3,
+				"x": 12,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.5,
+				"name": "xuetiao"
+			},
+			"compId": 40
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 76,
+				"x": 44,
+				"width": 146,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 27,
+				"pivotX": 132,
+				"name": "qy",
+				"height": 74,
+				"alpha": 0
+			},
+			"compId": 41
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 437,
+			"width": 180,
+			"presetID": 1,
+			"pivotY": 136,
+			"pivotX": 48,
+			"name": "diren2",
+			"height": 192,
+			"isPresetRoot": true
+		},
+		"compId": 13,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 153,
+				"x": 49,
+				"source": "diren/diren2.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 42
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -12,
+				"x": 14,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.5,
+				"name": "xuetiao"
+			},
+			"compId": 43
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 5,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 44
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 117,
+				"x": 52,
+				"width": 146,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 53,
+				"pivotX": 146,
+				"name": "qy",
+				"height": 106,
+				"alpha": 0
+			},
+			"compId": 45
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 553,
+			"width": 201,
+			"presetID": 1,
+			"pivotY": 136,
+			"pivotX": 74,
+			"name": "diren3",
+			"height": 183,
+			"isPresetRoot": true
+		},
+		"compId": 14,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 144,
+				"x": 75,
+				"source": "diren/diren3.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 46
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -12,
+				"x": 17,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.8,
+				"name": "xuetiao"
+			},
+			"compId": 47
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 6,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 48
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 119.5,
+				"x": 75,
+				"width": 130,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 55,
+				"pivotX": 130,
+				"name": "qy",
+				"height": 109,
+				"alpha": 0
+			},
+			"compId": 49
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 651,
+			"width": 171,
+			"presetID": 1,
+			"pivotY": 140,
+			"pivotX": 40,
+			"name": "diren4",
+			"height": 177,
+			"isPresetRoot": true
+		},
+		"compId": 15,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 140,
+				"x": 41,
+				"source": "diren/diren4.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 50
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -10,
+				"x": 8,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.5,
+				"name": "xuetiao"
+			},
+			"compId": 51
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 5,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 52
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 112,
+				"x": 41,
+				"width": 103,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 48,
+				"pivotX": 103,
+				"name": "qy",
+				"height": 96,
+				"alpha": 0
+			},
+			"compId": 53
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 770,
+			"width": 209,
+			"presetID": 1,
+			"pivotY": 102,
+			"pivotX": 74,
+			"name": "diren5",
+			"height": 140,
+			"isPresetRoot": true
+		},
+		"compId": 16,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 103,
+				"x": 77,
+				"source": "diren/diren5.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 54
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -11,
+				"x": 34,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.5,
+				"name": "xuetiao"
+			},
+			"compId": 55
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 4,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 56
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 81,
+				"x": 77,
+				"width": 108,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 37,
+				"pivotX": 108,
+				"name": "qy",
+				"height": 74,
+				"alpha": 0
+			},
+			"compId": 57
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 1171,
+			"width": 218,
+			"presetID": 1,
+			"pivotY": 121,
+			"pivotX": 86,
+			"name": "diren6",
+			"height": 158,
+			"isPresetRoot": true
+		},
+		"compId": 17,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 122,
+				"x": 87,
+				"source": "diren/diren6.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 58
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -6,
+				"x": 38,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.7,
+				"name": "xuetiao"
+			},
+			"compId": 59
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 5,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 60
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 95.5,
+				"x": 87,
+				"width": 125,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 37,
+				"pivotX": 125,
+				"name": "qy",
+				"height": 74,
+				"alpha": 0
+			},
+			"compId": 61
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 430,
+			"x": 1514,
+			"width": 193,
+			"presetID": 1,
+			"pivotY": 117,
+			"pivotX": 65,
+			"name": "diren7",
+			"height": 155,
+			"isPresetRoot": true
+		},
+		"compId": 18,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 116,
+				"x": 63,
+				"source": "diren/diren7.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 62
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -11,
+				"x": 25,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.5,
+				"name": "xuetiao"
+			},
+			"compId": 63
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 6,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 64
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 93,
+				"x": 63,
+				"width": 118,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 41,
+				"pivotX": 118,
+				"name": "qy",
+				"height": 81,
+				"alpha": 0
+			},
+			"compId": 65
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"name": "xuni"
+		},
+		"compId": 23,
+		"child": [{
+			"type": "Button",
+			"props": {
+				"y": 405,
+				"x": 50,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "zuo",
+				"height": 48
+			},
+			"compId": 95
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 405,
+				"x": 142,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "you",
+				"height": 48
+			},
+			"compId": 96
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 343,
+				"x": 95,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "shang",
+				"height": 48
+			},
+			"compId": 97
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 406,
+				"x": 548,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "gj",
+				"height": 48
+			},
+			"compId": 98
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 405,
+				"x": 625,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "shanbi",
+				"height": 48
+			},
+			"compId": 99
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 343,
+				"x": 548,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "ji1",
+				"height": 48
+			},
+			"compId": 100,
+			"child": [{
+				"type": "Sprite",
+				"props": {
+					"y": 7.5,
+					"x": 15.5,
+					"width": 28,
+					"texture": "U.png",
+					"height": 33
+				},
+				"compId": 101
+			}]
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 343,
+				"x": 625,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "ji2",
+				"height": 48
+			},
+			"compId": 102,
+			"child": [{
+				"type": "Sprite",
+				"props": {
+					"y": 5,
+					"x": 18.5,
+					"width": 22,
+					"texture": "I.png",
+					"height": 38
+				},
+				"compId": 103
+			}]
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 343,
+				"x": 707,
+				"width": 59,
+				"stateNum": 2,
+				"skin": "xunianniu3.png",
+				"name": "ji3",
+				"height": 48
+			},
+			"compId": 104,
+			"child": [{
+				"type": "Sprite",
+				"props": {
+					"y": 6,
+					"x": 11,
+					"width": 37,
+					"texture": "O.png",
+					"height": 36
+				},
+				"compId": 105
+			}]
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 112,
+			"x": -53,
+			"width": 906,
+			"texture": "beijin.png",
+			"name": "guankazi",
+			"height": 83
+		},
+		"compId": 25,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 33,
+				"x": 383,
+				"text": "Cấp độ 18",
+				"fontSize": 35,
+				"font": "Arial",
+				"color": "#00ffe0",
+				"bold": true
+			},
+			"compId": 112
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 430,
+			"x": 118,
+			"source": "zhujue.ani",
+			"name": "zhujue",
+			"autoPlay": true
+		},
+		"compId": 113,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": -103,
+				"x": -10,
+				"width": 187,
+				"texture": "fangkuai.png",
+				"name": "qy",
+				"height": 171,
+				"alpha": 0
+			},
+			"compId": 114
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -150,
+				"x": -25,
+				"width": 351,
+				"texture": "fangkuai.png",
+				"name": "qy2",
+				"height": 276,
+				"alpha": 0
+			},
+			"compId": 115
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -119,
+				"x": -321,
+				"width": 346,
+				"texture": "fangkuai.png",
+				"name": "qy3",
+				"height": 175,
+				"alpha": 0
+			},
+			"compId": 116
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -133,
+				"x": 0,
+				"width": 487,
+				"texture": "fangkuai.png",
+				"name": "qy4",
+				"height": 196,
+				"alpha": 0
+			},
+			"compId": 117
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -195,
+				"x": -262,
+				"width": 525,
+				"texture": "fangkuai.png",
+				"name": "qy5",
+				"height": 258,
+				"alpha": 0
+			},
+			"compId": 118
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -107,
+				"x": 167,
+				"width": 584,
+				"texture": "fangkuai.png",
+				"name": "qy6",
+				"height": 163,
+				"alpha": 0
+			},
+			"compId": 119
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -174,
+				"x": -370,
+				"width": 741,
+				"texture": "fangkuai.png",
+				"name": "qy7",
+				"height": 244,
+				"alpha": 0
+			},
+			"compId": 120
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -196,
+				"x": -191,
+				"width": 384,
+				"texture": "fangkuai.png",
+				"name": "qy8",
+				"height": 382,
+				"alpha": 0
+			},
+			"compId": 121
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -156,
+				"x": 1,
+				"width": 681,
+				"texture": "fangkuai.png",
+				"name": "qy9",
+				"height": 246,
+				"alpha": 0
+			},
+			"compId": 122
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -395,
+				"x": 1,
+				"width": 171,
+				"texture": "fangkuai.png",
+				"name": "qy10",
+				"height": 579,
+				"alpha": 0
+			},
+			"compId": 123
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -329,
+				"x": 1,
+				"width": 681,
+				"texture": "fangkuai.png",
+				"name": "qy11",
+				"height": 540,
+				"alpha": 0
+			},
+			"compId": 124
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -329,
+				"x": -444,
+				"width": 891,
+				"texture": "fangkuai.png",
+				"name": "qy12",
+				"height": 638,
+				"alpha": 0
+			},
+			"compId": 125
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -236,
+				"x": -8,
+				"width": 267,
+				"texture": "fangkuai.png",
+				"name": "qy13",
+				"height": 292,
+				"alpha": 0
+			},
+			"compId": 126
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": -426,
+				"x": -35,
+				"width": 258,
+				"texture": "fangkuai.png",
+				"name": "qy14",
+				"height": 622,
+				"alpha": 0
+			},
+			"compId": 127
+		}]
+	}, {
+		"type": "Script",
+		"props": {
+			"direnshuz": 115,
+			"d9xue": 1030,
+			"d8xue": 1020,
+			"d7xue": 1010,
+			"d6xue": 1000,
+			"d5xue": 990,
+			"d4xue": 980,
+			"d3xue": 970,
+			"d2xue": 960,
+			"d1xue": 950,
+			"d10xue": 1050,
+			"runtime": "guan1.ts"
+		},
+		"compId": 128
+	}, {
+		"type": "Script",
+		"props": {
+			"hh9": "@Prefab:prefab/hh9.prefab",
+			"hh8": "@Prefab:prefab/hh8.prefab",
+			"hh7": "@Prefab:prefab/hh7.prefab",
+			"hh6": "@Prefab:prefab/hh6.prefab",
+			"hh5": "@Prefab:prefab/hh5.prefab",
+			"hh4": "@Prefab:prefab/hh4.prefab",
+			"hh3": "@Prefab:prefab/hh3.prefab",
+			"hh2": "@Prefab:prefab/hh2.prefab",
+			"hh1": "@Prefab:prefab/hh1.prefab",
+			"runtime": "zhujue.ts"
+		},
+		"compId": 129
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 386.79999999999995,
+			"x": 1724,
+			"presetID": 1,
+			"name": "diren8",
+			"pivotY": 139,
+			"pivotX": 73,
+			"isPresetRoot": true
+		},
+		"compId": 130,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 144,
+				"x": 75,
+				"source": "diren/diren3.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 131
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -12,
+				"x": 17,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.8,
+				"name": "xuetiao"
+			},
+			"compId": 132
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 6,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 133
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 119.5,
+				"x": 75,
+				"width": 130,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 55,
+				"pivotX": 130,
+				"name": "qy",
+				"height": 109,
+				"alpha": 0
+			},
+			"compId": 134
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 388.4,
+			"x": 1925,
+			"presetID": 1,
+			"name": "diren9",
+			"pivotY": 139,
+			"pivotX": 73,
+			"isPresetRoot": true
+		},
+		"compId": 135,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 144,
+				"x": 75,
+				"source": "diren/diren3.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 136
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -12,
+				"x": 17,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.8,
+				"name": "xuetiao"
+			},
+			"compId": 137
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 6,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 138
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 119.5,
+				"x": 75,
+				"width": 130,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 55,
+				"pivotX": 130,
+				"name": "qy",
+				"height": 109,
+				"alpha": 0
+			},
+			"compId": 139
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 388.4,
+			"x": 2091,
+			"presetID": 1,
+			"name": "diren10",
+			"pivotY": 139,
+			"pivotX": 73,
+			"isPresetRoot": true
+		},
+		"compId": 140,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"presetID": 2,
+				"y": 144,
+				"x": 75,
+				"source": "diren/diren3.ani",
+				"scaleY": 0.7,
+				"scaleX": 0.7,
+				"name": "diren"
+			},
+			"compId": 141
+		}, {
+			"type": "Animation",
+			"props": {
+				"presetID": 3,
+				"y": -12,
+				"x": 17,
+				"source": "direnxue.ani",
+				"scaleY": 0.5,
+				"scaleX": 0.8,
+				"name": "xuetiao"
+			},
+			"compId": 142
+		}, {
+			"type": "Script",
+			"props": {
+				"presetID": 4,
+				"speed": 6,
+				"sh": 5,
+				"hh": "@Prefab:prefab/direnhh.prefab",
+				"gjz": 6,
+				"runtime": "diren1.ts"
+			},
+			"compId": 143
+		}, {
+			"type": "Sprite",
+			"props": {
+				"presetID": 5,
+				"y": 119.5,
+				"x": 75,
+				"width": 130,
+				"texture": "fangkuai.png",
+				"scaleX": 1,
+				"pivotY": 55,
+				"pivotX": 130,
+				"name": "qy",
+				"height": 109,
+				"alpha": 0
+			},
+			"compId": 144
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -500,
+			"x": 0,
+			"name": "sbjm"
+		},
+		"compId": 24,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 0,
+				"x": 0,
+				"texture": "fangkuai.png",
+				"alpha": 0.9
+			},
+			"compId": 106
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 104,
+				"x": 259,
+				"width": 283,
+				"texture": "shibaizi.png",
+				"height": 173
+			},
+			"compId": 107
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 351,
+				"x": 222,
+				"skin": "an.png",
+				"name": "fh"
+			},
+			"compId": 108,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 10,
+					"x": 25,
+					"text": "Xem QC để hồi sinh",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00ffd6",
+					"bold": true
+				},
+				"compId": 109
+			}]
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 351,
+				"x": 437,
+				"skin": "an.png",
+				"name": "zhucaidan"
+			},
+			"compId": 110,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 10,
+					"x": 43,
+					"text": "Hủy",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00ffd6",
+					"bold": true
+				},
+				"compId": 111
+			}]
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 607,
+			"x": 0,
+			"name": "sljm"
+		},
+		"compId": 22,
+		"child": [{
+			"type": "Sprite",
+			"props": {
+				"y": 0,
+				"x": 0,
+				"texture": "fangkuai.png",
+				"alpha": 0.7
+			},
+			"compId": 78
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 409,
+				"x": 253,
+				"skin": "an.png",
+				"name": "xuanguan"
+			},
+			"compId": 79,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 10,
+					"x": 26,
+					"text": "Chọn cấp độ",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00eaff",
+					"bold": true
+				},
+				"compId": 80
+			}]
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 349,
+				"x": 253,
+				"skin": "an.png",
+				"name": "zhucaidan"
+			},
+			"compId": 81,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 9,
+					"x": 34,
+					"text": "Menu",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00eaff",
+					"bold": true
+				},
+				"compId": 82
+			}]
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 350,
+				"x": 426,
+				"skin": "an.png",
+				"name": "xiayiguan"
+			},
+			"compId": 83,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 9,
+					"x": 33,
+					"text": "Cấp độ tiếp",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00eaff",
+					"bold": true
+				},
+				"compId": 84
+			}]
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 409,
+				"x": 426,
+				"skin": "an.png",
+				"name": "xuanwq"
+			},
+			"compId": 85,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 9,
+					"x": 24,
+					"text": "Chọn vũ khí",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00eaff",
+					"bold": true
+				},
+				"compId": 86
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 32,
+				"x": 236,
+				"presetID": 1,
+				"name": "shengli",
+				"isPresetRoot": true
+			},
+			"compId": 87,
+			"child": [{
+				"type": "Animation",
+				"props": {
+					"presetID": 2,
+					"y": 0,
+					"x": 0,
+					"source": "shengli.ani",
+					"name": "an1"
+				},
+				"compId": 88
+			}, {
+				"type": "Animation",
+				"props": {
+					"presetID": 3,
+					"y": -208,
+					"x": -408,
+					"source": "baozha.ani",
+					"scaleY": 1.5,
+					"scaleX": 1.5,
+					"name": "an2",
+					"blendMode": "lighter"
+				},
+				"compId": 89
+			}, {
+				"type": "Animation",
+				"props": {
+					"presetID": 4,
+					"y": -176,
+					"x": -130,
+					"source": "lizi.ani",
+					"scaleY": 1.5,
+					"scaleX": 1.5,
+					"name": "an3",
+					"blendMode": "lighter"
+				},
+				"compId": 90
+			}, {
+				"type": "Script",
+				"props": {
+					"presetID": 5,
+					"runtime": "shenglizi.ts"
+				},
+				"compId": 91
+			}]
+		}, {
+			"type": "Label",
+			"props": {
+				"y": 285,
+				"x": 266,
+				"text": "Nhận 999 linh hồn",
+				"name": "huodehun",
+				"fontSize": 20,
+				"font": "Arial",
+				"color": "#5bff00",
+				"bold": true,
+				"align": "center"
+			},
+			"compId": 92
+		}, {
+			"type": "Button",
+			"props": {
+				"y": 274.5,
+				"x": 420,
+				"width": 134,
+				"skin": "an.png",
+				"name": "kgghun",
+				"height": 41
+			},
+			"compId": 93,
+			"child": [{
+				"type": "Label",
+				"props": {
+					"y": 12.5,
+					"x": 22,
+					"text": "Xem QC nhận x10",
+					"fontSize": 18,
+					"font": "Arial",
+					"color": "#00eaff",
+					"bold": true
+				},
+				"compId": 94
+			}]
+		}]
+	}],
+	"loadList": ["cj.ani", "fangkuai.png", "cao.ani", "xue.ani", "lengque1.ani", "lengque2.ani", "lengque3.ani", "lengquewanbi.ani", "prefab/diren1.prefab", "prefab/diren2.prefab", "prefab/diren3.prefab", "prefab/diren4.prefab", "prefab/diren5.prefab", "prefab/diren6.prefab", "prefab/diren7.prefab", "xunianniu3.png", "U.png", "I.png", "O.png", "beijin.png", "zhujue.ani", "prefab/hh9.prefab", "prefab/hh8.prefab", "prefab/hh7.prefab", "prefab/hh6.prefab", "prefab/hh5.prefab", "prefab/hh4.prefab", "prefab/hh3.prefab", "prefab/hh2.prefab", "prefab/hh1.prefab", "shibaizi.png", "an.png", "prefab/shengli.prefab"],
+	"loadList3D": []
+}

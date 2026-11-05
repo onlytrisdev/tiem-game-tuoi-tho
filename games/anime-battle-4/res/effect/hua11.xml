@@ -1,0 +1,22 @@
+<TextureAtlas imagePath="hua11.png" px="-456" py="-252" class="" sound="">
+  <SubTexture name="元件 110000" x="1" y="1" width="134" height="138" frameX="-381" frameY="-185" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110001" x="136" y="1" width="274" height="271" frameX="-312" frameY="-121" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110002" x="411" y="1" width="354" height="353" frameX="-272" frameY="-80" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110003" x="766" y="1" width="478" height="481" frameX="-210" frameY="-16" frameWidth="889" frameHeight="509" hitPoint="-252,76 -147,207 99,240 251,104 214,-119 101,-211 -90,-229 -237,-151" hitEffect="10" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 110004" x="1245" y="1" width="552" height="500" frameX="-173" frameY="-6" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110005" x="1" y="502" width="590" height="500" frameX="-154" frameY="-6" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110006" x="592" y="502" width="645" height="500" frameX="-145" frameY="-7" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110007" x="1238" y="502" width="676" height="500" frameX="-111" frameY="-6" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110008" x="1" y="1003" width="680" height="500" frameX="-111" frameY="-8" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110009" x="682" y="1003" width="712" height="500" frameX="-109" frameY="-9" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110010" x="1395" y="1003" width="543" height="500" frameX="-194" frameY="-6" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110011" x="1" y="1504" width="596" height="500" frameX="-167" frameY="-5" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110012" x="598" y="1504" width="653" height="500" frameX="-138" frameY="-6" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110013" x="1252" y="1504" width="712" height="500" frameX="-109" frameY="-6" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110014" x="1" y="2005" width="776" height="500" frameX="-77" frameY="-4" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110015" x="778" y="2005" width="842" height="500" frameX="-44" frameY="-5" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110016" x="1" y="2506" width="877" height="500" frameX="-8" frameY="-3" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110017" x="879" y="2506" width="843" height="500" frameX="-7" frameY="-2" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110018" x="1" y="3007" width="887" height="500" frameX="-2" frameY="-1" frameWidth="889" frameHeight="509"/>
+  <SubTexture name="元件 110019" x="889" y="3007" width="888" height="500" frameX="0" frameY="0" frameWidth="889" frameHeight="509"/>
+</TextureAtlas>

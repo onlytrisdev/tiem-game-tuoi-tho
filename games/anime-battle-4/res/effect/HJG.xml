@@ -1,0 +1,17 @@
+<TextureAtlas imagePath="HJG.png">
+  <SubTexture name="gif0" x="0" y="0" width="229" height="436" hitPoint="-7,116 20,13 130,14 200,129 210,238 194,386 94,430 85,302 66,175" hitEffect="8" hurtInterval="8" cardFrame="0"/>
+  <SubTexture name="gif1" x="229" y="0" width="229" height="436"/>
+  <SubTexture name="gif2" x="458" y="0" width="229" height="436"/>
+  <SubTexture name="gif3" x="687" y="0" width="229" height="436"/>
+  <SubTexture name="gif4" x="916" y="0" width="229" height="436"/>
+  <SubTexture name="gif5" x="1145" y="0" width="229" height="436" hitPoint=""/>
+  <SubTexture name="gif6" x="1374" y="0" width="229" height="436"/>
+  <SubTexture name="gif7" x="1603" y="0" width="229" height="436"/>
+  <SubTexture name="gif8" x="1832" y="0" width="229" height="436"/>
+  <SubTexture name="gif9" x="2061" y="0" width="229" height="436"/>
+  <SubTexture name="gif10" x="2290" y="0" width="229" height="436"/>
+  <SubTexture name="gif11" x="2519" y="0" width="229" height="436"/>
+  <SubTexture name="gif12" x="2748" y="0" width="229" height="436"/>
+  <SubTexture name="gif13" x="2977" y="0" width="229" height="436"/>
+  <SubTexture name="gif14" x="3206" y="0" width="229" height="436"/>
+</TextureAtlas>

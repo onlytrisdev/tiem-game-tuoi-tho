@@ -1,0 +1,1 @@
+{"type":"Sprite","props":{"y":0,"x":0,"presetID":1,"isPresetRoot":true},"compId":2,"child":[{"type":"Animation","props":{"y":0,"x":0,"source":"baodian3.ani","presetID":2,"name":"an","blendMode":"lighter","autoPlay":true},"compId":3},{"type":"Script","props":{"presetID":3,"runtime":"hhsan.ts"},"compId":4}],"loadList":["baodian3.ani"],"loadList3D":[]}

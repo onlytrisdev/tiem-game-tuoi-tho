@@ -1,0 +1,16 @@
+<ZBox width="100%" height="100%">
+	<ZQuad width="100%" height="100%"/>
+	<ZImage id="bg" src="selectbg" centerX="0"/>
+    <TouchImageBatchsContainer src="SelectMain">
+    	<BImage src="SelectMain:line" scaleX="-1" x="330" centerY="0"/>t"/>
+    </TouchImageBatchsContainer>
+    <ZQuad width="100%" height="80" centerX="0" centerY="0" alpha="0.8"/>
+    <ZLabel id="name1" text="左眼" size="28" color="0xffffff" width="100%" height="32" x="10" y="183"/>
+    <ZLabel id="cp1" text="cp:木姐" size="12" color="0xffffff" width="100%" height="32" x="10" y="193"/>
+    <ZLabel id="name2" text="左眼" size="28" color="0xffffff" width="100%" height="32" x="10" y="223"/>
+    <ZLabel id="cp2" text="cp:木姐" size="12" color="0xffffff" width="100%" height="32" x="10" y="233"/>
+    
+    <ZLabel text="2P操作：←→(选择人物) 1(确定)" size="12" color="0xffffff" width="100%" height="32" x="0" y="243" hAlign="center"/>
+    <ZLabel text="1P操作：AD(选择人物) J(确定)" size="12" color="0xffffff" width="100%" height="32" x="0" y="203" hAlign="center"/>
+    <ZButton id="back" src="GameMain:backhome" centerY="0" right="10"/>
+</ZBox>

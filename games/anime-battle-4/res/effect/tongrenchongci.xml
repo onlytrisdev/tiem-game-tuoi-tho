@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="tongrenchongci.png">
+  <SubTexture name="元件 10000" x="0" y="0" width="348" height="220"/>
+  <SubTexture name="元件 10001" x="0" y="220" width="348" height="220" hitPoint="24,32 73,2 157,-1 230,3 302,20 345,64 339,180 280,210 131,210 59,205 43,205 30,205" hitEffect="3" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 10002" x="0" y="440" width="348" height="220"/>
+  <SubTexture name="元件 10003" x="0" y="660" width="348" height="220"/>
+  <SubTexture name="元件 10004" x="0" y="880" width="348" height="220"/>
+</TextureAtlas>

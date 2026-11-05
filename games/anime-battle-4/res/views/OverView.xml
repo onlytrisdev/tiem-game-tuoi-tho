@@ -1,0 +1,104 @@
+<ZBox width="100%" height="100%">
+	<ZImage id="bg" src="mainbg" centerX="0" left="0" right="0" />
+	<ZImage src="bg2" left="0" right="0" />
+	<TouchImageBatchsContainer src="GameMain">
+		<BImage src="GameMain:head" centerX="350" y="20" />
+		<BImage src="GameMain:head2" centerX="-350" y="20" />
+		<VBBox gap="15" centerX="-320" centerY="-60">
+			<BImage id="1pimg" src="GameMain:headimg" />
+			<BImage id="1pimg" src="GameMain:headimg" /> 
+			<BImage id="1pimg" src="GameMain:headimg" />
+		</VBBox>
+		<VBBox gap="15" centerX="320" centerY="-60">
+			<BImage id="1pimg" src="GameMain:headimg" />
+			<BImage id="1pimg" src="GameMain:headimg" />
+			<BImage id="1pimg" src="GameMain:headimg" />
+		</VBBox> 
+		<BImage src="GameMain:headline" centerX="0" centerY="-25" />
+		<BImage src="GameMain:headline" centerX="0" centerY="-93" />
+		<HBBox id="getbox" centerX="0" bottom="10">
+			<BButton id="danbei" src="GameMain:danbei" />
+			<BButton id="video" src="GameMain:video" if="video2" />
+		</HBBox>
+		<HBBox id="nextbox" centerX="0" bottom="10" visible="false">
+			<BButton id="back" src="GameMain:backhome" />
+			<BButton id="next" src="GameMain:next" if="next" />
+			<BButton id="reset" src="GameMain:goongame" if="reset" />
+		</HBBox>
+		<BImage id="rw" src="GameMain:rwsuipian" centerX="-10" centerY="65" />
+	</TouchImageBatchsContainer>
+	<ZLabel id="jiangli2" text="获得奖励：" color="0xffffff" width="200" size="24" centerX="-50" centerY="55" />
+	<ZLabel id="jiangli" text="人物碎片x3" color="0xffffff" width="200" size="24" centerX="110" centerY="55" />
+
+	<ZBox centerX="28" width="600" y="60">
+		<ZBox>
+			<ZLabel text="秒伤" color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel text="连击" color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel text="评分" color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+
+		<ZBox x="300">
+			<ZLabel text="秒伤" color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel text="连击" color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel text="评分" color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+	</ZBox>
+
+	<ZBox centerX="28" width="600" y="100">
+		<ZBox>
+			<ZImage id="1pimg"  x="-70" y="-10" color="0xff0000"/>
+			<ZLabel id="1pname" color="0xffffff" width="100" size="16" x="0" vAlign="top" />
+			<ZLabel id="1pmsg1" color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="1pmsg2" color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="1pmsg3" color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+
+		<ZBox x="300">
+			<ZImage id="2pimg"  x="270" y="-10" color="0xff0000"/>
+			<ZLabel id="2pname" color="0xffffff" width="100" size="16" x="0" vAlign="top" />
+			<ZLabel id="2pmsg1" color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="2pmsg2" color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="2pmsg3" color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+	</ZBox>
+
+	<ZBox centerX="28" width="600" y="170">
+		<ZBox>
+			<ZImage id="3pimg"  x="-70" y="-10" color="0xff0000"/>
+			<ZLabel id="3pname" color="0xffffff" width="100" size="16" x="0" vAlign="top" />
+			<ZLabel id="3pmsg1" color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="3pmsg2" color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="3pmsg3" color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+
+		<ZBox x="300">
+			<ZImage id="4pimg"  x="270" y="-10" color="0xff0000"/>
+			<ZLabel id="4pname" color="0xffffff" width="100" size="16" x="0" vAlign="top" />
+			<ZLabel id="4pmsg1" color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="4pmsg2" color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="4pmsg3" color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+	</ZBox>
+
+	<ZBox centerX="28" width="600" y="235">
+		<ZBox>
+			<ZImage id="5pimg" x="-70" y="-10" color="0xff0000"/>
+			<ZLabel id="5pname" color="0xffffff" width="100" size="16" x="0" vAlign="top" />
+			<ZLabel id="5pmsg1"  color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="5pmsg2"  color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="5pmsg3"  color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+
+		<ZBox x="300">
+			<ZImage id="6pimg" x="270" y="-10" color="0xff0000"/>
+			<ZLabel id="6pname" color="0xffffff" width="100" size="16" x="0" vAlign="top" />
+			<ZLabel id="6pmsg1"  color="0xffffff" width="50" size="14" x="100" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="6pmsg2"  color="0xffffff" width="50" size="14" x="150" y="3" hAlign="center" vAlign="top" />
+			<ZLabel id="6pmsg3"  color="0xffffff" width="50" size="14" x="200" y="3" hAlign="center" vAlign="top" />
+		</ZBox>
+	</ZBox>
+
+    <ZLabel width="200" hAlign="center" id="troop1" text="胜利" size="24" color="0xffgg00" centerX="-40" top="13"/>
+    <ZLabel width="200" hAlign="center" id="troop2" text="失败" size="24" color="0xffff00" centerX="40" top="13"/>
+
+</ZBox>

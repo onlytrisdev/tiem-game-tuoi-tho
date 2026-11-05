@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="wangshe7.png" px="-60" py="-164" class="" sound="">
+  <SubTexture name="元件 70000" x="1" y="1" width="117" height="32" frameX="-2" frameY="-149" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70001" x="119" y="1" width="117" height="55" frameX="-1" frameY="-126" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70002" x="237" y="1" width="118" height="115" frameX="0" frameY="-67" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70003" x="356" y="1" width="119" height="151" frameX="-1" frameY="-31" frameWidth="121" frameHeight="184" hitPoint="-66,-7 -32,16 46,19 66,-1 52,-156 -67,-165" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 70004" x="1" y="153" width="119" height="181" frameX="-2" frameY="0" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70005" x="121" y="153" width="118" height="182" frameX="-1" frameY="-2" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70006" x="240" y="153" width="117" height="178" frameX="-2" frameY="-6" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70007" x="358" y="153" width="117" height="57" frameX="-3" frameY="-125" frameWidth="121" frameHeight="184"/>
+  <SubTexture name="元件 70008" x="1" y="336" width="117" height="57" frameX="-2" frameY="-125" frameWidth="121" frameHeight="184"/>
+</TextureAtlas>

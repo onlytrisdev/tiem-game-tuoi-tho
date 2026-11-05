@@ -1,0 +1,14 @@
+<ZScroll id="s" height="200" width="100%" vscrollState="off">
+  <TouchImageBatchsContainer id="headImages" src="Head">
+    <HBBox id="heads" gap="18" top="40">
+      
+    </HBBox>
+  </TouchImageBatchsContainer>
+  <TouchImageBatchsContainer id="headImages2" src="SelectMain">
+    <HBBox id="heads2" gap="10" top="40">
+      
+    </HBBox>
+    <BImage id="select" src="SelectMain:select_yes"/>
+    <BImage scaleX="0.5" scaleY="0.5" id="childs" visible="false" src="SelectMain:xtxz" left="10" top="10"/>
+  </TouchImageBatchsContainer>
+</ZScroll>

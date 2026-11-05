@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="Dao1.png" px="-100" py="-57">
+  <SubTexture name="元件 110000" x="0" y="0" width="264" height="98"/>
+  <SubTexture name="元件 110001" x="0" y="98" width="264" height="98"/>
+  <SubTexture name="元件 110002" x="0" y="196" width="264" height="98" hitPoint="49,-4 -57,-45 -11,-58 127,-25 156,-6 161,13 160,23 132,30 110,37 76,37 32,35 6,33"/>
+  <SubTexture name="元件 110003" x="0" y="294" width="264" height="98"/>
+  <SubTexture name="元件 110004" x="0" y="392" width="264" height="98"/>
+  <SubTexture name="元件 110005" x="0" y="392" width="264" height="98"/>
+</TextureAtlas>

@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="llls17.png">
+  <SubTexture name="元件 40000" x="0" y="0" width="772" height="663" hitPoint="753,117 619,329 382,413 12,450 58,224 404,117"/>
+  <SubTexture name="元件 40001" x="772" y="0" width="772" height="663" hitPoint="407,118 744,112 612,322 750,523 570,506 316,525 29,475 18,431 29,275 66,224" hitEffect="0" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 40002" x="0" y="663" width="772" height="663"/>
+  <SubTexture name="元件 40003" x="772" y="663" width="772" height="663" hitPoint="170,0 344,65 556,59 742,122 766,341 665,429 755,526 593,550 405,598 209,651 6,560 -13,284 5,168"/>
+</TextureAtlas>

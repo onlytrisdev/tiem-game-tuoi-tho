@@ -1,0 +1,14 @@
+<TextureAtlas imagePath="petra8.png" px="-77" py="-86" class="" sound="">
+  <SubTexture name="元件 90000" x="1" y="1" width="100" height="100" frameX="-31" frameY="-36" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90001" x="102" y="1" width="108" height="108" frameX="-27" frameY="-29" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90002" x="211" y="1" width="116" height="112" frameX="-24" frameY="-29" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90003" x="328" y="1" width="112" height="112" frameX="-26" frameY="-28" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90004" x="1" y="114" width="108" height="108" frameX="-31" frameY="-36" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90005" x="110" y="114" width="132" height="132" frameX="-17" frameY="-19" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90006" x="243" y="114" width="156" height="160" frameX="-3" frameY="-3" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90007" x="1" y="275" width="164" height="168"/>
+  <SubTexture name="元件 90008" x="166" y="275" width="108" height="108" frameX="-31" frameY="-31" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90009" x="275" y="275" width="120" height="120" frameX="-24" frameY="-24" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90010" x="1" y="444" width="132" height="132" frameX="-15" frameY="-17" frameWidth="164" frameHeight="168"/>
+  <SubTexture name="元件 90011" x="134" y="444" width="144" height="144" frameX="-11" frameY="-10" frameWidth="164" frameHeight="168"/>
+</TextureAtlas>

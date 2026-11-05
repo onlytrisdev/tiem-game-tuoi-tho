@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="devil1.png" px="-65" py="-63" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="130" height="130" hitPoint="-52,-44 28,-57 56,-13 55,59 -48,48" hitEffect="2" hurtInterval="3" cardFrame="8"/>
+  <SubTexture name="元件 10001" x="0" y="130" width="130" height="130"/>
+  <SubTexture name="元件 10002" x="0" y="260" width="130" height="130"/>
+</TextureAtlas>

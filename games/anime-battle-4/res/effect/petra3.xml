@@ -1,0 +1,15 @@
+<TextureAtlas imagePath="petra3.png" px="-113" py="-91" class="" sound="">
+  <SubTexture name="元件 40000" x="1" y="1" width="248" height="176" hitPoint="-65,19 -1,45 78,31 109,-7 38,-46 -44,-48 -82,-13" hitEffect="7" hurtInterval="4" cardFrame="0"/>
+  <SubTexture name="元件 40001" x="250" y="1" width="244" height="176" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40002" x="495" y="1" width="240" height="176" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40003" x="736" y="1" width="240" height="176" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40004" x="1" y="178" width="240" height="172" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40005" x="242" y="178" width="236" height="172" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40006" x="479" y="178" width="236" height="172" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40007" x="716" y="178" width="232" height="168" frameX="0" frameY="0" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40008" x="1" y="351" width="200" height="116" frameX="-28" frameY="-29" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40009" x="202" y="351" width="204" height="120" frameX="-23" frameY="-29" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40010" x="407" y="351" width="204" height="124" frameX="-19" frameY="-28" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40011" x="612" y="351" width="208" height="120" frameX="-17" frameY="-31" frameWidth="248" frameHeight="176"/>
+  <SubTexture name="元件 40012" x="1" y="476" width="208" height="124" frameX="-16" frameY="-29" frameWidth="248" frameHeight="176"/>
+</TextureAtlas>

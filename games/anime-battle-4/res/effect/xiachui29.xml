@@ -1,0 +1,12 @@
+<TextureAtlas imagePath="xiachui29.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="79" height="121" frameX="-31" frameY="-23" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10001" x="79" y="0" width="89" height="140" frameX="-25" frameY="-13" frameWidth="128" frameHeight="166" hitPoint="22,5 113,11 119,157 18,147" hitEffect="6" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10002" x="168" y="0" width="98" height="151" frameX="-19" frameY="-8" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10003" x="266" y="0" width="109" height="158" frameX="-12" frameY="-5" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10004" x="375" y="0" width="114" height="160" frameX="-9" frameY="-4" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10005" x="0" y="160" width="117" height="162" frameX="-7" frameY="-3" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10006" x="117" y="160" width="120" height="164" frameX="-4" frameY="-2" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10007" x="237" y="160" width="124" height="165" frameX="0" frameY="-1" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10008" x="361" y="160" width="126" height="166" frameX="0" frameY="0" frameWidth="128" frameHeight="166"/>
+  <SubTexture name="元件 1 实例 10009" x="0" y="326" width="128" height="164" frameX="0" frameY="-1" frameWidth="128" frameHeight="166"/>
+</TextureAtlas>

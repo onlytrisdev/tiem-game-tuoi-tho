@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="haws18.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="343" height="229"/>
+  <SubTexture name="元件 1 实例 10001" x="343" y="0" width="343" height="229"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="229" width="343" height="229" hitPoint="24,29 23,215 334,217 320,27" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10003" x="343" y="229" width="343" height="229"/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="458" width="343" height="229"/>
+</TextureAtlas>

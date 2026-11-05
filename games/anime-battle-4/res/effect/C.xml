@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="C.png" px="-33" py="-85" fuck="2">
+  <SubTexture name="元件 20000" x="0" y="0" width="327" height="91"/>
+  <SubTexture name="元件 20001" x="0" y="91" width="327" height="91" hitPoint="302,-15 193,-89 230,-26 209,-25 -34,-17 213,14 297,-4" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 20002" x="0" y="182" width="327" height="91"/>
+  <SubTexture name="元件 20003" x="0" y="273" width="327" height="91"/>
+  <SubTexture name="元件 20004" x="0" y="364" width="327" height="91" hitPoint=""/>
+</TextureAtlas>

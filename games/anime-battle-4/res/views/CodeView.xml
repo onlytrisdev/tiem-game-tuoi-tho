@@ -1,0 +1,22 @@
+<ZBox width="100%" height="100%">
+	<ZImage id="bg" src="bg2" left="0" right="0"/>
+	<ZBox id="box" width="100%" height="100%">
+		<ZLabel id="msg" text="兑换码" width="100%" height="40" vAlign="center" size="24" color="0xffffff" hAlign="center" centerY="-150"/>
+		<HBox centerY="30" centerX="0">
+			<ZButton id="ok" src="GameMain:ok2"/>
+			<ZButton id="cannel" src="GameMain:chanel"/>
+		</HBox>
+		<ZQuad color="0x333333" width="80%" height="32"  centerX="0" centerY="-50" />
+		<ZInputLabel id="code" color="0xff0000" centerX="0" centerY="-53" size="20" width="80%" height="32" defaultText="请输入兑换码" defaultColor="0x666666"/>
+	</ZBox>
+	<ZTween id="play" auto="true">
+		<tween bind="bg" key="scaleY" start="0" end="10" from="0" to="1"/>
+		<tween bind="bg" key="y" start="0" end="10" from="240" to="0"/>
+		<tween bind="box" key="alpha" start="0" end="10" from="0" to="1"/>
+	</ZTween>
+	<ZTween id="hide" auto="false">
+		<tween bind="bg" key="scaleY" start="0" end="10" from="1" to="0"/>
+		<tween bind="bg" key="y" start="0" end="10" from="0" to="240"/>
+		<tween bind="box" key="alpha" start="0" end="10" from="1" to="0"/>
+	</ZTween>
+</ZBox>

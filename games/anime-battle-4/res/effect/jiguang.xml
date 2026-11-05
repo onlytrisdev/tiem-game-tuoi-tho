@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="jiguang.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="664" height="196" hitPoint="649,49 664,106 635,135 494,165 274,172 99,159 20,80 172,9 545,12 639,16" hitEffect="7" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10001" x="0" y="196" width="664" height="196" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="392" width="664" height="196" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10003" x="0" y="588" width="664" height="196" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="784" width="664" height="196" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10005" x="0" y="980" width="664" height="196" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10006" x="0" y="1176" width="664" height="196" hitPoint=""/>
+  <SubTexture name="元件 1 实例 10007" x="0" y="1372" width="664" height="196"/>
+  <SubTexture name="元件 1 实例 10008" x="0" y="1568" width="664" height="196"/>
+</TextureAtlas>

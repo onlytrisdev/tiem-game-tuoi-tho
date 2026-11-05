@@ -1,0 +1,13 @@
+<TextureAtlas imagePath="suolongu.png">
+  <SubTexture name="gif0" x="0" y="0" width="364" height="230" hitPoint="-4,199 74,78 240,68 310,154 262,214 62,241" hitEffect="1" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="gif1" x="0" y="230" width="364" height="230"/>
+  <SubTexture name="gif2" x="0" y="460" width="364" height="230" hitPoint="280,127 235,81 141,41 150,82 181,131 112,133 183,180 163,223 243,208 277,163" hitEffect="0" hurtInterval="2" cardFrame="5"/>
+  <SubTexture name="gif3" x="0" y="690" width="364" height="230" hitPoint="355,112 316,63 224,10 199,10 105,39 36,49 53,107 87,141 102,156 191,164 150,197 201,211 275,182 328,157" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif4" x="0" y="920" width="364" height="230"/>
+  <SubTexture name="gif5" x="0" y="1150" width="364" height="230" hitPoint="336,132 358,110 300,50 248,27 203,7 64,7 79,49 120,89 178,116 52,192 123,197 233,181 331,170" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif6" x="0" y="1380" width="364" height="230"/>
+  <SubTexture name="gif7" x="0" y="1610" width="364" height="230"/>
+  <SubTexture name="gif8" x="0" y="1840" width="364" height="230" hitPoint="333,110 304,73 237,58 200,59 259,102 199,143 262,152 331,131" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif9" x="0" y="2070" width="364" height="230"/>
+  <SubTexture name="gif10" x="0" y="2300" width="364" height="230"/>
+</TextureAtlas>

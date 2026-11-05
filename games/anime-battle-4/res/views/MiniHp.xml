@@ -1,0 +1,17 @@
+<BBox>
+    <BImage src="hpmp:minihp"/>
+    <BImage id="hp" src="hpmp:minihp2" top="26" left="63"/>
+    <HBBox top="45" left="65" gap="0">
+        <BImage id="mp1" src="hpmp:minimp"/>
+        <BImage id="mp2" src="hpmp:minimp"/>
+        <BImage id="mp3" src="hpmp:minimp"/>
+        <BImage id="mp4" src="hpmp:minimp"/>
+        <BImage id="mp5" src="hpmp:minimp"/>
+        <BImage id="mp6" src="hpmp:minimp"/>
+        <BImage id="mp7" src="hpmp:minimp"/>
+        <BImage id="mp8" src="hpmp:minimp"/>
+        <BImage id="mp9" src="hpmp:minimp"/>
+        <BImage id="mp10" src="hpmp:minimp"/>
+    </HBBox>
+    <BLabel id="hptxt" text="123" src="hpmp" size="12" hAlign="right" width="100" right="5" top="19"/>
+</BBox>

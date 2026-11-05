@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="zhaomei1.png" px="-259" py="-124" class="" sound="">
+  <SubTexture name="元件 10000" x="516" y="0" width="279" height="279" frameX="0" frameY="0" frameWidth="516" frameHeight="279"/>
+  <SubTexture name="元件 10001" x="0" y="0" width="516" height="196" frameX="0" frameY="0" frameWidth="516" frameHeight="279" hitPoint="310,-150 301,129 300,138 -261,118 -264,-143" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10002" x="0" y="196" width="463" height="144" frameX="0" frameY="-44" frameWidth="516" frameHeight="279"/>
+  <SubTexture name="元件 10003" x="463" y="279" width="219" height="69" frameX="-106" frameY="-75" frameWidth="516" frameHeight="279"/>
+</TextureAtlas>

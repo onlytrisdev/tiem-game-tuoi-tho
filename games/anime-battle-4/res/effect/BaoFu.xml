@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="BaoFu.png" px="-122" py="-144">
+  <SubTexture name="元件 50000" x="0" y="0" width="240" height="233" hitPoint="-89,86 -8,120 43,106 90,82 108,29 102,-72 6,-116 -59,-116 -114,26" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 50001" x="240" y="0" width="240" height="233"/>
+  <SubTexture name="元件 50002" x="0" y="233" width="240" height="233"/>
+  <SubTexture name="元件 50003" x="240" y="233" width="240" height="233"/>
+  <SubTexture name="元件 50004" x="0" y="466" width="240" height="233"/>
+</TextureAtlas>

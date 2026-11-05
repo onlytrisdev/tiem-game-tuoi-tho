@@ -1,0 +1,48 @@
+<ZBox width="100%" height="100%">
+    <VBox gap="-8" top="130" left="5">
+        <ZImage id="player1" src="OnlineMain:player">
+            <ZLabel id="name1" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+            <ZImage id="fz1" src="OnlineMain:fangzhu" scaleX="0.5" scaleY="0.5" left="10" top="16"/>
+        </ZImage>
+        <ZImage id="player2" src="OnlineMain:player">
+            <ZLabel id="name2" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+            <ZImage id="fz2" src="OnlineMain:fangzhu" scaleX="0.5" scaleY="0.5" left="10" top="16"/>
+        </ZImage>
+        <ZImage id="player3" src="OnlineMain:player">
+            <ZLabel id="name3" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+            <ZImage id="fz3" src="OnlineMain:fangzhu" scaleX="0.5" scaleY="0.5" left="10" top="16"/>
+        </ZImage>
+        <ZImage id="player4" src="OnlineMain:player">
+            <ZLabel id="name4" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+            <ZImage id="fz4" src="OnlineMain:fangzhu" scaleX="0.5" scaleY="0.5" left="10" top="16"/>
+        </ZImage>
+        <ZImage id="player5" src="OnlineMain:player">
+            <ZLabel id="name5" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+        </ZImage>
+        <ZImage id="player6" src="OnlineMain:player">
+            <ZLabel id="name6" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+        </ZImage>
+        <ZImage id="player7" src="OnlineMain:player">
+            <ZLabel id="name7" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+        </ZImage>
+        <ZImage id="player8" src="OnlineMain:player">
+            <ZLabel id="name8" text="我是左眼游戏" height="100%" hAlign="center" color="0xffffff" size="14" y="1" centerX="15"/>
+        </ZImage>
+    </VBox>
+    <ZQuad left="160" right="0" height="100%" alpha="0.8"/>
+    <ZButton id="back" src="GameMain:back2"/>
+    <ZQuad src="OnlineMain:slice_r9d_00:1,1,1,1" left="170" right="125" height="32" bottom="30"/>
+    <ZInputLabel id="sendtxt" left="170" right="125" height="32"  bottom="30" color="0xffffff" size="18"/>
+    <ZButton id="send" src="OnlineMain:send" right="0" bottom="33"/>
+    <ZLabel id="roomdesc" text="房间模式[1V1]  房间信息：XXXXXX  房间密码：8888888" color="0xffffff" size="14" width="100%" height="32" left="320"/>
+    <ZLabel id="msgs" text="聊天内容：" color="0xffffff" size="14" width="100%" height="32" left="170" top="32"/>
+    <ZButton id="startGame" src="OnlineMain:send" left="13" bottom="28"/>
+    <ZButton id="copy" width="140" height="64" left="160" top="3">
+        <ZQuad width="150" height="30" color="0x0" alpha="0.95"/>
+        <ZLabel hAlign="center" width="150" height="24" size="18" color="0xffffff" text="复制房间ID"/>
+    </ZButton>
+    <ZButton id="see" width="140" height="64" left="4" bottom="30">
+        <ZQuad width="150" height="30" color="0x0" alpha="0.95"/>
+        <ZLabel id="seetips" hAlign="center" width="150" height="24" size="18" color="0xffffff" text="当前：战斗模式"/>
+    </ZButton>
+</ZBox>

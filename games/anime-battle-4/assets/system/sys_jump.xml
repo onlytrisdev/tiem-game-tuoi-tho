@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="jump.png" px="-74" py="-103" sound="jump">
+	<!-- Created with Adobe Flash CS6 version 12.0.2.529 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="元件 20000" x="0" y="0" width="140" height="120"/>
+	<SubTexture name="元件 20001" x="140" y="0" width="140" height="120"/>
+	<SubTexture name="元件 20002" x="280" y="0" width="140" height="120"/>
+	<SubTexture name="元件 20003" x="0" y="120" width="140" height="120"/>
+	<SubTexture name="元件 20004" x="140" y="120" width="140" height="120"/>
+	<SubTexture name="元件 20005" x="280" y="120" width="140" height="120"/>
+	<SubTexture name="元件 20006" x="0" y="240" width="140" height="120"/>
+	<SubTexture name="元件 20007" x="140" y="240" width="140" height="120"/>
+	<SubTexture name="元件 20008" x="280" y="240" width="140" height="120"/>
+	<SubTexture name="元件 20009" x="0" y="360" width="140" height="120"/>
+	<SubTexture name="元件 20010" x="140" y="360" width="140" height="120"/>
+	<SubTexture name="元件 20011" x="280" y="360" width="140" height="120"/>
+	<SubTexture name="元件 20012" x="0" y="480" width="140" height="120"/>
+	<SubTexture name="元件 20013" x="140" y="480" width="140" height="120"/>
+	<SubTexture name="元件 20014" x="280" y="480" width="140" height="120"/>
+	<SubTexture name="元件 20015" x="280" y="480" width="140" height="120"/>
+</TextureAtlas>

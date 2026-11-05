@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:b97aa2e42bfd0930b251de4cdd03a404:ce28942b02191116d7ce68b374256dd9:23e846e502313e493d623f88890b625d$ -->
+<TextureAtlas imagePath="OnlineMain.png" width="256" height="512">
+    <SubTexture name="cannel" x="130" y="117" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="createroom" x="129" y="147" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="fangzhu" x="128" y="237" width="56" height="32" frameX="-7" frameY="0" frameWidth="70" frameHeight="32"/>
+    <SubTexture name="killplayer" x="217" y="237" width="21" height="22"/>
+    <SubTexture name="last" x="2" y="172" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="lock" x="144" y="2" width="91" height="113" frameX="-3" frameY="-5" frameWidth="97" frameHeight="123"/>
+    <SubTexture name="next" x="128" y="177" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="oldgamedata" x="2" y="82" width="126" height="28" frameX="-3" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="player" x="2" y="41" width="139" height="39" frameX="-7" frameY="-5" frameWidth="158" frameHeight="51"/>
+    <SubTexture name="quickadd" x="2" y="202" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="ready" x="128" y="207" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="ready_bar" x="2" y="2" width="140" height="37" frameX="-7" frameY="-6" frameWidth="158" frameHeight="51"/>
+    <SubTexture name="roomlist" x="2" y="112" width="126" height="28" frameX="-3" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="send" x="2" y="142" width="125" height="28" frameX="-4" frameY="0" frameWidth="131" frameHeight="28"/>
+    <SubTexture name="slice_r9d_00" x="237" y="2" width="9" height="9"/>
+    <SubTexture name="slice_select_00" x="186" y="237" width="29" height="29"/>
+    <SubTexture name="start" x="2" y="232" width="124" height="28" frameX="-5" frameY="0" frameWidth="131" frameHeight="28"/>
+</TextureAtlas>

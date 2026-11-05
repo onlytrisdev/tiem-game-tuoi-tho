@@ -1,0 +1,21 @@
+<TextureAtlas imagePath="PO.png" px="-32" py="-92">
+  <SubTexture name="元件 30000" x="0" y="0" width="279" height="131" hitPoint="-6,-53 94,-89 167,-51 160,26 9,47" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 30001" x="279" y="0" width="279" height="131" hitPoint=""/>
+  <SubTexture name="元件 30002" x="558" y="0" width="279" height="131" hitPoint="246,-76 244,20 126,21 -25,-14 128,-80" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 30003" x="0" y="131" width="279" height="131"/>
+  <SubTexture name="元件 30004" x="279" y="131" width="279" height="131" hitPoint="" hitEffect="9" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 30005" x="558" y="131" width="279" height="131" hitPoint="246,-79 93,-69 9,-38 75,18 196,14 240,32" hitEffect="10" hurtInterval="3" cardFrame="0"/>
+  <SubTexture name="元件 30006" x="0" y="262" width="279" height="131"/>
+  <SubTexture name="元件 30007" x="279" y="262" width="279" height="131"/>
+  <SubTexture name="元件 30008" x="558" y="262" width="279" height="131"/>
+  <SubTexture name="元件 30009" x="0" y="393" width="279" height="131"/>
+  <SubTexture name="元件 30010" x="279" y="393" width="279" height="131"/>
+  <SubTexture name="元件 30011" x="558" y="393" width="279" height="131"/>
+  <SubTexture name="元件 30012" x="0" y="524" width="279" height="131"/>
+  <SubTexture name="元件 30013" x="279" y="524" width="279" height="131"/>
+  <SubTexture name="元件 30014" x="558" y="524" width="279" height="131"/>
+  <SubTexture name="元件 30015" x="0" y="655" width="279" height="131"/>
+  <SubTexture name="元件 30016" x="279" y="655" width="279" height="131" hitPoint="22,-39 235,-48 237,-10 47,-17" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 30017" x="558" y="655" width="279" height="131"/>
+  <SubTexture name="元件 30018" x="0" y="786" width="279" height="131"/>
+</TextureAtlas>

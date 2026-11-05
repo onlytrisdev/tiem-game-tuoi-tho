@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="jyoon2.png">
+  <SubTexture name="air_mid_aura0000.png" x="0" y="0" width="200" height="100" hitPoint="97,38 31,17 32,84 137,92 166,70 161,35 143,23 107,20 100,20" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="air_mid_aura0001.png" x="0" y="100" width="200" height="100"/>
+  <SubTexture name="air_mid_aura0002.png" x="0" y="200" width="200" height="100"/>
+  <SubTexture name="air_mid_aura0003.png" x="0" y="300" width="200" height="100"/>
+</TextureAtlas>

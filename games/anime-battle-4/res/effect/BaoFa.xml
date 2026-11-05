@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="BaoFa.png">
+  <SubTexture name="gif0" x="0" y="0" width="346" height="257" hitPoint="134,22 56,58 18,64 3,68 -2,185 36,214 155,222 218,220 270,162 246,98 206,41" hitEffect="5" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="gif1" x="346" y="0" width="346" height="257"/>
+  <SubTexture name="gif2" x="692" y="0" width="346" height="257"/>
+  <SubTexture name="gif3" x="1038" y="0" width="346" height="257"/>
+  <SubTexture name="gif4" x="1384" y="0" width="346" height="257"/>
+  <SubTexture name="gif5" x="1730" y="0" width="346" height="257"/>
+</TextureAtlas>

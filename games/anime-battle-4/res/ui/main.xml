@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3c4763d9478850bdf99ed215ccac8af7:1/1$ -->
+<TextureAtlas imagePath="main.png">
+    <SubTexture name="hxwz" x="2" y="406" width="349" height="94"/>
+    <SubTexture name="mode1" x="2" y="502" width="314" height="428" frameX="-1" frameY="0" frameWidth="316" frameHeight="428"/>
+    <SubTexture name="mode_select" x="2" y="330" width="408" height="74"/>
+    <SubTexture name="platform" x="2" y="2" width="444" height="326"/>
+</TextureAtlas>

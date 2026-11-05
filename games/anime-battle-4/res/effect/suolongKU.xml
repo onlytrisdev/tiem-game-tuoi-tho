@@ -1,0 +1,13 @@
+<TextureAtlas imagePath="suolongKU.png">
+  <SubTexture name="gif0" x="0" y="0" width="386" height="299" hitPoint="" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif1" x="386" y="0" width="386" height="299" hitEffect="4" hurtInterval="10" cardFrame="7" hitPoint="-3,144 17,93 84,33 238,-2 376,81 354,252 245,289 71,298 10,234"/>
+  <SubTexture name="gif2" x="772" y="0" width="386" height="299"/>
+  <SubTexture name="gif3" x="1158" y="0" width="386" height="299"/>
+  <SubTexture name="gif4" x="1544" y="0" width="386" height="299"/>
+  <SubTexture name="gif5" x="1930" y="0" width="386" height="299"/>
+  <SubTexture name="gif6" x="2316" y="0" width="386" height="299"/>
+  <SubTexture name="gif7" x="2702" y="0" width="386" height="299"/>
+  <SubTexture name="gif8" x="3088" y="0" width="386" height="299"/>
+  <SubTexture name="gif9" x="3474" y="0" width="386" height="299"/>
+  <SubTexture name="gif10" x="0" y="299" width="386" height="299"/>
+</TextureAtlas>

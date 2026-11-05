@@ -1,0 +1,24 @@
+<TextureAtlas build="Use zyeditui create.">
+    <SubTexture name="sudu" height="32" width="32" y="1" x="1"/>
+    <SubTexture name="liliang" height="32" width="32" y="1" x="35"/>
+    <SubTexture name="mingzhong" height="32" width="32" y="1" x="69"/>
+    <SubTexture name="shengcun" height="32" width="32" y="1" x="103"/>
+    <SubTexture name="shuijing" height="32" width="32" y="1" x="137"/>
+    <SubTexture name="txt7" height="62" width="34" y="1" x="171"/>
+    <SubTexture name="txt6" height="62" width="34" y="1" x="207"/>
+    <SubTexture name="txt5" height="62" width="34" y="1" x="243"/>
+    <SubTexture name="txt4" height="62" width="37" y="1" x="279"/>
+    <SubTexture name="txt3" height="62" width="35" y="1" x="318"/>
+    <SubTexture name="txt秒" height="62" width="63" y="1" x="355"/>
+    <SubTexture name="txt2" height="62" width="35" y="1" x="420"/>
+    <SubTexture name="txt1" height="62" width="31" y="1" x="457"/>
+    <SubTexture name="txt0" height="62" width="34" y="1" x="490"/>
+    <SubTexture name="txt动" height="62" width="60" y="1" x="526"/>
+    <SubTexture name="txt关" height="62" width="63" y="1" x="588"/>
+    <SubTexture name="txt闭" height="62" width="59" y="1" x="653"/>
+    <SubTexture name="txt9" height="62" width="34" y="1" x="714"/>
+    <SubTexture name="txt启" height="62" width="58" y="1" x="750"/>
+    <SubTexture name="txt8" height="62" width="34" y="1" x="810"/>
+    <SubTexture name="frame" height="66" width="148" y="1" x="846"/>
+    <SubTexture name="mofa" height="32" width="32" y="1" x="996"/>
+</TextureAtlas>

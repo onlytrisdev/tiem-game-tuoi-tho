@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="xiachui21.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="215" height="354"/>
+  <SubTexture name="元件 1 实例 10001" x="215" y="0" width="215" height="354"/>
+  <SubTexture name="元件 1 实例 10002" x="430" y="0" width="215" height="354" hitPoint="52,57 57,283 98,315 162,285 160,70 110,33" hitEffect="3" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10003" x="645" y="0" width="215" height="354"/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="354" width="215" height="354"/>
+  <SubTexture name="元件 1 实例 10005" x="215" y="354" width="215" height="354"/>
+</TextureAtlas>

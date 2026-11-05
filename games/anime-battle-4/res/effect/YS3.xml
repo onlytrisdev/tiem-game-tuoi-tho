@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="YS3.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="quan0000" x="0" y="0" width="229" height="191" frameX="-1" frameY="-1" frameWidth="238" frameHeight="193"/>
+	<SubTexture name="quan0001" x="229" y="0" width="230" height="191" frameX="0" frameY="-2" frameWidth="238" frameHeight="193"/>
+	<SubTexture name="quan0002" x="0" y="191" width="213" height="186" frameX="-19" frameY="-2" frameWidth="238" frameHeight="193"/>
+	<SubTexture name="quan0003" x="213" y="191" width="211" height="183" frameX="-25" frameY="0" frameWidth="238" frameHeight="193"/>
+	<SubTexture name="quan0004" x="0" y="377" width="210" height="184" frameX="-28" frameY="0" frameWidth="238" frameHeight="193"/>
+	<SubTexture name="quan0005" x="210" y="377" width="210" height="184" frameX="-28" frameY="0" frameWidth="238" frameHeight="193"/>
+</TextureAtlas>

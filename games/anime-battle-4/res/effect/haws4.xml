@@ -1,0 +1,12 @@
+<TextureAtlas imagePath="haws4.png" px="-180" py="-190" class="" sound="blow">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10001" x="313" y="0" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10002" x="626" y="0" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10003" x="0" y="264" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10004" x="313" y="264" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10005" x="626" y="264" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10006" x="0" y="528" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10007" x="313" y="528" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10008" x="626" y="528" width="313" height="264"/>
+  <SubTexture name="元件 1 实例 10009" x="0" y="792" width="313" height="264"/>
+</TextureAtlas>

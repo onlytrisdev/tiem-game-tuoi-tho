@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="my3.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="158" height="53" hitPoint="-10,49 158,47 106,-5"/>
+  <SubTexture name="元件 1 实例 10001" x="0" y="53" width="158" height="53" hitPoint="-7,47 156,55 161,41 116,-4"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="106" width="158" height="53" hitPoint="-20,44 170,58 161,41 103,-15" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10003" x="0" y="159" width="158" height="53"/>
+</TextureAtlas>

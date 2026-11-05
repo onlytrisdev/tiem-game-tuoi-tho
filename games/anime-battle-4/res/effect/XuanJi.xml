@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="XuanJi.png" px="-63" py="-165">
+  <SubTexture name="元件 40000" x="0" y="0" width="109" height="271" hitPoint="-21,-153 -42,-112 -58,-53 -49,41 -29,98 -4,99 27,65 40,-61" hitEffect="6" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 40001" x="109" y="0" width="109" height="271"/>
+  <SubTexture name="元件 40002" x="218" y="0" width="109" height="271"/>
+  <SubTexture name="元件 40003" x="327" y="0" width="109" height="271"/>
+  <SubTexture name="元件 40004" x="0" y="271" width="109" height="271"/>
+  <SubTexture name="元件 40005" x="109" y="271" width="109" height="271"/>
+  <SubTexture name="元件 40006" x="218" y="271" width="109" height="271"/>
+  <SubTexture name="元件 40007" x="218" y="271" width="109" height="271"/>
+</TextureAtlas>

@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="guizhan.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="205" height="149"/>
+  <SubTexture name="元件 1 实例 10001" x="205" y="0" width="205" height="149" hitPoint="96,50 38,4 111,-31 173,-33 208,24 220,89 206,133 148,156 49,152 -13,132 -26,98"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="149" width="205" height="149"/>
+  <SubTexture name="元件 1 实例 10003" x="205" y="149" width="205" height="149"/>
+  <SubTexture name="元件 1 实例 10004" x="0" y="298" width="205" height="149"/>
+  <SubTexture name="元件 1 实例 10005" x="205" y="298" width="205" height="149"/>
+</TextureAtlas>

@@ -1,0 +1,1124 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480,
+		"autoDestroyAtClosed": true
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": -684,
+			"texture": "changjing/cc12.png"
+		},
+		"compId": 3
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 196,
+			"x": 612,
+			"width": 74,
+			"texture": "jiantou.png",
+			"pivotY": 44,
+			"pivotX": 29,
+			"name": "jiantouyou",
+			"height": 88
+		},
+		"compId": 20
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 196,
+			"x": 200,
+			"width": 74,
+			"texture": "jiantou.png",
+			"scaleX": -1,
+			"pivotY": 44,
+			"pivotX": 29,
+			"name": "jiantouzuo",
+			"height": 88
+		},
+		"compId": 21
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 7,
+			"x": 14,
+			"width": 97,
+			"skin": "an.png",
+			"name": "fan",
+			"height": 37
+		},
+		"compId": 22,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 9,
+				"x": 28,
+				"text": "Trở về",
+				"fontSize": 20,
+				"font": "Arial",
+				"color": "#00e9fd",
+				"bold": true
+			},
+			"compId": 73
+		}]
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 410,
+			"x": 314,
+			"width": 172,
+			"skin": "an.png",
+			"name": "qianghua",
+			"height": 52
+		},
+		"compId": 23,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 10,
+				"x": 20,
+				"width": 42,
+				"text": "Cường hóa",
+				"height": 21,
+				"fontSize": 25,
+				"font": "Arial",
+				"color": "#00f4ff",
+				"bold": true
+			},
+			"compId": 74
+		}, {
+			"type": "Script",
+			"props": {
+				"offY": 0,
+				"offX": 0,
+				"color": "#ff00e0",
+				"blur": 17,
+				"runtime": "laya.effect.GlowFilterSetter"
+			},
+			"compId": 78
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"source": "zc.ani",
+			"autoPlay": true
+		},
+		"compId": 24,
+		"child": [{
+			"type": "Script",
+			"props": {
+				"runtime": "san.ts"
+			},
+			"compId": 75
+		}]
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 342.5,
+			"x": 347.5,
+			"text": "Hạng: 10",
+			"stroke": 7,
+			"name": "dj",
+			"fontSize": 25,
+			"font": "Arial",
+			"color": "#00ffc1",
+			"bold": true
+		},
+		"compId": 76
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 400,
+			"x": 62.5,
+			"text": "Mỗi lần cần 500 linh hồn",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#28ff00",
+			"bold": true
+		},
+		"compId": 77
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 18.5,
+			"x": 569,
+			"text": "Sở hữu linh hồn： 99999",
+			"name": "hun",
+			"italic": true,
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#46fb00",
+			"bold": true
+		},
+		"compId": 79
+	}, {
+		"type": "Script",
+		"props": {
+			"runtime": "qianghua.ts"
+		},
+		"compId": 80
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 190,
+			"x": 400,
+			"width": 609,
+			"pivotY": 179,
+			"pivotX": 401,
+			"name": "wq1",
+			"height": 335
+		},
+		"compId": 81,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -111,
+				"x": 177,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.7
+			},
+			"compId": 97,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": 2,
+					"hue": -180,
+					"contrast": "0",
+					"color": "#fbbf00",
+					"brightness": "0",
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 98
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 85,
+				"x": 357,
+				"texture": "wq/w0001.png"
+			},
+			"compId": 99
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -6,
+			"x": 1466,
+			"width": 946,
+			"pivotY": 195,
+			"pivotX": 735,
+			"name": "wq2",
+			"height": 352
+		},
+		"compId": 82,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -97,
+				"x": 514,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 100,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#000000",
+					"brightness": 45,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 101
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 102,
+				"x": 694,
+				"texture": "wq/w0002.png"
+			},
+			"compId": 102
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 374,
+			"x": 1723,
+			"width": 832,
+			"pivotY": 282,
+			"pivotX": 619,
+			"name": "wq4",
+			"height": 446
+		},
+		"compId": 83,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -8,
+				"x": 400,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 103,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#000000",
+					"brightness": 45,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 104
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 196,
+				"x": 579,
+				"texture": "wq/w0003.png"
+			},
+			"compId": 105
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 883,
+			"x": 1602,
+			"width": 963,
+			"pivotY": 262,
+			"pivotX": 859,
+			"name": "wq6",
+			"height": 416
+		},
+		"compId": 84,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -22,
+				"x": 711,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 2,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 106,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#3dff00",
+					"brightness": 29,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 107
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 166,
+				"x": 822,
+				"texture": "wq/w0004.png"
+			},
+			"compId": 108
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -414,
+			"x": 421,
+			"width": 623,
+			"pivotY": 168,
+			"pivotX": 413,
+			"name": "wq5",
+			"height": 335
+		},
+		"compId": 85,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -133,
+				"x": 191,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 109,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -119,
+					"contrast": "0",
+					"color": "#ff4700",
+					"brightness": 11,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 110
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 85,
+				"x": 355,
+				"texture": "wq/w0005.png"
+			},
+			"compId": 111
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -414,
+			"x": 5,
+			"width": 685,
+			"pivotY": 150,
+			"pivotX": 471,
+			"name": "wq7",
+			"height": 300
+		},
+		"compId": 86,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -116,
+				"x": 253,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 112,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -180,
+					"contrast": "0",
+					"color": "#ffc100",
+					"brightness": 0,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 113
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 34,
+				"x": 424,
+				"texture": "wq/w0006.png"
+			},
+			"compId": 114
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -217,
+			"x": 1147,
+			"width": 702,
+			"pivotY": 197,
+			"pivotX": 489,
+			"name": "wq10",
+			"height": 365
+		},
+		"compId": 87,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -107,
+				"x": 270,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 115,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": 35,
+					"contrast": "0",
+					"color": "#ff0300",
+					"brightness": "0",
+					"alpha": 0,
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 116
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 115,
+				"x": 391,
+				"texture": "wq/w0007.png"
+			},
+			"compId": 117
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -308,
+			"x": 748,
+			"width": 650,
+			"pivotY": 194,
+			"pivotX": 440,
+			"name": "wq12",
+			"height": 335
+		},
+		"compId": 88,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -89,
+				"x": 218,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 118,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -90,
+					"contrast": "0",
+					"color": "#ff0400",
+					"brightness": 0,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 119
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 85,
+				"x": 383,
+				"texture": "wq/w0008.png"
+			},
+			"compId": 120
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": -177,
+			"x": -479,
+			"width": 619,
+			"pivotY": 199,
+			"pivotX": 407,
+			"name": "wq14",
+			"height": 341
+		},
+		"compId": 89,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -89,
+				"x": 187,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 121,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#000000",
+					"brightness": 45,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 122
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 91,
+				"x": 363,
+				"texture": "wq/w0009.png"
+			},
+			"compId": 123
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 175,
+			"x": -289,
+			"width": 656,
+			"pivotY": 193,
+			"pivotX": 443,
+			"name": "wq8",
+			"height": 335
+		},
+		"compId": 90,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -102,
+				"x": 224,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 124,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#ff0400",
+					"brightness": 45,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 125
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 85,
+				"x": 400,
+				"texture": "wq/w0010.png"
+			},
+			"compId": 126
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 655,
+			"x": -393,
+			"width": 617,
+			"pivotY": 175,
+			"pivotX": 403,
+			"name": "wq3",
+			"height": 318
+		},
+		"compId": 91,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -110,
+				"x": 185,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 127,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#ff00a3",
+					"brightness": -9,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 128
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 68,
+				"x": 360,
+				"texture": "wq/w0011.png"
+			},
+			"compId": 129
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 370,
+			"x": -618,
+			"width": 616,
+			"pivotY": 160,
+			"pivotX": 402,
+			"name": "wq13",
+			"height": 293
+		},
+		"compId": 92,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -130,
+				"x": 184,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 130,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -103,
+					"contrast": "0",
+					"color": "#14fb00",
+					"brightness": 2,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 131
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 43,
+				"x": 359,
+				"texture": "wq/w0012.png"
+			},
+			"compId": 132
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 1008,
+			"x": -147,
+			"width": 633,
+			"pivotY": 156,
+			"pivotX": 418,
+			"name": "wq11",
+			"height": 311
+		},
+		"compId": 93,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -133,
+				"x": 201,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 133,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -100,
+					"contrast": "0",
+					"color": "#ff0400",
+					"brightness": 8,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 134
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 61,
+				"x": 368,
+				"texture": "wq/w0013.png"
+			},
+			"compId": 135
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 27,
+			"x": -684,
+			"width": 649,
+			"pivotY": 216,
+			"pivotX": 436,
+			"name": "wq9",
+			"height": 393
+		},
+		"compId": 94,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -231,
+				"x": 217,
+				"source": "lansehuo.ani",
+				"scaleY": 3,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 136,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -64,
+					"contrast": "0",
+					"color": "#ff0400",
+					"brightness": -1,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 137
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 74,
+				"x": 374,
+				"texture": "wq/w0014.png"
+			},
+			"compId": 138
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 820,
+			"x": -684,
+			"width": 617,
+			"pivotY": 189,
+			"pivotX": 432,
+			"name": "wq15",
+			"height": 377
+		},
+		"compId": 95,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -247,
+				"x": 257,
+				"source": "lansehuo.ani",
+				"scaleY": 3,
+				"scaleX": 2.5,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 139,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": 80,
+					"contrast": "0",
+					"color": "#ff008e",
+					"brightness": 2,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 140
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 59,
+				"x": 391,
+				"texture": "wq/w0015.png"
+			},
+			"compId": 141
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 1277,
+			"x": 956,
+			"width": 767,
+			"pivotY": 184,
+			"pivotX": 532,
+			"name": "wq16",
+			"height": 368
+		},
+		"compId": 96,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -256,
+				"x": 263,
+				"source": "lansehuo.ani",
+				"scaleY": 3,
+				"scaleX": 3.5,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 142,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#0099ff",
+					"brightness": 45,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 143
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 68,
+				"x": 471,
+				"texture": "wq/w0016.png"
+			},
+			"compId": 144
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 947,
+			"x": 277,
+			"width": 946,
+			"pivotY": 195,
+			"pivotX": 735,
+			"name": "wq19",
+			"height": 352
+		},
+		"compId": 145,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -97,
+				"x": 514,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 148,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": -180,
+					"contrast": "0",
+					"color": "#f98100",
+					"brightness": 29,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 149
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 94,
+				"x": 684,
+				"texture": "wq/fa.png"
+			},
+			"compId": 150
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 1539,
+			"x": 39,
+			"width": 946,
+			"pivotY": 195,
+			"pivotX": 735,
+			"name": "wq18",
+			"height": 352
+		},
+		"compId": 146,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -97,
+				"x": 514,
+				"source": "lansehuo.ani",
+				"scaleY": 2,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 151,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": 23,
+					"contrast": "0",
+					"color": "#7aff00",
+					"brightness": 11,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 152
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 77,
+				"x": 696,
+				"texture": "wq/jg2.png"
+			},
+			"compId": 153
+		}]
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 1852,
+			"x": 790,
+			"width": 946,
+			"pivotY": 195,
+			"pivotX": 735,
+			"name": "wq17",
+			"height": 352
+		},
+		"compId": 147,
+		"child": [{
+			"type": "Animation",
+			"props": {
+				"y": -270,
+				"x": 509,
+				"source": "lansehuo.ani",
+				"scaleY": 3,
+				"scaleX": 3,
+				"blendMode": "lighter",
+				"autoPlay": true,
+				"alpha": 0.8
+			},
+			"compId": 154,
+			"child": [{
+				"type": "Script",
+				"props": {
+					"saturation": "0",
+					"hue": "0",
+					"contrast": "0",
+					"color": "#000000",
+					"brightness": 45,
+					"alpha": "0",
+					"runtime": "laya.effect.ColorFilterSetter"
+				},
+				"compId": 155
+			}]
+		}, {
+			"type": "Sprite",
+			"props": {
+				"y": 0,
+				"x": 732,
+				"width": 56,
+				"texture": "wq/qiang.png",
+				"rotation": 9,
+				"height": 287
+			},
+			"compId": 156
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 190,
+			"x": 398,
+			"source": "baozha3.ani",
+			"name": "baozha",
+			"alpha": 0
+		},
+		"compId": 157
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 436,
+			"x": 62.5,
+			"text": "Cấp độ tối đa 30",
+			"fontSize": 20,
+			"font": "Arial",
+			"color": "#28ff00",
+			"bold": true
+		},
+		"compId": 158
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": -147.5,
+			"x": -180,
+			"visible": false,
+			"source": "baozha.ani",
+			"scaleY": 1.5,
+			"scaleX": 1.5,
+			"name": "shengjitexiao",
+			"blendMode": "lighter"
+		},
+		"compId": 159
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 44,
+			"x": 569,
+			"width": 148,
+			"skin": "an.png",
+			"name": "kggjiahun",
+			"height": 35
+		},
+		"compId": 160,
+		"child": [{
+			"type": "Label",
+			"props": {
+				"y": 11,
+				"x": 20,
+				"text": "Xem QC nhận +2000",
+				"fontSize": 15,
+				"font": "Arial",
+				"color": "#00ffd6",
+				"bold": true
+			},
+			"compId": 161
+		}]
+	}],
+	"loadList": ["changjing/cc12.png", "jiantou.png", "an.png", "zc.ani", "lansehuo.ani", "wq/w0001.png", "wq/w0002.png", "wq/w0003.png", "wq/w0004.png", "wq/w0005.png", "wq/w0006.png", "wq/w0007.png", "wq/w0008.png", "wq/w0009.png", "wq/w0010.png", "wq/w0011.png", "wq/w0012.png", "wq/w0013.png", "wq/w0014.png", "wq/w0015.png", "wq/w0016.png", "wq/fa.png", "wq/jg2.png", "wq/qiang.png", "baozha3.ani", "baozha.ani"],
+	"loadList3D": []
+}

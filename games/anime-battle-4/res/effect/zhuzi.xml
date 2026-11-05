@@ -1,0 +1,22 @@
+<TextureAtlas imagePath="zhuzi.png">
+  <SubTexture name="元件 10000" x="0" y="0" width="165" height="249" hitPoint="7,225 24,143 59,99 83,82 111,84 131,92 138,106 143,133 152,181 154,200 155,223 149,237 129,253 76,257 41,259 8,239" hitEffect="1" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10001" x="0" y="0" width="165" height="249"/>
+  <SubTexture name="元件 10002" x="165" y="0" width="165" height="249" hitPoint="-2,234 0,184 6,91 33,58 38,26 50,11 66,5 82,5 103,8 119,12 127,19 130,43 132,63 137,84 144,117 148,145 149,173 148,188 148,215 146,232 139,255 131,262 104,265 62,260 29,255" hitEffect="1" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10003" x="165" y="0" width="165" height="249"/>
+  <SubTexture name="元件 10004" x="330" y="0" width="165" height="249" hitPoint="4,234 4,176 18,72 21,4 64,-21 104,-16 119,-8 137,-7 143,6 146,41 142,84 144,120 145,156 149,193 152,218 153,242 129,251 91,255 54,256" hitEffect="2" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10005" x="330" y="0" width="165" height="249" hitEffect="0" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 10006" x="495" y="0" width="165" height="249"/>
+  <SubTexture name="元件 10007" x="495" y="0" width="165" height="249" hitPoint="13,234 12,188 15,128 16,80 24,38 26,1 41,-8 52,-9 76,-7 107,-4 127,-3 129,14 131,35 133,76 133,94 137,126 137,157 130,179 131,188 136,208 136,215 150,222 151,241 138,243 113,243 76,243 56,244 33,243" hitEffect="1" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10008" x="660" y="0" width="165" height="249"/>
+  <SubTexture name="元件 10009" x="660" y="0" width="165" height="249" hitPoint="10,230 17,139 18,52 19,20 31,-10 40,-10 57,-12 92,-11 112,-8 128,-8 130,-6 134,32 134,67 134,113 137,158 138,192 140,204 145,225 149,238 149,238 114,255 62,255 25,253" hitEffect="2" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10010" x="825" y="0" width="165" height="249"/>
+  <SubTexture name="元件 10011" x="825" y="0" width="165" height="249"/>
+  <SubTexture name="元件 10012" x="0" y="249" width="165" height="249" hitPoint="75,250 39,245 14,232 1,217 7,199 11,170 8,146 12,105 13,62 17,37 20,18 27,-1 39,-10 65,-12 98,-12 124,-5 132,-5 139,23 139,48 140,72 141,100 144,127 146,163 147,202 148,220 148,238 139,249" hitEffect="1" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10013" x="0" y="249" width="165" height="249"/>
+  <SubTexture name="元件 10014" x="165" y="249" width="165" height="249" hitPoint="18,226 21,137 21,87 26,27 42,-5 82,-14 105,-9 121,-3 123,3 130,45 142,79 144,113 143,135 144,157 145,184 147,211 140,232 129,240 86,247 50,246 19,239" hitEffect="1" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10015" x="165" y="249" width="165" height="249"/>
+  <SubTexture name="元件 10016" x="330" y="249" width="165" height="249" hitPoint="25,230 26,151 27,80 34,3 48,-11 83,-11 97,-11 113,-9 122,-9 128,14 130,38 130,74 131,100 128,135 127,165 124,190 116,227 110,237 86,242 63,244" hitEffect="1" hurtInterval="0" cardFrame="10"/>
+  <SubTexture name="元件 10017" x="330" y="249" width="165" height="249"/>
+  <SubTexture name="元件 10018" x="495" y="249" width="165" height="249"/>
+  <SubTexture name="元件 10019" x="495" y="249" width="165" height="249"/>
+</TextureAtlas>

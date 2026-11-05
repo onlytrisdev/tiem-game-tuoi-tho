@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="YuanFei.png" px="-97" py="-101">
+  <SubTexture name="元件 170000" x="0" y="0" width="205" height="205" hitPoint="-62,-106 -82,-101 -97,-73 -101,-15 -90,30 -56,85 -21,106 45,100 84,81 97,34 106,-4 94,-59 61,-108 -6,-125" hitEffect="8" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 170001" x="205" y="0" width="205" height="205"/>
+  <SubTexture name="元件 170002" x="0" y="205" width="205" height="205"/>
+  <SubTexture name="元件 170003" x="205" y="205" width="205" height="205"/>
+  <SubTexture name="元件 170004" x="0" y="410" width="205" height="205"/>
+  <SubTexture name="元件 170005" x="205" y="410" width="205" height="205"/>
+  <SubTexture name="元件 170006" x="0" y="615" width="205" height="205"/>
+  <SubTexture name="元件 170007" x="205" y="615" width="205" height="205"/>
+  <SubTexture name="元件 170008" x="205" y="615" width="205" height="205"/>
+</TextureAtlas>

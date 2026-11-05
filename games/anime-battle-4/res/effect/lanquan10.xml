@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="lanquan10.png">
+  <SubTexture name="元件 1 实例 10000" x="0" y="0" width="134" height="100" hitPoint="0,50 43,8 126,2 124,94 58,98" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 1 实例 10001" x="0" y="100" width="134" height="100"/>
+  <SubTexture name="元件 1 实例 10002" x="0" y="200" width="134" height="100"/>
+</TextureAtlas>

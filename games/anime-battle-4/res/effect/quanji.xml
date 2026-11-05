@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="quanji.png" px="0" py="0" class="">
+  <SubTexture name="元件 10000" x="0" y="0" width="278" height="151"/>
+  <SubTexture name="元件 10001" x="0" y="151" width="278" height="151"/>
+  <SubTexture name="元件 10002" x="0" y="302" width="278" height="151"/>
+  <SubTexture name="元件 10003" x="0" y="453" width="278" height="151" hitPoint="46,60 62,21 105,8 170,7 199,7 218,9 243,23 252,36 268,40 276,55 278,76 264,97 248,108 221,122 185,133 160,133 124,130 87,130 69,113 55,99" frameX="0" frameY="0"/>
+  <SubTexture name="元件 10004" x="0" y="604" width="278" height="151"/>
+  <SubTexture name="元件 10005" x="0" y="755" width="278" height="151"/>
+  <SubTexture name="元件 10006" x="0" y="906" width="278" height="151"/>
+</TextureAtlas>

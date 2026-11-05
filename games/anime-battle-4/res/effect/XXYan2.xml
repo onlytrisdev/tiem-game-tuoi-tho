@@ -1,0 +1,16 @@
+<TextureAtlas imagePath="XXYan2.png" px="-114" py="-147" hred="4" end="6">
+  <SubTexture name="元件 200000" x="0" y="0" width="352" height="308"/>
+  <SubTexture name="元件 200001" x="352" y="0" width="352" height="308" hitPoint="-37,-125 -84,-73 -92,-50 -81,-38 -41,-3 21,10 42,12 51,-14 51,-49" hitEffect="0" hurtInterval="0" cardFrame="4"/>
+  <SubTexture name="元件 200002" x="704" y="0" width="352" height="308" hitPoint="-28,-122 -66,-94 -94,-49 -82,-27 -37,2 -12,6 103,63 136,49 73,-32" hitEffect="0" hurtInterval="0" cardFrame="1"/>
+  <SubTexture name="元件 200003" x="1056" y="0" width="352" height="308" hitPoint="-40,-125 -91,-61 -87,-33 -41,1 43,54 95,79 174,88 174,74" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 200004" x="1408" y="0" width="352" height="308"/>
+  <SubTexture name="元件 200005" x="0" y="308" width="352" height="308" hitPoint="-35,-129 -84,-81 -88,-65 -85,-31 -10,28 180,124 202,80" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 200006" x="352" y="308" width="352" height="308"/>
+  <SubTexture name="元件 200007" x="704" y="308" width="352" height="308"/>
+  <SubTexture name="元件 200008" x="1056" y="308" width="352" height="308" hitPoint="-46,-62 174,120 196,81 19,-34 -35,-67" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 200009" x="1408" y="308" width="352" height="308"/>
+  <SubTexture name="元件 200010" x="0" y="616" width="352" height="308" hitPoint="-48,-64 -14,-32 48,27 177,114 203,73 41,-23 -16,-55" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="元件 200011" x="352" y="616" width="352" height="308"/>
+  <SubTexture name="元件 200012" x="704" y="616" width="352" height="308"/>
+  <SubTexture name="元件 200013" x="704" y="616" width="352" height="308" hitPoint="-47,-66 46,19 172,114 208,74 2,-50" hitEffect="0" hurtInterval="0" cardFrame="20"/>
+</TextureAtlas>

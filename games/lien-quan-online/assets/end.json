@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "homeBtn.png",
+	"frame": {"x":200,"y":535,"w":137,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":67},
+	"sourceSize": {"w":137,"h":67}
+},
+{
+	"filename": "light.png",
+	"frame": {"x":1,"y":1,"w":505,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":505,"h":532},
+	"sourceSize": {"w":523,"h":532}
+},
+{
+	"filename": "panel.png",
+	"frame": {"x":508,"y":174,"w":495,"h":450},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":495,"h":450},
+	"sourceSize": {"w":496,"h":450}
+},
+{
+	"filename": "replayBtn.png",
+	"frame": {"x":1,"y":535,"w":197,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":67},
+	"sourceSize": {"w":197,"h":67}
+},
+{
+	"filename": "shade.png",
+	"frame": {"x":508,"y":1,"w":1280,"h":171},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":171},
+	"sourceSize": {"w":1280,"h":171}
+},
+{
+	"filename": "wangguan.png",
+	"frame": {"x":1262,"y":174,"w":220,"h":195},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":195},
+	"sourceSize": {"w":220,"h":195}
+},
+{
+	"filename": "wing.png",
+	"frame": {"x":1005,"y":174,"w":255,"h":263},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":255,"h":263},
+	"sourceSize": {"w":257,"h":266}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "end.png",
+	"format": "RGBA8888",
+	"size": {"w":1789,"h":625},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5a29604bef359a549b835b12377cb3ab:d0e2bbdb14505a5963be2663ffe7c093:217d1ec94cd5af1e1861277303059123$"
+}
+}

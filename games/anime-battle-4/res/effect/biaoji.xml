@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="biaoji.png" px="0" py="0" class="" sound="">
+  <SubTexture name="标记1.1.png" x="0" y="0" width="378" height="567" frameX="201" frameY="261" frameWidth="378" frameHeight="378" hitPoint="91,1117 101,1123 100,1113"/>
+  <SubTexture name="标记1.2.png" x="378" y="0" width="378" height="567" frameX="201" frameY="261" frameWidth="378" frameHeight="378"/>
+  <SubTexture name="标记1.3.png" x="0" y="567" width="378" height="567" frameX="201" frameY="261" frameWidth="378" frameHeight="378"/>
+  <SubTexture name="标记1.4.png" x="378" y="567" width="378" height="567" frameX="201" frameY="261" frameWidth="378" frameHeight="378"/>
+  <SubTexture name="标记1.5.png" x="0" y="1134" width="378" height="567" frameX="201" frameY="261" frameWidth="378" frameHeight="378"/>
+  <SubTexture name="标记1.6.png" x="378" y="1134" width="378" height="567" frameX="201" frameY="261" frameWidth="378" frameHeight="378"/>
+</TextureAtlas>

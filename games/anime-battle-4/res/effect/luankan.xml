@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="luankan.png" px="-107" py="-119" class="">
+  <SubTexture name="gif0" x="0" y="0" width="246" height="220" hitPoint="-81,-108 -76,-25 -11,65 20,73 67,25 86,14 120,-18 132,-64 51,-119 -56,-143" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif1" x="0" y="220" width="246" height="220"/>
+  <SubTexture name="gif2" x="0" y="440" width="246" height="220" hitPoint="-113,-110 -103,41 -57,86 55,69 83,-21 65,-88 -16,-94" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif3" x="0" y="660" width="246" height="220"/>
+  <SubTexture name="gif4" x="0" y="880" width="246" height="220" hitPoint="-91,-111 -48,78 -1,79 108,36 113,-25 56,-97 19,-121" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif5" x="0" y="1100" width="246" height="220"/>
+  <SubTexture name="gif6" x="0" y="1320" width="246" height="220" hitPoint="-86,-127 -61,49 27,76 102,41 125,-14 82,-113 20,-148" hitEffect="1" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="gif7" x="0" y="1540" width="246" height="220"/>
+</TextureAtlas>

@@ -1,0 +1,8 @@
+<ZBox width="100%" height="100%">
+<ZQuad width="100%" height="100%" alpha="0.9"/>
+<TouchImageBatchsContainer src="RJiangLiAtlas" width="100%" height="100%">
+    <BImage src="RJiangLiAtlas:bg" centerX="-0.5" centerY="-18" />
+    <BButton id="getup" src="RJiangLiAtlas:getup" centerX="-0.5" centerY="117" />
+    <BButton id="playvideo" src="RJiangLiAtlas:button" centerX="-0.5" centerY="69" />
+</TouchImageBatchsContainer>
+</ZBox>

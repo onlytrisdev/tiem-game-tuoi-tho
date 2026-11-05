@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="yiquan.png" px="0" py="0" tips="qiyu">
+  <SubTexture name="spr0" x="0" y="0" width="642" height="398"/>
+  <SubTexture name="spr1" x="0" y="398" width="642" height="398" hitPoint="14,259 10,137 239,39 598,25 623,366 526,378 207,362 159,375" hitEffect="2" hurtInterval="0" cardFrame="0"/>
+  <SubTexture name="spr2" x="0" y="796" width="642" height="398"/>
+  <SubTexture name="spr3" x="0" y="1194" width="642" height="398"/>
+</TextureAtlas>

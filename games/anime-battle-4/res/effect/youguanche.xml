@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="youguanche.png" px="-165" py="-111" class="" sound="">
+  <SubTexture name="元件 10000" x="0" y="0" width="395" height="160" hitPoint="-136,-75 -140,-79 129,-78 209,-37 229,20 221,32 -138,35" hitEffect="7" hurtInterval="2" cardFrame="0"/>
+  <SubTexture name="元件 10001" x="395" y="0" width="395" height="160"/>
+  <SubTexture name="元件 10002" x="0" y="0" width="395" height="160"/>
+  <SubTexture name="元件 10003" x="395" y="0" width="395" height="160"/>
+  <SubTexture name="元件 10004" x="0" y="0" width="395" height="160"/>
+  <SubTexture name="元件 10005" x="395" y="0" width="395" height="160"/>
+  <SubTexture name="元件 10006" x="0" y="0" width="395" height="160"/>
+  <SubTexture name="元件 10007" x="395" y="0" width="395" height="160"/>
+</TextureAtlas>

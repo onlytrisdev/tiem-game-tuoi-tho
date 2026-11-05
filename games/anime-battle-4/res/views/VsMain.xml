@@ -1,0 +1,41 @@
+<ZBox width="100%" height="100%">
+	<ZQuad width="100%" height="100%"/>
+	<ZImage id="bg" src="selectbg" centerX="0"/>
+    <ZBox id="headbox"/>
+    <TouchImageBatchsContainer src="SelectMain" y="-5">
+      <BBox width="40%">
+      	<HBBox id="heads2" gap="10" y="168" centerX="0">
+            <BImage id="l3" src="SelectMain:select_no" visible="false"/>
+            <BImage id="l2" src="SelectMain:select_no" visible="false"/>
+            <BImage id="l1" src="SelectMain:select_no"/>
+      	</HBBox>
+      </BBox>
+      <BBox width="40%" right="0">
+        <HBBox id="heads2" gap="10" y="168" centerX="0">
+            <BImage id="r1" src="SelectMain:select_no"/> 
+            <BImage id="r2" src="SelectMain:select_no" visible="false"/>
+            <BImage id="r3" src="SelectMain:select_no" visible="false"/>
+        </HBBox>
+      </BBox>
+    	<BImage src="SelectMain:vs" scaleX="1" centerX="-5" centerY="0"/>
+      <BImage src="SelectMain:line" scaleX="-1" x="330" y="311"/>
+      <BImage src="SelectMain:line" scaleX="-1" x="330" y="336"/>
+      <BImage src="SelectMain:line" right="0" y="311"/>
+    	<BImage src="SelectMain:line" right="0" y="336"/>
+    </TouchImageBatchsContainer>
+    <TouchImageBatchsContainer src="font2-export">
+      <BLabel id="l1pro" src="font2-export" text="0%" size="16" width="54" hAlign="center" y="340" left="240"/>
+      <BLabel id="l2pro" src="font2-export" text="100%" size="16" width="54" hAlign="center" y="340" right="240"/>
+      <BLabel id="l3pro" src="font2-export" text="0%" size="16" width="54" hAlign="center" y="370" left="240"/>
+      <BLabel id="l4pro" src="font2-export" text="100%" size="16" width="54" hAlign="center" y="370" right="240"/>
+    </TouchImageBatchsContainer> 
+
+    <ZLabel id="l1txt" text="1P:左眼" size="20" color="0xffffff" width="300" y="325" left="10"/>
+    <ZLabel id="r1txt" text="2P:左眼" hAlign="right" size="20" color="0xffffff" width="300" y="325" right="10"/>
+
+    <ZLabel id="l2txt" text="3P:左眼" size="20" color="0xffffff" width="300" y="355" left="10" visible="false"/>
+    <ZLabel id="r2txt" text="4P:左眼" hAlign="right" size="20" color="0xffffff" width="300" y="355" right="10" visible="false"/>
+
+    <ZLabel id="l3txt" text="5P:左眼" size="20" color="0xffffff" width="300" y="385" left="10" visible="false"/>
+    <ZLabel id="r3txt" text="6P:左眼" hAlign="right" size="20" color="0xffffff" width="300" y="385" right="10" visible="false"/>
+</ZBox>
