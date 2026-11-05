@@ -1,0 +1,137 @@
+{
+  "strings": {
+
+    "STR_BROWSER_SUPPORT" : "Sorry, your browser is not supported. Try a different browser.",
+
+    "STR_L_HTML5": "This game uses HTML5. If it loads but does not run, please update your web browser.",
+
+    "STR_LOADER_LOADING" : "ĐANG TẢI GAME...##%",
+    "STR_TITLE_QUICKPLAY" : "GIAO HỮU",
+    "STR_TITLE_TOURNAMENT" : "ĐẤU CÚP",
+    "STR_TITLE_LEADERBOARD" : "XẾP HẠNG",
+
+    "STR_COUNTRY_SELECT_TITLE" : "Chọn đội",
+    "STR_COUNTRY_RANKING" : "HẠNG",
+
+    "STR_INSTRUCTIONS_TITLE" : "HƯỚNG DẪN",
+    "STR_INSTRUCTIONS_MOVEMENT" : "DI CHUYỂN",
+    "STR_INSTRUCTIONS_TACKLE" : "LẤY/ SÚT BÓNG",
+    "STR_INSTRUCTIONS_PASS" : "CHUYỀN NGẮN",
+    "STR_INSTRUCTIONS_SHOT" : "LỰC SÚT",
+
+    "STR_CAPTAIN_SELECT_TITLE" : "Chọn đội trưởng",
+    "STR_PLAYER1_SELECT_TITLE" : "Chọn cầu thủ 1",
+    "STR_PLAYER2_SELECT_TITLE" : "Chọn cầu thủ 2",
+    "STR_REVIEW_TITLE" : "Đội của bạn",
+
+    "STR_TEAM_SELECT_TITLE" : "CHỌN ĐỘI",
+    "STR_TEAM_SELECT_CAPTAIN" : "ĐỘI TRƯỞNG",
+    "STR_TEAM_SELECT_PLAYERS" : "CẦU THỦ",
+
+    "STR_TOURNAMENT_TITLE" : "U23 CHÂU Á",
+    "STR_READY_BUTTON" : "Sẵn sàng !",
+    "STR_PLAY_BUTTON" : "Chơi !",
+    "STR_TOURNAMENT_END_BUTTON" : "OK !",
+    "STR_TOURNAMENT_QUARTERS" : "TỨ KẾT",
+    "STR_TOURNAMENT_SEMI" : "BÁN KẾT",
+    "STR_TOURNAMENT_FINALS" : "CHUNG KẾT",
+    "STR_TOURNAMENT_WINNER" : "VÔ ĐỊCH",
+
+
+    "STR_GAMEOVER_TITLE" : "TỈ SỐ CHUNG CUỘC",
+    "STR_LEADERBOARD_TITLE" : "XẾP HẠNG",
+
+    "STR_GAME_GOAL" : "VÀO!!!",
+    "STR_GAME_GOLDEN_GOAL" : "BÀN THẮNG VÀNG",
+    "STR_GAME_WIN" : "CHIẾN THẮNG!",
+    "STR_GAME_FAIL" : "THỬ LẠI",
+    "STR_PAUSED" : "DỪNG CHƠI",
+    "STR_QUIT" : "THOÁT",
+
+
+
+
+
+    "STR_COUNTRY_INDONESIA":"INDONESIA",
+    "STR_COUNTRY_THAILAND":"THAILAND",
+    "STR_COUNTRY_VIETNAM":"VIETNAM",
+    "STR_COUNTRY_SINGAPORE":"SINGAPORE",
+    "STR_COUNTRY_MALAYSIA":"MALAYSIA",
+    "STR_COUNTRY_PHILIPPINES":"PHILIPPINES",
+    "STR_COUNTRY_CAMBODIA":"CAMBODIA",
+    "STR_COUNTRY_MYANMAR":"MYANMAR",
+    "STR_COUNTRY_LAOS":"LAOS",
+    "STR_COUNTRY_BRUNEI":"BRUNEI",
+    "STR_COUNTRY_AUSTRALIA":"AUSTRALIA",
+    "STR_COUNTRY_NEWZEALAND":"NEW ZEALAND",
+    "STR_COUNTRY_FIJI":"FIJI",
+    "STR_COUNTRY_CHINA":"CHINA",
+    "STR_COUNTRY_SAUDI_HONGKONG":"HONG KONG",
+    "STR_COUNTRY_MACAU":"MACAU",
+    "STR_COUNTRY_TAIWAN":"TAIWAN",
+    "STR_COUNTRY_JAPAN":"JAPAN",
+    "STR_COUNTRY_KOREA":"KOREA",
+    "STR_COUNTRY_INDIA":"INDIA",
+    "STR_COUNTRY_PAKISTAN":"PAKISTAN",
+    "STR_COUNTRY_NORTH_AMERICA":"SIÊU SAO\nBẮC MỸ",
+    "STR_COUNTRY_SOUTH_AMERICA":"SIÊU SAO\nNAM MỸ",
+
+    "STR_COUNTRY_AFRICA" : "SIÊU SAO\nCHÂU PHI",
+    "STR_COUNTRY_EUR" : "SIÊU SAO\nCHÂU ÂU",
+    "STR_COUNTRY_MEA" : "SIÊU SAO\nTRUNG ĐÔNG",
+    "STR_COUNTRY_WRD" : "SIÊU SAO\nTHẾ GIỚI",
+
+    "STR_WINS" : "Thắng",
+    "STR_LOSES" : "Thua",
+    "STR_GOAL_DIFFERENCE" : "Hiệu số bàn thắng",
+    "STR_POINTS" : "Điểm",
+    "STR_WIN_RATIO" : "Tỉ lệ thắng",
+
+
+    "STR_KICK_OFF" : "TRẬN ĐẤU",
+    "STR_TUTORIAL_PICKUPBALL" : "Di chuyển để đoạt bóng!",
+    "STR_TUTORIAL_PASS" : "Bấm 'Space' để chuyền bóng!",
+    "STR_TUTORIAL_IATACKLE" : "Boom! Bạn đã bị cướp bóng!",
+    "STR_TUTORIAL_HUMANTACKLE" : "Bấm 'Space' để truy cản!",
+    "STR_TUTORIAL_HUMANSHOOT" : "Bấm và giữ 'Space' để nạp năng lượng sút bóng!",
+    "STR_TUTORIAL_KICK_CHARGE" : "Nhả ra để thực hiện cú sút!!!",
+    "STR_TUTORIAL_GOAL" : "GOOOAAAALLLLLL!!!!!!",
+
+    "STR_MOBILE_TUTORIAL_PICKUPBALL" : "Di chuyển để đoạt bóng!",
+    "STR_MOBILE_TUTORIAL_PASS" : "Chạm nút để chuyền bóng!",
+    "STR_MOBILE_TUTORIAL_IATACKLE" : "Boom! Bạn đã bị truy cản!",
+    "STR_MOBILE_TUTORIAL_HUMANTACKLE" : "Chạm nút hành động cản bóng!",
+    "STR_MOBILE_TUTORIAL_HUMANSHOOT" : "Chạm và giữ phím hành động để nạp năng lượng sút bóng!",
+    "STR_MOBILE_TUTORIAL_KICK_CHARGE" : "Nhả ra để sút!!!",
+    "STR_MOBILE_TUTORIAL_GOAL" : "GOOOAAAALLLLLL!!!!!!",
+
+    "STR_CHAR_BEN" : "Ben",
+    "STR_CHAR_XLR8" : "XLR8",
+    "STR_CHAR_FOUR_ARMS" : "Four Arms",
+    "STR_CHAR_PROHYAS" : "Prohyas",
+    "STR_CHAR_VAMBRE" : "Vambre",
+    "STR_CHAR_GRUP" : "Grup",
+    "STR_CHAR_BLOSSOM" : "Blossom",
+    "STR_CHAR_BUTTERCUP" : "Buttercup",
+    "STR_CHAR_BUBBLES" : "Bubbles",
+    "STR_CHAR_MOJO" : "Mojo",
+    "STR_CHAR_FINN" : "Finn",
+    "STR_CHAR_BMO" : "BMO",
+    "STR_CHAR_JAKE" : "Jake",
+    "STR_CHAR_BUBBLEGUM" : "Bubblegum",
+    "STR_CHAR_MARCELLINE" : "Marcelline",
+    "STR_CHAR_GUMBALL" : "Gumball",
+    "STR_CHAR_ANAIS" : "Anais",
+    "STR_CHAR_RICHARD" : "Richard",
+    "STR_CHAR_DARWIN" : "Darwin",
+    "STR_CHAR_MORDECAI" : "Mordecai",
+    "STR_CHAR_RIGBY" : "Rigby",
+    "STR_CHAR_ICE_BEAR" : "Ice Bear",
+    "STR_CHAR_PANDA" : "Panda",
+    "STR_CHAR_GRIZZ" : "Grizz"
+
+
+
+
+  }
+}

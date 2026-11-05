@@ -1,0 +1,41 @@
+{
+	"name": "YellowCopter",
+	"short_name": "YellowCopter",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/Иконка-16.png",
+			"sizes": "16x9",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-32.png",
+			"sizes": "28x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-64.png",
+			"sizes": "56x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-128.png",
+			"sizes": "112x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-256.png",
+			"sizes": "252x144",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-512.png",
+			"sizes": "504x288",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <title>Pikachu nông trại 2</title>
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>    
+
+	<meta charset="utf-8">
+
+    <!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  
+
+    <meta name="HandheldFriendly" content="true" />
+
+
+
+    <!-- Chrome for Android web app tags -->
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+  
+
+    <style type="text/css">
+
+        * {
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+
+
+        html,
+
+        body {
+
+            background-image: url('img/cover.png');
+
+            overflow: hidden;
+
+            touch-action: none;
+
+            -ms-touch-action: none;
+
+        }
+
+
+
+        canvas {
+
+            touch-action-delay: none;
+
+            touch-action: none;
+
+            -ms-touch-action: none;
+
+        }
+
+
+
+        @font-face {
+
+            font-family: 'robotomono';
+
+            font-style: normal;
+
+            font-weight: 400;
+
+            src: url(font/robotomono.ttf) format('truetype');
+
+        }
+
+
+
+        @font-face {
+
+            font-family: 'PoetsenOne';
+
+            font-style: normal;
+
+            font-weight: 400;
+
+            src: url(font/PoetsenOne.ttf) format('truetype');
+
+        }
+
+    </style>
+
+    <script type="text/javascript" src="scripts/phaser.min.js"></script>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+    <div style="font-family:robotomono; position:absolute; left:-1000px; visibility:hidden;">.</div>
+
+    <div style="font-family:PoetsenOne; position:absolute; left:-1000px; visibility:hidden;">.</div>
+
+    <script type="text/javascript" src="scripts/boot.js"></script>
+
+    <script type="text/javascript" src="scripts/stages.js"></script>
+
+    <script type="text/javascript" src="scripts/preload.js"></script>
+
+    <script type="text/javascript" src="scripts/menu.js"></script>
+
+    <script type="text/javascript" src="scripts/game.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        window.SDK_OPTIONS = {
+
+            gameId: "mzf1pjr358q82a1i8e3j9nk1zajb3x0c",
+
+            onEvent: function(a) {
+
+                switch (a.name) {
+
+                    case "SDK_GAME_PAUSE":
+
+                        // pause game logic / mute audio
+
+                        break;
+
+                    case "SDK_GAME_START":
+
+                        // advertisement done, resume game logic and unmute audio
+
+                        break;
+
+                    case "SDK_READY":
+
+                        // when sdk is ready
+
+                        break;
+
+                }
+
+            }
+
+        };
+
+        (function(a, b, c) {
+
+            var d = a.getElementsByTagName(b)[0];
+
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "", d.parentNode.insertBefore(a, d))
+
+        })(document, "script", "gamemonetize-sdk");
+
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>

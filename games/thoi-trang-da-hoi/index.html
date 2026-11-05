@@ -1,0 +1,640 @@
+<!doctype html>
+
+<html>
+
+	<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	<meta charset="utf-8">
+
+		<title>Thời trang dạ hội</title>
+
+		<meta name="viewport" content="width=device-width, user-scalable=0" />
+
+
+
+		<script type="text/javascript" src="js/jquery.min.js"></script> 
+
+		<script type="text/javascript" src=""></script>
+
+	<link rel="stylesheet" type="text/css"  href="css/style.css"/>
+
+<script type="text/javascript" src="js/black_girls.js"></script> 
+
+	</head>
+
+	<body id="body1" onload="start()" >
+
+	
+
+	<div  id="outer" >
+
+		<div id="begin_page" hidden>
+
+			<img id="begin_background" class="beginpage" src="images/first_background.png"  style="z-index:10"  />
+
+			<img id="begin_girl"  class="beginpage" src="images/first_girl.png"   style="z-index:1 display:none" width=273px height=456px/>
+
+			 <div id="progress_bar"  class="beginpage"style="z-index:10; opacity:1; " ><div id="progress"  class="beginpage"style="z-index:12; "  ></div></div>
+
+			 <span id="progNum" class="beginpage"style="z-index:13"></span>
+
+			 <img id="begin_logo"  class="beginpage"src="images/logo_90.png" style="z-index:13"/>
+
+		</div>
+
+	  <img id="music"  src="images/first_music.png"  style="z-index:1; display:none" width=36px height=36px/>
+
+	  <div id="first_page" hidden>
+
+	  
+
+	  <img id="first_background" class="firstpage" src="images/first_page.png"    style="z-index:2">
+
+	      <img id="first_moregames_button"  class="more firstpage"  src="images/more_games_orange.png" style="z-index:1"/>
+
+		   <img id="first_logo" class="firstpage" src="images/logo_90.png"  style="z-index:4"/>
+
+  	    <!--  <div id="first_link1"  class="firstpage"  style="z-index:3" width=200 height=20 >add to your site</div> -->
+
+    	  <img id="play_button" class="firstpage" src="images/first_play_orange.png"  style="z-index:5" width=120px height=60px/>
+
+		  <img id="star1" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star2" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=12px height=12px/>
+
+		  <img id="star3" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star4" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star5" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star6" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star7" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star8" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=12px height=12px/>
+
+		  <img id="star9" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star10" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star11" class="flashStar  firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star12" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=12px height=12px/>
+
+		  <img id="star13"  class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star14"  class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star15" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star16" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+		  <img id="star17" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star18" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=12px height=12px/>
+
+		  <img id="star19" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=11px height=11px/>
+
+		  <img id="star20" class="flashStar firstpage"  src="images/star.png"  style="z-index:2" width=10px height=10px/>
+
+	  </div>
+
+	  <div id="second_page" style="display:none">
+
+	    <img id="second_background" class="secondpage" src="images/play_background.png"  style="z-index:2">
+
+		<img id="secong_moregames_button"  class="secondpage more" src="images/more_games_orange.png"  style="z-index:1" width=100px height=50px/>
+
+		<img id="second_logo" class="secondpage" src="images/logo_90.png" style="z-index:3"/>
+
+		  <img id="hair_button" class="secondpage" src="images/hair_yellow.png"  style="z-index:2"  width=70px height=70px/>
+
+	      <img id="dress_button" class="secondpage" src="images/dress_orange.png"  style="z-index:2" width=70px height=70px/>
+
+		  <img id="neck_button" class="secondpage" src="images/neck_orange.png"  style="z-index:2" width=70px height=70px/>
+
+	      <img id="shoe_button" class="secondpage" src="images/shoe_orange.png"  style="z-index:2" width=70px height=70px/>
+
+		  <img id="select_box"  class="secondpage"src="images/box.png"  style="z-index:2" />
+
+		  <img id="show_button" class="secondpage" src="images/show_button_orange.png"  style="z-index:2" width=100px height=50px/>
+
+	      <img id="reset_button" class="secondpage" src="images/reset_button_orange.png"  style="z-index:2" width=100px height=50px/>
+
+		  <img id="dress_girl" class="secondpage" src="images/dress_girl.png"  style="z-index:2" width=145px height=439px/>
+
+		  <img id="dress_girl_hand" class="secondpage" src="images/dress_girl_hand.png"  style="z-index:5" />
+
+
+
+		  <div id="hair_page">
+
+			 <img id="hair" class="secondpage" src="images/hair.png"  style="z-index:3"/>
+
+			 <img id="hair1"  class="secondpage scale" src="images/hair1.png"  style="z-index:3" width=73px height=116px/>
+
+			 <img id="hair2"  class="secondpage scale"  src="images/hair2.png"  style="z-index:3" width=89px height=86px/>
+
+			 <img id="hair3"   class="secondpage scale" src="images/hair3.png"  style="z-index:3" width=77px height=157px/>
+
+			 <img id="hair4"   class="secondpage scale" src="images/hair4.png"  style="z-index:3" width=104px height=121px/>
+
+			 <img id="hair5"   class="secondpage scale" src="images/hair5.png"  style="z-index:3" width=70px height=68px/>
+
+			 <img id="hair6"   class="secondpage scale" src="images/hair6.png"  style="z-index:3" width=64px height=160px/>
+
+		  </div>
+
+		   <div id="dress_page">
+
+		       <img id="dress_left" class="secondpage scale1" src="images/dress_left.png"  style="z-index:5" width=33px height=42px/>
+
+			   <div id="dress_right" style="z-index:5"class="secondpage" width=70px height=50px>
+
+		       <img  class="secondpage scale1"class="secondpage"  src="images/dress_right.png"   width=33px height=42px/>
+
+			   </div>
+
+			   <div id="dress_page_1">
+
+	  		      <img id="dress01"   class="secondpage scale" src="images/clothes1.png"  style="z-index:3" width=79px height=198px/>
+
+			      <img id="dress02"   class="secondpage scale" src="images/clothes2.png"  style="z-index:3" width=155px height=215px/>
+
+			      <img id="dress03"   class="secondpage scale" src="images/clothes3.png"  style="z-index:3" width=163px height=205px/>
+
+			   </div>
+
+			   <div id="dress_page_2">
+
+			      <img id="dress04"   class="secondpage scale" src="images/clothes4.png"  style="z-index:3" width=76px height=186px/>
+
+			      <img id="dress05"   class="secondpage scale" src="images/clothes5.png"  style="z-index:3" width=86px height=183px/>
+
+			      <img id="dress06"   class="secondpage scale" src="images/clothes6.png"  style="z-index:3" width=82px height=164px/>
+
+				  <img id="dress07"   class="secondpage scale" src="images/clothes7.png"  style="z-index:3" width=68px height=179px/>
+
+			   </div>
+
+			   <div id="dress_page_3">
+
+			      <img id="dress08"  class="secondpage scale"  src="images/clothes8.png"  style="z-index:3" width=71px height=80px/>
+
+			      <img id="dress09"  class="secondpage scale"  src="images/clothes9.png"  style="z-index:3" width=78px height=116px/>
+
+			      <img id="dress10"  class="secondpage scale"   src="images/clothes10.png"  style="z-index:3" width=60px height=109px/>
+
+				  <img id="dress11"   class="secondpage scale" src="images/clothes11.png"  style="z-index:3" width=70px height=104px/>
+
+				  <img id="dress12"   class="secondpage scale" src="images/clothes12.png"  style="z-index:3" width=54px height=120px/>
+
+			      <img id="dress13"   class="secondpage scale" src="images/clothes13.png"  style="z-index:3" width=60px height=124px/>
+
+			      <img id="dress14"   class="secondpage scale" src="images/clothes14.png"  style="z-index:3" width=63px height=108px/>
+
+			  </div>
+
+		   </div>
+
+			<div id="neck_page">
+
+			   <img id="neck" class="secondpage" src="images/neck_background.png"  style="z-index:3" width=349px height=250px />
+
+			   <img id="neck1"   class="secondpage scale" src="images/neck1.png"  style="z-index:3" width=38px height=64px/>
+
+			   <img id="neck2"   class="secondpage scale" src="images/neck2.png"  style="z-index:3" width=33px height=52px/>
+
+			   <img id="neck3"   class="secondpage scale" src="images/neck3.png"  style="z-index:3" width=35px height=27px/>
+
+			   <img id="neck4"   class="secondpage scale" src="images/neck4.png"  style="z-index:3" width=41px height=29px/>
+
+			   <img id="neck5"   class="secondpage scale" src="images/neck5.png"  style="z-index:3" width=40px height=24px/>
+
+			   <img id="neck6"   class="secondpage scale" src="images/neck6.png"  style="z-index:3" width=42px height=28px/>
+
+
+
+			   <img id="glasses1"   class="secondpage scale" src="images/glasses1.png"  style="z-index:3" />
+
+			   <img id="glasses2"   class="secondpage scale" src="images/glasses2.png"  style="z-index:3"/>
+
+			   <img id="glasses3"   class="secondpage scale" src="images/glasses3.png"  style="z-index:3"/>
+
+			   <img id="glasses4"   class="secondpage scale" src="images/glasses4.png"  style="z-index:3" />
+
+			   <img id="glasses5"   class="secondpage scale" src="images/glasses5.png"  style="z-index:3" />
+
+			   <img id="glasses6"   class="secondpage scale" src="images/glasses6.png"  style="z-index:3"/>
+
+			   
+
+			   <img id="earbob1"   class="secondpage scale" src="images/earbob1.png"  style="z-index:3"/>
+
+			   <img id="earbob2"   class="secondpage scale" src="images/earbob2.png"  style="z-index:3"/>
+
+			   <img id="earbob3"   class="secondpage scale" src="images/earbob3.png"  style="z-index:3" />
+
+			   <img id="earbob4"   class="secondpage scale" src="images/earbob4.png"  style="z-index:3" />
+
+			   <img id="earbob5"   class="secondpage scale" src="images/earbob5.png"  style="z-index:3" />
+
+			   <img id="earbob6"   class="secondpage scale" src="images/earbob6.png"  style="z-index:3"/>
+
+
+
+			   <img id="bracelet1"   class="secondpage scale" src="images/bracelet1.png"  style="z-index:3"/>
+
+			   <img id="bracelet2"   class="secondpage scale" src="images/bracelet2.png"  style="z-index:3"/>
+
+			   <img id="bracelet3"   class="secondpage scale" src="images/bracelet3.png"  style="z-index:3"/>
+
+			   <img id="bracelet4"   class="secondpage scale" src="images/bracelet4.png"  style="z-index:3"/>
+
+			   <img id="bracelet5"   class="secondpage scale" src="images/bracelet5.png"  style="z-index:3"/>
+
+			   <img id="bracelet6"   class="secondpage scale" src="images/bracelet6.png"  style="z-index:3"/>
+
+
+
+			   <img id="hairflower1"   class="secondpage scale" src="images/hairflower1.png"  style="z-index:3" width=20px height=20px/>
+
+			   <img id="hairflower2"   class="secondpage scale" src="images/hairflower2.png"  style="z-index:3" width=26px height=21px/>
+
+			   <img id="hairflower3"   class="secondpage scale" src="images/hairflower3.png"  style="z-index:3" width=25px height=24px/>
+
+			   <img id="hairflower4"   class="secondpage scale" src="images/hairflower4.png"  style="z-index:3" />
+
+			   <img id="hairflower5"   class="secondpage scale" src="images/hairflower5.png"  style="z-index:3" />
+
+			   <img id="hairflower6"   class="secondpage scale" src="images/hairflower6.png"  style="z-index:3" />
+
+
+
+			   <img id="bag1"   class="secondpage scale" src="images/bag1.png"  style="z-index:3"/>
+
+			   <img id="bag2"   class="secondpage scale" src="images/bag2.png"  style="z-index:3"/>
+
+			   <img id="bag3"   class="secondpage scale" src="images/bag3.png"  style="z-index:3"/>
+
+			   <img id="bag4"   class="secondpage scale" src="images/bag4.png"  style="z-index:3"/>
+
+			   <img id="bag5"   class="secondpage scale" src="images/bag5.png"  style="z-index:3"/>
+
+			   <img id="bag6"   class="secondpage scale" src="images/bag6.png"  style="z-index:3"/>
+
+			</div>
+
+			<div id="shoe_page">	
+
+			   <img id="shoe" class="secondpage" src="images/shoe.png"  style="z-index:3"/>
+
+			   <img id="shoe1"   class="secondpage scale" src="images/shoe1.png"  style="z-index:3"/>
+
+			   <img id="shoe2"   class="secondpage scale" src="images/shoe2.png"  style="z-index:3"/>
+
+			   <img id="shoe3"   class="secondpage scale" src="images/shoe3.png"  style="z-index:3"/>
+
+			   <img id="shoe4"   class="secondpage scale" src="images/shoe4.png"  style="z-index:3"/>
+
+			   <img id="shoe5"   class="secondpage scale" src="images/shoe5.png"  style="z-index:3"/>
+
+			   <img id="shoe6"   class="secondpage scale" src="images/shoe6.png"  style="z-index:3"/>
+
+			</div>
+
+		 </div>
+
+
+
+	<!--穿在身上-->	
+
+
+
+			 <img id="hair1_on"  class=" puton" src="images/hair1.png"  style="z-index:6 ;display:none;"/>
+
+			 <img id="hair2_on"  class=" puton" src="images/hair2.png"  style="z-index:6;display:none;" />
+
+			 <img id="hair3_on"  class=" puton" src="images/hair3.png"  style="z-index:6;display:none;" />
+
+			 <img id="hair4_on"  class=" puton" src="images/hair4.png"  style="z-index:6;display:none;" />
+
+			 <img id="hair5_on"  class=" puton" src="images/hair5.png"  style="z-index:6;display:none;" />
+
+			 <img id="hair6_on"  class=" puton" src="images/hair6.png"  style="z-index:6;display:none;"/>
+
+	  		      <img id="dress01_on"  class=" puton" src="images/clothes1_on.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress02_on"  class=" puton" src="images/clothes2.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress03_on"  class=" puton" src="images/clothes3.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress04_on"  class=" puton" src="images/clothes4.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress05_on"  class=" puton" src="images/clothes5.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress06_on"  class=" puton" src="images/clothes6.png"  style="z-index:4;display:none;"/>
+
+				  <img id="dress07_on"  class=" puton" src="images/clothes7.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress08_on"  class=" puton" src="images/clothes8.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress09_on"  class=" puton" src="images/clothes9.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress10_on"  class=" puton" src="images/clothes10.png"  style="z-index:4;display:none;"/>
+
+				  <img id="dress11_on"  class=" puton" src="images/clothes11.png"  style="z-index:4;display:none;"/>
+
+				  <img id="dress12_on"  class=" puton" src="images/clothes12.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress13_on"  class=" puton" src="images/clothes13.png"  style="z-index:4;display:none;"/>
+
+			      <img id="dress14_on"  class=" puton" src="images/clothes14.png"  style="z-index:4;display:none;"/>
+
+			   <img id="neck1_on"  class=" puton" src="images/neck1.png"  style="z-index:5;display:none;"/>
+
+			   <img id="neck2_on"  class=" puton" src="images/neck2.png"  style="z-index:5;display:none;"/>
+
+			   <img id="neck3_on"  class=" puton" src="images/neck3.png"  style="z-index:5;display:none;"/>
+
+			   <img id="neck4_on"  class=" puton" src="images/neck4.png"  style="z-index:5;display:none;"/>
+
+			   <img id="neck5_on"  class=" puton" src="images/neck5.png"  style="z-index:5;display:none;"/>
+
+			   <img id="neck6_on"  class=" puton" src="images/neck6.png"  style="z-index:5;display:none;"/>
+
+			   <img id="glasses1_on"  class=" puton" src="images/glasses1.png"  style="z-index:3;display:none;"/>
+
+			   <img id="glasses2_on"  class=" puton" src="images/glasses2.png"  style="z-index:3;display:none;"/>
+
+			   <img id="glasses3_on"  class=" puton" src="images/glasses3.png"  style="z-index:3;display:none;"/>
+
+			   <img id="glasses4_on"  class=" puton" src="images/glasses4.png"  style="z-index:3;display:none;"/>
+
+			   <img id="glasses5_on"  class=" puton" src="images/glasses5.png"  style="z-index:3;display:none;"/>
+
+			   <img id="glasses6_on"  class=" puton" src="images/glasses6.png"  style="z-index:3;display:none;"/>
+
+			   <img id="earbob1_on"  class=" puton" src="images/earbob1.png"  style="z-index:7;display:none;"/>
+
+			   <img id="earbob2_on"  class=" puton" src="images/earbob2.png"  style="z-index:7;display:none;"/>
+
+			   <img id="earbob3_on"  class=" puton" src="images/earbob3.png"  style="z-index:7;display:none;"/>
+
+			   <img id="earbob4_on"  class=" puton" src="images/earbob4.png"  style="z-index:7;display:none;"/>
+
+			   <img id="earbob5_on"  class=" puton" src="images/earbob5.png"  style="z-index:7;display:none;"/>
+
+			   <img id="earbob6_on"  class=" puton" src="images/earbob6.png"  style="z-index:7;display:none;"/>
+
+			   <img id="bracelet1_on"  class=" puton" src="images/bracelet1.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bracelet2_on"  class=" puton" src="images/bracelet2.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bracelet3_on"  class=" puton" src="images/bracelet3.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bracelet4_on"  class=" puton" src="images/bracelet4.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bracelet5_on"  class=" puton" src="images/bracelet5.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bracelet6_on"  class=" puton" src="images/bracelet6.png"  style="z-index:5;display:none;"/>
+
+			   <img id="hairflower1_on"  class=" puton" src="images/hairflower1.png"  style="z-index:7;display:none;"/>
+
+			   <img id="hairflower2_on"  class=" puton" src="images/hairflower2.png"  style="z-index:7;display:none;"/>
+
+			   <img id="hairflower3_on"  class=" puton" src="images/hairflower3.png"  style="z-index:7;display:none;"/>
+
+			   <img id="hairflower4_on"  class=" puton" src="images/hairflower4.png"  style="z-index:7;display:none;"/>
+
+			   <img id="hairflower5_on"  class=" puton" src="images/hairflower5.png"  style="z-index:7;display:none;"/>
+
+			   <img id="hairflower6_on"  class=" puton" src="images/hairflower6.png"  style="z-index:7;display:none;;display:none;"/>
+
+			   <img id="bag1_on"  class=" puton" src="images/bag1_on.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bag2_on"  class=" puton" src="images/bag2_on.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bag3_on"  class=" puton" src="images/bag3_on.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bag4_on"  class=" puton" src="images/bag4_on.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bag5_on"  class=" puton" src="images/bag5_on.png"  style="z-index:5;display:none;"/>
+
+			   <img id="bag6_on"  class=" puton" src="images/bag6_on.png"  style="z-index:5;display:none;"/>
+
+			   <img id="shoe1_on"  class=" puton" src="images/shoe1.png"  style="z-index:3;display:none;"/>
+
+			   <img id="shoe2_on"  class=" puton" src="images/shoe2.png"  style="z-index:3;display:none;"/>
+
+			   <img id="shoe3_on"  class=" puton" src="images/shoe3.png"  style="z-index:3;display:none;"/>
+
+			   <img id="shoe4_on"  class=" puton" src="images/shoe4.png"  style="z-index:3;display:none;"/>
+
+			   <img id="shoe5_on"  class=" puton" src="images/shoe5.png"  style="z-index:3;display:none;"/>
+
+			   <img id="shoe6_on"  class=" puton" src="images/shoe6.png"  style="z-index:3;display:none;"/>
+
+	<!--startprint-->
+
+	<div id="third_page" style="display:none">
+
+	
+
+	<img id="third_background" class="thirdpage" src="images/first_background.png"  style="z-index:2">
+
+	<img id="third_logo" class="thirdpage"src="images/logo_90.png" style="z-index:3"/>
+
+		  <img id="show_dress_girl" class="thirdpage" src="images/dress_girl.png"  style="z-index:2"/>
+
+		   <img id="dress_girl_hand_show" class="thirdpage" src="images/dress_girl_hand.png"  style="z-index:6" />
+
+		  <img id="replay_button" class="thirdpage" src="images/replay_button_orange.png"  style="z-index:5" width=100px height=50px/>
+
+		  <img id="third_moregames_button" class="thirdpage more" src="images/more_games_orange.png"  style="z-index:1" width=100px height=50px/>
+
+		  <img id="star1" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star2" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=12px height=12px/>
+
+		  <img id="star3" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star4" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star5" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star6" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star7" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star8" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=12px height=12px/>
+
+		  <img id="star9" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star10" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star11"class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star12" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=12px height=12px/>
+
+		  <img id="star13"  class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star14"  class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star15" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star16" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="star17" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star18" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=12px height=12px/>
+
+		  <img id="star19" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=11px height=11px/>
+
+		  <img id="star20" class="thirdpage flashStar"  src="images/star.png"  style="z-index:10" width=10px height=10px/>
+
+		  <img id="print_button" class="thirdpage" src="images/print_button_purple.png"  style="z-index:5" onclick="print()"/>
+
+
+
+			 <img id="hair1_show"  class="thirdpage putshow" src="images/hair1.png"  style="z-index:6" width=73px height=116px/>
+
+			 <img id="hair2_show"  class="thirdpage putshow" src="images/hair2.png"  style="z-index:6" width=89px height=86px/>
+
+			 <img id="hair3_show"  class="thirdpage putshow" src="images/hair3.png"  style="z-index:6" width=77px height=157px/>
+
+			 <img id="hair4_show"  class="thirdpage putshow" src="images/hair4.png"  style="z-index:6" width=104px height=121px/>
+
+			 <img id="hair5_show"  class="thirdpage putshow" src="images/hair5.png"  style="z-index:6" width=70px height=68px/>
+
+			 <img id="hair6_show"  class="thirdpage putshow" src="images/hair6.png"  style="z-index:6" width=64px height=160px/>
+
+	  		      <img id="dress01_show"  class="thirdpage putshow" src="images/clothes1_on.png"  style="z-index:4" />
+
+			      <img id="dress02_show"  class="thirdpage putshow" src="images/clothes2.png"  style="z-index:4"/>
+
+			      <img id="dress03_show"  class="thirdpage putshow" src="images/clothes3.png"  style="z-index:4" />
+
+			      <img id="dress04_show"  class="thirdpage putshow" src="images/clothes4.png"  style="z-index:4" />
+
+			      <img id="dress05_show"  class="thirdpage putshow" src="images/clothes5.png"  style="z-index:4" />
+
+			      <img id="dress06_show"  class="thirdpage putshow" src="images/clothes6.png"  style="z-index:4" />
+
+				  <img id="dress07_show"  class="thirdpage putshow" src="images/clothes7.png"  style="z-index:4" />
+
+			      <img id="dress08_show"  class="thirdpage putshow" src="images/clothes8.png"  style="z-index:4" />
+
+			      <img id="dress09_show"  class="thirdpage putshow" src="images/clothes9.png"  style="z-index:4"/>
+
+			      <img id="dress10_show"  class="thirdpage putshow" src="images/clothes10.png"  style="z-index:4" />
+
+				  <img id="dress11_show"  class="thirdpage putshow" src="images/clothes11.png"  style="z-index:4" />
+
+				  <img id="dress12_show"  class="thirdpage putshow" src="images/clothes12.png"  style="z-index:4" />
+
+			      <img id="dress13_show"  class="thirdpage putshow" src="images/clothes13.png"  style="z-index:4"/>
+
+			      <img id="dress14_show"  class="thirdpage putshow" src="images/clothes14.png"  style="z-index:4" />
+
+				
+
+			   <img id="neck1_show"  class="thirdpage putshow" src="images/neck1.png"  style="z-index:5" width=38px height=64px/>
+
+			   <img id="neck2_show"  class="thirdpage putshow" src="images/neck2.png"  style="z-index:5" width=33px height=52px/>
+
+			   <img id="neck3_show"  class="thirdpage putshow" src="images/neck3.png"  style="z-index:5" width=35px height=27px/>
+
+			   <img id="neck4_show"  class="thirdpage putshow" src="images/neck4.png"  style="z-index:5" width=41px height=29px/>
+
+			   <img id="neck5_show"  class="thirdpage putshow" src="images/neck5.png"  style="z-index:5" width=40px height=24px/>
+
+			   <img id="neck6_show"  class="thirdpage putshow" src="images/neck6.png"  style="z-index:5" width=42px height=28px/>
+
+			   <img id="glasses1_show"  class="thirdpage putshow" src="images/glasses1.png"  style="z-index:3" />
+
+			   <img id="glasses2_show"  class="thirdpage putshow" src="images/glasses2.png"  style="z-index:3"/>
+
+			   <img id="glasses3_show"  class="thirdpage putshow" src="images/glasses3.png"  style="z-index:3"/>
+
+			   <img id="glasses4_show"  class="thirdpage putshow" src="images/glasses4.png"  style="z-index:3" />
+
+			   <img id="glasses5_show"  class="thirdpage putshow" src="images/glasses5.png"  style="z-index:3" />
+
+			   <img id="glasses6_show"  class="thirdpage putshow" src="images/glasses6.png"  style="z-index:3"/>
+
+			   <img id="earbob1_show"  class="thirdpage putshow" src="images/earbob1.png"  style="z-index:7"/>
+
+			   <img id="earbob2_show"  class="thirdpage putshow" src="images/earbob2.png"  style="z-index:7"/>
+
+			   <img id="earbob3_show"  class="thirdpage putshow" src="images/earbob3.png"  style="z-index:7" />
+
+			   <img id="earbob4_show"  class="thirdpage putshow" src="images/earbob4.png"  style="z-index:7" />
+
+			   <img id="earbob5_show"  class="thirdpage putshow" src="images/earbob5.png"  style="z-index:7" />
+
+			   <img id="earbob6_show"  class="thirdpage putshow" src="images/earbob6.png"  style="z-index:7"/>
+
+			   <img id="bracelet1_show"  class="thirdpage putshow" src="images/bracelet1.png"  style="z-index:7"/>
+
+			   <img id="bracelet2_show"  class="thirdpage putshow" src="images/bracelet2.png"  style="z-index:7"/>
+
+			   <img id="bracelet3_show"  class="thirdpage putshow" src="images/bracelet3.png"  style="z-index:7"/>
+
+			   <img id="bracelet4_show"  class="thirdpage putshow" src="images/bracelet4.png"  style="z-index:7"/>
+
+			   <img id="bracelet5_show"  class="thirdpage putshow" src="images/bracelet5.png"  style="z-index:7"/>
+
+			   <img id="bracelet6_show"  class="thirdpage putshow" src="images/bracelet6.png"  style="z-index:7"/>
+
+			   <img id="hairflower1_show"  class="thirdpage putshow" src="images/hairflower1.png"  style="z-index:7"/>
+
+			   <img id="hairflower2_show"  class="thirdpage putshow" src="images/hairflower2.png"  style="z-index:7" />
+
+			   <img id="hairflower3_show"  class="thirdpage putshow" src="images/hairflower3.png"  style="z-index:7"/>
+
+			   <img id="hairflower4_show"  class="thirdpage putshow" src="images/hairflower4.png"  style="z-index:7" />
+
+			   <img id="hairflower5_show"  class="thirdpage putshow" src="images/hairflower5.png"  style="z-index:7" />
+
+			   <img id="hairflower6_show"  class="thirdpage putshow" src="images/hairflower6.png"  style="z-index:7" />
+
+			   <img id="bag1_show"  class="thirdpage putshow" src="images/bag1_on.png"  style="z-index:5"/>
+
+			   <img id="bag2_show"  class="thirdpage putshow" src="images/bag2_on.png"  style="z-index:5"/>
+
+			   <img id="bag3_show"  class="thirdpage putshow" src="images/bag3_on.png"  style="z-index:5"/>
+
+			   <img id="bag4_show"  class="thirdpage putshow" src="images/bag4_on.png"  style="z-index:5"/>
+
+			   <img id="bag5_show"  class="thirdpage putshow" src="images/bag5_on.png"  style="z-index:5"/>
+
+			   <img id="bag6_show"  class="thirdpage putshow" src="images/bag6_on.png"  style="z-index:5"/>
+
+			   <img id="shoe1_show"  class="thirdpage putshow" src="images/shoe1.png"  style="z-index:3"/>
+
+			   <img id="shoe2_show"  class="thirdpage putshow" src="images/shoe2.png"  style="z-index:3"/>
+
+			   <img id="shoe3_show"  class="thirdpage putshow" src="images/shoe3.png"  style="z-index:3"/>
+
+			   <img id="shoe4_show"  class="thirdpage putshow" src="images/shoe4.png"  style="z-index:3"/>
+
+			   <img id="shoe5_show"  class="thirdpage putshow" src="images/shoe5.png"  style="z-index:3"/>
+
+			   <img id="shoe6_show"  class="thirdpage putshow" src="images/shoe6.png"  style="z-index:3"/>
+
+		</div>
+
+		<!--endprint-->
+
+	<!--   <audio id="playMusic" src="audio\backgroundMusic.mp3" autoplay pause    loop ></audio>  -->
+
+	</div>
+
+
+
+	
+</body>
+
+</html>

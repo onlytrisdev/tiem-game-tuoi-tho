@@ -1,0 +1,10 @@
+[
+    {"id":1,"icon":"ach01","name":"昆虫猎人","des":"吞噬xx只昆虫","num":50,"addnum":100,"rwdtype":0,"rwd":300},
+    {"id":2,"icon":"ach02","name":"巨人杀手","des":"击杀xx只200g以上敌人","num":10,"addnum":20,"rwdtype":1,"rwd":100},
+    {"id":3,"icon":"ach03","name":"传承之子","des":"使用复活xx次","num":3,"addnum":5,"rwdtype":0,"rwd":300},
+    {"id":4,"icon":"ach04","name":"甜品大师","des":"吃掉xx个糕点","num":100,"addnum":200,"rwdtype":1,"rwd":100},
+    {"id":5,"icon":"ach05","name":"水果爱好者","des":"吃掉xx颗水果","num":100,"addnum":200,"rwdtype":0,"rwd":300},
+    {"id":6,"icon":"ach06","name":"桂冠之王","des":"在比赛中赢得xx次冠军","num":1,"addnum":3,"rwdtype":1,"rwd":100},
+    {"id":7,"icon":"ach07","name":"实力赞助","des":"观看xx次视频广告","num":3,"addnum":5,"rwdtype":0,"rwd":300},
+    {"id":8,"icon":"ach08","name":"富甲天下","des":"获得xx枚金币","num":10000,"addnum":20000,"rwdtype":1,"rwd":100}
+]

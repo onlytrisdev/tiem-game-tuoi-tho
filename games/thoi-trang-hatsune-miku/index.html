@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thời trang Hatsune Miku</title>
+<meta name="keywords" content="初音未来换装,初音未来换装html5游戏" />
+<meta name="description" content="初音未来换装html5游戏,初音未来换装手机在线游戏" />
+<link rel="apple-touch-icon" href="icon.png" />
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>	 
+<link rel="shortcut icon" href="icon.png" />
+<link rel="icon" href="icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="full-screen" content="yes"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta name="x5-fullscreen" content="true"/>
+<meta name="360-fullscreen" content="true"/>
+<style>
+body, canvas, div {
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-khtml-user-select: none;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.body_background1{
+background: #956134;
+}
+.body_background2{
+background-image: url('res/images/background.png');
+}
+#spilgames-more-games-btn {
+color: #f8f8f8;
+background-color: #1EAF2F;
+border-radius: 10px;
+padding: 10px;
+text-decoration: none;
+}
+</style>
+<style type="text/css">
+.spilgames-branding-image{
+display: block;
+left: 50px;
+top: 100px;
+position: absolute;
+}
+#spilgames-more-games-btn {
+color: #f8f8f8;
+background-color: #1EAF2F;
+border-radius: 10px;
+padding: 10px;
+text-decoration: none;
+}
+#spilgames-splash-screen{
+width: 100%;
+height: 100%;
+background: url('img/Splash_Image_A10.png') top center no-repeat; /* Change "A10" to "GGG" or "Zibbo" based on the brand your game matches */
+position: absolute;
+z-index: 10000; /* Make sure its on top of the game */
+background-size: 90%;
+background-color:#3890ae; /* Change to #FFF for GGG or Zibbo branded games */
+}
+.spilgames-splash-screen-gone{
+display:none !important;
+}
+</style>
+</head>
+<body id="bodyID" style="padding:0; margin: 0;">
+<canvas id="gameCanvas" width="700" height="500"></canvas>
+
+<script>
+window.console = window.console || (function(){
+var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function(){};
+return c;
+})();
+window.addEventListener('scroll', function () {
+// Do not scroll when keyboard is visible 
+if (document.activeElement === document.body && window.scrollY > 0) {
+document.body.scrollTop = 0;
+}
+}, true);
+window.addEventListener('resize', function () {
+document.body.scrollTop = 0;
+}, true);
+</script>
+<script src="frameworks/cocos2d-js-v3.0-rc0-core-pro.js"></script>
+<script src="main.js"></script>
+<audio id="audio" src="res/audio/background.mp3" autobuffer loop>
+</audio>
+
+</body>
+</html>

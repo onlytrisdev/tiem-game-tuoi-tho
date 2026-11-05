@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <languages>
+        <language>en</language>
+        <language>sk</language>
+        <language>es</language>
+        <language>cz</language>
+        <language>de</language>
+        <language>it</language>
+        <language>fr</language>
+        <language>ru</language>
+        <language>pt</language>
+        <language>tr</language>
+    </languages>
+    <strings>
+        <string id="1" index="0">
+            <en>en</en>
+            <sk>sk</sk>
+            <es>es</es>
+            <cz>cz</cz>
+            <de>de</de>
+            <it>it</it>
+            <fr>fr</fr>
+            <ru>ru</ru>
+            <pt>pt</pt>
+            <tr>tr</tr>
+        </string>
+        <string id="INSTRUCTIONS" index="1">
+            <en>Nhấn vào các nút cho các hành động tương ứng. Mỗi loại nhiệm vụ có cách khác nhau để hoàn thành xuất sắc. \nTiêu tiền xu để mở khóa và nâng cấp anh hùng, vũ khí hoặc nạp lại đạn đã sử dụng. \nChỉ có 5 nhiệm vụ cùng một lúc.</en>
+            <de>Tippe auf die Schaltflächen, um die jeweilige Aktion auszuführen. \nJeder Missionstyp kann auf verschiedene Weisen erfolgreich abgeschlossen werden. \nGib Münzen aus, um Helden und Waffen freizuschalten und zu verbessern und deine Munition aufzufüllen. \nEs sind jederzeit nur 5 Missionen verfügbar.</de>
+            <es>Toca los botones para realizar la acción correspondiente. \nCada tipo de misión se completa de manera distinta. \nGasta monedas para desbloquear y mejorar a tus héroes y armas o para recargar la munición. \nSolo puedes aceptar 5 misiones a la vez.</es>
+            <fr>Appuyez sur les boutons pour réaliser les actions correspondantes. \nChaque type de mission a une solution différente. \nDépensez des pièces pour débloquer et améliorer des héros, des armes ou recharger des munitions. \nIl n'y a que 5 missions disponibles à la fois.</fr>
+            <it>Tocca i pulsanti per eseguire le azioni corrispondenti. \nOgni tipo di missione va completata in modo diverso. \nUsa le monete per sbloccare e potenziare gli eroi e le armi, o per ricaricare le munizioni consumate. \nSolo 5 missioni sono disponibili contemporaneamente.</it>
+            <pt>Toque nos botões para ver as ações correspondentes. \nCada tipo de missão tem uma maneira diferente de ser feita com sucesso. \nGaste moedas para desbloquear e atualizar heróis, armas ou recarregar munições usadas. \nHá apenas 5 missões disponíveis de uma só vez.</pt>
+            <ru>Нажмите на кнопку для выполнения соответствующих действий. \nКаждый тип миссии имеет свой способ успешного выполнения. \nИспользуйте монеты, чтобы открывать и улучшать героев, оружие или пополнить использованные боеприпасы. \nОдновременно доступно только 5 миссий.</ru>
+            <tr/>
+        </string>
+        <string id="PAUSE" index="2">
+            <en>TẠM DỪNG</en>
+            <de>PAUSE</de>
+            <es>PAUSA</es>
+            <fr>PAUSE</fr>
+            <it>PAUSA</it>
+            <pt>PAUSA</pt>
+            <ru>ПАУЗА</ru>
+            <tr>DURAKLAT</tr>
+        </string>
+        <string id="VERSION" index="3">
+            <en>Phiên bản</en>
+            <es>Versión</es>
+            <de>Version</de>
+            <it>Versione</it>
+            <fr>Version</fr>
+            <ru>Версия</ru>
+            <pt>Versão</pt>
+            <tr/>
+        </string>
+        <string id="PAUSED" index="4">
+            <en>Tạm Dừng</en>
+            <es>Pausa</es>
+            <de>Angehalten</de>
+            <it>Pausa</it>
+            <fr>Pause</fr>
+            <ru>Пауза</ru>
+            <pt>Pausado</pt>
+            <tr/>
+        </string>
+        <string id="NO_MOVES" index="5">
+            <en>Không có động thái nào!</en>
+            <es>¡No quedan movimientos!</es>
+            <de>Keine Züge möglich!</de>
+            <it>Nessuna mossa disponibile!</it>
+            <fr>Aucun coup possible!</fr>
+            <ru>Нет доступных ходов!</ru>
+            <pt>Não há movimentos disponíveis</pt>
+            <tr/>
+        </string>
+        <string id="MAP_LEGEND_MAIN" index="6">
+            <en>NHIỆM VỤ CẦN LÀM !$!</en>
+            <es>LISTA DE QUEHACERES !$!</es>
+            <de>AUFGABENLISTE !$!</de>
+            <it>LISTA DI COSE DA FARE !$!</it>
+            <fr>LISTE DE CHOSES À FAIRE</fr>
+            <ru>СПИСОК ДЕЛ !$!</ru>
+            <pt>LISTA DE AFAZERES !$!</pt>
+            <tr/>
+        </string>
+        <string id="MAP_LEGEND_HUNT" index="7">
+            <en>... săn thây ma</en>
+            <de>... zombiejagd</de>
+            <es>... caza de zombis</es>
+            <it>... caccia agli zombi</it>
+            <fr>... chasse aux zombies</fr>
+            <ru>... охота на зомби</ru>
+            <pt>... caça aos zumbis</pt>
+            <tr/>
+        </string>
+        <string id="MAP_LEGEND_PROTECT" index="8">
+            <en>... bảo vệ đường phố</en>
+            <es>... protege la calle</es>
+            <de>... beschütze die Straße</de>
+            <it>... proteggi la strada</it>
+            <fr>... protégez la rue</fr>
+            <ru>... защитите улицу</ru>
+            <pt>... proteja a rua</pt>
+            <tr/>
+        </string>
+        <string id="MAP_LEGEND_COINS" index="9">
+            <en>... thu thập tiền</en>
+            <es>... recoge monedas</es>
+            <de>... sammle Münzen</de>
+            <it>... raccogli le monete</it>
+            <fr>... collectez des pièces</fr>
+            <ru>... собрать монеты</ru>
+            <pt>... recolha moedas</pt>
+            <tr/>
+        </string>
+        <string id="MAP_LEGEND_SURVIVE" index="10">
+            <en>... ở lại</en>
+            <de>... bleib am Leben</de>
+            <es>... mantente con vida</es>
+            <it>... resta in vita</it>
+            <fr>... restez en vie</fr>
+            <ru>... oстаться в живых</ru>
+            <pt>... fique vivo</pt>
+            <tr/>
+        </string>
+        <string id="MAP_LEGEND_KILL" index="11">
+            <en>... tiêu diệt boss zombie</en>
+            <es>... mata al jefe zombi</es>
+            <de>... töte den Zombieboss</de>
+            <it>... uccidi il boss degli zombi</it>
+            <fr>... tuez le boss zombie</fr>
+            <ru>... убейте зомби-босса</ru>
+            <pt>... mate o chefe zumbi</pt>
+            <tr/>
+        </string>
+        <string id="EQUIP" index="12">
+            <en>Trang Bị</en>
+            <es>Agregar</es>
+            <de>Ausrüsten</de>
+            <it>Equipaggia</it>
+            <fr>Équiper</fr>
+            <ru>Снаряжение</ru>
+            <pt>Equipar</pt>
+            <tr/>
+        </string>
+        <string id="LEVEL" index="13">
+            <en>Cấp độ</en>
+            <es>Nivel</es>
+            <de>Level</de>
+            <it>Livello</it>
+            <fr>Niveau</fr>
+            <ru>Уровень</ru>
+            <pt>Nível</pt>
+            <tr/>
+        </string>
+        <string id="MELEE_DMG" index="14">
+            <en>Sát thương cận chiến</en>
+            <es>Daño cuerpo a cuerpo</es>
+            <de>Nahkampfschaden</de>
+            <it>Danni da mischia</it>
+            <fr>Dégâts de mêlée</fr>
+            <ru>Урон в ближнем бою</ru>
+            <pt>Dano pela luta</pt>
+            <tr/>
+        </string>
+        <string id="ATTACK_SPD" index="15">
+            <en>Tốc độ tấn công</en>
+            <es>Velocidad de ataque</es>
+            <de>Angriffsgeschwindigkeit</de>
+            <it>Velocità d'attacco</it>
+            <fr>Vitesse d'attaque</fr>
+            <ru>Скорость атаки</ru>
+            <pt>Velocidade de ataque</pt>
+            <tr/>
+        </string>
+        <string id="BUY" index="16">
+            <en>Mua</en>
+            <es>Comprar</es>
+            <de>Kaufen</de>
+            <it>Compra</it>
+            <fr>Acheter</fr>
+            <ru>Купить</ru>
+            <pt>Comprar</pt>
+            <tr/>
+        </string>
+        <string id="HEROES" index="17">
+            <en>Anh Hùng</en>
+            <es>Héroes</es>
+            <de>Helden</de>
+            <it>Eroi</it>
+            <fr>Héros</fr>
+            <ru>Герои</ru>
+            <pt>Heróis</pt>
+            <tr/>
+        </string>
+        <string id="HEALTH" index="18">
+            <en>Máu</en>
+            <es>Salud</es>
+            <de>Gesundheit</de>
+            <it>Salute</it>
+            <fr>Santé</fr>
+            <ru>Здоровье</ru>
+            <pt>Saúde</pt>
+            <tr/>
+        </string>
+        <string id="ATTACK" index="19">
+            <en>Tấn Công</en>
+            <es>Ataque</es>
+            <de>Angreifen</de>
+            <it>Attacco</it>
+            <fr>Attaque</fr>
+            <ru>Атака</ru>
+            <pt>Ataque</pt>
+            <tr/>
+        </string>
+        <string id="DEFENSE" index="20">
+            <en>Phòng Thủ</en>
+            <es>Defensa</es>
+            <de>Verteidigung</de>
+            <it>Difesa</it>
+            <fr>Défense</fr>
+            <ru>Защита</ru>
+            <pt>Defesa</pt>
+            <tr/>
+        </string>
+        <string id="SPEED" index="21">
+            <en>Tốc Độ</en>
+            <es>Velocidad</es>
+            <de>Geschwindigkeit</de>
+            <it>Velocità</it>
+            <fr>Vitesse</fr>
+            <ru>Скорость</ru>
+            <pt>Velocidade</pt>
+            <tr/>
+        </string>
+        <string id="WEAPONS" index="22">
+            <en>Weapons</en>
+            <es>Armas</es>
+            <de>Waffen</de>
+            <it>Armi</it>
+            <fr>Armes</fr>
+            <ru>Оружие</ru>
+            <pt>Armas</pt>
+            <tr/>
+        </string>
+        <string id="MAX_AMMO" index="23">
+            <en>Đạn đã tối đa</en>
+            <es>Munición máxima</es>
+            <de>Maximale Munition</de>
+            <it>Munizioni massime</it>
+            <fr>Maximum munitions</fr>
+            <ru>Максимальный боезапас</ru>
+            <pt>Munição máxima</pt>
+            <tr/>
+        </string>
+        <string id="DAMAGE" index="24">
+            <en>Sát thương</en>
+            <es>Daño</es>
+            <de>Schaden</de>
+            <it>Danni</it>
+            <fr>Dégâts</fr>
+            <ru>Повреждение</ru>
+            <pt>Danos</pt>
+            <tr/>
+        </string>
+        <string id="UPGRADE" index="25">
+            <en>Nâng Cấp</en>
+            <es>Mejora</es>
+            <de>Aufrüsten</de>
+            <it>Potenzia</it>
+            <fr>Amélioration</fr>
+            <ru>Обновить</ru>
+            <pt>Melhore</pt>
+            <tr/>
+        </string>
+        <string id="AMMO" index="26">
+            <en>Đạn</en>
+            <es>munición</es>
+            <de>Munition</de>
+            <it>munizioni</it>
+            <fr>munitions</fr>
+            <ru>боеприпасы</ru>
+            <pt>munição</pt>
+            <tr/>
+        </string>
+        <string id="EASY" index="27">
+            <en>Dễ</en>
+            <es>Fácil</es>
+            <de>Leicht</de>
+            <it>Facile</it>
+            <fr>Facile</fr>
+            <ru>Лёгкий</ru>
+            <pt>Fácil</pt>
+            <tr/>
+        </string>
+        <string id="NORMAL" index="28">
+            <en>Bình Thường</en>
+            <es>Normal</es>
+            <de>Normal</de>
+            <it>Normale</it>
+            <fr>Normale</fr>
+            <ru>Нормальное</ru>
+            <pt>Normal</pt>
+            <tr/>
+        </string>
+        <string id="HARD" index="29">
+            <en>Khó</en>
+            <es>Difícil</es>
+            <de>Schwer</de>
+            <it>Difficile</it>
+            <fr>Difficile</fr>
+            <ru>Тяжёлый</ru>
+            <pt>Difícil</pt>
+            <tr/>
+        </string>
+        <string id="MISSION" index="30">
+            <en>Nhiệm vụ</en>
+            <es>Misión</es>
+            <de>Mission</de>
+            <it>Missione</it>
+            <fr>Mission</fr>
+            <ru>Миссия</ru>
+            <pt>Missão</pt>
+            <tr/>
+        </string>
+        <string id="DIFFICULTY" index="31">
+            <en>Độ khó</en>
+            <es>Dificultad</es>
+            <de>Schwierigkeit</de>
+            <it>Difficoltà</it>
+            <fr>Difficulté</fr>
+            <ru>Сложность</ru>
+            <pt>Dificuldade</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_DESC_HUNT" index="32">
+            <en>Hạ gục thây ma</en>
+            <es>Da caza a ; zombis</es>
+            <de>Töte ; Zombies</de>
+            <it>Dai la caccia a ; zombi</it>
+            <fr>Traquez ; zombies</fr>
+            <ru>Выследите ; зомби</ru>
+            <pt>Cace ; zumbis</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_DESC_PROTECT" index="33">
+            <en>Bảo vệ các chướng ngại vật khỏi bị phá hủy</en>
+            <es>Impide que destruyan las barricadas</es>
+            <de>Verhindere, dass die Barrikaden zerstört werden</de>
+            <it>Difendi le barricate dalla distruzione</it>
+            <fr>Empêchez la destruction des barricades</fr>
+            <ru>Защитите баррикады от разрушения</ru>
+            <pt>Evite que as barricadas sejam destruídas</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_DESC_COINS" index="34">
+            <en>Thu thập ; tiền vàng</en>
+            <es>Consigue ; monedas de oro</es>
+            <de>Sammle ; Goldmünzen ein</de>
+            <it>Raccogli ; monete d'oro</it>
+            <fr>Récupérez ; pièces d'or</fr>
+            <ru>Соберите ; золотых монет</ru>
+            <pt>Recolha ; moedas de ouro</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_DESC_SURVIVE" index="35">
+            <en>Sống sót cho đến khi thời gian kết thúc</en>
+            <es>Sobrevive hasta que se acabe el tiempo</es>
+            <de>Überlebe, bis der Timer abgelaufen ist</de>
+            <it>Sopravvivi fino allo scadere del tempo</it>
+            <fr>Survivez jusqu'à la fin du temps imparti</fr>
+            <ru>Выживите, пока не закончится таймер</ru>
+            <pt>Sobreviva até que fim do tempo</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_DESC_KILL" index="36">
+            <en>Hoàn thành cấp độ bằng cách giết boss</en>
+            <es>Mata al jefe para completar el nivel</es>
+            <de>Schließe den Level ab, indem du den Boss tötest</de>
+            <it>Completa il livello uccidendo il boss</it>
+            <fr>Terminez le niveau en tuant le boss</fr>
+            <ru>Очистите уровень, убив босса</ru>
+            <pt>Termine o nível matando o chefe</pt>
+            <tr/>
+        </string>
+        <string id="PLAY" index="37">
+            <en>Chơi</en>
+            <es>Jugar</es>
+            <de>Spielen</de>
+            <it>Gioca</it>
+            <fr>Jouer</fr>
+            <ru>Играть</ru>
+            <pt>Reproduzir</pt>
+            <tr/>
+        </string>
+        <string id="CONTINUE" index="38">
+            <en>Tiếp Tục</en>
+            <es>Continuar</es>
+            <de>Fortfahren</de>
+            <it>Continua</it>
+            <fr>Continuer</fr>
+            <ru>Продолжить</ru>
+            <pt>Continuar</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_COMPLETED" index="39">
+            <en>Nhiệm vụ hoàn thành</en>
+            <es>Misión Completado</es>
+            <de>Mission Abgeschlossen</de>
+            <it>Missione Completato</it>
+            <fr>Mission Terminé</fr>
+            <ru>Миссия завершена</ru>
+            <pt>Missão Concluído</pt>
+            <tr/>
+        </string>
+        <string id="MISSION_FAILED" index="40">
+            <en>Nhiệm vụ thất bại</en>
+            <es>Misión fallido</es>
+            <de>Mission nicht geschafft</de>
+            <it>Missione fallito</it>
+            <fr>Mission échoué</fr>
+            <ru>Миссия провалена</ru>
+            <pt>Missão fracassado</pt>
+            <tr/>
+        </string>
+        <string id="LEVEL_CLEARED" index="41">
+            <en>Qua màn</en>
+            <es>Nivel completado</es>
+            <de>Level geschafft</de>
+            <it>Livello completato</it>
+            <fr>Niveau terminé</fr>
+            <ru>Уровень пройден</ru>
+            <pt>Nível concluído</pt>
+            <tr/>
+        </string>
+        <string id="ARE_U_SURE" index="42">
+            <en>Bạn có chắc chắn?</en>
+            <es>¿Seguro?</es>
+            <de>Sicher?</de>
+            <it>Davvero?</it>
+            <fr>Vous êtes sûr?</fr>
+            <ru>Уверены ли вы?</ru>
+            <pt>Tens a certeza?</pt>
+            <tr/>
+        </string>
+        <string id="GAME_PROGRESS" index="43">
+            <en>Tiến độ hiện tại sẽ bị mất!</en>
+            <es>Perderás el progreso actual</es>
+            <de>Dein aktueller Fortschritt wird gelöscht</de>
+            <it>Perderai i progressi attuali</it>
+            <fr>Votre progression actuelle sera perdue</fr>
+            <ru>Ваш текущий игровой прогресс будет потерян</ru>
+            <pt>O progresso atual será perdido</pt>
+            <tr/>
+        </string>
+        <string id="YES" index="44">
+            <en>Đồng ý</en>
+            <es>Sí</es>
+            <de>Ja</de>
+            <it>Sì</it>
+            <fr>Oui</fr>
+            <ru>Да</ru>
+            <pt>Sim</pt>
+            <tr/>
+        </string>
+        <string id="NO" index="45">
+            <en>Không</en>
+            <es>No</es>
+            <de>Nein</de>
+            <it>No</it>
+            <fr>Non</fr>
+            <ru>Нет</ru>
+            <pt>Não</pt>
+            <tr/>
+        </string>
+        <string id="UNLOCK" index="46">
+            <en>Mở khóa</en>
+            <es>Desbloquear</es>
+            <de>Freischalten</de>
+            <it>Sblocca</it>
+            <fr>Déverrouiller</fr>
+            <ru>Разблокировать</ru>
+            <pt>Desbloquear</pt>
+            <tr/>
+        </string>
+        <string id="POLICEMAN" index="47">
+            <en>Cảnh sát</en>
+            <es>Policía</es>
+            <de>Polizist</de>
+            <it>Poliziotto</it>
+            <fr>Policier</fr>
+            <ru>Полицейский</ru>
+            <pt>Policial</pt>
+            <tr/>
+        </string>
+        <string id="SAMURAI" index="48">
+            <en>Samurai</en>
+            <es>Samurái</es>
+            <de>Samurai</de>
+            <it>Samurai</it>
+            <fr>Samouraï</fr>
+            <ru>Самурай</ru>
+            <pt>Samurai</pt>
+            <tr/>
+        </string>
+        <string id="AGENT" index="49">
+            <en>Đặc vụ</en>
+            <es>Agente</es>
+            <de>Agent</de>
+            <it>Agente</it>
+            <fr>Agent</fr>
+            <ru>Агент</ru>
+            <pt>Agente</pt>
+            <tr/>
+        </string>
+        <string id="SHERIFF" index="50">
+            <en>Cảnh sát trưởng</en>
+            <es>Sheriff</es>
+            <de>Sheriff</de>
+            <it>Sceriffo</it>
+            <fr>Shérif</fr>
+            <ru>Шериф</ru>
+            <pt>Xerife</pt>
+            <tr/>
+        </string>
+        <string id="DEALER" index="51">
+            <en>Giang Hồ</en>
+            <es>Vendedor</es>
+            <de>Dealer</de>
+            <it>Rivenditore</it>
+            <fr>Marchand</fr>
+            <ru>Дилер</ru>
+            <pt>Vendedor</pt>
+            <tr/>
+        </string>
+        <string id="PISTOL" index="52">
+            <en>Súng lục</en>
+            <es>Pistola</es>
+            <de>Pistole</de>
+            <it>Pistola</it>
+            <fr>Pistolet</fr>
+            <ru>Пистолет</ru>
+            <pt>Pistola</pt>
+            <tr/>
+        </string>
+        <string id="SHOTGUN" index="53">
+            <en>Shotgun</en>
+            <es>Escopeta</es>
+            <de>Schrotgewehr</de>
+            <it>Fucile</it>
+            <fr>Fusil à pompe</fr>
+            <ru>Дробовик</ru>
+            <pt>Espingarda</pt>
+            <tr/>
+        </string>
+        <string id="ASSAULT_RIFLE" index="54">
+            <en>Súng trường tự động</en>
+            <es>Rifle de asalto</es>
+            <de>Sturmgewehr</de>
+            <it>Fucile d'assalto</it>
+            <fr>Fusil d'assaut</fr>
+            <ru>Штурмовая винтовка</ru>
+            <pt>Rifle de assalto</pt>
+            <tr/>
+        </string>
+        <string id="BOLT_RIFLE" index="55">
+            <en>Súng trường bán tự động</en>
+            <es>Rifle semiautomático</es>
+            <de>Halbautomatisches Gewehr</de>
+            <it>Fucile semiautomatico</it>
+            <fr>Fusil semi-automatique</fr>
+            <ru>Полуавтоматическая винтовка</ru>
+            <pt>Rifle semiautomático</pt>
+            <tr/>
+        </string>
+        <string id="MINIGUN" index="56">
+            <en>Súng máy</en>
+            <es>Ametralladora</es>
+            <de>Maschinengewehr</de>
+            <it>Mitragliatrice</it>
+            <fr>Mitraillette</fr>
+            <ru>Пулемет</ru>
+            <pt>Metralhadora</pt>
+            <tr/>
+        </string>
+        <string id="MAX_LEVEL" index="57">
+            <en>Cấp độ tối đa</en>
+            <es>Máximo nivel</es>
+            <de>Maximales Level</de>
+            <it>Livello massimo</it>
+            <fr>Niveau maximum</fr>
+            <ru>Максимальный уровень</ru>
+            <pt>Nível máximo</pt>
+            <tr/>
+        </string>
+        <string id="SETTINGS" index="58">
+            <en>Cài Đặt</en>
+            <es>Ajustes</es>
+            <de>Einstellungen</de>
+            <it>Impostazioni</it>
+            <fr>Paramètres</fr>
+            <ru>Настройки</ru>
+            <pt>Definições</pt>
+            <tr/>
+        </string>
+        <string id="MOVEMENT" index="59">
+            <en>Các phím di chuyển</en>
+            <es>Teclas de movimiento</es>
+            <de>Bewegungstasten</de>
+            <it>Tasti di movimento</it>
+            <fr>Touches de déplacement</fr>
+            <ru>Клавиши движения</ru>
+            <pt>Teclas de movimento</pt>
+            <tr/>
+        </string>
+        <string id="SHOOT" index="60">
+            <en>Bắn</en>
+            <es>Disparar</es>
+            <de>Schießen</de>
+            <it>Spara</it>
+            <fr>Tirer</fr>
+            <ru>Стрелять</ru>
+            <pt>Disparar</pt>
+            <tr/>
+        </string>
+        <string id="SWITCH" index="61">
+            <en>Đổi vũ khí</en>
+            <es>Cambiar de arma</es>
+            <de>Waffe wechseln</de>
+            <it>Cambia arma</it>
+            <fr>Changer arme</fr>
+            <ru>Переключатель оружия</ru>
+            <pt>Mudar arma</pt>
+            <tr/>
+        </string>
+        <string id="THROW" index="62">
+            <en>Ném bom</en>
+            <es>Lanzar</es>
+            <de>Werfen</de>
+            <it>Lancia</it>
+            <fr>Lancer</fr>
+            <ru>Бросить</ru>
+            <pt>Arremessar</pt>
+            <tr/>
+        </string>
+        <string id="PRESS_KEY" index="63">
+            <en>Nhấn phím bất kỳ . . .</en>
+            <es>Pulse cualquier tecla para continuar . . .</es>
+            <de>Drücken Sie eine beliebige Taste, um fortzufahren . . .</de>
+            <it>Premere un tasto qualsiasi per continuare . . .</it>
+            <fr>Appuyez sur n'importe quelle touche pour continuer . . .</fr>
+            <ru>Нажмите любую клавишу, чтобы продолжить . . .</ru>
+            <pt>Pressione qualquer tecla para continuar . . .</pt>
+            <tr/>
+        </string>
+        <string id="LOW_AMMO" index="64">
+            <en>Đạn sắp hết</en>
+            <es>munición baja</es>
+            <de>Niedrige munition</de>
+            <it>munizioni basse</it>
+            <fr>munitions faibles</fr>
+            <ru>низкий боезапас</ru>
+            <pt>munição baixa</pt>
+            <tr/>
+        </string>
+    </strings>
+</stringresources>

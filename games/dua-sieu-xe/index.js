@@ -1,0 +1,1 @@
+window.screenOrientation="portrait",loadLib("libs/laya.core.js"),loadLib("libs/laya.ui.js"),loadLib("libs/laya.device.js"),loadLib("libs/laya.d3.js"),loadLib("libs/zs.laya.adapter.js"),loadLib("js/bundle.js");
