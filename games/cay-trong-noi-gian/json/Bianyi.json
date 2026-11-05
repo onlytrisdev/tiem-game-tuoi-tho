@@ -1,0 +1,56 @@
+[{
+    "id": 1,
+    "name": "Tấn công nhanh",
+    "type": 2,
+    "icon": "nczjs_icon_tsbji2",
+    "attack": 0,
+    "atkspeed": 0.5,
+    "frozen": "0",
+    "poisoning": "0",
+    "die": 0,
+    "dsc": "Đột biến <span style='color:#e21f15;font-weight:bold'>Tốc độ tấn công +50%</span>"
+}, {
+    "id": 2,
+    "name": "Biến đổi năng lượng",
+    "type": 1,
+    "icon": "nczjs_icon_tsbji1",
+    "attack": 1.5,
+    "atkspeed": 0,
+    "frozen": "0",
+    "poisoning": "0",
+    "die": 0,
+    "dsc": "Đột biến <span style='color:#e21f15;font-weight:bold'>Sát thương +50%</span>"
+}, {
+    "id": 3,
+    "name": "Đột biến giảm tốc",
+    "type": 1,
+    "icon": "nczjs_icon_tsbji3",
+    "attack": 0,
+    "atkspeed": 0,
+    "frozen": "0.5,1,0.8",
+    "poisoning": "0",
+    "die": 0,
+    "dsc": "Đòn tấn công của cây đột biến có tỉ lệ <span style='color:#e21f15;font-weight:bold'> làm chậm</span> trong 1s"
+}, {
+    "id": 4,
+    "name": "Đột biến Chất độc",
+    "type": 1,
+    "icon": "nczjs_icon_tsbji4",
+    "attack": 0,
+    "atkspeed": 0,
+    "frozen": "0",
+    "poisoning": "0.25,0.10,3,1,0.8",
+    "die": 0,
+    "dsc": "Đòn tấn công của cây đột biến có tỉ lệ<span style='color:#e21f15;font-weight:bold'> tẩm độc</span> trong 3s"
+}, {
+    "id": 5,
+    "name": "Đột biến Siêu cấp",
+    "type": 1,
+    "icon": "nczjs_icon_tsbji5",
+    "attack": 0,
+    "atkspeed": 0,
+    "frozen": "0",
+    "poisoning": "0",
+    "die": 0.35,
+    "dsc": "Cây trồng đột biến có tỉ lệ<span style='color:#e21f15;font-weight:bold'> hạ gục địch ngay lập tức</span> （không tác dụng với Boss）"
+}]

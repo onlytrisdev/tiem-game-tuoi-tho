@@ -1,0 +1,25 @@
+[{
+    "id": 0,
+    "type": 0,
+    "pic": "nczjs_icon_1",
+    "name": "Đóng băng",
+    "time": 15,
+    "value": 1,
+    "bossvalue": 0
+}, {
+    "id": 1,
+    "type": 1,
+    "pic": "nczjs_icon_6",
+    "name": "陨石攻击",
+    "time": 0,
+    "value": 0.8,
+    "bossvalue": 0.5
+}, {
+    "id": 2,
+    "type": 2,
+    "pic": "nczjs_icon_4",
+    "name": "攻速翻倍",
+    "time": 15,
+    "value": 0.5,
+    "bossvalue": 0
+}]

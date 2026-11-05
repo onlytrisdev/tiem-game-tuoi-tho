@@ -1,0 +1,828 @@
+{
+  "ID": "3427ccf4-be5d-4e00-953a-f4d151834dbe",
+  "Version": "3.10.0.0",
+  "Name": "StageMenu",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 34,
+        "Children": [
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": 640.0,
+            "TopMargin": 480.0,
+            "Tag": 64,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "StageNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 131.25,
+                  "Y": 220.0008
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 131.25,
+                "RightMargin": -131.25,
+                "TopMargin": -220.0008,
+                "BottomMargin": 220.0008,
+                "Tag": 382,
+                "ActionTag": 924334945,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "stage_1",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "StageNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 325.0001,
+                  "Y": 220.0008
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 325.0001,
+                "RightMargin": -325.0001,
+                "TopMargin": -220.0008,
+                "BottomMargin": 220.0008,
+                "Tag": 386,
+                "ActionTag": -1485504830,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "stage_2",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "StageNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 518.7502,
+                  "Y": 220.0008
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 518.7502,
+                "RightMargin": -518.7502,
+                "TopMargin": -220.0008,
+                "BottomMargin": 220.0008,
+                "Tag": 390,
+                "ActionTag": 1058507068,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "stage_3",
+                "ctype": "ProjectNodeObjectData"
+              }
+            ],
+            "ActionTag": -1789357596,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "stages",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": 640.0,
+            "TopMargin": 480.0,
+            "Tag": 65,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 105.9684,
+                  "Y": 295.3338
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 105.9684,
+                "RightMargin": -105.9684,
+                "TopMargin": -295.3338,
+                "BottomMargin": 295.3338,
+                "Tag": 402,
+                "ActionTag": -1507310382,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_1",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 211.7344,
+                  "Y": 295.3338
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 211.7344,
+                "RightMargin": -211.7344,
+                "TopMargin": -295.3338,
+                "BottomMargin": 295.3338,
+                "Tag": 405,
+                "ActionTag": -1493117352,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_2",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 317.5002,
+                  "Y": 295.3336
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 317.5002,
+                "RightMargin": -317.5002,
+                "TopMargin": -295.3336,
+                "BottomMargin": 295.3336,
+                "Tag": 408,
+                "ActionTag": -1785296573,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_3",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 423.2662,
+                  "Y": 295.3338
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 423.2662,
+                "RightMargin": -423.2662,
+                "TopMargin": -295.3338,
+                "BottomMargin": 295.3338,
+                "Tag": 411,
+                "ActionTag": -412076958,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_4",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 529.0308,
+                  "Y": 295.3338
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 529.0308,
+                "RightMargin": -529.0308,
+                "TopMargin": -295.3338,
+                "BottomMargin": 295.3338,
+                "Tag": 414,
+                "ActionTag": 555563828,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_5",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 105.9684,
+                  "Y": 179.0841
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 105.9684,
+                "RightMargin": -105.9684,
+                "TopMargin": -179.0841,
+                "BottomMargin": 179.0841,
+                "Tag": 417,
+                "ActionTag": -307045137,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_6",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 211.7344,
+                  "Y": 179.0841
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 211.7344,
+                "RightMargin": -211.7344,
+                "TopMargin": -179.0841,
+                "BottomMargin": 179.0841,
+                "Tag": 420,
+                "ActionTag": -446966946,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_7",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 317.5002,
+                  "Y": 179.0839
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 317.5002,
+                "RightMargin": -317.5002,
+                "TopMargin": -179.0839,
+                "BottomMargin": 179.0839,
+                "Tag": 423,
+                "ActionTag": 1523803682,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_8",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 423.2662,
+                  "Y": 179.0841
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 423.2662,
+                "RightMargin": -423.2662,
+                "TopMargin": -179.0841,
+                "BottomMargin": 179.0841,
+                "Tag": 426,
+                "ActionTag": -459776219,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_9",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LevelNode.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 529.0311,
+                  "Y": 179.0841
+                },
+                "Scale": {
+                  "ScaleX": 0.7488,
+                  "ScaleY": 0.7488
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 529.0311,
+                "RightMargin": -529.0311,
+                "TopMargin": -179.0841,
+                "BottomMargin": 179.0841,
+                "Tag": 429,
+                "ActionTag": -516766936,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "level_10",
+                "ctype": "ProjectNodeObjectData"
+              }
+            ],
+            "ActionTag": 472397309,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "levels",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "assets/ui/bBack.png",
+              "Plist": "assets/sprites.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 32,
+            "Scale9Height": 32,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 65.0,
+              "Y": 432.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1016,
+              "Y": 0.9
+            },
+            "PreSize": {
+              "X": 0.0969,
+              "Y": 0.1125
+            },
+            "LeftMargin": 34.0,
+            "RightMargin": 544.0,
+            "TopMargin": 21.0,
+            "BottomMargin": 405.0,
+            "Tag": 35,
+            "ActionTag": 2118378841,
+            "Size": {
+              "X": 62.0,
+              "Y": 54.0
+            },
+            "Name": "button_back",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 32,
+            "ButtonText": "Garage",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "assets/Font.ttf",
+              "Plist": ""
+            },
+            "TextColor": {},
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "assets/ui/bGarage.png",
+              "Plist": "assets/sprites.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 230,
+            "Scale9Height": 44,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 431.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.8979
+            },
+            "PreSize": {
+              "X": 0.4063,
+              "Y": 0.1375
+            },
+            "LeftMargin": 190.0,
+            "RightMargin": 190.0,
+            "TopMargin": 16.0,
+            "BottomMargin": 398.0,
+            "Tag": 36,
+            "ActionTag": 1742099734,
+            "Size": {
+              "X": 260.0,
+              "Y": 66.0
+            },
+            "Name": "button_garage",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "assets/ui/bSoundOn.png",
+              "Plist": "assets/sprites.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 93,
+            "Scale9Height": 103,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 591.7144,
+              "Y": 428.8383
+            },
+            "Scale": {
+              "ScaleX": 0.9271,
+              "ScaleY": 0.9271
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9246,
+              "Y": 0.8934
+            },
+            "PreSize": {
+              "X": 0.1094,
+              "Y": 0.1542
+            },
+            "LeftMargin": 556.7144,
+            "RightMargin": 13.2856,
+            "TopMargin": 14.1617,
+            "BottomMargin": 391.8383,
+            "Tag": 77,
+            "ActionTag": 883823282,
+            "Size": {
+              "X": 70.0,
+              "Y": 74.0
+            },
+            "Name": "button_sound",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 480.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "assets/Font.ttf",
+        "assets/sprites.plist",
+        "assets/sprites.png",
+        "LevelNode.json",
+        "StageNode.json"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

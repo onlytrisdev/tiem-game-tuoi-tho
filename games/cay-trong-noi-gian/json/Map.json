@@ -1,0 +1,17 @@
+[{
+    "id": 1,
+    "name": "沙漠",
+    "unlock": 1,
+    "road_pic": "shamo_road",
+    "land_pic": "shamo_land",
+    "enclosure_pic": "shamo_enclosure",
+    "decorate": ""
+}, {
+    "id": 2,
+    "name": "都市",
+    "unlock": 30,
+    "road_pic": "dushi_road",
+    "land_pic": "dushi_land",
+    "enclosure_pic": "dushi_enclosure",
+    "decorate": "light"
+}]

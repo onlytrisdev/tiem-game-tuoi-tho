@@ -1,0 +1,3121 @@
+! function(window, document, Laya) {
+    Laya.un, Laya.uns;
+    var __static = Laya.static,
+        __class = Laya.class,
+        __getset = Laya.getset,
+        Animation = (Laya.__newvec, laya.display.Animation),
+        Browser = laya.utils.Browser,
+        ClassUtils = laya.utils.ClassUtils,
+        ColorFilter = laya.filters.ColorFilter,
+        Component = laya.components.Component,
+        Ease = (laya.Const, laya.utils.Ease),
+        Event = laya.events.Event,
+        Graphics = laya.display.Graphics,
+        Handler = laya.utils.Handler,
+        HttpRequest = laya.net.HttpRequest,
+        Input = laya.display.Input,
+        Loader = laya.net.Loader,
+        LocalStorage = laya.net.LocalStorage,
+        Matrix = laya.maths.Matrix,
+        Point = (laya.display.Node, laya.maths.Point),
+        Rectangle = laya.maths.Rectangle,
+        Scene = (laya.renders.Render, laya.display.Scene),
+        SceneUtils = laya.utils.SceneUtils,
+        Sprite = laya.display.Sprite,
+        Text = (laya.display.Stage, laya.display.Text),
+        Texture = laya.resource.Texture,
+        TimeLine = laya.utils.TimeLine,
+        Tween = laya.utils.Tween,
+        Utils = laya.utils.Utils,
+        WeakObject = laya.utils.WeakObject;
+    Laya.interface("laya.ui.IBox"), Laya.interface("laya.ui.IItem"), Laya.interface("laya.ui.IRender"), Laya.interface("laya.ui.ISelect");
+    var UIConfig = function() {
+            function UIConfig() {}
+            return __class(UIConfig, "UIConfig"), UIConfig.touchScrollEnable = !0, UIConfig.mouseWheelEnable = !0, UIConfig.showButtons = !0, UIConfig.popupBgColor = "#000000", UIConfig.popupBgAlpha = .5, UIConfig.closeDialogOnSide = !0, UIConfig
+        }(),
+        Styles = function() {
+            function Styles() {}
+            return __class(Styles, "laya.ui.Styles"), Styles.labelColor = "#000000", Styles.buttonStateNum = 3, Styles.scrollBarMinNum = 15, Styles.scrollBarDelayTime = 500, __static(Styles, ["defaultSizeGrid", function() {
+                return this.defaultSizeGrid = [4, 4, 4, 4, 0]
+            }, "labelPadding", function() {
+                return this.labelPadding = [2, 2, 2, 2]
+            }, "inputLabelPadding", function() {
+                return this.inputLabelPadding = [1, 1, 1, 3]
+            }, "buttonLabelColors", function() {
+                return this.buttonLabelColors = ["#32556b", "#32cc6b", "#ff0000", "#C0C0C0"]
+            }, "comboBoxItemColors", function() {
+                return this.comboBoxItemColors = ["#5e95b6", "#ffffff", "#000000", "#8fa4b1", "#ffffff"]
+            }]), Styles
+        }(),
+        UIUtils = function() {
+            function UIUtils() {}
+            return __class(UIUtils, "laya.ui.UIUtils"), UIUtils.fillArray = function(arr, str, type) {
+                var temp = arr.concat();
+                if (str)
+                    for (var a = str.split(","), i = 0, n = Math.min(temp.length, a.length); i < n; i++) {
+                        var value = a[i];
+                        temp[i] = "true" == value || "false" != value && value, null != type && (temp[i] = type(value))
+                    }
+                return temp
+            }, UIUtils.toColor = function(color) {
+                return Utils.toHexColor(color)
+            }, UIUtils.gray = function(traget, isGray) {
+                void 0 === isGray && (isGray = !0), isGray ? UIUtils.addFilter(traget, UIUtils.grayFilter) : UIUtils.clearFilter(traget, ColorFilter)
+            }, UIUtils.addFilter = function(target, filter) {
+                var filters = target.filters || [];
+                filters.push(filter), target.filters = filters
+            }, UIUtils.clearFilter = function(target, filterType) {
+                var filters = target.filters;
+                if (null != filters && filters.length > 0) {
+                    for (var i = filters.length - 1; i > -1; i--) {
+                        var filter = filters[i];
+                        Laya.__typeof(filter, filterType) && filters.splice(i, 1)
+                    }
+                    target.filters = filters
+                }
+            }, UIUtils._getReplaceStr = function(word) {
+                return UIUtils.escapeSequence[word]
+            }, UIUtils.adptString = function(str) {
+                return str.replace(/\\(\w)/g, UIUtils._getReplaceStr)
+            }, UIUtils.getBindFun = function(value) {
+                var fun = UIUtils._funMap.get(value);
+                if (null == fun) {
+                    var temp = '"' + value + '"',
+                        str = "(function(data){if(data==null)return;with(data){try{\nreturn " + (temp = temp.replace(/^"\${|}"$/g, "").replace(/\${/g, '"+').replace(/}/g, '+"')) + "\n}catch(e){}}})";
+                    fun = Laya._runScript(str), UIUtils._funMap.set(value, fun)
+                }
+                return fun
+            }, __static(UIUtils, ["grayFilter", function() {
+                return this.grayFilter = new ColorFilter([.3086, .6094, .082, 0, 0, .3086, .6094, .082, 0, 0, .3086, .6094, .082, 0, 0, 0, 0, 0, 1, 0])
+            }, "escapeSequence", function() {
+                return this.escapeSequence = {
+                    "\\n": "\n",
+                    "\\t": "\t"
+                }
+            }, "_funMap", function() {
+                return this._funMap = new WeakObject
+            }]), UIUtils
+        }(),
+        Widget = function(_super) {
+            function Widget() {
+                Widget.__super.call(this), this._top = NaN, this._bottom = NaN, this._left = NaN, this._right = NaN, this._centerX = NaN, this._centerY = NaN
+            }
+            __class(Widget, "laya.ui.Widget", Component);
+            var __proto = Widget.prototype;
+            return __proto.onReset = function() {
+                this._top = this._bottom = this._left = this._right = this._centerX = this._centerY = NaN
+            }, __proto._onEnable = function() {
+                this.owner.parent ? this._onAdded() : this.owner.once("added", this, this._onAdded)
+            }, __proto._onDisable = function() {
+                this.owner.off("added", this, this._onAdded), this.owner.parent && this.owner.parent.off("resize", this, this._onParentResize)
+            }, __proto._onAdded = function() {
+                this.owner.parent && this.owner.parent.on("resize", this, this._onParentResize), this.resetLayoutX(), this.resetLayoutY()
+            }, __proto._onParentResize = function() {
+                (this.resetLayoutX() || this.resetLayoutY()) && this.owner.event("resize")
+            }, __proto.resetLayoutX = function() {
+                var owner = this.owner;
+                if (!owner) return !1;
+                var parent = owner.parent;
+                if (parent)
+                    if (isNaN(this.centerX)) {
+                        if (isNaN(this.left)) isNaN(this.right) || (owner.x = Math.round(parent.width - owner.displayWidth - this.right + owner.pivotX * owner.scaleX));
+                        else if (owner.x = Math.round(this.left + owner.pivotX * owner.scaleX), !isNaN(this.right)) {
+                            var temp = (parent._width - this.left - this.right) / (owner.scaleX || .01);
+                            if (temp != owner.width) return owner.width = temp, !0
+                        }
+                    } else owner.x = Math.round(.5 * (parent.width - owner.displayWidth) + this.centerX + owner.pivotX * owner.scaleX);
+                return !1
+            }, __proto.resetLayoutY = function() {
+                var owner = this.owner;
+                if (!owner) return !1;
+                var parent = owner.parent;
+                if (parent)
+                    if (isNaN(this.centerY)) {
+                        if (isNaN(this.top)) isNaN(this.bottom) || (owner.y = Math.round(parent.height - owner.displayHeight - this.bottom + owner.pivotY * owner.scaleY));
+                        else if (owner.y = Math.round(this.top + owner.pivotY * owner.scaleY), !isNaN(this.bottom)) {
+                            var temp = (parent._height - this.top - this.bottom) / (owner.scaleY || .01);
+                            if (temp != owner.height) return owner.height = temp, !0
+                        }
+                    } else owner.y = Math.round(.5 * (parent.height - owner.displayHeight) + this.centerY + owner.pivotY * owner.scaleY);
+                return !1
+            }, __proto.resetLayout = function() {
+                this.owner && (this.resetLayoutX(), this.resetLayoutY())
+            }, __getset(0, __proto, "centerX", function() {
+                return this._centerX
+            }, function(value) {
+                this._centerX != value && (this._centerX = value, this.resetLayoutX())
+            }), __getset(0, __proto, "top", function() {
+                return this._top
+            }, function(value) {
+                this._top != value && (this._top = value, this.resetLayoutY())
+            }), __getset(0, __proto, "bottom", function() {
+                return this._bottom
+            }, function(value) {
+                this._bottom != value && (this._bottom = value, this.resetLayoutY())
+            }), __getset(0, __proto, "left", function() {
+                return this._left
+            }, function(value) {
+                this._left != value && (this._left = value, this.resetLayoutX())
+            }), __getset(0, __proto, "right", function() {
+                return this._right
+            }, function(value) {
+                this._right != value && (this._right = value, this.resetLayoutX())
+            }), __getset(0, __proto, "centerY", function() {
+                return this._centerY
+            }, function(value) {
+                this._centerY != value && (this._centerY = value, this.resetLayoutY())
+            }), __static(Widget, ["EMPTY", function() {
+                return this.EMPTY = new Widget
+            }]), Widget
+        }(),
+        AutoBitmap = (function(_super) {
+            function UIEvent() {
+                UIEvent.__super.call(this)
+            }
+            __class(UIEvent, "laya.ui.UIEvent", Event), UIEvent.SHOW_TIP = "showtip", UIEvent.HIDE_TIP = "hidetip"
+        }(), function(_super) {
+            function AutoBitmap() {
+                this.autoCacheCmd = !0, this._width = 0, this._height = 0, this._source = null, this._sizeGrid = null, this._isChanged = !1, this._offset = null, AutoBitmap.__super.call(this)
+            }
+            __class(AutoBitmap, "laya.ui.AutoBitmap", _super);
+            var __proto = AutoBitmap.prototype;
+            return __proto.destroy = function() {
+                _super.prototype.destroy.call(this), this._source = null, this._sizeGrid = null, this._offset = null
+            }, __proto._setChanged = function() {
+                this._isChanged || (this._isChanged = !0, Laya.timer.callLater(this, this.changeSource))
+            }, __proto.changeSource = function() {
+                this._isChanged = !1;
+                var source = this._source;
+                if (source && source.bitmap) {
+                    var width = this.width,
+                        height = this.height,
+                        sizeGrid = this._sizeGrid,
+                        sw = source.sourceWidth,
+                        sh = source.sourceHeight;
+                    if (!sizeGrid || sw === width && sh === height) this.clear(), this.drawTexture(source, this._offset ? this._offset[0] : 0, this._offset ? this._offset[1] : 0, width, height);
+                    else {
+                        this.clear();
+                        var top = sizeGrid[0],
+                            right = sizeGrid[1],
+                            bottom = sizeGrid[2],
+                            left = sizeGrid[3],
+                            repeat = sizeGrid[4],
+                            needClip = !1;
+                        if (width == sw && (left = right = 0), height == sh && (top = bottom = 0), left + right > width) {
+                            var clipWidth = width;
+                            needClip = !0, width = left + right, this.save(), this.clipRect(0, 0, clipWidth, height)
+                        }
+                        left && top && this.drawImage(AutoBitmap.getTexture(source, 0, 0, left, top), 0, 0, left, top), right && top && this.drawImage(AutoBitmap.getTexture(source, sw - right, 0, right, top), width - right, 0, right, top), left && bottom && this.drawImage(AutoBitmap.getTexture(source, 0, sh - bottom, left, bottom), 0, height - bottom, left, bottom), right && bottom && this.drawImage(AutoBitmap.getTexture(source, sw - right, sh - bottom, right, bottom), width - right, height - bottom, right, bottom), top && this.drawBitmap(repeat, AutoBitmap.getTexture(source, left, 0, sw - left - right, top), left, 0, width - left - right, top), bottom && this.drawBitmap(repeat, AutoBitmap.getTexture(source, left, sh - bottom, sw - left - right, bottom), left, height - bottom, width - left - right, bottom), left && this.drawBitmap(repeat, AutoBitmap.getTexture(source, 0, top, left, sh - top - bottom), 0, top, left, height - top - bottom), right && this.drawBitmap(repeat, AutoBitmap.getTexture(source, sw - right, top, right, sh - top - bottom), width - right, top, right, height - top - bottom), this.drawBitmap(repeat, AutoBitmap.getTexture(source, left, top, sw - left - right, sh - top - bottom), left, top, width - left - right, height - top - bottom), needClip && this.restore()
+                    }
+                    this._repaint()
+                }
+            }, __proto.drawBitmap = function(repeat, tex, x, y, width, height) {
+                void 0 === width && (width = 0), void 0 === height && (height = 0), width < .1 || height < .1 || (!repeat || tex.width == width && tex.height == height ? this.drawImage(tex, x, y, width, height) : this.fillTexture(tex, x, y, width, height))
+            }, __getset(0, __proto, "sizeGrid", function() {
+                return this._sizeGrid
+            }, function(value) {
+                this._sizeGrid = value, this._setChanged()
+            }), __getset(0, __proto, "width", function() {
+                return this._width ? this._width : this._source ? this._source.sourceWidth : 0
+            }, function(value) {
+                this._width != value && (this._width = value, this._setChanged())
+            }), __getset(0, __proto, "height", function() {
+                return this._height ? this._height : this._source ? this._source.sourceHeight : 0
+            }, function(value) {
+                this._height != value && (this._height = value, this._setChanged())
+            }), __getset(0, __proto, "source", function() {
+                return this._source
+            }, function(value) {
+                value ? (this._source = value, this._setChanged()) : (this._source = null, this.clear())
+            }), AutoBitmap.getTexture = function(tex, x, y, width, height) {
+                var texture;
+                return width <= 0 && (width = 1), height <= 0 && (height = 1), tex.$_GID || (tex.$_GID = Utils.getGID()), texture && texture._getSource() || (texture = Texture.createFromTexture(tex, x, y, width, height)), texture
+            }, AutoBitmap
+        }(Graphics)),
+        UIComponent = function(_super) {
+            function UIComponent() {
+                this._dataSource = null, this._toolTip = null, this._tag = null, this._disabled = !1, this._gray = !1, UIComponent.__super.call(this), this._anchorX = NaN, this._anchorY = NaN, this._widget = Widget.EMPTY, this.preinitialize(), this.createChildren(), this.initialize()
+            }
+            __class(UIComponent, "laya.ui.UIComponent", _super);
+            var __proto = UIComponent.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._dataSource = null, this._tag = null, this._toolTip = null
+            }, __proto.preinitialize = function() {}, __proto.createChildren = function() {}, __proto.initialize = function() {}, __proto.measureWidth = function() {
+                var max = 0;
+                this.commitMeasure();
+                for (var i = this.numChildren - 1; i > -1; i--) {
+                    var comp = this.getChildAt(i);
+                    comp._visible && (max = Math.max(comp._x + comp.width * comp.scaleX, max))
+                }
+                return max
+            }, __proto.commitMeasure = function() {}, __proto.measureHeight = function() {
+                var max = 0;
+                this.commitMeasure();
+                for (var i = this.numChildren - 1; i > -1; i--) {
+                    var comp = this.getChildAt(i);
+                    comp._visible && (max = Math.max(comp._y + comp.height * comp.scaleY, max))
+                }
+                return max
+            }, __proto._sizeChanged = function() {
+                isNaN(this._anchorX) || (this.pivotX = this.anchorX * this.width), isNaN(this._anchorY) || (this.pivotY = this.anchorY * this.height), this.event("resize"), this._widget !== Widget.EMPTY && this._widget.resetLayout()
+            }, __proto.onMouseOver = function(e) {
+                Laya.stage.event("showtip", this._toolTip)
+            }, __proto.onMouseOut = function(e) {
+                Laya.stage.event("hidetip", this._toolTip)
+            }, __proto._getWidget = function() {
+                return this._widget === Widget.EMPTY && (this._widget = this.addComponent(Widget)), this._widget
+            }, __proto.onCompResize = function() {
+                this._sizeChanged()
+            }, __proto._childChanged = function(child) {
+                this.callLater(this._sizeChanged), _super.prototype._childChanged.call(this, child)
+            }, __getset(0, __proto, "centerY", function() {
+                return this._widget.centerY
+            }, function(value) {
+                value != this._widget.centerY && (this._getWidget().centerY = value)
+            }), __getset(0, __proto, "width", function() {
+                return this._width ? this._width : this.measureWidth()
+            }, function(value) {
+                Laya.superGet(Sprite, this, "width") != value && (Laya.superSet(Sprite, this, "width", value), this.callLater(this._sizeChanged))
+            }), __getset(0, __proto, "bottom", function() {
+                return this._widget.bottom
+            }, function(value) {
+                value != this._widget.bottom && (this._getWidget().bottom = value)
+            }), __getset(0, __proto, "height", function() {
+                return this._height ? this._height : this.measureHeight()
+            }, function(value) {
+                Laya.superGet(Sprite, this, "height") != value && (Laya.superSet(Sprite, this, "height", value), this.callLater(this._sizeChanged))
+            }), __getset(0, __proto, "left", function() {
+                return this._widget.left
+            }, function(value) {
+                value != this._widget.left && (this._getWidget().left = value)
+            }), __getset(0, __proto, "dataSource", function() {
+                return this._dataSource
+            }, function(value) {
+                for (var prop in this._dataSource = value, this._dataSource) this.hasOwnProperty(prop) && "function" != typeof this[prop] && (this[prop] = this._dataSource[prop])
+            }), __getset(0, __proto, "centerX", function() {
+                return this._widget.centerX
+            }, function(value) {
+                value != this._widget.centerX && (this._getWidget().centerX = value)
+            }), __getset(0, __proto, "top", function() {
+                return this._widget.top
+            }, function(value) {
+                value != this._widget.top && (this._getWidget().top = value)
+            }), __getset(0, __proto, "right", function() {
+                return this._widget.right
+            }, function(value) {
+                value != this._widget.right && (this._getWidget().right = value)
+            }), __getset(0, __proto, "tag", function() {
+                return this._tag
+            }, function(value) {
+                this._tag = value
+            }), __getset(0, __proto, "toolTip", function() {
+                return this._toolTip
+            }, function(value) {
+                this._toolTip != value && (this._toolTip = value, null != value ? (this.on("mouseover", this, this.onMouseOver), this.on("mouseout", this, this.onMouseOut)) : (this.off("mouseover", this, this.onMouseOver), this.off("mouseout", this, this.onMouseOut)))
+            }), __getset(0, __proto, "gray", function() {
+                return this._gray
+            }, function(value) {
+                value !== this._gray && (this._gray = value, UIUtils.gray(this, value))
+            }), __getset(0, __proto, "disabled", function() {
+                return this._disabled
+            }, function(value) {
+                value !== this._disabled && (this.gray = this._disabled = value, this.mouseEnabled = !value)
+            }), __getset(0, __proto, "scaleX", _super.prototype._$get_scaleX, function(value) {
+                Laya.superGet(Sprite, this, "scaleX") != value && (Laya.superSet(Sprite, this, "scaleX", value), this.event("resize"))
+            }), __getset(0, __proto, "scaleY", _super.prototype._$get_scaleY, function(value) {
+                Laya.superGet(Sprite, this, "scaleY") != value && (Laya.superSet(Sprite, this, "scaleY", value), this.event("resize"))
+            }), __getset(0, __proto, "anchorX", function() {
+                return this._anchorX
+            }, function(value) {
+                this._anchorX != value && (this._anchorX = value, this.callLater(this._sizeChanged))
+            }), __getset(0, __proto, "anchorY", function() {
+                return this._anchorY
+            }, function(value) {
+                this._anchorY != value && (this._anchorY = value, this.callLater(this._sizeChanged))
+            }), UIComponent
+        }(Sprite),
+        DialogManager = function(_super) {
+            function DialogManager() {
+                this.lockLayer = null, this.popupEffect = function(dialog) {
+                    dialog.scale(1, 1), dialog._effectTween = Tween.from(dialog, {
+                        x: Laya.stage.width / 2,
+                        y: Laya.stage.height / 2,
+                        scaleX: 0,
+                        scaleY: 0
+                    }, 300, Ease.backOut, Handler.create(this, this.doOpen, [dialog]), 0, !1, !1)
+                }, this.closeEffect = function(dialog) {
+                    dialog._effectTween = Tween.to(dialog, {
+                        x: Laya.stage.width / 2,
+                        y: Laya.stage.height / 2,
+                        scaleX: 0,
+                        scaleY: 0
+                    }, 300, Ease.strongOut, Handler.create(this, this.doClose, [dialog]), 0, !1, !1)
+                }, DialogManager.__super.call(this), this.maskLayer = new Sprite, this.popupEffectHandler = new Handler(this, this.popupEffect), this.closeEffectHandler = new Handler(this, this.closeEffect), this.mouseEnabled = this.maskLayer.mouseEnabled = !0, this.zOrder = 1e3, Laya.stage.addChild(this), Laya.stage.on("resize", this, this._onResize), UIConfig.closeDialogOnSide && this.maskLayer.on("click", this, this._closeOnSide), this._onResize(null)
+            }
+            __class(DialogManager, "laya.ui.DialogManager", Sprite);
+            var __proto = DialogManager.prototype;
+            return __proto._closeOnSide = function() {
+                var dialog = this.getChildAt(this.numChildren - 1);
+                dialog instanceof laya.ui.Dialog && dialog.close()
+            }, __proto.setLockView = function(value) {
+                this.lockLayer || (this.lockLayer = new Box, this.lockLayer.mouseEnabled = !0, this.lockLayer.size(Laya.stage.width, Laya.stage.height)), this.lockLayer.removeChildren(), value && (value.centerX = value.centerY = 0, this.lockLayer.addChild(value))
+            }, __proto._onResize = function(e) {
+                var width = this.maskLayer.width = Laya.stage.width,
+                    height = this.maskLayer.height = Laya.stage.height;
+                this.lockLayer && this.lockLayer.size(width, height), this.maskLayer.graphics.clear(!0), this.maskLayer.graphics.drawRect(0, 0, width, height, UIConfig.popupBgColor), this.maskLayer.alpha = UIConfig.popupBgAlpha;
+                for (var i = this.numChildren - 1; i > -1; i--) {
+                    var item = this.getChildAt(i);
+                    item.isPopupCenter && this._centerDialog(item)
+                }
+            }, __proto._centerDialog = function(dialog) {
+                dialog.x = Math.round((Laya.stage.width - dialog.width >> 1) + dialog.pivotX), dialog.y = Math.round((Laya.stage.height - dialog.height >> 1) + dialog.pivotY)
+            }, __proto.open = function(dialog, closeOther, showEffect) {
+                void 0 === closeOther && (closeOther = !1), void 0 === showEffect && (showEffect = !1), closeOther && this._closeAll(), this._clearDialogEffect(dialog), dialog.isPopupCenter && this._centerDialog(dialog), this.addChild(dialog), (dialog.isModal || this._getBit(32)) && Laya.timer.callLater(this, this._checkMask), showEffect && null != dialog.popupEffect ? dialog.popupEffect.runWith(dialog) : this.doOpen(dialog), this.event("open")
+            }, __proto._clearDialogEffect = function(dialog) {
+                dialog._effectTween && (Tween.clear(dialog._effectTween), dialog._effectTween = null)
+            }, __proto.doOpen = function(dialog) {
+                dialog.onOpened(dialog._param)
+            }, __proto.lock = function(value) {
+                this.lockLayer && (value ? this.addChild(this.lockLayer) : this.lockLayer.removeSelf())
+            }, __proto.close = function(dialog) {
+                this._clearDialogEffect(dialog), dialog.isShowEffect && null != dialog.closeEffect ? dialog.closeEffect.runWith([dialog]) : this.doClose(dialog), this.event("close")
+            }, __proto.doClose = function(dialog) {
+                dialog.removeSelf(), dialog.isModal && this._checkMask(), dialog.closeHandler && dialog.closeHandler.runWith(dialog.closeType), dialog.onClosed(dialog.closeType), dialog.autoDestroyAtClosed && dialog.destroy()
+            }, __proto.closeAll = function() {
+                this._closeAll(), this.event("close")
+            }, __proto._closeAll = function() {
+                for (var i = this.numChildren - 1; i > -1; i--) {
+                    var item = this.getChildAt(i);
+                    item && null != item.close && this.doClose(item)
+                }
+            }, __proto.getDialogsByGroup = function(group) {
+                for (var arr = [], i = this.numChildren - 1; i > -1; i--) {
+                    var item = this.getChildAt(i);
+                    item && item.group === group && arr.push(item)
+                }
+                return arr
+            }, __proto.closeByGroup = function(group) {
+                for (var arr = [], i = this.numChildren - 1; i > -1; i--) {
+                    var item = this.getChildAt(i);
+                    item && item.group === group && (item.close(), arr.push(item))
+                }
+                return arr
+            }, __proto._checkMask = function() {
+                this.maskLayer.removeSelf();
+                for (var i = this.numChildren - 1; i > -1; i--) {
+                    var dialog = this.getChildAt(i);
+                    if (dialog && dialog.isModal) return void this.addChildAt(this.maskLayer, i)
+                }
+            }, DialogManager
+        }(),
+        View = function(_super) {
+            function View() {
+                this._watchMap = {}, this._widget = null, this._dataSource = null, this._anchorX = NaN, this._anchorY = NaN, this._widget = Widget.EMPTY, View.__super.call(this)
+            }
+            __class(View, "laya.ui.View", _super);
+            var __proto = View.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), this._watchMap = null, _super.prototype.destroy.call(this, destroyChild)
+            }, __proto.changeData = function(key) {
+                var arr = this._watchMap[key];
+                if (arr)
+                    for (var i = 0, n = arr.length; i < n; i++) {
+                        arr[i].exe(this)
+                    }
+            }, __proto._sizeChanged = function() {
+                isNaN(this._anchorX) || (this.pivotX = this.anchorX * this.width), isNaN(this._anchorY) || (this.pivotY = this.anchorY * this.height), this.event("resize")
+            }, __proto._getWidget = function() {
+                return this._widget === Widget.EMPTY && (this._widget = this.addComponent(Widget)), this._widget
+            }, __proto.loadUI = function(path) {
+                var uiView = View.uiMap[path];
+                View.uiMap && this.createView(uiView)
+            }, __getset(0, __proto, "anchorX", function() {
+                return this._anchorX
+            }, function(value) {
+                this._anchorX != value && (this._anchorX = value, this.callLater(this._sizeChanged))
+            }), __getset(0, __proto, "centerX", function() {
+                return this._widget.centerX
+            }, function(value) {
+                value != this._widget.centerX && (this._getWidget().centerX = value)
+            }), __getset(0, __proto, "top", function() {
+                return this._widget.top
+            }, function(value) {
+                value != this._widget.top && (this._getWidget().top = value)
+            }), __getset(0, __proto, "bottom", function() {
+                return this._widget.bottom
+            }, function(value) {
+                value != this._widget.bottom && (this._getWidget().bottom = value)
+            }), __getset(0, __proto, "dataSource", function() {
+                return this._dataSource
+            }, function(value) {
+                for (var name in this._dataSource = value, value) {
+                    var comp = this.getChildByName(name);
+                    comp instanceof laya.ui.UIComponent ? comp.dataSource = value[name] : this.hasOwnProperty(name) && "function" != typeof this[name] && (this[name] = value[name])
+                }
+            }), __getset(0, __proto, "left", function() {
+                return this._widget.left
+            }, function(value) {
+                value != this._widget.left && (this._getWidget().left = value)
+            }), __getset(0, __proto, "right", function() {
+                return this._widget.right
+            }, function(value) {
+                value != this._widget.right && (this._getWidget().right = value)
+            }), __getset(0, __proto, "anchorY", function() {
+                return this._anchorY
+            }, function(value) {
+                this._anchorY != value && (this._anchorY = value, this.callLater(this._sizeChanged))
+            }), __getset(0, __proto, "centerY", function() {
+                return this._widget.centerY
+            }, function(value) {
+                value != this._widget.centerY && (this._getWidget().centerY = value)
+            }), View.regComponent = function(key, compClass) {
+                ClassUtils.regClass(key, compClass)
+            }, View.regViewRuntime = function(key, compClass) {
+                ClassUtils.regClass(key, compClass)
+            }, View.regUI = function(url, json) {
+                Laya.loader.cacheRes(url, json)
+            }, View.uiMap = {}, View.__init$ = function() {
+                ClassUtils.regShortClassName([ViewStack, Button, TextArea, ColorPicker, Box, ScaleBox, Button, CheckBox, Clip, ComboBox, UIComponent, HScrollBar, HSlider, Image, Label, List, Panel, ProgressBar, Radio, RadioGroup, ScrollBar, Slider, Tab, TextInput, View, Dialog, VScrollBar, VSlider, Tree, HBox, VBox, Sprite, Animation, Text, FontClip])
+            }, View
+        }(Scene),
+        Box = (function(_super) {
+            function WXOpenDataViewer() {
+                this._$4__texture = null, WXOpenDataViewer.__super.call(this), this._width = this._height = 200;
+                var tex = new Texture;
+                if (!Laya.Texture2D) throw new Error("WXOpenDataViewer:webgl not found!");
+                tex.bitmap = new Laya.Texture2D, this.texture = tex
+            }
+            __class(WXOpenDataViewer, "laya.ui.WXOpenDataViewer", _super);
+            var __proto = WXOpenDataViewer.prototype;
+            __proto.onEnable = function() {
+                this.postMsg({
+                    type: "display",
+                    rate: Laya.stage.frameRate
+                }), window.wx && window.sharedCanvas && Laya.timer.frameLoop(1, this, this._onLoop)
+            }, __proto.onDisable = function() {
+                this.postMsg({
+                    type: "undisplay"
+                }), Laya.timer.clear(this, this._onLoop)
+            }, __proto._onLoop = function() {
+                this.texture.bitmap.loadImageSource(window.sharedCanvas)
+            }, __proto._postMsg = function() {
+                var mat = new Matrix;
+                mat.translate(this.x, this.y);
+                var stage = Laya.stage;
+                mat.scale(stage._canvasTransform.getScaleX() * this.globalScaleX * stage.transform.getScaleX(), stage._canvasTransform.getScaleY() * this.globalScaleY * stage.transform.getScaleY()), this.postMsg({
+                    type: "changeMatrix",
+                    a: mat.a,
+                    b: mat.b,
+                    c: mat.c,
+                    d: mat.d,
+                    tx: mat.tx,
+                    ty: mat.ty,
+                    w: this.width,
+                    h: this.height
+                })
+            }, __proto.postMsg = function(msg) {
+                window.wx && window.wx.getOpenDataContext && window.wx.getOpenDataContext().postMessage(msg)
+            }, __getset(0, __proto, "x", _super.prototype._$get_x, function(value) {
+                Laya.superSet(UIComponent, this, "x", value), this.callLater(this._postMsg)
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), window.sharedCanvas && (window.sharedCanvas.width = value), this.callLater(this._postMsg)
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), window.sharedCanvas && (window.sharedCanvas.height = value), this.callLater(this._postMsg)
+            }), __getset(0, __proto, "y", _super.prototype._$get_y, function(value) {
+                Laya.superSet(UIComponent, this, "y", value), this.callLater(this._postMsg)
+            })
+        }(UIComponent), function(_super) {
+            function Box() {
+                this._bgColor = null, Box.__super.call(this)
+            }
+            __class(Box, "laya.ui.Box", _super);
+            var __proto = Box.prototype;
+            return Laya.imps(__proto, {
+                "laya.ui.IBox": !0
+            }), __proto._onResize = function(e) {
+                this.graphics.clear(), this.graphics.drawRect(0, 0, this.width, this.height, this._bgColor)
+            }, __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                for (var name in this._dataSource = value, value) {
+                    var comp = this.getChildByName(name);
+                    comp ? comp.dataSource = value[name] : this.hasOwnProperty(name) && "function" != typeof this[name] && (this[name] = value[name])
+                }
+            }), __getset(0, __proto, "bgColor", function() {
+                return this._bgColor
+            }, function(value) {
+                this._bgColor = value, value ? (this._onResize(null), this.on("resize", this, this._onResize)) : (this.graphics.clear(), this.off("resize", this, this._onResize))
+            }), Box
+        }(UIComponent)),
+        Button = function(_super) {
+            function Button(skin, label) {
+                this.toggle = !1, this._bitmap = null, this._text = null, this._strokeColors = null, this._state = 0, this._selected = !1, this._skin = null, this._autoSize = !0, this._sources = null, this._clickHandler = null, this._stateChanged = !1, Button.__super.call(this), this._labelColors = Styles.buttonLabelColors, this._stateNum = Styles.buttonStateNum, void 0 === label && (label = ""), this.skin = skin, this.label = label
+            }
+            __class(Button, "laya.ui.Button", _super);
+            var __proto = Button.prototype;
+            return Laya.imps(__proto, {
+                "laya.ui.ISelect": !0
+            }), __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._bitmap && this._bitmap.destroy(), this._text && this._text.destroy(destroyChild), this._bitmap = null, this._text = null, this._clickHandler = null, this._labelColors = this._sources = this._strokeColors = null
+            }, __proto.createChildren = function() {
+                this.graphics = this._bitmap = new AutoBitmap
+            }, __proto.createText = function() {
+                this._text || (this._text = new Text, this._text.overflow = "hidden", this._text.align = "center", this._text.valign = "middle", this._text.width = this._width, this._text.height = this._height)
+            }, __proto.initialize = function() {
+                1 !== this._mouseState && (this.mouseEnabled = !0, this._setBit(64, !0)), this._createListener("mouseover", this, this.onMouse, null, !1, !1), this._createListener("mouseout", this, this.onMouse, null, !1, !1), this._createListener("mousedown", this, this.onMouse, null, !1, !1), this._createListener("mouseup", this, this.onMouse, null, !1, !1), this._createListener("click", this, this.onMouse, null, !1, !1)
+            }, __proto.onMouse = function(e) {
+                if (!1 !== this.toggle || !this._selected) return "click" === e.type ? (this.toggle && (this.selected = !this._selected), void(this._clickHandler && this._clickHandler.run())) : void(!this._selected && (this.state = Button.stateMap[e.type]))
+            }, __proto._skinLoaded = function() {
+                this.callLater(this.changeClips), this._setStateChanged(), this._sizeChanged(), this.event("loaded")
+            }, __proto.changeClips = function() {
+                var img = Loader.getRes(this._skin);
+                if (img) {
+                    var width = img.sourceWidth,
+                        height = img.sourceHeight / this._stateNum;
+                    img.$_GID || (img.$_GID = Utils.getGID());
+                    var key = img.$_GID + "-" + this._stateNum,
+                        clips = WeakObject.I.get(key);
+                    if (Utils.isOkTextureList(clips) || (clips = null), clips) this._sources = clips;
+                    else {
+                        if (this._sources = [], 1 === this._stateNum) this._sources.push(img);
+                        else
+                            for (var i = 0; i < this._stateNum; i++) this._sources.push(Texture.createFromTexture(img, 0, height * i, width, height));
+                        WeakObject.I.set(key, this._sources)
+                    }
+                    this._autoSize ? (this._bitmap.width = this._width || width, this._bitmap.height = this._height || height, this._text && (this._text.width = this._bitmap.width, this._text.height = this._bitmap.height)) : this._text && (this._text.x = width)
+                } else console.log("lose skin", this._skin)
+            }, __proto.measureWidth = function() {
+                return this.runCallLater(this.changeClips), this._autoSize ? this._bitmap.width : (this.runCallLater(this.changeState), this._bitmap.width + (this._text ? this._text.width : 0))
+            }, __proto.measureHeight = function() {
+                return this.runCallLater(this.changeClips), this._text ? Math.max(this._bitmap.height, this._text.height) : this._bitmap.height
+            }, __proto.changeState = function() {
+                this._stateChanged = !1, this.runCallLater(this.changeClips);
+                var index = this._state < this._stateNum ? this._state : this._stateNum - 1;
+                this._sources && (this._bitmap.source = this._sources[index]), this.label && (this._text.color = this._labelColors[index], this._strokeColors && (this._text.strokeColor = this._strokeColors[index]))
+            }, __proto._setStateChanged = function() {
+                this._stateChanged || (this._stateChanged = !0, this.callLater(this.changeState))
+            }, __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                this._skin != value && (this._skin = value, value ? Loader.getRes(value) ? this._skinLoaded() : Laya.loader.load(this._skin, Handler.create(this, this._skinLoaded), null, "image", 1) : this._skinLoaded())
+            }), __getset(0, __proto, "labelPadding", function() {
+                return this.createText(), this._text.padding.join(",")
+            }, function(value) {
+                this.createText(), this._text.padding = UIUtils.fillArray(Styles.labelPadding, value, Number)
+            }), __getset(0, __proto, "state", function() {
+                return this._state
+            }, function(value) {
+                this._state != value && (this._state = value, this._setStateChanged())
+            }), __getset(0, __proto, "text", function() {
+                return this.createText(), this._text
+            }), __getset(0, __proto, "stateNum", function() {
+                return this._stateNum
+            }, function(value) {
+                "string" == typeof value && (value = parseInt(value)), this._stateNum != value && (this._stateNum = value < 1 ? 1 : value > 3 ? 3 : value, this.callLater(this.changeClips))
+            }), __getset(0, __proto, "label", function() {
+                return this._text ? this._text.text : null
+            }, function(value) {
+                (this._text || value) && (this.createText(), this._text.text != value && (value && !this._text.parent && this.addChild(this._text), this._text.text = (value + "").replace(/\\n/g, "\n"), this._setStateChanged()))
+            }), __getset(0, __proto, "labelSize", function() {
+                return this.createText(), this._text.fontSize
+            }, function(value) {
+                this.createText(), this._text.fontSize = value
+            }), __getset(0, __proto, "selected", function() {
+                return this._selected
+            }, function(value) {
+                this._selected != value && (this._selected = value, this.state = this._selected ? 2 : 0, this.event("change"))
+            }), __getset(0, __proto, "strokeColors", function() {
+                return this._strokeColors ? this._strokeColors.join(",") : ""
+            }, function(value) {
+                this._strokeColors = UIUtils.fillArray(Styles.buttonLabelColors, value, String), this._setStateChanged()
+            }), __getset(0, __proto, "labelColors", function() {
+                return this._labelColors.join(",")
+            }, function(value) {
+                this._labelColors = UIUtils.fillArray(Styles.buttonLabelColors, value, String), this._setStateChanged()
+            }), __getset(0, __proto, "labelStroke", function() {
+                return this.createText(), this._text.stroke
+            }, function(value) {
+                this.createText(), this._text.stroke = value
+            }), __getset(0, __proto, "labelStrokeColor", function() {
+                return this.createText(), this._text.strokeColor
+            }, function(value) {
+                this.createText(), this._text.strokeColor = value
+            }), __getset(0, __proto, "labelBold", function() {
+                return this.createText(), this._text.bold
+            }, function(value) {
+                this.createText(), this._text.bold = value
+            }), __getset(0, __proto, "labelFont", function() {
+                return this.createText(), this._text.font
+            }, function(value) {
+                this.createText(), this._text.font = value
+            }), __getset(0, __proto, "labelAlign", function() {
+                return this.createText(), this._text.align
+            }, function(value) {
+                this.createText(), this._text.align = value
+            }), __getset(0, __proto, "clickHandler", function() {
+                return this._clickHandler
+            }, function(value) {
+                this._clickHandler = value
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._bitmap.sizeGrid ? this._bitmap.sizeGrid.join(",") : null
+            }, function(value) {
+                this._bitmap.sizeGrid = UIUtils.fillArray(Styles.defaultSizeGrid, value, Number)
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), this._autoSize && (this._bitmap.width = value, this._text && (this._text.width = value))
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), this._autoSize && (this._bitmap.height = value, this._text && (this._text.height = value))
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value || "string" == typeof value ? this.label = value + "" : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "iconOffset", function() {
+                return this._bitmap._offset ? this._bitmap._offset.join(",") : null
+            }, function(value) {
+                this._bitmap._offset = value ? UIUtils.fillArray([1, 1], value, Number) : []
+            }), __static(Button, ["stateMap", function() {
+                return this.stateMap = {
+                    mouseup: 0,
+                    mouseover: 1,
+                    mousedown: 2,
+                    mouseout: 0
+                }
+            }]), Button
+        }(UIComponent),
+        Image = function(_super) {
+            function Image(skin) {
+                this._bitmap = null, this._skin = null, this._group = null, Image.__super.call(this), this.skin = skin
+            }
+            __class(Image, "laya.ui.Image", _super);
+            var __proto = Image.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, !0), this._bitmap && this._bitmap.destroy(), this._bitmap = null
+            }, __proto.dispose = function() {
+                this.destroy(!0), Laya.loader.clearRes(this._skin)
+            }, __proto.createChildren = function() {
+                this.graphics = this._bitmap = new AutoBitmap, this._bitmap.autoCacheCmd = !1
+            }, __proto.setSource = function(url, img) {
+                url === this._skin && img && (this.source = img, this.onCompResize())
+            }, __proto.measureWidth = function() {
+                return this._bitmap.width
+            }, __proto.measureHeight = function() {
+                return this._bitmap.height
+            }, __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "string" == typeof value ? this.skin = value : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "source", function() {
+                return this._bitmap.source
+            }, function(value) {
+                this._bitmap && (this._bitmap.source = value, this.event("loaded"), this.repaint())
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                if (this._skin != value)
+                    if (this._skin = value, value) {
+                        var source = Loader.getRes(value);
+                        source ? (this.source = source, this.onCompResize()) : Laya.loader.load(this._skin, Handler.create(this, this.setSource, [this._skin]), null, "image", 1, !0, this._group)
+                    } else this.source = null
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._bitmap.sizeGrid ? this._bitmap.sizeGrid.join(",") : null
+            }, function(value) {
+                this._bitmap.sizeGrid = UIUtils.fillArray(Styles.defaultSizeGrid, value, Number)
+            }), __getset(0, __proto, "group", function() {
+                return this._group
+            }, function(value) {
+                value && this._skin && Loader.setGroup(this._skin, value), this._group = value
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), this._bitmap.width = 0 == value ? 1e-7 : value
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), this._bitmap.height = 0 == value ? 1e-7 : value
+            }), Image
+        }(UIComponent),
+        Label = function(_super) {
+            function Label(text) {
+                this._tf = null, Label.__super.call(this), void 0 === text && (text = ""), this.text = text
+            }
+            __class(Label, "laya.ui.Label", _super);
+            var __proto = Label.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._tf = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._tf = new Text)
+            }, __proto.changeText = function(text) {
+                this._tf.changeText(text)
+            }, __proto.measureWidth = function() {
+                return this._tf.width
+            }, __proto.measureHeight = function() {
+                return this._tf.height
+            }, __getset(0, __proto, "padding", function() {
+                return this._tf.padding.join(",")
+            }, function(value) {
+                this._tf.padding = UIUtils.fillArray(Styles.labelPadding, value, Number)
+            }), __getset(0, __proto, "bold", function() {
+                return this._tf.bold
+            }, function(value) {
+                this._tf.bold = value
+            }), __getset(0, __proto, "align", function() {
+                return this._tf.align
+            }, function(value) {
+                this._tf.align = value
+            }), __getset(0, __proto, "text", function() {
+                return this._tf.text
+            }, function(value) {
+                this._tf.text != value && (value && (value = UIUtils.adptString(value + "")), this._tf.text = value, this.event("change"), this._width && this._height || this.onCompResize())
+            }), __getset(0, __proto, "italic", function() {
+                return this._tf.italic
+            }, function(value) {
+                this._tf.italic = value
+            }), __getset(0, __proto, "wordWrap", function() {
+                return this._tf.wordWrap
+            }, function(value) {
+                this._tf.wordWrap = value
+            }), __getset(0, __proto, "font", function() {
+                return this._tf.font
+            }, function(value) {
+                this._tf.font = value
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value || "string" == typeof value ? this.text = value + "" : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "color", function() {
+                return this._tf.color
+            }, function(value) {
+                this._tf.color = value
+            }), __getset(0, __proto, "valign", function() {
+                return this._tf.valign
+            }, function(value) {
+                this._tf.valign = value
+            }), __getset(0, __proto, "leading", function() {
+                return this._tf.leading
+            }, function(value) {
+                this._tf.leading = value
+            }), __getset(0, __proto, "fontSize", function() {
+                return this._tf.fontSize
+            }, function(value) {
+                this._tf.fontSize = value
+            }), __getset(0, __proto, "bgColor", function() {
+                return this._tf.bgColor
+            }, function(value) {
+                this._tf.bgColor = value
+            }), __getset(0, __proto, "borderColor", function() {
+                return this._tf.borderColor
+            }, function(value) {
+                this._tf.borderColor = value
+            }), __getset(0, __proto, "stroke", function() {
+                return this._tf.stroke
+            }, function(value) {
+                this._tf.stroke = value
+            }), __getset(0, __proto, "strokeColor", function() {
+                return this._tf.strokeColor
+            }, function(value) {
+                this._tf.strokeColor = value
+            }), __getset(0, __proto, "textField", function() {
+                return this._tf
+            }), __getset(0, __proto, "width", function() {
+                return this._width || this._tf.text ? Laya.superGet(UIComponent, this, "width") : 0
+            }, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), this._tf.width = value
+            }), __getset(0, __proto, "height", function() {
+                return this._height || this._tf.text ? Laya.superGet(UIComponent, this, "height") : 0
+            }, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), this._tf.height = value
+            }), __getset(0, __proto, "overflow", function() {
+                return this._tf.overflow
+            }, function(value) {
+                this._tf.overflow = value
+            }), __getset(0, __proto, "underline", function() {
+                return this._tf.underline
+            }, function(value) {
+                this._tf.underline = value
+            }), __getset(0, __proto, "underlineColor", function() {
+                return this._tf.underlineColor
+            }, function(value) {
+                this._tf.underlineColor = value
+            }), Label
+        }(UIComponent),
+        ComboBox = function(_super) {
+            function ComboBox(skin, labels) {
+                this._visibleNum = 6, this._button = null, this._list = null, this._isOpen = !1, this._itemSize = 12, this._labels = [], this._selectedIndex = -1, this._selectHandler = null, this._itemHeight = NaN, this._listHeight = NaN, this._listChanged = !1, this._itemChanged = !1, this._scrollBarSkin = null, this._isCustomList = !1, this.itemRender = null, ComboBox.__super.call(this), this._itemColors = Styles.comboBoxItemColors, this.skin = skin, this.labels = labels
+            }
+            __class(ComboBox, "laya.ui.ComboBox", _super);
+            var __proto = ComboBox.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._button && this._button.destroy(destroyChild), this._list && this._list.destroy(destroyChild), this._button = null, this._list = null, this._itemColors = null, this._labels = null, this._selectHandler = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._button = new Button), this._button.text.align = "left", this._button.labelPadding = "0,0,0,5", this._button.on("mousedown", this, this.onButtonMouseDown)
+            }, __proto._createList = function() {
+                this._list = new List, this._scrollBarSkin && (this._list.vScrollBarSkin = this._scrollBarSkin), this._setListEvent(this._list)
+            }, __proto._setListEvent = function(list) {
+                this._list.selectEnable = !0, this._list.on("mousedown", this, this.onListDown), this._list.mouseHandler = Handler.create(this, this.onlistItemMouse, null, !1), this._list.scrollBar && this._list.scrollBar.on("mousedown", this, this.onScrollBarDown)
+            }, __proto.onListDown = function(e) {
+                e.stopPropagation()
+            }, __proto.onScrollBarDown = function(e) {
+                e.stopPropagation()
+            }, __proto.onButtonMouseDown = function(e) {
+                this.callLater(this.switchTo, [!this._isOpen])
+            }, __proto.measureWidth = function() {
+                return this._button.width
+            }, __proto.measureHeight = function() {
+                return this._button.height
+            }, __proto.changeList = function() {
+                this._listChanged = !1;
+                var labelWidth = this.width - 2,
+                    labelColor = this._itemColors[2];
+                this._itemHeight = this._itemSize + 6, this._list.itemRender = this.itemRender || {
+                    type: "Box",
+                    child: [{
+                        type: "Label",
+                        props: {
+                            name: "label",
+                            x: 1,
+                            padding: "3,3,3,3",
+                            width: labelWidth,
+                            height: this._itemHeight,
+                            fontSize: this._itemSize,
+                            color: labelColor
+                        }
+                    }]
+                }, this._list.repeatY = this._visibleNum, this._list.refresh()
+            }, __proto.onlistItemMouse = function(e, index) {
+                var type = e.type;
+                if ("mouseover" === type || "mouseout" === type) {
+                    if (this._isCustomList) return;
+                    var box = this._list.getCell(index);
+                    if (!box) return;
+                    var label = box.getChildByName("label");
+                    label && ("mouseover" === type ? (label.bgColor = this._itemColors[0], label.color = this._itemColors[1]) : (label.bgColor = null, label.color = this._itemColors[2]))
+                } else "click" === type && (this.selectedIndex = index, this.isOpen = !1)
+            }, __proto.switchTo = function(value) {
+                this.isOpen = value
+            }, __proto.changeOpen = function() {
+                this.isOpen = !this._isOpen
+            }, __proto.changeItem = function() {
+                if (this._itemChanged = !1, this._listHeight = this._labels.length > 0 ? Math.min(this._visibleNum, this._labels.length) * this._itemHeight : this._itemHeight, !this._isCustomList) {
+                    var g = this._list.graphics;
+                    g.clear(!0), g.drawRect(0, 0, this.width - 1, this._listHeight, this._itemColors[4], this._itemColors[3])
+                }
+                var a = this._list.array || [];
+                a.length = 0;
+                for (var i = 0, n = this._labels.length; i < n; i++) a.push({
+                    label: this._labels[i]
+                });
+                this._list.height = this._listHeight, this._list.array = a
+            }, __proto.changeSelected = function() {
+                this._button.label = this.selectedLabel
+            }, __proto._onStageMouseWheel = function(e) {
+                this._list && !this._list.contains(e.target) && this.removeList(null)
+            }, __proto.removeList = function(e) {
+                Laya.stage.off("mousedown", this, this.removeList), Laya.stage.off("mousewheel", this, this._onStageMouseWheel), this.isOpen = !1
+            }, __getset(0, __proto, "selectedIndex", function() {
+                return this._selectedIndex
+            }, function(value) {
+                this._selectedIndex != value && (this._selectedIndex = value, this._labels.length > 0 ? this.changeSelected() : this.callLater(this.changeSelected), this.event("change", [Event.EMPTY.setTo("change", this, this)]), this._selectHandler && this._selectHandler.runWith(this._selectedIndex))
+            }), __getset(0, __proto, "skin", function() {
+                return this._button.skin
+            }, function(value) {
+                this._button.skin != value && (this._button.skin = value, this._listChanged = !0)
+            }), __getset(0, __proto, "visibleNum", function() {
+                return this._visibleNum
+            }, function(value) {
+                this._visibleNum = value, this._listChanged = !0
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), this._button.width = this._width, this._itemChanged = !0, this._listChanged = !0
+            }), __getset(0, __proto, "selectedLabel", function() {
+                return this._selectedIndex > -1 && this._selectedIndex < this._labels.length ? this._labels[this._selectedIndex] : null
+            }, function(value) {
+                this.selectedIndex = this._labels.indexOf(value)
+            }), __getset(0, __proto, "labels", function() {
+                return this._labels.join(",")
+            }, function(value) {
+                this._labels.length > 0 && (this.selectedIndex = -1), value ? this._labels = value.split(",") : this._labels.length = 0, this._itemChanged = !0
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), this._button.height = this._height
+            }), __getset(0, __proto, "selectHandler", function() {
+                return this._selectHandler
+            }, function(value) {
+                this._selectHandler = value
+            }), __getset(0, __proto, "labelBold", function() {
+                return this._button.text.bold
+            }, function(value) {
+                this._button.text.bold = value
+            }), __getset(0, __proto, "itemColors", function() {
+                return String(this._itemColors)
+            }, function(value) {
+                this._itemColors = UIUtils.fillArray(this._itemColors, value, String), this._listChanged = !0
+            }), __getset(0, __proto, "itemSize", function() {
+                return this._itemSize
+            }, function(value) {
+                this._itemSize = value, this._listChanged = !0
+            }), __getset(0, __proto, "scrollBar", function() {
+                return this.list.scrollBar
+            }), __getset(0, __proto, "isOpen", function() {
+                return this._isOpen
+            }, function(value) {
+                if (this._isOpen != value)
+                    if (this._isOpen = value, this._button.selected = this._isOpen, this._isOpen) {
+                        this._list || this._createList(), this._listChanged && !this._isCustomList && this.changeList(), this._itemChanged && this.changeItem();
+                        var p = this.localToGlobal(Point.TEMP.setTo(0, 0)),
+                            py = p.y + this._button.height;
+                        py = py + this._listHeight <= Laya.stage.height ? py : p.y - this._listHeight, this._list.pos(p.x, py), this._list.zOrder = 1001, Laya._currentStage.addChild(this._list), Laya.stage.once("mousedown", this, this.removeList), Laya.stage.on("mousewheel", this, this._onStageMouseWheel), this._list.selectedIndex = this._selectedIndex
+                    } else this._list && this._list.removeSelf()
+            }), __getset(0, __proto, "scrollBarSkin", function() {
+                return this._scrollBarSkin
+            }, function(value) {
+                this._scrollBarSkin = value
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._button.sizeGrid
+            }, function(value) {
+                this._button.sizeGrid = value
+            }), __getset(0, __proto, "button", function() {
+                return this._button
+            }), __getset(0, __proto, "list", function() {
+                return this._list || this._createList(), this._list
+            }, function(value) {
+                value && (value.removeSelf(), this._isCustomList = !0, this._list = value, this._setListEvent(value), this._itemHeight = value.getCell(0).height + value.spaceY)
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value && Math.floor(value) == value || "string" == typeof value ? this.selectedIndex = parseInt(value) : value instanceof Array ? this.labels = value.join(",") : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "labelColors", function() {
+                return this._button.labelColors
+            }, function(value) {
+                this._button.labelColors != value && (this._button.labelColors = value)
+            }), __getset(0, __proto, "labelPadding", function() {
+                return this._button.text.padding.join(",")
+            }, function(value) {
+                this._button.text.padding = UIUtils.fillArray(Styles.labelPadding, value, Number)
+            }), __getset(0, __proto, "labelSize", function() {
+                return this._button.text.fontSize
+            }, function(value) {
+                this._button.text.fontSize = value
+            }), __getset(0, __proto, "labelFont", function() {
+                return this._button.text.font
+            }, function(value) {
+                this._button.text.font = value
+            }), __getset(0, __proto, "stateNum", function() {
+                return this._button.stateNum
+            }, function(value) {
+                this._button.stateNum = value
+            }), ComboBox
+        }(UIComponent),
+        Clip = (function(_super) {
+            function TipManager() {
+                this._tipBox = null, this._tipText = null, this._defaultTipHandler = null, TipManager.__super.call(this), this._tipBox = new UIComponent, this._tipBox.addChild(this._tipText = new Text), this._tipText.x = this._tipText.y = 5, this._tipText.color = TipManager.tipTextColor, this._defaultTipHandler = this._showDefaultTip, Laya.stage.on("showtip", this, this._onStageShowTip), Laya.stage.on("hidetip", this, this._onStageHideTip), this.zOrder = 1100
+            }
+            __class(TipManager, "laya.ui.TipManager", UIComponent);
+            var __proto = TipManager.prototype;
+            __proto._onStageHideTip = function(e) {
+                Laya.timer.clear(this, this._showTip), this.closeAll(), this.removeSelf()
+            }, __proto._onStageShowTip = function(data) {
+                Laya.timer.once(TipManager.tipDelay, this, this._showTip, [data], !0)
+            }, __proto._showTip = function(tip) {
+                if ("string" == typeof tip) {
+                    var text = String(tip);
+                    Boolean(text) && this._defaultTipHandler(text)
+                } else tip instanceof laya.utils.Handler ? tip.run() : "function" == typeof tip && tip.apply();
+                Laya.stage.on("mousemove", this, this._onStageMouseMove), Laya.stage.on("mousedown", this, this._onStageMouseDown), this._onStageMouseMove(null)
+            }, __proto._onStageMouseDown = function(e) {
+                this.closeAll()
+            }, __proto._onStageMouseMove = function(e) {
+                this._showToStage(this, TipManager.offsetX, TipManager.offsetY)
+            }, __proto._showToStage = function(dis, offX, offY) {
+                void 0 === offX && (offX = 0), void 0 === offY && (offY = 0);
+                var rec = dis.getBounds();
+                dis.x = Laya.stage.mouseX + offX, dis.y = Laya.stage.mouseY + offY, dis._x + rec.width > Laya.stage.width && (dis.x -= rec.width + offX), dis._y + rec.height > Laya.stage.height && (dis.y -= rec.height + offY)
+            }, __proto.closeAll = function() {
+                Laya.timer.clear(this, this._showTip), Laya.stage.off("mousemove", this, this._onStageMouseMove), Laya.stage.off("mousedown", this, this._onStageMouseDown), this.removeChildren()
+            }, __proto.showDislayTip = function(tip) {
+                this.addChild(tip), this._showToStage(this), Laya._currentStage.addChild(this)
+            }, __proto._showDefaultTip = function(text) {
+                this._tipText.text = text;
+                var g = this._tipBox.graphics;
+                g.clear(!0), g.drawRect(0, 0, this._tipText.width + 10, this._tipText.height + 10, TipManager.tipBackColor), this.addChild(this._tipBox), this._showToStage(this), Laya._currentStage.addChild(this)
+            }, __getset(0, __proto, "defaultTipHandler", function() {
+                return this._defaultTipHandler
+            }, function(value) {
+                this._defaultTipHandler = value
+            }), TipManager.offsetX = 10, TipManager.offsetY = 15, TipManager.tipTextColor = "#ffffff", TipManager.tipBackColor = "#111111", TipManager.tipDelay = 200
+        }(), function(_super) {
+            function Clip(url, clipX, clipY) {
+                this._sources = null, this._bitmap = null, this._skin = null, this._clipX = 1, this._clipY = 1, this._clipWidth = 0, this._clipHeight = 0, this._autoPlay = !1, this._interval = 50, this._complete = null, this._isPlaying = !1, this._index = 0, this._clipChanged = !1, this._group = null, this._toIndex = -1, Clip.__super.call(this), void 0 === clipX && (clipX = 1), void 0 === clipY && (clipY = 1), this._clipX = clipX, this._clipY = clipY, this.skin = url
+            }
+            __class(Clip, "laya.ui.Clip", _super);
+            var __proto = Clip.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, !0), this._bitmap && this._bitmap.destroy(), this._bitmap = null, this._sources = null
+            }, __proto.dispose = function() {
+                this.destroy(!0), Laya.loader.clearRes(this._skin)
+            }, __proto.createChildren = function() {
+                this.graphics = this._bitmap = new AutoBitmap
+            }, __proto._onDisplay = function(e) {
+                this._isPlaying ? this._getBit(128) ? this.play() : this.stop() : this._autoPlay && this.play()
+            }, __proto._skinLoaded = function() {
+                this._setClipChanged(), this._sizeChanged(), this.event("loaded")
+            }, __proto.changeClip = function() {
+                if (this._clipChanged = !1, this._skin) {
+                    var img = Loader.getRes(this._skin);
+                    img ? this.loadComplete(this._skin, img) : Laya.loader.load(this._skin, Handler.create(this, this.loadComplete, [this._skin]))
+                }
+            }, __proto.loadComplete = function(url, img) {
+                if (url === this._skin && img) {
+                    var w = this._clipWidth || Math.ceil(img.sourceWidth / this._clipX),
+                        h = this._clipHeight || Math.ceil(img.sourceHeight / this._clipY),
+                        key = this._skin + w + h,
+                        clips = WeakObject.I.get(key);
+                    if (Utils.isOkTextureList(clips) || (clips = null), clips) this._sources = clips;
+                    else {
+                        this._sources = [];
+                        for (var i = 0; i < this._clipY; i++)
+                            for (var j = 0; j < this._clipX; j++) this._sources.push(Texture.createFromTexture(img, w * j, h * i, w, h));
+                        WeakObject.I.set(key, this._sources)
+                    }
+                    this.index = this._index, this.event("loaded"), this.onCompResize()
+                }
+            }, __proto.measureWidth = function() {
+                return this.runCallLater(this.changeClip), this._bitmap.width
+            }, __proto.measureHeight = function() {
+                return this.runCallLater(this.changeClip), this._bitmap.height
+            }, __proto.play = function(from, to) {
+                void 0 === from && (from = 0), void 0 === to && (to = -1), this._isPlaying = !0, this.index = from, this._toIndex = to, this._index++, Laya.timer.loop(this.interval, this, this._loop), this.on("display", this, this._onDisplay), this.on("undisplay", this, this._onDisplay)
+            }, __proto._loop = function() {
+                this._visible && this._sources && (this._index++, this._toIndex > -1 && this._index >= this._toIndex ? this.stop() : this._index >= this._sources.length && (this._index = 0), this.index = this._index)
+            }, __proto.stop = function() {
+                this._isPlaying = !1, Laya.timer.clear(this, this._loop), this.event("complete")
+            }, __proto._setClipChanged = function() {
+                this._clipChanged || (this._clipChanged = !0, this.callLater(this.changeClip))
+            }, __getset(0, __proto, "interval", function() {
+                return this._interval
+            }, function(value) {
+                this._interval != value && (this._interval = value, this._isPlaying && this.play())
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                this._skin != value && (this._skin = value, value ? Loader.getRes(value) ? this._skinLoaded() : Laya.loader.load(this._skin, Handler.create(this, this._skinLoaded), null, "image", 1) : this._bitmap.source = null)
+            }), __getset(0, __proto, "sources", function() {
+                return this._sources
+            }, function(value) {
+                this._sources = value, this.index = this._index, this.event("loaded")
+            }), __getset(0, __proto, "clipX", function() {
+                return this._clipX
+            }, function(value) {
+                this._clipX = value || 1, this._setClipChanged()
+            }), __getset(0, __proto, "clipY", function() {
+                return this._clipY
+            }, function(value) {
+                this._clipY = value || 1, this._setClipChanged()
+            }), __getset(0, __proto, "total", function() {
+                return this.runCallLater(this.changeClip), this._sources ? this._sources.length : 0
+            }), __getset(0, __proto, "clipWidth", function() {
+                return this._clipWidth
+            }, function(value) {
+                this._clipWidth = value, this._setClipChanged()
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._bitmap.sizeGrid ? this._bitmap.sizeGrid.join(",") : null
+            }, function(value) {
+                this._bitmap.sizeGrid = UIUtils.fillArray(Styles.defaultSizeGrid, value, Number)
+            }), __getset(0, __proto, "group", function() {
+                return this._group
+            }, function(value) {
+                value && this._skin && Loader.setGroup(this._skin, value), this._group = value
+            }), __getset(0, __proto, "clipHeight", function() {
+                return this._clipHeight
+            }, function(value) {
+                this._clipHeight = value, this._setClipChanged()
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), this._bitmap.width = value
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), this._bitmap.height = value
+            }), __getset(0, __proto, "index", function() {
+                return this._index
+            }, function(value) {
+                this._index = value, this._bitmap && this._sources && (this._bitmap.source = this._sources[value]), this.event("change")
+            }), __getset(0, __proto, "autoPlay", function() {
+                return this._autoPlay
+            }, function(value) {
+                this._autoPlay != value && (this._autoPlay = value, value ? this.play() : this.stop())
+            }), __getset(0, __proto, "isPlaying", function() {
+                return this._isPlaying
+            }, function(value) {
+                this._isPlaying = value
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value && Math.floor(value) == value || "string" == typeof value ? this.index = parseInt(value) : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "bitmap", function() {
+                return this._bitmap
+            }), Clip
+        }(UIComponent)),
+        ColorPicker = function(_super) {
+            function ColorPicker() {
+                this.changeHandler = null, this._gridSize = 11, this._bgColor = "#ffffff", this._borderColor = "#000000", this._inputColor = "#000000", this._inputBgColor = "#efefef", this._colorPanel = null, this._colorTiles = null, this._colorBlock = null, this._colorInput = null, this._colorButton = null, this._colors = [], this._selectedColor = "#000000", this._panelChanged = !1, ColorPicker.__super.call(this)
+            }
+            __class(ColorPicker, "laya.ui.ColorPicker", _super);
+            var __proto = ColorPicker.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._colorPanel && this._colorPanel.destroy(destroyChild), this._colorButton && this._colorButton.destroy(destroyChild), this._colorPanel = null, this._colorTiles = null, this._colorBlock = null, this._colorInput = null, this._colorButton = null, this._colors = null, this.changeHandler = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._colorButton = new Button), this._colorPanel = new Box, this._colorPanel.size(230, 166), this._colorPanel.addChild(this._colorTiles = new Sprite), this._colorPanel.addChild(this._colorBlock = new Sprite), this._colorPanel.addChild(this._colorInput = new Input)
+            }, __proto.initialize = function() {
+                this._colorButton.on("click", this, this.onColorButtonClick), this._colorBlock.pos(5, 5), this._colorInput.pos(60, 5), this._colorInput.size(60, 20), this._colorInput.on("change", this, this.onColorInputChange), this._colorInput.on("keydown", this, this.onColorFieldKeyDown), this._colorTiles.pos(5, 30), this._colorTiles.on("mousemove", this, this.onColorTilesMouseMove), this._colorTiles.on("click", this, this.onColorTilesClick), this._colorTiles.size(20 * this._gridSize, 12 * this._gridSize), this._colorPanel.on("mousedown", this, this.onPanelMouseDown), this.bgColor = this._bgColor
+            }, __proto.onPanelMouseDown = function(e) {
+                e.stopPropagation()
+            }, __proto.changePanel = function() {
+                this._panelChanged = !1;
+                var g = this._colorPanel.graphics;
+                g.clear(!0), g.drawRect(0, 0, 230, 166, this._bgColor, this._borderColor), this.drawBlock(this._selectedColor), this._colorInput.borderColor = this._borderColor, this._colorInput.bgColor = this._inputBgColor, this._colorInput.color = this._inputColor, (g = this._colorTiles.graphics).clear(!0);
+                for (var mainColors = [0, 3355443, 6710886, 10066329, 13421772, 16777215, 16711680, 65280, 255, 16776960, 65535, 16711935], i = 0; i < 12; i++)
+                    for (var j = 0; j < 20; j++) {
+                        var color = 0;
+                        color = 0 === j ? mainColors[i] : 1 === j ? 0 : 51 * (((3 * i + j / 6) % 3 << 0) + 3 * (i / 6 << 0)) << 16 | j % 6 * 51 << 8 | (i << 0) % 6 * 51;
+                        var strColor = UIUtils.toColor(color);
+                        this._colors.push(strColor);
+                        var x = j * this._gridSize,
+                            y = i * this._gridSize;
+                        g.drawRect(x, y, this._gridSize, this._gridSize, strColor, "#000000")
+                    }
+            }, __proto.onColorButtonClick = function(e) {
+                this._colorPanel.parent ? this.close() : this.open()
+            }, __proto.open = function() {
+                var p = this.localToGlobal(new Point),
+                    px = p.x + this._colorPanel.width <= Laya.stage.width ? p.x : Laya.stage.width - this._colorPanel.width,
+                    py = p.y + this._colorButton.height;
+                py = py + this._colorPanel.height <= Laya.stage.height ? py : p.y - this._colorPanel.height, this._colorPanel.pos(px, py), this._colorPanel.zOrder = 1001, Laya._currentStage.addChild(this._colorPanel), Laya.stage.on("mousedown", this, this.removeColorBox)
+            }, __proto.close = function() {
+                Laya.stage.off("mousedown", this, this.removeColorBox), this._colorPanel.removeSelf()
+            }, __proto.removeColorBox = function(e) {
+                this.close()
+            }, __proto.onColorFieldKeyDown = function(e) {
+                13 == e.keyCode && (this._colorInput.text ? this.selectedColor = this._colorInput.text : this.selectedColor = null, this.close(), e.stopPropagation())
+            }, __proto.onColorInputChange = function(e) {
+                this._colorInput.text ? this.drawBlock(this._colorInput.text) : this.drawBlock("#FFFFFF")
+            }, __proto.onColorTilesClick = function(e) {
+                this.selectedColor = this.getColorByMouse(), this.close()
+            }, __proto.onColorTilesMouseMove = function(e) {
+                this._colorInput.focus = !1;
+                var color = this.getColorByMouse();
+                this._colorInput.text = color, this.drawBlock(color)
+            }, __proto.getColorByMouse = function() {
+                var point = this._colorTiles.getMousePoint(),
+                    x = Math.floor(point.x / this._gridSize),
+                    y = Math.floor(point.y / this._gridSize);
+                return this._colors[20 * y + x]
+            }, __proto.drawBlock = function(color) {
+                var g = this._colorBlock.graphics;
+                g.clear(!0);
+                var showColor = color || "#ffffff";
+                g.drawRect(0, 0, 50, 20, showColor, this._borderColor), color || g.drawLine(0, 0, 50, 20, "#ff0000")
+            }, __proto.changeColor = function() {
+                var g = this.graphics;
+                g.clear(!0);
+                var showColor = this._selectedColor || "#000000";
+                g.drawRect(0, 0, this._colorButton.width, this._colorButton.height, showColor)
+            }, __proto._setPanelChanged = function() {
+                this._panelChanged || (this._panelChanged = !0, this.callLater(this.changePanel))
+            }, __getset(0, __proto, "inputBgColor", function() {
+                return this._inputBgColor
+            }, function(value) {
+                this._inputBgColor = value, this._setPanelChanged()
+            }), __getset(0, __proto, "selectedColor", function() {
+                return this._selectedColor
+            }, function(value) {
+                this._selectedColor != value && (this._selectedColor = this._colorInput.text = value, this.drawBlock(value), this.changeColor(), this.changeHandler && this.changeHandler.runWith(this._selectedColor), this.event("change", Event.EMPTY.setTo("change", this, this)))
+            }), __getset(0, __proto, "skin", function() {
+                return this._colorButton.skin
+            }, function(value) {
+                this._colorButton.once("loaded", this, this.changeColor), this._colorButton.skin = value
+            }), __getset(0, __proto, "bgColor", function() {
+                return this._bgColor
+            }, function(value) {
+                this._bgColor = value, this._setPanelChanged()
+            }), __getset(0, __proto, "borderColor", function() {
+                return this._borderColor
+            }, function(value) {
+                this._borderColor = value, this._setPanelChanged()
+            }), __getset(0, __proto, "inputColor", function() {
+                return this._inputColor
+            }, function(value) {
+                this._inputColor = value, this._setPanelChanged()
+            }), ColorPicker
+        }(UIComponent),
+        ProgressBar = function(_super) {
+            function ProgressBar(skin) {
+                this.changeHandler = null, this._bg = null, this._bar = null, this._skin = null, this._value = .5, ProgressBar.__super.call(this), this.skin = skin
+            }
+            __class(ProgressBar, "laya.ui.ProgressBar", _super);
+            var __proto = ProgressBar.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._bg && this._bg.destroy(destroyChild), this._bar && this._bar.destroy(destroyChild), this._bg = this._bar = null, this.changeHandler = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._bg = new Image), this.addChild(this._bar = new Image), this._bar._bitmap.autoCacheCmd = !1
+            }, __proto._skinLoaded = function() {
+                this._bg.skin = this._skin, this._bar.skin = this._skin.replace(".png", "$bar.png"), this.callLater(this.changeValue), this._sizeChanged(), this.event("loaded")
+            }, __proto.measureWidth = function() {
+                return this._bg.width
+            }, __proto.measureHeight = function() {
+                return this._bg.height
+            }, __proto.changeValue = function() {
+                if (this.sizeGrid) {
+                    var grid = this.sizeGrid.split(","),
+                        left = Number(grid[3]),
+                        right = Number(grid[1]),
+                        sw = (this.width - left - right) * this._value;
+                    this._bar.width = left + right + sw, this._bar.visible = this._bar.width > left + right
+                } else this._bar.width = this.width * this._value
+            }, __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value || "string" == typeof value ? this.value = Number(value) : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                this._skin != value && (this._skin = value, this._skin && !Loader.getRes(this._skin) ? Laya.loader.load(this._skin, Handler.create(this, this._skinLoaded), null, "image", 1) : this._skinLoaded())
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(UIComponent, this, "height", value), this._bg.height = this._height, this._bar.height = this._height
+            }), __getset(0, __proto, "bar", function() {
+                return this._bar
+            }), __getset(0, __proto, "value", function() {
+                return this._value
+            }, function(num) {
+                this._value != num && (num = num > 1 ? 1 : num < 0 ? 0 : num, this._value = num, this.callLater(this.changeValue), this.event("change"), this.changeHandler && this.changeHandler.runWith(num))
+            }), __getset(0, __proto, "bg", function() {
+                return this._bg
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._bg.sizeGrid
+            }, function(value) {
+                this._bg.sizeGrid = this._bar.sizeGrid = value
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(UIComponent, this, "width", value), this._bg.width = this._width, this.callLater(this.changeValue)
+            }), ProgressBar
+        }(UIComponent),
+        ScrollBar = function(_super) {
+            function ScrollBar(skin) {
+                this.rollRatio = .97, this.changeHandler = null, this.scaleBar = !0, this.autoHide = !1, this.elasticDistance = 0, this.elasticBackTime = 500, this.upButton = null, this.downButton = null, this.slider = null, this._scrollSize = 1, this._skin = null, this._thumbPercent = 1, this._target = null, this._lastPoint = null, this._lastOffset = 0, this._checkElastic = !1, this._isElastic = !1, this._value = NaN, this._hide = !1, this._clickOnly = !0, this._offsets = null, this.isLockedFun = null, this.triggerDownDragLimit = null, this.triggerUpDragLimit = null, ScrollBar.__super.call(this), this._showButtons = UIConfig.showButtons, this._touchScrollEnable = UIConfig.touchScrollEnable, this._mouseWheelEnable = UIConfig.mouseWheelEnable, this.skin = skin, this.max = 1
+            }
+            __class(ScrollBar, "laya.ui.ScrollBar", _super);
+            var __proto = ScrollBar.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), this.stopScroll(), this.target = null, _super.prototype.destroy.call(this, destroyChild), this.upButton && this.upButton.destroy(destroyChild), this.downButton && this.downButton.destroy(destroyChild), this.slider && this.slider.destroy(destroyChild), this.upButton = this.downButton = null, this.slider = null, this.changeHandler = null, this._offsets = null
+            }, __proto.createChildren = function() {
+                this.addChild(this.slider = new Slider), this.addChild(this.upButton = new Button), this.addChild(this.downButton = new Button)
+            }, __proto.initialize = function() {
+                this.slider.showLabel = !1, this.slider.tick = 0, this.slider.on("change", this, this.onSliderChange), this.slider.setSlider(0, 0, 0), this.upButton.on("mousedown", this, this.onButtonMouseDown), this.downButton.on("mousedown", this, this.onButtonMouseDown)
+            }, __proto.onSliderChange = function() {
+                this._value != this.slider.value && (this.value = this.slider.value)
+            }, __proto.onButtonMouseDown = function(e) {
+                var isUp = e.currentTarget === this.upButton;
+                this.slide(isUp), Laya.timer.once(Styles.scrollBarDelayTime, this, this.startLoop, [isUp]), Laya.stage.once("mouseup", this, this.onStageMouseUp)
+            }, __proto.startLoop = function(isUp) {
+                Laya.timer.frameLoop(1, this, this.slide, [isUp])
+            }, __proto.slide = function(isUp) {
+                isUp ? this.value -= this._scrollSize : this.value += this._scrollSize
+            }, __proto.onStageMouseUp = function(e) {
+                Laya.timer.clear(this, this.startLoop), Laya.timer.clear(this, this.slide)
+            }, __proto._skinLoaded = function() {
+                this.slider.skin = this._skin, this.callLater(this.changeScrollBar), this._sizeChanged(), this.event("loaded")
+            }, __proto.changeScrollBar = function() {
+                this.upButton.visible = this._showButtons, this.downButton.visible = this._showButtons, this._showButtons && (this.upButton.skin = this._skin.replace(".png", "$up.png"), this.downButton.skin = this._skin.replace(".png", "$down.png")), this.slider.isVertical ? this.slider.y = this._showButtons ? this.upButton.height : 0 : this.slider.x = this._showButtons ? this.upButton.width : 0, this.resetPositions(), this.repaint()
+            }, __proto._sizeChanged = function() {
+                _super.prototype._sizeChanged.call(this), this.repaint(), this.resetPositions(), this.event("change"), this.changeHandler && this.changeHandler.runWith(this.value)
+            }, __proto.resetPositions = function() {
+                this.slider.isVertical ? this.slider.height = this.height - (this._showButtons ? this.upButton.height + this.downButton.height : 0) : this.slider.width = this.width - (this._showButtons ? this.upButton.width + this.downButton.width : 0), this.resetButtonPosition()
+            }, __proto.resetButtonPosition = function() {
+                this.slider.isVertical ? this.downButton.y = this.slider._y + this.slider.height : this.downButton.x = this.slider._x + this.slider.width
+            }, __proto.measureWidth = function() {
+                return this.slider.isVertical ? this.slider.width : 100
+            }, __proto.measureHeight = function() {
+                return this.slider.isVertical ? 100 : this.slider.height
+            }, __proto.setScroll = function(min, max, value) {
+                this.runCallLater(this._sizeChanged), this.slider.setSlider(min, max, value), this.slider.bar.visible = max > 0, !this._hide && this.autoHide && (this.visible = !1)
+            }, __proto.onTargetMouseWheel = function(e) {
+                this.value -= e.delta * this._scrollSize, this.target = this._target
+            }, __proto.onTargetMouseDown = function(e) {
+                this.isLockedFun && !this.isLockedFun(e) || (this.event("end"), this._clickOnly = !0, this._lastOffset = 0, this._checkElastic = !1, this._lastPoint || (this._lastPoint = new Point), this._lastPoint.setTo(Laya.stage.mouseX, Laya.stage.mouseY), Laya.timer.clear(this, this.tweenMove), Tween.clearTween(this), Laya.stage.once("mouseup", this, this.onStageMouseUp2), Laya.stage.once("mouseout", this, this.onStageMouseUp2), Laya.timer.frameLoop(1, this, this.loop))
+            }, __proto.startDragForce = function() {
+                this._clickOnly = !0, this._lastOffset = 0, this._checkElastic = !1, this._lastPoint || (this._lastPoint = new Point), this._lastPoint.setTo(Laya.stage.mouseX, Laya.stage.mouseY), Laya.timer.clear(this, this.tweenMove), Tween.clearTween(this), Laya.stage.once("mouseup", this, this.onStageMouseUp2), Laya.stage.once("mouseout", this, this.onStageMouseUp2), Laya.timer.frameLoop(1, this, this.loop)
+            }, __proto.cancelDragOp = function() {
+                Laya.stage.off("mouseup", this, this.onStageMouseUp2), Laya.stage.off("mouseout", this, this.onStageMouseUp2), Laya.timer.clear(this, this.tweenMove), Laya.timer.clear(this, this.loop), this._target.mouseEnabled = !0
+            }, __proto.checkTriggers = function(isTweenMove) {
+                return void 0 === isTweenMove && (isTweenMove = !1), this.value >= 0 && this.value - this._lastOffset <= 0 && this.triggerDownDragLimit && this.triggerDownDragLimit(isTweenMove) ? (this.cancelDragOp(), this.value = 0, !0) : !!(this.value <= this.max && this.value - this._lastOffset >= this.max && this.triggerUpDragLimit && this.triggerUpDragLimit(isTweenMove)) && (this.cancelDragOp(), this.value = this.max, !0)
+            }, __proto.startTweenMoveForce = function(lastOffset) {
+                this._lastOffset = lastOffset, Laya.timer.frameLoop(1, this, this.tweenMove, [200])
+            }, __proto.loop = function() {
+                var mouseY = Laya.stage.mouseY,
+                    mouseX = Laya.stage.mouseX;
+                if (this._lastOffset = this.isVertical ? mouseY - this._lastPoint.y : mouseX - this._lastPoint.x, this._clickOnly) {
+                    if (!(Math.abs(this._lastOffset * (this.isVertical ? Laya.stage._canvasTransform.getScaleY() : Laya.stage._canvasTransform.getScaleX())) > 1)) return;
+                    if (this._clickOnly = !1, this.checkTriggers()) return;
+                    this._offsets || (this._offsets = []), this._offsets.length = 0, this._target.mouseEnabled = !1, !this.hide && this.autoHide && (this.alpha = 1, this.visible = !0), this.event("start")
+                } else if (this.checkTriggers()) return;
+                this._offsets.push(this._lastOffset), this._lastPoint.x = mouseX, this._lastPoint.y = mouseY, 0 !== this._lastOffset && (this._checkElastic || (this.elasticDistance > 0 ? this._checkElastic || 0 == this._lastOffset || (this._lastOffset > 0 && this._value <= this.min || this._lastOffset < 0 && this._value >= this.max ? (this._isElastic = !0, this._checkElastic = !0) : this._isElastic = !1) : this._checkElastic = !0), this._isElastic ? this._value <= this.min ? this._lastOffset > 0 ? this.value -= this._lastOffset * Math.max(0, 1 - (this.min - this._value) / this.elasticDistance) : (this.value -= .5 * this._lastOffset, this._value >= this.min && (this._checkElastic = !1)) : this._value >= this.max && (this._lastOffset < 0 ? this.value -= this._lastOffset * Math.max(0, 1 - (this._value - this.max) / this.elasticDistance) : (this.value -= .5 * this._lastOffset, this._value <= this.max && (this._checkElastic = !1))) : this.value -= this._lastOffset)
+            }, __proto.onStageMouseUp2 = function(e) {
+                if (Laya.stage.off("mouseup", this, this.onStageMouseUp2), Laya.stage.off("mouseout", this, this.onStageMouseUp2), Laya.timer.clear(this, this.loop), !(this._clickOnly && this._value >= this.min && this._value <= this.max))
+                    if (this._target.mouseEnabled = !0, this._isElastic) this._value < this.min ? Tween.to(this, {
+                        value: this.min
+                    }, this.elasticBackTime, Ease.sineOut, Handler.create(this, this.elasticOver)) : this._value > this.max && Tween.to(this, {
+                        value: this.max
+                    }, this.elasticBackTime, Ease.sineOut, Handler.create(this, this.elasticOver));
+                    else {
+                        if (!this._offsets) return;
+                        this._offsets.length < 1 && (this._offsets[0] = this.isVertical ? Laya.stage.mouseY - this._lastPoint.y : Laya.stage.mouseX - this._lastPoint.x);
+                        for (var offset = 0, n = Math.min(this._offsets.length, 3), i = 0; i < n; i++) offset += this._offsets[this._offsets.length - 1 - i];
+                        if (this._lastOffset = offset / n, (offset = Math.abs(this._lastOffset)) < 2) return void this.event("end");
+                        offset > 250 && (this._lastOffset = this._lastOffset > 0 ? 250 : -250);
+                        var dis = Math.round(Math.abs(this.elasticDistance * (this._lastOffset / 150)));
+                        Laya.timer.frameLoop(1, this, this.tweenMove, [dis])
+                    }
+            }, __proto.elasticOver = function() {
+                this._isElastic = !1, !this.hide && this.autoHide && Tween.to(this, {
+                    alpha: 0
+                }, 500), this.event("end")
+            }, __proto.tweenMove = function(maxDistance) {
+                if (this._lastOffset *= this.rollRatio, !this.checkTriggers(!0)) {
+                    var tarSpeed = NaN;
+                    if (maxDistance > 0 && (this._lastOffset > 0 && this.value <= this.min ? (this._isElastic = !0, tarSpeed = .5 * -(this.min - maxDistance - this.value), this._lastOffset > tarSpeed && (this._lastOffset = tarSpeed)) : this._lastOffset < 0 && this.value >= this.max && (this._isElastic = !0, tarSpeed = .5 * -(this.max + maxDistance - this.value), this._lastOffset < tarSpeed && (this._lastOffset = tarSpeed))), this.value -= this._lastOffset, Math.abs(this._lastOffset) < .1) {
+                        if (Laya.timer.clear(this, this.tweenMove), this._isElastic) return void(this._value < this.min ? Tween.to(this, {
+                            value: this.min
+                        }, this.elasticBackTime, Ease.sineOut, Handler.create(this, this.elasticOver)) : this._value > this.max ? Tween.to(this, {
+                            value: this.max
+                        }, this.elasticBackTime, Ease.sineOut, Handler.create(this, this.elasticOver)) : this.elasticOver());
+                        this.event("end"), !this.hide && this.autoHide && Tween.to(this, {
+                            alpha: 0
+                        }, 500)
+                    }
+                }
+            }, __proto.stopScroll = function() {
+                this.onStageMouseUp2(null), Laya.timer.clear(this, this.tweenMove), Tween.clearTween(this)
+            }, __getset(0, __proto, "thumbPercent", function() {
+                return this._thumbPercent
+            }, function(value) {
+                this.runCallLater(this.changeScrollBar), this.runCallLater(this._sizeChanged), value = value >= 1 ? .99 : value, this._thumbPercent = value, this.scaleBar && (this.slider.isVertical ? this.slider.bar.height = Math.max(this.slider.height * value, Styles.scrollBarMinNum) : this.slider.bar.width = Math.max(this.slider.width * value, Styles.scrollBarMinNum))
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value || "string" == typeof value ? this.value = Number(value) : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                " " != value && this._skin != value && (this._skin = value, this._skin && !Loader.getRes(this._skin) ? Laya.loader.load([this._skin, this._skin.replace(".png", "$up.png"), this._skin.replace(".png", "$down.png"), this._skin.replace(".png", "$bar.png")], Handler.create(this, this._skinLoaded)) : this._skinLoaded())
+            }), __getset(0, __proto, "max", function() {
+                return this.slider.max
+            }, function(value) {
+                this.slider.max = value
+            }), __getset(0, __proto, "min", function() {
+                return this.slider.min
+            }, function(value) {
+                this.slider.min = value
+            }), __getset(0, __proto, "value", function() {
+                return this._value
+            }, function(v) {
+                v !== this._value && (this._value = v, this._isElastic || (this.slider._value != v && (this.slider._value = v, this.slider.changeValue()), this._value = this.slider._value), this.event("change"), this.changeHandler && this.changeHandler.runWith(this._value))
+            }), __getset(0, __proto, "isVertical", function() {
+                return this.slider.isVertical
+            }, function(value) {
+                this.slider.isVertical = value
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this.slider.sizeGrid
+            }, function(value) {
+                this.slider.sizeGrid = value
+            }), __getset(0, __proto, "scrollSize", function() {
+                return this._scrollSize
+            }, function(value) {
+                this._scrollSize = value
+            }), __getset(0, __proto, "target", function() {
+                return this._target
+            }, function(value) {
+                this._target && (this._target.off("mousewheel", this, this.onTargetMouseWheel), this._target.off("mousedown", this, this.onTargetMouseDown)), this._target = value, value && (this._mouseWheelEnable && this._target.on("mousewheel", this, this.onTargetMouseWheel), this._touchScrollEnable && this._target.on("mousedown", this, this.onTargetMouseDown))
+            }), __getset(0, __proto, "hide", function() {
+                return this._hide
+            }, function(value) {
+                this._hide = value, this.visible = !value
+            }), __getset(0, __proto, "showButtons", function() {
+                return this._showButtons
+            }, function(value) {
+                this._showButtons = value, this.callLater(this.changeScrollBar)
+            }), __getset(0, __proto, "touchScrollEnable", function() {
+                return this._touchScrollEnable
+            }, function(value) {
+                this._touchScrollEnable = value, this.target = this._target
+            }), __getset(0, __proto, "mouseWheelEnable", function() {
+                return this._mouseWheelEnable
+            }, function(value) {
+                this._mouseWheelEnable = value, this.target = this._target
+            }), __getset(0, __proto, "lastOffset", function() {
+                return this._lastOffset
+            }), __getset(0, __proto, "tick", function() {
+                return this.slider.tick
+            }, function(value) {
+                this.slider.tick = value
+            }), ScrollBar
+        }(UIComponent),
+        Slider = function(_super) {
+            function Slider(skin) {
+                this.changeHandler = null, this.isVertical = !0, this.showLabel = !0, this._allowClickBack = !1, this._max = 100, this._min = 0, this._tick = 1, this._value = 0, this._skin = null, this._bg = null, this._progress = null, this._bar = null, this._tx = NaN, this._ty = NaN, this._maxMove = NaN, this._globalSacle = null, Slider.__super.call(this), this.skin = skin
+            }
+            __class(Slider, "laya.ui.Slider", _super);
+            var __proto = Slider.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._bg && this._bg.destroy(destroyChild), this._bar && this._bar.destroy(destroyChild), this._progress && this._progress.destroy(destroyChild), this._bg = null, this._bar = null, this._progress = null, this.changeHandler = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._bg = new Image), this.addChild(this._bar = new Button)
+            }, __proto.initialize = function() {
+                this._bar.on("mousedown", this, this.onBarMouseDown), this._bg.sizeGrid = this._bar.sizeGrid = "4,4,4,4,0", this._progress && (this._progress.sizeGrid = this._bar.sizeGrid), this.allowClickBack = !0
+            }, __proto.onBarMouseDown = function(e) {
+                this._globalSacle || (this._globalSacle = new Point), this._globalSacle.setTo(this.globalScaleX || .01, this.globalScaleY || .01), this._maxMove = this.isVertical ? this.height - this._bar.height : this.width - this._bar.width, this._tx = Laya.stage.mouseX, this._ty = Laya.stage.mouseY, Laya.stage.on("mousemove", this, this.mouseMove), Laya.stage.once("mouseup", this, this.mouseUp), Laya.stage.once("mouseout", this, this.mouseUp), this.showValueText()
+            }, __proto.showValueText = function() {
+                if (this.showLabel) {
+                    var label = laya.ui.Slider.label;
+                    this.addChild(label), label.textField.changeText(this._value + ""), this.isVertical ? (label.x = this._bar._x + 20, label.y = .5 * (this._bar.height - label.height) + this._bar._y) : (label.y = this._bar._y - 20, label.x = .5 * (this._bar.width - label.width) + this._bar._x)
+                }
+            }, __proto.hideValueText = function() {
+                laya.ui.Slider.label && laya.ui.Slider.label.removeSelf()
+            }, __proto.mouseUp = function(e) {
+                Laya.stage.off("mousemove", this, this.mouseMove), Laya.stage.off("mouseup", this, this.mouseUp), Laya.stage.off("mouseout", this, this.mouseUp), this.sendChangeEvent("changed"), this.hideValueText()
+            }, __proto.mouseMove = function(e) {
+                var oldValue = this._value;
+                if (this.isVertical ? (this._bar.y += (Laya.stage.mouseY - this._ty) / this._globalSacle.y, this._bar._y > this._maxMove ? this._bar.y = this._maxMove : this._bar._y < 0 && (this._bar.y = 0), this._value = this._bar._y / this._maxMove * (this._max - this._min) + this._min, this._progress && (this._progress.height = this._bar._y + .5 * this._bar.height)) : (this._bar.x += (Laya.stage.mouseX - this._tx) / this._globalSacle.x, this._bar._x > this._maxMove ? this._bar.x = this._maxMove : this._bar._x < 0 && (this._bar.x = 0), this._value = this._bar._x / this._maxMove * (this._max - this._min) + this._min, this._progress && (this._progress.width = this._bar._x + .5 * this._bar.width)), this._tx = Laya.stage.mouseX, this._ty = Laya.stage.mouseY, 0 != this._tick) {
+                    var pow = Math.pow(10, (this._tick + "").length - 1);
+                    this._value = Math.round(Math.round(this._value / this._tick) * this._tick * pow) / pow
+                }
+                this._value != oldValue && this.sendChangeEvent(), this.showValueText()
+            }, __proto.sendChangeEvent = function(type) {
+                void 0 === type && (type = "change"), this.event(type), this.changeHandler && this.changeHandler.runWith(this._value)
+            }, __proto._skinLoaded = function() {
+                this._bg.skin = this._skin, this._bar.skin = this._skin.replace(".png", "$bar.png");
+                var progressSkin = this._skin.replace(".png", "$progress.png");
+                Loader.getRes(progressSkin) && (this._progress || (this.addChild(this._progress = new Image), this._progress.sizeGrid = this._bar.sizeGrid, this.setChildIndex(this._progress, 1)), this._progress.skin = progressSkin), this.setBarPoint(), this.callLater(this.changeValue), this._sizeChanged(), this.event("loaded")
+            }, __proto.setBarPoint = function() {
+                this.isVertical ? this._bar.x = Math.round(.5 * (this._bg.width - this._bar.width)) : this._bar.y = Math.round(.5 * (this._bg.height - this._bar.height))
+            }, __proto.measureWidth = function() {
+                return Math.max(this._bg.width, this._bar.width)
+            }, __proto.measureHeight = function() {
+                return Math.max(this._bg.height, this._bar.height)
+            }, __proto._sizeChanged = function() {
+                _super.prototype._sizeChanged.call(this), this.isVertical ? this._bg.height = this.height : this._bg.width = this.width, this.setBarPoint(), this.changeValue()
+            }, __proto.setSlider = function(min, max, value) {
+                this._value = -1, this._min = min, this._max = max > min ? max : min, this.value = value < min ? min : value > max ? max : value
+            }, __proto.changeValue = function() {
+                if (0 != this.tick) {
+                    var pow = Math.pow(10, (this._tick + "").length - 1);
+                    this._value = Math.round(Math.round(this._value / this._tick) * this._tick * pow) / pow
+                }
+                this._value = this._value > this._max ? this._max : this._value < this._min ? this._min : this._value;
+                var num = this._max - this._min;
+                0 === num && (num = 1), this.isVertical ? (this._bar.y = (this._value - this._min) / num * (this.height - this._bar.height), this._progress && (this._progress.height = this._bar._y + .5 * this._bar.height)) : (this._bar.x = (this._value - this._min) / num * (this.width - this._bar.width), this._progress && (this._progress.width = this._bar._x + .5 * this._bar.width))
+            }, __proto.onBgMouseDown = function(e) {
+                var point = this._bg.getMousePoint();
+                this.isVertical ? this.value = point.y / (this.height - this._bar.height) * (this._max - this._min) + this._min : this.value = point.x / (this.width - this._bar.width) * (this._max - this._min) + this._min
+            }, __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value || "string" == typeof value ? this.value = Number(value) : Laya.superSet(UIComponent, this, "dataSource", value)
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                this._skin != value && (this._skin = value, this._skin && !Loader.getRes(this._skin) ? Laya.loader.load([this._skin, this._skin.replace(".png", "$bar.png")], Handler.create(this, this._skinLoaded)) : this._skinLoaded())
+            }), __getset(0, __proto, "tick", function() {
+                return this._tick
+            }, function(value) {
+                this._tick != value && (this._tick = value, this.callLater(this.changeValue))
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._bg.sizeGrid
+            }, function(value) {
+                this._bg.sizeGrid = value, this._bar.sizeGrid = value, this._progress && (this._progress.sizeGrid = this._bar.sizeGrid)
+            }), __getset(0, __proto, "allowClickBack", function() {
+                return this._allowClickBack
+            }, function(value) {
+                this._allowClickBack != value && (this._allowClickBack = value, value ? this._bg.on("mousedown", this, this.onBgMouseDown) : this._bg.off("mousedown", this, this.onBgMouseDown))
+            }), __getset(0, __proto, "max", function() {
+                return this._max
+            }, function(value) {
+                this._max != value && (this._max = value, this.callLater(this.changeValue))
+            }), __getset(0, __proto, "min", function() {
+                return this._min
+            }, function(value) {
+                this._min != value && (this._min = value, this.callLater(this.changeValue))
+            }), __getset(0, __proto, "bar", function() {
+                return this._bar
+            }), __getset(0, __proto, "value", function() {
+                return this._value
+            }, function(num) {
+                if (this._value != num) {
+                    var oldValue = this._value;
+                    this._value = num, this.changeValue(), this._value != oldValue && this.sendChangeEvent()
+                }
+            }), __static(Slider, ["label", function() {
+                return this.label = new Label
+            }]), Slider
+        }(UIComponent),
+        MoreGame = function(_super) {
+            var GameBox, GameItem;
+
+            function MoreGame(type) {
+                this.gameStopHD = !1, this.iconImgTl = null, this._iconImage = null, this._moreBox = null, this._gameBox = null, this.screenType = 0, this._moreGameDataUrl = "https://abc.layabox.com/public/more/gamelist2.json", this._iconImageObj = null, this.clickCallBack = null, this.closeCallBack = null, this.isShow = !1, this.dinfo = null, this.ErrorUrlHttps = "https://elastic.layabox.com/", this.tongjiType = "bdm", void 0 === type && (type = 0), MoreGame.__super.call(this), this.screenType = type, this.init()
+            }
+            __class(MoreGame, "laya.ui.MoreGame", View);
+            var __proto = MoreGame.prototype;
+            return __proto.getLocalDateString = function(_timestamp) {
+                void 0 === _timestamp && (_timestamp = 0);
+                var timeStr = this.getDateByTimestamp(_timestamp).toLocaleDateString();
+                if (Browser.onLimixiu || Browser.onMiniGame) {
+                    var date = new Date;
+                    timeStr = MoreGame.toLocaleDateString(date.getTime())
+                }
+                var reg = new RegExp("/", "g");
+                return timeStr = timeStr.replace(reg, "-")
+            }, __proto.getDateByTimestamp = function(_timestamp) {
+                return void 0 === _timestamp && (_timestamp = 0), _timestamp && "" != _timestamp ? new Date(_timestamp) : new Date
+            }, __proto.reportError = function(etype, errorInfo, pro) {
+                void 0 === errorInfo && (errorInfo = ""), pro = pro || {};
+                var now = Date.now(),
+                    date = new Date(now + 0);
+                pro.date = date.toLocaleString(), pro.etype = etype, "error" != etype && "statistics" != etype && (etype = "statistics"), pro.version = "V0.0.1", pro.gameId = 10100, pro.dinfo = this.dinfo, pro.channel = -1e3, pro.msg = errorInfo, pro["@timestamp"] = date.toISOString(), pro.user = this.getUserId(), pro.openid = this.getOpenId();
+                var rdate = MoreGame.getDay(date);
+                pro.rdate = rdate, pro.day = date.getDate() + "", pro.hour = date.getHours() + "", pro.minute = date.getMinutes() + "", pro.gameurl = document.baseURI, pro.regTime = 0, "error" == etype ? this.sendLog(pro, this.tongjiType + "error-" + rdate.substring(0, 6) + "/" + etype + "/", etype) : this.sendLog(pro, this.tongjiType + "-" + rdate.substring(0, 6) + "/" + etype + "/", etype)
+            }, __proto.getUserId = function() {
+                var userid = parseInt(LocalStorage.getItem("layauserid") + "") || -1;
+                return -1 == userid && (userid = this.randRange(0, 1e9), LocalStorage.setItem("layauserid", userid + "")), userid
+            }, __proto.getOpenId = function() {
+                var openId = LocalStorage.getItem("openid");
+                if (null == openId || "" == openId) {
+                    openId = "";
+                    for (var i = 0; i < 32; i++) {
+                        var random = this.randRange(0, 62);
+                        openId += "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(random)
+                    }
+                    LocalStorage.setItem("openid", openId)
+                }
+                return openId
+            }, __proto.sendLog = function(pro, path, btype) {
+                var _$this = this,
+                    htt = new HttpRequest;
+                htt.on("error", this, function(p, bt, e) {
+                    e && -1 != e.indexOf("[404]") && (new HttpRequest).send(_$this.ErrorUrlHttps + "garbage/" + bt + "/", JSON.stringify(p), "post", "text", ["Content-Type", "application/json"])
+                }, [pro, btype]), Browser.onBDMiniGame && (pro.gameurl = ""), htt.send(this.ErrorUrlHttps + path, JSON.stringify(pro), "post", "text", ["Content-Type", "application/json"])
+            }, __proto.initEvent = function() {
+                this.on("click", this, this.onIconClick)
+            }, __proto.onStageResize = function() {
+                var scale = Math.min(Laya.stage.width / Laya.stage.designWidth, Laya.stage.height / Laya.stage.designHeight);
+                Laya.stage.width < 720 && (scale = .9), this._moreBox && this._moreBox.scale(scale, scale), this._gameBox && this._gameBox.scale(scale, scale)
+            }, __proto.tada = function(target, tTime, sacleNum, lastSacleNum) {
+                void 0 === sacleNum && (sacleNum = 1.1), void 0 === lastSacleNum && (lastSacleNum = 1);
+                var tl = new TimeLine;
+                return tl.reset(), tl.to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: 3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: -3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: 3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: -3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: 3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: -3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: 3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: -3
+                }, .1 * tTime).to(target, {
+                    scaleX: sacleNum,
+                    scaleY: sacleNum,
+                    rotation: 3
+                }, .1 * tTime).to(target, {
+                    scaleX: lastSacleNum,
+                    scaleY: lastSacleNum,
+                    rotation: 0
+                }, .1 * tTime), tl.play(0), tl
+            }, __proto.dispose = function() {
+                this.removeEvent(), this.gameStopHD = !0, MoreGame._moreGameData = null, this._iconImageObj = null, this.clickCallBack = null, this.closeCallBack = null, this.iconImgTl && (this.iconImgTl.offAll("complete"), this.iconImgTl = null), this._moreBox && (this._moreBox.removeChildren(), this._moreBox = null), this._gameBox && (this._gameBox.removeChildren(), this._gameBox = null), this._iconImage && (this._iconImage.removeSelf(), this._iconImage = null)
+            }, __proto.onSetIconType = function(type) {
+                this.gameStopHD = !type, this.visible = type
+            }, __proto.checkIconImgHD = function() {
+                this.iconImgTl ? this.iconImgTl.play(0) : this.iconImgTl = this.tada(this._iconImage, 1200, 1.1, .9), this.iconImgTl.on("complete", this, this.onTlComplete)
+            }, __proto.onTlComplete = function() {
+                if (this.parent) {
+                    if (this._iconImage.scale(.9, .9), this._iconImage.rotation = 0, this.gameStopHD && this.iconImgTl) return this.iconImgTl.offAll("complete"), void(this.iconImgTl = null);
+                    Laya.timer.once(1e3, this, this.onYanChiPlay)
+                } else this.iconImgTl && (this.iconImgTl.offAll(), this.iconImgTl = null)
+            }, __proto.onYanChiPlay = function() {
+                this.parent && this.iconImgTl ? this.iconImgTl.play(0) : this.iconImgTl && (this.iconImgTl.offAll("complete"), this.iconImgTl = null)
+            }, __proto.removeEvent = function() {
+                this.off("click", this, this.onIconClick)
+            }, __proto.onIconClick = function() {
+                this.isShow = !0, null != this.clickCallBack && this.clickCallBack.run();
+                var localCurrentTime = LocalStorage.getItem("currentTime"),
+                    currentTime = this.getLocalDateString();
+                localCurrentTime != currentTime ? (LocalStorage.setItem("currentTime", currentTime), this.reportError(MoreGame._moreGameData.statid1)) : this.reportError(MoreGame._moreGameData.statid2), this.onResLoaded()
+            }, __proto.onResLoaded = function() {
+                if (this._moreBox) this._moreBox.visible = !0;
+                else {
+                    this._moreBox = new Box, Laya.stage.addChild(this._moreBox), this._moreBox.zOrder = 99999, this._moreBox.left = this._moreBox.right = this._moreBox.top = this._moreBox.bottom = 0;
+                    var allBgImg = this.onCreateImage(MoreGame.onGetAtlasDanImgUrl("img_white_bg"), this._moreBox);
+                    allBgImg.top = allBgImg.left = allBgImg.right = allBgImg.bottom = 0, allBgImg.sizeGrid = "1,1,1,1,1";
+                    var hlineImg = this.onCreateImage(MoreGame.onGetAtlasDanImgUrl("hengfengexian"), this._moreBox);
+                    hlineImg.left = hlineImg.right = 0, hlineImg.y = 132, hlineImg.alpha = .2;
+                    var jiantouImg = this.onCreateImage(MoreGame.onGetAtlasDanImgUrl("img_font_jingcai"), this._moreBox);
+                    jiantouImg.on("click", this, this.onJiantouImgClick), this.isQMP() && this.screenType ? jiantouImg.pos(15, 70) : jiantouImg.pos(15, 45);
+                    var gamelist = new List;
+                    this._moreBox.addChild(gamelist), gamelist.itemRender = GameBox, gamelist.selectEnable = !0, gamelist.vScrollBarSkin = "", gamelist.scrollBar.autoHide = !0, gamelist.scrollBar.elasticDistance = 250, gamelist.renderHandler = new Handler(this, this.onGameListRender);
+                    var tempGameListArr = MoreGame._moreGameData.marvellousGame.gameList,
+                        gameListArr = [];
+                    gameListArr.push(tempGameListArr[0]), gameListArr.push(tempGameListArr[1]);
+                    var getRomdomArr = this.RandomNumBoth(gameListArr.length, tempGameListArr.length - gameListArr.length, tempGameListArr.length);
+                    if (!getRomdomArr) return void(this.visible = !1);
+                    try {
+                        for (var i = 0, sz = getRomdomArr.length; i < sz; i++) {
+                            var index = getRomdomArr[i];
+                            gameListArr.push(tempGameListArr[index])
+                        }
+                        MoreGame._moreGameData.marvellousGame.gameList = [], MoreGame._moreGameData.marvellousGame.gameList = gameListArr, gamelist.array = MoreGame._moreGameData.marvellousGame.gameList
+                    } catch (error) {
+                        gamelist.array = MoreGame._moreGameData.marvellousGame.gameList
+                    }
+                    this.screenType && (gamelist.spaceY = 10, gamelist.width = 690, this.isQMP() ? gamelist.height = Laya.stage.height + 130 : gamelist.height = 1139, gamelist.y = 139, gamelist.centerX = 0), this.onStageResize()
+                }
+            }, __proto.RandomNumBoth = function(minNum, maxNum, maxcount) {
+                for (var arr = [], i = minNum; i < maxcount; i++) arr.push(i);
+                var numArr = [],
+                    arrLength = arr.length;
+                for (i = 0; i < arrLength; i++) {
+                    arr.length;
+                    var number = Math.floor(Math.random() * arr.length);
+                    if (numArr.push(arr[number]), arr.splice(number, 1), arr.length <= arrLength - maxNum) return numArr
+                }
+                return null
+            }, __proto.isQMP = function() {
+                var isBoo = !1,
+                    tempBL = 0;
+                if (tempBL = "horizontal" == Laya.stage.screenMode ? Browser.height % 9 : Browser.width % 9, Browser.onAndroid && 0 == tempBL) {
+                    var tempBL2 = 0;
+                    tempBL2 = "horizontal" == Laya.stage.screenMode ? Browser.width : Browser.height, -1 != [2280, 2160, 2244, 3120, 2248, 2340, 2310].indexOf(tempBL2) && (isBoo = !0)
+                }
+                var onIPhoneX = /iPhone/gi.test(Browser.window.navigator.userAgent) && 375 == Math.min(Browser.clientHeight, Browser.clientWidth) && 812 == Math.max(Browser.clientHeight, Browser.clientWidth),
+                    onIPhoneXR = 414 == Math.min(Browser.clientHeight, Browser.clientWidth) && 896 == Math.max(Browser.clientHeight, Browser.clientWidth);
+                return !Browser.onMiniGame && !Browser.onBDMiniGame || Browser.onAndroid || !onIPhoneX && !onIPhoneXR || (isBoo = !0), isBoo
+            }, __proto.onDrawShapes = function(yuanWidth, yuanHeight, circleNum, isTeShu) {
+                void 0 === circleNum && (circleNum = 5), void 0 === isTeShu && (isTeShu = !1);
+                var isTeShuCircleNum = circleNum;
+                isTeShu && (isTeShuCircleNum = 0);
+                var sprite = new Sprite;
+                return sprite.graphics.drawPath(0, 0, [
+                    ["moveTo", circleNum, 0],
+                    ["lineTo", 105, 0],
+                    ["arcTo", yuanWidth, 0, yuanWidth, circleNum, circleNum],
+                    ["lineTo", yuanWidth, yuanHeight],
+                    ["arcTo", yuanWidth, yuanHeight + circleNum, 105, yuanHeight + circleNum, isTeShuCircleNum],
+                    ["lineTo", circleNum, yuanHeight + circleNum],
+                    ["arcTo", 0, yuanHeight + circleNum, 0, yuanHeight, isTeShuCircleNum],
+                    ["lineTo", 0, circleNum],
+                    ["arcTo", 0, 0, circleNum, 0, circleNum],
+                    ["closePath"]
+                ], {
+                    fillStyle: "#ff0000"
+                }), sprite
+            }, __proto.onCreateMaskImg = function(url, parent) {
+                var kuangImg = this.onCreateImage(MoreGame.onGetAtlasDanImgUrl("dayuan"), parent),
+                    iconImg = this.onCreateImage(url, kuangImg);
+                iconImg.pos(11, 10);
+                var sprite = new Sprite;
+                return sprite.graphics.drawCircle(71, 74, 68, "#ff0000"), iconImg.mask = sprite, kuangImg.scale(.7, .7), kuangImg
+            }, __proto.onGameListRender = function(item, index) {
+                var gameList = MoreGame._moreGameData.marvellousGame.gameList;
+                if (!(index < 0 || index > gameList.length - 1)) {
+                    var gameObj = gameList[index];
+                    item.init(gameObj, this.screenType, new Handler(this, this.onItemClickCallBack))
+                }
+            }, __proto.onItemClickCallBack = function(itemData) {
+                var _$this = this;
+                if (swan.navigateToMiniProgram) {
+                    var appKey = itemData.appKey,
+                        path = itemData.path,
+                        extendInfo = itemData.extendInfo;
+                    swan.navigateToMiniProgram({
+                        appKey: appKey,
+                        path: path,
+                        extraData: extendInfo,
+                        success: function(e) {},
+                        fail: function(e) {},
+                        complete: function(e) {
+                            _$this.reportError(itemData.statid)
+                        }.bind(this)
+                    })
+                }
+            }, __proto.onJiantouImgClick = function(type) {
+                this.isShow = !1, this._moreBox && (this._moreBox.visible = !1), null != this.closeCallBack && this.closeCallBack.run()
+            }, __proto.onCreateLabel = function(str, parent, size, color, wordwarp, align, leading) {
+                void 0 === size && (size = 24), void 0 === color && (color = "#000000"), void 0 === wordwarp && (wordwarp = !1), void 0 === align && (align = "center"), void 0 === leading && (leading = 10);
+                var label = new Label;
+                return label.text = str, label.font = "Arial", label.fontSize = size, label.color = color, label.bold = !0, label.leading = leading, label.valign = "middle", label.align = align, label.wordWrap = wordwarp, parent.addChild(label), label
+            }, __proto.onCreateImage = function(url, parent) {
+                var image = new Image;
+                return image.skin = url, parent.addChild(image), image
+            }, __proto.init = function() {
+                var onBDMiniGame = Browser.window.navigator.userAgent.indexOf("SwanGame") > -1;
+                this.visible = !1, onBDMiniGame && (this.dinfo = JSON.stringify(laya.bd.mini.BMiniAdapter.systemInfo), this.onGetAdvsListData())
+            }, __proto.randRange = function(minNum, maxNum) {
+                return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
+            }, __proto.onGetAdvsListData = function() {
+                var _this = this,
+                    random = this.randRange(1e4, 1e6),
+                    url = this._moreGameDataUrl + "?" + random;
+                MoreGame._http.open("get", url, !0), MoreGame._http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), MoreGame._http.responseType = "text", MoreGame._http.onerror = function(e) {
+                    _this._onError(e)
+                }, MoreGame._http.onload = function(e) {
+                    _this._onLoad(e)
+                }, MoreGame._http.send(null)
+            }, __proto._onError = function(e) {
+                this.error("Request failed Status:" + MoreGame._http.status + " text:" + MoreGame._http.statusText)
+            }, __proto._onLoad = function(e) {
+                var http = MoreGame._http,
+                    status = void 0 !== http.status ? http.status : 200;
+                200 === status || 204 === status || 0 === status ? this.complete() : this.error("[" + http.status + "]" + http.statusText + ":" + http.responseURL)
+            }, __proto.error = function(message) {
+                this.event("error", message)
+            }, __proto.complete = function() {
+                try {
+                    var tempData = MoreGame._http.response || MoreGame._http.responseText;
+                    MoreGame._moreGameData = JSON.parse(tempData), this.initUI()
+                } catch (e) {
+                    !1, this.error(e.message)
+                }
+            }, __proto.initUI = function() {
+                MoreGame._moreGameData.isOpen && this.screenType ? (this._iconImage || (this._iconImage = new Image, this.addChild(this._iconImage)), this._iconImage.skin = MoreGame.onGetImgSkinUrl(MoreGame._moreGameData.icon), this._iconImageObj && (this._iconImage.size(this._iconImageObj.width, this._iconImageObj.height), this._iconImage.pivot(this._iconImageObj.width / 2, this._iconImageObj.height / 2), this._iconImage.pos(this._iconImageObj.width / 2, this._iconImageObj.height / 2)), this.visible = !0, this.initEvent(), this.gameStopHD = !1, this.checkIconImgHD()) : this.visible = !1
+            }, __proto.setIconSize = function(w, h) {
+                this._iconImage && (this._iconImage.size(w, h), this._iconImage.pivot(w / 2, h / 2), this._iconImage.pos(w / 2, h / 2)), this._iconImageObj = {
+                    width: w,
+                    height: h
+                }
+            }, MoreGame.toLocaleDateString = function(dateNum) {
+                return MoreGame.getDateFormatStr(dateNum, "/")
+            }, MoreGame.getDateFormatStr = function(stamp, formatStr) {
+                void 0 === formatStr && (formatStr = "yynndd");
+                var date = new Date(stamp),
+                    yy = date.getFullYear(),
+                    nn = date.getMonth() + 1,
+                    dd = date.getDate(),
+                    hh = date.getHours(),
+                    mm = date.getMinutes(),
+                    ss = date.getSeconds();
+                switch (formatStr) {
+                    case "yynndd":
+                        return yy.toString() + "年" + nn.toString() + "月" + dd.toString() + "日";
+                    case "/":
+                        return yy.toString() + "/" + nn.toString() + "/" + dd.toString()
+                }
+                return yy.toString() + "年" + nn.toString() + "月" + dd.toString() + "日" + hh.toString() + "时" + mm.toString() + "分" + ss.toString() + "秒"
+            }, MoreGame.getDay = function(sdate) {
+                var month = sdate.getMonth() + 1,
+                    day = sdate.getDate();
+                return sdate.getFullYear() + "" + (month < 10 ? "0" + month : month) + (day < 10 ? "0" + day : day)
+            }, MoreGame.onGetAtlasDanImgUrl = function(url) {
+                return MoreGame._moreGameData.imgPath + MoreGame._moreGameData.atlas + url + ".png"
+            }, MoreGame.onGetImgSkinUrl = function(resUrl) {
+                return MoreGame._moreGameData.imgPath + resUrl
+            }, MoreGame.onGetIconImgSkinUrl = function(resUrl) {
+                return MoreGame._moreGameData.iconPath + resUrl
+            }, MoreGame._moreGameData = null, __static(MoreGame, ["_http", function() {
+                return this._http = new Browser.window.XMLHttpRequest
+            }]), MoreGame.__init$ = function() {
+                GameBox = function(_super) {
+                    function GameBox() {
+                        this.titleLabel = null, this.gameListBox = null, GameBox.__super.call(this)
+                    }
+                    __class(GameBox, "", Box);
+                    var __proto = GameBox.prototype;
+                    return __proto.init = function(data, screenType, callBack) {
+                        if (this.titleLabel ? this.titleLabel.text = data.title : (this.titleLabel = this.onCreateLabel(data.title, this, 32, "#3d3939"), this.titleLabel.pos(8, 0), this.titleLabel.size(162, 50)), this.gameListBox)
+                            for (i = 0, sz = this.gameListBox._children.length; i < sz; i++)(gameitem = this.gameListBox._children[i]).init(data.gameList[i], screenType, callBack);
+                        else {
+                            this.gameListBox = new Box, this.addChild(this.gameListBox);
+                            for (var i = 0, sz = data.gameList.length; i < sz; i++) {
+                                var gameitem = new GameItem;
+                                gameitem.init(data.gameList[i], screenType, callBack), gameitem.x = 0 + 175 * i, gameitem.y = 65, this.gameListBox.addChild(gameitem)
+                            }
+                        }
+                        this.size(695, 340)
+                    }, __proto.onCreateLabel = function(str, parent, size, color, bold) {
+                        void 0 === size && (size = 26), void 0 === color && (color = "#000000"), void 0 === bold && (bold = !0);
+                        var label = new Label;
+                        return label.text = str, label.font = "Arial", label.fontSize = size, label.color = color, label.bold = bold, label.leading = 10, label.valign = "middle", label.align = "center", label.overflow = "hidden", parent.addChild(label), label
+                    }, GameBox
+                }(), GameItem = function(_super) {
+                    function GameItem() {
+                        this.kuangImg = null, this.iconNameLabel = null, this.iconImg = null, this.playImg = null, this.itemData = null, this.callBackHandler = null, GameItem.__super.call(this)
+                    }
+                    __class(GameItem, "", Box);
+                    var __proto = GameItem.prototype;
+                    return __proto.MoveGameItem = function() {}, __proto.initEvent = function() {
+                        this.on("click", this, this.onItemClick)
+                    }, __proto.onItemClick = function() {
+                        null != this.callBackHandler && this.callBackHandler.runWith([this.itemData])
+                    }, __proto.init = function(data, screenType, callBack) {
+                        if (this.itemData = data, this.callBackHandler = callBack, this.kuangImg ? this.kuangImg.skin = MoreGame.onGetAtlasDanImgUrl("dayuan") : this.kuangImg = this.onCreateImage(MoreGame.onGetAtlasDanImgUrl("dayuan"), this), this.iconImg) this.iconImg.skin = MoreGame.onGetIconImgSkinUrl(data.icon);
+                        else {
+                            this.iconImg = this.onCreateImage(MoreGame.onGetIconImgSkinUrl(data.icon), this);
+                            var sprite = new Sprite;
+                            sprite.graphics.drawCircle(71, 74, 68, "#ff0000"), this.iconImg.mask = sprite, this.iconImg.pos(13, 10)
+                        }
+                        this.iconNameLabel ? this.iconNameLabel.text = data.name : (this.iconNameLabel = this.onCreateLabel(data.name, this, 28, "#3d3939"), this.iconNameLabel.pos(7, 165)), this.playImg ? this.playImg.skin = MoreGame.onGetAtlasDanImgUrl("img_play") : (this.playImg = this.onCreateImage(MoreGame.onGetAtlasDanImgUrl("img_play"), this), this.playImg.pos(12, 210)), this.size(165, 270), this.initEvent()
+                    }, __proto.onCreateLabel = function(str, parent, size, color, bold) {
+                        void 0 === size && (size = 24), void 0 === color && (color = "#000000"), void 0 === bold && (bold = !1);
+                        var label = new Label;
+                        return label.text = str, label.font = "Arial", label.fontSize = size, label.color = color, label.bold = bold, label.leading = 10, label.valign = "middle", label.align = "center", label.size(152, 44), label.overflow = "hidden", parent.addChild(label), label
+                    }, __proto.onCreateImage = function(url, parent) {
+                        var image = new Image;
+                        return image.skin = url, parent.addChild(image), image
+                    }, GameItem
+                }()
+            }, MoreGame
+        }(),
+        Dialog = function(_super) {
+            function Dialog() {
+                this.closeHandler = null, this.popupEffect = null, this.closeEffect = null, this.group = null, this.isModal = !1, this.isShowEffect = !0, this.isPopupCenter = !0, this.closeType = null, this._dragArea = null, this._param = null, this._effectTween = null, Dialog.__super.call(this), this.popupEffect = Dialog.manager.popupEffectHandler, this.closeEffect = Dialog.manager.closeEffectHandler, this._dealDragArea(), this.on("click", this, this._onClick)
+            }
+            __class(Dialog, "laya.ui.Dialog", _super);
+            var __proto = Dialog.prototype;
+            return __proto._dealDragArea = function() {
+                var dragTarget = this.getChildByName("drag");
+                dragTarget && (this.dragArea = dragTarget._x + "," + dragTarget._y + "," + dragTarget.width + "," + dragTarget.height, dragTarget.removeSelf())
+            }, __proto._onMouseDown = function(e) {
+                var point = this.getMousePoint();
+                this._dragArea.contains(point.x, point.y) ? this.startDrag() : this.stopDrag()
+            }, __proto._onClick = function(e) {
+                var btn = e.target;
+                if (btn) switch (btn.name) {
+                    case "close":
+                    case "cancel":
+                    case "sure":
+                    case "no":
+                    case "ok":
+                    case "yes":
+                        return void this.close(btn.name)
+                }
+            }, __proto.open = function(closeOther, param) {
+                void 0 === closeOther && (closeOther = !0), this._dealDragArea(), this._param = param, Dialog.manager.open(this, closeOther, this.isShowEffect), Dialog.manager.lock(!1)
+            }, __proto.close = function(type) {
+                this.closeType = type, Dialog.manager.close(this)
+            }, __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), this.closeHandler = null, this.popupEffect = null, this.closeEffect = null, this._dragArea = null, _super.prototype.destroy.call(this, destroyChild)
+            }, __proto.show = function(closeOther, showEffect) {
+                void 0 === closeOther && (closeOther = !1), void 0 === showEffect && (showEffect = !0), this._open(!1, closeOther, showEffect)
+            }, __proto.popup = function(closeOther, showEffect) {
+                void 0 === closeOther && (closeOther = !1), void 0 === showEffect && (showEffect = !0), this._open(!0, closeOther, showEffect)
+            }, __proto._open = function(modal, closeOther, showEffect) {
+                this.isModal = modal, this.isShowEffect = showEffect, Dialog.manager.lock(!0), this.open(closeOther)
+            }, __getset(0, __proto, "dragArea", function() {
+                return this._dragArea ? this._dragArea.toString() : null
+            }, function(value) {
+                if (value) {
+                    var a = UIUtils.fillArray([0, 0, 0, 0], value, Number);
+                    this._dragArea = new Rectangle(a[0], a[1], a[2], a[3]), this.on("mousedown", this, this._onMouseDown)
+                } else this._dragArea = null, this.off("mousedown", this, this._onMouseDown)
+            }), __getset(0, __proto, "isPopup", function() {
+                return null != this.parent
+            }), __getset(0, __proto, "zOrder", _super.prototype._$get_zOrder, function(value) {
+                Laya.superSet(View, this, "zOrder", value), Dialog.manager._checkMask()
+            }), __getset(1, Dialog, "manager", function() {
+                return Dialog._manager = Dialog._manager || new DialogManager
+            }, function(value) {
+                Dialog._manager = value
+            }), Dialog.setLockView = function(view) {
+                Dialog.manager.setLockView(view)
+            }, Dialog.lock = function(value) {
+                Dialog.manager.lock(value)
+            }, Dialog.closeAll = function() {
+                Dialog.manager.closeAll()
+            }, Dialog.getDialogsByGroup = function(group) {
+                return Dialog.manager.getDialogsByGroup(group)
+            }, Dialog.closeByGroup = function(group) {
+                return Dialog.manager.closeByGroup(group)
+            }, Dialog.CLOSE = "close", Dialog.CANCEL = "cancel", Dialog.SURE = "sure", Dialog.NO = "no", Dialog.YES = "yes", Dialog.OK = "ok", Dialog._manager = null, Dialog
+        }(View),
+        ViewStack = function(_super) {
+            function ViewStack() {
+                this._items = null, this._selectedIndex = 0, ViewStack.__super.call(this), this._setIndexHandler = Handler.create(this, this.setIndex, null, !1)
+            }
+            __class(ViewStack, "laya.ui.ViewStack", _super);
+            var __proto = ViewStack.prototype;
+            return Laya.imps(__proto, {
+                "laya.ui.IItem": !0
+            }), __proto.setItems = function(views) {
+                this.removeChildren();
+                for (var index = 0, i = 0, n = views.length; i < n; i++) {
+                    var item = views[i];
+                    item && (item.name = "item" + index, this.addChild(item), index++)
+                }
+                this.initItems()
+            }, __proto.addItem = function(view) {
+                view.name = "item" + this._items.length, this.addChild(view), this.initItems()
+            }, __proto._afterInited = function() {
+                this.initItems()
+            }, __proto.initItems = function() {
+                this._items = [];
+                for (var i = 0; i < 1e4; i++) {
+                    var item = this.getChildByName("item" + i);
+                    if (null == item) break;
+                    this._items.push(item), item.visible = i == this._selectedIndex
+                }
+            }, __proto.setSelect = function(index, selected) {
+                this._items && index > -1 && index < this._items.length && (this._items[index].visible = selected)
+            }, __proto.setIndex = function(index) {
+                this.selectedIndex = index
+            }, __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                if (this._dataSource = value, "number" == typeof value && Math.floor(value) == value || "string" == typeof value) this.selectedIndex = parseInt(value);
+                else
+                    for (var prop in this._dataSource) this.hasOwnProperty(prop) && (this[prop] = this._dataSource[prop])
+            }), __getset(0, __proto, "selectedIndex", function() {
+                return this._selectedIndex
+            }, function(value) {
+                this._selectedIndex != value && (this.setSelect(this._selectedIndex, !1), this._selectedIndex = value, this.setSelect(this._selectedIndex, !0))
+            }), __getset(0, __proto, "selection", function() {
+                return this._selectedIndex > -1 && this._selectedIndex < this._items.length ? this._items[this._selectedIndex] : null
+            }, function(value) {
+                this.selectedIndex = this._items.indexOf(value)
+            }), __getset(0, __proto, "items", function() {
+                return this._items
+            }), __getset(0, __proto, "setIndexHandler", function() {
+                return this._setIndexHandler
+            }, function(value) {
+                this._setIndexHandler = value
+            }), ViewStack
+        }(Box),
+        LayoutBox = function(_super) {
+            function LayoutBox() {
+                this._space = 0, this._align = "none", this._itemChanged = !1, LayoutBox.__super.call(this)
+            }
+            __class(LayoutBox, "laya.ui.LayoutBox", Box);
+            var __proto = LayoutBox.prototype;
+            return __proto.addChild = function(child) {
+                return child.on("resize", this, this.onResize), this._setItemChanged(), laya.display.Node.prototype.addChild.call(this, child)
+            }, __proto.onResize = function(e) {
+                this._setItemChanged()
+            }, __proto.addChildAt = function(child, index) {
+                return child.on("resize", this, this.onResize), this._setItemChanged(), laya.display.Node.prototype.addChildAt.call(this, child, index)
+            }, __proto.removeChildAt = function(index) {
+                return this.getChildAt(index).off("resize", this, this.onResize), this._setItemChanged(), laya.display.Node.prototype.removeChildAt.call(this, index)
+            }, __proto.refresh = function() {
+                this._setItemChanged()
+            }, __proto.changeItems = function() {
+                this._itemChanged = !1
+            }, __proto.sortItem = function(items) {
+                items && items.sort(function(a, b) {
+                    return a.y - b.y
+                })
+            }, __proto._setItemChanged = function() {
+                this._itemChanged || (this._itemChanged = !0, this.callLater(this.changeItems))
+            }, __getset(0, __proto, "space", function() {
+                return this._space
+            }, function(value) {
+                this._space = value, this._setItemChanged()
+            }), __getset(0, __proto, "align", function() {
+                return this._align
+            }, function(value) {
+                this._align = value, this._setItemChanged()
+            }), LayoutBox
+        }(),
+        UIGroup = function(_super) {
+            function UIGroup(labels, skin) {
+                this.selectHandler = null, this._items = null, this._selectedIndex = -1, this._skin = null, this._direction = "horizontal", this._space = 0, this._labels = null, this._labelColors = null, this._labelFont = null, this._labelStrokeColor = null, this._strokeColors = null, this._labelStroke = NaN, this._labelSize = 0, this._labelBold = !1, this._labelPadding = null, this._labelAlign = null, this._stateNum = 0, this._labelChanged = !1, UIGroup.__super.call(this), this.skin = skin, this.labels = labels
+            }
+            __class(UIGroup, "laya.ui.UIGroup", _super);
+            var __proto = UIGroup.prototype;
+            return Laya.imps(__proto, {
+                "laya.ui.IItem": !0
+            }), __proto.preinitialize = function() {
+                this.mouseEnabled = !0
+            }, __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), laya.ui.UIComponent.prototype.destroy.call(this, destroyChild), this._items && (this._items.length = 0), this._items = null, this.selectHandler = null
+            }, __proto.addItem = function(item, autoLayOut) {
+                void 0 === autoLayOut && (autoLayOut = !0);
+                var display = item,
+                    index = this._items.length;
+                if (display.name = "item" + index, this.addChild(display), this.initItems(), autoLayOut && index > 0) {
+                    var preItem = this._items[index - 1];
+                    "horizontal" == this._direction ? display.x = preItem._x + preItem.width + this._space : display.y = preItem._y + preItem.height + this._space
+                } else autoLayOut && (display.x = 0, display.y = 0);
+                return index
+            }, __proto.delItem = function(item, autoLayOut) {
+                void 0 === autoLayOut && (autoLayOut = !0);
+                var index = this._items.indexOf(item);
+                if (-1 != index) {
+                    var display = item;
+                    this.removeChild(display);
+                    for (var i = index + 1, n = this._items.length; i < n; i++) {
+                        var child = this._items[i];
+                        child.name = "item" + (i - 1), autoLayOut && ("horizontal" == this._direction ? child.x -= display.width + this._space : child.y -= display.height + this._space)
+                    }
+                    if (this.initItems(), this._selectedIndex > -1) {
+                        var newIndex;
+                        newIndex = this._selectedIndex < this._items.length ? this._selectedIndex : this._selectedIndex - 1, this._selectedIndex = -1, this.selectedIndex = newIndex
+                    }
+                }
+            }, __proto._afterInited = function() {
+                this.initItems()
+            }, __proto.initItems = function() {
+                this._items || (this._items = []), this._items.length = 0;
+                for (var i = 0; i < 1e4; i++) {
+                    var item = this.getChildByName("item" + i);
+                    if (null == item) break;
+                    this._items.push(item), item.selected = i === this._selectedIndex, item.clickHandler = Handler.create(this, this.itemClick, [i], !1)
+                }
+            }, __proto.itemClick = function(index) {
+                this.selectedIndex = index
+            }, __proto.setSelect = function(index, selected) {
+                this._items && index > -1 && index < this._items.length && (this._items[index].selected = selected)
+            }, __proto._skinLoaded = function() {
+                this._setLabelChanged(), this.event("loaded")
+            }, __proto.createItem = function(skin, label) {
+                return null
+            }, __proto.changeLabels = function() {
+                if (this._labelChanged = !1, this._items)
+                    for (var left = 0, i = 0, n = this._items.length; i < n; i++) {
+                        var btn = this._items[i];
+                        this._skin && (btn.skin = this._skin), this._labelColors && (btn.labelColors = this._labelColors), this._labelSize && (btn.labelSize = this._labelSize), this._labelStroke && (btn.labelStroke = this._labelStroke), this._labelStrokeColor && (btn.labelStrokeColor = this._labelStrokeColor), this._strokeColors && (btn.strokeColors = this._strokeColors), this._labelBold && (btn.labelBold = this._labelBold), this._labelPadding && (btn.labelPadding = this._labelPadding), this._labelAlign && (btn.labelAlign = this._labelAlign), this._stateNum && (btn.stateNum = this._stateNum), this._labelFont && (btn.labelFont = this._labelFont), "horizontal" === this._direction ? (btn.y = 0, btn.x = left, left += btn.width + this._space) : (btn.x = 0, btn.y = left, left += btn.height + this._space)
+                    }
+                this._sizeChanged()
+            }, __proto.commitMeasure = function() {
+                this.runCallLater(this.changeLabels)
+            }, __proto._setLabelChanged = function() {
+                this._labelChanged || (this._labelChanged = !0, this.callLater(this.changeLabels))
+            }, __getset(0, __proto, "labelStrokeColor", function() {
+                return this._labelStrokeColor
+            }, function(value) {
+                this._labelStrokeColor != value && (this._labelStrokeColor = value, this._setLabelChanged())
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                this._skin != value && (this._skin = value, this._skin && !Loader.getRes(this._skin) ? Laya.loader.load(this._skin, Handler.create(this, this._skinLoaded), null, "image", 1) : this._skinLoaded())
+            }), __getset(0, __proto, "selectedIndex", function() {
+                return this._selectedIndex
+            }, function(value) {
+                this._selectedIndex != value && (this.setSelect(this._selectedIndex, !1), this._selectedIndex = value, this.setSelect(value, !0), this.event("change"), this.selectHandler && this.selectHandler.runWith(this._selectedIndex))
+            }), __getset(0, __proto, "labels", function() {
+                return this._labels
+            }, function(value) {
+                if (this._labels != value) {
+                    if (this._labels = value, this.removeChildren(), this._setLabelChanged(), this._labels)
+                        for (var a = this._labels.split(","), i = 0, n = a.length; i < n; i++) {
+                            var item = this.createItem(this._skin, a[i]);
+                            item.name = "item" + i, this.addChild(item)
+                        }
+                    this.initItems()
+                }
+            }), __getset(0, __proto, "strokeColors", function() {
+                return this._strokeColors
+            }, function(value) {
+                this._strokeColors != value && (this._strokeColors = value, this._setLabelChanged())
+            }), __getset(0, __proto, "labelColors", function() {
+                return this._labelColors
+            }, function(value) {
+                this._labelColors != value && (this._labelColors = value, this._setLabelChanged())
+            }), __getset(0, __proto, "labelStroke", function() {
+                return this._labelStroke
+            }, function(value) {
+                this._labelStroke != value && (this._labelStroke = value, this._setLabelChanged())
+            }), __getset(0, __proto, "labelSize", function() {
+                return this._labelSize
+            }, function(value) {
+                this._labelSize != value && (this._labelSize = value, this._setLabelChanged())
+            }), __getset(0, __proto, "stateNum", function() {
+                return this._stateNum
+            }, function(value) {
+                this._stateNum != value && (this._stateNum = value, this._setLabelChanged())
+            }), __getset(0, __proto, "labelBold", function() {
+                return this._labelBold
+            }, function(value) {
+                this._labelBold != value && (this._labelBold = value, this._setLabelChanged())
+            }), __getset(0, __proto, "labelFont", function() {
+                return this._labelFont
+            }, function(value) {
+                this._labelFont != value && (this._labelFont = value, this._setLabelChanged())
+            }), __getset(0, __proto, "labelPadding", function() {
+                return this._labelPadding
+            }, function(value) {
+                this._labelPadding != value && (this._labelPadding = value, this._setLabelChanged())
+            }), __getset(0, __proto, "direction", function() {
+                return this._direction
+            }, function(value) {
+                this._direction = value, this._setLabelChanged()
+            }), __getset(0, __proto, "space", function() {
+                return this._space
+            }, function(value) {
+                this._space = value, this._setLabelChanged()
+            }), __getset(0, __proto, "items", function() {
+                return this._items
+            }), __getset(0, __proto, "selection", function() {
+                return this._selectedIndex > -1 && this._selectedIndex < this._items.length ? this._items[this._selectedIndex] : null
+            }, function(value) {
+                this.selectedIndex = this._items.indexOf(value)
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value && Math.floor(value) == value || "string" == typeof value ? this.selectedIndex = parseInt(value) : value instanceof Array ? this.labels = value.join(",") : Laya.superSet(Box, this, "dataSource", value)
+            }), UIGroup
+        }(Box),
+        CheckBox = function(_super) {
+            function CheckBox(skin, label) {
+                void 0 === label && (label = ""), CheckBox.__super.call(this, skin, label)
+            }
+            __class(CheckBox, "laya.ui.CheckBox", _super);
+            var __proto = CheckBox.prototype;
+            return __proto.preinitialize = function() {
+                laya.ui.UIComponent.prototype.preinitialize.call(this), this.toggle = !0, this._autoSize = !1
+            }, __proto.initialize = function() {
+                _super.prototype.initialize.call(this), this.createText(), this._text.align = "left", this._text.valign = "top", this._text.width = 0
+            }, __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "boolean" == typeof value ? this.selected = value : "string" == typeof value ? this.selected = "true" === value : Laya.superSet(Button, this, "dataSource", value)
+            }), CheckBox
+        }(Button),
+        Tree = function(_super) {
+            function Tree() {
+                this._list = null, this._source = null, this._renderHandler = null, this._spaceLeft = 10, this._spaceBottom = 0, this._keepStatus = !0, Tree.__super.call(this), this.width = this.height = 200
+            }
+            __class(Tree, "laya.ui.Tree", _super);
+            var __proto = Tree.prototype;
+            return Laya.imps(__proto, {
+                "laya.ui.IRender": !0
+            }), __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), laya.ui.UIComponent.prototype.destroy.call(this, destroyChild), this._list && this._list.destroy(destroyChild), this._list = null, this._source = null, this._renderHandler = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._list = new List), this._list.renderHandler = Handler.create(this, this.renderItem, null, !1), this._list.repeatX = 1, this._list.on("change", this, this.onListChange)
+            }, __proto.onListChange = function(e) {
+                this.event("change")
+            }, __proto.getArray = function() {
+                var item, arr = [];
+                for (var $each_item in this._source) item = this._source[$each_item], this.getParentOpenStatus(item) && (item.x = this._spaceLeft * this.getDepth(item), arr.push(item));
+                return arr
+            }, __proto.getDepth = function(item, num) {
+                return void 0 === num && (num = 0), null == item.nodeParent ? num : this.getDepth(item.nodeParent, num + 1)
+            }, __proto.getParentOpenStatus = function(item) {
+                var parent = item.nodeParent;
+                return null == parent || !!parent.isOpen && (null == parent.nodeParent || this.getParentOpenStatus(parent))
+            }, __proto.renderItem = function(cell, index) {
+                var item = cell.dataSource;
+                if (item) {
+                    cell.left = item.x;
+                    var arrow = cell.getChildByName("arrow");
+                    arrow && (item.hasChild ? (arrow.visible = !0, arrow.index = item.isOpen ? 1 : 0, arrow.tag = index, arrow.off("click", this, this.onArrowClick), arrow.on("click", this, this.onArrowClick)) : arrow.visible = !1);
+                    var folder = cell.getChildByName("folder");
+                    folder && (2 == folder.clipY ? folder.index = item.isDirectory ? 0 : 1 : folder.index = item.isDirectory ? item.isOpen ? 1 : 0 : 2), this._renderHandler && this._renderHandler.runWith([cell, index])
+                }
+            }, __proto.onArrowClick = function(e) {
+                var index = e.currentTarget.tag;
+                this._list.array[index].isOpen = !this._list.array[index].isOpen, this.event("open"), this._list.array = this.getArray()
+            }, __proto.setItemState = function(index, isOpen) {
+                this._list.array[index] && (this._list.array[index].isOpen = isOpen, this._list.array = this.getArray())
+            }, __proto.fresh = function() {
+                this._list.array = this.getArray(), this.repaint()
+            }, __proto.parseXml = function(xml, source, nodeParent, isRoot) {
+                var obj, list = xml.childNodes,
+                    childCount = list.length;
+                if (!isRoot) {
+                    obj = {};
+                    var attrs, list2 = xml.attributes;
+                    for (var $each_attrs in list2) {
+                        var prop = (attrs = list2[$each_attrs]).nodeName,
+                            value = attrs.nodeValue;
+                        obj[prop] = "true" == value || "false" != value && value
+                    }
+                    obj.nodeParent = nodeParent, childCount > 0 && (obj.isDirectory = !0), obj.hasChild = childCount > 0, source.push(obj)
+                }
+                for (var i = 0; i < childCount; i++) {
+                    var node = list[i];
+                    this.parseXml(node, source, obj, !1)
+                }
+            }, __proto.parseOpenStatus = function(oldSource, newSource) {
+                for (var i = 0, n = newSource.length; i < n; i++) {
+                    var newItem = newSource[i];
+                    if (newItem.isDirectory)
+                        for (var j = 0, m = oldSource.length; j < m; j++) {
+                            var oldItem = oldSource[j];
+                            if (oldItem.isDirectory && this.isSameParent(oldItem, newItem) && newItem.label == oldItem.label) {
+                                newItem.isOpen = oldItem.isOpen;
+                                break
+                            }
+                        }
+                }
+            }, __proto.isSameParent = function(item1, item2) {
+                return null == item1.nodeParent && null == item2.nodeParent || null != item1.nodeParent && null != item2.nodeParent && (item1.nodeParent.label == item2.nodeParent.label && this.isSameParent(item1.nodeParent, item2.nodeParent))
+            }, __proto.filter = function(key) {
+                if (Boolean(key)) {
+                    var result = [];
+                    this.getFilterSource(this._source, result, key), this._list.array = result
+                } else this._list.array = this.getArray()
+            }, __proto.getFilterSource = function(array, result, key) {
+                var item;
+                for (var $each_item in key = key.toLocaleLowerCase(), array) !(item = array[$each_item]).isDirectory && String(item.label).toLowerCase().indexOf(key) > -1 && (item.x = 0, result.push(item)), item.child && item.child.length > 0 && this.getFilterSource(item.child, result, key)
+            }, __getset(0, __proto, "spaceBottom", function() {
+                return this._list.spaceY
+            }, function(value) {
+                this._list.spaceY = value
+            }), __getset(0, __proto, "keepStatus", function() {
+                return this._keepStatus
+            }, function(value) {
+                this._keepStatus = value
+            }), __getset(0, __proto, "itemRender", function() {
+                return this._list.itemRender
+            }, function(value) {
+                this._list.itemRender = value
+            }), __getset(0, __proto, "array", function() {
+                return this._list.array
+            }, function(value) {
+                this._keepStatus && this._list.array && value && this.parseOpenStatus(this._list.array, value), this._source = value, this._list.array = this.getArray()
+            }), __getset(0, __proto, "mouseHandler", function() {
+                return this._list.mouseHandler
+            }, function(value) {
+                this._list.mouseHandler = value
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, Laya.superSet(Box, this, "dataSource", value)
+            }), __getset(0, __proto, "source", function() {
+                return this._source
+            }), __getset(0, __proto, "scrollBar", function() {
+                return this._list.scrollBar
+            }), __getset(0, __proto, "list", function() {
+                return this._list
+            }), __getset(0, __proto, "scrollBarSkin", function() {
+                return this._list.vScrollBarSkin
+            }, function(value) {
+                this._list.vScrollBarSkin = value
+            }), __getset(0, __proto, "renderHandler", function() {
+                return this._renderHandler
+            }, function(value) {
+                this._renderHandler = value
+            }), __getset(0, __proto, "selectedIndex", function() {
+                return this._list.selectedIndex
+            }, function(value) {
+                this._list.selectedIndex = value
+            }), __getset(0, __proto, "spaceLeft", function() {
+                return this._spaceLeft
+            }, function(value) {
+                this._spaceLeft = value
+            }), __getset(0, __proto, "selectedItem", function() {
+                return this._list.selectedItem
+            }, function(value) {
+                this._list.selectedItem = value
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(Box, this, "width", value), this._list.width = value
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(Box, this, "height", value), this._list.height = value
+            }), __getset(0, __proto, "xml", null, function(value) {
+                var arr = [];
+                this.parseXml(value.childNodes[0], arr, null, !0), this.array = arr
+            }), __getset(0, __proto, "selectedPath", function() {
+                return this._list.selectedItem ? this._list.selectedItem.path : null
+            }), Tree
+        }(Box),
+        Panel = function(_super) {
+            function Panel() {
+                this._content = null, this._vScrollBar = null, this._hScrollBar = null, this._scrollChanged = !1, this._usedCache = null, this._elasticEnabled = !1, Panel.__super.call(this), this.width = this.height = 100
+            }
+            __class(Panel, "laya.ui.Panel", _super);
+            var __proto = Panel.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), laya.ui.UIComponent.prototype.destroy.call(this, destroyChild), this._content && this._content.destroy(destroyChild), this._vScrollBar && this._vScrollBar.destroy(destroyChild), this._hScrollBar && this._hScrollBar.destroy(destroyChild), this._vScrollBar = null, this._hScrollBar = null, this._content = null
+            }, __proto.destroyChildren = function() {
+                this._content.destroyChildren()
+            }, __proto.createChildren = function() {
+                laya.display.Node.prototype.addChild.call(this, this._content = new Box)
+            }, __proto.addChild = function(child) {
+                return child.on("resize", this, this.onResize), this._setScrollChanged(), this._content.addChild(child)
+            }, __proto.onResize = function() {
+                this._setScrollChanged()
+            }, __proto.addChildAt = function(child, index) {
+                return child.on("resize", this, this.onResize), this._setScrollChanged(), this._content.addChildAt(child, index)
+            }, __proto.removeChild = function(child) {
+                return child.off("resize", this, this.onResize), this._setScrollChanged(), this._content.removeChild(child)
+            }, __proto.removeChildAt = function(index) {
+                return this.getChildAt(index).off("resize", this, this.onResize), this._setScrollChanged(), this._content.removeChildAt(index)
+            }, __proto.removeChildren = function(beginIndex, endIndex) {
+                return void 0 === beginIndex && (beginIndex = 0), void 0 === endIndex && (endIndex = 2147483647), this._content.removeChildren(beginIndex, endIndex), this._setScrollChanged(), this
+            }, __proto.getChildAt = function(index) {
+                return this._content.getChildAt(index)
+            }, __proto.getChildByName = function(name) {
+                return this._content.getChildByName(name)
+            }, __proto.getChildIndex = function(child) {
+                return this._content.getChildIndex(child)
+            }, __proto.changeScroll = function() {
+                this._scrollChanged = !1;
+                var contentW = this.contentWidth || 1,
+                    contentH = this.contentHeight || 1,
+                    vscroll = this._vScrollBar,
+                    hscroll = this._hScrollBar,
+                    vShow = vscroll && contentH > this._height,
+                    hShow = hscroll && contentW > this._width,
+                    showWidth = vShow ? this._width - vscroll.width : this._width,
+                    showHeight = hShow ? this._height - hscroll.height : this._height;
+                vscroll && (vscroll.x = this._width - vscroll.width, vscroll.y = 0, vscroll.height = this._height - (hShow ? hscroll.height : 0), vscroll.scrollSize = Math.max(.033 * this._height, 1), vscroll.thumbPercent = showHeight / contentH, vscroll.setScroll(0, contentH - showHeight, vscroll.value)), hscroll && (hscroll.x = 0, hscroll.y = this._height - hscroll.height, hscroll.width = this._width - (vShow ? vscroll.width : 0), hscroll.scrollSize = Math.max(.033 * this._width, 1), hscroll.thumbPercent = showWidth / contentW, hscroll.setScroll(0, contentW - showWidth, hscroll.value))
+            }, __proto._sizeChanged = function() {
+                laya.ui.UIComponent.prototype._sizeChanged.call(this), this.setContentSize(this._width, this._height)
+            }, __proto.setContentSize = function(width, height) {
+                var content = this._content;
+                content.width = width, content.height = height, content._style.scrollRect || (content.scrollRect = Rectangle.create()), content._style.scrollRect.setTo(0, 0, width, height), content.scrollRect = content.scrollRect
+            }, __proto.onScrollBarChange = function(scrollBar) {
+                var rect = this._content._style.scrollRect;
+                if (rect) {
+                    var start = Math.round(scrollBar.value);
+                    scrollBar.isVertical ? rect.y = start : rect.x = start, this._content.scrollRect = rect
+                }
+            }, __proto.scrollTo = function(x, y) {
+                void 0 === x && (x = 0), void 0 === y && (y = 0), this.vScrollBar && (this.vScrollBar.value = y), this.hScrollBar && (this.hScrollBar.value = x)
+            }, __proto.refresh = function() {
+                this.changeScroll()
+            }, __proto.onScrollStart = function() {
+                this._usedCache || (this._usedCache = Laya.superGet(Box, this, "cacheAs")), Laya.superSet(Box, this, "cacheAs", "none"), this._hScrollBar && this._hScrollBar.once("end", this, this.onScrollEnd), this._vScrollBar && this._vScrollBar.once("end", this, this.onScrollEnd)
+            }, __proto.onScrollEnd = function() {
+                Laya.superSet(Box, this, "cacheAs", this._usedCache)
+            }, __proto._setScrollChanged = function() {
+                this._scrollChanged || (this._scrollChanged = !0, this.callLater(this.changeScroll))
+            }, __getset(0, __proto, "numChildren", function() {
+                return this._content.numChildren
+            }), __getset(0, __proto, "hScrollBarSkin", function() {
+                return this._hScrollBar ? this._hScrollBar.skin : null
+            }, function(value) {
+                null == this._hScrollBar && (laya.display.Node.prototype.addChild.call(this, this._hScrollBar = new HScrollBar), this._hScrollBar.on("change", this, this.onScrollBarChange, [this._hScrollBar]), this._hScrollBar.target = this._content, this._hScrollBar.elasticDistance = this._elasticEnabled ? 200 : 0, this._setScrollChanged()), this._hScrollBar.skin = value
+            }), __getset(0, __proto, "contentWidth", function() {
+                for (var max = 0, i = this._content.numChildren - 1; i > -1; i--) {
+                    var comp = this._content.getChildAt(i);
+                    max = Math.max(comp._x + comp.width * comp.scaleX - comp.pivotX, max)
+                }
+                return max
+            }), __getset(0, __proto, "contentHeight", function() {
+                for (var max = 0, i = this._content.numChildren - 1; i > -1; i--) {
+                    var comp = this._content.getChildAt(i);
+                    max = Math.max(comp._y + comp.height * comp.scaleY - comp.pivotY, max)
+                }
+                return max
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(Box, this, "width", value), this._setScrollChanged()
+            }), __getset(0, __proto, "hScrollBar", function() {
+                return this._hScrollBar
+            }), __getset(0, __proto, "content", function() {
+                return this._content
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(Box, this, "height", value), this._setScrollChanged()
+            }), __getset(0, __proto, "vScrollBarSkin", function() {
+                return this._vScrollBar ? this._vScrollBar.skin : null
+            }, function(value) {
+                null == this._vScrollBar && (laya.display.Node.prototype.addChild.call(this, this._vScrollBar = new VScrollBar), this._vScrollBar.on("change", this, this.onScrollBarChange, [this._vScrollBar]), this._vScrollBar.target = this._content, this._vScrollBar.elasticDistance = this._elasticEnabled ? 200 : 0, this._setScrollChanged()), this._vScrollBar.skin = value
+            }), __getset(0, __proto, "vScrollBar", function() {
+                return this._vScrollBar
+            }), __getset(0, __proto, "cacheAs", _super.prototype._$get_cacheAs, function(value) {
+                Laya.superSet(Box, this, "cacheAs", value), this._usedCache = null, "none" !== value ? (this._hScrollBar && this._hScrollBar.on("start", this, this.onScrollStart), this._vScrollBar && this._vScrollBar.on("start", this, this.onScrollStart)) : (this._hScrollBar && this._hScrollBar.off("start", this, this.onScrollStart), this._vScrollBar && this._vScrollBar.off("start", this, this.onScrollStart))
+            }), __getset(0, __proto, "elasticEnabled", function() {
+                return this._elasticEnabled
+            }, function(value) {
+                this._elasticEnabled = value, this._vScrollBar && (this._vScrollBar.elasticDistance = value ? 200 : 0), this._hScrollBar && (this._hScrollBar.elasticDistance = value ? 200 : 0)
+            }), Panel
+        }(Box),
+        List = function(_super) {
+            function List() {
+                this.selectHandler = null, this.renderHandler = null, this.mouseHandler = null, this.selectEnable = !1, this.totalPage = 0, this._$componentType = "List", this._content = null, this._scrollBar = null, this._itemRender = null, this._repeatX = 0, this._repeatY = 0, this._repeatX2 = 0, this._repeatY2 = 0, this._spaceX = 0, this._spaceY = 0, this._array = null, this._startIndex = 0, this._selectedIndex = -1, this._page = 0, this._isVertical = !0, this._cellSize = 20, this._cellOffset = 0, this._isMoved = !1, this.cacheContent = !1, this._createdLine = 0, this._cellChanged = !1, this._usedCache = null, this._elasticEnabled = !1, this._preLen = 0, List.__super.call(this), this._cells = [], this._offset = new Point
+            }
+            __class(List, "laya.ui.List", _super);
+            var __proto = List.prototype;
+            return Laya.imps(__proto, {
+                "laya.ui.IRender": !0,
+                "laya.ui.IItem": !0
+            }), __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), this._content && this._content.destroy(destroyChild), this._scrollBar && this._scrollBar.destroy(destroyChild), laya.ui.UIComponent.prototype.destroy.call(this, destroyChild), this._content = null, this._scrollBar = null, this._itemRender = null, this._cells = null, this._array = null, this.selectHandler = this.renderHandler = this.mouseHandler = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._content = new Box)
+            }, __proto.onScrollStart = function() {
+                this._usedCache || (this._usedCache = Laya.superGet(Box, this, "cacheAs")), Laya.superSet(Box, this, "cacheAs", "none"), this._scrollBar.once("end", this, this.onScrollEnd)
+            }, __proto.onScrollEnd = function() {
+                Laya.superSet(Box, this, "cacheAs", this._usedCache)
+            }, __proto._removePreScrollBar = function() {
+                var preNode = this.removeChildByName("scrollBar");
+                preNode && preNode.destroy(!0)
+            }, __proto.changeCells = function() {
+                if (this._cellChanged = !1, this._itemRender) {
+                    this.scrollBar = this.getChildByName("scrollBar");
+                    var cell = this._getOneCell(),
+                        cellWidth = cell.width + this._spaceX || 1,
+                        cellHeight = cell.height + this._spaceY || 1;
+                    this._width > 0 && (this._repeatX2 = this._isVertical ? Math.round(this._width / cellWidth) : Math.ceil(this._width / cellWidth)), this._height > 0 && (this._repeatY2 = this._isVertical ? Math.ceil(this._height / cellHeight) : Math.round(this._height / cellHeight));
+                    var listWidth = this._width ? this._width : cellWidth * this.repeatX - this._spaceX,
+                        listHeight = this._height ? this._height : cellHeight * this.repeatY - this._spaceY;
+                    this._cellSize = this._isVertical ? cellHeight : cellWidth, this._cellOffset = this._isVertical ? cellHeight * Math.max(this._repeatY2, this._repeatY) - listHeight - this._spaceY : cellWidth * Math.max(this._repeatX2, this._repeatX) - listWidth - this._spaceX, this._isVertical && this.vScrollBarSkin ? this._scrollBar.height = listHeight : !this._isVertical && this.hScrollBarSkin && (this._scrollBar.width = listWidth), this.setContentSize(listWidth, listHeight);
+                    var numX = this._isVertical ? this.repeatX : this.repeatY,
+                        numY = (this._isVertical ? this.repeatY : this.repeatX) + (this._scrollBar ? 1 : 0);
+                    this._createItems(0, numX, numY), this._createdLine = numY, this._array && (this.array = this._array, this.runCallLater(this.renderItems))
+                }
+            }, __proto._getOneCell = function() {
+                if (0 === this._cells.length) {
+                    var item = this.createItem();
+                    if (this._offset.setTo(item._x, item._y), this.cacheContent) return item;
+                    this._cells.push(item)
+                }
+                return this._cells[0]
+            }, __proto._createItems = function(startY, numX, numY) {
+                var box = this._content,
+                    cell = this._getOneCell(),
+                    cellWidth = cell.width + this._spaceX,
+                    cellHeight = cell.height + this._spaceY;
+                if (this.cacheContent) {
+                    var cacheBox = new Box;
+                    cacheBox.cacheAs = "normal", cacheBox.pos((this._isVertical ? 0 : startY) * cellWidth, (this._isVertical ? startY : 0) * cellHeight), this._content.addChild(cacheBox), box = cacheBox
+                } else {
+                    for (var arr = [], i = this._cells.length - 1; i > -1; i--) {
+                        var item = this._cells[i];
+                        item.removeSelf(), arr.push(item)
+                    }
+                    this._cells.length = 0
+                }
+                for (var k = startY; k < numY; k++)
+                    for (var l = 0; l < numX; l++)(cell = arr && arr.length ? arr.pop() : this.createItem()).x = (this._isVertical ? l : k) * cellWidth - box._x, cell.y = (this._isVertical ? k : l) * cellHeight - box._y, cell.name = "item" + (k * numX + l), box.addChild(cell), this.addCell(cell)
+            }, __proto.createItem = function() {
+                var arr = [];
+                if ("function" == typeof this._itemRender) var box = new this._itemRender;
+                else box = SceneUtils.createComp(this._itemRender, null, null, arr);
+                if (0 == arr.length && box._watchMap) {
+                    var watchMap = box._watchMap;
+                    for (var name in watchMap)
+                        for (var a = watchMap[name], i = 0; i < a.length; i++) {
+                            var watcher = a[i];
+                            arr.push(watcher.comp, watcher.prop, watcher.value)
+                        }
+                }
+                return arr.length && (box._$bindData = arr), box
+            }, __proto.addCell = function(cell) {
+                cell.on("click", this, this.onCellMouse), cell.on("rightclick", this, this.onCellMouse), cell.on("mouseover", this, this.onCellMouse), cell.on("mouseout", this, this.onCellMouse), cell.on("mousedown", this, this.onCellMouse), cell.on("mouseup", this, this.onCellMouse), this._cells.push(cell)
+            }, __proto._afterInited = function() {
+                this.initItems()
+            }, __proto.initItems = function() {
+                if (!this._itemRender && null != this.getChildByName("item0")) {
+                    this.repeatX = 1;
+                    var count = 0;
+                    count = 0;
+                    for (var i = 0; i < 1e4; i++) {
+                        var cell = this.getChildByName("item" + i);
+                        if (!cell) break;
+                        this.addCell(cell), count++
+                    }
+                    this.repeatY = count
+                }
+            }, __proto.setContentSize = function(width, height) {
+                this._content.width = width, this._content.height = height, (this._scrollBar || 0 != this._offset.x || 0 != this._offset.y) && (this._content._style.scrollRect || (this._content.scrollRect = Rectangle.create()), this._content._style.scrollRect.setTo(-this._offset.x, -this._offset.y, width, height), this._content.scrollRect = this._content.scrollRect), this.event("resize")
+            }, __proto.onCellMouse = function(e) {
+                "mousedown" === e.type && (this._isMoved = !1);
+                var cell = e.currentTarget,
+                    index = this._startIndex + this._cells.indexOf(cell);
+                index < 0 || ("click" === e.type || "rightclick" === e.type ? this.selectEnable && !this._isMoved ? this.selectedIndex = index : this.changeCellState(cell, !0, 0) : "mouseover" !== e.type && "mouseout" !== e.type || this._selectedIndex === index || this.changeCellState(cell, "mouseover" === e.type, 0), this.mouseHandler && this.mouseHandler.runWith([e, index]))
+            }, __proto.changeCellState = function(cell, visible, index) {
+                var selectBox = cell.getChildByName("selectBox");
+                selectBox && (this.selectEnable = !0, selectBox.visible = visible, selectBox.index = index)
+            }, __proto._sizeChanged = function() {
+                laya.ui.UIComponent.prototype._sizeChanged.call(this), this.setContentSize(this.width, this.height), this._scrollBar && this.callLater(this.onScrollBarChange)
+            }, __proto.onScrollBarChange = function(e) {
+                this.runCallLater(this.changeCells);
+                var scrollValue = this._scrollBar.value,
+                    lineX = this._isVertical ? this.repeatX : this.repeatY,
+                    lineY = this._isVertical ? this.repeatY : this.repeatX,
+                    scrollLine = Math.floor(scrollValue / this._cellSize);
+                if (this.cacheContent) num = lineY + 1, this._createdLine - scrollLine < num && (this._createItems(this._createdLine, lineX, this._createdLine + num), this.renderItems(this._createdLine * lineX, 0), this._createdLine += num);
+                else {
+                    var index = scrollLine * lineX,
+                        num = 0;
+                    if (index > this._startIndex) {
+                        num = index - this._startIndex;
+                        var down = !0,
+                            toIndex = this._startIndex + lineX * (lineY + 1);
+                        this._isMoved = !0
+                    } else index < this._startIndex && (num = this._startIndex - index, down = !1, toIndex = this._startIndex - 1, this._isMoved = !0);
+                    for (var i = 0; i < num; i++) {
+                        if (down) {
+                            var cell = this._cells.shift();
+                            this._cells[this._cells.length] = cell;
+                            var cellIndex = toIndex + i
+                        } else cell = this._cells.pop(), this._cells.unshift(cell), cellIndex = toIndex - i;
+                        var pos = Math.floor(cellIndex / lineX) * this._cellSize;
+                        this._isVertical ? cell.y = pos : cell.x = pos, this.renderItem(cell, cellIndex)
+                    }
+                    this._startIndex = index, this.changeSelectStatus()
+                }
+                var r = this._content._style.scrollRect;
+                this._isVertical ? (r.y = scrollValue - this._offset.y, r.x = -this._offset.x) : (r.y = -this._offset.y, r.x = scrollValue - this._offset.x), this._content.scrollRect = r
+            }, __proto.posCell = function(cell, cellIndex) {
+                if (this._scrollBar) {
+                    var lineX = this._isVertical ? this.repeatX : this.repeatY,
+                        pos = (this._isVertical ? this.repeatY : this.repeatX, Math.floor(cellIndex / lineX) * this._cellSize);
+                    this._isVertical ? cell._y = pos : cell.x = pos
+                }
+            }, __proto.changeSelectStatus = function() {
+                for (var i = 0, n = this._cells.length; i < n; i++) this.changeCellState(this._cells[i], this._selectedIndex === this._startIndex + i, 1)
+            }, __proto.renderItems = function(from, to) {
+                void 0 === from && (from = 0), void 0 === to && (to = 0);
+                for (var i = from, n = to || this._cells.length; i < n; i++) this.renderItem(this._cells[i], this._startIndex + i);
+                this.changeSelectStatus()
+            }, __proto.renderItem = function(cell, index) {
+                this._array && index >= 0 && index < this._array.length ? (cell.visible = !0, cell._$bindData ? (cell._dataSource = this._array[index], this._bindData(cell, this._array[index])) : cell.dataSource = this._array[index], this.cacheContent || this.posCell(cell, index), this.hasListener("render") && this.event("render", [cell, index]), this.renderHandler && this.renderHandler.runWith([cell, index])) : (cell.visible = !1, cell.dataSource = null)
+            }, __proto._bindData = function(cell, data) {
+                for (var arr = cell._$bindData, i = 0, n = arr.length; i < n; i++) {
+                    var ele = arr[i++],
+                        prop = arr[i++],
+                        value = arr[i],
+                        fun = UIUtils.getBindFun(value);
+                    ele[prop] = fun.call(this, data)
+                }
+            }, __proto.updateArray = function(array) {
+                this._array = array;
+                var freshStart = 0;
+                if (this._array && ((freshStart = this._preLen - this._startIndex) >= 0 && this.renderItems(freshStart), this._preLen = this._array.length), this._scrollBar) {
+                    var length = array.length,
+                        numX = this._isVertical ? this.repeatX : this.repeatY,
+                        numY = this._isVertical ? this.repeatY : this.repeatX,
+                        lineCount = Math.ceil(length / numX);
+                    lineCount >= numY && (this._scrollBar.thumbPercent = numY / lineCount, this._scrollBar.slider._max = (lineCount - numY) * this._cellSize + this._cellOffset)
+                }
+            }, __proto.refresh = function() {
+                this.array = this._array
+            }, __proto.getItem = function(index) {
+                return index > -1 && index < this._array.length ? this._array[index] : null
+            }, __proto.changeItem = function(index, source) {
+                index > -1 && index < this._array.length && (this._array[index] = source, index >= this._startIndex && index < this._startIndex + this._cells.length && this.renderItem(this.getCell(index), index))
+            }, __proto.setItem = function(index, source) {
+                this.changeItem(index, source)
+            }, __proto.addItem = function(souce) {
+                this._array.push(souce), this.array = this._array
+            }, __proto.addItemAt = function(souce, index) {
+                this._array.splice(index, 0, souce), this.array = this._array
+            }, __proto.deleteItem = function(index) {
+                this._array.splice(index, 1), this.array = this._array
+            }, __proto.getCell = function(index) {
+                return this.runCallLater(this.changeCells), index > -1 && this._cells ? this._cells[(index - this._startIndex) % this._cells.length] : null
+            }, __proto.scrollTo = function(index) {
+                if (this._scrollBar) {
+                    var numX = this._isVertical ? this.repeatX : this.repeatY;
+                    this._scrollBar.value = Math.floor(index / numX) * this._cellSize
+                } else this.startIndex = index
+            }, __proto.tweenTo = function(index, time, complete) {
+                if (void 0 === time && (time = 200), this._scrollBar) {
+                    this._scrollBar.stopScroll();
+                    var numX = this._isVertical ? this.repeatX : this.repeatY;
+                    Tween.to(this._scrollBar, {
+                        value: Math.floor(index / numX) * this._cellSize
+                    }, time, null, complete, 0, !0)
+                } else this.startIndex = index, complete && complete.run()
+            }, __proto._setCellChanged = function() {
+                this._cellChanged || (this._cellChanged = !0, this.callLater(this.changeCells))
+            }, __proto.commitMeasure = function() {
+                this.runCallLater(this.changeCells)
+            }, __getset(0, __proto, "cacheAs", _super.prototype._$get_cacheAs, function(value) {
+                Laya.superSet(Box, this, "cacheAs", value), this._scrollBar && (this._usedCache = null, "none" !== value ? this._scrollBar.on("start", this, this.onScrollStart) : this._scrollBar.off("start", this, this.onScrollStart))
+            }), __getset(0, __proto, "content", function() {
+                return this._content
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                value != this._height && (Laya.superSet(Box, this, "height", value), this._setCellChanged())
+            }), __getset(0, __proto, "itemRender", function() {
+                return this._itemRender
+            }, function(value) {
+                if (this._itemRender != value) {
+                    this._itemRender = value;
+                    for (var i = this._cells.length - 1; i > -1; i--) this._cells[i].destroy();
+                    this._cells.length = 0, this._setCellChanged()
+                }
+            }), __getset(0, __proto, "vScrollBarSkin", function() {
+                return this._scrollBar ? this._scrollBar.skin : null
+            }, function(value) {
+                this._removePreScrollBar();
+                var scrollBar = new VScrollBar;
+                scrollBar.name = "scrollBar", scrollBar.right = 0, scrollBar.skin = value, scrollBar.elasticDistance = this._elasticEnabled ? 200 : 0, this.scrollBar = scrollBar, this.addChild(scrollBar), this._setCellChanged()
+            }), __getset(0, __proto, "page", function() {
+                return this._page
+            }, function(value) {
+                this._page = value, this._array && (this._page = value > 0 ? value : 0, this._page = this._page < this.totalPage ? this._page : this.totalPage - 1, this.startIndex = this._page * this.repeatX * this.repeatY)
+            }), __getset(0, __proto, "hScrollBarSkin", function() {
+                return this._scrollBar ? this._scrollBar.skin : null
+            }, function(value) {
+                this._removePreScrollBar();
+                var scrollBar = new HScrollBar;
+                scrollBar.name = "scrollBar", scrollBar.bottom = 0, scrollBar.skin = value, scrollBar.elasticDistance = this._elasticEnabled ? 200 : 0, this.scrollBar = scrollBar, this.addChild(scrollBar), this._setCellChanged()
+            }), __getset(0, __proto, "repeatX", function() {
+                return this._repeatX > 0 ? this._repeatX : this._repeatX2 > 0 ? this._repeatX2 : 1
+            }, function(value) {
+                this._repeatX = value, this._setCellChanged()
+            }), __getset(0, __proto, "scrollBar", function() {
+                return this._scrollBar
+            }, function(value) {
+                this._scrollBar != value && (this._scrollBar = value, value && (this._isVertical = this._scrollBar.isVertical, this.addChild(this._scrollBar), this._scrollBar.on("change", this, this.onScrollBarChange)))
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                value != this._width && (Laya.superSet(Box, this, "width", value), this._setCellChanged())
+            }), __getset(0, __proto, "repeatY", function() {
+                return this._repeatY > 0 ? this._repeatY : this._repeatY2 > 0 ? this._repeatY2 : 1
+            }, function(value) {
+                this._repeatY = value, this._setCellChanged()
+            }), __getset(0, __proto, "spaceX", function() {
+                return this._spaceX
+            }, function(value) {
+                this._spaceX = value, this._setCellChanged()
+            }), __getset(0, __proto, "spaceY", function() {
+                return this._spaceY
+            }, function(value) {
+                this._spaceY = value, this._setCellChanged()
+            }), __getset(0, __proto, "selectedIndex", function() {
+                return this._selectedIndex
+            }, function(value) {
+                this._selectedIndex != value && (this._selectedIndex = value, this.changeSelectStatus(), this.event("change"), this.selectHandler && this.selectHandler.runWith(value), this.startIndex = this._startIndex)
+            }), __getset(0, __proto, "selectedItem", function() {
+                return -1 != this._selectedIndex ? this._array[this._selectedIndex] : null
+            }, function(value) {
+                this.selectedIndex = this._array.indexOf(value)
+            }), __getset(0, __proto, "length", function() {
+                return this._array ? this._array.length : 0
+            }), __getset(0, __proto, "selection", function() {
+                return this.getCell(this._selectedIndex)
+            }, function(value) {
+                this.selectedIndex = this._startIndex + this._cells.indexOf(value)
+            }), __getset(0, __proto, "startIndex", function() {
+                return this._startIndex
+            }, function(value) {
+                this._startIndex = value > 0 ? value : 0, this.callLater(this.renderItems)
+            }), __getset(0, __proto, "array", function() {
+                return this._array
+            }, function(value) {
+                this.runCallLater(this.changeCells), this._array = value || [], this._preLen = this._array.length;
+                var length = this._array.length;
+                if (this.totalPage = Math.ceil(length / (this.repeatX * this.repeatY)), this._selectedIndex = this._selectedIndex < length ? this._selectedIndex : length - 1, this.startIndex = this._startIndex, this._scrollBar) {
+                    this._scrollBar.stopScroll();
+                    var numX = this._isVertical ? this.repeatX : this.repeatY,
+                        numY = this._isVertical ? this.repeatY : this.repeatX,
+                        lineCount = Math.ceil(length / numX);
+                    (this._cellOffset > 0 ? this.totalPage + 1 : this.totalPage) > 1 && lineCount >= numY ? (this._scrollBar.scrollSize = this._cellSize, this._scrollBar.thumbPercent = numY / lineCount, this._scrollBar.setScroll(0, (lineCount - numY) * this._cellSize + this._cellOffset, this._scrollBar.value), this._scrollBar.target = this._content) : (this._scrollBar.setScroll(0, 0, 0), this._scrollBar.target = this._content)
+                }
+            }), __getset(0, __proto, "dataSource", _super.prototype._$get_dataSource, function(value) {
+                this._dataSource = value, "number" == typeof value && Math.floor(value) == value || "string" == typeof value ? this.selectedIndex = parseInt(value) : value instanceof Array ? this.array = value : Laya.superSet(Box, this, "dataSource", value)
+            }), __getset(0, __proto, "cells", function() {
+                return this.runCallLater(this.changeCells), this._cells
+            }), __getset(0, __proto, "elasticEnabled", function() {
+                return this._elasticEnabled
+            }, function(value) {
+                this._elasticEnabled = value, this._scrollBar && (this._scrollBar.elasticDistance = value ? 200 : 0)
+            }), List
+        }(Box),
+        TextInput = function(_super) {
+            function TextInput(text) {
+                this._bg = null, this._skin = null, TextInput.__super.call(this), void 0 === text && (text = ""), this.text = text, this.skin = this.skin
+            }
+            __class(TextInput, "laya.ui.TextInput", _super);
+            var __proto = TextInput.prototype;
+            return __proto.preinitialize = function() {
+                this.mouseEnabled = !0
+            }, __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._bg && this._bg.destroy(), this._bg = null
+            }, __proto.createChildren = function() {
+                this.addChild(this._tf = new Input), this._tf.padding = Styles.inputLabelPadding, this._tf.on("input", this, this._onInput), this._tf.on("enter", this, this._onEnter), this._tf.on("blur", this, this._onBlur), this._tf.on("focus", this, this._onFocus)
+            }, __proto._onFocus = function() {
+                this.event("focus", this)
+            }, __proto._onBlur = function() {
+                this.event("blur", this)
+            }, __proto._onInput = function() {
+                this.event("input", this)
+            }, __proto._onEnter = function() {
+                this.event("enter", this)
+            }, __proto.initialize = function() {
+                this.width = 128, this.height = 22
+            }, __proto._skinLoaded = function() {
+                this._bg || (this.graphics = this._bg = new AutoBitmap), this._bg.source = Loader.getRes(this._skin), this._width && (this._bg.width = this._width), this._height && (this._bg.height = this._height), this._sizeChanged(), this.event("loaded")
+            }, __proto.select = function() {
+                this._tf.select()
+            }, __proto.setSelection = function(startIndex, endIndex) {
+                this._tf.setSelection(startIndex, endIndex)
+            }, __getset(0, __proto, "text", _super.prototype._$get_text, function(value) {
+                this._tf.text != value && (value += "", this._tf.text = value, this.event("change"))
+            }), __getset(0, __proto, "bg", function() {
+                return this._bg
+            }, function(value) {
+                this.graphics = this._bg = value
+            }), __getset(0, __proto, "multiline", function() {
+                return this._tf.multiline
+            }, function(value) {
+                this._tf.multiline = value
+            }), __getset(0, __proto, "skin", function() {
+                return this._skin
+            }, function(value) {
+                this._skin != value && (this._skin = value, this._skin && !Loader.getRes(this._skin) ? Laya.loader.load(this._skin, Handler.create(this, this._skinLoaded), null, "image", 1) : this._skinLoaded())
+            }), __getset(0, __proto, "sizeGrid", function() {
+                return this._bg && this._bg.sizeGrid ? this._bg.sizeGrid.join(",") : null
+            }, function(value) {
+                this._bg || (this.graphics = this._bg = new AutoBitmap), this._bg.sizeGrid = UIUtils.fillArray(Styles.defaultSizeGrid, value, Number)
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(Label, this, "width", value), this._bg && (this._bg.width = value)
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(Label, this, "height", value), this._bg && (this._bg.height = value)
+            }), __getset(0, __proto, "editable", function() {
+                return this._tf.editable
+            }, function(value) {
+                this._tf.editable = value
+            }), __getset(0, __proto, "restrict", function() {
+                return this._tf.restrict
+            }, function(pattern) {
+                this._tf.restrict = pattern
+            }), __getset(0, __proto, "prompt", function() {
+                return this._tf.prompt
+            }, function(value) {
+                this._tf.prompt = value
+            }), __getset(0, __proto, "promptColor", function() {
+                return this._tf.promptColor
+            }, function(value) {
+                this._tf.promptColor = value
+            }), __getset(0, __proto, "maxChars", function() {
+                return this._tf.maxChars
+            }, function(value) {
+                this._tf.maxChars = value
+            }), __getset(0, __proto, "focus", function() {
+                return this._tf.focus
+            }, function(value) {
+                this._tf.focus = value
+            }), __getset(0, __proto, "type", function() {
+                return this._tf.type
+            }, function(value) {
+                this._tf.type = value
+            }), TextInput
+        }(Label),
+        ScaleBox = function(_super) {
+            function ScaleBox() {
+                this._oldW = 0, this._oldH = 0, ScaleBox.__super.call(this)
+            }
+            __class(ScaleBox, "laya.ui.ScaleBox", _super);
+            var __proto = ScaleBox.prototype;
+            return __proto.onEnable = function() {
+                Laya.stage.on("resize", this, this.onResize), this.onResize()
+            }, __proto.onDisable = function() {
+                Laya.stage.off("resize", this, this.onResize)
+            }, __proto.onResize = function() {
+                if (this.width > 0 && this.height > 0) {
+                    var scale = Math.min(Laya.stage.width / this._oldW, Laya.stage.height / this._oldH);
+                    Laya.superSet(Box, this, "width", Laya.stage.width), Laya.superSet(Box, this, "height", Laya.stage.height), this.scale(scale, scale)
+                }
+            }, __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(Box, this, "width", value), this._oldW = value
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(Box, this, "height", value), this._oldH = value
+            }), ScaleBox
+        }(Box),
+        Radio = function(_super) {
+            function Radio(skin, label) {
+                this._value = null, void 0 === label && (label = ""), Radio.__super.call(this, skin, label)
+            }
+            __class(Radio, "laya.ui.Radio", _super);
+            var __proto = Radio.prototype;
+            return __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._value = null
+            }, __proto.preinitialize = function() {
+                laya.ui.UIComponent.prototype.preinitialize.call(this), this.toggle = !1, this._autoSize = !1
+            }, __proto.initialize = function() {
+                _super.prototype.initialize.call(this), this.createText(), this._text.align = "left", this._text.valign = "top", this._text.width = 0, this.on("click", this, this.onClick)
+            }, __proto.onClick = function(e) {
+                this.selected = !0
+            }, __getset(0, __proto, "value", function() {
+                return null != this._value ? this._value : this.label
+            }, function(obj) {
+                this._value = obj
+            }), Radio
+        }(Button),
+        FontClip = function(_super) {
+            function FontClip(skin, sheet) {
+                this._valueArr = null, this._indexMap = null, this._sheet = null, this._direction = "horizontal", this._spaceX = 0, this._spaceY = 0, this._align = "left", this._wordsW = 0, this._wordsH = 0, FontClip.__super.call(this), skin && (this.skin = skin), sheet && (this.sheet = sheet)
+            }
+            __class(FontClip, "laya.ui.FontClip", _super);
+            var __proto = FontClip.prototype;
+            return __proto.createChildren = function() {
+                this._bitmap = new AutoBitmap, this.on("loaded", this, this._onClipLoaded)
+            }, __proto._onClipLoaded = function() {
+                this.callLater(this.changeValue)
+            }, __proto.changeValue = function() {
+                var texture;
+                if (this._sources && (this._valueArr && (this.graphics.clear(!0), texture = this._sources[0]))) {
+                    var isHorizontal = "horizontal" === this._direction;
+                    isHorizontal ? (this._wordsW = this._valueArr.length * (texture.sourceWidth + this.spaceX), this._wordsH = texture.sourceHeight) : (this._wordsW = texture.sourceWidth, this._wordsH = (texture.sourceHeight + this.spaceY) * this._valueArr.length);
+                    var dX = 0;
+                    if (this._width) switch (this._align) {
+                        case "center":
+                            dX = .5 * (this._width - this._wordsW);
+                            break;
+                        case "right":
+                            dX = this._width - this._wordsW;
+                            break;
+                        default:
+                            dX = 0
+                    }
+                    for (var i = 0, sz = this._valueArr.length; i < sz; i++) {
+                        var index = this._indexMap[this._valueArr.charAt(i)];
+                        this.sources[index] && (texture = this.sources[index], isHorizontal ? this.graphics.drawImage(texture, dX + i * (texture.sourceWidth + this.spaceX), 0, texture.sourceWidth, texture.sourceHeight) : this.graphics.drawImage(texture, 0 + dX, i * (texture.sourceHeight + this.spaceY), texture.sourceWidth, texture.sourceHeight))
+                    }
+                    this._width || (this._widget.resetLayoutX(), this.callLater(this._sizeChanged)), this._height || (this._widget.resetLayoutY(), this.callLater(this._sizeChanged))
+                }
+            }, __proto.measureWidth = function() {
+                return this._wordsW
+            }, __proto.measureHeight = function() {
+                return this._wordsH
+            }, __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), this._valueArr = null, this._indexMap = null, this.graphics.clear(!0), this.removeSelf(), this.off("loaded", this, this._onClipLoaded), _super.prototype.destroy.call(this, destroyChild)
+            }, __getset(0, __proto, "sheet", function() {
+                return this._sheet
+            }, function(value) {
+                value += "", this._sheet = value;
+                var arr = value.split(" ");
+                this._clipX = String(arr[0]).length, this.clipY = arr.length, this._indexMap = {};
+                for (var i = 0; i < this._clipY; i++)
+                    for (var line = arr[i].split(""), j = 0, n = line.length; j < n; j++) this._indexMap[line[j]] = i * this._clipX + j
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(Clip, this, "height", value), this.callLater(this.changeValue)
+            }), __getset(0, __proto, "direction", function() {
+                return this._direction
+            }, function(value) {
+                this._direction = value, this.callLater(this.changeValue)
+            }), __getset(0, __proto, "value", function() {
+                return this._valueArr ? this._valueArr : ""
+            }, function(value) {
+                value += "", this._valueArr = value, this.callLater(this.changeValue)
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(Clip, this, "width", value), this.callLater(this.changeValue)
+            }), __getset(0, __proto, "spaceX", function() {
+                return this._spaceX
+            }, function(value) {
+                this._spaceX = value, "horizontal" === this._direction && this.callLater(this.changeValue)
+            }), __getset(0, __proto, "spaceY", function() {
+                return this._spaceY
+            }, function(value) {
+                this._spaceY = value, "horizontal" !== this._direction && this.callLater(this.changeValue)
+            }), __getset(0, __proto, "align", function() {
+                return this._align
+            }, function(v) {
+                this._align = v, this.callLater(this.changeValue)
+            }), FontClip
+        }(Clip),
+        VScrollBar = (function(_super) {
+            function AdvImage(skin) {
+                this.advsListArr = [], this.resUrl = "https://unioncdn.layabox.com/config/iconlist.json", this._data = [], this._resquestTime = 36e4, this._appid = null, this._playIndex = 0, this._lunboTime = 5e3, AdvImage.__super.call(this), this._http = new Browser.window.XMLHttpRequest, this.skin = skin, this.setLoadUrl(), this.init(), this.size(120, 120)
+            }
+            __class(AdvImage, "laya.ui.AdvImage", _super);
+            var __proto = AdvImage.prototype;
+            __proto.setLoadUrl = function() {
+                Browser.onLimixiu && (this.resUrl = "https://abc.layabox.com/public/wyw/gconfig.json")
+            }, __proto.init = function() {
+                this.isSupportJump() ? ((Browser.onMiniGame || Browser.onBDMiniGame) && Laya.timer.loop(this._resquestTime, this, this.onGetAdvsListData), this.onGetAdvsListData(), this.initEvent()) : this.visible = !1
+            }, __proto.initEvent = function() {
+                this.on("click", this, this.onAdvsImgClick)
+            }, __proto.onAdvsImgClick = function() {
+                this.getCurrentAppidObj() && this.jumptoGame()
+            }, __proto.revertAdvsData = function() {
+                if (this.advsListArr[this._playIndex])
+                    if (this.visible = !0, Browser.onLimixiu) {
+                        this.visible = !0;
+                        var advsObj = this.advsListArr[this._playIndex];
+                        advsObj && (Browser.onLimixiu && GameStatusInfo.gameId == advsObj.gameid ? this.onLunbo() : (this.skin = "https://abc.layabox.com/public/icon/" + advsObj.iconUrl, this.size(103, 126)))
+                    } else this.skin = this.advsListArr[this._playIndex]
+            }, __proto.isSupportJump = function() {
+                if (Browser.onMiniGame) return "function" == typeof wx.navigateToMiniProgram;
+                if (Browser.onLimixiu) {
+                    if (BK.QQ.skipGame) return !0
+                } else if (Browser.onBDMiniGame) return !0;
+                return !1
+            }, __proto.jumptoGame = function() {
+                var _$this = this,
+                    advsObj = this.advsListArr[this._playIndex],
+                    desGameId = parseInt(advsObj.gameid),
+                    extendInfo = advsObj.extendInfo;
+                advsObj.path;
+                if (Browser.onLimixiu) {
+                    if (!advsObj.isLunBo && !advsObj.isLunBo) {
+                        var gameAdvsObj = LocalStorage.getJSON("gameObj");
+                        gameAdvsObj || (gameAdvsObj = {}), gameAdvsObj[advsObj.gameid] || (gameAdvsObj[advsObj.gameid] = {}), gameAdvsObj[advsObj.gameid] = {
+                            isclick: !0
+                        }, LocalStorage.setJSON("gameObj", gameAdvsObj), this.advsListArr.splice(this._playIndex, 1)
+                    }
+                    BK.QQ.skipGame(desGameId, extendInfo), this.updateAdvsInfo()
+                } else Browser.onMiniGame ? this.isSupportJump() && wx.navigateToMiniProgram({
+                    appId: this._appid,
+                    path: "",
+                    extraData: "",
+                    envVersion: "release",
+                    success: function() {
+                        console.log("-------------跳转成功--------------")
+                    },
+                    fail: function() {
+                        console.log("-------------跳转失败--------------")
+                    },
+                    complete: function() {
+                        console.log("-------------跳转接口调用成功--------------"), _$this.updateAdvsInfo()
+                    }.bind(this)
+                }) : Browser.onBDMiniGame || (this.visible = !1)
+            }, __proto.updateAdvsInfo = function() {
+                this.visible = !1, this.onLunbo(), Laya.timer.loop(this._lunboTime, this, this.onLunbo)
+            }, __proto.onLunbo = function() {
+                this._playIndex >= this.advsListArr.length - 1 ? this._playIndex = 0 : this._playIndex += 1, this.visible = !0, this.revertAdvsData()
+            }, __proto.getCurrentAppidObj = function() {
+                return this.advsListArr[this._playIndex]
+            }, __proto.onGetAdvsListData = function() {
+                var _this = this,
+                    random = AdvImage.randRange(1e4, 1e6),
+                    url = this.resUrl + "?" + random;
+                this._http.open("get", url, !0), this._http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), this._http.responseType = "text", this._http.onerror = function(e) {
+                    _this._onError(e)
+                }, this._http.onload = function(e) {
+                    _this._onLoad(e)
+                }, this._http.send(null)
+            }, __proto._onError = function(e) {
+                this.error("Request failed Status:" + this._http.status + " text:" + this._http.statusText)
+            }, __proto._onLoad = function(e) {
+                var http = this._http,
+                    status = void 0 !== http.status ? http.status : 200;
+                200 === status || 204 === status || 0 === status ? this.complete() : this.error("[" + http.status + "]" + http.statusText + ":" + http.responseURL)
+            }, __proto.error = function(message) {
+                this.event("error", message)
+            }, __proto.complete = function() {
+                try {
+                    this._data = this._http.response || this._http.responseText, this._data = JSON.parse(this._data), Browser.onLimixiu ? (this.advsListArr = this.getAdvsQArr(this._data), this.advsListArr.length ? (this.updateAdvsInfo(), this.revertAdvsData()) : this.visible = !1) : (this.advsListArr = this._data.list, this._appid = this._data.appid, this.updateAdvsInfo(), this.revertAdvsData())
+                } catch (e) {
+                    !1, this.error(e.message)
+                }
+            }, __proto.getAdvsQArr = function(data) {
+                var tempArr = [],
+                    gameAdvsObj = LocalStorage.getJSON("gameObj");
+                for (var key in data) {
+                    var tempObj = data[key];
+                    gameAdvsObj && gameAdvsObj[tempObj.gameid] && !tempObj.isQiangZhi || tempArr.push(tempObj)
+                }
+                return tempArr
+            }, __proto.clear = function() {
+                var http = this._http;
+                http.onerror = http.onabort = http.onprogress = http.onload = null
+            }, __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), Laya.timer.clear(this, this.onLunbo), _super.prototype.destroy.call(this, !0), this.clear(), Laya.timer.clear(this, this.onGetAdvsListData)
+            }, AdvImage.randRange = function(minNum, maxNum) {
+                return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
+            }
+        }(Image), function(_super) {
+            function VScrollBar() {
+                VScrollBar.__super.call(this)
+            }
+            return __class(VScrollBar, "laya.ui.VScrollBar", ScrollBar), VScrollBar
+        }()),
+        VSlider = function(_super) {
+            function VSlider() {
+                VSlider.__super.call(this)
+            }
+            return __class(VSlider, "laya.ui.VSlider", Slider), VSlider
+        }(),
+        HScrollBar = function(_super) {
+            function HScrollBar() {
+                HScrollBar.__super.call(this)
+            }
+            return __class(HScrollBar, "laya.ui.HScrollBar", _super), HScrollBar.prototype.initialize = function() {
+                _super.prototype.initialize.call(this), this.slider.isVertical = !1
+            }, HScrollBar
+        }(ScrollBar),
+        HSlider = function(_super) {
+            function HSlider(skin) {
+                HSlider.__super.call(this, skin), this.isVertical = !1
+            }
+            return __class(HSlider, "laya.ui.HSlider", Slider), HSlider
+        }(),
+        HBox = function(_super) {
+            function HBox() {
+                HBox.__super.call(this)
+            }
+            __class(HBox, "laya.ui.HBox", _super);
+            var __proto = HBox.prototype;
+            return __proto.sortItem = function(items) {
+                items && items.sort(function(a, b) {
+                    return a.x - b.x
+                })
+            }, __proto.changeItems = function() {
+                this._itemChanged = !1;
+                for (var items = [], maxHeight = 0, i = 0, n = this.numChildren; i < n; i++) {
+                    var item = this.getChildAt(i);
+                    item && (items.push(item), maxHeight = this._height ? this._height : Math.max(maxHeight, item.height * item.scaleY))
+                }
+                this.sortItem(items);
+                var left = 0;
+                for (i = 0, n = items.length; i < n; i++)(item = items[i]).x = left, left += item.width * item.scaleX + this._space, "top" == this._align ? item.y = 0 : "middle" == this._align ? item.y = .5 * (maxHeight - item.height * item.scaleY) : "bottom" == this._align && (item.y = maxHeight - item.height * item.scaleY);
+                this._sizeChanged()
+            }, __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                this._height != value && (Laya.superSet(LayoutBox, this, "height", value), this.callLater(this.changeItems))
+            }), HBox.NONE = "none", HBox.TOP = "top", HBox.MIDDLE = "middle", HBox.BOTTOM = "bottom", HBox
+        }(LayoutBox),
+        RadioGroup = function(_super) {
+            function RadioGroup() {
+                RadioGroup.__super.call(this)
+            }
+            return __class(RadioGroup, "laya.ui.RadioGroup", UIGroup), RadioGroup.prototype.createItem = function(skin, label) {
+                return new Radio(skin, label)
+            }, RadioGroup
+        }(),
+        VBox = function(_super) {
+            function VBox() {
+                VBox.__super.call(this)
+            }
+            __class(VBox, "laya.ui.VBox", _super);
+            var __proto = VBox.prototype;
+            return __proto.changeItems = function() {
+                this._itemChanged = !1;
+                for (var items = [], maxWidth = 0, i = 0, n = this.numChildren; i < n; i++) {
+                    var item = this.getChildAt(i);
+                    item && (items.push(item), maxWidth = this._width ? this._width : Math.max(maxWidth, item.width * item.scaleX))
+                }
+                this.sortItem(items);
+                var top = 0;
+                for (i = 0, n = items.length; i < n; i++)(item = items[i]).y = top, top += item.height * item.scaleY + this._space, "left" == this._align ? item.x = 0 : "center" == this._align ? item.x = .5 * (maxWidth - item.width * item.scaleX) : "right" == this._align && (item.x = maxWidth - item.width * item.scaleX);
+                this._sizeChanged()
+            }, __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                this._width != value && (Laya.superSet(LayoutBox, this, "width", value), this.callLater(this.changeItems))
+            }), VBox.NONE = "none", VBox.LEFT = "left", VBox.CENTER = "center", VBox.RIGHT = "right", VBox
+        }(LayoutBox),
+        TextArea = function(_super) {
+            function TextArea(text) {
+                this._vScrollBar = null, this._hScrollBar = null, void 0 === text && (text = ""), TextArea.__super.call(this, text), this.on("change", this, this._onTextChange)
+            }
+            __class(TextArea, "laya.ui.TextArea", _super);
+            var __proto = TextArea.prototype;
+            return __proto._onTextChange = function() {
+                this.callLater(this.changeScroll)
+            }, __proto.destroy = function(destroyChild) {
+                void 0 === destroyChild && (destroyChild = !0), _super.prototype.destroy.call(this, destroyChild), this._vScrollBar && this._vScrollBar.destroy(), this._hScrollBar && this._hScrollBar.destroy(), this._vScrollBar = null, this._hScrollBar = null
+            }, __proto.initialize = function() {
+                this.width = 180, this.height = 150, this._tf.wordWrap = !0, this.multiline = !0
+            }, __proto.onVBarChanged = function(e) {
+                this._tf.scrollY != this._vScrollBar.value && (this._tf.scrollY = this._vScrollBar.value)
+            }, __proto.onHBarChanged = function(e) {
+                this._tf.scrollX != this._hScrollBar.value && (this._tf.scrollX = this._hScrollBar.value)
+            }, __proto.changeScroll = function() {
+                var vShow = this._vScrollBar && this._tf.maxScrollY > 0,
+                    hShow = this._hScrollBar && this._tf.maxScrollX > 0,
+                    showWidth = vShow ? this._width - this._vScrollBar.width : this._width,
+                    showHeight = hShow ? this._height - this._hScrollBar.height : this._height,
+                    padding = this._tf.padding || Styles.labelPadding;
+                this._tf.width = showWidth, this._tf.height = showHeight, this._vScrollBar && (this._vScrollBar.x = this._width - this._vScrollBar.width - padding[2], this._vScrollBar.y = padding[1], this._vScrollBar.height = this._height - (hShow ? this._hScrollBar.height : 0) - padding[1] - padding[3], this._vScrollBar.scrollSize = 1, this._vScrollBar.thumbPercent = showHeight / Math.max(this._tf.textHeight, showHeight), this._vScrollBar.setScroll(1, this._tf.maxScrollY, this._tf.scrollY), this._vScrollBar.visible = vShow), this._hScrollBar && (this._hScrollBar.x = padding[0], this._hScrollBar.y = this._height - this._hScrollBar.height - padding[3], this._hScrollBar.width = this._width - (vShow ? this._vScrollBar.width : 0) - padding[0] - padding[2], this._hScrollBar.scrollSize = Math.max(.033 * showWidth, 1), this._hScrollBar.thumbPercent = showWidth / Math.max(this._tf.textWidth, showWidth), this._hScrollBar.setScroll(0, this.maxScrollX, this.scrollX), this._hScrollBar.visible = hShow)
+            }, __proto.scrollTo = function(y) {
+                this.commitMeasure(), this._tf.scrollY = y
+            }, __getset(0, __proto, "scrollY", function() {
+                return this._tf.scrollY
+            }), __getset(0, __proto, "width", _super.prototype._$get_width, function(value) {
+                Laya.superSet(TextInput, this, "width", value), this.callLater(this.changeScroll)
+            }), __getset(0, __proto, "hScrollBar", function() {
+                return this._hScrollBar
+            }), __getset(0, __proto, "height", _super.prototype._$get_height, function(value) {
+                Laya.superSet(TextInput, this, "height", value), this.callLater(this.changeScroll)
+            }), __getset(0, __proto, "maxScrollX", function() {
+                return this._tf.maxScrollX
+            }), __getset(0, __proto, "vScrollBarSkin", function() {
+                return this._vScrollBar ? this._vScrollBar.skin : null
+            }, function(value) {
+                null == this._vScrollBar && (this.addChild(this._vScrollBar = new VScrollBar), this._vScrollBar.on("change", this, this.onVBarChanged), this._vScrollBar.target = this._tf, this.callLater(this.changeScroll)), this._vScrollBar.skin = value
+            }), __getset(0, __proto, "hScrollBarSkin", function() {
+                return this._hScrollBar ? this._hScrollBar.skin : null
+            }, function(value) {
+                null == this._hScrollBar && (this.addChild(this._hScrollBar = new HScrollBar), this._hScrollBar.on("change", this, this.onHBarChanged), this._hScrollBar.mouseWheelEnable = !1, this._hScrollBar.target = this._tf, this.callLater(this.changeScroll)), this._hScrollBar.skin = value
+            }), __getset(0, __proto, "vScrollBar", function() {
+                return this._vScrollBar
+            }), __getset(0, __proto, "maxScrollY", function() {
+                return this._tf.maxScrollY
+            }), __getset(0, __proto, "scrollX", function() {
+                return this._tf.scrollX
+            }), TextArea
+        }(TextInput),
+        Tab = function(_super) {
+            function Tab() {
+                Tab.__super.call(this)
+            }
+            return __class(Tab, "laya.ui.Tab", UIGroup), Tab.prototype.createItem = function(skin, label) {
+                return new Button(skin, label)
+            }, Tab
+        }();
+    Laya.__init([MoreGame, View])
+}(window, document, Laya);

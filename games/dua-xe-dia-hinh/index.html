@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>Đua xe địa hình</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8">
+<meta name="splashscreen-game-url" content="assets/games/bike-racing/teaser.jpg">
+<meta name="splashscreen-big-game-url" content="assets/games/bike-racing/teaser@2x.jpg">
+<meta name="game-slug" content="bike-racing">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="full-screen" content="yes">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="360-fullscreen" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="icon" type="image/GIF" href="icon.ico">
+<link href="" rel="stylesheet" type="text/css">
+<script type="text/javascript" src=""></script>
+<style>
+        body, canvas, div {
+            overflow: hidden;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        body {height: 100; }
+        canvas { height: 100%; }
+        div.spacer { height: 1px; }
+    </style>
+<style>#sg-loadscrn{
+    position:fixed; top:0;left:0;width:100%; height:100%; background-color:#fff; z-index:9999;
+}
+
+#sg-spinner{
+    position: absolute; width: 150px; height: 50px; top:50%; left:50%; margin-top:-25px; margin-left:-75px;
+    background-image: url('assets/sg-loader.gif');
+}
+
+#sg-spinner.no-img{
+    background: #ffffff;
+}
+
+#sg-loadtext{
+    position:absolute;
+    font-family: sans-serif;
+    top:50%; left:50%;
+    width: 250px;
+    margin-left:-125px;
+    margin-top:-125px;
+    text-align:center;
+    line-height:150%;
+    font-size:16px;
+}</style>
+<script type="text/javascript">
+            //window.gameLangs = ['en','ru','de','tr','es','it','pt','fr', 'pl', 'nl'];
+             window.gameLangs = ['en'];
+            window.gameJS = ['softgames_game.js']; 
+            window.gameOnLoadScript = "initialize()";
+        </script><script type="text/javascript" src="assets/sg-loader-loader.js"></script>
+</head>
+<body style="padding:0; margin: 0; background: #3ddbff;">
+<div id="orientation"></div>
+<canvas id="gameCanvas"></canvas><div class="spacer"></div>
+<script>
+/*window.onload*/
+initialize = function() {
+    lang = SG.lang; //SG_Hooks.getLanguage(['en','ru']);
+    var canvas = document.querySelector("#gameCanvas")
+         canvas.width = 640;
+         canvas.height = 480;
+
+         cc.game.run();
+}
+var width = window.innerWidth;
+        if (width === 0) {
+            if (typeof document.body === "object" && document.body !== null){
+                document.body.style.display = "none";
+            }
+        }
+        window.onresize = function() {
+          if (width== 0)  {
+            if (typeof document.body === "object" && document.body !== null){
+                document.body.style.display = "none";
+            }
+            window.location.reload();
+          }
+        };  
+</script>
+
+
+</body>
+</html>

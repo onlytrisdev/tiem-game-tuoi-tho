@@ -1,0 +1,460 @@
+{
+  "ID": "32eea545-caa2-4248-a23b-abb405023eab",
+  "Version": "3.10.0.0",
+  "Name": "HUD",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 16,
+        "Children": [
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "assets/ui/bPause.png",
+              "Plist": "assets/sprites.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 94,
+            "Scale9Height": 104,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 60.0,
+              "Y": 420.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0938,
+              "Y": 0.875
+            },
+            "PreSize": {
+              "X": 0.1094,
+              "Y": 0.1542
+            },
+            "LeftMargin": 25.0,
+            "RightMargin": 545.0,
+            "TopMargin": 23.0,
+            "BottomMargin": 383.0,
+            "Tag": 18,
+            "ActionTag": -1289165015,
+            "Size": {
+              "X": 70.0,
+              "Y": 74.0
+            },
+            "Name": "button_pause",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "NormalFileData": {
+              "Type": "MarkedSubImage",
+              "Path": "assets/ui/bRestart.png",
+              "Plist": "assets/sprites.plist"
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 94,
+            "Scale9Height": 104,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 580.0,
+              "Y": 420.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9063,
+              "Y": 0.875
+            },
+            "PreSize": {
+              "X": 0.1094,
+              "Y": 0.1542
+            },
+            "LeftMargin": 545.0,
+            "RightMargin": 25.0,
+            "TopMargin": 23.0,
+            "BottomMargin": 383.0,
+            "Tag": 19,
+            "ActionTag": 1413679685,
+            "Size": {
+              "X": 70.0,
+              "Y": 74.0
+            },
+            "Name": "button_restart",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 35,
+            "LabelText": "Touch to start",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "assets/Font.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 336.4557
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.7009
+            },
+            "PreSize": {
+              "X": 0.9688,
+              "Y": 0.0958
+            },
+            "LeftMargin": 10.0,
+            "RightMargin": 10.0,
+            "TopMargin": 97.5443,
+            "BottomMargin": 336.4557,
+            "Tag": 28,
+            "ActionTag": -1816487144,
+            "Size": {
+              "X": 620.0,
+              "Y": 46.0
+            },
+            "Name": "label_message",
+            "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 40,
+            "LabelText": "0",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "assets/Font.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 220.0,
+              "Y": 380.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 95,
+              "B": 145
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3438,
+              "Y": 0.7917
+            },
+            "PreSize": {
+              "X": 0.2344,
+              "Y": 0.0875
+            },
+            "LeftMargin": 145.0,
+            "RightMargin": 345.0,
+            "TopMargin": 58.0,
+            "BottomMargin": 380.0,
+            "Tag": 23,
+            "ActionTag": 877243787,
+            "Size": {
+              "X": 150.0,
+              "Y": 42.0
+            },
+            "Name": "label_timer",
+            "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 40,
+            "LabelText": "0",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "assets/Font.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 420.0,
+              "Y": 380.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 95,
+              "B": 145
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6563,
+              "Y": 0.7917
+            },
+            "PreSize": {
+              "X": 0.2344,
+              "Y": 0.0833
+            },
+            "LeftMargin": 345.0,
+            "RightMargin": 145.0,
+            "TopMargin": 60.0,
+            "BottomMargin": 380.0,
+            "Tag": 14,
+            "ActionTag": -551715664,
+            "Size": {
+              "X": 150.0,
+              "Y": 40.0
+            },
+            "Name": "label_scores",
+            "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 40,
+            "LabelText": "Time:",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "assets/Font.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 220.0,
+              "Y": 440.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 27,
+              "G": 27,
+              "B": 64
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3438,
+              "Y": 0.9167
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.0875
+            },
+            "LeftMargin": 120.0,
+            "RightMargin": 320.0,
+            "TopMargin": 19.0,
+            "BottomMargin": 419.0,
+            "Tag": 7,
+            "ActionTag": -1863540734,
+            "Size": {
+              "X": 200.0,
+              "Y": 42.0
+            },
+            "Name": "label_timer_",
+            "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 40,
+            "LabelText": "Score:",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "assets/Font.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 420.0,
+              "Y": 440.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 27,
+              "G": 27,
+              "B": 64
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6563,
+              "Y": 0.9167
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.0875
+            },
+            "LeftMargin": 320.0,
+            "RightMargin": 120.0,
+            "TopMargin": 19.0,
+            "BottomMargin": 419.0,
+            "Tag": 8,
+            "ActionTag": -952868289,
+            "Size": {
+              "X": 200.0,
+              "Y": 42.0
+            },
+            "Name": "label_scores_",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 480.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "assets/Font.ttf",
+        "assets/sprites.plist",
+        "assets/sprites.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

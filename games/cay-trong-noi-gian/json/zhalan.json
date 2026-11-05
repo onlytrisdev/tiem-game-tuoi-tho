@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "name": "Rào chắn",
+    "type": 1,
+    "num": 0,
+    "icon": "icon_zhalan",
+    "pic": "zhalan",
+    "zhaopai": "zhaopai_zhalan",
+    "hp": 4,
+    "desc": "Chống được 4 đợt tấn công"
+}, {
+    "id": 2,
+    "name": "Hàng rào",
+    "type": 5,
+    "num": 10,
+    "icon": "icon_weiqiang",
+    "pic": "weiqiang",
+    "zhaopai": "zhaopai_weiqiang",
+    "hp": 5,
+    "desc": "Chống được 5 đợt tấn công"
+}, {
+    "id": 3,
+    "name": "Khu vực cấm lửa",
+    "type": 5,
+    "num": 20,
+    "icon": "icon_huo",
+    "pic": "huo",
+    "zhaopai": "zhaopai_huo",
+    "hp": 6,
+    "desc": "Chống được 6 đợt tấn công"
+}, {
+    "id": 4,
+    "name": "Hàng rào Băng",
+    "type": 5,
+    "num": 30,
+    "icon": "icon_bing",
+    "pic": "bing",
+    "zhaopai": "zhaopai_bing",
+    "hp": 7,
+    "desc": "Chống được 7 đợt tấn công"
+}, {
+    "id": 5,
+    "name": "Cỏ",
+    "type": 5,
+    "num": 45,
+    "icon": "icon_chucaoji",
+    "pic": "chucao",
+    "zhaopai": "zhaopai_chucaoji",
+    "hp": 8,
+    "desc": "Chịu được 8 đợt tấn công"
+}, {
+    "id": 6,
+    "name": "Căn cứ Quân sự",
+    "type": 5,
+    "num": 60,
+    "icon": "icon_jidi",
+    "pic": "jidi",
+    "zhaopai": "zhaopai_jidi",
+    "hp": 9,
+    "desc": "Chống chịu 9 lần tấn công"
+}]

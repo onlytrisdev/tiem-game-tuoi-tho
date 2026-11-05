@@ -1,0 +1,1 @@
+var RelatedGames=new Array(0);

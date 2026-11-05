@@ -1,0 +1,1 @@
+window.DDSDK_APPKEY="wx2ff9edad17ac3a40",window.DDSDK_GNAME="sdk",window.DDSDK_CONFIG="sdk3";
