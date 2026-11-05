@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+canvas {
+    display: block;
+}
+body {
+    margin: 0;
+}
+#unity-container {
+    width: 100%;
+    height: 100%;
+}
+#unity-canvas {
+    width: 100%;
+    height: 100%;
+    background: #7A74BD;
+}
+#loading-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#unity-loading-bar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#unity-logo {
+    text-align: center;
+}
+#unity-logo img {
+    max-width: 70vw;
+    max-height: 70vh;
+}
+#unity-progress-bar-empty {
+    width: 80%;
+    height: 24px;
+    margin: 10px 20px 20px 10px;
+    text-align: left;
+    border: 1px solid white;
+    padding: 2px;
+}
+#unity-progress-bar-full {
+    width: 0%;
+    height: 100%;
+    background: white;
+}
+.light #unity-progress-bar-empty {
+    border-color: black;
+}
+.light #unity-progress-bar-full {
+    background: black;
+}
+
+
+/* Arcade: two icon-only actions centered vertically along the canvas's left edge. */
+#gv-hud-actions {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10001;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 56px;
+    gap: 10px;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+#gv-hud-actions .gv-action-btn {
+    display: flex;
+    flex: 0 0 56px;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 160ms ease, opacity 160ms ease;
+}
+#gv-hud-actions .gv-action-btn:hover { transform: translateY(-2px); }
+#gv-hud-actions .gv-action-btn:active { transform: scale(.95); opacity: .9; }
+#gv-hud-actions .gv-action-btn:focus-visible { outline: 2px solid #fff; border-radius: 8px; }
+#gv-hud-actions .gv-action-btn img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    max-width: none;
+    object-fit: contain;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+#gv-reset-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10002;
+    background: rgba(0, 0, 0, .72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    touch-action: manipulation;
+}
+.gv-reset-panel {
+    box-sizing: border-box;
+    background: #fff;
+    color: #1c2541;
+    width: min(420px, 100%);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.32);
+    font: 600 17px/1.5 system-ui, sans-serif;
+    text-align: center;
+}
+.gv-reset-panel p { margin: 12px 0 22px; font-size: 15px; font-weight: 400; }
+.gv-modal-actions { display: flex; justify-content: center; gap: 12px; }
+.gv-modal-actions button {
+    min-width: 110px;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 9px;
+    color: #fff;
+    font: 700 16px system-ui, sans-serif;
+    cursor: pointer;
+}
+.gv-modal-actions .gv-cancel { background: #177fd1; }
+.gv-modal-actions .gv-confirm { background: #d92c3d; }
+.gv-modal-actions button:disabled { opacity: .55; cursor: wait; }
