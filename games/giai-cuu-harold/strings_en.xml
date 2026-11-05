@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<!-- Nivel 1 -->
+    <level>
+        <intro>
+            <dialog character="Chester" animation="4">Harold! Bạn đến đó bằng cách nào?</dialog>
+            <dialog character="Harold" animation="0">Chào Chester! Tôi không có manh mối ...</dialog>
+            <dialog character="Chester" animation="2">...</dialog>
+            <dialog character="Bunnicula" animation="3">¿Hachick hikajim Harold?</dialog>
+            <dialog character="Harold" animation="1">Chào Bunnicula! Vâng, thực sự, mọi thứ trông rất nhỏ bé từ đây.</dialog>
+            <dialog character="Chester" animation="6">Ở đó Harold! Tôi có thể có một kế hoạch để cứu bạn!</dialog>
+            <dialog character="Chester" animation="5">Bunnicula, tôi không thích phép thuật của bạn, nhưng nó có thể giúp được.</dialog>
+            <dialog character="Bunnicula" animation="1">...</dialog>
+            <dialog character="Chester" animation="0">Cố gắng di chuyển tất cả những thứ này bằng sức mạnh của bạn ...</dialog>
+        </intro>
+        <ending>
+            <dialog character="Chester" animation="3">Tuyệt quá! Tôi bắt đầu thích những sức mạnh tiềm ẩn của bạn.</dialog>
+            <dialog character="Bunnicula" animation="3">...</dialog>
+            <dialog character="Chester" animation="7">Đừng tỏ ra dễ thương. Theo tôi, còn rất nhiều việc phải làm.</dialog>
+        </ending>
+    </level>
+	<!-- Nivel 2 -->
+    <level>
+        <intro>
+            <dialog character="Chester" animation="6">Hãy đưa các kỹ năng của bạn vào thực tế.</dialog>
+            <dialog character="Chester" animation="5">Cố gắng sắp xếp các cấu trúc cơ bản này ...</dialog>
+            <dialog character="Bunnicula" animation="1">Ahhjim kiyamaan napalasaffh Harold!...</dialog>
+            <dialog character="Chester" animation="1">Không có thời gian để thảo luận Bunnicula! Đi thôi!</dialog>
+        </intro>
+         <ending>
+            <dialog character="Harold" animation="1">Ồ! Bạn làm được rồi! Tôi thật tệ với điều này ...</dialog>
+        </ending>
+    </level>
+	<!-- Nivel 3 -->
+    <level></level>
+	<!-- Nivel 4 -->
+    <level></level>
+	<!-- Nivel 5 -->
+    <level></level>
+	<!-- Nivel 6 -->
+    <level>
+        <intro>
+            <dialog character="Chester" animation="6">Harold! Bạn ổn chứ? Xin hãy kiên nhẫn!</dialog>
+            <dialog character="Harold" animation="1">Chào Chester! Không sao đâu, tôi có thể đợi ...</dialog>
+        </intro>
+    </level>
+	<!-- Nivel 7 -->
+    <level>
+         <ending>
+            <dialog character="Harold" animation="0">Tôi không hiểu, tại sao nó không rơi?</dialog>
+        </ending>
+    </level>
+	<!-- Nivel 8 -->
+    <level></level>
+	<!-- Nivel 9 -->
+    <level>
+        <intro>
+            <dialog character="Harold" animation="1">Nhìn kìa Bunnicula! Nó giống như một ngôi nhà nhỏ!</dialog>
+            <dialog character="Chester" animation="1">Harold, đừng đánh lạc hướng Bunnicula!</dialog>
+            <dialog character="Chester" animation="5">Nhưng bạn nói đúng, nó trông giống như một ngôi nhà nhỏ ...</dialog>
+        </intro>
+    </level>
+	<!-- Nivel 10 -->
+    <level>
+        <ending>
+            <dialog character="Harold" animation="1">Chester, đó là một chiếc xe hơi! Bạn đã chế tạo được một chiếc xe hơi nhỏ!</dialog>
+            <dialog character="Chester" animation="7">Nó không phải là một chiếc xe hơi, Harold ... Một chiếc ô tô có rất nhiều thứ ..</dialog>
+            <dialog character="Harold" animation="1">Một chiếc xe hơi nhỏ!!!</dialog>
+            <dialog character="Chester" animation="5">...</dialog>
+        </ending>
+    </level>
+	<!-- Nivel 11 -->
+    <level></level>
+	<!-- Nivel 12 -->
+    <level></level>
+	<!-- Nivel 13 -->
+    <level></level>
+	<!-- Nivel 14 -->
+    <level>
+    	<intro>
+            <dialog character="Chester" animation="1">Bunnicula Tôi đã cải thiện "Xe hơi" trước đó.</dialog>
+            <dialog character="Harold" animation="1">Harold yêu xe hơi!</dialog>
+        </intro>
+    </level>
+	<!-- Nivel 15 -->
+    <level></level>
+	<!-- Nivel 16 -->
+    <level></level>
+	<!-- Nivel 17 -->
+    <level>
+         <ending>
+            <dialog character="Harold" animation="1">Ôi ... dễ thương quá! nó là một chú hề!</dialog>
+            <dialog character="Bunnicula" animation="3">...</dialog>
+            <dialog character="Chester" animation="1">Bunnicula dừng lại! Chúng ta phải cứu Harold!</dialog>
+            <dialog character="Bunnicula" animation="1">...</dialog>
+        </ending>
+    </level>
+    <!-- Nivel 18 -->
+    <level></level>.
+       <!-- Nivel 19 -->
+    <level></level>
+    <!-- Nivel 20 -->
+    <level></level>
+    <!-- Nivel 21 -->
+    <level>
+        <intro>
+           <dialog character="Chester" animation="6">Một số thiết kế cần một vài bước bổ sung ...</dialog>
+           <dialog character="Chester" animation="7">Bạn hiểu y tôi đúng không?</dialog>
+           <dialog character="Bunnicula" animation="3">Hicka mijra riiiul grim!</dialog>
+           <dialog character="Chester" animation="5">...</dialog>
+        </intro>
+    </level>
+    <!-- Nivel 22 -->
+    <level></level>
+    <!-- Nivel 23 -->
+    <level>
+    	<intro>
+           <dialog character="Chester" animation="1">Chúng tôi đang tiến gần đến thiết kế tòa tháp cuối cùng của mình ...</dialog>
+           <dialog character="Chester" animation="0">Đừng làm hỏng nó!</dialog>
+           <dialog character="Harold" animation="1">Tôi tin vào bạn Bunnicula. Bạn thực sự thông minh.</dialog>
+        </intro>
+    </level>
+    <!-- Nivel 24 -->
+    <level></level>
+    <!-- Ending  -->
+    <level>
+        <intro>
+           <dialog character="Chester" animation="7">Xuất sắc! Cuối cùng thì chúng tôi cũng đã xây xong tòa tháp, Bunnicula.</dialog>
+           <dialog character="Bunnicula" animation="0">Grack mishim lirrrkix!</dialog>
+           <dialog character="Chester" animation="5">Ồ Bunnicula, bạn thực sự cần một bài học tiếng Anh.</dialog>
+           <dialog character="Chester" animation="1">Thôi nào Harold, đã đến lúc phải hành động.</dialog>
+           <dialog character="Harold" animation="1">Tòa tháp tuyệt đẹp Chester. Cảm ơn bạn, cảm ơn Bunnicula ...</dialog>
+           <dialog character="Harold" animation="0">Hãy thử nó ...</dialog>
+        </intro>
+        <ending>
+            <dialog character="Chester" animation="1">...</dialog>
+            <dialog character="Chester" animation="2">...</dialog>
+            <dialog character="Chester" animation="3">Bunnicula! Tại sao bạn không làm điều đó trước đây!</dialog>
+            <dialog character="Bunnicula" animation="3">Oops..</dialog>
+        </ending>
+    </level>
+</data>

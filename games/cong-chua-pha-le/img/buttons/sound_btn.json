@@ -1,0 +1,27 @@
+﻿{"frames": {
+
+"mySoundButton0000":
+{
+	"frame": {"x":0,"y":0,"w":75,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":75,"h":75},
+	"sourceSize": {"w":75,"h":75}
+},
+"mySoundButton0001":
+{
+	"frame": {"x":85,"y":0,"w":75,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":75,"h":75},
+	"sourceSize": {"w":75,"h":75}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "sound_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":200,"h":78},
+	"scale": "1"
+}
+}

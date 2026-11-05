@@ -1,0 +1,107 @@
+{
+	"groups": [
+		{
+			"keys": "komika_ttf,mybtn_png,fly_stones_png,egret_png,spark_pic_png,mylogo_png,platlogo_png,empty_btn_png,name_en_png",
+			"name": "preload"
+		},
+		{
+			"keys": "basic_mcs_json,basic_mcs_png,flags_json,match_png,match_json,main_png,styles_json,items_json",
+			"name": "mainassets"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/styles.json",
+			"type": "sheet",
+			"name": "styles_json",
+			"subkeys": "beard_0,beard_1,beard_10,beard_2,beard_3,beard_4,beard_5,beard_6,beard_7,beard_8,beard_9,beard_k_0,beard_k_1,beard_k_10,beard_k_11,beard_k_12,beard_k_13,beard_k_14,beard_k_15,beard_k_2,beard_k_3,beard_k_4,beard_k_5,beard_k_6,beard_k_7,beard_k_8,beard_k_9,eye_b0,eye_b1,eye_b2,eye_b3,eye_b4,eye_b5,eye_b6,eye_b7,eye_b8,eye_g0,eye_g1,eye_g14,eye_g2,eye_g3,eye_g4,eye_g5,eye_g6,eye_g7,eye_g8,eye_g9,eye_k_0,eye_k_1,eye_k_10,eye_k_11,eye_k_2,eye_k_3,eye_k_4,eye_k_5,eye_k_6,eye_k_7,eye_k_8,eye_k_9,hair_0,hair_1,hair_10,hair_11,hair_12,hair_13,hair_14,hair_15,hair_2,hair_3,hair_4,hair_6,hair_7,hair_8,hair_9,hair_arab,hair_b_x,hair_bao,hair_ci,hair_ci2,hair_cool,hair_duan,hair_ev,hair_ev2,hair_fire,hair_g14,hair_g_16,hair_g_x,hair_girl,hair_hard,hair_hog,hair_hood,hair_ji,hair_k_0,hair_k_1,hair_k_10,hair_k_11,hair_k_12,hair_k_13,hair_k_14,hair_k_15,hair_k_16,hair_k_17,hair_k_18,hair_k_19,hair_k_2,hair_k_20,hair_k_21,hair_k_22,hair_k_3,hair_k_4,hair_k_5,hair_k_6,hair_k_7,hair_k_8,hair_k_9,hair_kid,hair_little,hair_long,hair_mao,hair_peng,hair_pirate,hair_punk,hair_sf,hair_shu,hair_tail,hair_ti,hair_tidy,hair_tie,hair_tie2,hair_wild,hair_worms,hair_x1,hair_x2,hair_xian,hair_yi,tattoo_0,tattoo_1,tattoo_2,tattoo_b_1,tattoo_b_10,tattoo_b_11,tattoo_b_12,tattoo_b_13,tattoo_b_14,tattoo_b_15,tattoo_b_16,tattoo_b_2,tattoo_b_3,tattoo_b_4,tattoo_b_5,tattoo_b_6,tattoo_b_7,tattoo_b_8,tattoo_b_9,tattoo_g_1,tattoo_g_10,tattoo_g_11,tattoo_g_12,tattoo_g_13,tattoo_g_14,tattoo_g_15,tattoo_g_16,tattoo_g_2,tattoo_g_3,tattoo_g_4,tattoo_g_5,tattoo_g_6,tattoo_g_7,tattoo_g_8,tattoo_g_9,tattoo_k_1,tattoo_k_10,tattoo_k_11,tattoo_k_12,tattoo_k_13,tattoo_k_14,tattoo_k_15,tattoo_k_16,tattoo_k_2,tattoo_k_3,tattoo_k_4,tattoo_k_5,tattoo_k_6,tattoo_k_7,tattoo_k_8,tattoo_k_9"
+		},
+		{
+			"url": "assets/flags.json",
+			"type": "sheet",
+			"name": "flags_json",
+			"subkeys": "ASEAN,AU,Afghanistan,Albania,Algeria,American_Samoa,Andorra,Angola,Anguilla,Antarctica,Antigua_Barbuda,Arab_League,Argentina,Armenia,Aruba,Australia,Austria,Azerbaijan,Bahamas,Bahrain,Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bermuda,Bhutan,Bolivia,Bosnia_Herzegovina,Botswana,Brazil,Brunei,Bulgaria,Burkina_Faso,Burundi,CARICOM,CIS,Cambodja,Cameroon,Canada,Cape_Verde,Cayman_Islands,Central_African_Republic,Chad,Chile,China,Colombia,Commonwealth,Comoros,Congo_Brazzaville,Congo_Kinshasa,Cook_Islands,Costa_Rica,Cote_d_Ivoire,Croatia,Cuba,Cyprus,Czech_Republic,Denmark,Djibouti,Dominica,Dominican_Republic,EU,Ecuador,Egypt,El_Salvador,England,Equatorial_Guinea,Eritrea,Estonia,Ethiopia,Faroes,Fiji,Finland,France,Gabon,Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Greenland,Grenada,Guadeloupe,Guam,Guatemala,Guernsey,Guinea,Guinea_Bissau,Guyana,Haiti,Honduras,Hong_Kong,Hungary,Iceland,India,Indonezia,Iran,Iraq,Ireland,Islamic_Conference,Isle_of_Man,Israel,Italy,Jamaica,Japan,Jersey,Jordan,Kazakhstan,Kenya,Kiribati,Kosovo,Kuwait,Kyrgyzstan,Laos,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenshein,Lithuania,Luxembourg,Macao,Macedonia,Madagascar,Malawi,Malaysia,Maldives,Mali,Malta,Marshall_Islands,Martinique,Mauritania,Mauritius,Mexico,Micronesia,Moldova,Monaco,Mongolia,Montenegro,Montserrat,Morocco,Mozambique,Myanmar_Burma,NATO,Namibia,Nauru,Nepal,Netherlands,Netherlands_Antilles,New_Caledonia,New_Zealand,Nicaragua,Niger,Nigeria,North_Korea,Northern_Cyprus,Northern_Ireland,Norway,Oman,Pakistan,Palau,Palestine,Panama,Papua_New_Guinea,Paraguay,Peru,Philippines,Poland,Portugal,Puerto_Rico,Qatar,Reunion,Romania,Russian,Rwanda,Saint_Lucia,Samoa,San_Marino,Sao_Tome_Principe,Saudi_Arabia,Scotland,Senegal,Serbia_Yugoslavia,Seychelles,Sierra_Leone,Singapore,Slovakia,Slovenia,Solomon_Islands,Somalia,Somaliland,South_Africa,South_Korea,Spain,Sri_Lanka,St_Kitts_Nevis,St_Vincent,Sudan,Suriname,Swaziland,Sweden,Switzerland,Syria,Tahiti_French_Polinesia,Taiwan,Tajikistan,Tanzania,Thailand,Timor_Leste,Togo,Tonga,Trinidad_Tobago,Tunisia,Turkey,Turkmenistan,Turks_and_Caicos_Islands,Tuvalu,UK,UN,USA,Uganda,Ukraine,United_Arab_Emirates,Uruguay,Uzbekistan,Vanutau,Vatican_City,Venezuela,Viet_Nam,Virgin_Islands_British,Virgin_Islands_US,Wales,Western_Sahara,Yemen,Zambia,Zimbabwe"
+		},
+		{
+			"url": "assets/mcs/basic_mcs.png",
+			"type": "image",
+			"name": "basic_mcs_png"
+		},
+		{
+			"url": "assets/mcs/basic_mcs.json",
+			"type": "json",
+			"name": "basic_mcs_json"
+		},
+		{
+			"url": "assets/fonts/komika.ttf",
+			"type": "ttf",
+			"name": "komika_ttf"
+		},
+		{
+			"url": "assets/mcs/match.png",
+			"type": "image",
+			"name": "match_png"
+		},
+		{
+			"url": "assets/mcs/match.json",
+			"type": "json",
+			"name": "match_json"
+		},
+		{
+			"url": "assets/bgs/main.png",
+			"type": "image",
+			"name": "main_png"
+		},
+		{
+			"url": "assets/items.json",
+			"type": "sheet",
+			"name": "items_json",
+			"subkeys": "active_round,alpha_back,arena,arena_challenge,arena_challenge_text_en,arena_match,arena_match_text_en,arena_prop,arena_ranking,arena_ranking_text_en,arrow,arrow_next,arrow_pre,astar,attack,avatar_back,back,back_rect,back_round,bag,bao_icon,bar,bar_back,black,blacksmith_item,blacksmith_item2,blood,blood_back,blood_bar,board,box,boy_armor_0,boy_armor_1,boy_attack,boy_bigcut,boy_bigcut_hue,boy_critical,boy_critical_hue,boy_double,boy_double_hue,boy_dragon,boy_dragon_hue,boy_fire,boy_fire_hue,boy_gloves_0,boy_gloves_1,boy_multi,boy_multi_hue,boy_poison,boy_poison_hue,boy_rain,boy_rain_hue,boy_shield_0,boy_shield_1,boy_shoes_0,boy_shoes_1,boy_stun,boy_stun_hue,boy_weapon_0,boy_weapon_1,br16,btn_awards,btn_back,btn_back2,btn_hero,btn_invite,btn_lottery,btn_next,btn_pre,btn_setting,btn_shotcut,btn_task,chapter_past,char2_head_ear,char2_head_face,char3_head_ear,char3_head_face,char_head_face,checkbox_back,checkbox_check,chest_close,chest_open,clock_back,clock_pointer,closer,cloud_1,cloud_2,code,color_frame,color_pic,critical,cup_0,cup_1,cup_10,cup_11,cup_12,cup_13,cup_14,cup_15,cup_2,cup_3,cup_4,cup_5,cup_6,cup_7,cup_8,cup_9,defence,defence2,dodge,duo_attack,duo_ax_0,duo_ax_1,duo_big_ax,duo_big_ax_hue,duo_big_stone,duo_big_stone_hue,duo_double,duo_double_hue,duo_fly_ax,duo_fly_ax_hue,duo_hammer_0,duo_hammer_1,duo_jump_ax,duo_jump_ax_hue,duo_jump_bang,duo_jump_bang_hue,duo_kick,duo_kick_hue,duo_poison,duo_poison_hue,duo_stun,duo_stun_hue,egg_ex0,egg_ex1,egg_ex2,egg_ex3,egg_ex4,egg_ex5,empty,equip_en,exp_bar,exp_bar_2,face_angry,face_arrogant,face_come_on,face_cry,face_fear,face_good,face_han,face_happy,face_love,face_smile,facebook,farm_item,farm_item2,feather_1,feather_2,fire_stone,fire_stone2,flag_done,flag_now,gallery,game_center,gem,gem_100,gem_1000,gem_bag,girl_armor_0,girl_armor_1,girl_attack,girl_bird,girl_bird_hue,girl_bomb,girl_bomb_hue,girl_doubleattack,girl_doubleattack_hue,girl_gloves_0,girl_gloves_1,girl_kick,girl_kick_hue,girl_poison,girl_poison_hue,girl_shield_0,girl_shield_1,girl_shoes_0,girl_shoes_1,girl_shutdown,girl_shutdown_hue,girl_stun,girl_stun_hue,girl_updown,girl_updown_hue,girl_weapon_0,girl_weapon_1,glory,gold_icon,gold_some,google_icon,google_icon_bar,gplus,hammer,hand_1,hand_2,house,house_add,house_add2,house_item,house_item2,hs_back,hs_bar,ice,icon_box,icon_ever_lottery,icon_ever_power,icon_everyday,icon_fire,icon_fire_hue,icon_ice,icon_ice_hue,icon_mushroom,icon_power,icon_sheep,icon_sheep_hue,icon_thunder,icon_thunder_hue,icon_treat,icon_treat_hue,input_line,item_light,left_right,level_up,levelup_to,light,lock,lottery_cover,lottery_pan,lottery_point,lottery_video,magic,magic_item,magic_item2,map_bar,medal_1,medal_10,medal_11,medal_2,medal_3,medal_4,medal_5,medal_6,medal_7,medal_8,medal_9,mill_item,mill_item2,money_en,money_zh,monster,museum,museum_bar,museum_bar2,mush_btn,mushroom,mushroom_back,mushroom_bar,music_icon,mybar_item,mybar_item2,name_en,num_bar_back,num_bar_bar,num_btn,num_des,num_icons,num_plus,others_0,others_1,p_black,p_black2,p_blood,p_blood2,p_blue,p_cloud,p_fire,p_fire2,p_fire_x,p_gold,p_gray,p_gray2,p_green,p_green2,p_hp,p_mp,p_purple,p_purple2,p_rock,p_rock2,p_sky,p_sky2,p_white,page,panel_back,plus,power,power_low,powers,prenext,pve,qqgroup,rand_btn,rank_1,rank_2,rank_3,rank_4,rank_5,rank_6,rank_7,rank_8,rank_lev_1,rank_lev_2,rank_lev_3,rank_lev_4,rank_star_0,rank_star_1,rank_star_2,rank_star_3,rank_star_4,rank_star_5,ready_circle,ready_fight,ready_ready,record_btn,record_btn2,record_close,record_flow,record_icon,record_start,record_stop,right_icon,rss,select_frame,shadow,shop,skill_block,skill_block_hue,skill_cover,skill_dart,skill_dart_hue,skill_fire,skill_frame,skill_ice,skill_lev_back,skill_locked,skill_sheep,skill_thunder,skill_treat,skip_card,slider,slider2,slider_back,snow,snow2,someone,sound_icon,star1,star2,star3,star_fx,stars_1,stars_2,stars_3,stars_4,stars_5,stars_back,stars_get,static_round,stone,stone2,stone_x,subpanel_back,tab_back,tab_item,tab_item2,tailor_item,tailor_item2,talent_blood,talent_critical,talent_defence,talent_defence2,talent_dodge,talent_frame,talent_ice,talent_locked,talent_magic,talent_poison,talent_stun,talent_weak,tip_point,title,tower,twitter,unequip_en,updown,upgrade_en,victory_en,vs,vs_back,vs_bar,warning,wuguan_item,wuguan_item2,xp,youtobe,zoom,zoom_in,zoom_out,zzz"
+		},
+		{
+			"url": "assets/fly_stones.png",
+			"type": "image",
+			"name": "fly_stones_png"
+		},
+		{
+			"url": "assets/spark_pic.png",
+			"type": "image",
+			"name": "spark_pic_png"
+		},
+		{
+			"url": "assets/egret.png",
+			"type": "image",
+			"name": "egret_png"
+		},
+		{
+			"url": "assets/mybtn.png",
+			"type": "image",
+			"name": "mybtn_png"
+		},
+		{
+			"url": "assets/platlogo.png",
+			"type": "image",
+			"name": "platlogo_png"
+		},
+		{
+			"url": "assets/mylogo.png",
+			"type": "image",
+			"name": "mylogo_png"
+		},
+		{
+			"url": "assets/empty_btn.png",
+			"type": "image",
+			"name": "empty_btn_png"
+		},
+		{
+			"url": "assets/name_en.png",
+			"type": "image",
+			"name": "name_en_png"
+		}
+	]
+}

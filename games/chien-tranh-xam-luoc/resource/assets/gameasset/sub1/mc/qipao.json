@@ -1,0 +1,46 @@
+{"mc":{
+	"qipao":{
+		"frameRate":10,
+		"labels":[
+			{"name":"qipao","frame":1,"end":5}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"merge1_png",
+			"x":-25,
+			"y":-33
+			},
+			{
+			"res":"merge2_png",
+			"x":-29,
+			"y":-37
+			},
+			{
+			"res":"merge3_png",
+			"x":-37,
+			"y":-40
+			},
+			{
+			"res":"merge4_png",
+			"x":-45,
+			"y":-47
+			},
+			{
+			"res":"merge5_png",
+			"x":-54,
+			"y":-55
+			}
+			]
+}},
+	"res":{
+		"merge4_png":{"x":119,"y":1,"w":97,"h":88},
+		"merge3_png":{"x":119,"y":91,"w":82,"h":74},
+		"merge1_png":{"x":69,"y":167,"w":58,"h":61},
+		"merge5_png":{"x":1,"y":1,"w":116,"h":104},
+		"merge2_png":{"x":1,"y":107,"w":66,"h":69}
+	}}

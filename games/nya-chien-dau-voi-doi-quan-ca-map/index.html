@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="./data/center.css" />
+<link type="text/css" rel="stylesheet" href="./data/loader.css" />
+<link type="text/css" rel="stylesheet" href="./data/title.css" />
+<link type="text/css" rel="stylesheet" href="./data/legal.css" />
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="levelMessage">
+<div id="levelBackground"></div>
+<div class="levelCharacter" id="levelMessageCharacter"></div>
+<div id="ninjagoLogo2"></div>
+<div class="ninjagoLogoDate mydate" id="ninjaLogoText2">IN THEATERS SEPTEMBER 22</div>
+<div class="levelMarker" id="levelMarker1"></div>
+<div class="levelMarker" id="levelMarker2"></div>
+<div class="levelMarker" id="levelMarker3"></div>
+<div class="levelMarker" id="levelMarker4"></div>
+<div class="levelMarker" id="levelMarker1_Off"></div>
+<div class="levelMarker" id="levelMarker2_Off"></div>
+<div class="levelMarker" id="levelMarker3_Off"></div>
+<div class="levelMarker" id="levelMarker4_Off"></div>
+<div class="levelFont" id="level1Text"></div>
+<div class="levelFont" id="level2Text"></div>
+<div class="levelFont" id="level3Text"></div>
+<div class="levelFont" id="level4Text"></div>
+<div class="headingFont" id="endGameText">Tap to Start</div>
+<div id="playAgainButton" onclick="playAgainButtonAction(false);">Play<br />Again</div>
+<div id="playAgain" onclick="playAgainButtonAction(false);"></div>
+<div id="moreGamesButton" onclick="moreGamesButtonAction();">More<br />Games</div>
+<div id="moreGames" onclick="moreGamesButtonAction();"></div>
+<div id="exitButton2" onclick="exitButtonAction();"></div>
+<div id="soundButton2" onclick="muteToggle();"></div>
+<div id="soundButton2off" onclick="muteToggle();"></div>
+<div id="siteLink">
+<div id="siteLinkText"></div>
+</div>
+</div>
+<div id="BottomGradient"></div>
+<div class="headingFont" id="headingText">Tap to Start</div>
+<div id="loadingScreen">
+<div id="loadingBackground"></div>
+<div class="levelCharacter" id="loadingCharacter">Loading</div>
+<div id="loadingGraphic"></div>
+<div id="loadingRing"></div>
+<div class="loadingRingCenter" id="loadingRingCenter1"></div>
+<div class="loadingRingCenter" id="loadingRingCenter2"></div>
+<div class="loadingRingCenter" id="loadingRingCenter3"></div>
+<div class="loadingRingCenter" id="loadingRingCenter4"></div>
+<div class="loadingRingCenter" id="loadingRingCenter5"></div>
+<div class="loadingRingCenter" id="loadingRingCenter6"></div>
+<div class="headingFont" id="loadingMessage"></div>
+<div id="loadbarBackground">
+<div id="loadbar"></div>
+</div>
+<div id="ninjagoLogo4"></div>
+<div class="ninjagoLogoDate3 mydate" id="ninjaLogoText4">IN THEATERS SEPTEMBER 22</div>
+</div>
+<div id="inGameElements">
+<div id="ninjagoLogo3"></div>
+<div class="ninjagoLogoDate3 mydate" id="ninjaLogoText3">IN THEATERS SEPTEMBER 22</div>
+<div id="soundButton3" onclick="muteToggle();"></div>
+<div id="soundButton3off" onclick="muteToggle();"></div>
+<div id="pauseButton" onclick="pauseButtonAction(-1);" ontouch="pauseButtonAction(-1);"></div>
+</div>
+<div id="pauseGameWindow">
+<div id="pauseGameWindowBackground"></div>
+<div id="pauseWindowAlignment">
+<div class="pauseGameHeading" id="pauseGameHeadingText"></div>
+<div class="pauseGameOptions" id="pauseGameOptions1" onclick="pauseButtonButton(1);"></div>
+<div class="pauseGameOptions" id="pauseGameOptions2" onclick="pauseButtonButton(2);"></div>
+<div class="pauseGameOptions" id="pauseGameOptions3" onclick="pauseButtonButton(3);"></div>
+<div class="pauseGameOptions" id="pauseGameOptions4" onclick="pauseButtonButton(4);" style="color:#FFFF00"></div>
+</div>
+</div>
+<div id="titleScreen">
+<div id="titleBackground"></div>
+<div class="levelCharacter" id="titleCharacter"></div>
+<div class="levelCharacter" id="levelMessage1"></div>
+<div class="levelCharacter" id="levelMessage2"></div>
+<div class="levelCharacter" id="levelMessage3"></div>
+<div id="ninjagoLogo"></div>
+<div class="ninjagoLogoDate mydate" id="ninjaLogoText">IN THEATERS SEPTEMBER 22</div>
+<div id="titlePlayText" onclick="advanceGameState();">PLAY</div>
+<div id="playButton" onclick="advanceGameState();"></div>
+<div class="headingFont" id="titleGameName">NYA VS THE SHARK ARMY</div>
+<div class="boldFont" id="titleDescription">Battle through waves of Shark Warriors to reach the ultimate showdown with Garmadon.</div>
+<div class="copyFont" style="visbility:hidden" id="titleInstructions">Use Up, Down, Left and Right arrows to defeat enemies as they reach you. Defeat enough enemies and you will move forward to a new stage.</div>
+<div class="copyFont" id="titleInstructionsImage">
+<img class="InstructionImage" src="Media/UI/Title_Inst_Mobile.gif" loop="infinte">
+</div>
+<div class="copyFont" id="titleInstructionsImage_PC">
+<img class="InstructionImage" src="Media/UI/Title_Inst_PC.gif" loop="infinte">
+</div>
+<div id="loadbarBackground2">
+<div id="loadbar2"></div>
+</div>
+<div id="exitButton" onclick="exitButtonAction();"></div>
+<div id="soundButton" onclick="muteToggle();"></div>
+<div id="soundButtonoff" onclick="muteToggle();"></div>
+<div id="siteLink2">
+<div id="siteLinkText2"></div>
+</div>
+</div>
+<div id="hitResponse">
+<div id="hitResponseCharacter"></div>
+<div id="hitResponseCharacterGlow"></div>
+<div class="headingFont" id="hitResponseText">NEVER GIVE UP!</div>
+</div>
+<div id="blocker"></div>
+<div class="mask" id="topMask"></div>
+<div class="mask" id="bottomMask"></div>
+<div id="div_popup"></div>
+<div id="IEMessage">
+<div id="IEMessageText"></div>
+</div>
+<script src="./JS/jquery-3.2.1.min.js"></script>
+<script src="./prefs.js"></script>
+<script src="./prep.js?"></script>
+<script src="./JS/lib/TweenLite.min.js"></script>
+<script src="./JS/lib/CSSPlugin.min.js"></script>
+<script src="./JS/lib/EasePack.min.js"></script>
+<script src="./JS/jszip-utils.js"></script>
+<script src="./JS/jszip.js"></script>
+<script src="./JS/loader.js"></script>
+<script src="./JS/three.js"></script>
+<script src="./JS/GPUParticleSystem.js"></script>
+<script src="./JS/NURBSCurve.js"></script>
+<script src="./JS/NURBSUtils.js"></script>
+<script src="./JS/FBXLoader.js"></script>
+<script src="./JS/gameParams.js"></script>
+<script src="./JS/legal.js"></script>
+<script src="./JS/jsondata.js"></script>
+<script src="./JS/shaders.js"></script>
+<script src="./JS/nyaEnemy.js"></script>
+<script src="./JS/interface.js?"></script>
+<script src="./JS/touch.js"></script>
+<script src="./JS/main.js"></script>
+<script src="./JS/data.js?"></script>
+
+
+</body>
+</html>

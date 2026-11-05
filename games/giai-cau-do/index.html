@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Giải câu đố</title>
+
+	
+
+	<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	
+
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+
+	<meta name="HandheldFriendly" content="true" />
+
+	
+
+	<!-- Chrome for Android web app tags -->
+
+	<meta name="mobile-web-app-capable" content="yes" />
+
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+
+	<style type="text/css">
+
+		* {
+
+			padding: 0;
+
+			margin: 0;
+
+		}
+
+		html, body {
+
+			background: #000;
+
+			color: #fff;
+
+			overflow: hidden;
+
+			touch-action: none;
+
+			-ms-touch-action: none;
+
+		}
+
+		canvas {
+
+			touch-action-delay: none;
+
+			touch-action: none;
+
+			-ms-touch-action: none;
+
+		}
+
+
+
+		#gv-hud-actions {
+
+			--gv-btn-size: 64px;
+
+			position: fixed;
+
+			top: 0;
+
+			left: 0;
+
+			z-index: 9999;
+
+			display: none;
+
+			flex-direction: row;
+
+			align-items: center;
+
+			gap: 12px;
+
+			pointer-events: none;
+
+			user-select: none;
+
+			-webkit-user-select: none;
+
+			-moz-user-select: none;
+
+			-ms-user-select: none;
+
+			-webkit-touch-callout: none;
+
+		}
+
+		#gv-hud-actions button {
+
+			pointer-events: auto;
+
+			width: var(--gv-btn-size);
+
+			height: var(--gv-btn-size);
+
+			min-width: 52px;
+
+			min-height: 52px;
+
+			padding: 0;
+
+			border: none;
+
+			background: transparent;
+
+			cursor: pointer;
+
+			-webkit-tap-highlight-color: transparent;
+
+			user-select: none;
+
+			-webkit-user-select: none;
+
+			transition: transform 0.22s ease;
+
+			transform: translateY(0);
+
+		}
+
+		#gv-hud-actions button:hover { transform: translateY(-5px); }
+
+		#gv-hud-actions button:active { transform: translateY(-2px); opacity: 0.9; }
+
+		#gv-hud-actions button:disabled { opacity: 0.5; cursor: default; }
+
+		#gv-hud-actions img {
+
+			display: block;
+
+			width: 100%;
+
+			height: 100%;
+
+			object-fit: contain;
+
+			pointer-events: none;
+
+			user-select: none;
+
+			-webkit-user-select: none;
+
+			-webkit-user-drag: none;
+
+			-webkit-touch-callout: none;
+
+		}
+
+
+
+		#gv-reset-modal {
+
+			position: fixed;
+
+			top: 0;
+
+			right: 0;
+
+			bottom: 0;
+
+			left: 0;
+
+			z-index: 10000;
+
+			display: none;
+
+			align-items: center;
+
+			justify-content: center;
+
+			background: rgba(0, 0, 0, 0.6);
+
+			font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+
+		}
+
+		#gv-reset-modal .gv-reset-box {
+
+			width: min(88vw, 380px);
+
+			padding: 22px 20px 18px;
+
+			border-radius: 16px;
+
+			background: #fff;
+
+			color: #222;
+
+			text-align: center;
+
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+		}
+
+		#gv-reset-modal .gv-reset-title {
+
+			font-size: 20px;
+
+			font-weight: 700;
+
+			margin-bottom: 10px;
+
+		}
+
+		#gv-reset-modal .gv-reset-text {
+
+			font-size: 15px;
+
+			line-height: 1.45;
+
+			color: #555;
+
+			margin-bottom: 18px;
+
+		}
+
+		#gv-reset-modal .gv-reset-actions {
+
+			display: flex;
+
+			gap: 12px;
+
+			justify-content: center;
+
+		}
+
+		#gv-reset-modal .gv-reset-actions button {
+
+			flex: 1;
+
+			min-height: 44px;
+
+			border: none;
+
+			border-radius: 10px;
+
+			color: #fff;
+
+			font-size: 16px;
+
+			font-weight: 700;
+
+			cursor: pointer;
+
+		}
+
+		#gv-reset-modal .gv-reset-actions button:disabled { opacity: 0.6; cursor: default; }
+
+		#gv-reset-confirm { background: #e53935; }
+
+		#gv-reset-cancel { background: #1e88e5; }
+
+    </style>
+
+	
+
+
+
+</head> 
+
+ 
+
+<body> 
+
+	<div id="fb-root"></div>
+
+	
+
+	<script>
+
+	// Issue a warning if trying to preview an exported project on disk.
+
+	(function(){
+
+		// Check for running exported on file protocol
+
+		if (window.location.protocol.substr(0, 4) === "file")
+
+		{
+
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+
+		}
+
+	})();
+
+	</script>
+
+	
+
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+
+	<div id="c2canvasdiv">
+
+	
+
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+
+		<canvas id="c2canvas" width="1080" height="1920">
+
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+
+			You can change it, but it is a good idea to link to a description of a browser
+
+			and provide some links to download some popular HTML5-compatible browsers. -->
+
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="//www.whatbrowser.org">What is a browser?</a>
+
+			<br/><br/><a href="//www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+
+			<a href="//www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+
+			<a href="//www.google.com/chrome/">Google Chrome</a><br/>
+
+			<a href="//www.apple.com/safari/download/">Apple Safari</a></h1>
+
+		</canvas>
+
+
+
+		<div id="gv-hud-actions">
+
+			<button type="button" id="gv-reset-data-btn" title="Xóa dữ liệu" aria-label="Xóa dữ liệu">
+
+				<img src="reset-data.png" alt="" draggable="false">
+
+			</button>
+
+			<button type="button" id="gv-send-score-btn" title="Gửi điểm" aria-label="Gửi điểm">
+
+				<img src="save-score.png" alt="" draggable="false">
+
+			</button>
+
+		</div>
+
+
+
+		<div id="gv-reset-modal" role="dialog" aria-modal="true">
+
+			<div class="gv-reset-box">
+
+				<div class="gv-reset-title">Bạn có chắc chắn xóa không?</div>
+
+				<div class="gv-reset-text">Mọi dữ liệu sẽ bị xóa vĩnh viễn và không thể khôi phục.</div>
+
+				<div class="gv-reset-actions">
+
+					<button type="button" id="gv-reset-confirm">Xác nhận</button>
+
+					<button type="button" id="gv-reset-cancel">Hủy</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		
+
+	</div>
+
+	
+
+	<!-- Pages load faster with scripts at the bottom -->
+
+	
+
+	<!-- Construct 2 exported games require jQuery. -->
+
+	<script src="jquery-3.4.1.min.js"></script>
+
+
+
+
+
+	
+
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+
+	<script src="c2runtime.js"></script>
+
+	<script src="arcade-save.js?2"></script>
+
+
+
+    <script>
+
+		// Start the Construct 2 project running on window load.
+
+		jQuery(document).ready(function ()
+
+		{
+
+			var started = false;
+
+			function boot()
+
+			{
+
+				if (started)
+
+					return;
+
+				started = true;
+
+				cr_createRuntime("c2canvas");
+
+			}
+
+			// Cloud load có timeout 5s; watchdog đảm bảo game luôn khởi động.
+
+			setTimeout(boot, 6000);
+
+			try {
+
+				if (window.ArcadeSave && typeof ArcadeSave.init === "function")
+
+					ArcadeSave.init().then(boot, boot);
+
+				else
+
+					boot();
+
+			}
+
+			catch (e)
+
+			{
+
+				boot();
+
+			}
+
+		});
+
+		
+
+		// Pause and resume on page becoming visible/invisible
+
+		function onVisibilityChanged() {
+
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+
+				cr_setSuspended(true);
+
+			else
+
+				cr_setSuspended(false);
+
+		};
+
+		
+
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+		
+
+		function OnRegisterSWError(e)
+
+		{
+
+			console.warn("Failed to register service worker: ", e);
+
+		};
+
+		
+
+		// Runtime calls this global method when ready to start caching (i.e. after startup).
+
+		// This registers the service worker which caches resources for offline support.
+
+		window.C2_RegisterSW = function C2_RegisterSW()
+
+		{
+
+			if (!navigator.serviceWorker)
+
+				return;		// no SW support, ignore call
+
+			
+
+			try {
+
+				navigator.serviceWorker.register("sw.js", { scope: "./" })
+
+				.then(function (reg)
+
+				{
+
+					console.log("Registered service worker on " + reg.scope);
+
+				})
+
+				.catch(OnRegisterSWError);
+
+			}
+
+			catch (e)
+
+			{
+
+				OnRegisterSWError(e);
+
+			}
+
+		};
+
+    </script>
+
+
+
+</body> 
+
+</html> 

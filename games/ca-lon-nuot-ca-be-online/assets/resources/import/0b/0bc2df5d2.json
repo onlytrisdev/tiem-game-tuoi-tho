@@ -1,0 +1,202 @@
+[1, ["ecpdLyjvZBwrvm+cedCcQy", "9fhQZfUvNOQ4YNKxxT8l13", "626Ih36xhLMIl8pTA85LT7", "e45WF5kwZKxIssIHLFZSyV", "8dcOV/o8lKgafBm3OE4bdp", "71VyZnE/xLLKiqxd+D+DbQ", "a2MjXRFdtLlYQ5ouAFv/+R", "723Yktx6JEiKtQcSfODwcf", "35Iq+HCCJImZ3V4lHrGGUK", "ccW9AoPm9DFYwcEpk3nFyK", "509W2rTrpEpaF7y0QsoYRY", "136UgBONBMjK+mx6BGBm5M", "8fDoq5+a9HY4Cv3uq5hekt", "183DYuGaZJwYjL5YMdBWUK", "05/5ZyPN5KpJ+8LdJ9xgtm", "37eSSd20FBSKirimHKCFZN", "45rHkZerNO5bTDkky51JIh"],
+	["node", "_spriteFrame", "_textureSetter", "root", "data", "_N$file"],
+	["cc.SpriteFrame", ["cc.Node", ["_name", "_opacity", "_groupIndex", "_objFlags", "_prefab", "_components", "_parent", "_contentSize", "_children", "_trs", "_color"], -1, 4, 9, 1, 5, 2, 7, 5],
+		["cc.PrefabInfo", ["fileId", "root", "asset"], 2, 1, 1],
+		["cc.Sprite", ["_sizeMode", "node", "_materials", "_spriteFrame"], 2, 1, 3, 6],
+		["cc.Prefab", ["_name"], 2],
+		["6a250I24M9GNbrgqP9uXNQW", ["node"], 3, 1],
+		["cc.Button", ["node", "clickEvents"], 3, 1, 9],
+		["cc.ClickEvent", ["_componentId", "handler", "target"], 1, 1],
+		["cc.BlockInputEvents", ["node"], 3, 1],
+		["cc.Label", ["_string", "_fontSize", "_lineHeight", "_isSystemFontUsed", "_N$horizontalAlign", "_N$verticalAlign", "node", "_materials", "_N$file"], -3, 1, 3, 6],
+		["cc.LabelOutline", ["_width", "node", "_color"], 2, 1, 5]
+	],
+	[
+		[2, 0, 1, 2, 2],
+		[3, 1, 2, 3, 1],
+		[1, 0, 6, 5, 4, 7, 9, 2],
+		[6, 0, 1, 1],
+		[7, 0, 1, 2, 3],
+		[4, 0, 2],
+		[1, 0, 8, 5, 4, 2],
+		[1, 0, 6, 8, 4, 2],
+		[1, 0, 6, 8, 5, 4, 7, 9, 2],
+		[1, 0, 1, 2, 6, 5, 4, 10, 7, 4],
+		[1, 0, 3, 6, 5, 4, 7, 3],
+		[5, 0, 1],
+		[2, 1, 2, 1],
+		[3, 0, 1, 2, 3, 2],
+		[8, 0, 1],
+		[9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 7],
+		[10, 0, 1, 2, 2]
+	],
+	[
+		[
+			[{
+				"name": "Image_shop2_04",
+				"rect": [0, 0, 107, 32],
+				"offset": [0, 0],
+				"originalSize": [107, 32],
+				"capInsets": [0, 0, 0, 0]
+			}],
+			[0], 0, [0],
+			[2],
+			[1]
+		],
+		[
+			[{
+				"name": "Image_shop2_02",
+				"rect": [0, 0, 33, 30],
+				"offset": [0, 0],
+				"originalSize": [33, 30],
+				"capInsets": [0, 0, 0, 0]
+			}],
+			[0], 0, [0],
+			[2],
+			[2]
+		],
+		[
+			[{
+				"name": "Image_shop2_06",
+				"rect": [0, 0, 229, 49],
+				"offset": [0, 0],
+				"originalSize": [229, 49],
+				"capInsets": [0, 0, 0, 0]
+			}],
+			[0], 0, [0],
+			[2],
+			[3]
+		],
+		[
+			[{
+				"name": "Button_shop2_02",
+				"rect": [0, 0, 247, 86],
+				"offset": [0, 0],
+				"originalSize": [247, 86],
+				"capInsets": [0, 0, 0, 0]
+			}],
+			[0], 0, [0],
+			[2],
+			[4]
+		],
+		[
+			[{
+				"name": "Image_shop2_01",
+				"rect": [0, 0, 581, 332],
+				"offset": [0, 0],
+				"originalSize": [581, 332],
+				"capInsets": [0, 0, 0, 0]
+			}],
+			[0], 0, [0],
+			[2],
+			[5]
+		],
+		[
+			[
+				[5, "noGold"],
+				[6, "noGold", [-3],
+					[
+						[11, -2]
+					],
+					[12, -1, 0]
+				],
+				[7, "root", 1, [-4, -5, -6, -7, -8, -9],
+					[0, "7bGNDlyOFMUqGv0tMCwPFp", 1, 0]
+				],
+				[8, "Button_shop2_02", 2, [-12, -13, -14, -15],
+					[
+						[1, -10, [18], 19],
+						[3, -11, [
+							[4, "6a250I24M9GNbrgqP9uXNQW", "btnFreeGold", 1]
+						]]
+					],
+					[0, "79dbbeOb1OrpuzgXT0PEIi", 1, 0],
+					[5, 247, 86],
+					[144.005, -227, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[9, "mask", 168, 1, 2, [
+						[13, 0, -16, [0], 1],
+						[14, -17]
+					],
+					[0, "64BWNdWIdBgbrypVeFf+zD", 1, 0],
+					[4, 4278190080],
+					[5, 3280, 3280]
+				],
+				[2, "Button_shop2_01", 2, [
+						[1, -18, [6], 7],
+						[3, -19, [
+							[4, "6a250I24M9GNbrgqP9uXNQW", "btnGiveUp", 1]
+						]]
+					],
+					[0, "4aWvX/cytJFZN/5p2Z8Q8V", 1, 0],
+					[5, 247, 86],
+					[-126.823, -227, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[2, "labStr", 3, [
+						[15, "2000", 30, 30, false, 1, 1, -20, [16], 17],
+						[16, 2, -21, [4, 4278190080]]
+					],
+					[0, "f9v3rgfshDzI4wDQr2ULS0", 1, 0],
+					[5, 69.38, 30],
+					[11.059, 20.665, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[10, "Image_shop2_01", 512, 2, [
+						[1, -22, [2], 3]
+					],
+					[0, "3dh3AZjYRE8LqeNLbhtTuY", 1, 0],
+					[5, 581, 332]
+				],
+				[2, "Image_shop2_06", 2, [
+						[1, -23, [4], 5]
+					],
+					[0, "c9lAhSoC9OiLrpzxYrsEbK", 1, 0],
+					[5, 229, 49],
+					[20.332, 6.256, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[2, "Image_shop2_05", 2, [
+						[1, -24, [8], 9]
+					],
+					[0, "47KI2IFzVDTqC+qlnKiCTV", 1, 0],
+					[5, 117, 35],
+					[-126.823, -227, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[2, "Image_shop2_04", 3, [
+						[1, -25, [10], 11]
+					],
+					[0, "b4ZscuHGxFvpxD5Jt3f/yX", 1, 0],
+					[5, 107, 32],
+					[24.836, -12.105, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[2, "Image_shop2_03", 3, [
+						[1, -26, [12], 13]
+					],
+					[0, "55O7I5+vtEUZR33IqcP19r", 1, 0],
+					[5, 44, 34],
+					[-54.583, -13.179, 0, 0, 0, 0, 1, 1, 1, 1]
+				],
+				[2, "Image_shop2_02", 3, [
+						[1, -27, [14], 15]
+					],
+					[0, "4c0LdI5z5Fz6MMc32fmfgp", 1, 0],
+					[5, 33, 30],
+					[-46.078, 19.599, 0, 0, 0, 0, 1, 1, 1, 1]
+				]
+			], 0, [0, 3, 1, 0, 0, 1, 0, -1, 2, 0, -1, 4, 0, -2, 7, 0, -3, 8, 0, -4, 5, 0, -5, 9, 0, -6, 3, 0, 0, 3, 0, 0, 3, 0, -1, 10, 0, -2, 11, 0, -3, 12, 0, -4, 6, 0, 0, 4, 0, 0, 4, 0, 0, 5, 0, 0, 5, 0, 0, 6, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 4, 1, 27],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[-1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 5, -1, 1],
+			[0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 15]
+		],
+		[
+			[{
+				"name": "Button_shop2_01",
+				"rect": [0, 0, 247, 86],
+				"offset": [0, 0],
+				"originalSize": [247, 86],
+				"capInsets": [0, 0, 0, 0]
+			}],
+			[0], 0, [0],
+			[2],
+			[16]
+		]
+	]
+]

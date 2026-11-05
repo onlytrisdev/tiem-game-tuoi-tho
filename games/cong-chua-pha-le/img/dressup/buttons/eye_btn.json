@@ -1,0 +1,35 @@
+﻿{"frames": {
+
+"eyes_bt0000":
+{
+	"frame": {"x":0,"y":0,"w":66,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":65},
+	"sourceSize": {"w":66,"h":65}
+},
+"eyes_bt0001":
+{
+	"frame": {"x":76,"y":0,"w":66,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":65},
+	"sourceSize": {"w":66,"h":65}
+},
+"eyes_bt0002":
+{
+	"frame": {"x":152,"y":0,"w":66,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":65},
+	"sourceSize": {"w":66,"h":65}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "eye_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":240,"h":80},
+	"scale": "1"
+}
+}

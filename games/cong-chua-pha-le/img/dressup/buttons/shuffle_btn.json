@@ -1,0 +1,35 @@
+﻿{"frames": {
+
+"shuffle_bt0000":
+{
+	"frame": {"x":0,"y":0,"w":72,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+	"sourceSize": {"w":72,"h":72}
+},
+"shuffle_bt0001":
+{
+	"frame": {"x":82,"y":0,"w":72,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+	"sourceSize": {"w":72,"h":72}
+},
+"shuffle_bt0002":
+{
+	"frame": {"x":164,"y":0,"w":72,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+	"sourceSize": {"w":72,"h":72}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.1.115",
+	"image": "shuffle_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":260,"h":80},
+	"scale": "1"
+}
+}

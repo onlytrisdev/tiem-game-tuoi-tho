@@ -1,0 +1,193 @@
+
+
+<!doctype html>
+
+
+
+<html lang = "en">
+
+
+
+<head>
+
+<title>Công chúa Pha Lê - Crystal Gem Pearl Dress Up</title>
+
+
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+
+	<meta charset = "UTF-8"></meta>
+
+	<meta name = "mobile-web-app-capable" content = "yes"></meta>
+
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>	
+
+	<script src = "lib/phaser.min.js"></script>
+
+	<script src = "scripts/colors.js"></script>
+
+	<script src = "scripts/boot.js"></script>
+
+	<script src = "scripts/preload.js"></script>
+
+	<script src = "scripts/titlescreen.js"></script>
+
+	<script src = "scripts/dressup.js"></script>
+
+
+
+	<style>
+
+	body{margin: 0px;}
+
+	</style>
+
+
+
+	<script>
+
+	var adPlaying = false;
+
+	window["GD_OPTIONS"] = {
+
+	    "gameId": "65adc850bf394e6a901ae6a087bf0b2c",
+
+	    "advertisementSettings": {
+
+	    	"debug": false,
+
+	    	"autoplay": false,
+
+	    	"locale": "en",
+
+	    },
+
+	    "onEvent": function(event) {
+
+	        switch (event.name) {
+
+	            case "SDK_GAME_START":
+
+	                // advertisement done, resume game logic and unmute audio
+
+	                game.sound.mute = false;
+
+	                break;
+
+	            case "SDK_GAME_PAUSE":
+
+	                // pause game logic / mute audio
+
+	                game.sound.mute = true;
+
+	                break;
+
+	        }
+
+	    },
+
+	};
+
+	(function(d, s, id) {
+
+	    var js, fjs = d.getElementsByTagName(s)[0];
+
+	    if (d.getElementById(id)) return;
+
+	    js = d.createElement(s);
+
+	    js.id = id;
+
+	    js.src = '';
+
+	    fjs.parentNode.insertBefore(js, fjs);
+
+	}(document, 'script', 'gamedistribution-jssdk'));
+
+
+
+	</script>
+
+
+
+	<script>
+
+	var game;
+
+	(function()
+
+		{		
+
+			game = new Phaser.Game(960,540,Phaser.AUTO,'game');
+
+			game.preserveDrawingBuffer = true;
+
+			
+
+			//add states
+
+			game.state.add("Boot",boot);
+
+			game.state.add("Preload",preload);
+
+			game.state.add("TitleScreen",titleScreen);
+
+			game.state.add("DressUp",dressup);
+
+
+
+
+
+			//start boot state
+
+			game.state.start("Boot");
+
+
+
+			
+
+			
+
+		}
+
+	)();
+
+
+
+	
+
+	function preventBehavior(e)
+
+	{
+
+		e.preventDefault();
+
+	};
+
+	document.addEventListener("touchmove",preventBehavior,false);
+
+
+
+	
+
+
+
+	</script>
+
+
+
+	
+
+
+
+	
+
+	</head>
+
+
+
+</html>

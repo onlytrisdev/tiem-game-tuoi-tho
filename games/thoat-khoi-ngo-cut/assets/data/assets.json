@@ -1,0 +1,194 @@
+{
+  "Load_HD": [
+    {
+      "type": "atlasJSONHash",
+      "key": "load",
+      "textureURL": "assets/images/atlas/load_hd.png",
+      "atlasURL": "assets/data/atlas/load_hd.json",
+      "atlasData": null
+    }
+  ],
+  "Load_MD": [
+    {
+      "type": "atlasJSONHash",
+      "key": "load",
+      "textureURL": "assets/images/atlas/load_md.png",
+      "atlasURL": "assets/data/atlas/load_md.json",
+      "atlasData": null
+    }
+  ],
+  "Load_SD": [
+    {
+      "type": "atlasJSONHash",
+      "key": "load",
+      "textureURL": "assets/images/atlas/load_sd.png",
+      "atlasURL": "assets/data/atlas/load_sd.json",
+      "atlasData": null
+    }
+  ],
+  "HD": [
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-sky",
+      "textureURL": "assets/images/atlas/scenery-sky_hd.png",
+      "atlasURL": "assets/data/atlas/scenery-sky_hd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-trees",
+      "textureURL": "assets/images/atlas/scenery-trees_hd.png",
+      "atlasURL": "assets/data/atlas/scenery-trees_hd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-water-and-clouds",
+      "textureURL": "assets/images/atlas/scenery-water-and-clouds_hd.png",
+      "atlasURL": "assets/data/atlas/scenery-water-and-clouds_hd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "splash-screen",
+      "textureURL": "assets/images/atlas/splash-screen_hd.jpg",
+      "atlasURL": "assets/data/atlas/splash-screen_hd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "tiles",
+      "textureURL": "assets/images/atlas/tiles_hd.png",
+      "atlasURL": "assets/data/atlas/tiles_hd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "ui",
+      "textureURL": "assets/images/atlas/ui_hd.png",
+      "atlasURL": "assets/data/atlas/ui_hd.json",
+      "atlasData": null
+    }
+  ],
+  "MD": [
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-sky",
+      "textureURL": "assets/images/atlas/scenery-sky_md.png",
+      "atlasURL": "assets/data/atlas/scenery-sky_md.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-trees",
+      "textureURL": "assets/images/atlas/scenery-trees_md.png",
+      "atlasURL": "assets/data/atlas/scenery-trees_md.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-water-and-clouds",
+      "textureURL": "assets/images/atlas/scenery-water-and-clouds_md.png",
+      "atlasURL": "assets/data/atlas/scenery-water-and-clouds_md.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "splash-screen",
+      "textureURL": "assets/images/atlas/splash-screen_md.jpg",
+      "atlasURL": "assets/data/atlas/splash-screen_md.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "tiles",
+      "textureURL": "assets/images/atlas/tiles_md.png",
+      "atlasURL": "assets/data/atlas/tiles_md.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "ui",
+      "textureURL": "assets/images/atlas/ui_md.png",
+      "atlasURL": "assets/data/atlas/ui_md.json",
+      "atlasData": null
+    }
+  ],
+  "SD": [
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-sky",
+      "textureURL": "assets/images/atlas/scenery-sky_sd.png",
+      "atlasURL": "assets/data/atlas/scenery-sky_sd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-trees",
+      "textureURL": "assets/images/atlas/scenery-trees_sd.png",
+      "atlasURL": "assets/data/atlas/scenery-trees_sd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "scenery-water-and-clouds",
+      "textureURL": "assets/images/atlas/scenery-water-and-clouds_sd.png",
+      "atlasURL": "assets/data/atlas/scenery-water-and-clouds_sd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "splash-screen",
+      "textureURL": "assets/images/atlas/splash-screen_sd.jpg",
+      "atlasURL": "assets/data/atlas/splash-screen_sd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "tiles",
+      "textureURL": "assets/images/atlas/tiles_sd.png",
+      "atlasURL": "assets/data/atlas/tiles_sd.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "ui",
+      "textureURL": "assets/images/atlas/ui_sd.png",
+      "atlasURL": "assets/data/atlas/ui_sd.json",
+      "atlasData": null
+    }
+  ],
+  "Audio": [
+    {
+      "type": "audiosprite",
+      "key": "main",
+      "urls": [
+        "assets/audio/audiosprite/main.mp3",
+        "assets/audio/audiosprite/main.ogg"
+      ],
+      "jsonURL": "assets/data/audiosprite/main.json",
+      "jsonData": null,
+      "autoDecode": true
+    }
+  ],
+  "Bitmapfonts": [
+    {
+      "type": "bitmapFont",
+      "key": "webarebears_font-export",
+      "textureURL": "assets/bitmapfonts/webarebears_font-export.png",
+      "atlasURL": "assets/data/bitmapfonts/webarebears_font-export.xml",
+      "atlasData": null,
+      "xSpacing": 0,
+      "ySpacing": 0
+    },
+    {
+      "type": "bitmapFont",
+      "key": "webarebears_font_new-export",
+      "textureURL": "assets/bitmapfonts/webarebears_font_new-export.png",
+      "atlasURL": "assets/data/bitmapfonts/webarebears_font_new-export.xml",
+      "atlasData": null,
+      "xSpacing": 0,
+      "ySpacing": 0
+    }
+  ]
+}

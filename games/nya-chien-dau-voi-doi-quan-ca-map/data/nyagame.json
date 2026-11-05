@@ -1,0 +1,417 @@
+[{
+	"id": "DisplayLoadText",
+	"type": "Command"
+},{
+	"id": "HubUrl",
+	"value": "../../",
+	"type": "Command"
+},{
+	"id": "DisplayLoadText",
+	"type": "Command"
+},{
+	"id": "MenuLoop",
+	"type": "audio",
+	"loop":"1",
+	"value":"Sfx/MenuLoop.mp3"
+},{
+	"id": "EndLoop",
+	"type": "audio",
+	"loop":"1",
+	"value":"Sfx/EndLoop.mp3"
+},{
+	"id": "LevelLoop",
+	"type": "audio",
+	"loop":"1",
+	"value":"Sfx/LevelLoop.mp3"
+},{
+	"id": "BossLoop",
+	"type": "audio",
+	"loop":"1",
+	"value":"Sfx/BossLoop.mp3"
+},{
+	"id": "NyaHit_B",
+	"type": "audio",
+	"value":"Sfx/NyaHit_B.mp3"
+},{
+	"id": "Nyahit",
+	"type": "audio",
+	"value":"Sfx/Nyahit.mp3"
+},{
+	"id": "SwordHit_04",
+	"type": "audio",
+	"value":"Sfx/SwordHit_04.mp3"
+},{
+	"id": "loselife",
+	"type": "audio",
+	"value":"Sfx/loselife.mp3"
+},{
+	"id": "NyaHit_Alt1",
+	"type": "audio",
+	"value":"Sfx/NyaHit_Alt1.mp3"
+},{
+	"id": "NyaHit_F",
+	"type": "audio",
+	"value":"Sfx/NyaHit_F.mp3"
+},{
+	"id": "SwordHit_01",
+	"type": "audio",
+	"value":"Sfx/SwordHit_01.mp3"
+},{
+	"id": "winlevel",
+	"type": "audio",
+	"value":"Sfx/winlevel.mp3"
+},{
+	"id": "NyaHit_Alt2",
+	"type": "audio",
+	"value":"Sfx/NyaHit_Alt2.mp3"
+},{
+	"id": "NyaHit_L",
+	"type": "audio",
+	"value":"Sfx/NyaHit_L.mp3"
+},{
+	"id": "SwordHit_02",
+	"type": "audio",
+	"value":"Sfx/SwordHit_02.mp3"
+},{
+	"id": "enemyhit",
+	"type": "audio",
+	"value":"Sfx/enemyhit.mp3"
+},{
+	"id": "NyaHit_Alt3",
+	"type": "audio",
+	"value":"Sfx/NyaHit_Alt3.mp3"
+},{
+	"id": "NyaHit_R",
+	"type": "audio",
+	"value":"Sfx/NyaHit_R.mp3"
+},{
+	"id": "SwordHit_03",
+	"type": "audio",
+	"value":"Sfx/SwordHit_03.mp3"
+},{
+	"id": "enemyjump",
+	"type": "audio",
+	"value":"Sfx/enemyjump.mp3"
+},{
+	"id": "NyaFBX",
+	"type": "fbx",
+	"loop": false,
+	"root": "",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_start.fbx.gif"
+},{
+	"id": "NyaFBX_attack_F",
+	"type": "fbx",
+	"loop": false,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_attack_F.fbx.dem.gif"
+},{
+	"id": "NyaFBX_attack_B",
+	"type": "fbx",
+	"loop": false,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_attack_B.fbx.dem.gif"
+},{
+	"id": "NyaFBX_attack_L",
+	"type": "fbx",
+	"loop": false,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_attack_L.fbx.dem.gif"
+},{
+	"id": "NyaFBX_attack_R",
+	"type": "fbx",
+	"loop": false,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_attack_R.fbx.dem.gif"
+},{
+	"id": "NyaFBX_attack_P",
+	"type": "fbx",
+	"loop": false,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_attack_P.fbx.dem.gif"
+},{
+	"id": "NyaFBX_celebrate",
+	"type": "fbx",
+	"loop": true,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_celebrate.fbx.dem.gif"
+},{
+	"id": "NyaFBX_hit",
+	"type": "fbx",
+	"loop": false,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_hit.fbx.dem.gif"
+},{
+	"id": "NyaFBX_idle",
+	"type": "fbx",
+	"loop": true,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_idle.fbx.dem.gif"
+},{
+	"id": "NyaFBX_run",
+	"type": "fbx",
+	"loop": true,
+	"root": "NyaFBX",
+	"level": 1,
+	"value": "Media/Nya/COA_Nya_run.fbx.dem.gif"
+},{
+	"id": "SharkFBX",
+	"type": "fbx",
+	"loop": true,
+	"root": "",
+	"level": 1,
+	"value": "Media/Shark/COA_shark_idle.fbx.gif"
+},{
+	"id": "SharkFBX_jump",
+	"type": "fbx",
+	"loop": false,
+	"root": "SharkFBX",
+	"level": 1,
+	"value": "Media/Shark/COA_shark_jump.fbx.dem.gif"
+},{
+	"id": "SharkFBX_attack",
+	"type": "fbx",
+	"loop": false,
+	"root": "SharkFBX",
+	"level": 1,
+	"value": "Media/Shark/COA_shark_attack.fbx.dem.gif"
+},{
+	"id": "SharkFBX_hit",
+	"type": "fbx",
+	"loop": false,
+	"root": "SharkFBX",
+	"level": 1,
+	"value": "Media/Shark/COA_shark_hit.fbx.dem.gif"
+},{
+	"id": "SharkFBX_celebrate",
+	"type": "fbx",
+	"loop": true,
+	"root": "SharkFBX",
+	"level": 1,
+	"value": "Media/Shark/COA_shark_celebrate.fbx.dem.gif"
+},{
+	"id": "LevelMeter",
+	"type": "image",
+	"value": "Media/UI/UI_LevelUp.png"
+},{
+	"id": "LevelMeterFill",
+	"type": "image",
+	"value": "Media/UI/UI_LevelUp_Fill.png"
+},{
+	"id": "heartFull",
+	"type": "image",
+	"value": "Media/UI/UI_heart_01.png"
+},{
+	"id": "heartEmpty",
+	"type": "image",
+	"value": "Media/UI/UI_heart_02.png"
+},{
+	"id": "heartSlashes",
+	"type": "image",
+	"value": "Media/UI/lifestrokes.png"
+},{
+	"id": "PowerupBase",
+	"type": "image",
+	"value": "Media/UI/UI_NyaPower_01.png"
+},{
+	"id": "PowerupMeter",
+	"type": "image",
+	"value": "Media/UI/UI_NyaPower_Meter.png"
+},{
+	"id": "LightSpot",
+	"type": "image",
+	"value": "Media/UI/Game_HitTile.png"
+},{
+	"id": "layout",
+	"type": "plane",
+	"value": "Media/layout.jpg"
+},{
+  "id": "Background0",
+  "value":"Media/Background/level0.jpg",
+  "type":"plane"
+},{
+  "id": "Background1",
+  "value":"Media/Background/level1.jpg",
+  "type":"plane"
+},{
+  "id": "Background2",
+  "value":"Media/Background/level2.jpg",
+  "type":"plane"
+},{
+  "id": "Background3",
+  "value":"Media/Background/level3.jpg",
+  "type":"plane"
+},{
+  "id": "Background4",
+  "value":"Media/Background/level4.jpg",
+  "type":"plane"
+},{
+	"id": "StartGame",
+	"type": "Command"
+},{
+	"id": "HammerheadFBX",
+	"type": "fbx",
+	"loop": true,
+	"root": "",
+	"level": 2,
+	"value": "Media/Hammerhead/COA_hammerhead_idle.fbx.gif"
+},{
+	"id": "HammerheadFBX_jump",
+	"type": "fbx",
+	"loop": false,
+	"root": "HammerheadFBX",
+	"level": 2,
+	"value": "Media/Hammerhead/COA_hammerhead_jump.fbx.dem.gif"
+},{
+	"id": "HammerheadFBX_attack",
+	"type": "fbx",
+	"loop": false,
+	"root": "HammerheadFBX",
+	"level": 2,
+	"value": "Media/Hammerhead/COA_hammerhead_attack.fbx.dem.gif"
+},{
+	"id": "HammerheadFBX_hit",
+	"type": "fbx",
+	"loop": false,
+	"root": "HammerheadFBX",
+	"level": 2,
+	"value": "Media/Hammerhead/COA_hammerhead_hit.fbx.dem.gif"
+},{
+	"id": "HammerheadFBX_celebrate",
+	"type": "fbx",
+	"loop": true,
+	"root": "HammerheadFBX",
+	"level": 2,
+	"value": "Media/Hammerhead/COA_hammerhead_celebrate.fbx.dem.gif"
+},{
+	"id": "LevelLoaded",
+	"value": 2,
+	"type": "Command"
+},{
+	"id": "JellyfishFBX",
+	"type": "fbx",
+	"loop": true,
+	"root": "",
+	"level": 3,
+	"value": "Media/Lobster/COA_Lobster_idle.fbx.gif"
+},{
+	"id": "JellyfishFBX_jump",
+	"type": "fbx",
+	"loop": false,
+	"root": "JellyfishFBX",
+	"level": 3,
+	"value": "Media/Lobster/COA_Lobster_jump.fbx.dem.gif"
+},{
+	"id": "JellyfishFBX_attack",
+	"type": "fbx",
+	"loop": false,
+	"root": "JellyfishFBX",
+	"level": 3,
+	"value": "Media/Lobster/COA_Lobster_attack.fbx.dem.gif"
+},{
+	"id": "JellyfishFBX_hit",
+	"type": "fbx",
+	"loop": false,
+	"root": "JellyfishFBX",
+	"level": 3,
+	"value": "Media/Lobster/COA_Lobster_hit.fbx.dem.gif"
+},{
+	"id": "JellyfishFBX_celebrate",
+	"type": "fbx",
+	"loop": true,
+	"root": "JellyfishFBX",
+	"level": 3,
+	"value": "Media/Lobster/COA_Lobster_celebrate.fbx.dem.gif"
+},{
+	"id": "LevelLoaded",
+	"value": 3,
+	"type": "Command"
+},{
+	"id": "GarmadonFBX",
+	"type": "fbx",
+	"loop": true,
+	"root": "",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_idle01.fbx.gif"
+},{
+	"id": "GarmadonFBX_jump",
+	"type": "fbx",
+	"loop": false,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_jump.fbx.dem.gif"
+},{
+	"id": "GarmadonFBX_attack",
+	"type": "fbx",
+	"loop": false,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_attack.fbx.dem.gif"
+},{
+	"id": "GarmadonFBX_hit",
+	"type": "fbx",
+	"loop": false,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_hit.fbx.dem.gif"
+},{
+	"id": "GarmadonFBX_celebrate",
+	"type": "fbx",
+	"loop": true,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_celebrate.fbx.dem.gif"
+},{
+	"id": "GarmadonFBX_defeated",
+	"type": "fbx",
+	"loop": true,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_defeated.fbx.dem.gif"
+},{
+	"id": "GarmadonFBX_directL",
+	"type": "fbx",
+	"loop": true,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_directL.fbx.dem.gif"
+},{
+	"id": "GarmadonFBX_directR",
+	"type": "fbx",
+	"loop": true,
+	"root": "GarmadonFBX",
+	"level": 4,
+	"value": "Media/Garmadon/COA_Garmadon_directR.fbx.dem.gif"
+},{
+	"id": "GarmadonMeter",
+	"type": "image",
+	"value": "Media/UI/UI_Garmadon.png"
+},{
+	"id": "GarmadonMeterFill",
+	"type": "image",
+	"value": "Media/UI/UI_Garmadon_Fill.png"
+},{
+	"id": "LevelLoaded",
+	"value": 4,
+	"type": "Command"
+},{
+	"id": "StartGameDemo",
+	"type": "Command"
+}]
+
+
+
+
+
+
+
+
+

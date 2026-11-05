@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+<meta charset="utf-8">
+
+<title>Thủy thủ mặt trăng</title>
+
+
+
+<script type="text/javascript" src="js/cdn.js"></script>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script type="text/javascript" src=""></script>
+
+
+
+<link rel="stylesheet" type="text/css"  href="css/style.css"/>
+
+<style>
+
+.scale:hover
+
+{
+
+	-webkit-transform:scale(1.1);
+
+	-moz-transform:scale(1.1);
+
+	-o-transform:scale(1.1);
+
+	transform:scale(1.1);
+
+}
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+<body onload="APIGet()"  background="images/changbg.png">
+
+<script>
+
+    window.console = window.console || (function(){
+
+        var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function(){};
+
+        return c;
+
+    })();
+
+
+
+    window.addEventListener('scroll', function () {
+
+        // Do not scroll when keyboard is visible
+
+        if (document.activeElement === document.body && window.scrollY > 0) {
+
+            document.body.scrollTop = 0;
+
+        }
+
+    }, true);
+
+
+
+    window.addEventListener('resize', function () {
+
+        document.body.scrollTop = 0;
+
+    }, true);
+
+
+
+
+
+</script>
+
+<script type="text/javascript" src="js/html2canvas.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+
+    var saveFile = function(data, filename){
+
+        var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+
+        save_link.href = data;
+
+        save_link.download = filename;
+
+
+
+        var event = document.createEvent('MouseEvents');
+
+        event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+        save_link.dispatchEvent(event);
+
+    };
+
+
+
+    function saveFun(){
+
+
+
+        
+
+        document.getElementById("music").style.display="none";
+
+        document.getElementById("replay").style.display="none";
+
+        document.getElementById("MG3").style.display="none";
+
+
+
+        html2canvas(document.body, {
+
+            height:window.screen.availHeight,
+
+            width:7*window.screen.availHeight/5,
+
+            onrendered: function(canvas) {
+
+
+
+                //alert(eval('Third_Page'));
+
+                //console.log(canvas);
+
+                //document.body.appendChild(canvas);
+
+
+
+                //c_scene_play.menu2Layer.visible=false;
+
+                //c_scene_play.logoLayer.visible=false;
+
+
+
+                //var canvas = document.getElementById("gameCanvas");
+
+
+
+                //var img    = canvas.toDataURL("image/png");
+
+
+
+                //window.location.href=image; // it will save locally
+
+
+
+                //var canvas_width = canvas.height*7/5;
+
+                //var canvas_height = canvas.height;
+
+
+
+                var explorer =  document.all ? 'IE' : 'others';
+
+
+
+                if(explorer=='IE'){
+
+                    //alert(1);
+
+                    try{
+
+                        var img    = canvas.toDataURL("image/png");
+
+                        //img="http://www.baidufe.com/fe/blog/static/img/fe-128.png?v=04657412";
+
+                        var k = window.open();
+
+                        k.document.write('<img src="'+img+'" />');
+
+                        k.document.close();
+
+                    }catch(err){
+
+                        cc.log("[error] - save() - "+ err);
+
+                        //alert(err);
+
+                    }
+
+                }else{
+
+                    var img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+
+                    window.win = open (img);
+
+                    var type="png";
+
+                    // ���غ��������
+
+                    var filename = 'MagicalMix_' + (new Date()).getTime() + '.' + type;
+
+                    // download
+
+                    saveFile(img,filename);
+
+                }
+
+
+
+            },
+
+            canvas_id: 'canvas'//ͨ���޸�html2canvasԴ�����canvas��id
+
+        });
+
+
+
+        //html2canvas(document.body).then(function(canvas) {
+
+
+
+
+
+        //});
+
+
+
+
+
+       
+
+
+
+        document.getElementById("replay").style.display="block";
+
+        document.getElementById("MG3").style.display="block";
+
+
+
+        document.getElementById("music").style.display="block";
+
+    }
+
+
+
+    //html2canvas(document.body).then(function(canvas) {
+
+    //alert(canvas);
+
+    //console.log(canvas);
+
+    //document.body.appendChild(canvas);
+
+    //});
+
+
+
+
+
+
+
+</script>
+
+	<div id="background">
+
+<!--	<div id="spilgames-splash-screen" class="spilgames-splash-screen-gone"></div>  -->
+
+		<div id="begin_page"  style="display:none">
+
+			<img src="images/kaichangbg.png" width="100%"  style="z-index:0">  
+
+		<!--	<img id="begin_logo"    style="z-index:4" /> -->
+
+			<div id="progress_bar" style="position:absolute;z-index:4; opacity:1; " >
+
+			<div id="progress" style="z-index:4; "  ></div><span id="progNum" style="position:absolute;z-index:5;top:1%"></span> </div>
+
+		</div><!--begin_page-->
+
+		<img id="music" src="images/yinyueguan.png" width="5%" style="z-index:1;top:6%;left:2%;display:none;cursor:pointer;" onclick="controlMusic()" >
+
+		<div id="first_page" style="display:none">
+
+		<!--	<img id="first_logo"    style="z-index:4" /> -->
+
+			<img src="images/kaichangbg.png" width="100%"  style="z-index:0">  
+
+			<!--   -->
+
+			<img id="play" src="images/play.png" width="13%"  style="z-index:1;top:63%;right:18%;display:none" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="clickPlay()"> 
+
+		<!--	<img id="MG1" src="images/MG1.png" width="13%" style="z-index:1;top:80%;right:18%;display:none" onmouseover="overNutton(this)" onmouseout="outNutton(this)"> -->
+
+			<img id="star1" class="flashStar"  src="images/star.png"  style="z-index:2;left:3%;top:15%;display:none" width=5% height=5%/>
+
+			<img id="star2" class="flashStar"  src="images/star.png"  style="z-index:2;left:32%;top:12%;display:none" width=5% height=5%/>
+
+			<img id="star3" class="flashStar"  src="images/star.png"  style="z-index:2;left:55%;top:12%;display:none" width=5% height=5%/>
+
+			<img id="star4" class="flashStar"  src="images/star.png"  style="z-index:2;left:85%;top:18%;display:none" width=5% height=5%/>
+
+			<img id="star5" class="flashStar"  src="images/star.png"  style="z-index:2;left:21.5%;top:32%;display:none" width=5% height=5%/>
+
+			<img id="star6" class="flashStar"  src="images/star.png"  style="z-index:2;left:62%;top:42%;display:none" width=5% height=5%/>
+
+			<img id="star7" class="flashStar"  src="images/star.png"  style="z-index:2;left:87%;top:42%;display:none" width=5% height=5%/>
+
+			<img id="star8" class="flashStar"  src="images/star.png"  style="z-index:2;left:15%;top:80%;display:none" width=5% height=5%/>
+
+			<img id="star9" class="flashStar"  src="images/star.png"  style="z-index:2;left:38.5%;top:82%;display:none" width=5% height=5%/>
+
+		</div><!--first_page-->
+
+		
+
+		<div id="second_page" style="display:none">
+
+			<img src="images/renwu.png" width="23%" style="z-index:4;top:13%;left:15%">
+
+			<img src="images/mofanvhaiyinying.png" width="23%" style="z-index:3;top:86%;left:15%">
+
+		<!--	<img id="second_logo"     style="z-index:4" /> -->
+
+			<img src="images/huanzhuangzhanshibg.png" width="100%"  style="z-index:0">  
+
+			<img src="images/wupinlan.png" width="41%"  style="top:13%;right:7%;z-index:1">  
+
+		<!--	<img id="MG2" src="images/MG2.png" width="12%"" style="bottom:1%;right:6%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)"> -->
+
+			<img id="show" src="images/show.png" width="12%" onclick="showGame()" style="bottom:3.3%;left:66%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+			<img id="reset" src="images/reset.png" width="12%" style="bottom:3.3%;left:50%;z-index:50" onclick="resetGame()" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+			
+
+			<img id="toufaanniu" src="images/toufaanniu.png" width=8% style="z-index:100;top:2%;left:53%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="shangyianniu" src="images/shangyianniu.png" width=8% style="z-index:100;top:2%;left:63%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="xiayianniu" src="images/xiayianniu.png" width=8% style="z-index:1000;top:2%;left:73%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="lianyianniu" src="images/lianyianniu.png" width=8% style="z-index:1000;top:2%;left:83%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="toushianniu" src="images/toushianniu.png" width=8% style="z-index:1000;bottom:11%;left:53%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="shounaanniu" src="images/shounaanniu.png" width=8% style="z-index:1000;bottom:11%;left:63%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="wazianniu" src="images/wazianniu.png" width=8% style="z-index:1000;bottom:11%;left:73%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<img id="xiezianniu" src="images/xiezianniu.png" width=8% style="z-index:1000;bottom:11%;left:83%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectBaiFang(this)">
+
+			<div id="toufaKuang" class="kuang" width="42%" height="42%" >
+
+				<img id="toufaback" src="images/baifang/toufaback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="toufa1" class="scale" src="images/baifang/toufa1.png"  style="width:7%;height:8%;z-index:101;top:19%;left:58%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toufa2" class="scale" src="images/baifang/toufa2.png"  style="width:7%;height:8%;z-index:101;top:19%;left:78%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toufa3" class="scale" src="images/baifang/toufa3.png"  style="width:10%;height:22%;z-index:101;top:30%;left:56%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toufa4" class="scale" src="images/baifang/toufa4.png"  style="width:13%;height:21%;z-index:101;top:30%;left:74%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toufa5" class="scale" src="images/baifang/toufa5.png"  style="width:14%;height:19%;z-index:101;top:56%;left:54.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toufa6" class="scale" src="images/baifang/toufa6.png"  style="width:17%;height:18%;z-index:101;top:56%;left:72%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+			</div>
+
+			<div id="shangyiKuang" class="kuang" width="42%" height="42%" style="display:none">
+
+				<img id="shangyiback" src="images/baifang/shangyiback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="shangyi1" class="scale" src="images/baifang/shangyi1.png"  style="width:11%;height:10%;z-index:101;top:20%;left:56.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi2" class="scale" src="images/baifang/shangyi2.png"  style="width:7%;height:11%;z-index:101;top:19%;left:78%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi3" class="scale" src="images/baifang/shangyi3.png"  style="width:13%;height:9%;z-index:101;top:33%;left:56%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi4" class="scale" src="images/baifang/shangyi4.png"  style="width:9%;height:12%;z-index:101;top:31.5%;left:77.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi5" class="scale" src="images/baifang/shangyi5.png"  style="width:11%;height:16%;z-index:101;top:43.5%;left:57%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi6" class="scale" src="images/baifang/shangyi6.png"  style="width:8%;height:13%;z-index:101;top:45%;left:78%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi7" class="scale" src="images/baifang/shangyi7.png"  style="width:13%;height:15%;z-index:101;top:60%;left:55.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shangyi8" class="scale" src="images/baifang/shangyi8.png"  style="width:13%;height:16%;z-index:101;top:59%;left:75.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+			</div>
+
+			<div id="xiayiKuang" class="kuang" width="42%" height="42%" style="display:none">
+
+				<img id="xiayiback" src="images/baifang/xiayiback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="xiayi1" class="scale" src="images/baifang/xiayi1.png"  style="width:11%;height:7%;z-index:101;top:20%;left:56.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi2" class="scale" src="images/baifang/xiayi2.png"  style="width:11%;height:8%;z-index:101;top:20%;left:76.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi3" class="scale" src="images/baifang/xiayi3.png"  style="width:11%;height:8%;z-index:101;top:30%;left:57%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi4" class="scale" src="images/baifang/xiayi4.png"  style="width:12%;height:8%;z-index:101;top:32.5%;left:76%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi5" class="scale" src="images/baifang/xiayi5.png"  style="width:10%;height:8%;z-index:101;top:42%;left:56.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi6" class="scale" src="images/baifang/xiayi6.png"  style="width:12%;height:11%;z-index:101;top:46%;left:75.7%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi7" class="scale" src="images/baifang/xiayi7.png"  style="width:13%;height:20.5%;z-index:101;top:53.5%;left:55.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiayi8" class="scale" src="images/baifang/xiayi8.png"  style="width:14.5%;height:12%;z-index:101;top:60.5%;left:74.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+			</div>
+
+<div id="lianyiKuang" class="kuang" width="42%" class="kuang" height="42%" style="display:none" >
+
+				<img id="lianyiback" src="images/baifang/lianyiback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="lianyi1" src="images/baifang/lianyi1.png"  style="width:12.5%;height:24%;z-index:101;top:21%;left:56%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="lianyi2" src="images/baifang/lianyi2.png"  style="width:16%;height:22%;z-index:101;top:22%;left:73%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="lianyi3" src="images/baifang/lianyi3.png"  style="width:12.5%;height:23%;z-index:101;top:51%;left:56%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="lianyi4" src="images/baifang/lianyi4.png"  style="width:16%;height:22%;z-index:101;top:52%;left:73%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+		</div>
+
+<div id="toushiKuang" class="kuang" width="42%" height="42%"  style="display:none" >
+
+		<img id="toushiback" src="images/baifang/toushiback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="toushi1" class="scale" src="images/baifang/toushi1.png"  style="width:7%;height:4%;z-index:101;top:21%;left:55.3%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toushi2" class="scale" src="images/baifang/toushi2.png"  style="width:7.9%;height:4%;z-index:101;top:20.8%;left:66.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toushi3" class="scale" src="images/baifang/toushi3.png"  style="width:4.2%;height:4.7%;z-index:101;top:20.5%;left:81%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toushi4" class="scale" src="images/baifang/toushi4.png"  style="width:6.8%;height:8.4%;z-index:101;top:34.5%;left:55.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toushi5" class="scale" src="images/baifang/toushi5.png"  style="width:3.6%;height:5.4%;z-index:101;top:36%;left:69%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="toushi6" class="scale" src="images/baifang/toushi6.png"  style="width:10.8%;height:8.5%;z-index:101;top:36%;left:78.6%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="erzhui1" class="scale" src="images/baifang/erzhui1.png"  style="width:6.3%;height:2.6%;z-index:101;top:54%;left:55.4%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="erzhui2" class="scale" src="images/baifang/erzhui2.png"  style="width:6.3%;height:2.4%;z-index:101;top:54%;left:68%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="erzhui3" class="scale" src="images/baifang/erzhui3.png"  style="width:7.6%;height:3.0%;z-index:101;top:53%;left:79.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="erzhui4" class="scale" src="images/baifang/erzhui4.png"  style="width:7.0%;height:3.5%;z-index:101;top:70%;left:55.4%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="erzhui5" class="scale" src="images/baifang/erzhui5.png"  style="width:7.2%;height:2.2%;z-index:101;top:70%;left:67.8%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="erzhui6" class="scale" src="images/baifang/erzhui6.png"  style="width:7.4%;height:5.0%;z-index:101;top:69%;left:79.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+			
+
+</div>
+
+<div id="shounaKuang" class="kuang" width="42%" height="42%"   style="display:none">
+
+		<img id="shounaback" src="images/baifang/shounaback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="shouna1" class="scale" src="images/baifang/shouna1.png"  style="width:6%;height:13.5%;z-index:101;top:23.3%;left:55.3%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shouna2" class="scale" src="images/baifang/shouna2.png"  style="width:7.1%;height:15.9%;z-index:101;top:22.5%;left:66%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shouna3" class="scale" src="images/baifang/shouna3.png"  style="width:10.7%;height:19.8%;z-index:101;top:21%;left:76%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shouna4" class="scale" src="images/baifang/shouna4.png"  style="width:8.2%;height:19.7%;z-index:101;top:55%;left:56.2%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shouna5" class="scale" src="images/baifang/shouna5.png"  style="width:9.1%;height:20.8%;z-index:101;top:53.3%;left:67.7%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="shouna6" class="scale" src="images/baifang/shouna6.png"  style="width:10%;height:19.4%;z-index:101;top:54%;left:79%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				</div>
+
+<div id="waziKuang" class="kuang" width="42%" height="42%"   style="display:none">
+
+		<img id="waziback" src="images/baifang/waziback.png"  style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="wazi1" class="scale" src="images/baifang/wazi1.png"  style="width:8.6%;height:23%;z-index:101;top:19.7%;left:54.8%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="wazi2" class="scale" src="images/baifang/wazi2.png"  style="width:8.4%;height:21.3%;z-index:101;top:21.2%;left:67.7%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="wazi3" class="scale" src="images/baifang/wazi3.png"  style="width:8.6%;height:23.6%;z-index:101;top:19%;left:80.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="wazi4" class="scale" src="images/baifang/wazi4.png"  style="width:8.6%;height:23.6%;z-index:101;top:51.5%;left:54.8%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="wazi5" class="scale" src="images/baifang/wazi5.png"  style="width:8.6%;height:28.5%;z-index:101;top:46.8%;left:67.9%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="wazi6" class="scale" src="images/baifang/wazi6.png"  style="width:8.8%;height:32.7%;z-index:101;top:42.5%;left:80.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				</div>
+
+<div id="xieziKuang" class="kuang" width="42%" height="42%"  style="display:none">
+
+		<img id="xieziback" src="images/baifang/xieziback.png" style="width:45%;height:69%;z-index:101;top:13%;left:50%; position:absolute;" />
+
+				<img id="xiezi1" class="scale" src="images/baifang/xiezi1.png"  style="width:11%;height:7%;z-index:101;top:21%;left:57.5%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiezi2" class="scale" src="images/baifang/xiezi2.png"  style="width:15.4%;height:8.5%;z-index:101;top:19.4%;left:73.7%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiezi3" class="scale" src="images/baifang/xiezi3.png"  style="width:15.2%;height:12.6%;z-index:101;top:29.4%;left:55.3%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiezi4" class="scale" src="images/baifang/xiezi4.png"  style="width:12.6%;height:10.1%;z-index:101;top:31.8%;left:75%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiezi5" class="scale" src="images/baifang/xiezi5.png"  style="width:11.4%;height:29%;z-index:101;top:45.8%;left:57.2%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				<img id="xiezi6" class="scale" src="images/baifang/xiezi6.png"  style="width:12.7%;height:28%;z-index:101;top:46.6%;left:75.2%; position:absolute;cursor:pointer;"  onClick="selectShiwu(this)"/>
+
+				</div>
+
+			<div id="fushi_on" >
+
+				<img id="toufaqian_on" class="on" src="images/toufa3qian.png"style="z-index:5;width:28%;heigth:30%;left:12.2%;top:10%">
+
+				<img id="toufahou_on"  class="on" src="images/toufa3hou.png" style="z-index:3;width:28%;heigth:30%;left:12.2%;top:10%">
+
+				<img id="shangyi_on"  class="on" style="display:none;z-index:7;width:12.5%;heigth:13%;left:19.65%;top:22.5%">
+
+				<img id="xiayi_on"  class="on" style="display:none;z-index:6;width:24.4%;heigth:28%;left:13.3%;top:34.6%">
+
+				<img id="xiayihou_on"  class="on" style="display:none;z-index:3;width:24.4%;heigth:28%;left:13.3%;top:34.6%">
+
+				<img id="lianyi_on"  class="on" style="display:none;z-index:6;width:19.5%;heigth:19.4%;left:15.4%;top:23%">
+
+				<img id="toushi_on"  class="on" style="display:none;z-index:6;width:9.2%;heigth:6.4%;left:20%;top:10%">
+
+				<img id="erzhui_on"  class="on" style="display:none;z-index:6;width:6.8%;heigth:3.3%;left:22.2%;top:19.7%">
+
+				<img id="shouna_on"  class="on" style="display:none;z-index:5;width:9.0%;heigth:12.5%;left:8.8%;top:10.4%">
+
+				<img id="wazi_on"  class="on" style="display:none;z-index:5;width:11.2%;heigth:30.3%;left:20.1%;top:46.1%">
+
+				<img id="xiezi_on"  class="on" style="display:none;z-index:6;width:14.5%;heigth:20.5%;left:18.8%;top:62.2%">
+
+			</div>
+
+		</div><!--second_page-->
+
+		
+
+		<div id="third_page" style="display:none" >
+
+			<img id="replay" src="images/replay.png" width="13%" onclick="replayGame()" style="bottom:14%;right:4%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+			
+
+
+
+
+
+	<!--		<img id="MG3" src="images/MG3.png" width="13%"  style="z-index:1;bottom:4%;right:4%" onmouseover="overNutton(this)" onmouseout="outNutton(this)">	-->
+
+			
+
+			<img src="images/renwu.png" class="fedout" width="23%" style="z-index:4;top:13%;left:35%">
+
+			<img src="images/mofanvhaiyinying.png" width="23%" style="z-index:3;top:86%;left:35%">
+
+
+
+		<!--	<img id="third_logo" class="fedout"  style="z-index:4" /> -->
+
+			<img src="images/huanzhuangzhanshibg.png" width="100%" class="fedout" style="z-index:0">  
+
+			<img id="toufaqian_show"  class="show fedout" src="images/toufa3qian.png" style="z-index:5;width:28%;heigth:30%;left:32.2%;top:10%;">
+
+			<img id="toufahou_show" class="show fedout"  src="images/toufa3hou.png"  style="z-index:3;width:28%;heigth:30%;left:32.2%;top:10%;">
+
+			<img id="shangyi_show" class="show fedout" style="z-index:7;width:12.4%;heigth:13%;left:39.5%;top:22.5%;display:none;">
+
+			<img id="xiayi_show" class="show fedout" style="z-index:6;width:24.4%;heigth:28%;left:33.4%;top:34.6%;display:none;">
+
+			<img id="xiayihou_show" class="show fedout" style="z-index:3;width:24.4%;heigth:28%;left:33.3%;top:34.6%;display:none;">
+
+			<img id="lianyi_show" class="show fedout" style="z-index:6;width:19.5%;heigth:19.4%;left:35.3%;top:23%;display:none;%">
+
+			<img id="toushi_show" class="show fedout" style="z-index:6;width:9.2%;heigth:6.4%;left:40%;top:10%;display:none;">
+
+			<img id="erzhui_show" class="show fedout" style="z-index:6;width:6.8%;heigth:3.3%;left:42.2%;top:19.7%;display:none;">
+
+			<img id="shouna_show" class="show fedout" style="z-index:5;width:9.0%;heigth:12.5%;left:28.8%;top:10.4%;display:none;">
+
+			<img id="wazi_show" class="show fedout" style="z-index:5;width:11.2%;heigth:30.3%;left:40.1%;top:46.1%;display:none;">
+
+			<img id="xiezi_show" class="show fedout" style="z-index:6;width:14.4%;heigth:20.5%;left:38.9%;top:62.2%;display:none;">
+
+				<img id="showStar1"   src="images/star.png"   style="z-index:8;left:30%;top:12%;" width=5% height=5%/>
+
+				<img id="showStar2"  src="images/star.png"    style="z-index:8;left:41%;top:12%;" width=5% height=5%/>
+
+				<img id="showStar3"   src="images/star.png"   style="z-index:8;left:50%;top:25%;" width=5% height=5%/>
+
+				<img id="showStar4"  src="images/star.png"    style="z-index:8;left:45%;top:26%;" width=5% height=5%/>
+
+				<img id="showStar5"  src="images/star.png"    style="z-index:8;left:40%;top:37%;" width=5% height=5%/>
+
+				<img id="showStar6"   src="images/star.png"   style="z-index:8;left:46%;top:45%;" width=5% height=5%/>
+
+				<img id="showStar7"  src="images/star.png"    style="z-index:8;left:46%;top:62%;" width=5% height=5%/>
+
+				<img id="showStar8"  src="images/star.png"    style="z-index:8;left:39%;top:70%;" width=5% height=5%/>
+
+				<img id="showStar9"  src="images/star.png"    style="z-index:8;left:41%;top:87%;" width=5% height=5%/>
+
+				<img id="showStar10"  src="images/star.png"    style="z-index:8;left:47%;top:87%;" width=5% height=5%/>
+
+		</div><!--third_page-->
+
+ <!--   <img id="print" src="images/print.png" width="9%"  onclick="printGame();"style="bottom:2%;left:5%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)"> -->
+
+
+
+</div>
+
+<!--..............................................................................................................-->
+
+<script type="text/javascript" src="js/magicalmix.js"></script> 
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

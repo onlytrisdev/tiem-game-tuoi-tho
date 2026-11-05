@@ -1,0 +1,44 @@
+{"frames": {
+
+"clouds":
+{
+	"frame": {"x":1,"y":1,"w":1080,"h":551},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":551},
+	"sourceSize": {"w":1080,"h":551}
+},
+"water01":
+{
+	"frame": {"x":1,"y":554,"w":1080,"h":359},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":359},
+	"sourceSize": {"w":1080,"h":359}
+},
+"water02":
+{
+	"frame": {"x":1,"y":969,"w":1080,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":37},
+	"sourceSize": {"w":1080,"h":37}
+},
+"water03":
+{
+	"frame": {"x":1,"y":915,"w":1080,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1080,"h":52},
+	"sourceSize": {"w":1080,"h":52}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "scenery-water-and-clouds_hd.png",
+	"format": "RGBA8888",
+	"size": {"w":1082,"h":1007},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5b83ec9b48426d5882669bd7f828d7cd:4202b1f19885bae48ac15d27c6435404:5a26654e0cf28df90d38db9e845f2d95$"
+}
+}

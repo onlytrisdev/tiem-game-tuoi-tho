@@ -1,0 +1,1 @@
+function CreateLinksInGame(NameID,Screen,Button,GameId){GameId=typeof GameId!=='undefined'?GameId:"";var domain=document.referrer;window.open('//localhost/','_blank');}

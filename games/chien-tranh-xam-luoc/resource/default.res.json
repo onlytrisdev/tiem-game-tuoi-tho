@@ -1,0 +1,555 @@
+{
+	"groups": [
+		{
+			"keys": "game_json,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,119_png,alertbg_png,autoMerge_png,cardbg_png,datingjinbi_png,exp1_png,exp2_png,exp3_png,exp4_png,exp5_png,exp6_png,exp7_png,baimiaobian_fnt,baimiaobian_png,buycoinnum_fnt,buycoinnum_png,coinnum_fnt,coinnum_png,donghuazi_fnt,donghuazi_png,heiziti_fnt,heiziti_png,heizitixiao_fnt,heizitixiao_png,levelnum_fnt,levelnum_png,lsezi_fnt,lsezi_png,jingjichang_png,map_jpg,map1_png,fire_json,fire_png,jisui1_json,jisui1_png,jisui2_json,jisui2_png,jisui3_json,jisui3_png,jisui4_json,jisui4_png,jizhong_json,jizhong_png,qipao_json,qipao_png,ui_json,ui_png,zhanlidao_json,zhanlidao_png,nodebg_png,paihangtiao_png,shengya1_png,speedImg_png,tanchuhengfu_png,tanchuhengfu1_png,tipbg_png,bingdu1_json,bingdu1_png,bingdu2_json,bingdu2_png,bingdu3_json,bingdu3_png,bingdu4_json,bingdu4_png,tuji1_json,tuji2_json,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,iconX_png,baipifutianchu_png,chakanxiangxi_png,iconguanggao_png",
+			"name": "preload"
+		},
+		{
+			"keys": "beijingBGM_mp3,bgm_mp3,dabojiangshi_mp3,dianji_mp3,duanwei_mp3,gongji_mp3,hecheng_mp3,jizhong_mp3,shoujinbi_mp3,zhadan_mp3",
+			"name": "sound"
+		},
+		{
+			"keys": "gameTag_png,login_jpg,start_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/game.json",
+			"type": "json",
+			"name": "game_json"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/gameload/gameTag.png",
+			"type": "image",
+			"name": "gameTag_png"
+		},
+		{
+			"url": "assets/gameload/login.jpg",
+			"type": "image",
+			"name": "login_jpg"
+		},
+		{
+			"url": "assets/gameload/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/119.png",
+			"type": "image",
+			"name": "119_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/alertbg.png",
+			"type": "image",
+			"name": "alertbg_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/autoMerge.png",
+			"type": "image",
+			"name": "autoMerge_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/cardbg.png",
+			"type": "image",
+			"name": "cardbg_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/datingjinbi.png",
+			"type": "image",
+			"name": "datingjinbi_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/jingjichang.png",
+			"type": "image",
+			"name": "jingjichang_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/map.jpg",
+			"type": "image",
+			"name": "map_jpg"
+		},
+		{
+			"url": "assets/gameasset/sub1/map1.png",
+			"type": "image",
+			"name": "map1_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/nodebg.png",
+			"type": "image",
+			"name": "nodebg_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/paihangtiao.png",
+			"type": "image",
+			"name": "paihangtiao_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/shengya1.png",
+			"type": "image",
+			"name": "shengya1_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/speedImg.png",
+			"type": "image",
+			"name": "speedImg_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/tanchuhengfu.png",
+			"type": "image",
+			"name": "tanchuhengfu_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/tanchuhengfu1.png",
+			"type": "image",
+			"name": "tanchuhengfu1_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/tipbg.png",
+			"type": "image",
+			"name": "tipbg_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/baimiaobian.fnt",
+			"type": "font",
+			"name": "baimiaobian_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/baimiaobian.png",
+			"type": "image",
+			"name": "baimiaobian_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/buycoinnum.fnt",
+			"type": "font",
+			"name": "buycoinnum_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/buycoinnum.png",
+			"type": "image",
+			"name": "buycoinnum_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/coinnum.fnt",
+			"type": "font",
+			"name": "coinnum_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/coinnum.png",
+			"type": "image",
+			"name": "coinnum_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/donghuazi.fnt",
+			"type": "font",
+			"name": "donghuazi_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/donghuazi.png",
+			"type": "image",
+			"name": "donghuazi_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/heiziti.fnt",
+			"type": "font",
+			"name": "heiziti_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/heiziti.png",
+			"type": "image",
+			"name": "heiziti_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/heizitixiao.fnt",
+			"type": "font",
+			"name": "heizitixiao_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/heizitixiao.png",
+			"type": "image",
+			"name": "heizitixiao_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/levelnum.fnt",
+			"type": "font",
+			"name": "levelnum_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/levelnum.png",
+			"type": "image",
+			"name": "levelnum_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/lsezi.fnt",
+			"type": "font",
+			"name": "lsezi_fnt"
+		},
+		{
+			"url": "assets/gameasset/sub1/font/lsezi.png",
+			"type": "image",
+			"name": "lsezi_png"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu1.png",
+			"type": "image",
+			"name": "bingdu1_png"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu2.png",
+			"type": "image",
+			"name": "bingdu2_png"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu3.png",
+			"type": "image",
+			"name": "bingdu3_png"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu4.png",
+			"type": "image",
+			"name": "bingdu4_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp1.png",
+			"type": "image",
+			"name": "exp1_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp2.png",
+			"type": "image",
+			"name": "exp2_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp3.png",
+			"type": "image",
+			"name": "exp3_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp4.png",
+			"type": "image",
+			"name": "exp4_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp5.png",
+			"type": "image",
+			"name": "exp5_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp6.png",
+			"type": "image",
+			"name": "exp6_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/explode/exp7.png",
+			"type": "image",
+			"name": "exp7_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/fire.png",
+			"type": "image",
+			"name": "fire_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui1.png",
+			"type": "image",
+			"name": "jisui1_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui2.png",
+			"type": "image",
+			"name": "jisui2_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui3.png",
+			"type": "image",
+			"name": "jisui3_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui4.png",
+			"type": "image",
+			"name": "jisui4_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jizhong.png",
+			"type": "image",
+			"name": "jizhong_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/qipao.png",
+			"type": "image",
+			"name": "qipao_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/ui.png",
+			"type": "image",
+			"name": "ui_png"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/zhanlidao.png",
+			"type": "image",
+			"name": "zhanlidao_png"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu1.json",
+			"type": "json",
+			"name": "bingdu1_json"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu2.json",
+			"type": "json",
+			"name": "bingdu2_json"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu4.json",
+			"type": "json",
+			"name": "bingdu4_json"
+		},
+		{
+			"url": "assets/gameasset/sub2/virus/bingdu3.json",
+			"type": "json",
+			"name": "bingdu3_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui3.json",
+			"type": "json",
+			"name": "jisui3_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui4.json",
+			"type": "json",
+			"name": "jisui4_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/fire.json",
+			"type": "json",
+			"name": "fire_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui1.json",
+			"type": "json",
+			"name": "jisui1_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jisui2.json",
+			"type": "json",
+			"name": "jisui2_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/jizhong.json",
+			"type": "json",
+			"name": "jizhong_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/qipao.json",
+			"type": "json",
+			"name": "qipao_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/ui.json",
+			"type": "json",
+			"name": "ui_json"
+		},
+		{
+			"url": "assets/gameasset/sub1/mc/zhanlidao.json",
+			"type": "json",
+			"name": "zhanlidao_json"
+		},
+		{
+			"url": "assets/gameasset/tuji2.json",
+			"type": "sheet",
+			"name": "tuji2_json",
+			"subkeys": "Rqd1_png,btnblue_png,btnyellow_png,btnyellowad_png,bullet10_png,bullet11_png,bullet12_png,bullet13_png,bullet14_png,bullet15_png,bullet16_png,bullet17_png,bullet18_png,bullet19_png,bullet1_png,bullet20_png,bullet21_png,bullet22_png,bullet23_png,bullet24_png,bullet25_png,bullet26_png,bullet27_png,bullet28_png,bullet29_png,bullet2_png,bullet30_png,bullet31_png,bullet32_png,bullet33_png,bullet34_png,bullet35_png,bullet36_png,bullet37_png,bullet38_png,bullet39_png,bullet3_png,bullet40_png,bullet41_png,bullet42_png,bullet4_png,bullet5_png,bullet6_png,bullet7_png,bullet8_png,bullet9_png,choujiangquan_png,closenew_png,coinbg_png,crossStar_png,daliangjinbi_png,duanwei10_png,duanwei11_png,duanwei12_png,duanwei13_png,duanwei14_png,duanwei15_png,duanwei16_png,duanwei17_png,duanwei18_png,duanwei19_png,duanwei1_png,duanwei20_png,duanwei21_png,duanwei22_png,duanwei23_png,duanwei24_png,duanwei25_png,duanwei26_png,duanwei27_png,duanwei28_png,duanwei29_png,duanwei2_png,duanwei30_png,duanwei31_png,duanwei32_png,duanwei33_png,duanwei34_png,duanwei35_png,duanwei36_png,duanwei37_png,duanwei38_png,duanwei39_png,duanwei3_png,duanwei40_png,duanwei4_png,duanwei5_png,duanwei6_png,duanwei7_png,duanwei8_png,duanwei9_png,duihao_png,gongjili_png,guangquan_png,hengfudingbu_png,jiasumiaobiao_png,jixian1_png,paihangtiao1_png,pingguozhadan_png,shengya2_png,shipinfeidie_png,shipinxiangziduo_png,zhanlliui_png,zhuanpan1_png,zuanpan_png,zuanshianjian_png"
+		},
+		{
+			"url": "assets/gameasset/tuji1.json",
+			"type": "sheet",
+			"name": "tuji1_json",
+			"subkeys": "expbs_png,fanvgkuai_png,fengkuanggongji_png,fenxiang_png,fplant10_png,fplant11_png,fplant12_png,fplant13_png,fplant14_png,fplant15_png,fplant16_png,fplant17_png,fplant18_png,fplant19_png,fplant1_png,fplant20_png,fplant21_png,fplant22_png,fplant23_png,fplant24_png,fplant25_png,fplant26_png,fplant27_png,fplant28_png,fplant29_png,fplant2_png,fplant30_png,fplant31_png,fplant32_png,fplant33_png,fplant34_png,fplant35_png,fplant36_png,fplant37_png,fplant38_png,fplant39_png,fplant3_png,fplant40_png,fplant41_png,fplant42_png,fplant4_png,fplant5_png,fplant6_png,fplant7_png,fplant8_png,fplant9_png,fuxuan1_png,fuxuan2_png,gongjili1_png,heidian_png,huitiaomu_png,huoqu_png,huoqucishu_png,invite_png,jiahao_png,jinbi_png,jixian2_png,kaiguan1_png,kaiguan2_png,kaishichoujiang_png,lajitong_png,lanxiangzi_png,lineHead_png,line_png,lingqu3_png,luping1_png,luping2_png,money_png,moregamesbtn_png,paihang_png,pen_png,pingguo_png,pointer_png,qiandao_png,rolelevelbg_png,shadow_png,shangya4_png,shengya3_png,shengya5_png,shengya7_png,shengya8_png,shengyajindu1_png,shengyajindu2_png,shengyin_png,shezhi_png,shipin_png,shipinxiang_png,shouzhi_png,shuangbeilingqu_png,slot10_png,slot11_png,slot12_png,slot13_png,slot14_png,slot15_png,slot1_png,slot2_png,slot3_png,slot4_png,slot5_png,slot6_png,slot7_png,slot8_png,slot9_png,slot_png,spark_png,tianjiazhuomian_png,tiaoguo_png,tiaozhan_png,touxiang_png,touxiangbg_png,trail1_png,xcxtips_png,yinhang1_png,yinhang_png,yuan1_png,zaishengyijiad_png,zaishengyijifx_png,zhiwu_png,zidonghecheng_png,zuanshi_png"
+		},
+		{
+			"url": "assets/sound/beijingBGM.mp3",
+			"type": "sound",
+			"name": "beijingBGM_mp3"
+		},
+		{
+			"url": "assets/sound/bgm.mp3",
+			"type": "sound",
+			"name": "bgm_mp3"
+		},
+		{
+			"url": "assets/sound/dabojiangshi.mp3",
+			"type": "sound",
+			"name": "dabojiangshi_mp3"
+		},
+		{
+			"url": "assets/sound/dianji.mp3",
+			"type": "sound",
+			"name": "dianji_mp3"
+		},
+		{
+			"url": "assets/sound/duanwei.mp3",
+			"type": "sound",
+			"name": "duanwei_mp3"
+		},
+		{
+			"url": "assets/sound/gongji.mp3",
+			"type": "sound",
+			"name": "gongji_mp3"
+		},
+		{
+			"url": "assets/sound/hecheng.mp3",
+			"type": "sound",
+			"name": "hecheng_mp3"
+		},
+		{
+			"url": "assets/sound/jizhong.mp3",
+			"type": "sound",
+			"name": "jizhong_mp3"
+		},
+		{
+			"url": "assets/sound/shoujinbi.mp3",
+			"type": "sound",
+			"name": "shoujinbi_mp3"
+		},
+		{
+			"url": "assets/sound/zhadan.mp3",
+			"type": "sound",
+			"name": "zhadan_mp3"
+		},
+		{
+			"name": "iconX_png",
+			"type": "image",
+			"url": "assets/gameasset/sub1/iconX.png"
+		},
+		{
+			"name": "baipifutianchu_png",
+			"type": "image",
+			"url": "assets/gameasset/sub1/baipifutianchu.png"
+		},
+		{
+			"name": "chakanxiangxi_png",
+			"type": "image",
+			"url": "assets/gameasset/sub1/chakanxiangxi.png"
+		},
+		{
+			"name": "iconguanggao_png",
+			"type": "image",
+			"url": "assets/gameasset/sub1/iconguanggao.png"
+		}
+	]
+}

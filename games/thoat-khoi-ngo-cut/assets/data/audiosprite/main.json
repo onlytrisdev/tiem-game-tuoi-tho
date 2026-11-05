@@ -1,0 +1,650 @@
+{
+  "resources": [],
+  "spritemap": {
+    "/music/Funday Factory - Cartoon Network - We Bare Bears_Music_Udkast02_LOOP": {
+      "start": 0,
+      "end": 85.33333333333333,
+      "loop": false
+    },
+    "/sfx_Bears_Hit_End_of_Road/sfx_Bears_Hit_End_of_Road_01 - Copy": {
+      "start": 86.1,
+      "end": 86.54353741496598,
+      "loop": false
+    },
+    "/sfx_Bears_Hit_End_of_Road/sfx_Bears_Hit_End_of_Road_01": {
+      "start": 87.19999999999999,
+      "end": 87.64353741496598,
+      "loop": false
+    },
+    "/sfx_Bears_Hit_End_of_Road/sfx_Bears_Hit_End_of_Road_02": {
+      "start": 88.29999999999998,
+      "end": 88.8386394557823,
+      "loop": false
+    },
+    "/sfx_Bears_Hit_End_of_Road/sfx_Bears_Hit_End_of_Road_03": {
+      "start": 89.39999999999999,
+      "end": 89.93768707482992,
+      "loop": false
+    },
+    "/sfx_Bears_Hit_End_of_Road/sfx_Bears_Hit_End_of_Road_04": {
+      "start": 90.49999999999999,
+      "end": 90.9721088435374,
+      "loop": false
+    },
+    "/sfx_Buy_Character/sfx_Buy_Character_01": {
+      "start": 91.59999999999998,
+      "end": 92.13725623582765,
+      "loop": false
+    },
+    "/sfx_Buy_Character/sfx_Buy_Character_02": {
+      "start": 92.69999999999999,
+      "end": 93.36278911564625,
+      "loop": false
+    },
+    "/sfx_Buy_Character/sfx_Buy_Character_03": {
+      "start": 93.8,
+      "end": 94.47142857142858,
+      "loop": false
+    },
+    "/sfx_Buy_Character_Denied/sfx_Buy_Character_Denied_01": {
+      "start": 94.9,
+      "end": 95.17761904761905,
+      "loop": false
+    },
+    "/sfx_Character_Power/sfx_Character_Power_01": {
+      "start": 96,
+      "end": 98.40866213151928,
+      "loop": false
+    },
+    "/sfx_Character_Power/sfx_Character_Power_02": {
+      "start": 99.10000000000001,
+      "end": 101.52950113378685,
+      "loop": false
+    },
+    "/sfx_Character_Power/sfx_Character_Power_03": {
+      "start": 102.2,
+      "end": 104.62950113378685,
+      "loop": false
+    },
+    "/sfx_Click_Cell_Phone/sfx_Click_Cell_Phone": {
+      "start": 105.3,
+      "end": 105.75521541950113,
+      "loop": false
+    },
+    "/sfx_Click_Cell_Phone_Hang_Up/sfx_Click_Cell_Phone_Hang_Up": {
+      "start": 106.39999999999999,
+      "end": 106.55263038548752,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_01": {
+      "start": 107.49999999999999,
+      "end": 107.75117913832199,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_010": {
+      "start": 108.6,
+      "end": 108.75612244897958,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_011": {
+      "start": 109.69999999999999,
+      "end": 109.86657596371882,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_012": {
+      "start": 110.8,
+      "end": 110.94931972789115,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_02": {
+      "start": 111.89999999999999,
+      "end": 112.15535147392289,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_03": {
+      "start": 112.99999999999999,
+      "end": 113.15480725623581,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_04": {
+      "start": 114.09999999999998,
+      "end": 114.26605442176869,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_05": {
+      "start": 115.19999999999997,
+      "end": 115.33868480725621,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_06": {
+      "start": 116.29999999999998,
+      "end": 116.54630385487526,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_07": {
+      "start": 117.39999999999998,
+      "end": 117.64938775510201,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_08": {
+      "start": 118.49999999999997,
+      "end": 118.76281179138319,
+      "loop": false
+    },
+    "/sfx_Coin_Appear/sfx_Coin_Appear_09": {
+      "start": 119.59999999999997,
+      "end": 119.80278911564622,
+      "loop": false
+    },
+    "/sfx_Footsteps/sfx_Footsteps_01": {
+      "start": 120.69999999999996,
+      "end": 121.05834467120178,
+      "loop": false
+    },
+    "/sfx_Footsteps/sfx_Footsteps_02": {
+      "start": 121.79999999999997,
+      "end": 122.20487528344668,
+      "loop": false
+    },
+    "/sfx_Footsteps/sfx_Footsteps_03": {
+      "start": 122.89999999999998,
+      "end": 123.23215419501132,
+      "loop": false
+    },
+    "/sfx_Footsteps/sfx_Footsteps_04": {
+      "start": 123.99999999999999,
+      "end": 124.33183673469387,
+      "loop": false
+    },
+    "/sfx_Footsteps/sfx_Footsteps_05": {
+      "start": 125.1,
+      "end": 125.45038548752834,
+      "loop": false
+    },
+    "/sfx_Game_Over/sfx_Game_Over": {
+      "start": 126.19999999999999,
+      "end": 128.38333333333333,
+      "loop": false
+    },
+    "/sfx_Helmet_On/sfx_Helmet_On": {
+      "start": 129.29999999999998,
+      "end": 130.4656462585034,
+      "loop": false
+    },
+    "/sfx_Hover_Characters/sfx_Hover_Characters": {
+      "start": 131.4,
+      "end": 131.56387755102043,
+      "loop": false
+    },
+    "/sfx_Hover_Start_Button/sfx_Hover_Start_Button_01": {
+      "start": 132.50000000000003,
+      "end": 132.62215419501138,
+      "loop": false
+    },
+    "/sfx_Hover_Start_Button/sfx_Hover_Start_Button_02": {
+      "start": 133.60000000000005,
+      "end": 133.73741496598643,
+      "loop": false
+    },
+    "/sfx_Hover_Start_Button/sfx_Hover_Start_Button_03": {
+      "start": 134.70000000000005,
+      "end": 134.8902721088436,
+      "loop": false
+    },
+    "/sfx_Hover_Start_Button/sfx_Hover_Start_Button_04": {
+      "start": 135.80000000000004,
+      "end": 135.93340136054425,
+      "loop": false
+    },
+    "/sfx_Hover_Start_Button/sfx_Hover_Start_Button_05": {
+      "start": 136.90000000000003,
+      "end": 137.02589569161,
+      "loop": false
+    },
+    "/sfx_Loose_Bear/sfx_Loose_Bear_Grizzly": {
+      "start": 138.00000000000003,
+      "end": 138.99458049886624,
+      "loop": false
+    },
+    "/sfx_Loose_Bear/sfx_Loose_Bear_Panda": {
+      "start": 139.10000000000002,
+      "end": 139.94823129251702,
+      "loop": false
+    },
+    "/sfx_Mystery_Box/sfx_Mystery_Box_Hit_01": {
+      "start": 140.20000000000002,
+      "end": 140.51043083900228,
+      "loop": false
+    },
+    "/sfx_Mystery_Box/sfx_Mystery_Box_Hit_02": {
+      "start": 141.3,
+      "end": 141.90487528344673,
+      "loop": false
+    },
+    "/sfx_Mystery_Box/sfx_Mystery_Box_Hit_03": {
+      "start": 142.4,
+      "end": 142.81927437641724,
+      "loop": false
+    },
+    "/sfx_Mystery_Box/sfx_Mystery_Box_Hit_04": {
+      "start": 143.5,
+      "end": 144.0319274376417,
+      "loop": false
+    },
+    "/sfx_Mystery_Box/sfx_Mystery_Box_Hit_05_coins": {
+      "start": 144.6,
+      "end": 145.3788888888889,
+      "loop": false
+    },
+    "/sfx_Mystery_Box/sfx_Mystery_Box_Hit_05_FINAL": {
+      "start": 145.70000000000002,
+      "end": 146.9786621315193,
+      "loop": false
+    },
+    "/sfx_Phone_Camera/sfx_Phone_Camera": {
+      "start": 147.8,
+      "end": 148.32000000000002,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_01": {
+      "start": 148.90000000000003,
+      "end": 150.20791383219958,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_02": {
+      "start": 151.00000000000003,
+      "end": 152.30791383219957,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_03": {
+      "start": 153.10000000000002,
+      "end": 154.40791383219957,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_04": {
+      "start": 155.20000000000002,
+      "end": 156.50791383219956,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_05": {
+      "start": 157.3,
+      "end": 158.60791383219956,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_06": {
+      "start": 159.4,
+      "end": 160.70791383219955,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_07": {
+      "start": 161.5,
+      "end": 162.80791383219955,
+      "loop": false
+    },
+    "/sfx_Pickup_Coins/sfx_Pickup_Coins_08": {
+      "start": 163.6,
+      "end": 164.90791383219954,
+      "loop": false
+    },
+    "/sfx_Pick_Up_Grizzly/sfx_Pick_Up_Grizzly": {
+      "start": 165.7,
+      "end": 166.84632653061223,
+      "loop": false
+    },
+    "/sfx_Pick_Up_Panda/sfx_Pick_Up_Panda": {
+      "start": 167.79999999999998,
+      "end": 169.69156462585033,
+      "loop": false
+    },
+    "/sfx_Random_Helper/sfx_Random_Helper": {
+      "start": 169.9,
+      "end": 181.96326530612245,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_01": {
+      "start": 183,
+      "end": 183.16034013605443,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_02": {
+      "start": 184.1,
+      "end": 184.2616326530612,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_03": {
+      "start": 185.2,
+      "end": 185.33873015873016,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_04": {
+      "start": 186.3,
+      "end": 186.45292517006803,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_05": {
+      "start": 187.4,
+      "end": 187.4442403628118,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_06": {
+      "start": 188.5,
+      "end": 188.64848072562359,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_07": {
+      "start": 189.6,
+      "end": 189.64825396825395,
+      "loop": false
+    },
+    "/sfx_Road_Snap/sfx_Road_Snap_08": {
+      "start": 190.7,
+      "end": 190.74467120181404,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_01": {
+      "start": 191.79999999999998,
+      "end": 192.40700680272107,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_02": {
+      "start": 192.89999999999998,
+      "end": 193.52065759637185,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_03": {
+      "start": 193.99999999999997,
+      "end": 194.58167800453512,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_04": {
+      "start": 195.09999999999997,
+      "end": 195.7780952380952,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_05": {
+      "start": 196.19999999999996,
+      "end": 196.71154195011334,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_06": {
+      "start": 197.29999999999995,
+      "end": 197.854671201814,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_07": {
+      "start": 198.39999999999995,
+      "end": 199.0348979591836,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_08": {
+      "start": 199.49999999999994,
+      "end": 199.84147392290242,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_09": {
+      "start": 200.59999999999994,
+      "end": 201.01385487528339,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_10": {
+      "start": 201.69999999999993,
+      "end": 202.20941043083894,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_11": {
+      "start": 202.79999999999995,
+      "end": 203.12034013605438,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_12": {
+      "start": 203.89999999999995,
+      "end": 204.2689569160997,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_13": {
+      "start": 204.99999999999994,
+      "end": 205.48535147392283,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_14": {
+      "start": 206.09999999999994,
+      "end": 206.4269614512471,
+      "loop": false
+    },
+    "/sfx_Rotate_Road/sfx_Rotate_Road_15": {
+      "start": 207.19999999999993,
+      "end": 207.62231292517,
+      "loop": false
+    },
+    "/sfx_Tap to Start/sfx_Tap_to_Start": {
+      "start": 208.29999999999993,
+      "end": 209.87501133786841,
+      "loop": false
+    },
+    "/sfx_TimberHelper/sfx_Timber_Helper": {
+      "start": 210.39999999999992,
+      "end": 224.21251700680264,
+      "loop": false
+    },
+    "/ui_Mouse_Click/ui_Mouse_Click_01": {
+      "start": 224.49999999999991,
+      "end": 224.58081632653054,
+      "loop": false
+    },
+    "/ui_Mouse_Click/ui_Mouse_Click_02": {
+      "start": 225.59999999999994,
+      "end": 225.67936507936503,
+      "loop": false
+    },
+    "/ui_Mouse_Click/ui_Mouse_Click_03": {
+      "start": 226.69999999999996,
+      "end": 226.78977324263033,
+      "loop": false
+    },
+    "/voice_Buy_Character_Denied_Response/voiceBuy_Character_Denied_Response_01": {
+      "start": 227.79999999999995,
+      "end": 228.64387755102035,
+      "loop": false
+    },
+    "/voice_Buy_Character_Denied_Response/voiceBuy_Character_Denied_Response_02": {
+      "start": 228.89999999999995,
+      "end": 229.50371882086162,
+      "loop": false
+    },
+    "/voice_Buy_Character_Denied_Response/voiceBuy_Character_Denied_Response_03": {
+      "start": 229.99999999999994,
+      "end": 230.5799092970521,
+      "loop": false
+    },
+    "/voice_Game_Over_Response/voice_Game_Over_Response_02": {
+      "start": 231.09999999999994,
+      "end": 232.09471655328792,
+      "loop": false
+    },
+    "/voice_Game_Over_Response/voice_Grunt_Character_Reaction_Ice_Bear_01": {
+      "start": 232.19999999999993,
+      "end": 233.00675736961443,
+      "loop": false
+    },
+    "/voice_helpers/charlie/voiceBuy_Character_Response_Charlie_03": {
+      "start": 233.29999999999993,
+      "end": 233.58798185941035,
+      "loop": false
+    },
+    "/voice_helpers/charlie/voice_Character_Power_Charlie_01": {
+      "start": 234.39999999999992,
+      "end": 235.44539682539676,
+      "loop": false
+    },
+    "/voice_helpers/charlie/voice_Character_Power_Charlie_02": {
+      "start": 236.49999999999994,
+      "end": 237.54539682539678,
+      "loop": false
+    },
+    "/voice_helpers/charlie/voice_Character_Power_Charlie_03": {
+      "start": 238.59999999999997,
+      "end": 239.41759637188204,
+      "loop": false
+    },
+    "/voice_helpers/chloe/voice_Character_Power_Chloe_01": {
+      "start": 239.69999999999996,
+      "end": 240.13659863945574,
+      "loop": false
+    },
+    "/voice_helpers/chloe/voice_Character_Power_Chloe_02": {
+      "start": 240.79999999999995,
+      "end": 241.47582766439905,
+      "loop": false
+    },
+    "/voice_helpers/chloe/voice_Character_Power_Chloe_03": {
+      "start": 241.89999999999995,
+      "end": 242.76181405895687,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Character_Power_Lucy_01": {
+      "start": 242.99999999999994,
+      "end": 243.49999999999994,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Character_Power_Lucy_02": {
+      "start": 244.09999999999994,
+      "end": 244.5503174603174,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Lucy_Boom": {
+      "start": 245.19999999999993,
+      "end": 245.76689342403623,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Lucy_Look_at_this_guys": {
+      "start": 246.29999999999995,
+      "end": 247.64555555555552,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Lucy_Oh_Yeah": {
+      "start": 248.39999999999995,
+      "end": 249.09621315192737,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Lucy_Woouuw": {
+      "start": 249.49999999999994,
+      "end": 250.84723356009064,
+      "loop": false
+    },
+    "/voice_helpers/lucy/voice_Lucy_Youre_Welcome": {
+      "start": 251.59999999999994,
+      "end": 252.4106575963718,
+      "loop": false
+    },
+    "/voice_helpers/ranger_tabes/voice_Character_Power_Ranger_Tabes_01": {
+      "start": 252.69999999999993,
+      "end": 253.36439909297044,
+      "loop": false
+    },
+    "/voice_helpers/ranger_tabes/voice_Character_Power_Ranger_Tabes_02": {
+      "start": 253.79999999999993,
+      "end": 254.40848072562352,
+      "loop": false
+    },
+    "/voice_helpers/ranger_tabes/voice_Character_Power_Ranger_Tabes_03": {
+      "start": 254.89999999999995,
+      "end": 256.384671201814,
+      "loop": false
+    },
+    "/voice_helpers/ranger_tabes/voice_Ranger_Tabes_Excellent": {
+      "start": 256.99999999999994,
+      "end": 257.8345351473922,
+      "loop": false
+    },
+    "/voice_helpers/ranger_tabes/voice_Ranger_Tabes_Justice_Must_Be_Served": {
+      "start": 258.0999999999999,
+      "end": 260.36027210884345,
+      "loop": false
+    },
+    "/voice_helpers/robot_bear/voice_Robot_Bear_Butler_Bear_Activated": {
+      "start": 261.19999999999993,
+      "end": 262.771746031746,
+      "loop": false
+    },
+    "/voice_helpers/robot_bear/voice_Robot_Bear_Greetings": {
+      "start": 263.29999999999995,
+      "end": 263.81911564625847,
+      "loop": false
+    },
+    "/voice_helpers/robot_bear/voice_Robot_Bear_Maximum_Cleaning_Mode_Engaged": {
+      "start": 264.4,
+      "end": 266.06,
+      "loop": false
+    },
+    "/voice_helpers/robot_bear/voice_Robot_Bear_Mess_Detected_Initiating_Scrub_Mode": {
+      "start": 266.5,
+      "end": 268.91591836734693,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Gets_Picked_Up_Grizzly_Good_job_bros": {
+      "start": 269.59999999999997,
+      "end": 270.84999999999997,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Gets_Picked_Up_Grizzly_Haha_we_made_it": {
+      "start": 271.7,
+      "end": 273.25625850340134,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Gets_Picked_Up_Grizzly_Yay": {
+      "start": 273.79999999999995,
+      "end": 275.04999999999995,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Positive_Character_Reaction_Grizzly_Game_On": {
+      "start": 275.9,
+      "end": 278.1083446712018,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Positive_Character_Reaction_Grizzly_Golden": {
+      "start": 279,
+      "end": 280.0531292517007,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Positive_Character_Reaction_Grizzly_Wohoohoo": {
+      "start": 281.1,
+      "end": 282.6562585034014,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Grizzly/voice_Positive_Character_Reaction_Grizzly_Yes": {
+      "start": 283.2,
+      "end": 284.8666666666667,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Ice_Bear/voice_Positive_Character_Reaction_Ice_Bear_Proud_To_Have_You_on_Team": {
+      "start": 285.3,
+      "end": 287.90417233560095,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Ice_Bear/voice_Positive_Character_Reaction_Ice_Bear_Wants_to_Win": {
+      "start": 288.40000000000003,
+      "end": 289.85834467120185,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Panda/voice_Positive_Character_Reaction_Panda_Hahaha": {
+      "start": 290.50000000000006,
+      "end": 292.095328798186,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Panda/voice_Positive_Character_Reaction_Panda_That_was_amazing": {
+      "start": 292.6000000000001,
+      "end": 294.2250113378686,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Panda/voice_Positive_Character_Reaction_Panda_Woohoo": {
+      "start": 294.7000000000001,
+      "end": 295.8250113378686,
+      "loop": false
+    },
+    "/voice_over_bears_positive/voice_Panda/voice_Positive_Character_Reaction_Panda_Yeeees": {
+      "start": 296.8000000000001,
+      "end": 298.4250113378686,
+      "loop": false
+    }
+  }
+}
