@@ -1,0 +1,14 @@
+{
+    "name": "Blackpink K-pop Adventure",
+	"short_name": "Blackpink K-pop Adventure",
+	"description": "DressUp-game for girls.",
+    "icons": [{
+        "src": "library/icons/icon_128_128.png",
+        "sizes": "128x128",
+		"type": "image/png"
+    }],
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#000000",
+	"theme_color": "#000000"
+}
