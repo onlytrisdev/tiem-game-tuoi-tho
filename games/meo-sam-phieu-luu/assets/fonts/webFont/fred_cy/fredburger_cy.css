@@ -1,0 +1,9 @@
+
+/* Webfont: fredburger_cy */@font-face {
+  font-family: 'fredburger_cy';
+  src: url('fredburger_cy.woff') format('woff'), /* Modern Browsers */
+       url('fredburger_cy.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}

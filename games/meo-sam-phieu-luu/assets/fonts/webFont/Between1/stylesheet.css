@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Between1-Black';
+    src: url('Between1-Black.eot');
+    src: url('Between1-Black.eot?#iefix') format('embedded-opentype'),
+        url('Between1-Black.woff2') format('woff2'),
+        url('Between1-Black.woff') format('woff'),
+        url('Between1-Black.ttf') format('truetype'),
+        url('Between1-Black.svg#Between1-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

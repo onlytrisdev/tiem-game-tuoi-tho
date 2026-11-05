@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"fire_ball","children":[{"name":"fire_ball"},{"name":"explosion02"}],"animations":["LOOP_fireball","PLAY_fireball_explode"]},"properties":{"fire_ball":{"file":"fire_ball_06.png","image":"SIMPLE","position":{"x":0,"y":0},"type":"sprite"},"explosion02":{"file":"explosion_02.png","image":"SIMPLE","position":{"x":-9,"y":-7},"alpha":0,"type":"sprite"}}}

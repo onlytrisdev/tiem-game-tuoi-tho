@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"block_delay","children":[{"name":"delay01"},{"name":"dust01"}],"animations":["LOOP_delay","OUT_delay"]},"properties":{"delay01":{"file":"delay_01.png","image":"SIMPLE","position":{"x":-4.51,"y":-284},"anchor":{"x":0.5,"y":0.2},"type":"sprite"},"dust01":{"file":"dust_delay_01.png","image":"SIMPLE","position":{"x":-4,"y":-271},"alpha":0,"type":"sprite"}}}

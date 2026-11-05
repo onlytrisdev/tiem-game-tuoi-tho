@@ -1,0 +1,72 @@
+{
+    "cropBox": [0, 0, 1536, -7500],
+    "selection": [
+        {
+            "typename": "PathItem",
+            "closed": false,
+            "filled": false,
+            "fillColor": {
+                "gray": 0,
+                "typename": "GrayColor"
+            },
+            "opacity": 100,
+            "stroked": false,
+            "strokeColor": {
+                "typename": "NoColor"
+            },
+            "strokeDashes": [],
+            "strokeDashOffset": 0,
+            "strokeCap": {},
+            "strokeJoin": {},
+            "strokeMiterLimit": 10,
+            "strokeWidth": 1,
+            "pathPoints": [
+                {
+                    "anchor": [777.878715749232, 7158.63530976465],
+                    "leftDirection": [777.878715749232, 7158.63530976465],
+                    "rightDirection": [777.878715749232, 7158.63530976465]
+                },
+                {
+                    "anchor": [1125.14782658757, 6775.68344221972],
+                    "leftDirection": [1125.14782658757, 6905],
+                    "rightDirection": [1125.14782658757, 6321]
+                },
+                {
+                    "anchor": [520.39292141572, 5923.27879650706],
+                    "leftDirection": [520.39292141572, 6413],
+                    "rightDirection": [520.39292141572, 5441]
+                },
+                {
+                    "anchor": [1142.37728175955, 4980.16341580377],
+                    "leftDirection": [1142.37728175955, 5341],
+                    "rightDirection": [1142.37728175955, 4537]
+                },
+                {
+                    "anchor": [502.399409181235, 4123.23962506454],
+                    "leftDirection": [502.399409181235, 4577],
+                    "rightDirection": [502.399409181235, 3716.03725806724]
+                },
+                {
+                    "anchor": [1190.36390424927, 2909.42186024267],
+                    "leftDirection": [1202.35664690107, 3352.31063513573],
+                    "rightDirection": [1180.2573485303, 2536.18946372392]
+                },
+                {
+                    "anchor": [580.937901745427, 2113.48364392156],
+                    "leftDirection": [580.937901745427, 2471.73466731246],
+                    "rightDirection": [580.937901745427, 1584.10998271212]
+                },
+                {
+                    "anchor": [1210.25374925015, 1129.02562651225],
+                    "leftDirection": [1210.25374925015, 1522.66788098759],
+                    "rightDirection": [1210.25374925015, 869.065397297622]
+                },
+                {
+                    "anchor": [642.184381515839, 536.619565329514],
+                    "leftDirection": [852.326579215693, 631],
+                    "rightDirection": [642.184381515839, 536.619565329514]
+                }
+            ]
+        }
+    ]
+}

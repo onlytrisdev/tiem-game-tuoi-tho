@@ -1,0 +1,736 @@
+{
+    "intro": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 0,
+            "dialog_key": "l1_d0",
+            "wait": 0,
+            "wait_signal": ""
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 5,
+            "dialog_key": "l1_d1",
+            "wait": 0,
+            "wait_signal": ""
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 2,
+            "dialog_key": "intro_obvious_nop",
+            "wait": 0,
+            "wait_signal": ""
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "starfire",
+            "frame": 1,
+            "dialog_key": "intro_our_the",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "robin",
+            "frame": 1,
+            "dialog_key": "intro_we_buy",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "beastboy",
+            "frame": 1,
+            "dialog_key": "intro_cool_money",
+            "wait": 0
+        }
+    ],
+    "tutorial": [],
+    "level_2": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 2,
+            "dialog_key": "level_2_look_cyborg",
+            "wait": 0,
+            "wait_signal": ""
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "cyborg",
+            "frame": 1,
+            "dialog_key": "level_2_yeah_great",
+            "wait": 0,
+            "wait_signal": ""
+        }
+    ],
+    "level_blocks": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 0,
+            "dialog_key": "level_blocks_hey_guys",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "beastboy",
+            "frame": 3,
+            "dialog_key": "level_blocks_is_safer",
+            "wait": 0
+        }
+    ],
+    "level_rotate": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 0,
+            "dialog_key": "level_rotate_why_we",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 1,
+            "dialog_key": "level_rotate_good_idea",
+            "wait": 0
+        }
+    ],
+    "l_locked": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 0,
+            "dialog_key": "l_locked_i_think",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 3,
+            "dialog_key": "l_locked_wait_what",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 4,
+            "dialog_key": "l_locked_he_is",
+            "wait": 0
+        }
+    ],
+    "end_birthday": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 0,
+            "dialog_key": "end_birthday_looks_like",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "starfire",
+            "frame": 2,
+            "dialog_key": "end_birthday_oh_its",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 1,
+            "dialog_key": "end_birthday_if_theres",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 3,
+            "dialog_key": "end_birthday_hey_no",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 2,
+            "dialog_key": "end_birthday_sad_bboy",
+            "wait": 0
+        }
+    ],
+    "l_boxes": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 2,
+            "dialog_key": "l_boxes_titans_we",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 3,
+            "dialog_key": "l_boxes_but_some",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 2,
+            "dialog_key": "l_boxes_the_good",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 4,
+            "dialog_key": "l_boxes_why_its",
+            "wait": 0
+        }
+    ],
+    "l_cyborg_arm": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 5,
+            "dialog_key": "l_cyborg_arm_ohhh_my",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 4,
+            "dialog_key": "l_cyborg_arm_i_say",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 2,
+            "dialog_key": "l_cyborg_arm_yeah_",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 0,
+            "dialog_key": "l_cyborg_arm_raven_tired",
+            "wait": 0
+        }
+    ],
+    "l_tags": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 1,
+            "dialog_key": "l_tags_i_made",
+            "wait": 0
+        }
+    ],
+    "l_painbot": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 3,
+            "dialog_key": "l_painbot_pain_painbot",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "objects",
+            "frame": 2,
+            "dialog_key": "l_painbot_pain_painbot",
+            "wait": 0
+        }
+    ],
+    "l_waffles": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 2,
+            "dialog_key": "l_waffles_wafflesbb",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "beastboy",
+            "frame": 1,
+            "dialog_key": "l_waffles_wafflesbb",
+            "wait": 0
+        }
+    ],
+    "l_jeff": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 0,
+            "dialog_key": "l_jeff_ohhhhh_remember",
+            "wait": 0
+        }
+    ],
+    "l_collectors": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 5,
+            "dialog_key": "l_collectors_noooooo_its",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 0,
+            "dialog_key": "l_collectors_yes_if",
+            "wait": 0
+        }
+    ],
+    "l_radar": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 5,
+            "dialog_key": "l_radar_isnt_it",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "beastboy",
+            "frame": 4,
+            "dialog_key": "l_radar_no_worries",
+            "wait": 0
+        }
+    ],
+    "l_hat": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 0,
+            "dialog_key": "l_hat_remember_when",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 0,
+            "dialog_key": "l_hat_is_that",
+            "wait": 0
+        }
+    ],
+    "l_partyglass": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 1,
+            "dialog_key": "l_partyglass_i_suddenly",
+            "wait": 0
+        }
+    ],
+    "l_boots": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 1,
+            "dialog_key": "l_boots_if_we",
+            "wait": 0
+        }
+    ],
+    "l_spoon": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 2,
+            "dialog_key": "l_spoon_nooooo_thats",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 4,
+            "dialog_key": "l_spoon_no_star",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 4,
+            "dialog_key": "l_spoon_it_matters",
+            "wait": 0
+        }
+    ],
+    "l_kryptonite": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 1,
+            "dialog_key": "l_kryptonite_we_should",
+            "wait": 0
+        }
+    ],
+    "l_pegasus": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 1,
+            "dialog_key": "l_pegasus_go_make",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 2,
+            "dialog_key": "l_pegasus__sad",
+            "wait": 0
+        }
+    ],
+    "l_lollipop": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "robin",
+            "frame": 1,
+            "dialog_key": "l_lollipop_maybe_if",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 3,
+            "dialog_key": "l_lollipop_nooo_",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "starfire",
+            "frame": 2,
+            "dialog_key": "l_lollipop_nooo_",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "beastboy",
+            "frame": 5,
+            "dialog_key": "l_lollipop_nooo_",
+            "wait": 0
+        }
+    ],
+    "l_stick": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "objects",
+            "frame": 0,
+            "dialog_key": "l_stick_diggydiggydad_",
+            "wait": 0
+        }
+    ],
+    "l_belt": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 5,
+            "dialog_key": "l_belt_did_you",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 1,
+            "dialog_key": "l_belt_of_course",
+            "wait": 0
+        }
+    ],
+    "l_beatbox": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "objects",
+            "frame": 1,
+            "dialog_key": "l_beatbox_*sniffle_sniffle*",
+            "wait": 0
+        }
+    ],
+    "l_partyhat": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 1,
+            "dialog_key": "l_partyhat_someone_is",
+            "wait": 0
+        }
+    ],
+    "l_christmas": [
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "starfire",
+            "frame": 1,
+            "dialog_key": "l_christmas_is_it",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 2,
+            "dialog_key": "l_christmas_always_star",
+            "wait": 0
+        }
+    ],
+    "l_muffin": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "beastboy",
+            "frame": 0,
+            "dialog_key": "l_muffin_uh_i",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 3,
+            "dialog_key": "l_muffin_no_*smack*",
+            "wait": 0
+        }
+    ],
+    "l_mask": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "robin",
+            "frame": 0,
+            "dialog_key": "l_mask_hey_i",
+            "wait": 0
+        }
+    ],
+    "l_mask2": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "robin",
+            "frame": 5,
+            "dialog_key": "l_mask2_hey_that’s",
+            "wait": 0
+        }
+    ],
+    "l_birdarang": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "objects",
+            "frame": 0,
+            "dialog_key": "l_birdarang__",
+            "wait": 0
+        }
+    ],
+    "l_fish": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 5,
+            "dialog_key": "l_fish_are_you",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 0,
+            "dialog_key": "l_fish_of_course",
+            "wait": 0
+        }
+    ],
+    "l_jeff2": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 5,
+            "dialog_key": "l_jeff2_you_do",
+            "wait": 0
+        }
+    ],
+    "l_book": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 3,
+            "dialog_key": "l_book_hey_im",
+            "wait": 0
+        }
+    ],
+    "l_cane": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 6,
+            "dialog_key": "l_cane_why_do",
+            "wait": 0
+        }
+    ],
+    "l_lamp": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 5,
+            "dialog_key": "l_lamp_you_cant",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 3,
+            "dialog_key": "l_lamp_do_we",
+            "wait": 0
+        }
+    ],
+    "l_pumpkin": [
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "starfire",
+            "frame": 0,
+            "dialog_key": "l_pumpkin_is_it",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "raven",
+            "frame": 4,
+            "dialog_key": "l_pumpkin_sure_",
+            "wait": 0
+        }
+    ],
+    "l_chest": [
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "raven",
+            "frame": 5,
+            "dialog_key": "l_chest_have_any",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "starfire",
+            "frame": 4,
+            "dialog_key": "l_chest_nope_",
+            "wait": 0
+        }
+    ],
+    "l_robinsmug": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "robin",
+            "frame": 3,
+            "dialog_key": "l_robinsmug_we_cant",
+            "wait": 0
+        }
+    ],
+    "l_arm": [
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 4,
+            "dialog_key": "l_arm_did_you",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "starfire",
+            "frame": 4,
+            "dialog_key": "l_arm_yes_we",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 3,
+            "dialog_key": "l_arm_but_its",
+            "wait": 0
+        }
+    ],
+    "l_toilet": [
+        {
+            "action": "speak",
+            "side": "right",
+            "animation": "robin",
+            "frame": 0,
+            "dialog_key": "l_toilet_its_always",
+            "wait": 0
+        },
+        {
+            "action": "speak",
+            "side": "left",
+            "animation": "cyborg",
+            "frame": 0,
+            "dialog_key": "l_toilet_aha_",
+            "wait": 0
+        }
+    ]
+}

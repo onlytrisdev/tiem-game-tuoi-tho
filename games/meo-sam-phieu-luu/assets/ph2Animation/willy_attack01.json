@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"willy_attack01","children":[{"name":"pivot","children":[{"name":"punch01"}]}],"animations":["PLAY_attack01"]},"properties":{"pivot":{"position":{"x":86.5,"y":24.9},"type":"container"},"pivot/punch01":{"file":"punch01.png","image":"SIMPLE","position":{"x":-86.5,"y":-24.9},"type":"sprite"}}}

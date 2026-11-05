@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"willy_attack02","children":[{"name":"pivot","children":[{"name":"willy_smoke01"}]}],"animations":["PLAY_attack02"]},"properties":{"pivot":{"position":{"x":-144.1,"y":-17},"type":"container"},"pivot/willy_smoke01":{"file":"willy_smoke01.png","image":"SIMPLE","position":{"x":144.1,"y":16.1},"type":"sprite"}}}

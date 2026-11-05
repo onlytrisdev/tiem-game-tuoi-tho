@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"attack2_mummra","children":[{"name":"pivot","children":[{"name":"attack"}]}],"animations":["PLAY_attack2"]},"properties":{"pivot":{"position":{"x":0.6,"y":5.7},"type":"container"},"pivot/attack":{"file":"attack2_1.png","image":"SIMPLE","position":{"x":-0.6,"y":-5.7},"type":"sprite"}}}

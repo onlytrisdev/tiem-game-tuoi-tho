@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"floating_block","children":[{"name":"floating_top"},{"name":"explosion01"}],"animations":["PLAY_explode_floating"]},"properties":{"floating_top":{"file":"floating_top.png","image":"SIMPLE","position":{"x":0,"y":0},"type":"sprite"},"explosion01":{"file":"explosion_01.png","image":"SIMPLE","position":{"x":0,"y":-1.5},"alpha":0,"type":"sprite"}}}

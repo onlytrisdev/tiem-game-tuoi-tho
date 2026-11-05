@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"projectile","children":[{"name":"pivot","children":[{"name":"silk"}]}],"animations":["PLAY_spider_projectile"]},"properties":{"pivot":{"position":{"x":0,"y":0},"type":"container"},"pivot/silk":{"file":"silk01.png","image":"SIMPLE","position":{"x":0,"y":0},"alpha":0,"type":"sprite"}}}

@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"willy_special","children":[{"name":"pivot","children":[{"name":"special01"}]}],"animations":["LOOP_special"]},"properties":{"pivot":{"position":{"x":-64.5,"y":10.2},"type":"container"},"pivot/special01":{"file":"special01.png","image":"SIMPLE","position":{"x":64.5,"y":-10.2},"type":"sprite"}}}

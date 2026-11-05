@@ -1,0 +1,2601 @@
+{
+	"frames": {
+		"mapui/0-Friends": {
+			"frame": {
+				"x": 1478,
+				"y": 504,
+				"w": 269,
+				"h": 94
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 269,
+				"h": 94
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 94
+			}
+		},
+		"mapui/1-2-Friends-Collect": {
+			"frame": {
+				"x": 1121,
+				"y": 833,
+				"w": 269,
+				"h": 203
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 269,
+				"h": 203
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 203
+			}
+		},
+		"mapui/1-2-Friends": {
+			"frame": {
+				"x": 935,
+				"y": 1105,
+				"w": 269,
+				"h": 203
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 269,
+				"h": 203
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 203
+			}
+		},
+		"mapui/3-4-Friends-Collect": {
+			"frame": {
+				"x": 1478,
+				"y": 230,
+				"w": 269,
+				"h": 273
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 269,
+				"h": 273
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 273
+			}
+		},
+		"mapui/3-4-Friends": {
+			"frame": {
+				"x": 1121,
+				"y": 559,
+				"w": 269,
+				"h": 273
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 269,
+				"h": 273
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 273
+			}
+		},
+		"mapui/5-6-Friends-Collect": {
+			"frame": {
+				"x": 502,
+				"y": 1704,
+				"w": 356,
+				"h": 328
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 356,
+				"h": 328
+			},
+			"sourceSize": {
+				"w": 356,
+				"h": 328
+			}
+		},
+		"mapui/5-6-Friends": {
+			"frame": {
+				"x": 1121,
+				"y": 230,
+				"w": 356,
+				"h": 328
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 356,
+				"h": 328
+			},
+			"sourceSize": {
+				"w": 356,
+				"h": 328
+			}
+		},
+		"mapui/arrow": {
+			"frame": {
+				"x": 1690,
+				"y": 1600,
+				"w": 82,
+				"h": 88
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 4,
+				"y": 1,
+				"w": 82,
+				"h": 88
+			},
+			"sourceSize": {
+				"w": 90,
+				"h": 90
+			}
+		},
+		"mapui/avatarframe-friend": {
+			"frame": {
+				"x": 1553,
+				"y": 787,
+				"w": 186,
+				"h": 162
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 31,
+				"y": 29,
+				"w": 186,
+				"h": 162
+			},
+			"sourceSize": {
+				"w": 220,
+				"h": 220
+			}
+		},
+		"mapui/avatarframe-player": {
+			"frame": {
+				"x": 889,
+				"y": 1711,
+				"w": 193,
+				"h": 168
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 26,
+				"w": 193,
+				"h": 168
+			},
+			"sourceSize": {
+				"w": 220,
+				"h": 220
+			}
+		},
+		"mapui/booster-select-bg": {
+			"frame": {
+				"x": 1684,
+				"y": 1764,
+				"w": 80,
+				"h": 80
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 80,
+				"h": 80
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/button-avatar-frame": {
+			"frame": {
+				"x": 1524,
+				"y": 1101,
+				"w": 118,
+				"h": 87
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 118,
+				"h": 87
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 88
+			}
+		},
+		"mapui/button-buy": {
+			"frame": {
+				"x": 1796,
+				"y": 1910,
+				"w": 64,
+				"h": 64
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"sourceSize": {
+				"w": 64,
+				"h": 64
+			}
+		},
+		"mapui/button-fact": {
+			"frame": {
+				"x": 1601,
+				"y": 1640,
+				"w": 81,
+				"h": 82
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 0,
+				"w": 81,
+				"h": 82
+			},
+			"sourceSize": {
+				"w": 83,
+				"h": 83
+			}
+		},
+		"mapui/checkmark-empty": {
+			"frame": {
+				"x": 399,
+				"y": 1425,
+				"w": 25,
+				"h": 25
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 13,
+				"y": 15,
+				"w": 25,
+				"h": 25
+			},
+			"sourceSize": {
+				"w": 50,
+				"h": 50
+			}
+		},
+		"mapui/checkmark": {
+			"frame": {
+				"x": 434,
+				"y": 1065,
+				"w": 44,
+				"h": 38
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 6,
+				"y": 2,
+				"w": 44,
+				"h": 38
+			},
+			"sourceSize": {
+				"w": 50,
+				"h": 50
+			}
+		},
+		"mapui/chest-big-closed": {
+			"frame": {
+				"x": 889,
+				"y": 1880,
+				"w": 182,
+				"h": 135
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 9,
+				"y": 65,
+				"w": 182,
+				"h": 135
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/chest-big-open": {
+			"frame": {
+				"x": 935,
+				"y": 1375,
+				"w": 182,
+				"h": 199
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 9,
+				"y": 1,
+				"w": 182,
+				"h": 199
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/chest-regular-closed": {
+			"frame": {
+				"x": 1771,
+				"y": 1,
+				"w": 154,
+				"h": 121
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 16,
+				"y": 76,
+				"w": 154,
+				"h": 121
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/chest-regular-open": {
+			"frame": {
+				"x": 1740,
+				"y": 787,
+				"w": 152,
+				"h": 171
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 18,
+				"y": 26,
+				"w": 152,
+				"h": 171
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/chest-small-closed": {
+			"frame": {
+				"x": 1333,
+				"y": 1870,
+				"w": 122,
+				"h": 103
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 26,
+				"y": 86,
+				"w": 122,
+				"h": 103
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/chest-small-open": {
+			"frame": {
+				"x": 1272,
+				"y": 1576,
+				"w": 122,
+				"h": 150
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 26,
+				"y": 39,
+				"w": 122,
+				"h": 150
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/Coins": {
+			"frame": {
+				"x": 1437,
+				"y": 1900,
+				"w": 116,
+				"h": 116
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 116,
+				"h": 116
+			},
+			"sourceSize": {
+				"w": 116,
+				"h": 116
+			}
+		},
+		"mapui/coming-soon-banner": {
+			"frame": {
+				"x": 1,
+				"y": 1998,
+				"w": 480,
+				"h": 40
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 480,
+				"h": 40
+			},
+			"sourceSize": {
+				"w": 480,
+				"h": 40
+			}
+		},
+		"mapui/Counter": {
+			"frame": {
+				"x": 399,
+				"y": 1704,
+				"w": 86,
+				"h": 47
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 86,
+				"h": 47
+			},
+			"sourceSize": {
+				"w": 86,
+				"h": 47
+			}
+		},
+		"mapui/dailygoals-giftbox": {
+			"frame": {
+				"x": 1634,
+				"y": 1880,
+				"w": 80,
+				"h": 80
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 10,
+				"y": 11,
+				"w": 80,
+				"h": 80
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/Divider": {
+			"frame": {
+				"x": 1395,
+				"y": 1724,
+				"w": 2,
+				"h": 14
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 2,
+				"h": 14
+			},
+			"sourceSize": {
+				"w": 2,
+				"h": 14
+			}
+		},
+		"mapui/friend-gift-frame": {
+			"frame": {
+				"x": 1135,
+				"y": 1399,
+				"w": 222,
+				"h": 176
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 222,
+				"h": 176
+			},
+			"sourceSize": {
+				"w": 222,
+				"h": 176
+			}
+		},
+		"mapui/giftbox_closed": {
+			"frame": {
+				"x": 1398,
+				"y": 1105,
+				"w": 126,
+				"h": 125
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 38,
+				"y": 55,
+				"w": 126,
+				"h": 125
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/giftBoxSocialhub_closed": {
+			"frame": {
+				"x": 1072,
+				"y": 1900,
+				"w": 114,
+				"h": 115
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 43,
+				"y": 61,
+				"w": 114,
+				"h": 115
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/giftBoxSocialhub_open": {
+			"frame": {
+				"x": 900,
+				"y": 1558,
+				"w": 194,
+				"h": 152
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 24,
+				"w": 194,
+				"h": 152
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 200
+			}
+		},
+		"mapui/giftstab-smiley": {
+			"frame": {
+				"x": 1601,
+				"y": 1551,
+				"w": 88,
+				"h": 88
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 6,
+				"y": 6,
+				"w": 88,
+				"h": 88
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/goal-combo": {
+			"frame": {
+				"x": 1765,
+				"y": 1764,
+				"w": 72,
+				"h": 72
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 4,
+				"y": 4,
+				"w": 72,
+				"h": 72
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/goal-gold": {
+			"frame": {
+				"x": 1060,
+				"y": 500,
+				"w": 75,
+				"h": 58
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 12,
+				"w": 75,
+				"h": 58
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/goal-levels-complete": {
+			"frame": {
+				"x": 1796,
+				"y": 1975,
+				"w": 67,
+				"h": 61
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 6,
+				"y": 14,
+				"w": 67,
+				"h": 61
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/goal-levels": {
+			"frame": {
+				"x": 1715,
+				"y": 1845,
+				"w": 80,
+				"h": 80
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 80,
+				"h": 80
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/goal-stars": {
+			"frame": {
+				"x": 1715,
+				"y": 1926,
+				"w": 80,
+				"h": 80
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 80,
+				"h": 80
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/goal-tiles": {
+			"frame": {
+				"x": 1603,
+				"y": 1804,
+				"w": 75,
+				"h": 58
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 12,
+				"w": 75,
+				"h": 58
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/goal-toys": {
+			"frame": {
+				"x": 1766,
+				"y": 1683,
+				"w": 66,
+				"h": 76
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 7,
+				"y": 2,
+				"w": 66,
+				"h": 76
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 80
+			}
+		},
+		"mapui/Info-Button": {
+			"frame": {
+				"x": 1333,
+				"y": 1993,
+				"w": 43,
+				"h": 45
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 43,
+				"h": 45
+			},
+			"sourceSize": {
+				"w": 43,
+				"h": 45
+			}
+		},
+		"mapui/leaderboard-bgcoins": {
+			"frame": {
+				"x": 544,
+				"y": 1,
+				"w": 724,
+				"h": 208
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 724,
+				"h": 208
+			},
+			"sourceSize": {
+				"w": 724,
+				"h": 208
+			}
+		},
+		"mapui/leaderboard-friend-joined-frame": {
+			"frame": {
+				"x": 1,
+				"y": 1425,
+				"w": 397,
+				"h": 335
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 397,
+				"h": 335
+			},
+			"sourceSize": {
+				"w": 397,
+				"h": 335
+			}
+		},
+		"mapui/leaderboard-invite-gift": {
+			"frame": {
+				"x": 1742,
+				"y": 1220,
+				"w": 102,
+				"h": 103
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 9,
+				"y": 12,
+				"w": 102,
+				"h": 103
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/leaderboard-playertag-avatarframe": {
+			"frame": {
+				"x": 1684,
+				"y": 1683,
+				"w": 80,
+				"h": 81
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 80,
+				"h": 81
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 81
+			}
+		},
+		"mapui/leaderboard-playertag-avatargeneric": {
+			"frame": {
+				"x": 1603,
+				"y": 1722,
+				"w": 80,
+				"h": 81
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 80,
+				"h": 81
+			},
+			"sourceSize": {
+				"w": 80,
+				"h": 81
+			}
+		},
+		"mapui/leaderboard-playertag-bg": {
+			"frame": {
+				"x": 522,
+				"y": 1006,
+				"w": 500,
+				"h": 97
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 97
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 97
+			}
+		},
+		"mapui/leaderboard-playertag-rank1": {
+			"frame": {
+				"x": 1634,
+				"y": 1961,
+				"w": 73,
+				"h": 77
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 73,
+				"h": 77
+			},
+			"sourceSize": {
+				"w": 73,
+				"h": 77
+			}
+		},
+		"mapui/leaderboard-playertag-rank2": {
+			"frame": {
+				"x": 1796,
+				"y": 1837,
+				"w": 72,
+				"h": 72
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 72,
+				"h": 72
+			},
+			"sourceSize": {
+				"w": 72,
+				"h": 72
+			}
+		},
+		"mapui/leaderboard-playertag-rank3": {
+			"frame": {
+				"x": 1779,
+				"y": 1600,
+				"w": 69,
+				"h": 74
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 69,
+				"h": 74
+			},
+			"sourceSize": {
+				"w": 69,
+				"h": 74
+			}
+		},
+		"mapui/leaderboard-social-icon": {
+			"frame": {
+				"x": 1788,
+				"y": 1425,
+				"w": 99,
+				"h": 98
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 1,
+				"w": 99,
+				"h": 98
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/leaderboard-social-image": {
+			"frame": {
+				"x": 1139,
+				"y": 1037,
+				"w": 230,
+				"h": 228
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 1,
+				"w": 230,
+				"h": 228
+			},
+			"sourceSize": {
+				"w": 230,
+				"h": 230
+			}
+		},
+		"mapui/leaderboard-tab-active": {
+			"frame": {
+				"x": 1437,
+				"y": 1724,
+				"w": 175,
+				"h": 74
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 1,
+				"w": 175,
+				"h": 74
+			},
+			"sourceSize": {
+				"w": 175,
+				"h": 75
+			}
+		},
+		"mapui/leaderboard-tab-inactive": {
+			"frame": {
+				"x": 1553,
+				"y": 950,
+				"w": 175,
+				"h": 49
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 26,
+				"w": 175,
+				"h": 49
+			},
+			"sourceSize": {
+				"w": 175,
+				"h": 75
+			}
+		},
+		"mapui/leaderboard-usertag-bg": {
+			"frame": {
+				"x": 1023,
+				"y": 604,
+				"w": 500,
+				"h": 97
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 97
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 97
+			}
+		},
+		"mapui/level-node-current-glow": {
+			"frame": {
+				"x": 1095,
+				"y": 1576,
+				"w": 176,
+				"h": 141
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 35,
+				"w": 176,
+				"h": 141
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 180
+			}
+		},
+		"mapui/level-node-current": {
+			"frame": {
+				"x": 1700,
+				"y": 1521,
+				"w": 87,
+				"h": 78
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 6,
+				"y": 11,
+				"w": 87,
+				"h": 78
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-goal-current-glow": {
+			"frame": {
+				"x": 1083,
+				"y": 1718,
+				"w": 176,
+				"h": 142
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 34,
+				"w": 176,
+				"h": 142
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 180
+			}
+		},
+		"mapui/level-node-goal-current": {
+			"frame": {
+				"x": 1554,
+				"y": 1880,
+				"w": 100,
+				"h": 79
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 9,
+				"w": 100,
+				"h": 79
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-goal-locked": {
+			"frame": {
+				"x": 1803,
+				"y": 156,
+				"w": 100,
+				"h": 89
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 8,
+				"w": 100,
+				"h": 89
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-goal": {
+			"frame": {
+				"x": 1512,
+				"y": 1779,
+				"w": 100,
+				"h": 90
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 10,
+				"w": 100,
+				"h": 90
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-gold-current-glow": {
+			"frame": {
+				"x": 1358,
+				"y": 1399,
+				"w": 176,
+				"h": 141
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 35,
+				"w": 176,
+				"h": 141
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 180
+			}
+		},
+		"mapui/level-node-gold-current": {
+			"frame": {
+				"x": 1700,
+				"y": 1441,
+				"w": 87,
+				"h": 79
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 6,
+				"y": 11,
+				"w": 87,
+				"h": 79
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-gold-locked": {
+			"frame": {
+				"x": 1803,
+				"y": 356,
+				"w": 97,
+				"h": 89
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 8,
+				"w": 97,
+				"h": 89
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-gold": {
+			"frame": {
+				"x": 1801,
+				"y": 454,
+				"w": 100,
+				"h": 91
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 9,
+				"w": 100,
+				"h": 91
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-locked": {
+			"frame": {
+				"x": 1803,
+				"y": 257,
+				"w": 98,
+				"h": 89
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 5,
+				"w": 98,
+				"h": 89
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-star01": {
+			"frame": {
+				"x": 482,
+				"y": 1998,
+				"w": 20,
+				"h": 19
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 15,
+				"y": 59,
+				"w": 20,
+				"h": 19
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-star02": {
+			"frame": {
+				"x": 900,
+				"y": 1504,
+				"w": 25,
+				"h": 24
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 38,
+				"y": 64,
+				"w": 25,
+				"h": 24
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-star03": {
+			"frame": {
+				"x": 859,
+				"y": 2018,
+				"w": 20,
+				"h": 20
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 67,
+				"y": 59,
+				"w": 20,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-time-current-glow": {
+			"frame": {
+				"x": 1260,
+				"y": 1727,
+				"w": 176,
+				"h": 142
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 34,
+				"w": 176,
+				"h": 142
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 180
+			}
+		},
+		"mapui/level-node-time-current": {
+			"frame": {
+				"x": 1801,
+				"y": 555,
+				"w": 91,
+				"h": 87
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 5,
+				"y": 2,
+				"w": 91,
+				"h": 87
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-time-locked": {
+			"frame": {
+				"x": 1601,
+				"y": 1456,
+				"w": 98,
+				"h": 94
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 0,
+				"w": 98,
+				"h": 94
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node-time": {
+			"frame": {
+				"x": 1602,
+				"y": 1352,
+				"w": 100,
+				"h": 97
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 3,
+				"w": 100,
+				"h": 97
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/level-node": {
+			"frame": {
+				"x": 1700,
+				"y": 1340,
+				"w": 100,
+				"h": 87
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 13,
+				"w": 100,
+				"h": 87
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/logo-softgames": {
+			"frame": {
+				"x": 1370,
+				"y": 1037,
+				"w": 200,
+				"h": 27
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 200,
+				"h": 27
+			},
+			"sourceSize": {
+				"w": 200,
+				"h": 27
+			}
+		},
+		"mapui/logo": {
+			"frame": {
+				"x": 1748,
+				"y": 203,
+				"w": 196,
+				"h": 54
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 196,
+				"h": 54
+			},
+			"sourceSize": {
+				"w": 196,
+				"h": 54
+			}
+		},
+		"mapui/lowerhud-bg-1": {
+			"frame": {
+				"x": 1460,
+				"y": 599,
+				"w": 92,
+				"h": 283
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 92,
+				"h": 283
+			},
+			"sourceSize": {
+				"w": 92,
+				"h": 283
+			}
+		},
+		"mapui/lowerhud-bg-2": {
+			"frame": {
+				"x": 1139,
+				"y": 1266,
+				"w": 262,
+				"h": 132
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 262,
+				"h": 132
+			},
+			"sourceSize": {
+				"w": 262,
+				"h": 132
+			}
+		},
+		"mapui/lowerhud-bg-round": {
+			"frame": {
+				"x": 544,
+				"y": 500,
+				"w": 515,
+				"h": 103
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 0,
+				"w": 515,
+				"h": 103
+			},
+			"sourceSize": {
+				"w": 519,
+				"h": 103
+			}
+		},
+		"mapui/lowerhud-bg": {
+			"frame": {
+				"x": 544,
+				"y": 210,
+				"w": 576,
+				"h": 162
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 576,
+				"h": 162
+			},
+			"sourceSize": {
+				"w": 576,
+				"h": 162
+			}
+		},
+		"mapui/navi-bg-active": {
+			"frame": {
+				"x": 1729,
+				"y": 1105,
+				"w": 115,
+				"h": 114
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 1,
+				"w": 115,
+				"h": 114
+			},
+			"sourceSize": {
+				"w": 115,
+				"h": 115
+			}
+		},
+		"mapui/navi-bg": {
+			"frame": {
+				"x": 1627,
+				"y": 1224,
+				"w": 115,
+				"h": 114
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 1,
+				"w": 115,
+				"h": 114
+			},
+			"sourceSize": {
+				"w": 115,
+				"h": 115
+			}
+		},
+		"mapui/navi-button-bg": {
+			"frame": {
+				"x": 1741,
+				"y": 643,
+				"w": 141,
+				"h": 131
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 141,
+				"h": 131
+			},
+			"sourceSize": {
+				"w": 141,
+				"h": 131
+			}
+		},
+		"mapui/navi-icon-journal": {
+			"frame": {
+				"x": 1402,
+				"y": 1232,
+				"w": 114,
+				"h": 117
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 1,
+				"w": 114,
+				"h": 117
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/navi-icon-leaderboards": {
+			"frame": {
+				"x": 1500,
+				"y": 1456,
+				"w": 100,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 10,
+				"y": 10,
+				"w": 100,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/navi-icon-shop-gift": {
+			"frame": {
+				"x": 1500,
+				"y": 1352,
+				"w": 101,
+				"h": 103
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 10,
+				"y": 10,
+				"w": 101,
+				"h": 103
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/navi-icon-shop": {
+			"frame": {
+				"x": 1517,
+				"y": 1232,
+				"w": 119,
+				"h": 109
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 6,
+				"w": 119,
+				"h": 109
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/navi-icon-social": {
+			"frame": {
+				"x": 1612,
+				"y": 1108,
+				"w": 116,
+				"h": 115
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 2,
+				"y": 2,
+				"w": 116,
+				"h": 115
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/navi-icon-world": {
+			"frame": {
+				"x": 1620,
+				"y": 1000,
+				"w": 107,
+				"h": 108
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 6,
+				"y": 6,
+				"w": 107,
+				"h": 108
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 120
+			}
+		},
+		"mapui/nineslice-tab-bg": {
+			"frame": {
+				"x": 1507,
+				"y": 1557,
+				"w": 93,
+				"h": 105
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 93,
+				"h": 105
+			},
+			"sourceSize": {
+				"w": 93,
+				"h": 105
+			}
+		},
+		"mapui/no-avatar": {
+			"frame": {
+				"x": 1788,
+				"y": 1324,
+				"w": 100,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 100,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/notification-badge": {
+			"frame": {
+				"x": 1849,
+				"y": 1645,
+				"w": 43,
+				"h": 43
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 43,
+				"h": 43
+			},
+			"sourceSize": {
+				"w": 43,
+				"h": 43
+			}
+		},
+		"mapui/opt-in_gift": {
+			"frame": {
+				"x": 1,
+				"y": 1065,
+				"w": 432,
+				"h": 359
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 25,
+				"w": 432,
+				"h": 359
+			},
+			"sourceSize": {
+				"w": 435,
+				"h": 410
+			}
+		},
+		"mapui/photo-pin": {
+			"frame": {
+				"x": 1398,
+				"y": 1000,
+				"w": 104,
+				"h": 114
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 1,
+				"w": 104,
+				"h": 114
+			},
+			"sourceSize": {
+				"w": 105,
+				"h": 115
+			}
+		},
+		"mapui/Piggybank": {
+			"frame": {
+				"x": 1513,
+				"y": 1000,
+				"w": 106,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 106,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 106,
+				"h": 100
+			}
+		},
+		"mapui/polaroid-marker-active": {
+			"frame": {
+				"x": 1771,
+				"y": 156,
+				"w": 31,
+				"h": 31
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 31
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 31
+			}
+		},
+		"mapui/polaroid-marker": {
+			"frame": {
+				"x": 522,
+				"y": 544,
+				"w": 21,
+				"h": 21
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 5,
+				"y": 5,
+				"w": 21,
+				"h": 21
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 31
+			}
+		},
+		"mapui/popup-bg-leaderboard": {
+			"frame": {
+				"x": 1553,
+				"y": 599,
+				"w": 187,
+				"h": 187
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 187,
+				"h": 187
+			},
+			"sourceSize": {
+				"w": 187,
+				"h": 187
+			}
+		},
+		"mapui/prize-wheel-first-off": {
+			"frame": {
+				"x": 1,
+				"y": 544,
+				"w": 520,
+				"h": 520
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 18,
+				"y": 26,
+				"w": 520,
+				"h": 520
+			},
+			"sourceSize": {
+				"w": 556,
+				"h": 571
+			}
+		},
+		"mapui/prize-wheel-icon-ad": {
+			"frame": {
+				"x": 1187,
+				"y": 1870,
+				"w": 145,
+				"h": 145
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 145,
+				"h": 145
+			},
+			"sourceSize": {
+				"w": 145,
+				"h": 145
+			}
+		},
+		"mapui/prize-wheel-icon": {
+			"frame": {
+				"x": 1729,
+				"y": 959,
+				"w": 145,
+				"h": 145
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 145,
+				"h": 145
+			},
+			"sourceSize": {
+				"w": 145,
+				"h": 145
+			}
+		},
+		"mapui/prize-wheel-needle": {
+			"frame": {
+				"x": 1512,
+				"y": 1663,
+				"w": 81,
+				"h": 115
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 35,
+				"y": 19,
+				"w": 81,
+				"h": 115
+			},
+			"sourceSize": {
+				"w": 151,
+				"h": 152
+			}
+		},
+		"mapui/prize-wheel": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 542,
+				"h": 542
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 14,
+				"y": 14,
+				"w": 542,
+				"h": 542
+			},
+			"sourceSize": {
+				"w": 571,
+				"h": 571
+			}
+		},
+		"mapui/progressbar-bg": {
+			"frame": {
+				"x": 1391,
+				"y": 559,
+				"w": 440,
+				"h": 36
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 440,
+				"h": 36
+			},
+			"sourceSize": {
+				"w": 440,
+				"h": 36
+			}
+		},
+		"mapui/progressbar-fill": {
+			"frame": {
+				"x": 1428,
+				"y": 559,
+				"w": 438,
+				"h": 31
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 438,
+				"h": 31
+			},
+			"sourceSize": {
+				"w": 438,
+				"h": 31
+			}
+		},
+		"mapui/progressbar-missions-bg": {
+			"frame": {
+				"x": 859,
+				"y": 1704,
+				"w": 313,
+				"h": 29
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 313,
+				"h": 29
+			},
+			"sourceSize": {
+				"w": 313,
+				"h": 30
+			}
+		},
+		"mapui/progressbar-missions-fill": {
+			"frame": {
+				"x": 889,
+				"y": 2016,
+				"w": 276,
+				"h": 22
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 276,
+				"h": 22
+			},
+			"sourceSize": {
+				"w": 276,
+				"h": 22
+			}
+		},
+		"mapui/progressbar-top-bg": {
+			"frame": {
+				"x": 1,
+				"y": 1962,
+				"w": 500,
+				"h": 35
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 35
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 35
+			}
+		},
+		"mapui/progressbar-top-fill": {
+			"frame": {
+				"x": 1269,
+				"y": 203,
+				"w": 454,
+				"h": 26
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 454,
+				"h": 26
+			},
+			"sourceSize": {
+				"w": 454,
+				"h": 26
+			}
+		},
+		"mapui/Reward_box_cut": {
+			"frame": {
+				"x": 1402,
+				"y": 1350,
+				"w": 42,
+				"h": 84
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 42,
+				"h": 84
+			},
+			"sourceSize": {
+				"w": 42,
+				"h": 84
+			}
+		},
+		"mapui/scrapbook-bg-classic": {
+			"frame": {
+				"x": 1,
+				"y": 1761,
+				"w": 500,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 200
+			}
+		},
+		"mapui/scrapbook-bg-comingsoon": {
+			"frame": {
+				"x": 522,
+				"y": 604,
+				"w": 500,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 200
+			}
+		},
+		"mapui/scrapbook-bg-default": {
+			"frame": {
+				"x": 434,
+				"y": 1104,
+				"w": 500,
+				"h": 199
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 199
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 200
+			}
+		},
+		"mapui/scrapbook-bg-halloween": {
+			"frame": {
+				"x": 522,
+				"y": 805,
+				"w": 500,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 200
+			}
+		},
+		"mapui/scrapbook-bg-summer": {
+			"frame": {
+				"x": 434,
+				"y": 1304,
+				"w": 500,
+				"h": 199
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 199
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 200
+			}
+		},
+		"mapui/scrapbook-bg-xmas": {
+			"frame": {
+				"x": 399,
+				"y": 1504,
+				"w": 500,
+				"h": 199
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 500,
+				"h": 199
+			},
+			"sourceSize": {
+				"w": 500,
+				"h": 199
+			}
+		},
+		"mapui/scrapbook-button-info": {
+			"frame": {
+				"x": 1845,
+				"y": 1105,
+				"w": 41,
+				"h": 43
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 0,
+				"w": 41,
+				"h": 43
+			},
+			"sourceSize": {
+				"w": 43,
+				"h": 43
+			}
+		},
+		"mapui/scrapbook-selection-rim": {
+			"frame": {
+				"x": 1269,
+				"y": 1,
+				"w": 501,
+				"h": 201
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 5,
+				"y": 5,
+				"w": 501,
+				"h": 201
+			},
+			"sourceSize": {
+				"w": 511,
+				"h": 211
+			}
+		},
+		"mapui/scrapbook-tles-icon": {
+			"frame": {
+				"x": 1460,
+				"y": 883,
+				"w": 92,
+				"h": 89
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 5,
+				"w": 92,
+				"h": 89
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/side-btn-active": {
+			"frame": {
+				"x": 1395,
+				"y": 1576,
+				"w": 147,
+				"h": 111
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 147,
+				"h": 111
+			},
+			"sourceSize": {
+				"w": 147,
+				"h": 111
+			}
+		},
+		"mapui/socialhub-news": {
+			"frame": {
+				"x": 1788,
+				"y": 1524,
+				"w": 98,
+				"h": 73
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 13,
+				"w": 98,
+				"h": 73
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"mapui/token-classic-icon": {
+			"frame": {
+				"x": 1377,
+				"y": 1993,
+				"w": 43,
+				"h": 46
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 2,
+				"w": 43,
+				"h": 46
+			},
+			"sourceSize": {
+				"w": 50,
+				"h": 50
+			}
+		},
+		"mapui/token-halloween-icon": {
+			"frame": {
+				"x": 1845,
+				"y": 1149,
+				"w": 42,
+				"h": 43
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 4,
+				"y": 4,
+				"w": 42,
+				"h": 43
+			},
+			"sourceSize": {
+				"w": 50,
+				"h": 50
+			}
+		},
+		"mapui/token-summer-icon": {
+			"frame": {
+				"x": 1849,
+				"y": 1598,
+				"w": 43,
+				"h": 46
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 2,
+				"w": 43,
+				"h": 46
+			},
+			"sourceSize": {
+				"w": 50,
+				"h": 50
+			}
+		},
+		"mapui/token-xmas-icon": {
+			"frame": {
+				"x": 1845,
+				"y": 1193,
+				"w": 43,
+				"h": 42
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 4,
+				"w": 43,
+				"h": 42
+			},
+			"sourceSize": {
+				"w": 50,
+				"h": 50
+			}
+		},
+		"mapui/tophud-bg-slot01": {
+			"frame": {
+				"x": 1748,
+				"y": 400,
+				"w": 170,
+				"h": 52
+			},
+			"rotated": true,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 170,
+				"h": 52
+			},
+			"sourceSize": {
+				"w": 170,
+				"h": 52
+			}
+		},
+		"mapui/tophud-bg": {
+			"frame": {
+				"x": 544,
+				"y": 373,
+				"w": 576,
+				"h": 126
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 576,
+				"h": 126
+			},
+			"sourceSize": {
+				"w": 576,
+				"h": 126
+			}
+		},
+		"mapui/tophud-icon-coin": {
+			"frame": {
+				"x": 1554,
+				"y": 1981,
+				"w": 52,
+				"h": 52
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 4,
+				"y": 4,
+				"w": 52,
+				"h": 52
+			},
+			"sourceSize": {
+				"w": 60,
+				"h": 60
+			}
+		},
+		"mapui/tophud-icon-heart": {
+			"frame": {
+				"x": 1748,
+				"y": 571,
+				"w": 54,
+				"h": 52
+			},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 3,
+				"y": 4,
+				"w": 54,
+				"h": 52
+			},
+			"sourceSize": {
+				"w": 60,
+				"h": 60
+			}
+		},
+		"mapui/tophud-icon-star": {
+			"frame": {
+				"x": 1833,
+				"y": 1689,
+				"w": 58,
+				"h": 58
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 1,
+				"y": 1,
+				"w": 58,
+				"h": 58
+			},
+			"sourceSize": {
+				"w": 60,
+				"h": 60
+			}
+		}
+	},
+	"animations": {
+		"mapui/leaderboard-playertag-rank": ["mapui/leaderboard-playertag-rank1", "mapui/leaderboard-playertag-rank2", "mapui/leaderboard-playertag-rank3"],
+		"mapui/level-node-star": ["mapui/level-node-star01", "mapui/level-node-star02", "mapui/level-node-star03"],
+		"mapui/lowerhud-bg": ["mapui/lowerhud-bg-1", "mapui/lowerhud-bg-2"]
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "0be0.png",
+		"format": "RGBA5555",
+		"size": {
+			"w": 1893,
+			"h": 2039
+		},
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:d0cebb0394f80764073e98531fd76101:3f56f86ffec29cadf570119d3ce6ae7b:ceb695d8db1a2bec082e80ca1be8f33d$"
+	}
+}

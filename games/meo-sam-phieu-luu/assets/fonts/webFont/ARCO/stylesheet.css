@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ARCO';
+    src: url('ARCOTypography.eot');
+    src: url('ARCOTypography.eot?#iefix') format('embedded-opentype'),
+        url('ARCOTypography.woff2') format('woff2'),
+        url('ARCOTypography.woff') format('woff'),
+        url('ARCOTypography.ttf') format('truetype'),
+        url('ARCOTypography.svg#ARCOTypography') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

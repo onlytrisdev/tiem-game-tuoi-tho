@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"willy_explosion","children":[{"name":"pivot","children":[{"name":"explosion_special01"}]}],"animations":["PLAY_special_explode"]},"properties":{"pivot":{"position":{"x":0,"y":0},"type":"container"},"pivot/explosion_special01":{"file":"explosion_special01.png","image":"SIMPLE","position":{"x":0,"y":0},"type":"sprite"}}}

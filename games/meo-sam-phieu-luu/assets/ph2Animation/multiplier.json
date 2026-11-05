@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"multiplier","children":[{"name":"base","children":[{"name":"image"}]}],"animations":["IN_multiplier","LOOP_multiplier","OUT_multiplier"]},"properties":{"base":{"position":{"x":0,"y":0},"alpha":0,"type":"container"},"base/image":{"file":"x2.png","image":"SIMPLE","position":{"x":0,"y":0},"type":"sprite"}}}

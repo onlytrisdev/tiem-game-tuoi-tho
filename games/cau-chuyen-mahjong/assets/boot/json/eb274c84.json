@@ -1,0 +1,22 @@
+{
+    "config": {
+        "goal": { "type": "pair", "target": "all" },
+        "winTime": 0,
+        "pairsPerValue": 1,
+        "values": ["bamboo-1", "bamboo-3"],
+        "levelId": "1",
+        "levelScoreTiers": [8, 20, 40],
+        "fillType": "solvable",
+        "layerDiffs": 0
+    },
+    "tiles": [
+        { "position": [0, 1, 3.5], "type": "dots-1" },
+        { "position": [0, 2, 4], "type": "characters-2" },
+        { "position": [0, 2, 3], "type": "bamboo-3" },
+        { "position": [0, 3, 3], "type": "characters-2" },
+        { "position": [0, 3, 4], "type": "bamboo-3" },
+        { "position": [0, 4, 3.5], "type": "dots-1" },
+        { "position": [1, 1.5, 3.5], "type": "bamboo-1" },
+        { "position": [1, 3.5, 3.5], "type": "bamboo-1" }
+    ]
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'MatineeGothOT';
+  src: url('MatineeGothOT.eot?#iefix') format('embedded-opentype'),  url('MatineeGothOT.otf')  format('opentype'),
+	     url('MatineeGothOT.woff') format('woff'), url('MatineeGothOT.ttf')  format('truetype'), url('MatineeGothOT.svg#MatineeGothOT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

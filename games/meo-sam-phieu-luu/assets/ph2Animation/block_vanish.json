@@ -1,0 +1,1 @@
+{"hierarchy":{"name":"block_vanish","children":[{"name":"vanishing"},{"name":"dust01"}],"animations":["IN_block_vanish","OUT_block_vanish","PLAY_block_vanish"]},"properties":{"vanishing":{"file":"vanishing.png","image":"SIMPLE","position":{"x":0,"y":0},"type":"sprite"},"dust01":{"file":"dust_01.png","image":"SIMPLE","position":{"x":-7.5,"y":3},"alpha":0,"type":"sprite"}}}
