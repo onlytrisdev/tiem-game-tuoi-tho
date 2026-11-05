@@ -1,0 +1,290 @@
+{
+    "name": "hero3_up_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "hero3_arm_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        8.2,
+                        -27.9
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero3_arm_r/hero3_hand_r": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        7,
+                        15.3
+                    ]
+                }
+            ]
+        },
+        "hero3_arm_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -8,
+                        -27.9
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": -1
+                }
+            ]
+        },
+        "hero3_arm_l/hero3_hand_l": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "position": []
+        },
+        "hero3_leg_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -4,
+                        -11.6
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero3_leg_l/hero3_foot_l": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.3,
+                        9.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero3_front.png"
+                }
+            ]
+        },
+        "hero3_leg_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        3.9,
+                        -11.4
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero3_leg_r/hero3_foot_r": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.1,
+                        9.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero3_front.png"
+                }
+            ]
+        },
+        "hero3_head": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -27.2
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "head_hero3_back.png"
+                }
+            ]
+        },
+        "hero3_body": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -18.9
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "body_hero3_back.png"
+                }
+            ]
+        },
+        "hero3_shadow": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero3_head/eye3_l": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye6_hero3.png"
+                }
+            ]
+        },
+        "hero3_head/eye3_r": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye6_hero3.png"
+                }
+            ]
+        },
+        "death3": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.9,
+                        -53.5
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "hero_death.png"
+                }
+            ]
+        },
+        "eyes3": {
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        }
+    }
+}

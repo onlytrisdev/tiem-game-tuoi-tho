@@ -1,0 +1,24 @@
+{
+    "name": "mine_side_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "mine_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -0.4,
+                        -15.8
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "mine_side.png"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "hierarchy": {
+        "name": "medal_shine",
+        "children": [
+            {
+                "name": "base"
+            }
+        ],
+        "animations": [
+            "medal_shine_stand"
+        ]
+    },
+    "properties": {
+        "base": {
+            "file": "trophy_shine11.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -36.8,
+                "y": -41.5
+            },
+            "type": "sprite"
+        }
+    }
+}

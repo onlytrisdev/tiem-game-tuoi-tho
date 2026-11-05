@@ -1,0 +1,101 @@
+{
+    "name": "stand_character_hero4_2",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "avatar_1": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        6.2
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "character_green_2.png"
+                }
+            ]
+        },
+        "eyes1_1": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1.07
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1.07
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        1,
+                        0.7
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "face4_eyes1.png"
+                },
+                {
+                    "frame": 33,
+                    "value": "face4_eyes2.png"
+                },
+                {
+                    "frame": 67,
+                    "value": "face4_eyes3.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "face4_eyes4.png"
+                },
+                {
+                    "frame": 133,
+                    "value": "face4_eyes5.png"
+                },
+                {
+                    "frame": 167,
+                    "value": "face4_eyes1.png"
+                },
+                {
+                    "frame": 200,
+                    "value": "face4_eyes6.png"
+                },
+                {
+                    "frame": 233,
+                    "value": "face4_eyes7.png"
+                },
+                {
+                    "frame": 267,
+                    "value": "face4_eyes8.png"
+                },
+                {
+                    "frame": 300,
+                    "value": "face4_eyes9.png"
+                },
+                {
+                    "frame": 333,
+                    "value": "face4_eyes10.png"
+                },
+                {
+                    "frame": 367,
+                    "value": "face4_eyes1.png"
+                },
+                {
+                    "frame": 1500,
+                    "value": "face4_eyes1.png"
+                }
+            ]
+        }
+    }
+}

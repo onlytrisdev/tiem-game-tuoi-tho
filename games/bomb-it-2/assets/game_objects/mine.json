@@ -1,0 +1,29 @@
+{
+    "hierarchy": {
+        "name": "mine",
+        "children": [
+            {
+                "name": "mine_base"
+            }
+        ],
+        "animations": [
+            "mine_down",
+            "mine_side",
+            "mine_up",
+            "mine_down_stand",
+            "mine_side_stand",
+            "mine_up_stand"
+        ]
+    },
+    "properties": {
+        "mine_base": {
+            "file": "mine_down.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -17.5,
+                "y": -16.5
+            },
+            "type": "sprite"
+        }
+    }
+}

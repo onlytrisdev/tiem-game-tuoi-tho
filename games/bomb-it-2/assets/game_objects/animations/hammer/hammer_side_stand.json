@@ -1,0 +1,28 @@
+{
+    "name": "hammer_side_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "hammer_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -4.7,
+                        -19
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "hammer_side.png"
+                },
+                {
+                    "frame": 0,
+                    "value": "hammer_side.png"
+                }
+            ]
+        }
+    }
+}

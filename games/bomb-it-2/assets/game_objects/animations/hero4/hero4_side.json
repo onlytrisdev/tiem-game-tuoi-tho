@@ -1,0 +1,364 @@
+{
+    "name": "hero4_side",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "hero4_head": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -29.2
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 133,
+                    "value": 3
+                },
+                {
+                    "frame": 233,
+                    "value": 0
+                },
+                {
+                    "frame": 317,
+                    "value": 7
+                },
+                {
+                    "frame": 400,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "head_hero4_side.png"
+                }
+            ]
+        },
+        "hero4_body": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 133,
+                    "value": 5
+                },
+                {
+                    "frame": 233,
+                    "value": 0
+                },
+                {
+                    "frame": 317,
+                    "value": -6
+                },
+                {
+                    "frame": 400,
+                    "value": 0
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.4,
+                        -17.8
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "body_hero4_back.png"
+                }
+            ]
+        },
+        "hero4_leg_l/hero4_foot_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -1.2,
+                        8.9
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0.8
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero4_side.png"
+                }
+            ]
+        },
+        "hero4_arm_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -1.8,
+                        -24
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 13
+                },
+                {
+                    "frame": 133,
+                    "value": 89
+                },
+                {
+                    "frame": 317,
+                    "value": -18
+                },
+                {
+                    "frame": 400,
+                    "value": 13
+                }
+            ]
+        },
+        "hero4_leg_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.8,
+                        -10
+                    ]
+                },
+                {
+                    "frame": 133,
+                    "value": [
+                        0.8,
+                        -10
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 133,
+                    "value": -27
+                },
+                {
+                    "frame": 317,
+                    "value": 31
+                },
+                {
+                    "frame": 400,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero4_leg_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -2.2,
+                        -11.1
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 133,
+                    "value": 20
+                },
+                {
+                    "frame": 317,
+                    "value": -46
+                },
+                {
+                    "frame": 400,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero4_arm_l": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": -41
+                },
+                {
+                    "frame": 133,
+                    "value": -71
+                },
+                {
+                    "frame": 317,
+                    "value": -19
+                },
+                {
+                    "frame": 400,
+                    "value": -41
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.3,
+                        -22.9
+                    ]
+                }
+            ]
+        },
+        "hero4_leg_r/hero4_foot_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -2.3,
+                        9.6
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0.8
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero4_side.png"
+                }
+            ]
+        },
+        "hero4_head/eye4_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -16.3,
+                        -15.5
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0.7
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye1_hero4_side.png"
+                },
+                {
+                    "frame": 17,
+                    "value": "eye2_hero4_side.png"
+                },
+                {
+                    "frame": 33,
+                    "value": "eye3_hero4_side.png"
+                },
+                {
+                    "frame": 50,
+                    "value": "eye4_hero4_side.png"
+                },
+                {
+                    "frame": 67,
+                    "value": "eye5_hero4_side.png"
+                },
+                {
+                    "frame": 83,
+                    "value": "eye6_hero4_side.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "eye7_hero4_side.png"
+                },
+                {
+                    "frame": 117,
+                    "value": "eye8_hero4_side.png"
+                },
+                {
+                    "frame": 133,
+                    "value": "eye9_hero4_side.png"
+                },
+                {
+                    "frame": 150,
+                    "value": "eye10_hero4_side.png"
+                },
+                {
+                    "frame": 167,
+                    "value": "eye11_hero4_side.png"
+                },
+                {
+                    "frame": 183,
+                    "value": "eye1_hero4_side.png"
+                }
+            ]
+        },
+        "eyes4": {
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "death4": {
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        1.8,
+                        -53.5
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "hero_death.png"
+                }
+            ]
+        }
+    }
+}

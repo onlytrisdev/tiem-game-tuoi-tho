@@ -1,0 +1,81 @@
+{
+    "name": "stand_character_hero2_2",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "avatar_1": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        3.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "character_pink_2.png"
+                }
+            ]
+        },
+        "eyes1_1": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.6,
+                        2.6
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1.08
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1.08
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "face2_eyes4.png"
+                },
+                {
+                    "frame": 50,
+                    "value": "face2_eyes1.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "face2_eyes2.png"
+                },
+                {
+                    "frame": 150,
+                    "value": "face2_eyes3.png"
+                },
+                {
+                    "frame": 200,
+                    "value": "face2_eyes2.png"
+                },
+                {
+                    "frame": 250,
+                    "value": "face2_eyes1.png"
+                },
+                {
+                    "frame": 300,
+                    "value": "face2_eyes4.png"
+                },
+                {
+                    "frame": 1500,
+                    "value": "face2_eyes4.png"
+                }
+            ]
+        }
+    }
+}

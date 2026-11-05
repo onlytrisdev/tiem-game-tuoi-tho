@@ -1,0 +1,52 @@
+{
+    "name": "shotgun_up",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "shotgun_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -11.3,
+                        -22.3
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -12.4,
+                        -21.8
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        -11.3,
+                        -22.3
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        -10.6,
+                        -23.4
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        -11.3,
+                        -22.3
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "shotgun_up.png"
+                }
+            ]
+        }
+    }
+}

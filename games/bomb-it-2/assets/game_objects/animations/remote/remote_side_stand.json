@@ -1,0 +1,24 @@
+{
+    "name": "remote_side_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "remote_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.1,
+                        -12
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "remote_side.png"
+                }
+            ]
+        }
+    }
+}

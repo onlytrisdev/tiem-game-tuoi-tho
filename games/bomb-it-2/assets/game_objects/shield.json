@@ -1,0 +1,25 @@
+{
+    "hierarchy": {
+        "name": "shield",
+        "children": [
+            {
+                "name": "shield_base"
+            }
+        ],
+        "animations": [
+            "shield_down",
+            "shield_down_stand"
+        ]
+    },
+    "properties": {
+        "shield_base": {
+            "file": "shield.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -15.5
+            },
+            "type": "sprite"
+        }
+    }
+}

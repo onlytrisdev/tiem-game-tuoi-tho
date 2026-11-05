@@ -1,0 +1,36 @@
+{
+    "hierarchy": {
+        "name": "ice_brick",
+        "children": [
+            {
+                "name": "brick_base"
+            },
+            {
+                "name": "brick_shine"
+            }
+        ],
+        "animations": [
+            "ice_brick_anim"
+        ]
+    },
+    "properties": {
+        "brick_base": {
+            "file": "brick_c9.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "brick_shine": {
+            "file": "anim_tile_ice1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        }
+    }
+}

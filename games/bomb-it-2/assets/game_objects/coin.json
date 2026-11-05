@@ -1,0 +1,40 @@
+{
+    "hierarchy": {
+        "name": "coin",
+        "children": [
+            {
+                "name": "coin_base"
+            },
+            {
+                "name": "coin_shadow"
+            }
+        ],
+        "animations": [
+            "coin_anim"
+        ]
+    },
+    "properties": {
+        "coin_base": {
+            "file": "coin_anim1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -19
+            },
+            "type": "sprite"
+        },
+        "coin_shadow": {
+            "file": "bomb_shadow.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "scale": {
+                "x": 0.7,
+                "y": 0.7
+            },
+            "type": "sprite"
+        }
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "name": "shotgun_side_play",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "shotgun_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -3.2,
+                        -15.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "shotgun_side.png"
+                }
+            ]
+        },
+        " shotgun_fx": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -36.6,
+                        -16.9
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "shotgun_play8.png"
+                },
+                {
+                    "frame": 33,
+                    "value": "shotgun_play1.png"
+                },
+                {
+                    "frame": 67,
+                    "value": "shotgun_play2.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "shotgun_play3.png"
+                },
+                {
+                    "frame": 133,
+                    "value": "shotgun_play4.png"
+                },
+                {
+                    "frame": 167,
+                    "value": "shotgun_play5.png"
+                },
+                {
+                    "frame": 200,
+                    "value": "shotgun_play6.png"
+                },
+                {
+                    "frame": 233,
+                    "value": "shotgun_play7.png"
+                },
+                {
+                    "frame": 267,
+                    "value": "shotgun_play8.png"
+                }
+            ]
+        }
+    }
+}

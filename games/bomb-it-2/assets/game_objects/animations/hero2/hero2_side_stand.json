@@ -1,0 +1,224 @@
+{
+    "name": "hero2_side_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "hero2_head": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        4.2,
+                        -22.2
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "head_hero2_side.png"
+                }
+            ]
+        },
+        "hero2_body": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "body_hero2_side.png"
+                }
+            ]
+        },
+        "hero2_leg_l/hero2_foot_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -1.2,
+                        8.9
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0.8
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero2_side.png"
+                }
+            ]
+        },
+        "hero2_arm_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -24.2
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 44
+                }
+            ]
+        },
+        "hero2_leg_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.8,
+                        -10
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero2_leg_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -2.2,
+                        -11.1
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero2_arm_l": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": -41
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.3,
+                        -22.9
+                    ]
+                }
+            ]
+        },
+        "hero2_leg_r/hero2_foot_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -2.3,
+                        9.6
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0.8
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero2_side.png"
+                }
+            ]
+        },
+        "hero2_head/eye2_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -19.4,
+                        -14.8
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0.8
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye6_hero2.png"
+                }
+            ]
+        },
+        "eyes2": {
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "death2": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -0.3,
+                        -53.5
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "hero_death.png"
+                }
+            ]
+        }
+    }
+}

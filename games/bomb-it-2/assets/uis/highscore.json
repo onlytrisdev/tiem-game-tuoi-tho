@@ -1,0 +1,1418 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "container",
+                "children": [
+                    {
+                        "name": "decor"
+                    },
+                    {
+                        "name": "edge_up"
+                    },
+                    {
+                        "name": "edge_left"
+                    },
+                    {
+                        "name": "edge_right"
+                    },
+                    {
+                        "name": "edge_down"
+                    },
+                    {
+                        "name": "image_1"
+                    },
+                    {
+                        "name": "image_2"
+                    },
+                    {
+                        "name": "image_3"
+                    },
+                    {
+                        "name": "image_4"
+                    },
+                    {
+                        "name": "title_container",
+                        "children": [
+                            {
+                                "name": "title"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "color_the_tiles",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "collect_the_coins",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "weapons_only",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "arcade",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "rank_text"
+                    },
+                    {
+                        "name": "name_text"
+                    },
+                    {
+                        "name": "score"
+                    },
+                    {
+                        "name": "rank1"
+                    },
+                    {
+                        "name": "rank2"
+                    },
+                    {
+                        "name": "rank3"
+                    },
+                    {
+                        "name": "rank4"
+                    },
+                    {
+                        "name": "rank5"
+                    },
+                    {
+                        "name": "rank6"
+                    },
+                    {
+                        "name": "rank7"
+                    },
+                    {
+                        "name": "rank8"
+                    },
+                    {
+                        "name": "rank9"
+                    },
+                    {
+                        "name": "rank10"
+                    },
+                    {
+                        "name": "name1"
+                    },
+                    {
+                        "name": "name2"
+                    },
+                    {
+                        "name": "name3"
+                    },
+                    {
+                        "name": "name4"
+                    },
+                    {
+                        "name": "name5"
+                    },
+                    {
+                        "name": "name6"
+                    },
+                    {
+                        "name": "name7"
+                    },
+                    {
+                        "name": "name8"
+                    },
+                    {
+                        "name": "name9"
+                    },
+                    {
+                        "name": "name10"
+                    },
+                    {
+                        "name": "score1"
+                    },
+                    {
+                        "name": "score2"
+                    },
+                    {
+                        "name": "score3"
+                    },
+                    {
+                        "name": "score4"
+                    },
+                    {
+                        "name": "score5"
+                    },
+                    {
+                        "name": "score6"
+                    },
+                    {
+                        "name": "score7"
+                    },
+                    {
+                        "name": "score8"
+                    },
+                    {
+                        "name": "score9"
+                    },
+                    {
+                        "name": "score10"
+                    },
+                    {
+                        "name": "new1"
+                    },
+                    {
+                        "name": "new2"
+                    },
+                    {
+                        "name": "new3"
+                    },
+                    {
+                        "name": "new4"
+                    },
+                    {
+                        "name": "new5"
+                    },
+                    {
+                        "name": "new6"
+                    },
+                    {
+                        "name": "new7"
+                    },
+                    {
+                        "name": "new8"
+                    },
+                    {
+                        "name": "new9"
+                    },
+                    {
+                        "name": "new10"
+                    },
+                    {
+                        "name": "difficulty_text"
+                    },
+                    {
+                        "name": "difficulty1"
+                    },
+                    {
+                        "name": "difficulty2"
+                    },
+                    {
+                        "name": "difficulty3"
+                    },
+                    {
+                        "name": "difficulty4"
+                    },
+                    {
+                        "name": "difficulty5"
+                    },
+                    {
+                        "name": "difficulty6"
+                    },
+                    {
+                        "name": "difficulty7"
+                    },
+                    {
+                        "name": "difficulty8"
+                    },
+                    {
+                        "name": "difficulty9"
+                    },
+                    {
+                        "name": "difficulty10"
+                    }
+                ]
+            },
+            {
+                "name": "back",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            {
+                "name": "more_games",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 1280,
+                "height": 720
+            },
+            "type": "canvas"
+        },
+        "container": {
+            "file": "bg_1.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "size": {
+                "width": 796,
+                "height": 553
+            },
+            "alpha": 0.98,
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -20
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": 0,
+                            "y": -20
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {
+                        "scale": {
+                            "x": 0.9,
+                            "y": 0.9
+                        }
+                    },
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": 0,
+                            "y": -20
+                        }
+                    }
+                }
+            }
+        },
+        "container/decor": {
+            "file": "h_container.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 28,
+                "bottom": 17,
+                "left": 24,
+                "right": 26
+            },
+            "size": {
+                "width": 774.9,
+                "height": 512
+            },
+            "position": {
+                "x": -2.5,
+                "y": 7
+            },
+            "type": "sprite"
+        },
+        "container/edge_up": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 799.1
+            },
+            "position": {
+                "x": -1,
+                "y": -279
+            },
+            "angle": 90,
+            "type": "sprite"
+        },
+        "container/edge_left": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 541.1
+            },
+            "position": {
+                "x": -404,
+                "y": 0.7
+            },
+            "type": "sprite"
+        },
+        "container/edge_right": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 552.3
+            },
+            "position": {
+                "x": 401,
+                "y": -0.7
+            },
+            "type": "sprite"
+        },
+        "container/edge_down": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 799.1
+            },
+            "position": {
+                "x": -1.1,
+                "y": 279
+            },
+            "angle": 90,
+            "type": "sprite"
+        },
+        "container/image_1": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -405,
+                "y": -278
+            },
+            "type": "sprite"
+        },
+        "container/image_2": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -402.8,
+                "y": 269.8
+            },
+            "type": "sprite"
+        },
+        "container/image_3": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 401.7,
+                "y": 275.8
+            },
+            "type": "sprite"
+        },
+        "container/image_4": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 396,
+                "y": -281
+            },
+            "type": "sprite"
+        },
+        "container/title_container": {
+            "file": "title_container2.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 10,
+                "bottom": 8,
+                "left": 68,
+                "right": 77
+            },
+            "size": {
+                "width": 424.1,
+                "height": 81
+            },
+            "position": {
+                "x": 4,
+                "y": -270
+            },
+            "type": "sprite"
+        },
+        "container/title_container/title": {
+            "font": {
+                "name": "impact",
+                "fontSize": 52
+            },
+            "text": "HIGH SCORE",
+            "align": "left",
+            "stroke": "#660000",
+            "strokeThickness": 5,
+            "position": {
+                "x": 0,
+                "y": 4.6
+            },
+            "color": "#fea367",
+            "type": "text"
+        },
+        "container/color_the_tiles": {
+            "file": "h_button.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 287.2,
+                "y": -192.6
+            },
+            "type": "sprite"
+        },
+        "container/color_the_tiles/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "COLOR THE TILES",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/collect_the_coins": {
+            "file": "h_button.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 94.6,
+                "y": -193.6
+            },
+            "type": "sprite"
+        },
+        "container/collect_the_coins/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "COLLECT THE COINS",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/weapons_only": {
+            "file": "h_button.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -97.9,
+                "y": -193.6
+            },
+            "type": "sprite"
+        },
+        "container/weapons_only/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "WEAPONS ONLY",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/arcade": {
+            "file": "h_button.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -290.5,
+                "y": -193.6
+            },
+            "type": "sprite"
+        },
+        "container/arcade/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "ARCADE",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "RANK",
+            "align": "center",
+            "position": {
+                "x": -293,
+                "y": -150
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/name_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NAME",
+            "align": "center",
+            "position": {
+                "x": -112,
+                "y": -150
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/score": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "SCORE",
+            "align": "center",
+            "position": {
+                "x": 309,
+                "y": -150
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank1": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "1",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": -110.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank2": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "2",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": -71.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank3": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "3",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": -31.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank4": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "4",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 7.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank5": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "5",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 46.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank6": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "6",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 85.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank7": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "7",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 125.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank8": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "8",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 164.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank9": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "9",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 203.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/rank10": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "10",
+            "align": "center",
+            "position": {
+                "x": -297,
+                "y": 242.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/name1": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Susan D.",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": -110.1
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name2": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": -71.1
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name3": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": -31.1
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name4": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 7.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name5": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 46.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name6": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 85.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name7": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 125.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name8": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 164.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name9": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 203.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/name10": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "CPU",
+            "align": "center",
+            "position": {
+                "x": -111,
+                "y": 242.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score1": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "75810",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": -110.1
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score2": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": -71.1
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score3": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": -31.1
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score4": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 7.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score5": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 46.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score6": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 85.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score7": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 125.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score8": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 164.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score9": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 203.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/score10": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "01",
+            "align": "center",
+            "position": {
+                "x": 305,
+                "y": 243.9
+            },
+            "color": "#270f3b",
+            "type": "text"
+        },
+        "container/new1": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": -110.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new2": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": -71.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new3": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": -31.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new4": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 7.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new5": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 46.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new6": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 85.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new7": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 125.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new8": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 164.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new9": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 203.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/new10": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "new",
+            "align": "center",
+            "position": {
+                "x": -356,
+                "y": 242.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "DIFFICULTY",
+            "align": "center",
+            "position": {
+                "x": 106.1,
+                "y": -150
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty1": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": -110.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty2": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": -71.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty3": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": -31.1
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty4": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 7.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty5": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 46.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty6": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 85.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty7": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 125.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty8": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 164.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty9": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 203.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "container/difficulty10": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "NORMAL",
+            "align": "center",
+            "position": {
+                "x": 127.4,
+                "y": 243.9
+            },
+            "color": "#063d5e",
+            "type": "text"
+        },
+        "back": {
+            "file": "back_button01.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "back_button01.png",
+                "pressed": "back_button03.png",
+                "hover": "back_button02.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 282,
+                    "y": -18.7
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": 282,
+                            "y": -18.7
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": 213,
+                            "y": -287
+                        }
+                    }
+                }
+            }
+        },
+        "back/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "BACK",
+            "align": "left",
+            "stroke": "#d1602b",
+            "strokeThickness": 4,
+            "position": {
+                "x": 13,
+                "y": 0.3
+            },
+            "type": "text"
+        },
+        "more_games": {
+            "file": "more_button1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "more_button1.png",
+                "pressed": "more_button3.png",
+                "hover": "more_button2.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": -292.4,
+                    "y": -26.9
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": -292.4,
+                            "y": -26.9
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": -213,
+                            "y": -295
+                        }
+                    }
+                }
+            }
+        },
+        "more_games/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 22
+            },
+            "text": "3000+GAMES",
+            "align": "left",
+            "stroke": "#d1602b",
+            "strokeThickness": 4,
+            "position": {
+                "x": 17.4,
+                "y": 6.1
+            },
+            "type": "text"
+        }
+    }
+}

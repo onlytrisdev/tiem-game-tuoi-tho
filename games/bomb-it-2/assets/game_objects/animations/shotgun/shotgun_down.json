@@ -1,0 +1,53 @@
+{
+    "name": "shotgun_down",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "shotgun_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        12.1,
+                        -23.9
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        10.6,
+                        -26.3
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        13,
+                        -21.5
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        12.1,
+                        -23.9
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "shotgun_down.png"
+                },
+                {
+                    "frame": 217,
+                    "value": "shotgun_down.png"
+                },
+                {
+                    "frame": 400,
+                    "value": "shotgun_down.png"
+                }
+            ]
+        }
+    }
+}

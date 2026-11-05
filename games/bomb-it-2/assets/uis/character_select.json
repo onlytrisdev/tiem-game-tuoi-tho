@@ -1,0 +1,564 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "container",
+                "children": [
+                    {
+                        "name": "border_right"
+                    },
+                    {
+                        "name": "border_left"
+                    },
+                    {
+                        "name": "border_down"
+                    },
+                    {
+                        "name": "border_up"
+                    },
+                    {
+                        "name": "image_1"
+                    },
+                    {
+                        "name": "image_2"
+                    },
+                    {
+                        "name": "image_3"
+                    },
+                    {
+                        "name": "image_4"
+                    },
+                    {
+                        "name": "select_text"
+                    },
+                    {
+                        "name": "confirm_text"
+                    },
+                    {
+                        "name": "title_container",
+                        "children": [
+                            {
+                                "name": "title"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "controls_1_player",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "controls_2_player",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "back_button",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            {
+                "name": "start_button",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 1280,
+                "height": 720
+            },
+            "type": "canvas"
+        },
+        "container": {
+            "file": "bg_1.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "size": {
+                "width": 752,
+                "height": 509
+            },
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -23
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": 0,
+                            "y": -23
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": 0.4,
+                            "y": -23
+                        }
+                    }
+                }
+            }
+        },
+        "container/border_right": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 522.3
+            },
+            "position": {
+                "x": 380.4,
+                "y": 0.3
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": 352.4,
+                            "y": 0.3
+                        }
+                    }
+                }
+            }
+        },
+        "container/border_left": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 522.3
+            },
+            "position": {
+                "x": -378,
+                "y": 0
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -354.4,
+                            "y": 0
+                        }
+                    }
+                }
+            }
+        },
+        "container/border_down": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 706.9
+            },
+            "position": {
+                "x": -1.7,
+                "y": 250.7
+            },
+            "angle": 90,
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {
+                        "position": {
+                            "x": 6.6,
+                            "y": 250.7
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {}
+                }
+            }
+        },
+        "container/border_up": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 750.3
+            },
+            "position": {
+                "x": 7,
+                "y": -261
+            },
+            "angle": 90,
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -1.2,
+                            "y": -261
+                        }
+                    }
+                }
+            }
+        },
+        "container/image_1": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -375.9,
+                "y": -262.8
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -355.2,
+                            "y": -262.8
+                        }
+                    }
+                }
+            }
+        },
+        "container/image_2": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 378,
+                "y": -260.1
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": 353.9,
+                            "y": -260.1
+                        }
+                    }
+                }
+            }
+        },
+        "container/image_3": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 377,
+                "y": 248.9
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": 351.8,
+                            "y": 248.9
+                        }
+                    }
+                }
+            }
+        },
+        "container/image_4": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -376.2,
+                "y": 247.8
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -356.3,
+                            "y": 247.8
+                        }
+                    }
+                }
+            }
+        },
+        "container/select_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Select :",
+            "align": "center",
+            "position": {
+                "x": -232.9,
+                "y": 124.1
+            },
+            "anchor": {
+                "x": 1,
+                "y": 0.5
+            },
+            "color": "#252854",
+            "type": "text",
+            "visibility": "desktop",
+            "orientation": {}
+        },
+        "container/confirm_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Confirm :",
+            "align": "center",
+            "position": {
+                "x": -231.9,
+                "y": 194.7
+            },
+            "anchor": {
+                "x": 1,
+                "y": 0.5
+            },
+            "color": "#252854",
+            "type": "text",
+            "visibility": "desktop",
+            "orientation": {}
+        },
+        "container/title_container": {
+            "file": "title_container.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 7,
+                "bottom": 10,
+                "left": 55,
+                "right": 61
+            },
+            "size": {
+                "width": 542.5,
+                "height": 81
+            },
+            "position": {
+                "x": 2.1,
+                "y": -237.6
+            },
+            "type": "sprite"
+        },
+        "container/title_container/title": {
+            "font": {
+                "name": "impact",
+                "fontSize": 52
+            },
+            "text": "SELECT CHARACTER",
+            "align": "left",
+            "stroke": "#660000",
+            "strokeThickness": 5,
+            "position": {
+                "x": -1,
+                "y": 3
+            },
+            "color": "#fea367",
+            "type": "text"
+        },
+        "container/controls_1_player": {
+            "file": "controls_1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -101.1,
+                "y": 149.3
+            },
+            "type": "sprite",
+            "visibility": "desktop",
+            "orientation": {}
+        },
+        "container/controls_1_player/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 18
+            },
+            "text": "Spacebar",
+            "align": "left",
+            "position": {
+                "x": 3,
+                "y": 48.7
+            },
+            "color": "#000000",
+            "type": "text"
+        },
+        "container/controls_2_player": {
+            "file": "controls_3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 53.8,
+                "y": 151.8
+            },
+            "type": "sprite",
+            "visibility": "desktop",
+            "orientation": {}
+        },
+        "container/controls_2_player/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 18
+            },
+            "text": "Enter",
+            "align": "left",
+            "position": {
+                "x": -0.5,
+                "y": 48.9
+            },
+            "color": "#000000",
+            "type": "text"
+        },
+        "back_button": {
+            "file": "back_button01.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "back_button01.png",
+                "pressed": "back_button03.png",
+                "hover": "back_button02.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": -144.1,
+                    "y": -55.9
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": -144.1,
+                            "y": -55.9
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": -185.9,
+                            "y": -312.4
+                        }
+                    }
+                }
+            }
+        },
+        "back_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "BACK",
+            "align": "left",
+            "stroke": "#d1602b",
+            "strokeThickness": 4,
+            "position": {
+                "x": 13,
+                "y": 0.2
+            },
+            "type": "text"
+        },
+        "start_button": {
+            "file": "start_button01.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "start_button01.png",
+                "pressed": "start_button03.png",
+                "hover": "start_button02.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 132.3,
+                    "y": -56
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": 132.3,
+                            "y": -56
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": 173.4,
+                            "y": -314.8
+                        }
+                    }
+                }
+            }
+        },
+        "start_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "START",
+            "align": "left",
+            "stroke": "#d1602b",
+            "strokeThickness": 4,
+            "position": {
+                "x": 13,
+                "y": 3.2
+            },
+            "type": "text"
+        }
+    }
+}

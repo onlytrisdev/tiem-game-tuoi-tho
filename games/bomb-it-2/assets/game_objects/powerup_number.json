@@ -1,0 +1,33 @@
+{
+    "hierarchy": {
+        "name": "powerup_number",
+        "children": [
+            {
+                "name": "hero_powerup"
+            },
+            {
+                "name": "hero_number"
+            }
+        ]
+    },
+    "properties": {
+        "hero_powerup": {
+            "file": "weapon_head_thrower.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -13.9,
+                "y": -82.9
+            },
+            "type": "sprite"
+        },
+        "hero_number": {
+            "file": "weapon_head0.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 9.9,
+                "y": -81
+            },
+            "type": "sprite"
+        }
+    }
+}

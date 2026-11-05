@@ -1,0 +1,63 @@
+{
+    "name": "ice_brick_anim",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "brick_shine": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "anim_tile_ice1.png"
+                },
+                {
+                    "frame": 33,
+                    "value": "anim_tile_ice2.png"
+                },
+                {
+                    "frame": 67,
+                    "value": "anim_tile_ice3.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "anim_tile_ice4.png"
+                },
+                {
+                    "frame": 133,
+                    "value": "anim_tile_ice5.png"
+                },
+                {
+                    "frame": 167,
+                    "value": "anim_tile_ice6.png"
+                },
+                {
+                    "frame": 200,
+                    "value": "anim_tile_ice7.png"
+                },
+                {
+                    "frame": 233,
+                    "value": "anim_tile_ice8.png"
+                },
+                {
+                    "frame": 267,
+                    "value": "anim_tile_ice9.png"
+                },
+                {
+                    "frame": 300,
+                    "value": "anim_tile_ice10.png"
+                },
+                {
+                    "frame": 333,
+                    "value": "anim_tile_ice11.png"
+                },
+                {
+                    "frame": 367,
+                    "value": "anim_tile_ice12.png"
+                },
+                {
+                    "frame": 400,
+                    "value": "anim_tile_ice1.png"
+                }
+            ]
+        }
+    }
+}

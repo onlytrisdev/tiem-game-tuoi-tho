@@ -1,0 +1,29 @@
+{
+    "hierarchy": {
+        "name": "remote",
+        "children": [
+            {
+                "name": "remote_base"
+            }
+        ],
+        "animations": [
+            "remote_down",
+            "remote_up",
+            "remote_side",
+            "remote_down_stand",
+            "remote_side_stand",
+            "remote_up_stand"
+        ]
+    },
+    "properties": {
+        "remote_base": {
+            "file": "remote_down.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -18.2,
+                "y": -12.6
+            },
+            "type": "sprite"
+        }
+    }
+}

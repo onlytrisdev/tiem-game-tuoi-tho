@@ -1,0 +1,24 @@
+{
+    "name": "shotgun_up_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "shotgun_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -11.3,
+                        -22.3
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "shotgun_up.png"
+                }
+            ]
+        }
+    }
+}

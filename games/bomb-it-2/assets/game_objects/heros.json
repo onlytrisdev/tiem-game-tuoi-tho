@@ -1,0 +1,281 @@
+{
+    "hierarchy": {
+        "name": "heros",
+        "children": [
+            {
+                "name": "hero_1",
+                "children": [
+                    {
+                        "name": "avatar_1"
+                    },
+                    {
+                        "name": "eyes1_1"
+                    }
+                ],
+                "animations": [
+                    "stand_character_hero1",
+                    "stand_character_hero1_2"
+                ]
+            },
+            {
+                "name": "hero_1_arrow",
+                "children": [
+                    {
+                        "name": "arrow_p1"
+                    }
+                ],
+                "animations": [
+                    "arrow_player1",
+                    "arrow_player2"
+                ]
+            },
+            {
+                "name": "hero_2",
+                "children": [
+                    {
+                        "name": "avatar_1"
+                    },
+                    {
+                        "name": "eyes1_1"
+                    }
+                ],
+                "animations": [
+                    "stand_character_hero2",
+                    "stand_character_hero2_2"
+                ]
+            },
+            {
+                "name": "hero_2_arrow",
+                "children": [
+                    {
+                        "name": "arrow_p1"
+                    }
+                ],
+                "animations": [
+                    "arrow_player1",
+                    "arrow_player2"
+                ]
+            },
+            {
+                "name": "hero_3",
+                "children": [
+                    {
+                        "name": "avatar_1"
+                    },
+                    {
+                        "name": "eyes1_1"
+                    }
+                ],
+                "animations": [
+                    "stand_character_hero3",
+                    "stand_character_hero3_2"
+                ]
+            },
+            {
+                "name": "hero_3_arrow",
+                "children": [
+                    {
+                        "name": "arrow_p1"
+                    }
+                ],
+                "animations": [
+                    "arrow_player1",
+                    "arrow_player2"
+                ]
+            },
+            {
+                "name": "hero_4",
+                "children": [
+                    {
+                        "name": "avatar_1"
+                    },
+                    {
+                        "name": "eyes1_1"
+                    }
+                ],
+                "animations": [
+                    "stand_character_hero4",
+                    "stand_character_hero4_2"
+                ]
+            },
+            {
+                "name": "hero_4_arrow",
+                "children": [
+                    {
+                        "name": "arrow_p1"
+                    }
+                ],
+                "animations": [
+                    "arrow_player1",
+                    "arrow_player2"
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "hero_1": {
+            "position": {
+                "x": -274,
+                "y": -24.4
+            },
+            "type": "container"
+        },
+        "hero_1/avatar_1": {
+            "file": "character_blue_1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 6
+            },
+            "type": "sprite"
+        },
+        "hero_1/eyes1_1": {
+            "file": "eyes1_4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.7,
+                "y": -10.7
+            },
+            "type": "sprite"
+        },
+        "hero_1_arrow": {
+            "position": {
+                "x": -274,
+                "y": -24.4
+            },
+            "type": "container"
+        },
+        "hero_1_arrow/arrow_p1": {
+            "file": "arrow1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -125
+            },
+            "type": "sprite"
+        },
+        "hero_2": {
+            "position": {
+                "x": -95.6,
+                "y": -29.9
+            },
+            "type": "container"
+        },
+        "hero_2/avatar_1": {
+            "file": "character_pink_1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 12
+            },
+            "type": "sprite"
+        },
+        "hero_2/eyes1_1": {
+            "file": "face2_eyes4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.1,
+                "y": 6
+            },
+            "type": "sprite"
+        },
+        "hero_2_arrow": {
+            "position": {
+                "x": -95,
+                "y": -24
+            },
+            "type": "container"
+        },
+        "hero_2_arrow/arrow_p1": {
+            "file": "arrow1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -125
+            },
+            "type": "sprite"
+        },
+        "hero_3": {
+            "position": {
+                "x": 79.1,
+                "y": -24.5
+            },
+            "type": "container"
+        },
+        "hero_3/avatar_1": {
+            "file": "character_yellow_1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 13
+            },
+            "type": "sprite"
+        },
+        "hero_3/eyes1_1": {
+            "file": "eyes1_8.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.7,
+                "y": -7.8
+            },
+            "type": "sprite"
+        },
+        "hero_3_arrow": {
+            "position": {
+                "x": 79,
+                "y": -24
+            },
+            "type": "container"
+        },
+        "hero_3_arrow/arrow_p1": {
+            "file": "arrow1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -125
+            },
+            "type": "sprite"
+        },
+        "hero_4": {
+            "position": {
+                "x": 262.5,
+                "y": -27
+            },
+            "type": "container"
+        },
+        "hero_4/avatar_1": {
+            "file": "character_green_1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 3
+            },
+            "type": "sprite"
+        },
+        "hero_4/eyes1_1": {
+            "file": "face4_eyes1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.2,
+                "y": 1.5
+            },
+            "type": "sprite"
+        },
+        "hero_4_arrow": {
+            "position": {
+                "x": 265,
+                "y": -24
+            },
+            "type": "container"
+        },
+        "hero_4_arrow/arrow_p1": {
+            "file": "arrow1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -135.68
+            },
+            "type": "sprite"
+        }
+    }
+}

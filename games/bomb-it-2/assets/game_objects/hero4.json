@@ -1,0 +1,229 @@
+{
+    "hierarchy": {
+        "name": "hero4",
+        "children": [
+            {
+                "name": "hero4_shadow"
+            },
+            {
+                "name": "death4"
+            },
+            {
+                "name": "hero4_arm_l",
+                "children": [
+                    {
+                        "name": "hero4_hand_l"
+                    }
+                ]
+            },
+            {
+                "name": "hero4_leg_r",
+                "children": [
+                    {
+                        "name": "hero4_foot_r"
+                    }
+                ]
+            },
+            {
+                "name": "hero4_leg_l",
+                "children": [
+                    {
+                        "name": "hero4_foot_l"
+                    }
+                ]
+            },
+            {
+                "name": "hero4_body"
+            },
+            {
+                "name": "hero4_arm_r",
+                "children": [
+                    {
+                        "name": "hero4_hand_r"
+                    }
+                ]
+            },
+            {
+                "name": "hero4_head",
+                "children": [
+                    {
+                        "name": "eye4_l"
+                    }
+                ]
+            },
+            {
+                "name": "eyes4"
+            }
+        ],
+        "animations": [
+            "hero4_down",
+            "hero4_side",
+            "hero4_up",
+            "hero4_down_stand",
+            "hero4_side_stand",
+            "hero4_up_stand",
+            "hero4_death"
+        ]
+    },
+    "properties": {
+        "hero4_shadow": {
+            "file": "shadow_hero1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 1.4
+            },
+            "type": "sprite"
+        },
+        "death4": {
+            "file": "hero_death.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.8,
+                "y": -53.5
+            },
+            "alpha": 0,
+            "type": "sprite"
+        },
+        "hero4_arm_l": {
+            "file": "arm_right_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -7.8,
+                "y": -24.7
+            },
+            "scale": {
+                "x": -1,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.2,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero4_arm_l/hero4_hand_l": {
+            "file": "hand_right_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 4.1,
+                "y": 8.2
+            },
+            "type": "sprite"
+        },
+        "hero4_leg_r": {
+            "file": "leg_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 3.9,
+                "y": -11.6
+            },
+            "scale": {
+                "x": -1,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero4_leg_r/hero4_foot_r": {
+            "file": "foot_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.1,
+                "y": 9.1
+            },
+            "type": "sprite"
+        },
+        "hero4_leg_l": {
+            "file": "leg_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -3.8,
+                "y": -11.4
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero4_leg_l/hero4_foot_l": {
+            "file": "foot_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.3,
+                "y": 9.1
+            },
+            "type": "sprite"
+        },
+        "hero4_body": {
+            "file": "body_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -18.2
+            },
+            "type": "sprite"
+        },
+        "hero4_arm_r": {
+            "file": "arm_right_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 7.1,
+                "y": -25.1
+            },
+            "anchor": {
+                "x": 0.2,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero4_arm_r/hero4_hand_r": {
+            "file": "hand_right_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 4.1,
+                "y": 8
+            },
+            "type": "sprite"
+        },
+        "hero4_head": {
+            "file": "head_hero4_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -29.2
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.9
+            },
+            "type": "sprite"
+        },
+        "hero4_head/eye4_l": {
+            "file": "eye1_hero4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.3,
+                "y": -14.3
+            },
+            "type": "sprite"
+        },
+        "eyes4": {
+            "file": "eyes.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -0.9,
+                "y": -40.4
+            },
+            "scale": {
+                "x": 1,
+                "y": 0
+            },
+            "type": "sprite"
+        }
+    }
+}

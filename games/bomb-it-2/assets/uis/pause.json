@@ -1,0 +1,598 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "powerups_containers",
+                "children": [
+                    {
+                        "name": "edge_left"
+                    },
+                    {
+                        "name": "edge_right"
+                    },
+                    {
+                        "name": "edge_down"
+                    },
+                    {
+                        "name": "edge_up"
+                    },
+                    {
+                        "name": "title_container",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "weapons",
+                        "children": [
+                            {
+                                "name": "power_ups_text"
+                            },
+                            {
+                                "name": "bomb_text"
+                            },
+                            {
+                                "name": "power_blast_text"
+                            },
+                            {
+                                "name": "speed_text"
+                            },
+                            {
+                                "name": "life_text"
+                            },
+                            {
+                                "name": "shield_text"
+                            },
+                            {
+                                "name": "push_text"
+                            },
+                            {
+                                "name": "invincibility_text"
+                            },
+                            {
+                                "name": "weapons_text"
+                            },
+                            {
+                                "name": "double_shotgun_text"
+                            },
+                            {
+                                "name": "rocket_text"
+                            },
+                            {
+                                "name": "flame_text"
+                            },
+                            {
+                                "name": "laser_text"
+                            },
+                            {
+                                "name": "hammer_text"
+                            },
+                            {
+                                "name": "landmine_text"
+                            },
+                            {
+                                "name": "remote_bomb_text"
+                            },
+                            {
+                                "name": "vehicles_text"
+                            },
+                            {
+                                "name": "bulldozer_text"
+                            },
+                            {
+                                "name": "race_car_text"
+                            },
+                            {
+                                "name": "flog_text"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 1280,
+                "height": 720
+            },
+            "type": "canvas"
+        },
+        "powerups_containers": {
+            "file": "bg_4.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 55,
+                "bottom": 58,
+                "left": 57,
+                "right": 57
+            },
+            "size": {
+                "width": 1224,
+                "height": 667
+            },
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -4,
+                    "y": 2
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": -4,
+                            "y": 2
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "CENTER"
+                    }
+                }
+            }
+        },
+        "powerups_containers/edge_left": {
+            "file": "border2.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 676.9
+            },
+            "position": {
+                "x": -612,
+                "y": -1
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -361,
+                            "y": -6
+                        }
+                    }
+                }
+            }
+        },
+        "powerups_containers/edge_right": {
+            "file": "border2.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 676.9
+            },
+            "position": {
+                "x": 609,
+                "y": -1
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": 362,
+                            "y": -2
+                        }
+                    }
+                }
+            }
+        },
+        "powerups_containers/edge_down": {
+            "file": "border2.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 1227
+            },
+            "position": {
+                "x": 0,
+                "y": 331
+            },
+            "angle": 90,
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -0.8,
+                            "y": 619
+                        }
+                    }
+                }
+            }
+        },
+        "powerups_containers/edge_up": {
+            "file": "border2.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 1227
+            },
+            "position": {
+                "x": 0,
+                "y": -335
+            },
+            "angle": 90,
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {
+                        "position": {
+                            "x": 0,
+                            "y": -333
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {
+                        "position": {
+                            "x": -0.6,
+                            "y": -623
+                        }
+                    }
+                }
+            }
+        },
+        "powerups_containers/title_container": {
+            "file": "title_container.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 7,
+                "bottom": 10,
+                "left": 55,
+                "right": 61
+            },
+            "size": {
+                "width": 543.2,
+                "height": 81
+            },
+            "position": {
+                "x": 3,
+                "y": -293
+            },
+            "type": "sprite"
+        },
+        "powerups_containers/title_container/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 53
+            },
+            "text": "POWER-UPS",
+            "align": "left",
+            "stroke": "#660000",
+            "strokeThickness": 5,
+            "position": {
+                "x": 4,
+                "y": 2
+            },
+            "color": "#fea367",
+            "type": "text"
+        },
+        "powerups_containers/weapons": {
+            "file": "weapons.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 24
+            },
+            "scale": {
+                "x": 1.2,
+                "y": 1.2
+            },
+            "type": "sprite",
+            "orientation": {
+                "landscape": {
+                    "properties": {}
+                },
+                "portrait": {
+                    "properties": {
+                        "scale": {
+                            "x": 1.1,
+                            "y": 1.1
+                        }
+                    }
+                }
+            }
+        },
+        "powerups_containers/weapons/power_ups_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 28
+            },
+            "text": "Power-ups",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": -180.7
+            },
+            "color": "#252854",
+            "type": "text"
+        },
+        "powerups_containers/weapons/bomb_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "BOMB+1",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": -140.9
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/power_blast_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "POWER BLAST+1",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": -105.9
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/speed_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "SPEED BOOSTER",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": -69.2
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/life_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "EXTRA LIFE",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": -31.7
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/shield_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "SHIELD",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": 4.6
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/push_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "PUSH THE BOMB",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": 39.8
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/invincibility_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "INVINCIBILITY",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": 79.2
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/weapons_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 28
+            },
+            "text": "Weapons",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": -182.6
+            },
+            "color": "#252854",
+            "type": "text"
+        },
+        "powerups_containers/weapons/double_shotgun_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "DOUBLE SHOTGUN",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": -141.9
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/rocket_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "ROCKET LAUNCHER",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": -105.9
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/flame_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "FLAME THROWER",
+            "align": "left",
+            "position": {
+                "x": 186,
+                "y": -67.6
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/laser_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "LASER GUN",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": -29.7
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/hammer_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "HAMMER",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": 5
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/landmine_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "LANDMINE",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": 41.8
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/remote_bomb_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "REMOTE BOMB",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": 76.8
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/vehicles_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 28
+            },
+            "text": "Vehicles",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": 138.9
+            },
+            "color": "#252854",
+            "type": "text"
+        },
+        "powerups_containers/weapons/bulldozer_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "BULLDOZER",
+            "align": "left",
+            "position": {
+                "x": -150,
+                "y": 180.7
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/race_car_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "RACE CAR",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": 138.9
+            },
+            "color": "#343967",
+            "type": "text"
+        },
+        "powerups_containers/weapons/flog_text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 24
+            },
+            "text": "FROG",
+            "align": "left",
+            "position": {
+                "x": 187,
+                "y": 176
+            },
+            "color": "#343967",
+            "type": "text"
+        }
+    }
+}

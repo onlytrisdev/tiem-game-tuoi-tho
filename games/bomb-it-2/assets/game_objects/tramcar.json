@@ -1,0 +1,27 @@
+{
+    "hierarchy": {
+        "name": "tramcar",
+        "children": [
+            {
+                "name": "tramcar_base"
+            }
+        ],
+        "animations": [
+            "tramcar_down",
+            "tramcar_left",
+            "tramcar_right",
+            "tramcar_up"
+        ]
+    },
+    "properties": {
+        "tramcar_base": {
+            "file": "tramcar1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -11.3
+            },
+            "type": "sprite"
+        }
+    }
+}

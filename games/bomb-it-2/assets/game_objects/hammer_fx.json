@@ -1,0 +1,26 @@
+{
+    "hierarchy": {
+        "name": "hammer_fx",
+        "children": [
+            {
+                "name": "hammer_base"
+            }
+        ],
+        "animations": [
+            "hammer_up_play",
+            "hammer_side_play",
+            "hammer_down_play"
+        ]
+    },
+    "properties": {
+        "hammer_base": {
+            "file": "hammer_back1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 20.5,
+                "y": -38.4
+            },
+            "type": "sprite"
+        }
+    }
+}

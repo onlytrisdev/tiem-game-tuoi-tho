@@ -1,0 +1,600 @@
+{
+    "name": "hero2_up",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "hero2_arm_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        7.1,
+                        -26.6
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        5.3,
+                        -28.2
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        7.1,
+                        -26.6
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        7.6,
+                        -25
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        7.1,
+                        -26.6
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero2_arm_r/hero2_hand_r": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 0.9
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.3
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 0.9
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.3
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        8.4,
+                        7.6
+                    ]
+                }
+            ]
+        },
+        "hero2_arm_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -6.9,
+                        -26.6
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -7.8,
+                        -25.5
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        -6.9,
+                        -26.6
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        -6.5,
+                        -27.5
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        -6.9,
+                        -26.6
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero2_arm_l/hero2_hand_l": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.3
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 0.9
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.3
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 0.9
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": []
+        },
+        "hero2_leg_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -6,
+                        -12.7
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -4.3,
+                        -15.7
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        -6,
+                        -12.7
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        -5.2,
+                        -12
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        -6,
+                        -12.7
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero2_leg_l/hero2_foot_l": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 0.7
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.3,
+                        9.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero2_front.png"
+                }
+            ]
+        },
+        "hero2_leg_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        5.9,
+                        -12.7
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        6.4,
+                        -11.7
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        5.9,
+                        -12.7
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        5.8,
+                        -14.3
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        5.9,
+                        -12.7
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero2_leg_r/hero2_foot_r": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 0.7
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.1,
+                        9.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero2_front.png"
+                }
+            ]
+        },
+        "hero2_head": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -23.1
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -0.3,
+                        -23.1
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        0,
+                        -23.1
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        0.1,
+                        -23.1
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        0,
+                        -23.1
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 117,
+                    "value": -4
+                },
+                {
+                    "frame": 283,
+                    "value": 3
+                },
+                {
+                    "frame": 400,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "head_hero2_back.png"
+                }
+            ]
+        },
+        "hero2_body": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 117,
+                    "value": -3
+                },
+                {
+                    "frame": 283,
+                    "value": 2
+                },
+                {
+                    "frame": 400,
+                    "value": -3
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -18.9
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "body_hero2_side.png"
+                }
+            ]
+        },
+        "hero2_shadow": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ]
+        },
+        "hero2_head/eye2_l": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye6_hero2.png"
+                }
+            ]
+        },
+        "hero2_head/eye2_r": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye6_hero2.png"
+                }
+            ]
+        },
+        "death2": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -0.3,
+                        -53.5
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "hero_death.png"
+                }
+            ]
+        },
+        "eyes2": {
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        }
+    }
+}

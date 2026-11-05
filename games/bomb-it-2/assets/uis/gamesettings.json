@@ -1,0 +1,1663 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "container",
+                "children": [
+                    {
+                        "name": "edge_left"
+                    },
+                    {
+                        "name": "edge_right"
+                    },
+                    {
+                        "name": "edge_down"
+                    },
+                    {
+                        "name": "edge_center"
+                    },
+                    {
+                        "name": "edge_up"
+                    },
+                    {
+                        "name": "title_container",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mode_arcade",
+                        "children": [
+                            {
+                                "name": "press"
+                            },
+                            {
+                                "name": "over"
+                            },
+                            {
+                                "name": "press_over"
+                            },
+                            {
+                                "name": "description"
+                            },
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mode_kill",
+                        "children": [
+                            {
+                                "name": "press"
+                            },
+                            {
+                                "name": "over"
+                            },
+                            {
+                                "name": "press_over"
+                            },
+                            {
+                                "name": "description"
+                            },
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mode_collect",
+                        "children": [
+                            {
+                                "name": "press"
+                            },
+                            {
+                                "name": "over"
+                            },
+                            {
+                                "name": "press_over"
+                            },
+                            {
+                                "name": "description"
+                            },
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "mode_color",
+                        "children": [
+                            {
+                                "name": "press"
+                            },
+                            {
+                                "name": "over"
+                            },
+                            {
+                                "name": "press_over"
+                            },
+                            {
+                                "name": "description"
+                            },
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "choose_mode",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "player",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "enemies",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "levels",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "theme",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "difficulty",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "1player_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "2player_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "3enemies_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "2enemies_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "1enemies_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "0enemies_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "5levels_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "10levels_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "15levels_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "20levels_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "arena_container",
+                        "children": [
+                            {
+                                "name": "theme_park",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "crystal_mine",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "factory",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "disco",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "winter",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "beach",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "random",
+                                "children": [
+                                    {
+                                        "name": "text"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "easy_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "normal_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "hard_button",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "image_1"
+                    },
+                    {
+                        "name": "image_2"
+                    },
+                    {
+                        "name": "image_3"
+                    },
+                    {
+                        "name": "image_4"
+                    },
+                    {
+                        "name": "image_5"
+                    },
+                    {
+                        "name": "image_6"
+                    }
+                ]
+            },
+            {
+                "name": "confirm_button",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            {
+                "name": "back_button",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 1280,
+                "height": 720
+            },
+            "type": "canvas"
+        },
+        "container": {
+            "file": "bg_1.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "size": {
+                "width": 758.5,
+                "height": 510.4
+            },
+            "scale": {
+                "x": 0.93,
+                "y": 0.93
+            },
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -25
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {
+                        "scale": {
+                            "x": 1,
+                            "y": 1
+                        }
+                    },
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": 0,
+                            "y": -25
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "CENTER",
+                        "offset": {
+                            "x": 0,
+                            "y": -25
+                        }
+                    }
+                }
+            }
+        },
+        "container/edge_left": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 492.7
+            },
+            "position": {
+                "x": -380.1,
+                "y": -2.7
+            },
+            "type": "sprite"
+        },
+        "container/edge_right": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 492.7
+            },
+            "position": {
+                "x": 380.9,
+                "y": -3
+            },
+            "type": "sprite"
+        },
+        "container/edge_down": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 739.3
+            },
+            "position": {
+                "x": 2.4,
+                "y": 255.8
+            },
+            "angle": 90,
+            "type": "sprite"
+        },
+        "container/edge_center": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 739.3
+            },
+            "position": {
+                "x": 2,
+                "y": -216.2
+            },
+            "angle": 90,
+            "type": "sprite"
+        },
+        "container/edge_up": {
+            "file": "border.png",
+            "image": "TILED",
+            "size": {
+                "width": 18,
+                "height": 739.3
+            },
+            "position": {
+                "x": 2,
+                "y": -258.1
+            },
+            "angle": 90,
+            "type": "sprite"
+        },
+        "container/title_container": {
+            "file": "title_container.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 7,
+                "bottom": 10,
+                "left": 55,
+                "right": 61
+            },
+            "size": {
+                "width": 534.6,
+                "height": 81
+            },
+            "position": {
+                "x": -0.8,
+                "y": -234.6
+            },
+            "type": "sprite"
+        },
+        "container/title_container/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 52
+            },
+            "text": "GAME SETTINGS",
+            "align": "left",
+            "stroke": "#660000",
+            "strokeThickness": 5,
+            "position": {
+                "x": 0.8,
+                "y": 1
+            },
+            "color": "#fea367",
+            "type": "text"
+        },
+        "container/mode_arcade": {
+            "file": "mode_arcade.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -280,
+                "y": -100.1
+            },
+            "type": "button"
+        },
+        "container/mode_arcade/press": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.45,
+            "type": "sprite"
+        },
+        "container/mode_arcade/over": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.67,
+            "type": "sprite"
+        },
+        "container/mode_arcade/press_over": {
+            "file": "mode_select1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "container/mode_arcade/description": {
+            "font": {
+                "name": "impact",
+                "fontSize": 23
+            },
+            "text": "KILL\nALL ENNEMIES",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": -2.2
+            },
+            "type": "text"
+        },
+        "container/mode_arcade/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 23
+            },
+            "text": "ARCADE",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 58
+            },
+            "type": "text"
+        },
+        "container/mode_kill": {
+            "file": "mode_kill.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -92.6,
+                "y": -100.5
+            },
+            "type": "button"
+        },
+        "container/mode_kill/press": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.45,
+            "type": "sprite"
+        },
+        "container/mode_kill/over": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.67,
+            "type": "sprite"
+        },
+        "container/mode_kill/press_over": {
+            "file": "mode_select1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "container/mode_kill/description": {
+            "font": {
+                "name": "impact",
+                "fontSize": 23
+            },
+            "text": "Kill 10 \nenemies",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": -2.2
+            },
+            "type": "text"
+        },
+        "container/mode_kill/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 23
+            },
+            "text": "WEAPONS ONLY",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 58
+            },
+            "type": "text"
+        },
+        "container/mode_collect": {
+            "file": "mode_collect.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 93.9,
+                "y": -99.6
+            },
+            "type": "button"
+        },
+        "container/mode_collect/press": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.45,
+            "type": "sprite"
+        },
+        "container/mode_collect/over": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.67,
+            "type": "sprite"
+        },
+        "container/mode_collect/press_over": {
+            "file": "mode_select1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "container/mode_collect/description": {
+            "font": {
+                "name": "impact",
+                "fontSize": 23
+            },
+            "text": "Collet\n10 coins",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": -2.2
+            },
+            "type": "text"
+        },
+        "container/mode_collect/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 20
+            },
+            "text": "COLLECT THE COINS",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 58
+            },
+            "type": "text"
+        },
+        "container/mode_color": {
+            "file": "mode_color.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 280.5,
+                "y": -100.4
+            },
+            "type": "button"
+        },
+        "container/mode_color/press": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.45,
+            "type": "sprite"
+        },
+        "container/mode_color/over": {
+            "file": "mode_mask.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0.67,
+            "type": "sprite"
+        },
+        "container/mode_color/press_over": {
+            "file": "mode_select1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "container/mode_color/description": {
+            "font": {
+                "name": "impact",
+                "fontSize": 23
+            },
+            "text": "Color \n50 tiles",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": -2.2
+            },
+            "type": "text"
+        },
+        "container/mode_color/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 21
+            },
+            "text": "COLOR THE TILES",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 58
+            },
+            "type": "text"
+        },
+        "container/choose_mode": {
+            "file": "choose_mode.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 3,
+                "bottom": 2,
+                "left": 19,
+                "right": 62
+            },
+            "size": {
+                "width": 342.2,
+                "height": 43
+            },
+            "position": {
+                "x": 7.1,
+                "y": 172.5
+            },
+            "type": "sprite"
+        },
+        "container/choose_mode/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Random",
+            "align": "left",
+            "position": {
+                "x": -22,
+                "y": 1.8
+            },
+            "type": "text"
+        },
+        "container/player": {
+            "file": "setting.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -283,
+                "y": 19.2
+            },
+            "type": "sprite"
+        },
+        "container/player/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "PLAYERS",
+            "align": "left",
+            "position": {
+                "x": -2,
+                "y": 1
+            },
+            "color": "#1e61ff",
+            "type": "text"
+        },
+        "container/enemies": {
+            "file": "setting.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -283.6,
+                "y": 69.4
+            },
+            "type": "sprite"
+        },
+        "container/enemies/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "ENEMIES",
+            "align": "left",
+            "position": {
+                "x": -2,
+                "y": 1
+            },
+            "color": "#1e61ff",
+            "type": "text"
+        },
+        "container/levels": {
+            "file": "setting.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -284.4,
+                "y": 119.6
+            },
+            "type": "sprite"
+        },
+        "container/levels/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "LEVELS",
+            "align": "left",
+            "position": {
+                "x": -2,
+                "y": 1
+            },
+            "color": "#1e61ff",
+            "type": "text"
+        },
+        "container/theme": {
+            "file": "setting.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -285.3,
+                "y": 169.8
+            },
+            "type": "sprite"
+        },
+        "container/theme/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "THEME",
+            "align": "left",
+            "position": {
+                "x": -2,
+                "y": 2.1
+            },
+            "color": "#1e61ff",
+            "type": "text"
+        },
+        "container/difficulty": {
+            "file": "setting.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -285.9,
+                "y": 220
+            },
+            "type": "sprite"
+        },
+        "container/difficulty/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "DIFFFICULTY",
+            "align": "left",
+            "position": {
+                "x": -2,
+                "y": 3.2
+            },
+            "color": "#1e61ff",
+            "type": "text"
+        },
+        "container/1player_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": -122,
+                "y": 17
+            },
+            "type": "button"
+        },
+        "container/1player_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "1",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/2player_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": -32.5,
+                "y": 17
+            },
+            "type": "button"
+        },
+        "container/2player_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "2",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/3enemies_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": -122,
+                "y": 67
+            },
+            "type": "button"
+        },
+        "container/3enemies_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "3",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/2enemies_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": -32.5,
+                "y": 67
+            },
+            "type": "button"
+        },
+        "container/2enemies_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "2",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/1enemies_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": 57.1,
+                "y": 67
+            },
+            "type": "button"
+        },
+        "container/1enemies_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "1",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/0enemies_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": 146.6,
+                "y": 67
+            },
+            "type": "button"
+        },
+        "container/0enemies_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "0",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/5levels_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": -122,
+                "y": 117
+            },
+            "type": "button"
+        },
+        "container/5levels_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "5",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/10levels_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": -32.5,
+                "y": 117
+            },
+            "type": "button"
+        },
+        "container/10levels_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "10",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/15levels_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": 57.1,
+                "y": 117
+            },
+            "type": "button"
+        },
+        "container/15levels_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "15",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/20levels_button": {
+            "file": "number_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "number_1.png",
+                "pressed": "number4.png",
+                "hover": "number_1.png"
+            },
+            "position": {
+                "x": 146.6,
+                "y": 117
+            },
+            "type": "button"
+        },
+        "container/20levels_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "20",
+            "align": "left",
+            "position": {
+                "x": -2.5,
+                "y": 1.3
+            },
+            "type": "text"
+        },
+        "container/arena_container": {
+            "file": "choose_mode_menu.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -18.1,
+                "y": 18.2
+            },
+            "type": "sprite"
+        },
+        "container/arena_container/theme_park": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": -110.6
+            },
+            "type": "button"
+        },
+        "container/arena_container/theme_park/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Theme park",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/arena_container/crystal_mine": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": -74.1
+            },
+            "type": "button"
+        },
+        "container/arena_container/crystal_mine/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Crystal Mine",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/arena_container/factory": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": -37.5
+            },
+            "type": "button"
+        },
+        "container/arena_container/factory/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Factory",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/arena_container/disco": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": 0.3
+            },
+            "type": "button"
+        },
+        "container/arena_container/disco/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Disco",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/arena_container/winter": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": 36.6
+            },
+            "type": "button"
+        },
+        "container/arena_container/winter/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Winter",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/arena_container/beach": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": 74.4
+            },
+            "type": "button"
+        },
+        "container/arena_container/beach/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Beach",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/arena_container/random": {
+            "file": "choose_select1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "choose_select1.png",
+                "pressed": "choose_select1.png",
+                "hover": "choose_select2.png"
+            },
+            "position": {
+                "x": 0,
+                "y": 110.7
+            },
+            "type": "button"
+        },
+        "container/arena_container/random/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 30
+            },
+            "text": "Random",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 2.3
+            },
+            "type": "text"
+        },
+        "container/easy_button": {
+            "file": "dificulty_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "dificulty_1.png",
+                "pressed": "dificulty_3.png",
+                "hover": "dificulty_1.png"
+            },
+            "position": {
+                "x": -81.1,
+                "y": 224.5
+            },
+            "type": "button"
+        },
+        "container/easy_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "EASY",
+            "align": "left",
+            "position": {
+                "x": 0,
+                "y": 1.6
+            },
+            "type": "text"
+        },
+        "container/normal_button": {
+            "file": "dificulty_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "dificulty_1.png",
+                "pressed": "dificulty_3.png",
+                "hover": "dificulty_1.png"
+            },
+            "position": {
+                "x": 89.1,
+                "y": 224.5
+            },
+            "type": "button"
+        },
+        "container/normal_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "NORMAL",
+            "align": "left",
+            "position": {
+                "x": 0,
+                "y": 1.6
+            },
+            "type": "text"
+        },
+        "container/hard_button": {
+            "file": "dificulty_1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "dificulty_1.png",
+                "pressed": "dificulty_3.png",
+                "hover": "dificulty_1.png"
+            },
+            "position": {
+                "x": 259.2,
+                "y": 224.5
+            },
+            "type": "button"
+        },
+        "container/hard_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "HARD",
+            "align": "left",
+            "position": {
+                "x": 0,
+                "y": 1.6
+            },
+            "type": "text"
+        },
+        "container/image_1": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -377.8,
+                "y": -257.1
+            },
+            "type": "sprite"
+        },
+        "container/image_2": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -377.8,
+                "y": -216.3
+            },
+            "type": "sprite"
+        },
+        "container/image_3": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 376.6,
+                "y": -256.1
+            },
+            "type": "sprite"
+        },
+        "container/image_4": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 376.6,
+                "y": -213.4
+            },
+            "type": "sprite"
+        },
+        "container/image_5": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 375.4,
+                "y": 253.8
+            },
+            "type": "sprite"
+        },
+        "container/image_6": {
+            "file": "image.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -378.3,
+                "y": 252.5
+            },
+            "type": "sprite"
+        },
+        "confirm_button": {
+            "file": "confirm_button1.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "confirm_button1.png",
+                "pressed": "confirm_button1.png",
+                "hover": "confirm_button2.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 132,
+                    "y": -56.4
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": 132,
+                            "y": -56.4
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": 175.6,
+                            "y": -314.1
+                        }
+                    }
+                }
+            }
+        },
+        "confirm_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "OK",
+            "align": "left",
+            "stroke": "#d1602b",
+            "strokeThickness": 4,
+            "position": {
+                "x": 13.3,
+                "y": 1.5
+            },
+            "type": "text"
+        },
+        "back_button": {
+            "file": "back_button01.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "back_button01.png",
+                "pressed": "back_button03.png",
+                "hover": "back_button02.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": -143.7,
+                    "y": -56.4
+                }
+            },
+            "orientation": {
+                "landscape": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": -143.7,
+                            "y": -56.4
+                        }
+                    }
+                },
+                "portrait": {
+                    "properties": {},
+                    "alignment": {
+                        "type": "BOTTOM_CENTER",
+                        "offset": {
+                            "x": -183.8,
+                            "y": -314.1
+                        }
+                    }
+                }
+            }
+        },
+        "back_button/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 25
+            },
+            "text": "BACK",
+            "align": "left",
+            "stroke": "#d1602b",
+            "strokeThickness": 4,
+            "position": {
+                "x": 13,
+                "y": 0.6
+            },
+            "type": "text"
+        }
+    }
+}

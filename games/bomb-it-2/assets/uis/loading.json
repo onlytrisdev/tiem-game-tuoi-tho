@@ -1,0 +1,139 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "loading_bar",
+                "children": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "name": "bomb1"
+                    },
+                    {
+                        "name": "bomb2"
+                    },
+                    {
+                        "name": "bomb3"
+                    },
+                    {
+                        "name": "bomb4"
+                    },
+                    {
+                        "name": "bomb5"
+                    },
+                    {
+                        "name": "bomb6"
+                    },
+                    {
+                        "name": "bomb7"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 1280,
+                "height": 720
+            },
+            "type": "canvas"
+        },
+        "loading_bar": {
+            "file": "loading_bar.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -358.3
+                }
+            }
+        },
+        "loading_bar/text": {
+            "font": {
+                "name": "impact",
+                "fontSize": 40
+            },
+            "text": "Loading..",
+            "align": "center",
+            "stroke": "#0a2b5e",
+            "strokeThickness": 6,
+            "position": {
+                "x": -5.3,
+                "y": 72
+            },
+            "scale": {
+                "x": 0.91,
+                "y": 1
+            },
+            "type": "text"
+        },
+        "loading_bar/bomb1": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -164.4,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "loading_bar/bomb2": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -110.2,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "loading_bar/bomb3": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -58.1,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "loading_bar/bomb4": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -5.1,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "loading_bar/bomb5": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 47.9,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "loading_bar/bomb6": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 100.9,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "loading_bar/bomb7": {
+            "file": "loading_bomb.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 154.3,
+                "y": 0
+            },
+            "type": "sprite"
+        }
+    }
+}

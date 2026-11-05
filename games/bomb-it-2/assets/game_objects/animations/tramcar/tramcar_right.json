@@ -1,0 +1,46 @@
+{
+    "name": "tramcar_right",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "tramcar_base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -2.1,
+                        -5.5
+                    ]
+                },
+                {
+                    "frame": 67,
+                    "value": [
+                        -2.1,
+                        -5.5
+                    ]
+                },
+                {
+                    "frame": 83,
+                    "value": [
+                        0,
+                        -11.3
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "tramcar2.png"
+                },
+                {
+                    "frame": 83,
+                    "value": "tramcar3.png"
+                },
+                {
+                    "frame": 167,
+                    "value": "tramcar1.png"
+                }
+            ]
+        }
+    }
+}

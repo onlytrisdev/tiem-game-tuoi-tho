@@ -1,0 +1,683 @@
+{
+    "name": "hero4_down",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "hero4_arm_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        7.1,
+                        -25.1
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        6.3,
+                        -26
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        7.1,
+                        -25.1
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        7.6,
+                        -25
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        7.1,
+                        -25.1
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero4_arm_r/hero4_hand_r": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 0.9
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.3
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 0.9
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.3
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        4.3,
+                        7.8
+                    ]
+                }
+            ]
+        },
+        "hero4_arm_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -7.8,
+                        -24.7
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -7.8,
+                        -25.5
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        -7.8,
+                        -24.7
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        -6.7,
+                        -26.2
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        -7.8,
+                        -24.7
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero4_arm_l/hero4_hand_l": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.3
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 0.9
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.3
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 0.9
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": []
+        },
+        "hero4_leg_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -3.8,
+                        -11.4
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -3.8,
+                        -15.7
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        -3.8,
+                        -11.4
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        -3.8,
+                        -12
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        -3.8,
+                        -11.4
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ]
+        },
+        "hero4_leg_l/hero4_foot_l": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 0.7
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.3,
+                        9.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero4_front.png"
+                }
+            ]
+        },
+        "hero4_leg_r": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        3.9,
+                        -11.6
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        3.9,
+                        -11.7
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        3.9,
+                        -11.6
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        3.9,
+                        -14.3
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        3.9,
+                        -11.6
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "hero4_leg_r/hero4_foot_r": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 0.7
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.1,
+                        9.1
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "foot_hero4_front.png"
+                }
+            ]
+        },
+        "hero4_head": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -29.2
+                    ]
+                },
+                {
+                    "frame": 117,
+                    "value": [
+                        -0.3,
+                        -29.2
+                    ]
+                },
+                {
+                    "frame": 217,
+                    "value": [
+                        0,
+                        -29.2
+                    ]
+                },
+                {
+                    "frame": 283,
+                    "value": [
+                        0.1,
+                        -28.9
+                    ]
+                },
+                {
+                    "frame": 400,
+                    "value": [
+                        0,
+                        -29.2
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 117,
+                    "value": -4
+                },
+                {
+                    "frame": 283,
+                    "value": 3
+                },
+                {
+                    "frame": 400,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "head_hero4_front.png"
+                }
+            ]
+        },
+        "hero4_body": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 117,
+                    "value": -3
+                },
+                {
+                    "frame": 283,
+                    "value": 2
+                },
+                {
+                    "frame": 400,
+                    "value": -3
+                }
+            ],
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        -18.2
+                    ]
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "body_hero4_front.png"
+                }
+            ]
+        },
+        "hero4_shadow": {
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 117,
+                    "value": 1.2
+                },
+                {
+                    "frame": 217,
+                    "value": 1
+                },
+                {
+                    "frame": 283,
+                    "value": 1.2
+                },
+                {
+                    "frame": 400,
+                    "value": 1
+                }
+            ]
+        },
+        "hero4_head/eye4_l": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0.3,
+                        -14.3
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "eye1_hero4.png"
+                },
+                {
+                    "frame": 17,
+                    "value": "eye2_hero4.png"
+                },
+                {
+                    "frame": 33,
+                    "value": "eye3_hero4.png"
+                },
+                {
+                    "frame": 50,
+                    "value": "eye4_hero4.png"
+                },
+                {
+                    "frame": 67,
+                    "value": "eye5_hero4.png"
+                },
+                {
+                    "frame": 83,
+                    "value": "eye6_hero4.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "eye7_hero4.png"
+                },
+                {
+                    "frame": 117,
+                    "value": "eye8_hero4.png"
+                },
+                {
+                    "frame": 133,
+                    "value": "eye9_hero4.png"
+                },
+                {
+                    "frame": 150,
+                    "value": "eye10_hero4.png"
+                },
+                {
+                    "frame": 167,
+                    "value": "eye11_hero4.png"
+                },
+                {
+                    "frame": 183,
+                    "value": "eye12_hero4.png"
+                },
+                {
+                    "frame": 200,
+                    "value": "eye13_hero4.png"
+                },
+                {
+                    "frame": 217,
+                    "value": "eye14_hero4.png"
+                },
+                {
+                    "frame": 233,
+                    "value": "eye15_hero4.png"
+                },
+                {
+                    "frame": 250,
+                    "value": "eye16_hero4.png"
+                },
+                {
+                    "frame": 267,
+                    "value": "eye17_hero4.png"
+                },
+                {
+                    "frame": 283,
+                    "value": "eye18_hero4.png"
+                },
+                {
+                    "frame": 300,
+                    "value": "eye19_hero4.png"
+                },
+                {
+                    "frame": 317,
+                    "value": "eye1_hero4.png"
+                }
+            ]
+        },
+        "eyes4": {
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ]
+        },
+        "death4": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        1.8,
+                        -53.5
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                }
+            ],
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "hero_death.png"
+                }
+            ]
+        }
+    }
+}

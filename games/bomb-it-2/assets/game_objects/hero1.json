@@ -1,0 +1,241 @@
+{
+    "hierarchy": {
+        "name": "hero1",
+        "children": [
+            {
+                "name": "hero1_shadow"
+            },
+            {
+                "name": "death1"
+            },
+            {
+                "name": "hero1_arm_l",
+                "children": [
+                    {
+                        "name": "hero1_hand_l"
+                    }
+                ]
+            },
+            {
+                "name": "hero1_leg_r",
+                "children": [
+                    {
+                        "name": "hero1_foot_r"
+                    }
+                ]
+            },
+            {
+                "name": "hero1_leg_l",
+                "children": [
+                    {
+                        "name": "hero1_foot_l"
+                    }
+                ]
+            },
+            {
+                "name": "hero1_body"
+            },
+            {
+                "name": "hero1_arm_r",
+                "children": [
+                    {
+                        "name": "hero1_hand_r"
+                    }
+                ]
+            },
+            {
+                "name": "hero1_head",
+                "children": [
+                    {
+                        "name": "eye1_l"
+                    },
+                    {
+                        "name": "eye1_r"
+                    }
+                ]
+            },
+            {
+                "name": "eyes1"
+            }
+        ],
+        "animations": [
+            "hero1_down",
+            "hero1_side",
+            "hero1_up",
+            "hero1_down_stand",
+            "hero1_side_stand",
+            "hero1_up_stand",
+            "hero1_death"
+        ]
+    },
+    "properties": {
+        "hero1_shadow": {
+            "file": "shadow_hero1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 1.4
+            },
+            "type": "sprite"
+        },
+        "death1": {
+            "file": "hero_death.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -0.1,
+                "y": -53.5
+            },
+            "alpha": 0,
+            "type": "sprite"
+        },
+        "hero1_arm_l": {
+            "file": "arm_right_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -6.9,
+                "y": -26.6
+            },
+            "scale": {
+                "x": -1,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.2,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero1_arm_l/hero1_hand_l": {
+            "file": "hand_right_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 8.4,
+                "y": 7.6
+            },
+            "type": "sprite"
+        },
+        "hero1_leg_r": {
+            "file": "leg_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 5.9,
+                "y": -12.7
+            },
+            "scale": {
+                "x": -1,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero1_leg_r/hero1_foot_r": {
+            "file": "foot_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.1,
+                "y": 9.1
+            },
+            "type": "sprite"
+        },
+        "hero1_leg_l": {
+            "file": "leg_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -6,
+                "y": -12.7
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero1_leg_l/hero1_foot_l": {
+            "file": "foot_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.3,
+                "y": 9.1
+            },
+            "type": "sprite"
+        },
+        "hero1_body": {
+            "file": "body_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -18.9
+            },
+            "type": "sprite"
+        },
+        "hero1_arm_r": {
+            "file": "arm_right_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 7.1,
+                "y": -26.6
+            },
+            "anchor": {
+                "x": 0.2,
+                "y": 0.2
+            },
+            "type": "sprite"
+        },
+        "hero1_arm_r/hero1_hand_r": {
+            "file": "hand_right_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 8.4,
+                "y": 7.6
+            },
+            "type": "sprite"
+        },
+        "hero1_head": {
+            "file": "head_hero1_front.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -29.2
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.9
+            },
+            "type": "sprite"
+        },
+        "hero1_head/eye1_l": {
+            "file": "eye6_hero1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -8.6,
+                "y": -17.1
+            },
+            "type": "sprite"
+        },
+        "hero1_head/eye1_r": {
+            "file": "eye6_hero1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 11.2,
+                "y": -17.1
+            },
+            "type": "sprite"
+        },
+        "eyes1": {
+            "file": "eyes.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -0.1,
+                "y": -45
+            },
+            "scale": {
+                "x": 1,
+                "y": 0
+            },
+            "type": "sprite"
+        }
+    }
+}
