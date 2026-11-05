@@ -1,0 +1,314 @@
+{
+        "defaultLang" : "en-gb",
+            
+        "stats" : false,
+        "levelDebug" : false,
+        "cameraDebug" : false,
+            
+        "lang" :
+        [
+            "da-dk",
+            "de-de",
+            "en-gb",
+            "es-es",
+            "es-ar",
+            "fr-fr",
+            "it-it",
+            "nl-nl",
+            "sv-se"
+        ],        
+    
+        "preload":
+        [
+            { "id" : "FlashTween.js", "src": "libs/flashtween.js", "type": "javascript" },
+            { "id" : "gsap.min.js", "src": "libs/gsap.min.js", "type": "javascript" },
+            { "id" : "p2.min.js", "src": "libs/p2.min.js", "type": "javascript" },
+            { "id" : "pixi.min.js", "src": "libs/pixi.min.js", "type": "javascript" },
+            
+            { "id" : "FullscreenHandler.js", "src": "js/fullscreenhandler.js", "type": "javascript" },
+            { "id" : "Game.js", "src": "js/game.js", "type": "javascript" },        
+            { "id" : "Level.js", "src": "js/level.js", "type": "javascript" },
+            { "id" : "Startscreen.js", "src": "js/startscreen.js", "type": "javascript" },
+            { "id" : "AudioHandler.js", "src": "js/audiohandler.js", "type": "javascript" },
+            { "id" : "StorageHandler.js", "src": "js/storagehandler.js", "type": "javascript" },
+            { "id" : "Endscreen.js", "src": "js/endscreen.js", "type": "javascript" },
+            { "id" : "Legal.js", "src": "js/legal.js", "type": "javascript" },
+
+            { "id" : "Startscreen.json", "src": "assets/startscreen/startscreen.json", "type": "json" },
+            { "id" : "Startscreen.png", "src": "assets/startscreen/startscreen.png", "type": "image" },
+            { "id" : "Endscreen.json", "src": "assets/misc/endscreen.json", "type": "json" },
+            { "id" : "Endscreen.png", "src": "assets/misc/endscreen.png", "type": "image" },
+
+            { "id" : "Silence.ogg", "src": "assets/audio/silence.ogg", "type": "sound" },
+            { "id" : "Music_Startscreen.ogg", "src": "assets/audio/music_startscreen.ogg", "type": "sound" },
+            { "id" : "Startup_Screen.ogg", "src": "assets/audio/startup_screen.ogg", "type": "sound" },
+            { "id" : "Endscreen.ogg", "src": "assets/audio/endscreen.ogg", "type": "sound" }
+        ],
+    
+        "levelDefaults":
+        [
+            { "id" : "Player.js", "src" : "js/player.js", "type" : "javascript" },
+            { "id" : "Particles.js", "src" : "js/particles.js", "type" : "javascript" },
+            { "id" : "Camera.js", "src": "js/camera.js", "type": "javascript" },
+            { "id" : "CameraSetting.js", "src": "js/camerasetting.js", "type": "javascript" },
+            { "id" : "Cutscene.js", "src": "js/cutscene.js", "type": "javascript" },
+            { "id" : "InputHandler.js", "src": "js/inputhandler.js", "type": "javascript" },
+            { "id" : "Map.js", "src": "js/map.js", "type": "javascript" },
+            { "id" : "MapItem.js", "src": "js/mapitem.js", "type": "javascript" },
+            { "id" : "PhysicsEngine.js", "src": "js/physicsengine.js", "type": "javascript" },
+            { "id" : "Speech.js", "src": "js/speech.js", "type": "javascript" },
+            { "id" : "HUD.js", "src": "js/hud.js", "type": "javascript" },
+            { "id" : "Fader.js", "src": "js/fader.js", "type": "javascript" },
+            { "id" : "Spinjitzu.js", "src": "js/spinjitzu.js", "type": "javascript" },
+        
+            { "id" : "Swoosh_Single.ogg", "src": "assets/audio/swoosh_single.ogg", "type": "sound" },
+            { "id" : "Swoosh_Double.ogg", "src": "assets/audio/swoosh_double.ogg", "type": "sound" },
+            { "id" : "Level_Exit.ogg", "src": "assets/audio/level_exit.ogg", "type": "sound" },
+            { "id" : "Grunt_1.ogg", "src": "assets/audio/grunt_1.ogg", "type": "sound" },
+            { "id" : "Grunt_2.ogg", "src": "assets/audio/grunt_2.ogg", "type": "sound" },
+            { "id" : "Pain_1.ogg", "src": "assets/audio/pain_1.ogg", "type": "sound" },
+            { "id" : "Slide.ogg", "src": "assets/audio/slide.ogg", "type": "sound" },
+            { "id" : "Spinjitzu.ogg", "src": "assets/audio/spinjitzu.ogg", "type": "sound" },
+            { "id" : "Create_Savepoint.ogg", "src": "assets/audio/create_savepoint.ogg", "type": "sound" },
+
+            { "id" : "FxMap.png", "src" : "assets/misc/fxmap.png", "type" : "image" },
+            { "id" : "HUD.json", "src" : "assets/hud/hud.json", "type" : "json" },
+            { "id" : "HUD.png", "src" : "assets/hud/hud.png", "type" : "image" },
+            { "id" : "ArcadeMachine.json", "src" : "assets/misc/arcademachine.json", "type" : "json" },
+            { "id" : "ArcadeMachine.png", "src" : "assets/misc/arcademachine.png", "type" : "image" }
+            
+        ],
+
+	"levels" :
+	[
+		{
+                    "savepoints" : 
+                    [
+                        [ 900, 765 ]
+                    ],
+                    "preload" :
+                    [
+                        { "id" : "Cinematic_0.js", "src" : "js/cinematic_0.js", "type" : "javascript" },
+                        { "id" : "NPC.js", "src" : "js/npc.js", "type" : "javascript" },
+                        { "id" : "Waterfall.js", "src" : "js/waterfall.js", "type" : "javascript" },
+                        { "id" : "DeathAnim.js", "src" : "js/deathanim.js", "type" : "javascript" },
+                        { "id" : "Tutorial.js", "src" : "js/tutorial.js", "type" : "javascript" },
+                        { "id" : "WavingGrass.js", "src" : "js/wavinggrass.js", "type" : "javascript" },
+                
+                        { "id" : "Music_Level_0.ogg", "src": "assets/audio/music_level_0.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Grass.ogg", "src": "assets/audio/footsteps_grass.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Gravel.ogg", "src": "assets/audio/footsteps_gravel.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Stone.ogg", "src": "assets/audio/footsteps_stone.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Wood.ogg", "src": "assets/audio/footsteps_wood.ogg", "type": "sound" },
+                        { "id" : "Death_Anim.ogg", "src": "assets/audio/death_anim.ogg", "type": "sound" },
+                        { "id" : "Waterfall.ogg", "src": "assets/audio/waterfall.ogg", "type": "sound" },
+                        { "id" : "RollingStone.ogg", "src": "assets/audio/rollingstone.ogg", "type": "sound" },
+                        { "id" : "Underwood.ogg", "src": "assets/audio/underwood.ogg", "type": "sound" },
+
+                        { "id" : "Jay.json", "src" : "assets/characters/jay.json", "type" : "json" },
+                        { "id" : "Jay.png", "src" : "assets/characters/jay.png", "type" : "image" },
+                        { "id" : "Waterfall_Tex.png", "src" : "assets/misc/waterfall_tex.png", "type" : "image" },
+                        { "id" : "Speech.json", "src" : "assets/level_0/speech.json", "type" : "json" },
+                        { "id" : "Speech.png", "src" : "assets/level_0/speech.png", "type" : "image" },
+                        { "id" : "Map.json", "src" : "assets/level_0/map.json", "type" : "json" },
+                        { "id" : "Map.png", "src" : "assets/level_0/map.png", "type" : "image" },
+                        { "id" : "Tutorial.json", "src" : "assets/level_0/tutorial.json", "type" : "json" },
+                        { "id" : "Tutorial.png", "src" : "assets/level_0/tutorial.png", "type" : "image" }
+                    ]	
+		},
+		{
+                    "savepoints" : 
+                    [
+                        [ -2200, 1180 ]
+                    ],
+
+                    "preload" :
+                    [
+                        { "id" : "Cinematic_1.js", "src" : "js/cinematic_1.js", "type" : "javascript" },
+                        { "id" : "NPC.js", "src" : "js/npc.js", "type" : "javascript" },
+                        { "id" : "Enemy_Jetpack.js", "src" : "js/enemy_jetpack.js", "type" : "javascript" },
+                        { "id" : "Enemy_HUD.js", "src" : "js/enemy_hud.js", "type" : "javascript" },
+                        { "id" : "Waterfall.js", "src" : "js/waterfall.js", "type" : "javascript" },
+                        { "id" : "Samurai.js", "src" : "js/samurai.js", "type" : "javascript" },
+                        { "id" : "DeathAnim.js", "src" : "js/deathanim.js", "type" : "javascript" },
+                
+                        { "id" : "Music_Level_1.ogg", "src": "assets/audio/music_level_1.ogg", "type": "sound" },
+                        { "id" : "Music_Battle.ogg", "src": "assets/audio/music_battle.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Grass.ogg", "src": "assets/audio/footsteps_grass.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Gravel.ogg", "src": "assets/audio/footsteps_gravel.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Stone.ogg", "src": "assets/audio/footsteps_stone.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Wood.ogg", "src": "assets/audio/footsteps_wood.ogg", "type": "sound" },
+                        { "id" : "Death_Anim.ogg", "src": "assets/audio/death_anim.ogg", "type": "sound" },
+                        { "id" : "Waterfall.ogg", "src": "assets/audio/waterfall.ogg", "type": "sound" },
+                        { "id" : "Wood_Creak.ogg", "src": "assets/audio/wood_creak.ogg", "type": "sound" },
+                        { "id" : "Enemy_Jetpack.ogg", "src": "assets/audio/enemy_jetpack.ogg", "type": "sound" },
+                        { "id" : "Enemy_Jetpack_Death.ogg", "src": "assets/audio/enemy_jetpack_death.ogg", "type": "sound" },
+
+                        { "id" : "Jay.json", "src" : "assets/characters/jay.json", "type" : "json" },
+                        { "id" : "Jay.png", "src" : "assets/characters/jay.png", "type" : "image" },
+                        { "id" : "Cole.json", "src" : "assets/characters/cole.json", "type" : "json" },
+                        { "id" : "Cole.png", "src" : "assets/characters/cole.png", "type" : "image" },
+                        { "id" : "Samurai.json", "src" : "assets/characters/samurai.json", "type" : "json" },
+                        { "id" : "Samurai.png", "src" : "assets/characters/samurai.png", "type" : "image" },
+                        { "id" : "Waterfall_Tex.png", "src" : "assets/misc/waterfall_tex.png", "type" : "image" },
+                        { "id" : "Speech.json", "src" : "assets/level_1/speech.json", "type" : "json" },
+                        { "id" : "Speech.png", "src" : "assets/level_1/speech.png", "type" : "image" },
+                        { "id" : "Map.json", "src" : "assets/level_1/map.json", "type" : "json" },
+                        { "id" : "Map.png", "src" : "assets/level_1/map.png", "type" : "image" },
+                        { "id" : "Enemy_Rat_Richie.json", "src" : "assets/characters/enemy_rat_richie.json", "type" : "json" },
+                        { "id" : "Enemy_Rat_Richie.png", "src" : "assets/characters/enemy_rat_richie.png", "type" : "image" },
+                        { "id" : "Enemy_Rat_Hausner.json", "src" : "assets/characters/enemy_rat_hausner.json", "type" : "json" },
+                        { "id" : "Enemy_Rat_Hausner.png", "src" : "assets/characters/enemy_rat_hausner.png", "type" : "image" },
+                        { "id" : "Enemy_Jetpack.json", "src" : "assets/characters/enemy_jetpack.json", "type" : "json" },
+                        { "id" : "Enemy_Jetpack.png", "src" : "assets/characters/enemy_jetpack.png", "type" : "image" },
+                        { "id" : "Enemy_HUD.json", "src" : "assets/hud/enemy_hud.json", "type" : "json" },
+                        { "id" : "Enemy_HUD.png", "src" : "assets/hud/enemy_hud.png", "type" : "image" }
+                    ]
+		},
+		{
+                    "savepoints" : 
+                    [
+                        [ -1200, 560 ]
+                    ],
+
+                    "preload" :
+                    [
+                        { "id" : "Cinematic_2.js", "src" : "js/cinematic_2.js", "type" : "javascript" },
+                        { "id" : "NPC.js", "src" : "js/npc.js", "type" : "javascript" },
+                        { "id" : "Enemy_Jetpack.js", "src" : "js/enemy_jetpack.js", "type" : "javascript" },
+                        { "id" : "Enemy_HUD.js", "src" : "js/enemy_hud.js", "type" : "javascript" },
+                        { "id" : "Waterfall.js", "src" : "js/waterfall.js", "type" : "javascript" },
+                        { "id" : "DeathAnim.js", "src" : "js/deathanim.js", "type" : "javascript" },
+                        { "id" : "RopeAnim.js", "src" : "js/ropeanim.js", "type" : "javascript" },
+                
+                        { "id" : "Music_Level_2.ogg", "src": "assets/audio/music_level_2.ogg", "type": "sound" },
+                        { "id" : "Music_Battle.ogg", "src": "assets/audio/music_battle.ogg", "type": "sound" },
+                        { "id" : "Footsteps_Gravel.ogg", "src": "assets/audio/footsteps_gravel.ogg", "type": "sound" },
+                        { "id" : "Death_Anim.ogg", "src": "assets/audio/death_anim.ogg", "type": "sound" },
+                        { "id" : "Waterfall.ogg", "src": "assets/audio/waterfall.ogg", "type": "sound" },
+                        { "id" : "Enemy_Jetpack.ogg", "src": "assets/audio/enemy_jetpack.ogg", "type": "sound" },
+                        { "id" : "Enemy_Jetpack_Death.ogg", "src": "assets/audio/enemy_jetpack_death.ogg", "type": "sound" },
+
+                        { "id" : "Jay.json", "src" : "assets/characters/jay.json", "type" : "json" },
+                        { "id" : "Jay.png", "src" : "assets/characters/jay_l2.png", "type" : "image" },
+                        { "id" : "Waterfall_Tex.png", "src" : "assets/misc/waterfall_tex.png", "type" : "image" },
+                        { "id" : "Cole.json", "src" : "assets/characters/cole.json", "type" : "json" }, 
+                        { "id" : "Cole.png", "src" : "assets/characters/cole_l2.png", "type" : "image" },
+                        { "id" : "Kai.json", "src" : "assets/characters/kai.json", "type" : "json" }, 
+                        { "id" : "Kai.png", "src" : "assets/characters/kai.png", "type" : "image" }, 
+                        { "id" : "Speech.json", "src" : "assets/level_2/speech.json", "type" : "json" }, 
+                        { "id" : "Speech.png", "src" : "assets/level_2/speech.png", "type" : "image" },                                
+                        { "id" : "Map.json", "src" : "assets/level_2/map.json", "type" : "json" }, 
+                        { "id" : "Map.png", "src" : "assets/level_2/map.png", "type" : "image" },
+                        { "id" : "Enemy_Rat_Richie.json", "src" : "assets/characters/enemy_rat_richie.json", "type" : "json" }, 
+                        { "id" : "Enemy_Rat_Richie.png", "src" : "assets/characters/enemy_rat_richie.png", "type" : "image" },
+                        { "id" : "Enemy_Rat_Hausner.json", "src" : "assets/characters/enemy_rat_hausner.json", "type" : "json" }, 
+                        { "id" : "Enemy_Rat_Hausner.png", "src" : "assets/characters/enemy_rat_hausner.png", "type" : "image" },
+                        { "id" : "Enemy_Jetpack.json", "src" : "assets/characters/enemy_jetpack.json", "type" : "json" }, 
+                        { "id" : "Enemy_Jetpack.png", "src" : "assets/characters/enemy_jetpack.png", "type" : "image" },
+                        { "id" : "Enemy_HUD.json", "src" : "assets/hud/enemy_hud.json", "type" : "json" }, 
+                        { "id" : "Enemy_HUD.png", "src" : "assets/hud/enemy_hud.png", "type" : "image" }
+                    ]
+		}
+	],
+        
+        "fullscreenClicker" : "url( 'assets/misc/fullscreen_click.png' )",
+
+        "privacy" :
+        {
+            "da-dk" :
+            {
+                "link" : "https://www.lego.com/da-dk/kids/legal/privacy-policy-short",
+                "label" : "Politik om beskyttelse af personlige oplysninger"
+            },			
+            "de-de" :
+            {
+                "link" : "https://www.lego.com/de-de/kids/legal/privacy-policy-short",
+                "label" : "Datenschutz"
+            },
+            "en-gb" :
+            {
+                "link" : "https://www.lego.com/en-gb/kids/legal/privacy-policy-short",
+                "label" : "Privacy Policy"
+            },
+            "es-es" :
+            {
+                "link" : "https://www.lego.com/es-es/kids/legal/privacy-policy-short",
+                "label" : "Política de privacidad"
+            },
+            "es-ar" :
+            {
+                "link" : "https://www.lego.com/es-ar/kids/legal/privacy-policy-short",
+                "label" : "Política de privacidad"
+            },
+            "fr-fr" :
+            {
+                "link" : "https://www.lego.com/fr-fr/kids/legal/privacy-policy-short",
+                "label" : "Vie privée"
+            },
+            "it-it" :
+            {
+                "link" : "https://www.lego.com/it-it/kids/legal/privacy-policy-short",
+                "label" : "Informativa sulla privacy"
+            },
+            "nl-nl" :
+            {
+                "link" : "https://www.lego.com/nl-nl/kids/legal/privacy-policy-short",
+                "label" : "Privacybeleid"
+            },
+            "sv-se" :
+            {
+                "link" : "https://www.lego.com/sv-se/kids/legal/privacy-policy-short",
+                "label" : "Sekretesspolicy"
+            }
+        },
+        
+        "cookies" :
+        {
+            "da-dk" :
+            {
+                "link" : "https://www.lego.com/da-dk/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+			"de-de" :
+            {
+                "link" : "https://www.lego.com/de-de/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+            "en-gb" :
+            {
+                "link" : "https://www.lego.com/en-gb/kids/legal/cookie-policy",
+                "label" : "Cookie Policy"
+            },
+            "es-es" :
+            {
+                "link" : "https://www.lego.com/es-es/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+            "es-ar" :
+            {
+                "link" : "https://www.lego.com/es-ar/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+            "fr-fr" :
+            {
+                "link" : "https://www.lego.com/fr-fr/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+            "it-it" :
+            {
+                "link" : "https://www.lego.com/it-it/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+            "nl-nl" :
+            {
+                "link" : "https://www.lego.com/nl-nl/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            },
+            "sv-se" :
+            {
+                "link" : "https://www.lego.com/sv-se/kids/legal/cookie-policy",
+                "label" : "Cookies"
+            }
+        }
+}

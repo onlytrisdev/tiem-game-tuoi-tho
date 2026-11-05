@@ -1,0 +1,70 @@
+function Cinematic(level,data)
+{this.app=level.app;this.game=level.game;this.level=level;this.input=level.input;this.player=level.player;this.camera=level.camera;this.audio=this.game.audio;this.timeline=gsap.timeline({paused:true});this.cutscenes=[];this.updatables={items:[],add:this.updatables_add.bind(this),remove:this.updatables_remove.bind(this)};this.display=new PIXI.Container();this.cutscenes.push(new Cutscene(this,{id:1,name:"01 - Enter",position:[900,765],size:[400,400],startCallback:this.Cutscene_01_Start}));this.cutscenes.push(new Cutscene(this,{id:2,name:"02 - Jump Tutorial",position:[4000,800],size:[400,400],startCallback:this.Cutscene_02_Start}));this.cutscenes.push(new Cutscene(this,{id:3,name:"03 - Something On Top",position:[5280,370],size:[400,400],startCallback:this.Cutscene_03_Start}));this.cutscenes.push(new Cutscene(this,{id:4,name:"04 - Jay's Weapons",position:[6600,-1000],size:[200,200],startCallback:this.Cutscene_04_Start}));this.cutscenes.push(new Cutscene(this,{id:5,name:"05 - Destroy Underwood",position:[14000,1500],size:[200,400],startCallback:this.Cutscene_05_Start}));this.cutscenes.push(new Cutscene(this,{id:6,name:"06 - Use Spinjitzu",position:[25500,2000],size:[200,400],startCallback:this.Cutscene_06_Start}));this.cutscenes.push(new Cutscene(this,{id:7,name:"07 - Level Exit",position:[29500,2100],size:[400,500],startCallback:this.Cutscene_Level_Exit}));for(var i=0;i<this.cutscenes.length;i++)
+{this.level.map.display._MG.addChild(this.cutscenes[i].display);}
+this.collectWeapons=this.level.getItemByName("Collect_Weapons");this.tutorial=new Tutorial(this,{json:this.app.loader.getResult("Tutorial.json"),img:this.app.loader.getResult("Tutorial.png")});this.display.addChild(this.tutorial.display);this.tutorial.onResize();this.speech=new Speech(this,{json:this.app.loader.getResult("Speech.json"),img:this.app.loader.getResult("Speech.png")});this.display.addChild(this.speech.display);this.speech.bubbles[0].target=this.player.display.head_1;this.speech.bubbles[1].target=this.player.display.head_1;this.speech.bubbles[2].target=this.player.display.head_2;this.speech.bubbles[3].target=this.player.display.head_2;this.speech.bubbles[4].target=this.player.display.head_2;this.audio.create("Music_Level_0.ogg");this.updatables.add(this.speech.onUpdate);}
+Cinematic.prototype.startMusic=function()
+{setTimeout(this.startMusicDelayed.bind(this),400);}
+Cinematic.prototype.startMusicDelayed=function()
+{this.audio.play("Music_Level_0.ogg",true);}
+Cinematic.prototype.init=function()
+{this.camera=this.level.camera;if(this.game.currentSavepoint==0)
+{this.input.moveEnabled=this.input.jumpEnabled=this.input.actionEnabled=this.input.specialEnabled=false;this.camera.zoom=2;this.camera.offset={x:0,y:0};this.camera.hardReset=true;}
+else
+{this.level.hud.showEnergy();this.level.hud.showSpinjitzu();}}
+Cinematic.prototype.Cutscene_01_Start=function()
+{this.input.moveEnabled=this.input.jumpEnabled=this.input.actionEnabled=this.input.specialEnabled=false;this.player.setAnimation(this.player.ANIM.SLEEP,false);this.timeline=gsap.timeline({paused:true});this.timeline.call(this.player.setAnimation,[this.player.ANIM.SLEEP],2);this.timeline.call(this.speech.show,[0],4.5);this.timeline.call(this.speech.show,[1],7);this.timeline.to(this.camera,6,{ease:Quad.easeInOut,zoom:1},6);this.timeline.to(this.camera.offset,6,{ease:Quad.easeInOut,x:0,y:-0.2},6);this.timeline.call(this.Cutscene_01_B.bind(this),null,9);this.timeline.play();}
+Cinematic.prototype.Cutscene_01_B=function()
+{this.input.moveEnabled=true;this.tutorial.show(this.tutorial.MOVE);this.updatables.add(this.Cutscene_01_Update);}
+Cinematic.prototype.Cutscene_01_Update=function()
+{if(this.input.move)
+{this.Cutscene_01_End();}}
+Cinematic.prototype.Cutscene_01_End=function()
+{this.updatables.remove(this.Cutscene_01_Update);this.tutorial.hide(this.tutorial.MOVE);this.level.hud.showEnergy();}
+Cinematic.prototype.Cutscene_02_Start=function()
+{this.input.jumpEnabled=true;this.tutorial.show(this.tutorial.JUMP);this.updatables.add(this.Cutscene_02_Update);}
+Cinematic.prototype.Cutscene_02_Update=function()
+{if(this.input.jump)
+{this.Cutscene_02_End();}}
+Cinematic.prototype.Cutscene_02_End=function()
+{this.updatables.remove(this.Cutscene_02_Update);this.tutorial.hide(this.tutorial.JUMP);}
+Cinematic.prototype.Cutscene_03_Start=function()
+{this.timeline=gsap.timeline({paused:true});this.timeline.to(this.camera,2,{ease:Quad.easeInOut,zoom:0.7},0);this.timeline.to(this.camera.offset,2,{ease:Quad.easeInOut,x:0.2,y:-0.35},0);this.timeline.call(this.speech.show,[2],1);this.timeline.to(this.camera,3,{ease:Quad.easeInOut,zoom:0.9},3);this.timeline.to(this.camera.offset,3,{ease:Quad.easeInOut,x:0.1,y:-0.2},3);this.timeline.play();}
+Cinematic.prototype.Cutscene_04_Start=function()
+{this.player.setStateMachine({state:this.player.NONE});this.player.setAnimation(this.player.ANIM.PICKUP_WEAPONS);this.collectWeapons.display.gotoAndPlay("PICKUP");this.timeline.kill();this.timeline=gsap.timeline({paused:true});this.timeline.to(this.camera,3,{ease:Quad.easeInOut,zoom:1.6},0);this.timeline.to(this.camera.offset,3,{ease:Quad.easeInOut,x:0,y:-0.1},0);this.timeline.call(this.speech.show,[3],0);this.timeline.call(this.Cutscene_04_B.bind(this),null,2);this.timeline.play();}
+Cinematic.prototype.Cutscene_04_B=function()
+{this.input.actionEnabled=true;this.player.setStateMachine({state:this.player.IDLE});this.tutorial.show(this.tutorial.FIGHT);this.updatables.add(this.Cutscene_04_B_Update);}
+Cinematic.prototype.Cutscene_04_B_Update=function()
+{if(this.player.isAttacking)
+{this.Cutscene_04_End();}}
+Cinematic.prototype.Cutscene_04_End=function()
+{this.updatables.remove(this.Cutscene_04_B_Update);this.tutorial.hide(this.tutorial.FIGHT);this.timeline.kill();this.timeline=gsap.timeline({paused:true});this.timeline.to(this.camera,3,{ease:Quad.easeInOut,zoom:1},0);this.timeline.to(this.camera.offset,3,{ease:Quad.easeInOut,x:0.1,y:-0.2},0);this.timeline.play();}
+Cinematic.prototype.Cutscene_05_Start=function()
+{this.speech.show(4);this.level.hud.showSpinjitzu();}
+Cinematic.prototype.Cutscene_06_Start=function()
+{this.input.specialEnabled=true;this.player.resetSpinjitzuPower=false;this.tutorial.show(this.tutorial.SPINJITZU);this.updatables.add(this.Cutscene_06_Update);}
+Cinematic.prototype.Cutscene_06_Update=function()
+{if(this.player.state==this.player.SPINJITZU)
+{this.Cutscene_06_End();}}
+Cinematic.prototype.Cutscene_06_End=function()
+{this.updatables.remove(this.Cutscene_06_Update);this.tutorial.hide(this.tutorial.SPINJITZU);}
+Cinematic.prototype.Cutscene_Level_Exit=function()
+{this.input.moveEnabled=this.input.jumpEnabled=this.input.actionEnabled=this.input.specialEnabled=false;this.player.setStateMachine(this.player.BRAKE);this.audio.setVolume("Music_Level_0.ogg",0,1);this.level.levelComplete();}
+Cinematic.prototype.onUpdate=function(time,deltaTime)
+{for(var i=0;i<this.updatables.items.length;i++)
+{this.updatables.items[i].call(this,time,deltaTime);}}
+Cinematic.prototype.updatables_add=function(item)
+{var add=true;var i;for(i=0;i<this.updatables.items.length;i++)
+{if(this.updatables.items[i]==item)
+{add=false;break;}}
+if(add)this.updatables.items.push(item);}
+Cinematic.prototype.updatables_remove=function(item)
+{var i;for(i=0;i<this.updatables.items.length;i++)
+{if(this.updatables.items[i]==item)
+{this.updatables.items.splice(i,1);break;}}}
+Cinematic.prototype.stop=function()
+{this.timeline.kill();this.audio.setVolume("Music_Level_0.ogg",0,1);}
+Cinematic.prototype.reset=function(item)
+{console.log("Cinematic.reset")
+this.speech.show(-1);if(this.timeline)this.timeline.kill();this.updatables.items=[];this.updatables.add(this.speech.onUpdate);this.audio.play("Music_Level_0.ogg",true,1);}
+Cinematic.prototype.destroy=function()
+{if(this.app)this.app=null;if(this.game)this.game=null;}

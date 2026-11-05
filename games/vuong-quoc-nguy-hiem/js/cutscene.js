@@ -1,0 +1,4 @@
+function Cutscene(cinematic,data)
+{this.id=data.id;this.name=data.name;this.cinematic=cinematic;this.level=cinematic.level;this.startCallback=data.startCallback;this.display=new PIXI.Container();this.display.name=data.name;this.display.x=data.position[0];this.display.y=data.position[1];this.display.scale.x=data.size[0]*0.01;this.display.scale.y=data.size[1]*0.01;this.display.alpha=0.3;this.collider=new PIXI.Sprite(PIXI.Texture.WHITE);this.collider.name="Collider_Quad";this.collider.x=-50;this.collider.y=-50;this.collider.width=100;this.collider.height=100;this.display.addChild(this.collider);this.sensor=new Sensor(this.display,this.level.map,this);}
+Cutscene.prototype.onBeginContact=function(e)
+{this.startCallback.call(this.cinematic,this);console.log("Cutscene Start:",this.name);}
