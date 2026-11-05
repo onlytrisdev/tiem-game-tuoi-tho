@@ -1,0 +1,157 @@
+<html>
+
+    <head>
+
+		<meta charset="utf-8">
+
+        <title>Phong cách công chúa</title>
+
+        <meta name="viewport" content="width=device-width, minimal-ui, maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no" />
+
+		
+
+		<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	
+
+        <style>
+
+            body {
+
+                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+                -webkit-touch-callout: none;
+
+                -webkit-user-select: none;
+
+                -khtml-user-select: none;
+
+                -moz-user-select: none;
+
+                -ms-user-select: none;
+
+                -o-user-select: none;
+
+                user-select: none;
+
+                padding:0px;
+
+                margin:0px;
+
+            }
+
+            #gameArea {
+
+                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+                -webkit-touch-callout: none;
+
+                -webkit-user-select: none;
+
+                -khtml-user-select: none;
+
+                -moz-user-select: none;
+
+                -ms-user-select: none;
+
+                -o-user-select: none;
+
+                user-select: none;
+
+                position: fixed;
+
+                display: block;
+
+                left:50%;
+
+                top:50%;
+
+            }
+
+            #imgl2p{
+
+                position: fixed;
+
+                display: none;
+
+                left:50%;
+
+                top:50%;
+
+            }
+
+            canvas{
+
+                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+                -webkit-touch-callout: none;
+
+                -webkit-user-select: none;
+
+                -khtml-user-select: none;
+
+                -moz-user-select: none;
+
+                -ms-user-select: none;
+
+                -o-user-select: none;
+
+                user-select: none;
+
+                display: block;
+
+                width: 100%;
+
+                height: 100%;
+
+            }
+
+        </style>
+
+
+
+        <script>
+
+            // Package-ID
+
+            window.famobi_gameID = "fairy-princess";
+
+            window.famobi_gameJS = ["game.min.js", function(){
+
+                init();
+
+            }];
+
+
+
+            (function (document, url, fgJS, firstJS) {
+
+                    fgJS = document.createElement('script');
+
+                    firstJS = document.getElementsByTagName('script')[0];
+
+                    fgJS.src = url + encodeURIComponent(document.location.href);
+
+                    firstJS.parentNode.insertBefore(fgJS, firstJS);
+
+            })(document, './gameapi/v1.js?e=');
+
+        </script>
+
+
+
+    </head>
+
+    <body>
+
+        <div id="gameArea"  unselectable="on">
+
+            <canvas id="testCanvas" width="640" height="712" oncontextmenu="return false;"></canvas>
+
+        </div>
+
+    </body>
+
+</html>

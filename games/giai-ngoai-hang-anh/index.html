@@ -1,0 +1,114 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+	<title>Giải ngoại hạng anh</title>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.01, minimal-ui" />
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			background-color:black;
+		}	
+
+		canvas {	
+			-ms-touch-action: none;
+			image-rendering: -o-crisp-edges;           
+			image-rendering: optimize-contrast;        
+			-ms-interpolation-mode: nearest-neighbor;  
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			-moz-tap-highlight-color: rgba(0,0,0,0);
+			tap-highlight-color: rgba(0,0,0,0);
+			user-select: none;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		} 
+	</style>
+	
+	<script src="viewporter.js"></script>
+	
+</head>
+    <!-- Include the HTML5 API -->
+    <script type="text/javascript">
+        var mode = (RegExp('bm.mode' + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1];
+
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.setAttribute('id', 'booster-api');
+
+        script.src = 'shared/booster/api.js';
+
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(script, s);
+    </script>
+    <script type="text/javascript">
+        var Booster = window.Booster || {};
+
+        Booster.ready = function() {
+					
+            new Booster.Init({
+                orientation: 'landscape',
+                splash: true,
+                minimalUI: true
+            });
+
+            analytics = new Booster.Analytics({
+                
+            });
+
+            community = new Booster.Community({
+                position: 2,
+                gameCode: 'Play Match'
+            });
+
+            adSense = new Booster.Ad({
+                type: 'adsense',
+                size: '300x250',
+                channelID: 8686499627
+            });
+						
+			boosterLoaded(adSense);
+        };
+    </script>
+	<body> 
+		<div id="viewporter">
+		   <canvas id="canvas" moz-opaque></canvas>
+		</div>
+	</body>
+	<script src="TweenMax.min.js"></script>
+	<script src="howler.js"></script>
+	<script src="app.js"></script>
+	
+	
+
+
+		
+<script>
+
+function showHideMenu1()
+{
+	if(document.getElementById("game_menu").className == "gamemenubutton openmenu")
+	{
+		document.getElementById("game_menu").className = "gamemenubutton openmenu active";
+		document.getElementById("game_ovelay").className = "gamemenu-overlay overlay";
+		document.getElementById("wdg_menu_drawer").className = "wdg_menu_drawer opened";
+	}
+	else
+	{
+		document.getElementById("game_menu").className = "gamemenubutton openmenu";
+		document.getElementById("game_ovelay").className = "gamemenu-overlay overlay hidden";
+		document.getElementById("wdg_menu_drawer").className = "wdg_menu_drawer closed";
+	}
+}
+</script>
+
+
+
+
+</html>

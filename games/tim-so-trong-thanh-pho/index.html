@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+<meta charset="utf-8">
+<title>Tìm số trong thành phố</title>
+<meta name="date" content="2014-10-14">
+<meta name="gameCats" content="HiddenObject">
+<meta property="og:type" content="game">
+<meta property="og:title" content="Numbers In The City">
+<meta property="og:description" content="Numbers in the City: Find all hidden numbers as fast as you can.">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,width=device-width,viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="theme-color" content="#000">
+<link rel="manifest" href="manifest.json">
+<link rel="shortcut icon" sizes="196x196" href="img/icon/icon-196x196.png">
+<link rel="apple-touch-icon" href="img/icon/icon-60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icon/icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icon/icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icon/icon-152x152.png">
+<link rel="stylesheet" type="text/css" href="css/game.css">
+<script src="js/ThirdParty.js"></script>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/words.en.js"></script>
+<script src="js/game.js"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-143781837-1");</script></head><script>try{var agRegex=RegExp("addictinggames.com");window.SWAGTHEME=!document.referrer||agRegex.test(document.referrer)?"addictinggames":"shockwave"}catch(e){}</script><style>body { -webkit-touch-callout:none; -webkit-tap-highlight-color:rgba(0,0,0,0); } body * { -webkit-touch-callout:none; -webkit-tap-highlight-color:rgba(0,0,0,0); } </style><script>window.addEventListener('keydown', function(e) { if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1 && e.target == document.body) { e.preventDefault(); } }, false);</script>
+<body>
+<div class="desc">
+<h1>Numbers In The City</h1>
+<p>Numbers in the City: Find all hidden numbers as fast as you can.</p>
+</div>
+<div id="gameContainer">
+<div id="loading"></div>
+<div id="menuDiv">
+</div>
+<div id="gameDiv">
+<div id="gameBoard">
+<img id="image" src="img/pixel.gif">
+<div id="nums"></div>
+</div>
+<div id="toFind"></div>
+<div id="gameMenu">
+<div class="fancy" style="position:absolute;top:50px;left:12px;width:80px;font-size:20px;text-align:center" id="timer">00:00</div>
+<div class="fancy" style="position:absolute;top:142px;left:12px;width:80px;font-size:20px;text-align:center" id="score">0</div>
+<div class="fancy" style="position:absolute;top:234px;left:12px;width:80px;font-size:20px;text-align:center" id="level">0</div>
+<div class="audio" style="position:absolute;top:390px;left:2px">
+<div class="music on" lang="title:word(11)" onclick="Game.toggleMusic(this)"></div>
+<div class="sound on" lang="title:word(12)" onclick="Game.toggleSound(this)"></div>
+</div>
+</div>
+</div>
+<div id="helpDiv">
+</div>
+<div id="gameOverDiv"></div>
+</div>
+<div id="rotateHint">
+<b lang="word(14)"></b>
+<img class="rotate" src="img/rotate.png" lang="alt:word(14)">
+<img id="rotateClose" src="img/close.png" alt="X">
+</div>
+<script> 
+	var gameName = document.title;
+	GameLib.init(gameName, 800, 480); 
+</script>
+
+
+</body>
+</html>

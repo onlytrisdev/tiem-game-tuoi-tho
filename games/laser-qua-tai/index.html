@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <title>Contruct Game</title>
+
+    <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+  </head>
+
+  <style>
+
+    html,
+
+    body {
+
+      margin: 0;
+
+      padding: 0;
+
+      overflow: hidden;
+
+    }
+
+    iframe {
+
+      width: 100vw;
+
+      height: 100vh;
+
+      border: none;
+
+      margin: 0;
+
+      padding: 0;
+
+      overflow: hidden;
+
+    }
+
+  </style>
+
+  <body>
+
+    <script>window.YaGames={init:()=>Promise.resolve({adv:{showFullscreenAdv:()=>{}},deviceInfo:{isMobile:()=>false,isTablet:()=>false}})};
+
+      const draftRu = "ru/game.html";
+
+      const draftEn = "en/game.html";
+
+      const draftTr = "tr/game.html";
+
+
+
+      let domain;
+
+      const rows = decodeURIComponent(location.hash).toString().split("&");
+
+      for (let i = 0; i < rows.length; i++) {
+
+        const origins = rows[i].match(/(origin=)([A-Za-z\.://]+)/);
+
+        if (!!origins && origins[1] === "origin=") {
+
+          domain = origins[2].split(".")[1];
+
+          break;
+
+        }
+
+      }
+
+
+
+      const switchDomain = { ru: draftRu, com: draftEn };
+
+      const iframe = document.createElement("iframe");
+
+      iframe.src = switchDomain[domain] || draftEn;
+
+      document.body.append(iframe);
+
+
+
+      YaGames.init({
+
+        adv: {
+
+          onAdvClose: (wasShown) => {
+
+            console.info("adv closed!");
+
+          },
+
+        },
+
+      }).then((ysdk) => {
+
+        var isOpened = false;
+
+
+
+        var callbacks = {
+
+          onOpen: () => {
+
+            isOpened = true;
+
+          },
+
+          onClose: () => {
+
+            isOpened = false;
+
+          },
+
+          onError: (error) => {
+
+            console.log("errored to show adv: ", error);
+
+            isOpened = false;
+
+          },
+
+        };
+
+
+
+        function show() {
+
+          if (!isOpened) {
+
+            ysdk.adv.showFullscreenAdv({
+
+              callbacks: callbacks,
+
+            });
+
+          }
+
+        }
+
+
+
+        show();
+
+
+
+        window.addEventListener("message", (event) => {
+
+          if (event.data.type === "showadv") {
+
+            show();
+
+          } else if (event.data.type === "ismobile") {
+
+            let ismobile =
+
+              ysdk.deviceInfo.isMobile() || ysdk.deviceInfo.isTablet();
+
+            iframe.contentWindow.postMessage(
+
+              { type: "ismobile", value: ismobile },
+
+              "*"
+
+            );
+
+          }
+
+        });
+
+      });
+
+    </script>
+
+    
+
+  
+</body>
+
+</html>
+

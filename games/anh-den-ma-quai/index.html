@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bounsweet's Bouncy Adventure</title>
+
+<meta name="robots" content="noindex,nofollow" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<style type="text/css">
+
+    html,body {
+
+      background-color: #333;
+
+      color: #fff;
+
+      font-family: helvetica, arial, sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+      font-size: 12pt;
+
+    }
+
+
+
+    #canvas {
+
+      background-color: #FF0000;
+
+      /*background: url("media/images/common/background.jpg");*/
+
+    background-size: 100% 100%;
+
+      position: absolute;
+
+      left: 0;
+
+      right: 0;
+
+      top: 0;
+
+      bottom: 0;
+
+      /*margin: auto;*/
+
+      /*width: 100%;*/
+
+      /*max-width: 780px;*/
+
+      /*width: 780px;*/
+
+      /*height: 510px;*/
+
+      /*width: 780px;*/
+
+      /*height: 510px;*/
+
+    }
+
+
+
+  </style>
+<script type="application/javascript">
+
+
+
+    var langSet = getParameterByName("lang");
+
+    var testLocale = langSet ? langSet : "en-US"; // default to en-US
+
+
+
+    function getParameterByName(name, url) {
+
+      if (!url) url = window.location.href;
+
+      name = name.replace(/[\[\]]/g, "\\$&");
+
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i"),
+
+        results = regex.exec(url);
+
+      if (!results) return null;
+
+      if (!results[2]) return '';
+
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+
+    }
+
+
+
+    //placeholder for the designers to test the locales without touching my js files
+
+    //            testLocale = "de-DE";
+
+    //            testLocale = "en-US";
+
+    //            testLocale = "es-ES";
+
+    //    			  testLocale = "fr-FR";
+
+    //            testLocale = "it-IT";
+
+    //            testLocale = "da-DK";
+
+    //            testLocale = "fi-FI";
+
+    //            testLocale = "nb-NO";
+
+    //            testLocale = "nl-NL";
+
+    //            testLocale = "pt-BR";
+
+    //            testLocale = "ru-RU";
+
+    //            testLocale = "sv-SE";
+
+
+
+    //pcom test locales
+
+    //            testLocale = "en-gb";
+
+    //            testLocale = "fr";
+
+    //            testLocale = "it";
+
+    //            testLocale = "de";
+
+    //            testLocale = "es";
+
+    //            testLocale = "pt-br";
+
+    //            testLocale = "nb";
+
+    //            testLocale = "se";
+
+    //            testLocale = "fi";
+
+    //            testLocale = "nl";
+
+    //            testLocale = "ru";
+
+    //           	testLocale = "da";
+
+  </script>
+<script type="text/javascript" src="lib/plugins/jquery-1.11.3.js"></script>
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+<script type="text/javascript" src="game.min.js"></script>
+</head>
+<body>
+
+
+<div id='canvas-container'>
+
+
+
+<canvas id="canvas"></canvas>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+<!doctype html>
+
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <meta charset="utf-8">
+
+    <title>Đưa bóng vào lưới</title>
+
+
+
+    <!-- Define the viewport -->
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, target-densitydpi=device-dpi">
+
+		  <script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script type="text/javascript" src=""></script>
+
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+
+    <style>
+
+        * {
+
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+        }
+
+
+
+        html {
+
+            overflow: hidden;
+
+        }
+
+
+
+        body, html {
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #333333;
+
+            -webkit-touch-callout: none;
+
+            -webkit-user-select: none;
+
+            -khtml-user-select: none;
+
+            -moz-user-select: none;
+
+            -ms-user-select: none;
+
+            user-select: none;
+
+        }
+
+        #gamediv {
+
+            margin: 0;
+
+            padding: 0;
+
+            height: 960px;
+
+            min-height:  960px;
+
+            width: 100%;
+
+            display: block;
+
+        }
+
+
+
+        #canvas {
+
+            background-color: #64B5DF;
+
+            margin: 0;
+
+            padding: 0;
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            margin-top: -172px;
+
+            margin-left: -160px;
+
+            z-index: 1;
+
+        }
+
+    </style>
+
+    <style>
+
+        #spilgames-splash-screen{
+
+            width: 100%;
+
+            height: 100%;
+
+        background: url('http://www8.agame.com/mirror/img/Splash_Image_A10.png') top center no-repeat; /* Change "A10" to "GGG" or "Zibbo" based on the brand your game matches */
+
+            position: absolute;
+
+            z-index: 10000; /* Make sure its on top of the game */
+
+            background-size: 90%;
+
+            background-color:#3890ae; /* Change to #FFF for GGG or Zibbo branded games */
+
+        }
+
+        .spilgames-splash-screen-gone{
+
+            display:none !important;
+
+        }
+
+    </style>
+
+   <!--   -->
+
+    <script type="text/javascript" src="game.min.js"></script>
+
+    <!-- Block Outgoing links -->
+
+    <script src="blocklinks.js"></script>
+
+</head>
+
+
+
+<body onload="MyGame.init()">
+
+<div id="spilgames-splash-screen" class="spilgames-splash-screen-gone"></div>
+
+
+
+<div id="gamediv"></div>
+
+    <canvas id="canvas" width="320" height="356"></canvas>
+
+    
+
+     <script type="text/javascript">
+
+     
+
+            
+
+            /*
+
+            // Checks if splash screen is enabled and if it has an 'action' method
+
+            var splashData = apiInstance.Branding.getSplashScreen();
+
+            if(splashData.show && splashData.action) {
+
+            
+
+            var splashScreen = document.getElementById('spilgames-splash-screen');
+
+            splashScreen.addEventListener('click', splashData.action);
+
+            splashScreen.classList.remove('spilgames-splash-screen-gone');
+
+            
+
+            // Displays the splash screen for 2 seconds,
+
+            window.setTimeout(function() {
+
+                splashScreen.classList.add('spilgames-splash-screen-gone');
+
+            }, 2000);
+
+
+
+            }*/
+
+        
+
+    </script>
+
+    
+
+
+</body>
+
+
+
+</html>
+

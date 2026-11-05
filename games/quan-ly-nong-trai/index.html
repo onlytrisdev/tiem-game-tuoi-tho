@@ -1,0 +1,298 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+
+
+  <title>Quản lý nông trại - Arcade</title>
+
+
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+
+  <meta name="viewport"
+
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="format-detection" content="telephone=no">
+
+
+
+  <!-- force webkit on 360 -->
+
+  <meta name="renderer" content="webkit"/>
+
+  <meta name="force-rendering" content="webkit"/>
+
+  <!-- force edge on IE -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+
+
+  <!-- force full screen on some browser -->
+
+  <meta name="full-screen" content="yes"/>
+
+  <meta name="x5-fullscreen" content="true"/>
+
+  <meta name="360-fullscreen" content="true"/>
+
+
+
+  <!-- force screen orientation — khớp settings portrait -->
+
+  <meta name="screen-orientation" content="portrait"/>
+
+  <meta name="x5-orientation" content="portrait">
+
+
+
+  <meta name="x5-page-mode" content="app">
+
+
+
+  <link rel="stylesheet" type="text/css" href="arcade-ui.css?v=20261103b"/>
+
+  <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+  <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+
+
+</head>
+
+<style type="text/css">
+
+body {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0;
+
+  border: 0;
+
+  margin: 0;
+
+
+
+  cursor: default;
+
+  color: #888;
+
+  background-color: #333;
+
+
+
+  text-align: center;
+
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+
+
+
+  display: flex;
+
+  flex-direction: column;
+
+
+
+  /* fix bug: https://github.com/cocos-creator/2d-tasks/issues/791 */
+
+  overflow: hidden;
+
+}
+
+</style>
+
+<body>
+
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+
+  <div id="splash">
+
+    <div class="progress-bar stripes">
+
+      <span style="width: 0%"></span>
+
+    </div>
+
+  </div>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  <div id="gv-player-avatar">
+
+    <div id="gv-player-avatar-face" role="img" aria-label="Avatar nhân vật"></div>
+
+    <button type="button" id="gv-player-avatar-edit" aria-label="Đổi avatar" title="Đổi avatar">✎</button>
+
+  </div>
+
+
+
+  <div id="gv-avatar-overlay" aria-hidden="true">
+
+    <div id="gv-avatar-sheet" role="dialog" aria-modal="true" aria-labelledby="gv-avatar-title">
+
+      <div id="gv-avatar-sheet-header">
+
+        <h2 id="gv-avatar-title">Chọn avatar</h2>
+
+        <button type="button" id="gv-avatar-close" aria-label="Đóng">×</button>
+
+      </div>
+
+      <div id="gv-avatar-sheet-body">
+
+        <div id="gv-avatar-preview-block">
+
+          <div id="gv-avatar-preview" role="img" aria-label="Xem trước avatar"></div>
+
+        </div>
+
+        <div id="gv-avatar-track-wrap">
+
+          <div id="gv-avatar-track"></div>
+
+        </div>
+
+      </div>
+
+      <div id="gv-avatar-action">
+
+        <p id="gv-avatar-action-hint" hidden>Bấm avatar có ổ khóa để mở</p>
+
+        <button type="button" id="gv-avatar-unlock" hidden>Mở khóa</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+<script src="src/settings.58038.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-offline.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-no4399.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-save.js?v=20261103c" charset="utf-8"></script>
+
+<script src="arcade-score.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-profile.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-avatar.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-avatar-picker.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-ads.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-turnning-helper.js?v=20261103b" charset="utf-8"></script>
+
+<script src="arcade-ui.js?v=20261103b" charset="utf-8"></script>
+
+<script src="main.f4279.js?v=20261103c" charset="utf-8"></script>
+
+
+
+<script type="text/javascript">
+
+(function () {
+
+    // Step 4 = nhánh có QC (trước đây là 4399 h5api; giờ Arcade GVAdBreak)
+
+    window.Step = 4;
+
+
+
+    function startBoot() {
+
+      var splash = document.getElementById('splash');
+
+      splash.style.display = 'block';
+
+
+
+      var cocos2d = document.createElement('script');
+
+      cocos2d.async = true;
+
+      cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.990b6.js';
+
+
+
+      var engineLoaded = function () {
+
+          document.body.removeChild(cocos2d);
+
+          cocos2d.removeEventListener('load', engineLoaded, false);
+
+          window.boot();
+
+      };
+
+      cocos2d.addEventListener('load', engineLoaded, false);
+
+      document.body.appendChild(cocos2d);
+
+    }
+
+
+
+    if (window.ArcadeSave && window.ArcadeSave.ready) {
+
+      window.ArcadeSave.ready.then(startBoot).catch(startBoot);
+
+    } else {
+
+      startBoot();
+
+    }
+
+})();
+
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,132 @@
+{
+    "id": 359,
+    "title": "Lucy Hale Round The Clock Fashionista",
+    "name": "lucy_hale_round_the_clock_fashionista",
+    "languages": ["English", "Russian", "German", "Finnish", "Swedish", "Brazilian PT", "Bulgarian", "Greek", "Lithuanian", "Croatian", "Latvian", "Italian", "French", "Hungarian", "Spanish", "Czech", "Arabic", "Vietnamese", "Norwegian", "Thai", "Ukrainian", "Japanese", "Slovak", "Indonesian", "Polish", "Danish", "Hebrew", "Romanian", "Chinese", "Dutch", "Turkish", "Serbian", "Hindu"],
+    "rebrandName": "Celebrity Round The Clock Fashionista",
+    "portal": "Enjoydressup",
+    "core": "v0.2",
+    "ga": {
+        "key1": "99bb79d9918c2929e0824a52991fc71a",
+        "key2": "83fdf345802e5f805cfa8b4b15884ed8070702d7"
+    },
+    "publishers": [{
+        "domain": "default",
+        "publisher": 0,
+        "publisher_name": "none",
+        "force_language": "",
+        "whitelist": 0,
+        "hide_splash": 0,
+        "ads_positions": ["unit1", "unit3", "end1", "unit2", "unit4", "reward1", "unit5", "unit6", "unit7", "unit8", "unit9", "unit10", "unit11", "unit12", "replay1"],
+        "timer_ads_positions": ["unit1", "unit3", "end1", "unit2", "unit4", "replay1", "unit5", "unit6", "unit7", "unit8", "unit9", "unit10", "unit11", "unit12", "pre2"],
+        "first_timer": "",
+        "timer_between_ads": "35",
+        "timer_resets_on_click": "0",
+        "ads_cap": 0,
+        "ad_tag": "\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=730x400&iu=\/14162828\/AFG-Ingame&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&hl=en-US",
+        "ads_locked": 0,
+        "description_url": "default",
+        "custom_description_url": "",
+        "lock_count": 0,
+        "locked": 0,
+        "rebrand": 0,
+        "optional": {
+            "outgoing": [{
+                "zone": "logo_button",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                "image": "",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "preloader",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                "image": "",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "mg",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                "image": "",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "thumb_1",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/test_design1_gold.png",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "thumb_2",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/elsa",
+                "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/Elsa_Design5_gold.png",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "thumb_3",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/elsa",
+                "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/Elsa_design1_gold.png",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "thumb_4",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/game_anna_vs_elsa_design1_gold.png",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "thumb_5",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/ariel",
+                "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/Ariel_Design5_gold.png",
+                "xpos": "",
+                "ypos": ""
+            }, {
+                "zone": "thumb_6",
+                "unit": "",
+                "block": "0",
+                "utm": "1",
+                "show": "1",
+                "url": "http:\/\/www.enjoydressup.com\/search\/cinderella",
+                "image": "https:\/\/cms.ideastudios.ro\/october\/storage\/app\/media\/Thumbs\/ariel_vs_belle.png",
+                "xpos": "",
+                "ypos": ""
+            }],
+            "facebook_like": {
+                "show": 1,
+                "page": "enjoygirlgames"
+            }
+        },
+        "adglare_campaign": ""
+    }]
+}

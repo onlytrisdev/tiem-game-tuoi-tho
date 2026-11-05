@@ -1,0 +1,236 @@
+/* Arcade UI — logo + Settings dropdown (góc trên phải) */
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.arcade-logo {
+  position: fixed;
+  left: max(12px, env(safe-area-inset-left));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 10040;
+  width: 52px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none;
+  filter: none;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  display: block;
+  overflow: hidden;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+.arcade-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  pointer-events: none;
+  filter: none;
+}
+
+.arcade-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.15) 44%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.15) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  animation: gv-logo-sweep 10s linear infinite;
+}
+
+@keyframes gv-logo-cycle {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  45% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes gv-logo-sweep {
+  0%,
+  4% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  6% { opacity: 1; }
+  22% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  24% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  28% { opacity: 1; }
+  44% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  46%,
+  100% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+}
+
+/* Settings — góc trên phải */
+#gv-settings {
+  position: fixed;
+  top: max(8px, env(safe-area-inset-top));
+  right: max(8px, env(safe-area-inset-right));
+  z-index: 10050;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+#gv-settings-btn,
+.gv-settings-item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#gv-settings-btn img,
+.gv-settings-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#gv-settings-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+#gv-settings.open #gv-settings-menu {
+  display: flex;
+}
+
+/* Popup xóa data */
+#gv-delete-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10100;
+  background: rgba(0, 0, 0, 0.55);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#gv-delete-overlay.show {
+  display: flex;
+}
+
+#gv-delete-dialog {
+  width: min(320px, 100%);
+  background: #fff8ef;
+  color: #2b2118;
+  border-radius: 12px;
+  padding: 18px 16px 14px;
+  box-sizing: border-box;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+#gv-delete-dialog p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+#gv-delete-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#gv-delete-actions button {
+  min-width: 96px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#gv-delete-cancel {
+  background: #e8dfd2;
+  color: #2b2118;
+}
+
+#gv-delete-ok {
+  background: #c45c26;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arcade-logo {
+    animation: none;
+    opacity: 0.95;
+  }
+  .arcade-logo::after {
+    animation: none;
+    display: none;
+  }
+}

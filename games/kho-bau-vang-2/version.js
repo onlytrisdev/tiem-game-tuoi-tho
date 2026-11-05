@@ -1,0 +1,2 @@
+version="24";
+libs=["@azerion/phaser-input@2.0/build/phaser-input.min.js","@azerion/phaser-ads@2.2/build/phaser-ads.min.js","@azerion/phaser-cachebuster@2.0/build/phaser-cachebuster.min.js","@azerion/phaser-spine@3.0/build/phaser-spine.min.js","@azerion/splash@3.6/build/splash.min.js","@azerion/phaser-super-storage@1.0/build/phaser-super-storage.min.js"];

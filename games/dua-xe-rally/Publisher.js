@@ -1,0 +1,1 @@
+var publisher={gameName:"Rally Racer",gameVersion:"1.1",gameCategory:"Puzzle",developerId:"0097",gameCode:"0097-rally_racer",adChannel:'poki_0097-rally_racer',enableAds:false,adFreq:"60",firstAd:"0",moreGames:0,moreGamesURL:"https://localhost"};

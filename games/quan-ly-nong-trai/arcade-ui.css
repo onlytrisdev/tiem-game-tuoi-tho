@@ -1,0 +1,581 @@
+/* Arcade UI — logo overlay */
+
+.arcade-logo {
+  position: fixed;
+  left: max(12px, env(safe-area-inset-left));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 10040;
+  width: 52px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  box-shadow: none;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  display: block;
+  overflow: hidden;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+.arcade-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+.arcade-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.15) 44%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.15) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  animation: gv-logo-sweep 10s linear infinite;
+}
+
+@keyframes gv-logo-cycle {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  45% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes gv-logo-sweep {
+  0%,
+  4% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  6% { opacity: 1; }
+  22% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  24% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  28% { opacity: 1; }
+  44% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  46%,
+  100% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+}
+
+#gv-delete-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10060;
+  background: rgba(0, 0, 0, 0.55);
+  align-items: center;
+  justify-content: center;
+}
+
+#gv-delete-overlay.show {
+  display: flex;
+}
+
+#gv-delete-dialog {
+  background: #1e2430;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 18px;
+  max-width: 320px;
+  width: 86%;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+#gv-delete-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+#gv-delete-actions button {
+  min-width: 88px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#gv-delete-cancel {
+  background: #4a5568;
+  color: #fff;
+}
+
+#gv-delete-ok {
+  background: #e53e3e;
+  color: #fff;
+}
+
+/* Nút xóa góc màn hình: đã chuyển vào bảng Cài đặt (GameSetWindow). */
+#gv-btn-clear-data {
+  display: none !important;
+}
+
+#gv-btn-clear-data img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+#gv-hud-right {
+  position: fixed;
+  top: max(24px, env(safe-area-inset-top, 0px) + 20px);
+  right: max(8px, env(safe-area-inset-right, 0px) + 6px);
+  z-index: 10045;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  pointer-events: none;
+}
+
+#gv-hud-right[hidden] {
+  display: none !important;
+}
+
+#gv-hud-right.gv-visible {
+  pointer-events: auto;
+}
+
+#gv-btn-score {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  pointer-events: auto;
+  transform-origin: center center;
+}
+
+#gv-btn-score img img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  transform: scale(0.8);
+  opacity: 0.8;
+  filter: blur(0.6px);
+  transform-origin: center center;
+  transition:
+    transform 0.22s ease,
+    opacity 0.22s ease,
+    filter 0.22s ease;
+}
+
+#gv-btn-score:hover img,
+#gv-btn-score:focus-visible img:hover img:focus-visible img {
+  transform: scale(1);
+  opacity: 1;
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #gv-btn-score img img {
+    transition: none;
+    filter: none;
+    opacity: 0.8;
+  }
+
+  #gv-btn-score:hover img,
+  #gv-btn-score:focus-visible img:hover img:focus-visible img {
+    opacity: 1;
+  }
+}
+
+#gv-score-toast {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: max(80px, env(safe-area-inset-bottom, 0px) + 72px);
+  transform: translateX(-50%);
+  z-index: 10055;
+  max-width: min(90vw, 340px);
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  pointer-events: none;
+}
+
+#gv-score-toast.show {
+  display: block;
+}
+
+#gv-player-avatar {
+  display: none;
+  position: fixed;
+  z-index: 10048;
+  box-sizing: border-box;
+  pointer-events: none;
+  background: transparent;
+}
+
+#gv-player-avatar.show {
+  display: block !important;
+}
+
+#gv-player-avatar-face {
+  width: 100%;
+  height: 100%;
+  border-radius: 18%;
+  overflow: hidden;
+  background: transparent;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+#gv-player-avatar-edit {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #2e8cff;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  z-index: 1;
+}
+
+#gv-player-avatar-edit:active {
+  transform: scale(0.94);
+}
+
+#gv-avatar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10070;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+#gv-avatar-overlay.show {
+  display: block;
+}
+
+#gv-avatar-sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 68vh;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px max(18px, env(safe-area-inset-bottom));
+  background: #fff8ef;
+  border-radius: 18px 18px 0 0;
+  transform: translateY(105%);
+  transition: transform 0.28s ease;
+  box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+#gv-avatar-sheet-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#gv-avatar-sheet.show {
+  transform: translateY(0);
+}
+
+#gv-avatar-sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#gv-avatar-title {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5c3a1a;
+}
+
+#gv-avatar-close {
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #5c3a1a;
+  padding: 0 4px;
+}
+
+#gv-avatar-preview-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+#gv-avatar-preview {
+  width: 132px;
+  height: 132px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: transparent;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  transform: scale(0.96);
+  transform-origin: center center;
+}
+
+#gv-avatar-action {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  text-align: center;
+  min-height: 52px;
+  background: #fff8ef;
+  border-top: 1px solid rgba(92, 58, 26, 0.08);
+}
+
+#gv-avatar-action-hint {
+  display: none !important;
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #7a5c3a;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+#gv-avatar-action-hint[hidden] {
+  display: none;
+}
+
+#gv-avatar-action-hint:not([hidden]) {
+  display: block;
+}
+
+#gv-avatar-unlock {
+  display: none;
+  width: min(100%, 280px);
+  margin: 0 auto;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #e85c4a 0%, #c92828 100%);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(200, 40, 40, 0.35);
+}
+
+#gv-avatar-unlock.gv-mode-select {
+  background: linear-gradient(180deg, #5cb85c 0%, #3d9a3d 100%);
+  box-shadow: 0 4px 12px rgba(60, 140, 60, 0.35);
+}
+
+#gv-avatar-unlock.gv-mode-current {
+  background: linear-gradient(180deg, #a89078 0%, #8a735c 100%);
+  box-shadow: 0 4px 12px rgba(92, 58, 26, 0.22);
+  cursor: default;
+  opacity: 0.95;
+}
+
+#gv-avatar-unlock.gv-mode-current:active {
+  transform: none;
+}
+
+#gv-avatar-unlock:not([hidden]) {
+  display: block;
+}
+
+#gv-avatar-unlock:active {
+  transform: scale(0.98);
+}
+
+#gv-avatar-track-wrap {
+  overflow: hidden;
+  margin: 0;
+}
+
+#gv-avatar-track {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 6px 4px 8px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#gv-avatar-track.gv-dragging {
+  scroll-snap-type: none;
+  cursor: grabbing;
+  touch-action: none;
+}
+
+#gv-avatar-track::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gv-avatar-item {
+  flex: 0 0 auto;
+  position: relative;
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gv-avatar-face {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: transparent;
+  background-clip: padding-box;
+}
+
+.gv-avatar-lock {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gv-avatar-lock::after {
+  content: "🔒";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55));
+}
+
+.gv-avatar-qc-chip {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(200, 40, 40, 0.92);
+  padding: 2px 5px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.gv-avatar-check {
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e8b923;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.gv-avatar-item.gv-locked .gv-avatar-lock {
+  display: block;
+}
+
+.gv-avatar-qc-chip {
+  display: none !important;
+}
+
+.gv-avatar-item.gv-selected .gv-avatar-check {
+  display: block;
+}

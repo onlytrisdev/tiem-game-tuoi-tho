@@ -1,0 +1,85 @@
+img{position:absolute}
+
+html, body{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+body{margin:0;width:100%;position:absolute;font-family:arial; overflow:hidden;resize:none; }
+
+/*xpaker update 20150429*/
+#background {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+#progress_bar{left:10%; top:40%;  width:80%;height:11%;border:3px solid white;background: blue;overflow:hidden;-webkit-box-shadow:0px 0px 30px white;-moz-box-shadow:0px 0px 30px white;-o-box-shadow:0px 0px 30px white;-ms-box-shadow:0px 0px 30px white;box-shadow:0px 0px 30px white;}
+#progress{margin-left:1%;margin-top:1%;width:98%;height:80%;background: red;}
+#progNum{margin-left:40%; margin-top:3%; text-align:center;color:white;}
+#begin_logo{display:none;left:35%; top:32%;width:25%;height:7%;position:absolute;  cursor:pointer;}
+
+#first_logo{display:none;left:2%; top:90%;width:25%;height:7%;position:absolute;  cursor:pointer;}
+
+#second_logo{display:none;left:10%; top:80%;width:25%;height:7%;position:absolute;  cursor:pointer;}
+
+#third_logo{display:none;left:2%; top:88%;width:25%;height:7%;position:absolute;  cursor:pointer;}
+
+#star1{ -webkit-animation:star_shine 1.1s ease infinite; -moz-animation:star_shine 1.1s ease infinite;-o-animation:star_shine 1.1s ease infinite;animation:star_shine 1.1s ease infinite;}
+#star2{ -webkit-animation:star_shine 1.2s ease-in infinite; -moz-animation:star_shine 1.2s ease-in infinite;-o-animation:star_shine 1.2s ease-in infinite;animation:star_shine 1.2s ease-in infinite;}
+#star3{ -webkit-animation:star_shine 1.3s ease-out infinite; -moz-animation:star_shine 1.3s ease-out infinite;-o-animation:star_shine 1.3s ease-out infinite;animation:star_shine 1.3s ease-out infinite;}
+#star4{ -webkit-animation:star_shine 1.4s linear infinite; -moz-animation:star_shine 1.4s linear infinite;-o-animation:star_shine 1.4s linear infinite;animation:star_shine 1.4s linear infinite;}
+#star5{ -webkit-animation:star_shine 1.5s ease-in infinite; -moz-animation:star_shine 1.5s ease infinite;-o-animation:star_shine 1.5s ease infinite;animation:star_shine 1.5s ease infinite;}
+#star6{ -webkit-animation:star_shine 1.6s ease-in-out infinite; -moz-animation:star_shine 1.6s ease-in-out infinite;-o-animation:star_shine 1.6s ease-in-out infinite;animation:star_shine 1.6s ease-in-out infinite;}
+#showStar1{ -webkit-animation:star_shine 1.1s ease infinite; -moz-animation:star_shine 1.1s ease infinite;-o-animation:star_shine 1.1s ease infinite;animation:star_shine 1.1s ease infinite;}
+#showStar2{ -webkit-animation:star_shine 1.2s ease-in infinite; -moz-animation:star_shine 1.2s ease infinite;-o-animation:star_shine 1.2s ease infinite;animation:star_shine 1.2s ease-in-out infinite;}
+#showStar3{ -webkit-animation:star_shine 1.3s ease-out infinite; -moz-animation:star_shine 1.3s ease infinite;-o-animation:star_shine 1.3s ease infinite;animation:star_shine 1.3s ease infinite;}
+#showStar4{ -webkit-animation:star_shine 1.4s linear infinite; -moz-animation:star_shine 1.4s ease infinite;-o-animation:star_shine 1.4s ease-in-out infinite;animation:star_shine 1.4s ease-in-out infinite;}
+#showStar5{ -webkit-animation:star_shine 1.5s ease-in infinite; -moz-animation:star_shine 1.5s ease-in-out infinite;-o-animation:star_shine 1.5s ease infinite;animation:star_shine 1.5s ease-in-out infinite;}
+#showStar6{ -webkit-animation:star_shine 1.6s ease-in-out infinite; -moz-animation:star_shine 1.6s ease infinite;-o-animation:star_shine 1.6s ease infinite;animation:star_shine 1.6s ease infinite;}
+#showStar7{ -webkit-animation:star_shine 1.1s ease infinite; -moz-animation:star_shine 1.1s ease-in-out infinite;-o-animation:star_shine 1.1s ease-in-out infinite;animation:star_shine 1.1s ease infinite;}
+#showStar8{ -webkit-animation:star_shine 1.2s ease-in infinite; -moz-animation:star_shine 1.2s ease infinite;-o-animation:star_shine 1.2s ease infinite;animation:star_shine 1.2s ease-in-out infinite;}
+#showStar9{ -webkit-animation:star_shine 1.3s ease-out infinite; -moz-animation:star_shine 1.3s ease-in-out infinite;-o-animation:star_shine 1.3s ease infinite;animation:star_shine 1.3s ease infinite;}
+#showStar10{ -webkit-animation:star_shine 1.4s linear infinite; -moz-animation:star_shine 1.4s ease infinite;-o-animation:star_shine 1.4s ease-in-out infinite;animation:star_shine 1.4s ease-in-out infinite;}
+#showStar11{ -webkit-animation:star_shine 1.5s ease-in infinite; -moz-animation:star_shine 1.5s ease infinite;-o-animation:star_shine 1.5s ease infinite;animation:star_shine 1.5s ease infinite;}
+#showStar12{ -webkit-animation:star_shine 1.6s ease-in-out infinite; -moz-animation:star_shine 1.6s ease infinite;-o-animation:star_shine 1.6s ease-in-outinfinite;animation:star_shine 1.6s ease-in-out infinite;}
+#showStar13{ -webkit-animation:star_shine 1.0s ease-in-out infinite; -moz-animation:star_shine 1.0s ease-in-out infinite;-o-animation:star_shine 1.0s ease infinite;animation:star_shine 1.0s ease infinite;}
+@-webkit-keyframes star_shine
+{
+	0%{	-webkit-transform:scale(1) 	 rotate(0deg); }
+	50%{-webkit-transform:scale(2)  rotate(45deg); }
+	100%{-webkit-transform:scale(1) rotate(0deg); 	}
+}
+@-moz-keyframes star_shine
+{
+	0%{	-moz-transform:scale(1) 	 rotate(0deg); }
+	50%{-moz-transform:scale(2)  rotate(45deg); }
+	100%{-moz-transform:scale(1) rotate(0deg); 	}
+}
+@-o-keyframes star_shine
+{
+	0%{	-o-transform:scale(1) 	 rotate(0deg); }
+	50%{-o-transform:scale(2)  rotate(45deg); }
+	100%{-o-transform:scale(1) rotate(0deg); 	}
+}
+@keyframes star_shine
+{
+	0%{	-o-transform:scale(1) 	 rotate(0deg); }
+	50%{-o-transform:scale(2)  rotate(45deg); }
+	100%{-o-transform:scale(1) rotate(0deg); 	}
+}
+ .shangyi1_on,.shangyi2_on{z-index:7}
+  .xiayi1_on,.xiayi2_on{z-index:7}
+  .lianyi1_on,.lianyi2_on{z-index:7}
+  .toushi1_on,.toushi2_on{z-index:7}
+  .xianglian1_on,.xianglian2_on{z-index:6}
+  .shoulian1_on,.shoulian2_on{z-index:10}
+  .xiezi1_on,.xiezi2_on{z-index:6}
+  .chibang1_on{z-index:2}
+  .chibang2_on{z-index:3}
+
+  .little_scale:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
+

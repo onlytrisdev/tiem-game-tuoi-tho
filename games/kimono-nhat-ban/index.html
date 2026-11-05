@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<meta charset="utf-8">
+<title>Kimono Nhật Bản</title>
+<script type="text/javascript">
+		var cm_name="Kimono-nhat-ban";
+		var cm_link="game24h.vn";	
+		function cmsetpoint(ppoint,pname) {
+			setCookie('p_diem',ppoint);
+			setCookie('p_game',pname);
+			}
+		</script>
+
+
+<script>
+	 document.addEventListener("DOMContentLoaded", function(event) {
+		if(getCookie('p_diem')&&('p_diem')!='' && getCookie('p_game')&& getCookie('p_game')!=''){
+			luudiem(getCookie('p_diem'),getCookie('p_game'));
+			setCookie('p_diem','');
+			setCookie('p_game','');
+		}
+		 });
+	</script>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/game.js"></script>
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body background="images/changbg.png">
+<script>
+
+    window.console = window.console || (function(){
+        var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function(){};
+        return c;
+    })();
+
+    window.addEventListener('scroll', function () {
+        // Do not scroll when keyboard is visible
+        if (document.activeElement === document.body && window.scrollY > 0) {
+            document.body.scrollTop = 0;
+        }
+    }, true);
+
+    window.addEventListener('resize', function () {
+        document.body.scrollTop = 0;
+    }, true);
+
+
+</script>
+<script type="text/javascript" src="js/html2canvas.js"></script>
+<script type="text/javascript">
+
+    var saveFile = function(data, filename){
+       // var save_link = document.createElementNS('https://www.w3.org/1999/xhtml', 'a');
+       // save_link.href = data;
+        //save_link.download = filename;
+
+        //var event = document.createEvent('MouseEvents');
+        //event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        //save_link.dispatchEvent(event);
+    };
+
+    function saveFun(){
+    	/*
+
+        document.getElementById("print").style.display="none";
+        document.getElementById("save").style.display="none";
+        document.getElementById("music").style.display="none";
+
+        document.getElementById("replay").style.display="none";
+        document.getElementById("MG3").style.display="none";
+
+        html2canvas(document.body, {
+            height:window.screen.availHeight,
+            width:7*window.screen.availHeight/5,
+            onrendered: function(canvas) {
+
+                //alert(eval('Third_Page'));
+                //console.log(canvas);
+                //document.body.appendChild(canvas);
+
+                //c_scene_play.menu2Layer.visible=false;
+                //c_scene_play.logoLayer.visible=false;
+
+                //var canvas = document.getElementById("gameCanvas");
+
+                //var img    = canvas.toDataURL("image/png");
+
+                //window.location.href=image; // it will save locally
+
+                //var canvas_width = canvas.height*7/5;
+                //var canvas_height = canvas.height;
+
+                var explorer =  document.all ? 'IE' : 'others';
+
+                if(explorer=='IE'){
+                    //alert(1);
+                    try{
+                        var img    = canvas.toDataURL("image/png");
+                        //img="https://www.baidufe.com/fe/blog/static/img/fe-128.png?v=04657412";
+                        var k = window.open();
+                        k.document.write('<img src="'+img+'" />');
+                        k.document.close();
+                    }catch(err){
+                        cc.log("[error] - save() - "+ err);
+                        //alert(err);
+                    }
+                }else{
+                    var img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+                    window.win = open (img);
+                    var type="png";
+                    // 下载后的问题名
+                    var filename = 'KimonoCutie_' + (new Date()).getTime() + '.' + type;
+                    // download
+                    saveFile(img,filename);
+                }
+
+            },
+            canvas_id: 'canvas'//通过修改html2canvas源码添加canvas的id
+        });
+
+        //html2canvas(document.body).then(function(canvas) {
+
+
+        //});
+
+
+        document.getElementById("print").style.display="block";
+        document.getElementById("save").style.display="block";
+        document.getElementById("music").style.display="block";
+
+		
+        document.getElementById("replay").style.display="block";
+        document.getElementById("MG3").style.display="block";
+					*/
+    }
+
+    //html2canvas(document.body).then(function(canvas) {
+    //alert(canvas);
+    //console.log(canvas);
+    //document.body.appendChild(canvas);
+    //});
+
+
+
+</script>
+
+<div id="background" style="width: 857px; height: 612.143px;">
+<div id="begin_page" style="display: none;">
+<img src="images/kaichangbg.png" width="100%" style="z-index:0;top:0px;">
+<div id="progress_bar" style="position: absolute; z-index: 4; opacity: 1; display: block;">
+<div id="progress" style="z-index: 4; display: block; width: 738.235px;"></div><span id="progNum" style="position: absolute; z-index: 5; top: 1%; font-size: 30.3182pt;">100%</span> </div>
+</div>
+<img id="music" src="images/yinyuekai.png" onclick="controlMusic()" style="width: 5%; right: 7%; top: 7%; position: absolute; cursor: pointer; z-index: 10; display: block;">
+<div id="first_page" style="display: block;">
+<img src="images/kaichangbg.png" width="100%" style="z-index:0;top:0px;">
+<img id="star1" src="images/star.png" style="z-index:2;left:13%;top:15%;" width="3%/">
+<img id="star2" src="images/star.png" style="z-index:2;left:32%;top:18%;" width="2%/">
+<img id="star3" src="images/star.png" style="z-index:2;left:55%;top:22%;" width="3%">
+<img id="star4" src="images/star.png" style="z-index:2;left:85%;top:38%;" width="2%">
+<img id="star5" src="images/star.png" style="z-index:2;left:21.5%;top:32%;" width="3%/">
+<img id="star6" src="images/star.png" style="z-index:2;left:62%;top:42%;" width="2%/">
+<img id="star7" src="images/star.png" style="z-index:2;left:87%;top:42%;" width="3%">
+<img id="star8" src="images/star.png" style="z-index:2;left:15%;top:80%;" width="2%">
+<img id="star9" src="images/star.png" style="z-index:2;left:38.5%;top:82%;" width="3%/">
+<img id="play" src="images/play.png" style="z-index:2;width:13%;left:69%;top:65%;position:absolute;cursor:pointer;" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onclick="clickPlay();">
+</div>
+<div id="second_page" style="display: none;">
+<img src="images/huanzhuangbg.png" width="100%" style="z-index:0;top:0px;">
+<img src="images/renwu.png" style="z-index:3;left:50%; top:13%; width:50%;">
+<img src="images/hefurenwuyinying.png" style="z-index:2;left:56.8%; top:85%; width:28%;">
+<img id="show" src="images/show.png" onclick="showGame()" onmouseover="overNutton(this)" onmouseout="outNutton(this)" style="z-index:50;left:85%; top:66%; width:10%;cursor:pointer;">
+<img id="reset" src="images/reset.png" onclick="resetGame()" onmouseover="overNutton(this)" onmouseout="outNutton(this)" style="z-index:50;left:85%; top:77%; width:10%;cursor:pointer;">
+<div id="clothes_button" style="z-index:300;left:39%; top:1.6%; width:6%; height:8%;cursor:pointer;position:absolute;background-color: #FFFFFF; opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="hair_button" style="z-index:300;left:38%; top:16%; width:6%; height:8%; position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="scarf_button" style="z-index:300;left:36%; top:29%;width:6%; height:8%; position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="waistband_button" style="z-index:30;left:34%; top:41%; width:6%; height:8%;position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="headwear_button" style="z-index:03;left:33%; top:53%; width:6%; height:8%;position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="hand_button" style="z-index:30;left:31%; top:63%; width:6%; height:8%;position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="shoe_button" style="z-index:30;left:29%; top:75%; width:6%; height:8%;position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="ear_button" style="z-index:30;left:27%; top:87%; width:6%; height:8%;position:absolute;  cursor:pointer;background-color: #FFFFFF;opacity:0; " onclick="displayKuang(this.id)"></div>
+<div id="clothes_page" class="xuangKuang" style="display: block;">
+<img id="clothes1" src="images/clothes1.png" class="scale secondpage clothes" onclick="displayEle(this)" style="left:2%;top:16%;width:23%;">
+<img id="clothes2" src="images/clothes2.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes3" src="images/clothes3.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes4" src="images/clothes4.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes5" src="images/clothes5.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes6" src="images/clothes6.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes7" src="images/clothes7.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes8" src="images/clothes8.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes9" src="images/clothes9.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes10" src="images/clothes10.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes11" src="images/clothes11.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes12" src="images/clothes12.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes13" src="images/clothes13.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="clothes14" src="images/clothes14.png" class="scale secondpage clothes" onclick="displayEle(this)" style="display:none;left:5%;top:16%;width:23%;">
+<img id="left_arrow" src="images/left_arrow.png" style="z-index:10; left:1.4%;top:10%;width:6%;" onclick="leftClothes()" class="nomove">
+<img id="right_arrow" src="images/right_arrow.png" style="z-index:10;left:27%;top:10%;width:6%;" onclick="rightClothes()" class="nomove">
+</div>
+<div id="hair_page" class="xuangKuang" style="display: none;">
+<img id="hair1" src="images/hair1.png" class="scale secondpage hair" onclick="displayEle(this)" style="left:2.1%; top:10%; width:13%; cursor:pointer;">
+<img id="hair2" src="images/hair2.png" class="scale secondpage hair" onclick="displayEle(this)" style="left:19%; top:10%; width:13%;  cursor:pointer;">
+<img id="hair3" src="images/hair3.png" class="scale secondpage hair" onclick="displayEle(this)" style="left:2.1%; top:36%; width:13%;  cursor:pointer;">
+<img id="hair4" src="images/hair4.png" class="scale secondpage hair" onclick="displayEle(this)" style="left:16%; top:36%; width:13%;  cursor:pointer;">
+<img id="hair5" src="images/hair5.png" class="scale secondpage hair" onclick="displayEle(this)" style="left:1.4%; top:60%; width:13%;  cursor:pointer;">
+<img id="hair6" src="images/hair6.png" class="scale secondpage hair" onclick="displayEle(this)" style="left:10.1%; top:60%; width:13%;  cursor:pointer;">
+</div>
+<div id="scarf_page" class="xuangKuang" style="display:none">
+<img id="scarf1" src="images/scarf1.png" class="scale secondpage scarf" onclick="displayEle(this)" style="left:3.4%; top:10%; width:15%; position:absolute;  cursor:pointer;">
+<img id="scarf2" src="images/scarf2.png" class="scale secondpage scarf" onclick="displayEle(this)" style="left:16%; top:10%; width:15%; position:absolute;  cursor:pointer;">
+<img id="scarf3" src="images/scarf3.png" class="scale secondpage scarf" onclick="displayEle(this)" style="left:1%; top:44%; width:15%; position:absolute;  cursor:pointer;">
+<img id="scarf4" src="images/scarf4.png" class="scale secondpage scarf" onclick="displayEle(this)" style="left:13.3%; top:38%; width:15%;position:absolute;  cursor:pointer;">
+<img id="scarf5" src="images/scarf5.png" class="scale secondpage scarf" onclick="displayEle(this)" style="left:15%; top:54%; width:15%; position:absolute;  cursor:pointer;">
+<img id="scarf6" src="images/scarf6.png" class="scale secondpage scarf" onclick="displayEle(this)" style="left:2%; top:68%; width:15%; position:absolute;  cursor:pointer;">
+</div>
+<div id="waistband_page" class="xuangKuang" style="display:none">
+<img id="waistband1" src="images/waistband1.png" class="scale secondpage waistband" onclick="displayEle(this)" style="left:2.9%; top:9%; width:11.4%;  cursor:pointer;">
+<img id="waistband2" src="images/waistband2.png" class="scale secondpage waistband" onclick="displayEle(this)" style="left:17%; top:22%; width:12.7%;   cursor:pointer;">
+<img id="waistband3" src="images/waistband3.png" class="scale secondpage waistband" onclick="displayEle(this)" style="left:1.4%; top:34%; width:13.3%; cursor:pointer;">
+<img id="waistband4" src="images/waistband4.png" class="scale secondpage waistband" onclick="displayEle(this)" style="left:13%; top:50%; width:13.7%;  cursor:pointer;">
+<img id="waistband5" src="images/waistband5.png" class="scale secondpage waistband" onclick="displayEle(this)" style="left:2.1%; top:64%; width:10.9%;  cursor:pointer;">
+<img id="waistband6" src="images/waistband6.png" class="scale secondpage waistband" onclick="displayEle(this)" style="left:10%; top:80%; width:10.9%;  cursor:pointer;">
+</div>
+<div id="headwear_page" class="xuangKuang" style="display:none">
+<img id="headwear1" src="images/headwear1.png" class="scale secondpage headwear" onclick="displayEle(this)" style="left:4.3%; top:17%; width:5.9%;  cursor:pointer;">
+<img id="headwear2" src="images/headwear2.png" class="scale secondpage headwear" onclick="displayEle(this)" style="left:13%; top:14%; width:10.3%;   cursor:pointer;">
+<img id="headwear3" src="images/headwear3.png" class="scale secondpage headwear" onclick="displayEle(this)" style="left:3.6%; top:46%; width:5.1%;  cursor:pointer;">
+<img id="headwear4" src="images/headwear4.png" class="scale secondpage headwear" onclick="displayEle(this)" style="left:16%; top:42%; width:8.6%;  cursor:pointer;">
+<img id="headwear5" src="images/headwear5.png" class="scale secondpage headwear" onclick="displayEle(this)" style="left:2.9%; top:68%; width:7.9%;   cursor:pointer;">
+<img id="headwear6" src="images/headwear6.png" class="scale secondpage headwear" onclick="displayEle(this)" style="left:15.7%; top:70%; width:4.3%;  cursor:pointer;">
+</div>
+<div id="hand_page" class="xuangKuang" style="display:none">
+<img id="hand1" src="images/hand1.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:4.3%; top:76%; width:4.4%;   cursor:pointer;">
+<img id="hand2" src="images/hand2.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:11.4%; top:76%; width:8%;  cursor:pointer;">
+<img id="hand3" src="images/hand3.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:1.4%; top:60%; width:13.3%;   cursor:pointer;">
+<img id="hand4" src="images/hand4.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:17.1%; top:42%; width:9.9%;  cursor:pointer;">
+<img id="hand5" src="images/hand5.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:1.4%; top:46%; width:13.9%; cursor:pointer;">
+<img id="hand6" src="images/hand6.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:1.4%; top:30%; width:11.9%;   cursor:pointer;">
+<img id="hand7" src="images/hand7.png" class="scale secondpage hand" onclick="displayEle(this)" style="left:11.4%; top:10%; width:20.6%; cursor:pointer;">
+</div>
+<div id="shoe_page" class="xuangKuang" style="display:none">
+<img id="shoe1" src="images/shoe1.png" class="scale secondpage shoe" onclick="displayEle(this)" style="left:2.9%; top:22%; width:12.3%;  cursor:pointer;">
+<img id="shoe2" src="images/shoe2.png" class="scale secondpage shoe" onclick="displayEle(this)" style="left:18.6%; top:12%; width:12.4%;  cursor:pointer;">
+<img id="shoe3" src="images/shoe3.png" class="scale secondpage shoe" onclick="displayEle(this)" style="left:14.3%; top:36%; width:13.1%;  cursor:pointer;">
+<img id="shoe4" src="images/shoe4.png" class="scale secondpage shoe" onclick="displayEle(this)" style="left:1.4%; top:52%; width:13.6%;  cursor:pointer;">
+<img id="shoe5" src="images/shoe5.png" class="scale secondpage shoe" onclick="displayEle(this)" style="left:11.4%; top:66%; width:12.6%;   cursor:pointer;">
+<img id="shoe6" src="images/shoe6.png" class="scale secondpage shoe" onclick="displayEle(this)" style="left:2.9%; top:80%; width:12.3%;  cursor:pointer;">
+</div>
+<div id="ear_page" class="xuangKuang" style="display:none;">
+<img id="ear1" src="images/ear1.png" class="scale secondpage ear" onclick="displayEle(this)" style="left:2.9%; top:12%; width:13.9%;   cursor:pointer;">
+<img id="ear2" src="images/ear2.png" class="scale secondpage ear" onclick="displayEle(this)" style="left:20%; top:17%; width:10.6%;   cursor:pointer;">
+<img id="ear3" src="images/ear3.png" class="scale secondpage ear" onclick="displayEle(this)" style="left:3.6%; top:30%; width:8.7%;  cursor:pointer;">
+<img id="ear4" src="images/ear4.png" class="scale secondpage ear" onclick="displayEle(this)" style="left:15.7%; top:44%; width:10.9%;   cursor:pointer;">
+<img id="ear5" src="images/ear5.png" class="scale secondpage ear" onclick="displayEle(this)" style="left:9%; top:64%; width:10.7%;   cursor:pointer;">
+<img id="ear6" src="images/ear6.png" class="scale secondpage ear" onclick="displayEle(this)" style="left:8.6%; top:76%; width:12.1%;  cursor:pointer;">
+</div>
+<div id="on">
+<img id="clothes_on" class="on" style="z-index:4; left:50%; top:0%; width:50%;display:none;" src="">
+<img id="hair_on_before" class="on" src="images/hair1_on_before.png" style="z-index: 6; left: 50%; top: 0%; width: 50%; display: block;">
+<img id="hair_on_back" class="on" src="images/hair1_on_back.png" style="z-index: 2; left: 50%; top: 0%; width: 50%; display: block;">
+<img id="scarf_on" class="on" style="z-index:5;left:50%; top:0%; width:50%;display:none;" src="">
+<img id="waistband_on" class="on" style="z-index:4; left:50%; top:0%; width:50%;display:none;" src="">
+<img id="headwear_on" class="on" style="z-index:9; left:50%; top:0%; width:50%;display:none;" src="">
+<img id="hand_on" class="on" style="z-index:2; left:50%; top:0%; width:50%;display:none;" src="">
+<img id="shoe_on" class="on" style="z-index:3; left:50%; top:-1%; width:50%;display:none;" src="">
+<img id="ear_on" class="on" style="z-index:8; left:50%; top:0%; width:50%;display:none;" src="">
+</div>
+<img src="images/mg1.png" id="MG2"></div>
+<div id="third_page" style="display: none;">
+<img src="images/zhanshibg.png" style="z-index:1;width:100%;;top:0px;">
+<img id="third_girl" class="show" src="images/renwu.png" style="z-index: 3; left: 30%; top: 13%; width: 50%; display: block;">
+<img class="show" src="" style="z-index: 2; left: 36.5%; top: 85%; width: 28%; display: none;">
+<img id="replay" src="images/replay.png" onclick="replayGame()" onmouseover="overNutton(this)" onmouseout="outNutton(this)" style="z-index:50;cursor:pointer;left:5%;top:65%;width:13%;">
+<div>
+<div id="show">
+<img id="clothes_show" class="show" style="z-index:4; left:30%; top:0%; width:50%;display:none;" src="">
+<img id="hair_show_before" class="show" src="images/hair1_on_before.png" style="z-index: 6; left: 30%; top: 0%; width: 50%; display: block;">
+<img id="hair_show_back" class="show" src="images/hair1_on_back.png" style="z-index: 2; left: 30%; top: 0%; width: 50%; display: block;">
+<img id="scarf_show" class="show" style="z-index:5;left:30%; top:0%; width:50%;display:none;" src="">
+<img id="waistband_show" class="show" style="z-index:4; left:30%; top:0%; width:50%;display:none;" src="">
+<img id="headwear_show" class="show" style="z-index:9; left:30%; top:0%; width:50%;display:none;" src="">
+<img id="hand_show" class="show" style="z-index:2; left:30%; top:0%; width:50%;display:none;" src="">
+<img id="shoe_show" class="show" style="z-index:3; left:30%; top:-1%; width:50%;display:none;" src="">
+<img id="ear_show" class="show" style="z-index:8; left:30%; top:0%; width:50%;display:none;" src="">
+</div>
+<img id="star11" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star12" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star13" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star14" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star15" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star16" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star17" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star18" class="flashStar" src="images/star.png" style="z-index:10">
+<img id="star19" class="flashStar" src="images/star.png" style="z-index:10">
+</div>
+<img src="images/mg1.png" id="MG3"></div>
+</div>
+<script type="text/javascript" src="js/KimonoCutie.js"></script>
+
+
+</body></html>

@@ -1,0 +1,1 @@
+const ysdk=new YaGames({partnerId:"R-I-350998-3",adv:{onAdvClose:function(){return console.log("ad call successfully.."),!0}}});

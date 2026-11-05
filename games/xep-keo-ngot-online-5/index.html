@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script>window._game_loading_timer = Date.now()</script>
+
+	<title>Xếp kẹo ngọt online 5</title>
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Phaser App">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.01">
+
+  
+  <!--  -->
+	<script src="js/custom-phaser.min.js"></script>
+  <script src="js/game.js"></script>
+
+  <style>
+    #focusHelper {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      display: none;
+      background-color: #000000;
+      opacity: 0;
+      top: 0px;
+      left: 0px;     }  
+  </style>
+
+<!-- <script id="sg-loader-script" type="text/javascript">
+    var loader_url = String(window.location).split('/').slice(0,3).join('/')+'/assets/sg-loader-loader.js?_='+Date.now();
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = loader_url;
+    var otherScript = document.getElementsByTagName('script')[0];
+    otherScript.parentNode.insertBefore(script, otherScript);
+    </script> -->
+</head>
+<body onload="initGame()">
+
+  <div id="gameFontPreload">
+  	<div style="font-family: ComicSansBold" class="fontPreload">.</div>
+  </div>
+
+  <div id="focusHelper"></div>
+  <script>
+  window.addEventListener("blur", function() {document.getElementById('focusHelper').style['display'] = "block"})
+  window.addEventListener("focus", function() {document.getElementById('focusHelper').style['display'] = "none"})
+</script>
+  <!-- <div id="gameDiv"></div> -->
+</body>
+</html>

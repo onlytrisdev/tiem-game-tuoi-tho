@@ -1,0 +1,100 @@
+/* BXH + Xóa dữ liệu — chỉ màn hình ngoài (scene1) */
+
+.gv-menu-actions {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 6000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+.gv-menu-actions[hidden],
+.gv-menu-actions.is-hidden {
+  display: none !important;
+}
+
+.gv-menu-action-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  line-height: 0;
+}
+
+.gv-menu-action-btn img {
+  height: 52px;
+  width: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.gv-settings-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 8000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.gv-settings-confirm-overlay.is-visible {
+  display: flex;
+}
+
+.gv-settings-confirm-overlay[hidden]:not(.is-visible) {
+  display: none !important;
+}
+
+.gv-settings-confirm-dialog {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  border: 2px solid rgba(200, 146, 42, 1);
+  background: #2b2118;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  padding: 24px 18px 18px;
+  font-family: Cabin, Arial, sans-serif;
+}
+
+.gv-settings-confirm-message {
+  color: #fff6d9;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
+.gv-settings-confirm-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gv-settings-confirm-btn {
+  min-width: 110px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 8px;
+  font-family: Cabin, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.gv-settings-confirm-btn.cancel {
+  background: #666;
+  color: #fff;
+}
+
+.gv-settings-confirm-btn.ok {
+  background: #d94a4a;
+  color: #fff;
+}

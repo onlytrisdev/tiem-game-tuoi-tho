@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Hai cô tiên</title>
+
+<script type="text/javascript" src="cdn.js"></script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script type="text/javascript" src=""></script>	 
+
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" type="text/css"  href="css/style.css"/>
+
+
+
+</head>
+
+
+
+<body onLoad="initia()" background="images/changbeijing.png">
+
+
+
+
+
+
+
+<script>
+
+
+
+    window.console = window.console || (function(){
+
+        var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function(){};
+
+        return c;
+
+    })();
+
+
+
+    window.addEventListener('scroll', function () {
+
+        // Do not scroll when keyboard is visible
+
+        if (document.activeElement === document.body && window.scrollY > 0) {
+
+            document.body.scrollTop = 0;
+
+        }
+
+    }, true);
+
+
+
+    window.addEventListener('resize', function () {
+
+        document.body.scrollTop = 0;
+
+    }, true);
+
+
+
+
+
+</script>
+
+<script type="text/javascript" src="js/html2canvas.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+
+    var saveFile = function(data, filename){
+
+        var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+
+        save_link.href = data;
+
+        save_link.download = filename;
+
+
+
+        var event = document.createEvent('MouseEvents');
+
+        event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+        save_link.dispatchEvent(event);
+
+    };
+
+
+
+    function saveFun(){
+
+
+
+       
+
+        document.getElementById("music").style.display="none";
+
+
+
+        document.getElementById("replay").style.display="none";
+
+        document.getElementById("MG3").style.display="none";
+
+
+
+        html2canvas(document.body, {
+
+            height:window.screen.availHeight,
+
+            width:7*window.screen.availHeight/5,
+
+            onrendered: function(canvas) {
+
+
+
+                //alert(eval('Third_Page'));
+
+                //console.log(canvas);
+
+                //document.body.appendChild(canvas);
+
+
+
+                //c_scene_play.menu2Layer.visible=false;
+
+                //c_scene_play.logoLayer.visible=false;
+
+
+
+                //var canvas = document.getElementById("gameCanvas");
+
+
+
+                //var img    = canvas.toDataURL("image/png");
+
+
+
+                //window.location.href=image; // it will save locally
+
+
+
+                //var canvas_width = canvas.height*7/5;
+
+                //var canvas_height = canvas.height;
+
+
+
+                var explorer =  document.all ? 'IE' : 'others';
+
+
+
+                if(explorer=='IE'){
+
+                    //alert(1);
+
+                    try{
+
+                        var img    = canvas.toDataURL("image/png");
+
+                        //img="http://www.baidufe.com/fe/blog/static/img/fe-128.png?v=04657412";
+
+                        var k = window.open();
+
+                        k.document.write('<img src="'+img+'" />');
+
+                        k.document.close();
+
+                    }catch(err){
+
+                        cc.log("[error] - save() - "+ err);
+
+                        //alert(err);
+
+                    }
+
+                }else{
+
+                    var img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+
+                    window.win = open (img);
+
+                    var type="png";
+
+                    // 下载后的问题名
+
+                    var filename = 'CuteFairiesDressup_' + (new Date()).getTime() + '.' + type;
+
+                    // download
+
+                    saveFile(img,filename);
+
+                }
+
+
+
+            },
+
+            canvas_id: 'canvas'//通过修改html2canvas源码添加canvas的id
+
+        });
+
+
+
+        //html2canvas(document.body).then(function(canvas) {
+
+
+
+
+
+        //});
+
+
+
+
+
+      
+
+        document.getElementById("music").style.display="block";
+
+
+
+		
+
+        document.getElementById("replay").style.display="block";
+
+        document.getElementById("MG3").style.display="block";
+
+
+
+    }
+
+
+
+    //html2canvas(document.body).then(function(canvas) {
+
+    //alert(canvas);
+
+    //console.log(canvas);
+
+    //document.body.appendChild(canvas);
+
+    //});
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+  	<!--startprint-->
+
+<div id="background">
+
+  <img id="music" src="images/yinyueguan.png" width="4%" style="z-index:1;top:9%;right:12%" onclick="controlMusic()" >
+
+  <div id="renwu" style="display:none">
+
+    <img src="images/huanzhuangzhanshibeijing.png" width="100%"  style="z-index:0">  
+
+   <img src="images/renwu1.png" width="15%" style="z-index:4;top:14%;left:29%">
+
+   <img src="images/renwu2.png" width="25%" style="z-index:4;top:10%;left:50%"> 
+
+   <img src="images/renwu1gebo.png" width="10%" style="z-index:9;top:30.5%;left:29%">
+
+   <img id="renwu1neiyi" src="images/renwu1neiyi.png" width="7%" style="z-index:5;top:32%;left:35.9%"> 
+
+   <img id="renwu2neiyi" src="images/renwu2neiyi.png" width="7.1%" style="z-index:5;top:28%;left:55%">
+
+  </div>
+
+
+
+<div id="yifu1_on">
+
+	<div id="toufa1_on" >
+
+	  <img class="toufa1_on" src="images/toufahou1-1.png" width="23%" style="z-index:1;left:19%;top:8.6%">
+
+	  <img class="toufa1_on" src="images/toufahou1-2.png" width="10.3%" style="z-index:1;left:34.3%;top:12.4%">
+
+	  <img class="toufa1_on" src="images/toufahou1-3.png" width="47%" style="z-index:1;left:-3.5%;top:14%">
+
+	  <img class="toufa1_on" src="images/toufahou1-4.png" width="28.2%" style="z-index:1;left:19%;top:14%">
+
+	  <img class="toufa1_on" src="images/toufahou1-5.png" width="29%" style="z-index:1;left:19%;top:14%">
+
+	  <img class="toufa1_on" src="images/toufaqian1-1.png" width="9.4%" style="z-index:6;left:35.5%;top:12%">
+
+	  <img class="toufa1_on" src="images/toufaqian1-2.png" width="11%" style="z-index:6;left:34%;top:12%">
+
+	  <img class="toufa1_on" src="images/toufaqian1-3.png" width="39.5%" style="z-index:6;left:4.7%;top:12%">
+
+	  <img class="toufa1_on" src="images/toufaqian1-4.png" width="10.6%" style="z-index:6;left:34.2%;top:13%">
+
+	  <img class="toufa1_on" src="images/toufaqian1-5.png" width="27.4%" style="z-index:6;left:17.5%;top:13%">
+
+	</div>
+
+	<div id="shangyi1_on" >
+
+	  <img class="shangyi1_on" src="images/shangyi1-1.png" width="8.3%" style="left:35.5%;top:29.5%">
+
+	  <img class="shangyi1_on" src="images/shangyi1-2.png" width="12%" style="left:33%;top:24%">
+
+	  <img class="shangyi1_on" src="images/shangyi1-3.png" width="8.5%" style="left:35.3%;top:26.5%">
+
+	  <img class="shangyi1_on" src="images/shangyi1-4.png" width="8.5%" style="left:35%;top:31%">
+
+	  <img class="shangyi1_on" src="images/shangyi1-5.png" width="8.4%" style="left:35.5%;top:31%">
+
+ 	  <img class="shangyi1_on" src="images/shangyi1-6.png" width="11.5%" style="left:31.7%;top:27.5%">     
+
+	 </div>
+
+	<div id="xiayi1_on">
+
+	  <img class="xiayi1_on" src="images/xiayi1-1.png" width="16%" style="left:26%;top:38%" >
+
+	  <img class="xiayi1_on" src="images/xiayi1-2.png" width="15%" style="left:26.4%;top:36%">  
+
+	  <img class="xiayi1_on" src="images/xiayi1-3.png" width="14.2%" style="left:27%;top:37%">
+
+	  <img class="xiayi1_on" src="images/xiayi1-4.png" width="15%" style="left:26%;top:38%">
+
+	  <img class="xiayi1_on" src="images/xiayi1-5.png" width="19.4%" style="left:23.5%;top:37.5%">  
+
+	  <img class="xiayi1_on" src="images/xiayi1-6.png" width="15.7%" style="left:25.3%;top:38.5%">        
+
+	  </div>
+
+	<div id="lianyi1_on">
+
+	  <img class="lianyi1_on" src="images/lianyi1-1.png" width="18%" style="left:25%;top:26%">
+
+	  <img class="lianyi1_on" src="images/lianyi1-2.png" width="19.3%" style="left:24%;top:30%">
+
+	  <img class="lianyi1_on" src="images/lianyi1-3.png" width="16%" style="left:27.5%;top:25%">
+
+	  <img class="lianyi1_on" src="images/lianyi1-4.png" width="17%" style="left:26.1%;top:29.5%">
+
+	  </div>
+
+	<div id="toushi1_on">
+
+	  <img class="toushi1_on" src="images/toushi1-1.png" width="9.8%" style="left:35%;top:14%">
+
+	  <img class="toushi1_on" src="images/toushi1-2.png" width="6%" style="left:34.5%;top:10%">
+
+	  <img class="toushi1_on" src="images/toushi1-3.png" width="9.8%" style="left:35%;top:14%">
+
+	  <img class="toushi1_on" src="images/toushi1-4.png" width="10%" style="left:32.4%;top:6.4%">
+
+	  <img class="toushi1_on" src="images/toushi1-5.png" width="6%" style="left:34%;top:10%">
+
+	  </div>
+
+    <div id="xianglian1_on">
+
+      <img class="xianglian1_on" src="images/xianglian1-1.png" width="3.8%" style="left:37.4%;top:27%" >
+
+      <img class="xianglian1_on" src="images/xianglian1-2.png" width="4%" style="left:37.1%;top:26.8%" >
+
+      <img class="xianglian1_on" src="images/xianglian1-3.png" width="3.7%" style="left:37.4%;top:26.7%" >
+
+      <img class="xianglian1_on" src="images/xianglian1-4.png" width="3.9%" style="left:37.3%;top:26.7%" >
+
+      <img class="xianglian1_on" src="images/xianglian1-5.png" width="4%" style="left:37%;top:26.7%" >
+
+
+
+      </div>
+
+    <div id="shoulian1_on">
+
+      <img class="shoulian1_on" src="images/shoulian1-1.png" width="10%" style="left:32%;top:35.9%">
+
+      <img class="shoulian1_on" src="images/shoulian1-2.png" width="10%" style="left:32.3%;top:35.9%">
+
+      <img class="shoulian1_on" src="images/shoulian1-3.png" width="10%" style="left:32.1%;top:35.9%">
+
+      <img class="shoulian1_on" src="images/shoulian1-4.png" width="10%" style="left:32.1%;top:35.9%">
+
+      <img class="shoulian1_on" src="images/shoulian1-5.png" width="10%" style="left:32.1%;top:35.9%">
+
+      </div>
+
+    <div id="xiezi1_on">
+
+      <img class="xiezi1_on" src="images/xiezi1-1.png" width="13%" style="left:31%;bottom:11.4%">
+
+      <img class="xiezi1_on" src="images/xiezi1-2.png" width="12.5%" style="left:31.8%;bottom:11.2%">
+
+      <img class="xiezi1_on" src="images/xiezi1-3.png" width="13%" style="left:31%;bottom:11.4%">
+
+      <img class="xiezi1_on" src="images/xiezi1-4.png" width="13%" style="left:31.1%;bottom:12%">
+
+      <img class="xiezi1_on" src="images/xiezi1-5.png" width="13%" style="left:31%;bottom:14%">
+
+
+
+      </div>
+
+    <div id="chibang1_on">
+
+      <img class="chibang1_on" src="images/chibang1-1.png" width="30%" style="left:17%;top:0%">
+
+      <img class="chibang1_on" src="images/chibang1-2.png" width="30%" style="left:17%;top:10%">
+
+      <img class="chibang1_on" src="images/chibang1-3.png" width="45%" style="left:7%;top:10%">
+
+      <img class="chibang1_on" src="images/chibang1-4.png" width="30%" style="left:17%;top:3%">
+
+	  <img class="chibang1_on" src="images/chibang1-5.png" width="36%" style="left:12%;top:0%">
+
+      </div>
+
+  </div>  
+
+  
+
+<div id="yifu2_on" >
+
+	<div id="toufa2_on" >
+
+	  <img class="toufa2_on" src="images/toufahou2-1.png" width="3%" style="z-index:1;left:54.3%;top:12%">
+
+	  <img class="toufa2_on" src="images/toufahou2-2.png" width="40%" style="z-index:1;left:46%;top:5.5%">
+
+	  <img class="toufa2_on" src="images/toufahou2-3.png" width="10%" style="z-index:1;left:54%;top:9.2%">
+
+	  <img class="toufa2_on" src="images/toufahou2-4.png" width="40%" style="z-index:1;left:58.3%;top:4.5%">
+
+	  <img class="toufa2_on" src="images/toufahou2-5.png" width="37.5%" style="z-index:1;left:48%;top:8.7%">
+
+	  <img class="toufa2_on" src="images/toufaqian2-1.png" width="9.5%" style="z-index:5;left:55.3%;top:9%">
+
+	  <img class="toufa2_on" src="images/toufaqian2-2.png" width="8.9%" style="z-index:5;left:55.3%;top:9%">
+
+	  <img class="toufa2_on" src="images/toufaqian2-3.png" width="10.2%" style="z-index:5;left:54.3%;top:7.6%">
+
+	  <img class="toufa2_on" src="images/toufaqian2-4.png" width="9.1%" style="z-index:5;left:54.3%;top:7.6%">
+
+	  <img class="toufa2_on" src="images/toufaqian2-5.png" width="9.4%" style="z-index:5;left:54.6%;top:8%">
+
+	</div>
+
+	<div id="shangyi2_on" >
+
+	  <img class="shangyi2_on" src="images/shangyi2-1.png" width="8.3%" style="left:54.5%;top:27%">
+
+	  <img class="shangyi2_on" src="images/shangyi2-2.png" width="10.9%" style="left:53.5%;top:27.3%">
+
+	  <img class="shangyi2_on" src="images/shangyi2-3.png" width="10%" style="left:54%;top:23.2%">
+
+	  <img class="shangyi2_on" src="images/shangyi2-4.png" width="9.8%" style="left:54.3%;top:23.3%">
+
+	  <img class="shangyi2_on" src="images/shangyi2-5.png" width="8.1%" style="left:54.5%;top:27%">
+
+ 	  <img class="shangyi2_on" src="images/shangyi2-6.png" width="11.4%" style="left:53.3%;top:27.6%">     
+
+	 </div>
+
+	<div id="xiayi2_on">
+
+	  <img class="xiayi2_on" src="images/xiayi2-1.png" width="17.8%" style="right:30.2%;top:39.5%" >
+
+	  <img class="xiayi2_on" src="images/xiayi2-2.png" width="15%" style="right:31.8%;top:39.5%">  
+
+	  <img class="xiayi2_on" src="images/xiayi2-3.png" width="15.7%" style="right:31.5%;top:39.5%">
+
+	  <img class="xiayi2_on" src="images/xiayi2-4.png" width="15%" style="right:31.9%;top:37%">
+
+	  <img class="xiayi2_on" src="images/xiayi2-5.png" width="16.2%" style="right:31.4%;top:39.5%">  
+
+	  <img class="xiayi2_on" src="images/xiayi2-6.png" width="15%" style="right:31.5%;top:36.7%">        
+
+	  </div>
+
+	<div id="lianyi2_on">
+
+	  <img class="lianyi2_on" src="images/lianyi2-1.png" width="17.4%" style="left:51.2%;top:27%">
+
+	  <img class="lianyi2_on" src="images/lianyi2-2.png" width="17.4%" style="left:51.2%;top:27%">
+
+	  <img class="lianyi2_on" src="images/lianyi2-3.png" width="12.4%" style="left:54.1%;top:23.6%">
+
+	  <img class="lianyi2_on" src="images/lianyi2-4.png" width="17.2%" style="left:51.5%;top:28%">
+
+	  </div>
+
+	<div id="toushi2_on">
+
+	  <img class="toushi2_on" src="images/toushi2-1.png" width="9%" style="right:36.5%;top:10.9%">
+
+	  <img class="toushi2_on" src="images/toushi2-2.png" width="9%" style="right:33%;top:7%">
+
+	  <img class="toushi2_on" src="images/toushi2-3.png" width="12%" style="right:35%;top:6%">
+
+	  <img class="toushi2_on" src="images/toushi2-4.png" width="6.5%" style="right:36%;top:7%">
+
+	  <img class="toushi2_on" src="images/toushi2-5.png" width="9.5%" style="right:35.1%;top:5.6%">
+
+	  </div>
+
+    <div id="xianglian2_on">
+
+      <img class="xianglian2_on" src="images/xianglian2-1.png" width="5%" style="left:57.5%;top:22.7%" >
+
+      <img class="xianglian2_on" src="images/xianglian2-2.png" width="5%" style="left:57.4%;top:23.1%" >
+
+      <img class="xianglian2_on" src="images/xianglian2-3.png" width="5%" style="left:57.4%;top:23%" >
+
+      <img class="xianglian2_on" src="images/xianglian2-4.png" width="5%" style="left:57%;top:23%" >
+
+      <img class="xianglian2_on" src="images/xianglian2-5.png" width="5%" style="left:57%;top:23%" >
+
+
+
+      </div>
+
+    <div id="shoulian2_on">
+
+      <img class="shoulian2_on" src="images/shoulian2-1.png" width="22.2%" style="left:50.5%;top:42%">
+
+      <img class="shoulian2_on" src="images/shoulian2-2.png" width="22.2%" style="left:50.5%;top:42%">
+
+      <img class="shoulian2_on" src="images/shoulian2-3.png" width="23%" style="left:50.4%;top:42.6%">
+
+      <img class="shoulian2_on" src="images/shoulian2-4.png" width="23%" style="left:50.4%;top:42.6%">
+
+      <img class="shoulian2_on" src="images/shoulian2-5.png" width="23%" style="left:50.3%;top:42.6%">
+
+      </div>
+
+    <div id="xiezi2_on">
+
+      <img class="xiezi2_on" src="images/xiezi2-1.png" width="17.7%" style="left:57%;bottom:3.5%">
+
+      <img class="xiezi2_on" src="images/xiezi2-2.png" width="17.8%" style="left:57.1%;bottom:3.5%">
+
+      <img class="xiezi2_on" src="images/xiezi2-3.png" width="17.9%" style="left:57%;bottom:3.5%">
+
+      <img class="xiezi2_on" src="images/xiezi2-4.png" width="18.5%" style="left:56.3%;bottom:3.5%">
+
+      <img class="xiezi2_on" src="images/xiezi2-5.png" width="17.9%" style="left:57%;bottom:3.5%">
+
+
+
+      </div>
+
+    <div id="chibang2_on">
+
+      <img class="chibang2_on" src="images/chibang2-1.png" width="45%" style="left:41%;top:8%">
+
+      <img class="chibang2_on" src="images/chibang2-2.png" width="35%" style="left:46%;top:-3%">
+
+      <img class="chibang2_on" src="images/chibang2-3.png" width="47%" style="left:41%;top:5%">
+
+      <img class="chibang2_on" src="images/chibang2-4.png" width="40.5%" style="left:43%;top:10%">
+
+	  <img class="chibang2_on" src="images/chibang2-5.png" width="47%" style="left:39%;top:8%">
+
+      </div>
+
+  </div>    
+
+  	<!--endprint-->
+
+  
+
+<!--...................onload_page......................-->
+
+  <div id="begin_page" style="display:none">
+
+ 	<img src="images/huanzhuangzhanshibeijing.png" width="100%"  style="z-index:0">  
+
+	<img id="begin_logo" class="beginpage"  style="display:none;left:40%;top:30%;position:absolute;z-index:4" />
+
+	<div id="progress_bar" style="position:absolute;z-index:4; opacity:1; " >
+
+	<div id="progress" style="z-index:4; "  ></div><span id="progNum" style="position:absolute;z-index:5;top:1%"></span> 
+
+
+
+  </div>
+
+ </div>
+
+  <!--.................first_page........................-->
+
+  <div id="first_page" style="display:none">
+
+	<img id="first_logo"   style="display:none;left:2%;top:90%;position:absolute;z-index:4" />
+
+	<img src="images/kaichangbeijing.png" width="100%"  style="z-index:0">
+
+	<img id="play" src="images/play.png" width="20%"  style="z-index:1;top:53%;right:16%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="clickPlay()"> 
+
+	<img id="MG1" src="images/MG1.png" width="27%" onclick="moreGame();" style="z-index:1;top:68%;right:12%" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+	<img id="star1"   src="images/star.png"  style="z-index:2;left:15%;top:10%;" width=5% height=5%/>
+
+	<img id="star2"   src="images/star.png"  style="z-index:2;left:20%;top:25%;" width=5% height=5%/>
+
+	<img id="star3"   src="images/star.png"  style="z-index:2;left:38%;top:30%;" width=5% height=5%/>
+
+	<img id="star4"   src="images/star.png"  style="z-index:2;left:45%;top:15%;" width=5% height=5%/>
+
+	<img id="star5"   src="images/star.png"  style="z-index:2;left:50%;top:38%;" width=5% height=5%/>
+
+	<img id="star6"   src="images/star.png"  style="z-index:2;left:85%;top:30%;" width=5% height=5%/>
+
+</div>
+
+   <!--.................second_page........................--> 
+
+   
+
+  <div id="second_page" style="display:none">
+
+
+
+  <img id="second_logo"   style="display:none;left:6%;top:76%;position:absolute;z-index:4" />
+
+  <img id="MG2" src="images/MG2.png" width="15%"onclick="moreGame();" style="bottom:5%;left:12%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+  <img id="show" src="images/show.png" width="12%" onclick="showGamw()" style="bottom:5%;left:62%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+  <img id="reset" src="images/reset.png" width="12%" style="bottom:5%;left:76%;z-index:50" onclick="resetGame()" onmouseover="overNutton(this)" onmouseout="outNutton(this)">        
+
+  
+
+ <!--..................人物一按钮.......................-->  
+
+    <img id="toufaanniu" src="images/toufaanniu.png" width=8% style="z-index:100;top:6%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectTouFa1()">
+
+    <img id="shangyianniu" src="images/shangyianniu.png" width=8% style="z-index:100;top:16%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="xiayianniu" src="images/xiayianniu.png" width=8% style="z-index:100;top:26%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="lianyianniu" src="images/lianyianniu.png" width=8% style="z-index:100;top:36%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="toushianniu" src="images/toushianniu.png" width=8% style="z-index:100;top:46%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="xiangliananniu" src="images/xiangliananniu.png" width=8% style="z-index:100;top:56%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="shouliananniu" src="images/shouliananniu.png" width=8% style="z-index:100;top:66%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="xiezianniu" src="images/xiezianniu.png" width=8% style="z-index:100;top:76%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+    <img id="chibanganniu" src="images/chibanganniu.png" width=8% style="z-index:100;top:86%;left:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes1(this)">
+
+ <!--.....................人物二按钮....................-->    
+
+    <img id="toufaanniu2" src="images/toufaanniu2.png" width=8% style="z-index:100;top:6%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectTouFa2()">
+
+    <img id="shangyianniu2" src="images/shangyianniu2.png" width=8% style="z-index:100;top:16%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="xiayianniu2" src="images/xiayianniu2.png" width=8% style="z-index:100;top:26%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="lianyianniu2" src="images/lianyianniu2.png" width=8% style="z-index:100;top:36%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="toushianniu2" src="images/toushianniu2.png" width=8% style="z-index:100;top:46%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="xiangliananniu2" src="images/xiangliananniu2.png" width=8% style="z-index:100;top:56%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="shouliananniu2" src="images/shouliananniu2.png" width=8% style="z-index:100;top:66%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="xiezianniu2" src="images/xiezianniu2.png" width=8% style="z-index:100;top:76%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+    <img id="chibanganniu2" src="images/chibanganniu2.png" width=8% style="z-index:100;top:86%;right:2%" onmouseover="overNutton(this)" onmouseout="outNutton(this)" onClick="selectClothes2(this)">
+
+</div>
+
+    <!--...............third_page..........................-->
+
+<div id="third_page" style="display:none">
+
+    <img id="third_logo"  style="display:none;z-index:4;bottom:5%;" />
+
+	
+
+	
+
+
+
+	<img id="replay" src="images/replay.png" width="12%" onmousedown="replayGame()" style="bottom:13%;right:2%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+    <img id="MG3" src="images/MG3.png" width="12%" onclick="moreGame();" style="bottom:5%;right:2%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)">
+
+	<img id="showStar1"   src="images/star.png"  style="z-index:6;left:18%;top:7%;" width=5% height=5%/>
+
+	<img id="showStar2"   src="images/star.png"  style="z-index:6;left:20%;top:32%;" width=5% height=5%/>
+
+	<img id="showStar3"   src="images/star.png"  style="z-index:6;left:35%;top:10%;" width=5% height=5%/>
+
+	<img id="showStar4"   src="images/star.png"  style="z-index:6;left:28%;top:38%;" width=5% height=5%/>
+
+	<img id="showStar5"   src="images/star.png"  style="z-index:6;left:48%;top:28%;" width=5% height=5%/>
+
+	<img id="showStar6"   src="images/star.png"  style="z-index:6;left:40%;top:83%;" width=5% height=5%/>
+
+	<img id="showStar7"   src="images/star.png"  style="z-index:6;left:60%;top:10%;" width=5% height=5%/>
+
+	<img id="showStar8"   src="images/star.png"  style="z-index:6;left:70%;top:9%;" width=5% height=5%/>
+
+	<img id="showStar9"   src="images/star.png"  style="z-index:6;left:75%;top:35%;" width=5% height=5%/>
+
+	<img id="showStar10"   src="images/star.png"  style="z-index:6;left:58%;top:40%;" width=5% height=5%/>
+
+	<img id="showStar11"   src="images/star.png"  style="z-index:6;left:55%;top:55%;" width=5% height=5%/>
+
+	<img id="showStar12"   src="images/star.png"  style="z-index:6;left:71%;top:73%;" width=5% height=5%/>
+
+	<img id="showStar13"   src="images/star.png"  style="z-index:6;left:57%;top:88%;" width=5% height=5%/>
+
+
+
+ <!--   <img id="print" src="images/print.png" width="9%"  onclick="printGame();"style="bottom:2%;left:5%;z-index:50" onmouseover="overNutton(this)" onmouseout="outNutton(this)"> -->
+
+</div>
+
+
+
+
+
+</div>
+
+<!--..............................................................................................................-->
+
+<script type="text/javascript" src="js/CuteFairies.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

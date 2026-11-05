@@ -1,0 +1,1 @@
+async function OnBeforeProjectStart(e){e.addEventListener("tick",()=>Tick(e))}function Tick(e){window.addEventListener("keydown",e=>{["ArrowDown","ArrowUp"," "].includes(e.key)&&e.preventDefault()}),window.addEventListener("wheel",e=>e.preventDefault(),{passive:!1})}runOnStartup(async e=>{e.addEventListener("beforeprojectstart",()=>OnBeforeProjectStart(e))});

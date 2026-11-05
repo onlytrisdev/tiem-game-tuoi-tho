@@ -1,0 +1,251 @@
+/* Arcade UI — Lands of Blight (vung-dat-quai-vat) */
+
+.arcade-logo {
+  position: fixed;
+  left: 50%;
+  bottom: max(12px, env(safe-area-inset-bottom, 0px) + 12px);
+  transform: translateX(-50%);
+  z-index: 10040;
+  width: 44px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  box-shadow: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+  overflow: hidden;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+.arcade-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+.arcade-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.15) 44%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.15) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  animation: gv-logo-sweep 10s linear infinite;
+}
+
+@keyframes gv-logo-cycle {
+  0% { opacity: 0; transform: translateX(-50%); }
+  4% { opacity: 1; transform: translateX(-50%); }
+  45% { opacity: 1; transform: translateX(-50%); }
+  50% { opacity: 0; transform: translateX(-50%); }
+  100% { opacity: 0; transform: translateX(-50%); }
+}
+
+@keyframes gv-logo-sweep {
+  0%,
+  4% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  6% { opacity: 1; }
+  22% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  24% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  28% { opacity: 1; }
+  44% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  46%,
+  100% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+}
+
+#gv-btn-score,
+#gv-btn-delete {
+  --gv-btn-w: 104px;
+  --gv-btn-h: 34px;
+  position: fixed;
+  bottom: max(12px, env(safe-area-inset-bottom, 0px) + 12px);
+  top: auto;
+  left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--gv-btn-w);
+  height: var(--gv-btn-h);
+  min-width: var(--gv-btn-w);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  z-index: 10045;
+  opacity: 0.8;
+  transform: scale(0.8);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+#gv-btn-score {
+  right: max(12px, env(safe-area-inset-right, 0px) + 12px);
+}
+
+#gv-btn-delete {
+  left: max(12px, env(safe-area-inset-left, 0px) + 12px);
+}
+
+#gv-btn-score[hidden],
+#gv-btn-delete[hidden] {
+  display: none !important;
+}
+
+#gv-btn-score.gv-visible,
+#gv-btn-delete.gv-visible {
+  display: flex;
+}
+
+#gv-btn-score img,
+#gv-btn-delete img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+#gv-btn-score:hover,
+#gv-btn-delete:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#gv-btn-score:active,
+#gv-btn-delete:active {
+  opacity: 1;
+  transform: scale(0.94);
+}
+
+#gv-delete-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#gv-delete-overlay[hidden] {
+  display: none !important;
+}
+
+#gv-delete-dialog {
+  width: min(320px, 100%);
+  background: #1e2430;
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px 16px 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#gv-delete-message {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+#gv-delete-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: stretch;
+}
+
+#gv-delete-actions button {
+  flex: 1;
+  min-height: 40px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#gv-delete-cancel {
+  background: #3a4456;
+  color: #fff;
+}
+
+#gv-delete-ok {
+  background: #e24b4b;
+  color: #fff;
+}
+
+#gv-score-toast {
+  position: fixed;
+  left: 50%;
+  top: max(16px, env(safe-area-inset-top) + 12px);
+  transform: translateX(-50%) translateY(-120%);
+  z-index: 10070;
+  max-width: min(90vw, 360px);
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(20, 24, 32, 0.92);
+  color: #fff;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+#gv-score-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

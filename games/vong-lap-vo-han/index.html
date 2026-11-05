@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vòng Lặp Vô Hạn</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<!-- Yandex Games SDK -->
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<script>
+
+let gameOverEvent = new CustomEvent("gameOverAd");
+let isGameOverAdShown = 0;
+
+YaGames.init({
+				adv: {
+						onAdvClose: wasShown => {
+									console.info('adv closed!');
+						}
+				}
+		})
+		.then(ysdk => {
+			ysdk.adv.showFullscreenAdv();
+
+
+			let commonCounter = 0;
+			document.addEventListener('gameOverAd', () => {
+				let counter = 0;
+
+				function getCallback(callbackName) {
+						return () => {
+								counter += 1;
+								commonCounter += 1;
+
+								console.log(`showFullscreenAdv; callback ${callbackName}; ${counter} call`);
+						}
+				}
+
+				ysdk.adv.showFullscreenAdv({
+						callbacks: {
+								onClose: getCallback('onClose'),
+								onOpen: getCallback('onOpen'),
+								onError: getCallback('onError'),
+								onOffline: getCallback('onOffline')
+						}
+				});
+
+		});
+	});
+</script>
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="fb-root"></div>
+
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+			<p class="notSupportedMessage">This content was designed with Construct. <a href="https://www.construct.net/en">Create your own games</a></p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js"></script>
+	<script src="scripts/main.js"></script>
+	
+	
+
+</body>
+</html>

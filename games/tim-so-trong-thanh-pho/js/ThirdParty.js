@@ -1,0 +1,12 @@
+var ThirdParty={centerHorizontally:true,centerVertically:true,showRotateHint:true,enableFullscreenToggle:true,splashScreen:'img/loading.jpg',ads:false,showCookieBar:false,showShareIcon:false,privacyStatement:false,gaUA:null,swagApiKey:'5cc6b05a315fa0393f0190a0',moreGames:function(lang)
+{window.open('https://localhost','_system');},loadingComplete:function()
+{},mainMenu:function()
+{},gameHelp:function()
+{},gameStart:function()
+{},levelComplete:function(level)
+{},gameOver:function()
+{},restartGame:function()
+{},gameComplete:function()
+{},showLeaderboard:function()
+{GameHiscore.leaderBoard();},submitScore:function(score)
+{GameHiscore.submitScore(score);}};

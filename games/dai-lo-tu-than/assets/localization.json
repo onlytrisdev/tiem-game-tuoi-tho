@@ -1,0 +1,74 @@
+{
+
+	"en": {
+		"StartButton": "CHƠI",
+		"Footer": "",
+		"FooterExtra": "",
+
+		"Highscore": "Điểm Cao: ",
+		"TotalScore": "Tổng Điểm: ",
+		"BestDistance": "Khoảng Cách Xa Nhất: ",
+
+		"SelectCarHeader": "Chọn Xe Của Bạn",
+		"ViperName": "VIPER",
+		"ViperSpeed": "150KMH",
+		"ViceName": "VICE",
+		"ViceSpeed": "175KMH",
+		"MacariName": "MACARI",
+		"MacariSpeed": "200KMH",
+		"RebelName": "REBEL",
+		"RebelSpeed": "225KMH",
+		"PaniniName": "PANINI",
+		"PaniniSpeed": "250KMH",
+		"TsunamiName": "TSUNAMI",
+		"TsunamiSpeed": "300KMH",
+		"LockedCar": "Khóa",
+		"ScoreCar": "Điểm ",
+		"Speed": "Tốc Độ ", 
+		"Armor": "Độ Bền ",
+		
+		"SelectWeaponHeader": "Chọn Vũ Khí",
+		"MachineGunName": "MACHINEGUN",
+		"ShotgunName": "SHOTGUN",
+		"MinigunName": "MINIGUN",
+		"LaserName": "LASER",
+		"FlameThrowerName": "FLAME\nTHROWER",
+		"GrenadeLauncherName": "GRENADE\nLAUNCHER",
+		"RocketLauncherName": "ROCKET\nLAUNCHER",
+		"EnergyGunName": "ENERGYGUN",
+		"LockedWeapon": "Khóa",
+		"ScoreWeapon": "Tổng Điểm ",
+
+		"HelpControls": "Điểu Khiển",
+
+		"HelpTouch": "Màn Hình",
+		"HelpTouchLeft": "Sang\nTrái",
+		"HelpTouchRight": "Sang\nPhải",
+		"HelpTouchBrake": "Chạm vào phanh để giảm tốc độ",
+		"HelpTouchToStart": "Bấm để bắt đầu",
+
+		"HelpKeys": "Bàn Phím",
+		"HelpKeyLeft": "Phím\nTrái",
+		"HelpKeyRight": "Phím\nPhải",
+		"HelpKeyBrake": "Nhấn -Z- để phanh",
+		"HelpKeyToStart": "Click để chơi",
+
+
+		"LivesHeader": "Độ Bền",
+		"ScoreHeader": "Điểm",
+		"DistanceHeader": "Khoảng Cách",
+
+		"PauseHeader": "Tạm Dừng",
+		"ResumeButton": "Tiếp Tục",
+		"QuitButton": "Menu",
+
+		"ResultsHeader": "Kết Thúc",
+		"ResultsScore": "Khoảng Cách",
+		"RetryButton": "Thử Lại",
+		"ResultsNewCar": "Mới!",
+		"ResultsNewWeapon": "Vũ Khí Mới!"
+	},
+
+	"de": {},
+	"tr": {}
+}

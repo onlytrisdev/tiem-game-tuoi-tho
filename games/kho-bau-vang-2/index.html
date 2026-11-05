@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+    
+    <title>Kho báu vàng 2</title>
+    <script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+</head>
+<body>
+<div id="content">
+    <div id="bg-extension"></div>
+    <div id="game"></div>
+</div>
+<div id="loader">Loading ...</div>
+<script type="text/javascript">
+    
+    var gameName = "gold-strike.min.js";
+    
+
+    //This all here is for cache busting;
+    function addScript(src, buster, callback) {
+        var s = document.createElement('script');
+        s.setAttribute('src', src + '?v=' + buster);
+        if (typeof callback === 'function') {
+            s.onload = callback;
+        }
+        document.body.appendChild(s);
+    }
+
+    addScript('version.js', Date.now(), function () {
+        addScript(gameName, version, function () {
+            //isogram?
+        });
+    });
+</script>
+
+</body>
+</html>

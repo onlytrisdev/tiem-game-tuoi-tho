@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <meta charset="utf-8">
+    <title>Người nhện phiêu lưu</title>
+    <script type="text/javascript" src=""></script>
+	<script src="embed/jsembed.js"></script>
+    <script type="text/javascript" src="disneyJs.min.js"></script>
+	<style>
+		
+		canvas{ position:fixed;
+max-width: initial !important;
+
+    }
+		
+    </style>
+    <script>
+
+	
+        function callExternalAnalytics(pName) {
+            if (DisneyJS && DisneyJS.nativeCall) {
+                DisneyJS.nativeCall({
+                    msg: "sendGameEvent",
+                    payload: {
+                        eventType: "event34",
+                        subgameName: pName,
+                        networkAttribution: "dnw",
+                        showName: "SpideyAmazingFriends"
+                    }
+                });
+
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        // Parameters configure jsembed itself.
+        var params = {
+            base: "",
+            api: "flambe", // supported custom apis are defined in jsembed. Defaults none.
+            scaletype: "fillto", // update window.canvasScale on window resize? Defaults true.
+            indexroot: "true", // use index url as path root? If false, uses domain root instead. Defaults false (uses domain root).
+            maxwidth: 1400, //The maximum width to scale the canvas to. Only works with fillto.
+            maxheight: 720, //The maximum height to scale the canvas to. Only works with fillto.
+            libs: ["flambe.js"] // array of libs to embed before trying to launch app. Defaults []
+        }
+        // Attributes will be set on the embed target for use by the app. "base" will be set as well.
+        var attr = {};
+        jsembed.embed("flambe.js", "embedtarget", "960", "560", params, attr);
+    </script>
+    <script language="JavaScript">
+        function trackFlashEvent(gameTitle, gameEvent, playEvent) {
+            window.alert('tracking:' + gameTitle + gameEvent + playEvent);
+        }
+    </script>
+    
+</head>
+
+<body style="padding: 0; margin: 0; background-color: black">
+    <div id="embedtarget"></div>
+
+    
+		
+		<script type="text/javascript">
+   window.SDK_OPTIONS = {
+      gameId: "sm7zoigzlelvhrbd6usjj6tt676ev9nv",
+      onEvent: function (a) {
+         switch (a.name) {
+            case "SDK_GAME_PAUSE":
+               // pause game logic / mute audio
+               break;
+            case "SDK_GAME_START":
+               // advertisement done, resume game logic and unmute audio
+               break;
+            case "SDK_READY":
+               // when sdk is ready
+               break;
+         }
+      }
+   };
+(function (a, b, c) {
+   var d = a.getElementsByTagName(b)[0];
+   a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "", d.parentNode.insertBefore(a, d))
+})(document, "script", "gamemonetize-sdk"); 
+</script>
+	
+	 <script type="text/javascript">
+        function google_analytics() {
+		 if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+		 sdk.showBanner();
+		 }
+        };
+
+        function google_analytics_ID() {
+            if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+			sdk.showBanner();
+			}
+        };
+
+        setTimeout(function() {
+            google_analytics();
+        }, 1000);
+        setInterval(function() {
+            google_analytics_ID();
+        }, 65000);
+    </script>
+	
+	
+    <div id="moreg" style="width:100px;height:100px;z-index:80;position:absolute;bottom:1px;left:10%"></div>
+		
+
+</body>
+
+</html>

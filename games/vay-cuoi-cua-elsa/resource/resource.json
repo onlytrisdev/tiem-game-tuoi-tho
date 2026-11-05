@@ -1,0 +1,54 @@
+{
+"resources":
+	[
+        {"name":"barbright","type":"image","url":"assets/loading/barbright.png"},
+        {"name":"bardark","type":"image","url":"assets/loading/bardark.png"},
+        {"name":"loadingBg","type":"image","url":"assets/loadingBg.png"},
+        {"name":"loadingmafalogo","type":"image","url":"assets/loading/mafalogo.png"},
+        {"name":"code","type":"image","url":"assets/code.png"},
+        {"name":"empty","type":"image","url":"assets/empty.png"},
+        {"name":"playbutton","type":"image","url":"assets/playbutton.png"},
+        {"name":"catbody","type":"image","url":"assets/cat&mafa.png"},
+        {"name":"cathead","type":"image","url":"assets/kathead.png"},
+        {"name":"catheaddata","type":"json","url":"assets/kathead.json"},
+        {"name":"cattrail","type":"image","url":"assets/kattrail.png"},
+        {"name":"cattraildata","type":"json","url":"assets/kattrail.json"},
+
+        {"name":"itemsBg","type":"image","url":"assets/rightFrame.png"},
+        {"name":"itemCoveBg","type":"image","url":"assets/itemCoveBg.png"},
+        {"name":"showBt","type":"image","url":"assets/showBt.png"},
+        {"name":"window","type":"image","url":"assets/window.png"},
+        {"name":"shareFrame","type":"image","url":"assets/shareFrame.png"},
+        {"name":"description","type":"json","url":"config/description.json"},
+        {"name":"startBt","type":"image","url":"assets/startbutton.png"},
+        {"name":"toolBg","type":"image","url":"assets/leftFrame.png"},
+        {"name":"toolButtonBg","type":"image","url":"assets/toolButtonBg.png"},
+        {"name":"toolButtonBg_selected","type":"image","url":"assets/toolButtonBg_selected.png"},
+        {"name":"facebookButton","type":"image","url":"assets/facebook.png"},
+        {"name":"moregamesButton","type":"image","url":"assets/moreGamesButtonWithLabel.png"},
+        {"name":"alertBg","type":"image","url":"assets/AlertPanel.png"},
+        {"name":"closeButton","type":"image","url":"assets/closeButton.png"},
+        {"name":"closeButton2","type":"image","url":"assets/closeButton2.png"},
+        {"name":"watermark","type":"image","url":"assets/mafa.png"},
+        {"name":"ideaButton","type":"image","url":"assets/idea.png"},
+        {"name":"clearButton","type":"image","url":"assets/clear.png"},
+        {"name":"settingsButton","type":"image","url":"assets/settings.png"},
+        {"name":"moregames+","type":"image","url":"assets/moregamesplus.png"},
+
+        {"name":"loadingscreen","type":"image","url":"assets/images/index.jpg"},
+        {"name":"titleimage","type":"image","url":"assets/images/title.png"},
+        {"name":"heroMC","type":"image","url":"assets/images/hero.png"},
+        {"name":"gameBg","type":"image","url":"assets/images/bg.jpg"},
+        {"name":"tips4","type":"image","url":"assets/images/idea.png"},
+        {"name":"googleplay","type":"image","url":"assets/googleplay.png"},
+        {"name":"appstore","type":"image","url":"assets/appstoreicon.png"},
+
+        {"name":"gameConfig","type":"json","url":"config/document.json"}
+    ],
+
+"groups":
+	[
+        {"name":"loadingBg","keys":"loadingBg,code,barbright,bardark,loadingmafalogo,playbutton,catbody,cathead,catheaddata,cattrail,cattraildata"},
+        {"name":"gui","keys":"heroMC,gameBg,loadingscreen,titleimage,tips4,startBt,watermark,toolBg,gameConfig,toolConfig,itemsBg,itemCoveBg,showBt,window,toolButtonBg,shareFrame,facebookButton,moregamesButton,alertBg,closeButton,closeButton2,settingsButton,ideaButton,clearButton,toolButtonBg_selected,moregames+,googleplay,appstore"}
+	]
+}
