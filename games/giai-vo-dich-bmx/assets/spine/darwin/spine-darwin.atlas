@@ -1,0 +1,167 @@
+
+spine-darwin.png
+size: 123,446
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+character-helmet
+  rotate: false
+  xy: 1, 262
+  size: 98, 95
+  orig: 98, 95
+  offset: 0, 0
+  index: -1
+darwin-mouth-excited
+  rotate: true
+  xy: 88, 80
+  size: 63, 29
+  orig: 63, 29
+  offset: 0, 0
+  index: -1
+darwin-mouth-happy
+  rotate: true
+  xy: 1, 126
+  size: 134, 47
+  orig: 134, 47
+  offset: 0, 0
+  index: -1
+darwin-mouth-sad
+  rotate: true
+  xy: 49, 102
+  size: 82, 38
+  orig: 82, 38
+  offset: 0, 0
+  index: -1
+darwin-mouth-smile
+  rotate: true
+  xy: 49, 185
+  size: 76, 43
+  orig: 76, 43
+  offset: 0, 0
+  index: -1
+eyeball-l
+  rotate: false
+  xy: 63, 1
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+eyeball-r
+  rotate: false
+  xy: 63, 16
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+eyes-l
+  rotate: false
+  xy: 33, 31
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+eyes-r
+  rotate: false
+  xy: 82, 44
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+fore-leg-bottom
+  rotate: false
+  xy: 1, 71
+  size: 39, 54
+  orig: 39, 54
+  offset: 0, 0
+  index: -1
+fore-leg-foot
+  rotate: false
+  xy: 78, 15
+  size: 41, 27
+  orig: 41, 27
+  offset: 0, 0
+  index: -1
+fore-leg-top
+  rotate: false
+  xy: 41, 66
+  size: 40, 34
+  orig: 40, 34
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 33, 1
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+hand-l
+  rotate: true
+  xy: 100, 247
+  size: 32, 17
+  orig: 32, 17
+  offset: 0, 0
+  index: -1
+hand-r
+  rotate: true
+  xy: 100, 281
+  size: 33, 19
+  orig: 33, 19
+  offset: 0, 0
+  index: -1
+hand-r1
+  rotate: true
+  xy: 100, 315
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1, 358
+  size: 121, 87
+  orig: 121, 87
+  offset: 0, 0
+  index: -1
+i-brow-l
+  rotate: true
+  xy: 68, 34
+  size: 15, 9
+  orig: 15, 9
+  offset: 0, 0
+  index: -1
+i-brow-r
+  rotate: true
+  xy: 68, 51
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+leg-top-back
+  rotate: true
+  xy: 1, 7
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+rear-leg-bottom
+  rotate: false
+  xy: 93, 187
+  size: 26, 59
+  orig: 26, 59
+  offset: 0, 0
+  index: -1
+rear-leg-foot
+  rotate: true
+  xy: 93, 144
+  size: 42, 27
+  orig: 42, 27
+  offset: 0, 0
+  index: -1
+rear-leg-top
+  rotate: true
+  xy: 1, 27
+  size: 43, 31
+  orig: 43, 31
+  offset: 0, 0
+  index: -1

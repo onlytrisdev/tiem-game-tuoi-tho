@@ -1,0 +1,146 @@
+
+spine-nicole.png
+size: 584,117
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+helmet
+  rotate: true
+  xy: 1, 4
+  size: 112, 123
+  orig: 112, 123
+  offset: 0, 0
+  index: -1
+nicole_arm_lower
+  rotate: false
+  xy: 571, 26
+  size: 11, 26
+  orig: 11, 26
+  offset: 0, 0
+  index: -1
+nicole_arm_upper
+  rotate: true
+  xy: 522, 34
+  size: 19, 48
+  orig: 19, 48
+  offset: 0, 0
+  index: -1
+nicole_body
+  rotate: true
+  xy: 260, 16
+  size: 26, 71
+  orig: 26, 71
+  offset: 0, 0
+  index: -1
+nicole_ears
+  rotate: false
+  xy: 260, 44
+  size: 80, 72
+  orig: 80, 72
+  offset: 0, 0
+  index: -1
+nicole_eyebrow
+  rotate: true
+  xy: 332, 29
+  size: 13, 8
+  orig: 13, 8
+  offset: 0, 0
+  index: -1
+nicole_eyes_open
+  rotate: false
+  xy: 426, 66
+  size: 99, 50
+  orig: 99, 50
+  offset: 0, 0
+  index: -1
+nicole_eyes_tight
+  rotate: false
+  xy: 426, 28
+  size: 94, 36
+  orig: 94, 36
+  offset: 0, 0
+  index: -1
+nicole_hand_handle
+  rotate: true
+  xy: 558, 7
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+nicole_hand_neutral
+  rotate: true
+  xy: 260, 4
+  size: 11, 16
+  orig: 11, 16
+  offset: 0, 0
+  index: -1
+nicole_head
+  rotate: false
+  xy: 125, 5
+  size: 133, 111
+  orig: 133, 111
+  offset: 0, 0
+  index: -1
+nicole_leg_straight
+  rotate: true
+  xy: 341, 52
+  size: 64, 84
+  orig: 64, 84
+  offset: 0, 0
+  index: -1
+nicole_mouth_oo
+  rotate: true
+  xy: 487, 7
+  size: 20, 30
+  orig: 20, 30
+  offset: 0, 0
+  index: -1
+nicole_mouth_up
+  rotate: true
+  xy: 410, 2
+  size: 34, 9
+  orig: 34, 9
+  offset: 0, 0
+  index: -1
+nicole_mouth_up_open
+  rotate: false
+  xy: 522, 3
+  size: 35, 29
+  orig: 35, 29
+  offset: 0, 0
+  index: -1
+nicole_pupil
+  rotate: false
+  xy: 410, 37
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+nicole_skirt
+  rotate: false
+  xy: 420, 1
+  size: 66, 26
+  orig: 66, 27
+  offset: 0, 0
+  index: -1
+nicole_skirt_2
+  rotate: false
+  xy: 341, 12
+  size: 67, 39
+  orig: 67, 39
+  offset: 0, 0
+  index: -1
+rear-leg
+  rotate: false
+  xy: 527, 54
+  size: 55, 62
+  orig: 55, 62
+  offset: 0, 0
+  index: -1
+nicole_leg
+  rotate: false
+  xy: 527, 54
+  size: 55, 62
+  orig: 55, 62
+  offset: 0, 0
+  index: -1

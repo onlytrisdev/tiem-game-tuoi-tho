@@ -1,0 +1,104 @@
+
+spine-richard.png
+size: 726,226
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+helmet
+  rotate: false
+  xy: 209, 72
+  size: 143, 153
+  orig: 143, 153
+  offset: 0, 0
+  index: -1
+rear-leg
+  rotate: true
+  xy: 411, 8
+  size: 65, 97
+  orig: 65, 97
+  offset: 0, 0
+  index: -1
+richard_arm_fist
+  rotate: false
+  xy: 520, 2
+  size: 97, 130
+  orig: 97, 130
+  offset: 0, 0
+  index: -1
+richard_arm_neutral
+  rotate: true
+  xy: 618, 32
+  size: 101, 93
+  orig: 101, 93
+  offset: 0, 0
+  index: -1
+richard_body
+  rotate: false
+  xy: 1, 12
+  size: 207, 213
+  orig: 207, 213
+  offset: 0, 0
+  index: -1
+richard_ear
+  rotate: true
+  xy: 209, 2
+  size: 69, 102
+  orig: 69, 102
+  offset: 0, 0
+  index: -1
+richard_eyebrow
+  rotate: false
+  xy: 1, 2
+  size: 14, 9
+  orig: 14, 9
+  offset: 0, 0
+  index: -1
+richard_eyes_closed
+  rotate: false
+  xy: 458, 80
+  size: 61, 19
+  orig: 61, 19
+  offset: 0, 0
+  index: -1
+richard_eyes_open
+  rotate: false
+  xy: 458, 100
+  size: 60, 32
+  orig: 60, 32
+  offset: 0, 0
+  index: -1
+richard_leg_2
+  rotate: true
+  xy: 312, 1
+  size: 70, 98
+  orig: 70, 98
+  offset: 0, 0
+  index: -1
+richard_mouth_down_teeth
+  rotate: false
+  xy: 458, 134
+  size: 152, 91
+  orig: 152, 91
+  offset: 0, 0
+  index: -1
+richard_mouth_up_closed
+  rotate: false
+  xy: 611, 134
+  size: 113, 91
+  orig: 113, 91
+  offset: 0, 0
+  index: -1
+richard_mouth_up_open
+  rotate: true
+  xy: 353, 75
+  size: 150, 103
+  orig: 150, 103
+  offset: 0, 0
+  index: -1
+richard_pupil
+  rotate: true
+  xy: 16, 4
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1

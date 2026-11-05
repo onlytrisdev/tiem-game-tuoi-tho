@@ -1,0 +1,153 @@
+
+spine-raven.png
+size: 342,134
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+character-helmet
+  rotate: false
+  xy: 101, 28
+  size: 91, 105
+  orig: 91, 105
+  offset: 0, 0
+  index: -1
+fore-leg-bottom
+  rotate: false
+  xy: 222, 3
+  size: 27, 40
+  orig: 27, 40
+  offset: 0, 0
+  index: -1
+fore-leg-foot
+  rotate: true
+  xy: 309, 40
+  size: 28, 29
+  orig: 28, 29
+  offset: 0, 0
+  index: -1
+fore-leg-top
+  rotate: true
+  xy: 250, 8
+  size: 35, 28
+  orig: 35, 28
+  offset: 0, 0
+  index: -1
+raven-arm-l
+  rotate: true
+  xy: 278, 51
+  size: 49, 29
+  orig: 49, 29
+  offset: 0, 0
+  index: -1
+raven-arm-r
+  rotate: false
+  xy: 279, 102
+  size: 56, 31
+  orig: 56, 31
+  offset: 0, 0
+  index: -1
+raven-body
+  rotate: true
+  xy: 132, 2
+  size: 25, 46
+  orig: 25, 46
+  offset: 0, 0
+  index: -1
+raven-cloth
+  rotate: false
+  xy: 193, 44
+  size: 84, 89
+  orig: 84, 89
+  offset: 0, 0
+  index: -1
+raven-eye-l
+  rotate: true
+  xy: 104, 1
+  size: 26, 27
+  orig: 26, 27
+  offset: 0, 0
+  index: -1
+raven-eye-r
+  rotate: false
+  xy: 309, 11
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+raven-hand-l
+  rotate: false
+  xy: 41, 2
+  size: 28, 16
+  orig: 28, 16
+  offset: 0, 0
+  index: -1
+raven-hand-r
+  rotate: false
+  xy: 71, 3
+  size: 32, 15
+  orig: 32, 15
+  offset: 0, 0
+  index: -1
+raven-head
+  rotate: true
+  xy: 1, 19
+  size: 114, 99
+  orig: 114, 99
+  offset: 0, 0
+  index: -1
+raven-mouth
+  rotate: false
+  xy: 180, 2
+  size: 15, 5
+  orig: 15, 5
+  offset: 0, 0
+  index: -1
+raven-mouth-happy
+  rotate: true
+  xy: 27, 1
+  size: 17, 13
+  orig: 17, 13
+  offset: 0, 0
+  index: -1
+raven-mouth-sad
+  rotate: false
+  xy: 193, 33
+  size: 18, 10
+  orig: 18, 10
+  offset: 0, 0
+  index: -1
+raven-thump-l
+  rotate: false
+  xy: 1, 1
+  size: 25, 17
+  orig: 25, 17
+  offset: 0, 0
+  index: -1
+raven-thump-r
+  rotate: false
+  xy: 1, 1
+  size: 25, 17
+  orig: 25, 17
+  offset: 0, 0
+  index: -1
+rear-leg-bottom
+  rotate: true
+  xy: 180, 8
+  size: 19, 41
+  orig: 19, 41
+  offset: 0, 0
+  index: -1
+rear-leg-foot
+  rotate: false
+  xy: 279, 21
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+rear-leg-top
+  rotate: true
+  xy: 309, 69
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

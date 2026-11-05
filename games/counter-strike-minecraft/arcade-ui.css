@@ -1,0 +1,84 @@
+/* Arcade actions: icon-only, bottom-center of the level-selection canvas. */
+#gv-hud-actions {
+  position: fixed;
+  z-index: 2147482000;
+  display: none;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#gv-hud-actions button {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  flex: 0 0 56px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  touch-action: manipulation;
+  transition: transform .18s ease, opacity .18s ease;
+}
+#gv-hud-actions button:hover { transform: translateY(-3px); }
+#gv-hud-actions button:active { transform: scale(.94); opacity: .9; }
+#gv-hud-actions button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+#gv-hud-actions img {
+  display: block;
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+#gv-reset-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2147483000;
+  background: rgba(0,0,0,.72);
+  padding: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+#gv-reset-modal[hidden] { display: none !important; }
+#gv-reset-modal .gv-reset-panel {
+  width: min(440px, 100%);
+  border: 2px solid rgba(255,255,255,.22);
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-sizing: border-box;
+  background: #192332;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 18px 50px rgba(0,0,0,.55);
+}
+#gv-reset-modal strong { font-size: 20px; }
+#gv-reset-modal p { margin: 12px 0; line-height: 1.45; }
+#gv-reset-modal .gv-reset-buttons { display: flex; gap: 12px; margin-top: 22px; }
+#gv-reset-modal button {
+  appearance: none;
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  min-height: 48px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+#gv-reset-cancel { background: #1779ba; }
+#gv-reset-confirm { background: #c83333; }
+#gv-reset-modal button:disabled { opacity: .5; cursor: wait; }
+#gv-reset-error { color: #ffb7b7; font-size: 13px; }

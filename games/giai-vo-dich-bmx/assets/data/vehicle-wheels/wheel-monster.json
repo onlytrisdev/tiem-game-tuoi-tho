@@ -1,0 +1,1 @@
+{"id":"monster","tier":3,"coinPrice":1000,"diamondPrice":0,"type":"wheel","mass":0.6,"stats":{"speed":2,"flipSpeed":-2,"handling":0,"bounce":0},"sprites":[{"id":"wheel-large-monster-base","rotate":true},{"id":"wheel-large-monster-tint","rotate":false,"tint":"#FFCC00"}],"shapes":[{"type":"circle","radius":28}],"unlocked":false}

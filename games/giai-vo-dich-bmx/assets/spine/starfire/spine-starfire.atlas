@@ -1,0 +1,293 @@
+
+spine-starfire.png
+size: 516,102
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+character-helmet
+  rotate: true
+  xy: 253, 27
+  size: 74, 85
+  orig: 74, 85
+  offset: 0, 0
+  index: -1
+eyes-close-l
+  rotate: false
+  xy: 397, 26
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+eyes-close-r
+  rotate: true
+  xy: 427, 49
+  size: 26, 29
+  orig: 26, 29
+  offset: 0, 0
+  index: -1
+eyes-l
+  rotate: true
+  xy: 427, 77
+  size: 24, 40
+  orig: 24, 40
+  offset: 0, 0
+  index: -1
+eyes-r
+  rotate: false
+  xy: 469, 65
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+fore-leg-bottom
+  rotate: true
+  xy: 253, 1
+  size: 25, 87
+  orig: 25, 87
+  offset: 0, 0
+  index: -1
+fore-leg-foot
+  rotate: false
+  xy: 69, 1
+  size: 27, 16
+  orig: 27, 16
+  offset: 0, 0
+  index: -1
+fore-leg-top
+  rotate: false
+  xy: 453, 27
+  size: 8, 21
+  orig: 8, 21
+  offset: 0, 0
+  index: -1
+rear-leg-bottom
+  rotate: true
+  xy: 339, 76
+  size: 25, 87
+  orig: 25, 87
+  offset: 0, 0
+  index: -1
+rear-leg-foot
+  rotate: false
+  xy: 97, 1
+  size: 27, 16
+  orig: 27, 16
+  offset: 0, 0
+  index: -1
+rear-leg-top
+  rotate: true
+  xy: 493, 24
+  size: 8, 21
+  orig: 8, 21
+  offset: 0, 0
+  index: -1
+starfire-body
+  rotate: true
+  xy: 356, 8
+  size: 17, 33
+  orig: 17, 33
+  offset: 0, 0
+  index: -1
+starfire-ear-r
+  rotate: false
+  xy: 493, 42
+  size: 21, 22
+  orig: 21, 22
+  offset: 0, 0
+  index: -1
+starfire-finger-close-l
+  rotate: true
+  xy: 439, 2
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+starfire-finger-close-r
+  rotate: false
+  xy: 462, 5
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+starfire-finger-holder-r
+  rotate: true
+  xy: 390, 1
+  size: 24, 17
+  orig: 24, 17
+  offset: 0, 0
+  index: -1
+starfire-hair-1
+  rotate: false
+  xy: 339, 27
+  size: 57, 30
+  orig: 57, 30
+  offset: 0, 0
+  index: -1
+starfire-hair-3
+  rotate: true
+  xy: 339, 58
+  size: 17, 76
+  orig: 17, 76
+  offset: 0, 0
+  index: -1
+starfire-hair-4
+  rotate: true
+  xy: 1, 1
+  size: 16, 67
+  orig: 16, 67
+  offset: 0, 0
+  index: -1
+starfire-hand-elbow-l
+  rotate: false
+  xy: 409, 1
+  size: 12, 24
+  orig: 12, 24
+  offset: 0, 0
+  index: -1
+starfire-hand-elbow-r
+  rotate: false
+  xy: 341, 1
+  size: 14, 25
+  orig: 14, 25
+  offset: 0, 0
+  index: -1
+starfire-hand-elbow-ra
+  rotate: false
+  xy: 341, 1
+  size: 14, 25
+  orig: 14, 25
+  offset: 0, 0
+  index: -1
+starfire-hand-finger-l
+  rotate: false
+  xy: 422, 1
+  size: 16, 20
+  orig: 16, 20
+  offset: 0, 0
+  index: -1
+starfire-hand-finger-r
+  rotate: true
+  xy: 482, 6
+  size: 17, 21
+  orig: 17, 21
+  offset: 0, 0
+  index: -1
+starfire-hand-l
+  rotate: true
+  xy: 493, 33
+  size: 8, 21
+  orig: 8, 21
+  offset: 0, 0
+  index: -1
+starfire-hand-r
+  rotate: false
+  xy: 458, 53
+  size: 10, 22
+  orig: 10, 22
+  offset: 0, 0
+  index: -1
+starfire-hand-ra
+  rotate: false
+  xy: 458, 53
+  size: 10, 22
+  orig: 10, 22
+  offset: 0, 0
+  index: -1
+starfire-hand-watch-l
+  rotate: true
+  xy: 219, 3
+  size: 17, 29
+  orig: 17, 29
+  offset: 0, 0
+  index: -1
+starfire-hand-watch-r
+  rotate: true
+  xy: 187, 1
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+starfire-hand-watch-ra
+  rotate: true
+  xy: 187, 1
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+starfire-head
+  rotate: true
+  xy: 167, 21
+  size: 80, 84
+  orig: 80, 84
+  offset: 0, 0
+  index: -1
+starfire-mouth-idle
+  rotate: false
+  xy: 356, 1
+  size: 19, 6
+  orig: 19, 6
+  offset: 0, 0
+  index: -1
+starfire-mouth-open
+  rotate: false
+  xy: 469, 47
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+starfire-mouth-sad
+  rotate: false
+  xy: 126, 3
+  size: 30, 14
+  orig: 30, 14
+  offset: 0, 0
+  index: -1
+starfire-mouth-sad-idle
+  rotate: true
+  xy: 486, 27
+  size: 19, 6
+  orig: 19, 6
+  offset: 0, 0
+  index: -1
+starfire-nick-1
+  rotate: false
+  xy: 504, 6
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+starfire-nick-2
+  rotate: false
+  xy: 167, 1
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+starfire-palm-l
+  rotate: true
+  xy: 462, 28
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+starfire-palm-ra
+  rotate: true
+  xy: 462, 28
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+starfire-short-hair-1
+  rotate: true
+  xy: 1, 18
+  size: 83, 165
+  orig: 83, 165
+  offset: 0, 0
+  index: -1
+starfire-shorts
+  rotate: false
+  xy: 425, 22
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1

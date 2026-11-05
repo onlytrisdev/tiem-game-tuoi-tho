@@ -1,0 +1,1 @@
+{"id":"tank","tier":2,"coinPrice":0,"diamondPrice":50,"type":"wheel","mass":0.65,"stats":{"speed":0,"flipSpeed":1,"handling":-2,"bounce":0},"lockRotation":true,"sprites":[{"id":"wheel-large-tank-under","rotate":true},{"id":"wheel-large-tank-tint","rotate":true,"tint":"#FFCC00"},{"id":"wheel-large-tank-top","rotate":true}],"shapes":[{"type":"circle","radius":30}],"unlocked":false}
