@@ -1,0 +1,279 @@
+
+boss1.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1_l
+  rotate: false
+  xy: 240, 1358
+  size: 95, 126
+  orig: 95, 126
+  offset: 0, 0
+  index: -1
+arm1_r
+  rotate: false
+  xy: 167, 73
+  size: 60, 121
+  orig: 60, 121
+  offset: 0, 0
+  index: -1
+arm2_l
+  rotate: false
+  xy: 2, 2
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+arm2_l2
+  rotate: false
+  xy: 240, 425
+  size: 73, 97
+  orig: 73, 97
+  offset: 0, 0
+  index: -1
+arm2_l3
+  rotate: false
+  xy: 240, 524
+  size: 72, 101
+  orig: 72, 101
+  offset: 0, 0
+  index: -1
+arm2_r
+  rotate: false
+  xy: 1134, 1892
+  size: 74, 70
+  orig: 74, 70
+  offset: 0, 0
+  index: -1
+berserker_shield_in1
+  rotate: false
+  xy: 2, 1164
+  size: 236, 482
+  orig: 236, 482
+  offset: 0, 0
+  index: -1
+berserker_shield_in2
+  rotate: false
+  xy: 2, 680
+  size: 236, 482
+  orig: 236, 482
+  offset: 0, 0
+  index: -1
+berserker_shield_in3
+  rotate: false
+  xy: 2, 196
+  size: 236, 482
+  orig: 236, 482
+  offset: 0, 0
+  index: -1
+berserker_shield_in4
+  rotate: false
+  xy: 329, 1564
+  size: 236, 482
+  orig: 236, 482
+  offset: 0, 0
+  index: -1
+cape
+  rotate: false
+  xy: 2, 1648
+  size: 325, 398
+  orig: 325, 398
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 567, 1567
+  size: 145, 136
+  orig: 145, 136
+  offset: 0, 0
+  index: -1
+chest2
+  rotate: false
+  xy: 2, 69
+  size: 163, 125
+  orig: 163, 125
+  offset: 0, 0
+  index: -1
+chest3
+  rotate: false
+  xy: 829, 1742
+  size: 145, 136
+  orig: 145, 136
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 829, 1964
+  size: 303, 82
+  orig: 303, 82
+  offset: 0, 0
+  index: -1
+fire2
+  rotate: false
+  xy: 829, 1880
+  size: 303, 82
+  orig: 303, 82
+  offset: 0, 0
+  index: -1
+fire3
+  rotate: false
+  xy: 1134, 1964
+  size: 303, 82
+  orig: 303, 82
+  offset: 0, 0
+  index: -1
+foot_l
+  rotate: false
+  xy: 240, 195
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+foot_r
+  rotate: false
+  xy: 81, 18
+  size: 80, 49
+  orig: 80, 49
+  offset: 0, 0
+  index: -1
+hand2_r
+  rotate: false
+  xy: 714, 1580
+  size: 104, 123
+  orig: 104, 123
+  offset: 0, 0
+  index: -1
+hand3_r
+  rotate: false
+  xy: 374, 1512
+  size: 48, 50
+  orig: 48, 50
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 240, 258
+  size: 63, 67
+  orig: 63, 67
+  offset: 0, 0
+  index: -1
+hand_l2
+  rotate: false
+  xy: 424, 1512
+  size: 48, 50
+  orig: 48, 50
+  offset: 0, 0
+  index: -1
+hand_l3
+  rotate: false
+  xy: 1342, 1901
+  size: 50, 61
+  orig: 50, 61
+  offset: 0, 0
+  index: -1
+hand_l4
+  rotate: false
+  xy: 1283, 1901
+  size: 57, 61
+  orig: 57, 61
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 1210, 1906
+  size: 71, 56
+  orig: 71, 56
+  offset: 0, 0
+  index: -1
+hand_r2
+  rotate: false
+  xy: 1439, 1997
+  size: 82, 49
+  orig: 82, 49
+  offset: 0, 0
+  index: -1
+hand_r4
+  rotate: false
+  xy: 322, 1501
+  size: 50, 61
+  orig: 50, 61
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 240, 327
+  size: 73, 96
+  orig: 73, 96
+  offset: 0, 0
+  index: -1
+hip
+  rotate: false
+  xy: 240, 1124
+  size: 92, 113
+  orig: 92, 113
+  offset: 0, 0
+  index: -1
+hip2
+  rotate: false
+  xy: 240, 1239
+  size: 95, 117
+  orig: 95, 117
+  offset: 0, 0
+  index: -1
+hip3
+  rotate: false
+  xy: 240, 1009
+  size: 92, 113
+  orig: 92, 113
+  offset: 0, 0
+  index: -1
+leg1_l
+  rotate: false
+  xy: 240, 759
+  size: 62, 130
+  orig: 62, 130
+  offset: 0, 0
+  index: -1
+leg1_r
+  rotate: false
+  xy: 240, 891
+  size: 85, 116
+  orig: 85, 116
+  offset: 0, 0
+  index: -1
+leg2_l
+  rotate: false
+  xy: 240, 1486
+  size: 80, 160
+  orig: 80, 160
+  offset: 0, 0
+  index: -1
+leg2_r
+  rotate: false
+  xy: 240, 627
+  size: 57, 130
+  orig: 57, 130
+  offset: 0, 0
+  index: -1
+mace
+  rotate: false
+  xy: 976, 1740
+  size: 130, 138
+  orig: 130, 138
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 1523, 2002
+  size: 56, 44
+  orig: 56, 44
+  offset: 0, 0
+  index: -1
+shield
+  rotate: false
+  xy: 567, 1705
+  size: 260, 341
+  orig: 260, 341
+  offset: 0, 0
+  index: -1
