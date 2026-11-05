@@ -1,0 +1,487 @@
+{
+  "name": "theme_4_static",
+  "children": [
+    {
+      "name": "Road",
+      "position": [0, 0, -10],
+      "scale": [7, 1, 200],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_road.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "frog_theme_2_1",
+      "position": [0, 0.988, 37.1182],
+      "rotation": [-65, 0, 0],
+      "scale": [300, 9, 9],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_fog_1.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "frog_theme_2_2",
+      "position": [0, 2.502, 46.3357],
+      "rotation": [-65, 0, 0],
+      "scale": [300, 9, 50.46],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_fog_1.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "frog_theme_2_3",
+      "position": [0, 2.502, 75.7836],
+      "rotation": [-65, 0, 0],
+      "scale": [161.27, 9, 161.27],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_fog_2.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "object_far",
+      "position": [-7.091, 25, 100],
+      "rotation": [-75, 0, 0],
+      "scale": [230, 0, 70],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_object_far.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lineStatic",
+      "children": [
+        {
+          "name": "saber1",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        },
+        {
+          "name": "saber2",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        }
+      ],
+      "position": [-4.25, -0.1, 7.1285],
+      "scale": [0.15, 0.2154, 200],
+      "components": {
+        "render": {
+          "type": "box",
+          "materialAssets": ["mat_decor_big.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lineStatic",
+      "children": [
+        {
+          "name": "saber1",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        },
+        {
+          "name": "saber2",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        }
+      ],
+      "position": [4.25, -0.1, 7.1285],
+      "scale": [0.15, 0.2154, 200],
+      "components": {
+        "render": {
+          "type": "box",
+          "materialAssets": ["mat_decor_big.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lightRotate",
+      "children": [
+        {
+          "name": "lightRotate1",
+          "position": [20, 2.485, 0],
+          "rotation": [0, 0, 60],
+          "scale": [5, 10, 10],
+          "components": { "model": { "asset": "model_eye" } }
+        },
+        {
+          "name": "lightRotate2",
+          "position": [-20, 2.485, 0],
+          "rotation": [0, 0, -60],
+          "scale": [5, 10, 10],
+          "components": { "model": { "asset": "model_eye" } }
+        }
+      ],
+      "position": [0, -2.0688, 70]
+    },
+    {
+      "name": "ground2",
+      "position": [0, -1.5611, -10],
+      "scale": [100, 1, 200],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_ground_theme_4_2.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lightStick",
+      "children": [
+        {
+          "name": "lightStickContainer1",
+          "children": [
+            {
+                "name": "model_light_effect_left",
+                "enabled": false,
+                "position": [10, 3, 0],
+                "rotation": [0, 90, 65],
+                "scale": [3, 2,1.5],
+                "components": { "model": { "asset": "model_eye_yellow" } }
+              },
+              {
+                "name": "model_light_effect_right",
+                "enabled": false,
+                "position": [-10, 3, 0],
+                "rotation": [0, 90, -65],
+                "scale": [3, 2, 1.5],
+                "components": { "model": { "asset": "model_eye_yellow" } }
+              }
+          ],
+          "position": [0, 0, 0]
+        },
+        {
+          "name": "lightStickContainer2",
+          "children": [
+            {
+              "name": "lightStickContainer2Left",
+              "enabled": false,
+              "position": [10, 3, 0],
+              "rotation": [0, 90, 65],
+              "scale": [3, 2,1.5],
+              "components": { "model": { "asset": "model_eye_yellow" } }
+            },
+            {
+              "name": "lightStickContainer2Right",
+              "enabled": false,
+              "position": [-10, 3, 0],
+              "rotation": [0, 90, -65],
+              "scale": [3, 2, 1.5],
+              "components": { "model": { "asset": "model_eye_yellow" } }
+            }
+          ],
+          "position": [0, 0, 0]
+        }
+      ],
+      "position": [0, 0, 0],
+      "rotation": [15, 0, 0]
+    }    
+  ],
+  "position": [0, 0, 0],
+  "decorData": [
+    {
+      "interval": 0.5,
+      "name": "lineRoad",
+      "children": [
+        {
+          "name": "lineModel",
+          "children": [
+            {
+              "name": "saber1",
+              "position": [0, 0.5004, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            },
+            {
+              "name": "saber2",
+              "position": [0, 0.3219, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            }
+          ],
+          "position": [0, 0, 0.0002],
+          "components": {
+            "render": {
+              "type": "box",
+              "materialAssets": ["mat_line.json"],
+              "layers": [0]
+            }
+          }
+        }
+      ],
+      "position": [-3.346, -0.0837, 0],
+      "scale": [0.31, 0.215, 2.706]
+    },
+    {
+      "interval": 0.5,
+      "name": "lineRoad",
+      "children": [
+        {
+          "name": "lineModel",
+          "children": [
+            {
+              "name": "saber1",
+              "position": [0, 0.5004, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            },
+            {
+              "name": "saber2",
+              "position": [0, 0.3219, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            }
+          ],
+          "position": [0, 0, 0.0002],
+          "components": {
+            "render": {
+              "type": "box",
+              "materialAssets": ["mat_line.json"],
+              "layers": [0]
+            }
+          }
+        }
+      ],
+      "position": [3.346, -0.0837, 0],
+      "scale": [0.31, 0.215, 2.706]
+    },
+    {
+      "interval": 4.5,
+      "delay" : 0,
+      "name": "baseDecor",
+      "position": [8, 3, 0],
+      "rotation": [295, 0, 0],
+      "scale": [7, 10, 10],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_coconut_tree_red.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 4.5,
+      "delay" : 1.5,
+      "name": "baseDecor",
+      "position": [8, 3, 0],
+      "rotation": [295, 0, 0],
+      "scale": [9, 12, 10],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_coconut_tree_2_red.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 4.5,
+      "delay" : 3,
+      "name": "baseDecor",
+      "position": [8, 3, 0],
+      "rotation": [295, 0, 0],
+      "scale": [12, 10, 10],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_coconut_tree_3_red.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 4.5,
+      "delay" : 0,
+      "name": "baseDecor",
+      "position": [-8, 3, 0],
+      "rotation": [295, 0, 0],
+      "scale": [-7, 10, 10],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_coconut_tree_red.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 4.5,
+      "delay" : 1.5,
+      "name": "baseDecor",
+      "position": [-8, 3, 0],
+      "rotation": [295, 0, 0],
+      "scale": [-9, 12, 10],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_coconut_tree_2_red.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 4.5,
+      "delay" : 3,
+      "name": "baseDecor",
+      "position": [-8, 3, 0],
+      "rotation": [295, 0, 0],
+      "scale": [-12, 10, 10],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_coconut_tree_3_red.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 0.6,
+      "name": "baseDecor",
+      "position": [-24.6122, 6.6128, 0],
+      "rotation": [295, -30, 0],
+      "scale": [20, 20, 20],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_moutain_purple.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 0.6,
+      "name": "baseDecor",
+      "position": [24.6122, 6.6128, -0.0],
+      "rotation": [295, 30, 0],
+      "scale": [-20, 20, 20],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_decor_moutain_purple.json"],
+          "layers": [0],
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 800,
+		"height": 480,
+		"autoDestroyAtClosed": true
+	},
+	"compId": 2,
+	"child": [{
+		"type": "Sprite",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"texture": "ditu/d_0051_ditu1.png"
+		},
+		"compId": 4
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 111,
+			"x": 118,
+			"texture": "tongguan.png"
+		},
+		"compId": 3
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 361,
+			"x": 132,
+			"width": 137,
+			"stateNum": 2,
+			"skin": "ann2.png",
+			"name": "shangchuan",
+			"height": 57
+		},
+		"compId": 5
+	}, {
+		"type": "Label",
+		"props": {
+			"y": 280,
+			"x": 284,
+			"text": "Số lần： 5",
+			"stroke": 7,
+			"name": "tongguancishu",
+			"fontSize": 30,
+			"font": "Arial",
+			"color": "#f9e500",
+			"bold": true
+		},
+		"compId": 6
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 361,
+			"x": 331.5,
+			"width": 137,
+			"stateNum": 2,
+			"skin": "ann2.png",
+			"name": "paihangbang",
+			"height": 57
+		},
+		"compId": 7
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 369,
+			"x": 140,
+			"width": 121,
+			"texture": "sc.png",
+			"height": 49
+		},
+		"compId": 8
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 367,
+			"x": 345,
+			"width": 110,
+			"texture": "ziphb.png",
+			"height": 53
+		},
+		"compId": 9
+	}, {
+		"type": "Button",
+		"props": {
+			"y": 361,
+			"x": 545,
+			"width": 137,
+			"stateNum": 2,
+			"skin": "ann2.png",
+			"name": "zhucaidan",
+			"height": 57
+		},
+		"compId": 10
+	}, {
+		"type": "Sprite",
+		"props": {
+			"y": 365,
+			"x": 558,
+			"width": 111,
+			"texture": "zcd.png",
+			"height": 57
+		},
+		"compId": 11
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"source": "heizc2.ani",
+			"autoPlay": true
+		},
+		"compId": 12,
+		"child": [{
+			"type": "Script",
+			"props": {
+				"runtime": "san.ts"
+			},
+			"compId": 13
+		}]
+	}, {
+		"type": "Animation",
+		"props": {
+			"y": 0,
+			"x": 0,
+			"source": "heizc.ani",
+			"name": "zc"
+		},
+		"compId": 14
+	}, {
+		"type": "Script",
+		"props": {
+			"runtime": "tongguan.ts"
+		},
+		"compId": 15
+	}],
+	"loadList": ["ditu/d_0051_ditu1.png", "tongguan.png", "ann2.png", "sc.png", "ziphb.png", "zcd.png", "heizc2.ani", "heizc.ani"],
+	"loadList3D": []
+}

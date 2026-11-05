@@ -1,0 +1,3143 @@
+[
+  {
+    "time": "0.07",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "0.418",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "0.766",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "1.254",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "1.509",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "1.974",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "2.345",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "2.717",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "3.204",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "3.437",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "3.692",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "3.924",
+    "changeColor": "blue",
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "4.296",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "4.644",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "5.132",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "5.387",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "5.851",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "6.223",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "6.594",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "7.009",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "7.264",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "7.546",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "7.802",
+    "changeColor": "pink",
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "8.173",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "8.522",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "8.959",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "9.20",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "9.729",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "10.101",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "10.472",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "10.872",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "11.142",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "11.424",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "11.680",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "12.051",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "12.399",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "12.85",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "13.05",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "13.607",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.067",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "14.303",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.403",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.503",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.603",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.703",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.803",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "14.903",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "15.557",
+    "changeColor": "yellow",
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "15.980",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "16.421",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "16.765",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "16.997",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "17.485",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "17.893",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "18.323",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "18.692",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "18.924",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "19.180",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "19.412",
+    "changeColor": "blue",
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "19.844",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "20.220",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "20.619",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "20.875",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "21.362",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "21.785",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "22.082",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "22.570",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "22.802",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "23.092",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "23.290",
+    "changeColor": "pink",
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "23.752",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "24.146",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "24.497",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "24.729",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "25.217",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "25.665",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "25.960",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "26.448",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "26.680",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "26.912",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "27.167",
+    "changeColor": "blue",
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "27.601",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "27.878",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "28.375",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "28.607",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "29.095",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "29.540",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "29.814",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "30.047",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "30.147",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "30.247",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "30.347",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "30.447",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "30.547",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "31.022",
+    "changeColor": "pink",
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "31.509",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "31.765",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "32.229",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "32.485",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "32.972",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "33.460",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "33.889",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "34.180",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "34.412",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "34.667",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "34.900",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "35.357",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "35.782",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "36.107",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "36.362",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "36.827",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "37.277",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "37.570",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "38.058",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "38.290",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "38.522",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "38.777",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "39.209",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "39.497",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "39.985",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "40.217",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "40.705",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "41.129",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "41.424",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "41.912",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "42.167",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "42.400",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "42.632",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "43.085",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "43.375",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "43.862",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "44.095",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "44.582",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "45.014",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "45.302",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "45.534",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "45.634",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "45.734",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "45.834",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "45.934",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "46.03",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "46.510",
+    "changeColor": "yellow",
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "46.897",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "47.229",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "47.694",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "47.972",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "48.437",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "48.824",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "49.157",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "49.644",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "49.900",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "50.132",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "50.387",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "50.775",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "51.107",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "51.572",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "51.827",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "52.315",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "52.702",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "53.034",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "53.522",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "53.777",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "54.010",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "54.265",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "54.629",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "54.962",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "55.449",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "55.705",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "56.192",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "56.580",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "56.912",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "57.377",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "57.632",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "57.864",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "58.120",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "58.507",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "58.839",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "59.327",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "59.582",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "60.047",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "60.395",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "60.803",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "61.254",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "61.510",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "61.742",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "61.974",
+    "changeColor": "blue",
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "62.362",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "62.694",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "63.188",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "63.462",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "63.901",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "64.289",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "64.644",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "65.132",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "65.364",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "65.620",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "65.852",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "66.216",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "66.595",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "67.059",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "67.291",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "67.779",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "68.167",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "68.499",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "68.81",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "69.000",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "69.302",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "69.533",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "69.730",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "70.194",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "70.449",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "70.937",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "71.169",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "71.680",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "71.889",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "72.121",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "72.377",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "72.901",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "73.161",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "73.584",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "74.002",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "74.304",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "74.791",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "75.047",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.147",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.247",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.347",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.447",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.547",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.647",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.747",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.847",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "75.947",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "76.047",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "76.147",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "76.247",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "box",
+    "lane3": "box",
+    "lane4": "box",
+    "lane5": "box"
+  },
+  {
+    "time": "77.485",
+    "changeColor": "yellow",
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "77.873",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "78.205",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "78.692",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "78.925",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "79.412",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "79.800",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "80.132",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "80.620",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "80.875",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "81.107",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "81.363",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "81.727",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "82.083",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "82.570",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "82.802",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "83.290",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "83.678",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "84.010",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "84.497",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "84.730",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "84.985",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "85.217",
+    "changeColor": "pink",
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "85.551",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "85.921",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "86.425",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "86.680",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "87.168",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "87.532",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "87.888",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "88.375",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "88.607",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "88.863",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "89.095",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "89.483",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "89.815",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "90.302",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "90.558",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "91.022",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "91.400",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "91.765",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "91.997",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "92.230",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "92.485",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "92.735",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "92.973",
+    "changeColor": "blue",
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "93.337",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "93.693",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "94.180",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "94.412",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "94.900",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "95.288",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "95.620",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "96.107",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "96.363",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "96.595",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "96.827",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "97.215",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "97.570",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "98.058",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "98.290",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "98.778",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "99.165",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "99.498",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "99.985",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "100.217",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "100.450",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "100.705",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "101.093",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "101.425",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "101.912",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "102.168",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "102.632",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "103.020",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "103.375",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "103.863",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "104.095",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "104.327",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "104.583",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "104.970",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "105.302",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "105.790",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "106.022",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "106.510",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "106.898",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "107.230",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "107.485",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "107.717",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "107.973",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "108.182",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "108.460",
+    "changeColor": "yellow",
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "108.809",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "109.180",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "109.645",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "109.900",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "110.388",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "110.736",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "obstacle",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "box"
+  },
+  {
+    "time": "111.107",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "111.595",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "111.851",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "112.059",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "112.315",
+    "changeColor": false,
+    "lane1": "box",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "obstacle",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "112.686",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "113.035",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "empty",
+    "lane4": "box",
+    "lane5": "empty"
+  },
+  {
+    "time": "113.522",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "113.778",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "114.242",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "114.614",
+    "changeColor": false,
+    "lane1": "empty",
+    "lane2": "box",
+    "lane3": "empty",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "114.985",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "115.217",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "115.473",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "115.705",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  },
+  {
+    "time": "115.937",
+    "changeColor": false,
+    "lane1": "obstacle",
+    "lane2": "empty",
+    "lane3": "box",
+    "lane4": "empty",
+    "lane5": "obstacle"
+  }
+]

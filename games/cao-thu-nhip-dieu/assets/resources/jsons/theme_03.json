@@ -1,0 +1,1523 @@
+{ 
+  "name": "theme_2_static",
+  "children": [
+    {
+      "name": "Road",
+      "position": [0, 0, -10],
+      "scale": [7, 1, 200],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_road.json"],
+          "layers": [0],
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "name": "frog_theme_3_1",
+      "position": [0, 7.805, 56.9529],
+      "rotation": [-65, 0, 0],
+      "scale": [100, 100, 100],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_glow_theme_2.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lightDecorTheme",
+      "children": [
+        {
+          "name": "light1",
+          "children": [
+            {
+              "name": "modelLight1",
+              "position": [0, 13, 0],
+              "scale": [5, 4, 5],
+              "components": { "model": { "asset": "model_light_theme_2" } }
+            }
+          ],
+          "position": [8, 0, 0]
+        },
+        {
+          "name": "light2",
+          "children": [
+            {
+              "name": "modelLight1",
+              "position": [0, 13, 0],
+              "scale": [5, 4, 5],
+              "components": { "model": { "asset": "model_light_theme_2" } }
+            }
+          ],
+          "position": [16, 0, 0]
+        },
+        {
+          "name": "light5",
+          "children": [
+            {
+              "name": "modelLight1",
+              "position": [0, 13, 0],
+              "scale": [5, 4, 5],
+              "components": { "model": { "asset": "model_light_theme_2" } }
+            }
+          ],
+          "position": [-8, 0, 0]
+        },
+        {
+          "name": "light6",
+          "children": [
+            {
+              "name": "modelLight1",
+              "position": [0, 13, 0],
+              "scale": [5, 4, 5],
+              "components": { "model": { "asset": "model_light_theme_2" } }
+            }
+          ],
+          "position": [-16, 0, 0]
+        }
+      ],
+      "position": [0, 0, 45],
+      "rotation": [0, 0, 0]
+    }
+    
+    ,
+    {
+      "name": "frog_theme_3_2",
+      "position": [0, 0, 68.6316],
+      "rotation": [-65, 0, 0],
+      "scale": [300, 9, 50.46],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_fog_1.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "frog_theme_3_3",
+      "position": [0, 0, 75.7836],
+      "rotation": [-65, 0, 0],
+      "scale": [300, 9, 300],
+      "components": {
+        "render": {
+          "type": "plane",
+          "materialAssets": ["mat_fog_theme_2.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lineStatic",
+      "children": [
+        {
+          "name": "saber1",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        },
+        {
+          "name": "saber2",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        }
+      ],
+      "position": [-4.25, -0.1, 7.1285],
+      "scale": [0.15, 0.2154, 200],
+      "components": {
+        "render": {
+          "type": "box",
+          "materialAssets": ["mat_decor_big.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lineStatic",
+      "children": [
+        {
+          "name": "saber1",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        },
+        {
+          "name": "saber2",
+          "position": [0, 0.4804, -0.0003],
+          "scale": [10.968, 1, 1],
+          "components": {
+            "render": {
+              "type": "plane",
+              "materialAssets": ["mat_line_static.json"],
+              "layers": [0],
+              "castShadows": false,
+              "castShadowsLightmap": false,
+              "receiveShadows": false
+            }
+          }
+        }
+      ],
+      "position": [4.25, -0.1, 7.1285],
+      "scale": [0.15, 0.2154, 200],
+      "components": {
+        "render": {
+          "type": "box",
+          "materialAssets": ["mat_decor_big.json"],
+          "layers": [0]
+        }
+      }
+    },
+    {
+      "name": "lightStick",
+      "children": [
+        {
+          "name": "lightStickContainer1",
+          "enabled": false,
+          "children": [
+            {
+              "name": "Box1",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [90, -18.609, 5],
+              "rotation": [35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box2",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [80, -18.609, 5],
+              "rotation": [35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box3",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [70, -18.609, 5],
+              "rotation": [35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box4",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [60, -18.609, 5],
+              "rotation": [35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box5",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [50, -18.609, 5],
+              "rotation": [35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box6",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [40, -18.609, 5],
+              "rotation": [35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box9",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [90, -18.609, -5],
+              "rotation": [-35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box10",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [80, -18.609, -5],
+              "rotation": [-35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box11",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [70, -18.609, -5],
+              "rotation": [-35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box12",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [60, -18.609, -5],
+              "rotation": [-35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box13",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [50, -18.609, -5],
+              "rotation": [-35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            },
+            {
+              "name": "Box14",
+              "children": [
+                {
+                  "name": "saber1",
+                  "position": [0, 0, 0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                },
+                {
+                  "name": "saber2",
+                  "position": [0, 0, -0.25],
+                  "rotation": [0, 0, -90],
+                  "scale": [10, 1, 1.2],
+                  "components": {
+                    "render": {
+                      "type": "plane",
+                      "materialAssets": ["mat_glow_light_stick_decor.json"],
+                      "layers": [0],
+                      "castShadows": false,
+                      "castShadowsLightmap": false,
+                      "receiveShadows": false
+                    }
+                  }
+                }
+              ],
+              "position": [40, -18.609, -5],
+              "rotation": [-35, 0, 0],
+              "scale": [0.2, 0.2, 10],
+              "components": {
+                "render": {
+                  "type": "box",
+                  "materialAssets": ["mat_light_stick_decor.json"],
+                  "layers": [0]
+                }
+              }
+            }
+          ],
+          "position": [0, 25.8683, 97.5395],
+          "rotation": [0, 90, 0]
+        },
+        {
+          "name": "lightStickContainer2",
+          "children": [
+            {
+              "name": "lightStickContainer2Left",
+              "children": [
+                {
+                  "name": "Box1",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [90, -18.609, 5],
+                  "rotation": [35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box2",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [80, -18.609, 5],
+                  "rotation": [35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box3",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [70, -18.609, 5],
+                  "rotation": [35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box4",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [60, -18.609, 5],
+                  "rotation": [35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box5",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [50, -18.609, 5],
+                  "rotation": [35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box6",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [40, -18.609, 5],
+                  "rotation": [35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                }
+              ],
+              "position": [0, 0, 0]
+            },
+            {
+              "name": "lightStickContainer2Right",
+              "children": [
+                {
+                  "name": "Box1",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [90, -18.609, -5],
+                  "rotation": [-35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box2",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [80, -18.609, -5],
+                  "rotation": [-35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box3",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [70, -18.609, -5],
+                  "rotation": [-35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box4",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [60, -18.609, -5],
+                  "rotation": [-35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box5",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [50, -18.609, -5],
+                  "rotation": [-35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                },
+                {
+                  "name": "Box6",
+                  "children": [
+                    {
+                      "name": "saber1",
+                      "position": [0, 0, 0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "saber2",
+                      "position": [0, 0, -0.25],
+                      "rotation": [0, 0, -90],
+                      "scale": [10, 1, 1.2],
+                      "components": {
+                        "render": {
+                          "type": "plane",
+                          "materialAssets": ["mat_glow_light_stick_decor.json"],
+                          "layers": [0],
+                          "castShadows": false,
+                          "castShadowsLightmap": false,
+                          "receiveShadows": false
+                        }
+                      }
+                    }
+                  ],
+                  "position": [40, -18.609, -5],
+                  "rotation": [-35, 0, 0],
+                  "scale": [0.2, 0.2, 10],
+                  "components": {
+                    "render": {
+                      "type": "box",
+                      "materialAssets": ["mat_light_stick_decor.json"],
+                      "layers": [0]
+                    }
+                  }
+                }
+              ],
+              "position": [0, 0, 0]
+            }
+          ],
+          "position": [0, 25.868, 97.5395],
+          "rotation": [0, 90, 0]
+        }
+      ],
+      "position": [0, 2, -1.785]
+    }
+    
+    
+    
+    
+  ],
+  "position": [0, 0, 0],
+  "components": {},
+  "decorData": [
+    {
+      "interval": 0.5,
+      "name": "lineRoad",
+      "children": [
+        {
+          "name": "lineModel",
+          "children": [
+            {
+              "name": "saber1",
+              "position": [0, 0.5004, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            },
+            {
+              "name": "saber2",
+              "position": [0, 0.3219, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            }
+          ],
+          "position": [0, 0, 0.0002],
+          "components": {
+            "render": {
+              "type": "box",
+              "materialAssets": ["mat_line.json"],
+              "layers": [0]
+            }
+          }
+        }
+      ],
+      "position": [-3.346, -0.0837, 0],
+      "scale": [0.31, 0.215, 2.706]
+    },
+    {
+      "interval": 0.5,
+      "name": "lineRoad",
+      "children": [
+        {
+          "name": "lineModel",
+          "children": [
+            {
+              "name": "saber1",
+              "position": [0, 0.5004, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            },
+            {
+              "name": "saber2",
+              "position": [0, 0.3219, -0.0045],
+              "scale": [7.17, 2.9195, 2.117],
+              "components": {
+                "render": {
+                  "type": "plane",
+                  "materialAssets": ["mat_line_road.json"],
+                  "layers": [0],
+                  "castShadows": false,
+                  "castShadowsLightmap": false,
+                  "receiveShadows": false
+                }
+              }
+            }
+          ],
+          "position": [0, 0, 0.0002],
+          "components": {
+            "render": {
+              "type": "box",
+              "materialAssets": ["mat_line.json"],
+              "layers": [0]
+            }
+          }
+        }
+      ],
+      "position": [3.346, -0.0837, 0],
+      "scale": [0.31, 0.215, 2.706]
+    },
+    {
+      "interval": 1.6,
+      "delay": 0.8,
+      "name": "baseDecorSmall",
+      "position": [-7, 1.1579, 0],
+      "rotation": [180, 0, -145.8459],
+      "components": { "model": { "asset": "model_object_theme_3_2" } }
+    },
+    {
+      "delay": 0,
+      "interval": 1.6,
+      "name": "baseDecor",
+      "position": [-8.278, -0.3485, 0],
+      "rotation": [0, 180, 0],
+      "components": {
+        "model": {
+          "asset": "model_object_theme_3",
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    },
+    {
+      "interval": 1.6,
+      "delay": 0.8,
+      "name": "baseDecorSmall",
+      "position": [7, 1.1579, 0],
+      "rotation": [0, 0, 145.8459],
+      "scale": [-1, -1, 1],
+      "components": { "model": { "asset": "model_object_theme_3_2" } }
+    },
+    {
+      "delay": 0,
+      "interval": 1.6,
+      "name": "baseDecor",
+      "position": [8.278, -0.3485, 0],
+      "rotation": [0, 180, 0],
+      "scale": [-1, 1, 1],
+      "components": {
+        "model": {
+          "asset": "model_object_theme_3",
+          "castShadows": false,
+          "castShadowsLightmap": false,
+          "receiveShadows": false
+        }
+      }
+    }
+    
+    
+  ]
+}
