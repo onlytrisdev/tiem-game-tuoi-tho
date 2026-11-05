@@ -1,0 +1,47 @@
+{
+    "version": 46,
+    "sets": {
+        "default": [
+            {
+                "id": "227788504726017",
+                "name": "Shoot Bubbles",
+                "icon": "img/cmA3MUO.png",
+                "screenshot": "img/6XQiVCi.jpg",
+                "button": {"image": "img/4RLkhSq.png", "text": "Play Now", "x": 0, "y": 0},
+                "rate": 40
+            }, 
+	       {
+                "id": "347909499499999",
+                "name": "Jumping Girl",
+                "icon": "img/dPfRbzi.png",
+                "screenshot": "img/sY1Ri8n.jpg",
+                "button": {"image": "img/O1PdIpX.png", "text": "Play Now", "x": 0, "y": -320},
+                "rate": 5
+            }
+			 
+        ], 
+	
+		
+        "TEST": [
+            {
+                "id": "3280083422063465",
+                "name": "Candy Kingdom",
+                "icon": "img/14HKjD1.png",
+                "screenshot": "img/MRopjrx.jpg",
+                "button": {"image": "img/7cIPKnk.png", "text": "Play Now", "x": 0, "y": 0},
+                "rate": 100
+            }
+        ]
+    },
+    "rules": {
+        "distributions": [
+            {
+                "set": "TEST",
+                "players": []
+            }	
+        ],
+        "interstitial":  [2, 7, 12, 16, 20],
+        "click-adjust": 0.5,
+        "view-adjust": 0.1
+    }
+}

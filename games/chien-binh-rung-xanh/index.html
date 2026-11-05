@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chiến Binh Rừng Xanh</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+<meta name="generator" content="Construct 3">
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+<link rel="stylesheet" href="style.css">
+<!-- Yandex Games SDK -->
+    <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    <script>
+
+
+const timer = (() => {
+  let timeCount = 90;
+  const startTimer = () => {
+    setInterval(() => {
+      timeCount++;
+    }, 1000);
+  };
+  const getTimeCount = () => {
+    return timeCount;
+  };
+  const resetTimeCount = () => {
+    timeCount = 0;
+  };
+  startTimer();
+
+  YaGames.init({
+    partnerId: "R-I-350998-24",
+    adv: {
+      onAdvClose: function(wasShown) {
+        console.log("Ad is closed..!");
+      }
+    },
+    screen: {
+      fullscreen: true,
+      orientation: { value: "landscape", lock: true }
+    }
+  }).then(ysdk => {
+    window.ysdk = ysdk;
+  });
+
+  return {
+    getTimeCount,
+    resetTimeCount
+  };
+})();
+
+function displayAd() {
+  if (timer.getTimeCount() > 90) {
+    timer.resetTimeCount();
+    showAd();
+  } else {
+    console.log(
+      `180s is not passed yet..! Left: ${90 - timer.getTimeCount()}s`
+    );
+  }
+}
+
+function showAd() {
+  window.ysdk.adv.showFullscreenAdv({
+    callbacks: {
+      onClose: function(wasShown) {},
+      onError: function(error) {
+        console.log("Error occured in displaying ad..!", error);
+      },
+      onOpen: function(error) {
+        console.log("User opened the ad..!");
+      },
+      onOffline: function(error) {
+        console.log("User is disconnected..!");
+      }
+    }
+  });
+}
+
+
+
+    </script>
+</head>
+<body>
+<div id="fb-root"></div>
+	<script src="box2d.wasm.js"></script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	
+  
+
+</body>
+</html>

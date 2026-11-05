@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta http-equiv="pragma" content="no-cache"/>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui" />
+
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta charset="utf-8"/>
+
+
+
+		<meta name="MobileOptimized" content="width">
+
+		<meta name="HandheldFriendly" content="true">
+
+		
+
+		<title>Ninja đào vàng 2</title>
+
+		<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+		<link rel="stylesheet" href="silengames/game.css" type="text/css" />
+
+		<link rel="shortcut icon" href="silengames/favicon.png" type="image/png"/>
+
+		<link rel="apple-touch-icon" href="silengames/favicon.png"  type="image/png"/>
+
+		<link rel="apple-touch-icon-precomposed" href="silengames/favicon.png"  type="image/png"/>
+
+		<link rel="apple-touch-startup-image" href="silengames/favicon.png" type="image/png"/>
+
+	
+
+	    <script type="text/javascript" src="cdn.js"></script>
+
+		<script type="text/javascript" src="./js/developer.js"></script>
+
+
+
+		<style>
+
+			#sg-chrome-screen {
+
+				position: absolute;
+
+				width: 100%;
+
+				height: 100%;
+
+				background: url('silengames/chrome.png') center center no-repeat;
+
+				z-index: 7;
+
+				background-size: 100% auto;
+
+				display: block;
+
+			}
+
+		</style>
+
+    </head>
+
+	
+
+    <body>
+
+		<div id="sg-orient-screen"></div>
+
+		<div id="sg-loading-screen"></div>
+
+		<div id="sg-loading-bar-back"><div id="sg-loading-bar"></div></div>
+
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+
+            <canvas id="canvas" width="0" height="0">
+
+               <p>Your browser doesn't support HTML5 canvas.</p>
+
+            </canvas>
+
+        </div>
+
+		<script type="text/javascript">
+
+		splash_w = 800;
+
+		splash_h = 800;
+
+		bar_img_w = 400;
+
+		bar_img_h = 44;
+
+		bar_img_x = (splash_w-bar_img_w)/2;
+
+		bar_img_y = 720;
+
+		canvasobj = document.getElementById("canvas");
+
+		loadbarobj = document.getElementById("sg-loading-bar");
+
+		loadbarbackobj = document.getElementById("sg-loading-bar-back");
+
+		orientobj = document.getElementById("sg-orient-screen");
+
+		loadingobj = document.getElementById("sg-loading-screen");
+
+		document.addEventListener("touchmove", function (e) { e.preventDefault(); }, false);
+
+		var isAndroid = window.navigator.userAgent.indexOf("Android") > -1;
+
+		var isApple = window.navigator.userAgent.indexOf("iP") > -1;
+
+		var isS5 = window.navigator.userAgent.indexOf("SM-G900") > -1;
+
+		var isSamsungBrowser = window.navigator.userAgent.indexOf("SamsungBrowser") > -1;
+
+		var isNativeBrowser = window.navigator.userAgent.indexOf("Version/1.5") > -1 || window.navigator.userAgent.indexOf("Version/4.0") > -1;
+
+		if ((isS5 && isSamsungBrowser) || isNativeBrowser) {
+
+			var chromeobj = document.createElement("div");
+
+			chromeobj.id = "sg-chrome-screen";
+
+			document.body.appendChild(chromeobj);
+
+		} else {
+
+			//SpilGames Init API Start
+
+			loadingtextobj = document.getElementById("sg-loading-text");
+
+			loadtextnum = 1;
+
+			if (typeof(window.innerWidth)=='number') {
+
+				browser_width = window.innerWidth;
+
+				browser_height = window.innerHeight;
+
+			} else if (document.documentElement&&document.documentElement.clientWidth) {
+
+				browser_width = document.documentElement.clientWidth;
+
+				browser_height = document.documentElement.clientHeight;
+
+			} else if (document.body&&document.body.clientWidth) {
+
+				browser_width = document.body.clientWidth;
+
+				browser_height = document.body.clientHeight;
+
+			}
+
+			var spillogo_x = 0;
+
+			if (browser_width > browser_height) {
+
+				spillogo_x = browser_width/2-101
+
+			}
+
+			var sg_spilapi = false;
+
+			var sg_spil_spon_obj = null;
+
+			var sg_spil_more_obj = null;
+
+			var sg_spil_cross_obj = null;
+
+			var sg_spilapi_obj = null;
+
+			var SpilData = {
+
+				id: ''
+
+			};
+
+			try {
+
+				GameAPI.loadAPI(function(apiInstance) {
+
+					sg_spilapi = true;
+
+					sg_spilapi_obj = apiInstance;
+
+					//Spil Logo
+
+					var logoData = apiInstance.Branding.getLogo();
+
+					if (logoData.image) {
+
+						sg_spil_spon_obj = document.createElement('img');
+
+						sg_spil_spon_obj.src = logoData.image;
+
+						if (sg_spil_spon_obj.addEventListener) {
+
+							if (!isAndroid && !isApple) {
+
+								sg_spil_spon_obj.addEventListener('click', logoData.action);
+
+							}
+
+							sg_spil_spon_obj.addEventListener('touchend', logoData.action);
+
+						} else if (sg_spil_spon_obj.attachEvent) {
+
+							sg_spil_spon_obj.attachEvent('click', logoData.action);
+
+							sg_spil_spon_obj.attachEvent('touchend', logoData.action);
+
+						}
+
+						sg_spil_spon_obj.setAttribute('style','display: block; position: absolute; left: '+spillogo_x+'px; top: 10px; z-index: 10');
+
+						document.body.appendChild(sg_spil_spon_obj);
+
+					}
+
+					//Spil Moregames
+
+					var moreData = apiInstance.Branding.getLink('more_games');
+
+						sg_spil_more_obj = document.createElement('img');
+
+						sg_spil_more_obj.src = "silengames/but_more.png";
+
+						if (sg_spil_more_obj.addEventListener) {
+
+							if (!isAndroid && !isApple) {
+
+								sg_spil_more_obj.addEventListener('click', moreData.action);
+
+							}
+
+							sg_spil_more_obj.addEventListener('touchend', moreData.action);
+
+						} else if (sg_spil_more_obj.attachEvent) {
+
+							sg_spil_more_obj.attachEvent('click', moreData.action);
+
+							sg_spil_more_obj.attachEvent('touchend', moreData.action);
+
+						}
+
+						sg_spil_more_obj.setAttribute('style','display: none; position: absolute; left: 0px; top: 0px; z-index: 11');
+
+						document.body.appendChild(sg_spil_more_obj);
+
+					//Spil Pause/Resume
+
+					GameAPI.Game.on('pause', function() {
+
+						gml_Script_gmcallback_pauseon();
+
+					});
+
+					GameAPI.Game.on('resume', function() {
+
+						gml_Script_gmcallback_pauseoff();
+
+					});
+
+				}, SpilData);
+
+			} catch(e) {};
+
+			var script = document.createElement("script");
+
+			script.type = "text/javascript";
+
+			script.src = "silengames/Ninja_Miner_2.js?AOBDB=5734707889";
+
+			document.body.appendChild(script);
+
+		}
+
+		</script>
+
+    </body>
+
+</html>

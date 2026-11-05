@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "fredburger_ar";
+	/*font-style: normal;*/
+	font-weight: 400;
+	src: url("fred_burger_black_arabic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "fredburger_cy";
+	/*font-style: normal;*/
+	font-weight: 400;
+	src: url("fred_burger_black.woff") format("woff");
+}
+
+@font-face {
+	font-family: "cevicheone";
+	font-style: normal;
+	font-weight: 400;
+	src: url("cevicheone.ttf");
+}
+
+body {
+	-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}

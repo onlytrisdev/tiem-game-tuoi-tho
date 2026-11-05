@@ -1,0 +1,142 @@
+[1, 0, 0, [
+		["cc.JsonAsset", ["_name", "json"], 1]
+	],
+	[
+		[0, 0, 1, 3]
+	],
+	[
+		[0, "supplyTank", [{
+			"id": 1,
+			"name": "MP5",
+			"grade": 1,
+			"probability": 15
+		}, {
+			"id": 8,
+			"name": "AK47",
+			"grade": 1,
+			"probability": 15
+		}, {
+			"id": 15,
+			"name": "M249",
+			"grade": 1,
+			"probability": 15
+		}, {
+			"id": 2,
+			"name": "UMP45",
+			"grade": 2,
+			"probability": 8.33
+		}, {
+			"id": 9,
+			"name": "M4A1",
+			"grade": 2,
+			"probability": 8.33
+		}, {
+			"id": 16,
+			"name": "PKP",
+			"grade": 2,
+			"probability": 8.33
+		}, {
+			"id": 3,
+			"name": "MP5SD Bluray",
+			"grade": 3,
+			"probability": 5
+		}, {
+			"id": 10,
+			"name": "AUG A3",
+			"grade": 3,
+			"probability": 5
+		}, {
+			"id": 17,
+			"name": "MG3",
+			"grade": 3,
+			"probability": 5
+		}, {
+			"id": 4,
+			"name": "Kriss",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 5,
+			"name": "Thompson Bạc",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 11,
+			"name": "AK47 Bo mạch",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 12,
+			"name": "HK416 Pixel",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 18,
+			"name": "M249 Face",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 19,
+			"name": "MG3 Ice Soul",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 22,
+			"name": "Ngọn lửa trừ tà",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 23,
+			"name": "Nỏ",
+			"grade": 4,
+			"probability": 1.25
+		}, {
+			"id": 6,
+			"name": "GREEN",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 7,
+			"name": "Sten",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 13,
+			"name": "Wolf Soul",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 14,
+			"name": "AK Lốc Xoáy",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 20,
+			"name": "Chiến binh Tương lai",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 21,
+			"name": "Loại 99",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 24,
+			"name": "M134",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 25,
+			"name": "M79",
+			"grade": 5,
+			"probability": 0.56
+		}, {
+			"id": 26,
+			"name": "AS50",
+			"grade": 5,
+			"probability": 0.56
+		}]]
+	], 0, 0, [],
+	[],
+	[]
+]

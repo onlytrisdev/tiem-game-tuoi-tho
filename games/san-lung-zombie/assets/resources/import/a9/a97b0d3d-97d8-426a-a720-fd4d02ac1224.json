@@ -1,0 +1,108 @@
+[1, 0, 0, [
+		["cc.JsonAsset", ["_name", "json"], 1]
+	],
+	[
+		[0, 0, 1, 3]
+	],
+	[
+		[0, "mainTask", [{
+			"id": 1,
+			"content": "Chơi 1 trận chế độ Ma thuật",
+			"frequency": 1,
+			"rewardType": 2,
+			"rewardCount": 3
+		}, {
+			"id": 2,
+			"content": "Cung cấp hàng Chợ đen 1 lần",
+			"frequency": 1,
+			"rewardType": 1,
+			"rewardCount": 2500
+		}, {
+			"id": 3,
+			"content": "Nâng cấp 1 vũ khí",
+			"frequency": 1,
+			"rewardType": 2,
+			"rewardCount": 1
+		}, {
+			"id": 4,
+			"content": "Nâng cấp vũ khí lên cấp 10",
+			"frequency": 10,
+			"rewardType": 2,
+			"rewardCount": 1
+		}, {
+			"id": 5,
+			"content": "Nâng sao vũ khí 1 lần",
+			"frequency": 1,
+			"rewardType": 2,
+			"rewardCount": 3
+		}, {
+			"id": 6,
+			"content": "Đánh bại 3 kẻ hồi sức trong chế độ Ma thuật",
+			"frequency": 3,
+			"rewardType": 1,
+			"rewardCount": 5000
+		}, {
+			"id": 7,
+			"content": "Mê hoặc 3 người trong chế độ Enchanted",
+			"frequency": 3,
+			"rewardType": 1,
+			"rewardCount": 5000
+		}, {
+			"id": 8,
+			"content": "Người chơi đạt cấp 5",
+			"frequency": 5,
+			"rewardType": 2,
+			"rewardCount": 3
+		}, {
+			"id": 9,
+			"content": "Nâng vũ khí lên cấp 20",
+			"frequency": 20,
+			"rewardType": 1,
+			"rewardCount": 5000
+		}, {
+			"id": 10,
+			"content": "Người chơi đạt cấp 10",
+			"frequency": 10,
+			"rewardType": 2,
+			"rewardCount": 3
+		}, {
+			"id": 11,
+			"content": "Nâng vũ khí lên cấp 30",
+			"frequency": 30,
+			"rewardType": 1,
+			"rewardCount": 5000
+		}, {
+			"id": 12,
+			"content": "Người chơi đạt cấp 20",
+			"frequency": 20,
+			"rewardType": 2,
+			"rewardCount": 3
+		}, {
+			"id": 13,
+			"content": "Nâng vũ khí lên cấp 40",
+			"frequency": 40,
+			"rewardType": 1,
+			"rewardCount": 5000
+		}, {
+			"id": 14,
+			"content": "Người chơi đạt cấp 30",
+			"frequency": 30,
+			"rewardType": 2,
+			"rewardCount": 3
+		}, {
+			"id": 15,
+			"content": "Nâng vũ khí lên cấp 50",
+			"frequency": 50,
+			"rewardType": 1,
+			"rewardCount": 10000
+		}, {
+			"id": 16,
+			"content": "Người chơi đạt cấp 50",
+			"frequency": 50,
+			"rewardType": 2,
+			"rewardCount": 10
+		}]]
+	], 0, 0, [],
+	[],
+	[]
+]

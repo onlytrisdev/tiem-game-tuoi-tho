@@ -1,0 +1,73 @@
+html {
+    background-color: #000000;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+body, canvas {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#endgameHUD {
+    height: 100%;
+    width: 100%;
+}
+
+div.spacer {
+    position:absolute;
+    width: 0px;
+    height: 0px;
+}
+
+/* iPhone 5  ( height to minimal hide address bar, scrolling to test )*/
+@media (min-device-width : 320px) and (max-device-width : 568px) {
+    div.spacer {
+        width:1px;
+        height:348px;
+    }
+}
+
+/* iPhone 4 / iPod  ( height to minimal hide address bar, scrolling to test ) */
+@media (min-device-width : 320px) and (max-device-width: 480px) {
+    div.spacer {
+        width:1px;
+        height:300px;
+    }
+}
+
+@font-face {
+    font-family: 'LumbalinGraph';
+    src: url('../media/fonts/LubalinGraphITCTurner-Bold.eot');
+    src: url('../media/fonts/LubalinGraphITCTurner-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/LubalinGraphITCTurner-Bold.woff') format('woff'),
+         url('../media/fonts/LubalinGraphITCTurner-Bold.ttf') format('truetype'),
+         url('../media/fonts/LubalinGraphITCTurner-Bold.svg#LumbalinGraph') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FredFredBurguer';
+    src: url('../media/fonts/FredFredburger-Regular.eot');
+    src: url('../media/fonts/FredFredburger-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/FredFredburger-Regular.woff') format('woff'),
+         url('../media/fonts/FredFredburger-Regular.ttf') format('truetype'),
+         url('../media/fonts/FredFredburger-Regular.svg#FredFredBurguer') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

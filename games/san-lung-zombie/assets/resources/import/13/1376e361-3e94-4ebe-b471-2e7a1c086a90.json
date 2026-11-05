@@ -1,0 +1,62 @@
+[1, 0, 0, [
+		["cc.JsonAsset", ["_name", "json"], 1]
+	],
+	[
+		[0, 0, 1, 3]
+	],
+	[
+		[0, "ctmSkill", [{
+			"id": 1,
+			"name": "Hỏa tiễn",
+			"desc": "Bắn tên lửa vào máy hồi sức",
+			"attribute": "Bắn 5 tên lửa mỗi giây để tấn công và tiếp tục bắn trong 5 giây, gây sát thương theo cấp độ (tổng cấp độ kỹ năng) * 25 + 100 phạm vi"
+		}, {
+			"id": 2,
+			"name": "Bắn đậu",
+			"desc": "Triệu tập cây đậu để tấn công Resuscitators",
+			"attribute": "Đặt trên mặt đất, bắn 10 hạt đậu mỗi giây và mỗi lần bắn gây sát thương cấp độ (tổng cấp độ khả năng)*5+40 trong 15 giây"
+		}, {
+			"id": 3,
+			"name": "Đũa phép",
+			"desc": "Biến đổi để có thể dẫm lên máy hồi sức bình thường",
+			"attribute": "Trở nên lớn hơn, Kẻ hồi sức không phải là trùm sẽ chết khi chạm vào nhân vật và các đòn tấn công của Kẻ hồi sức thông thường sẽ vô hiệu trong 5 giây"
+		}, {
+			"id": 4,
+			"name": "Búp bê xinh đẹp",
+			"desc": "Thu hút Resuscitator để tấn công, sau đó phát nổ",
+			"attribute": "Sau khi được đặt, nó sẽ tiếp tục thu hút kẻ thù trong bán kính 500 và sau 5 giây, vụ nổ sẽ gây ra cấp độ (tổng cấp độ khả năng) * 25 + 100 sát thương"
+		}, {
+			"id": 5,
+			"name": "Cây gậy ma thuật",
+			"desc": "Triệu tập Bumpman để tấn công ánh sáng",
+			"attribute": "Ultraman bắn tia laze và tất cả kẻ thù trong phạm vi đường thẳng của tia laze gây ra cấp độ (tổng cấp độ khả năng) * 25 + 100 sát thương"
+		}, {
+			"id": 6,
+			"name": "Âm thanh",
+			"desc": "Nhạc nền vang lên khiến Kẻ hồi sức nhảy múa tại chỗ",
+			"attribute": "Phát nhạc, tăng 50% tốc độ di chuyển của bản thân và kẻ địch sẽ di chuyển trái phải tại chỗ trong 5 giây"
+		}, {
+			"id": 7,
+			"name": "Bàn phím",
+			"desc": "Tấn công toàn màn hình",
+			"attribute": "Một số lượng lớn các chướng ngại vật xuất hiện, gây sát thương cấp độ (tổng cấp độ khả năng) * 10+80 cho kẻ thù bị va chạm bởi chướng ngại vật"
+		}, {
+			"id": 8,
+			"name": "Dùi cui vàng",
+			"desc": "Triệu hồi chùy vàng quét sạch yêu ma",
+			"attribute": "Khi chiếc dùi cui vàng rơi xuống, tất cả kẻ thù trong đường thẳng sẽ gây sát thương cấp độ (tổng cấp độ khả năng)*25+100"
+		}, {
+			"id": 9,
+			"name": "Đấu kiếm",
+			"desc": "Triệu hồi Vô Kỵ kiếm trận tấn công Hồi sức",
+			"attribute": "Mảng kiếm quấn quanh chính nó, gây ra cấp độ (tổng cấp độ khả năng) * 3 + 30 sát thương cho kẻ thù tiếp cận cứ sau 0,5 giây và gây sát thương cấp độ (tổng cấp độ khả năng) * 3 + 30 theo mỗi đường thẳng của thanh kiếm khi nó phun trào"
+		}, {
+			"id": 10,
+			"name": "Tương Long Thập Bát Chưởng",
+			"desc": "Dùng nội lực đánh Tương Long Thập Bát Chưởng",
+			"attribute": "Chơi 18 con rồng để gây ra cấp độ (tổng cấp độ khả năng) * 10+50 sát thương cho kẻ thù gặp phải, mỗi con rồng có 3 cấp độ sát thương"
+		}]]
+	], 0, 0, [],
+	[],
+	[]
+]

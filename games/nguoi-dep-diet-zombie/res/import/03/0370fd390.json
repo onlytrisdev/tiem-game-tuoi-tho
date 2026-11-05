@@ -1,0 +1,934 @@
+[{
+        "__type__": "cc.SpriteFrame",
+        "content": {
+            "name": "loadingBg",
+            "texture": "b8R4cK/qZJo6L92h7A7UTJ",
+            "rect": [0, 0, 10, 10],
+            "offset": [0, 0],
+            "originalSize": [10, 10],
+            "capInsets": [3, 2, 3, 2]
+        }
+    }, {
+        "__type__": "cc.EffectAsset",
+        "_name": "builtin-2d-spine",
+        "techniques": [{
+            "passes": [{
+                "blendState": {
+                    "targets": [{
+                        "blend": true
+                    }]
+                },
+                "rasterizerState": {
+                    "cullMode": 0
+                },
+                "properties": {
+                    "texture": {
+                        "value": "white",
+                        "type": 29
+                    },
+                    "alphaThreshold": {
+                        "value": [0.5],
+                        "type": 13
+                    }
+                },
+                "program": "builtin-2d-spine|vs|fs"
+            }]
+        }],
+        "shaders": [{
+            "hash": 744594081,
+            "glsl3": {
+                "vert": "\nprecision highp float;\nuniform CCGlobal {\n  highp   vec4 cc_time;\n  mediump vec4 cc_screenSize;\n  mediump vec4 cc_screenScale;\n  mediump vec4 cc_nativeSize;\n  highp   mat4 cc_matView;\n  mediump mat4 cc_matViewInv;\n  mediump mat4 cc_matProj;\n  mediump mat4 cc_matProjInv;\n  mediump mat4 cc_matViewProj;\n  mediump mat4 cc_matViewProjInv;\n  mediump vec4 cc_cameraPos;\n};\nuniform CCLocal {\n  mat4 cc_matWorld;\n  mat4 cc_matWorldIT;\n};\nin vec3 a_position;\nin vec4 a_color;\n#if USE_TINT\n  in vec4 a_color0;\n#endif\nin vec2 a_uv0;\nout vec2 v_uv0;\nout vec4 v_light;\n#if USE_TINT\n  out vec4 v_dark;\n#endif\nvoid main () {\n  mat4 mvp;\n  #if CC_USE_MODEL\n    mvp = cc_matViewProj * cc_matWorld;\n  #else\n    mvp = cc_matViewProj;\n  #endif\n  v_uv0 = a_uv0;\n  v_light = a_color;\n  #if USE_TINT\n    v_dark = a_color0;\n  #endif\n  gl_Position = mvp * vec4(a_position, 1);\n}",
+                "frag": "\nprecision highp float;\nuniform sampler2D texture;\nin vec2 v_uv0;\nin vec4 v_light;\n#if USE_TINT\n  in vec4 v_dark;\n#endif\n#if USE_ALPHA_TEST\n  uniform ALPHA_TEST {\n    float alphaThreshold;\n  };\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvoid main () {\n  vec4 texColor = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_TEXTURE\n      texColor.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  vec4 finalColor;\n  #if USE_TINT\n    finalColor.a = v_light.a * texColor.a;\n    finalColor.rgb = ((texColor.a - 1.0) * v_dark.a + 1.0 - texColor.rgb) * v_dark.rgb + texColor.rgb * v_light.rgb;\n  #else\n    finalColor = texColor * v_light;\n  #endif\n  ALPHA_TEST(finalColor);\n  gl_FragColor = finalColor;\n}"
+            },
+            "glsl1": {
+                "vert": "\nprecision highp float;\nuniform mediump mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\n#if USE_TINT\n  attribute vec4 a_color0;\n#endif\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\nvarying vec4 v_light;\n#if USE_TINT\n  varying vec4 v_dark;\n#endif\nvoid main () {\n  mat4 mvp;\n  #if CC_USE_MODEL\n    mvp = cc_matViewProj * cc_matWorld;\n  #else\n    mvp = cc_matViewProj;\n  #endif\n  v_uv0 = a_uv0;\n  v_light = a_color;\n  #if USE_TINT\n    v_dark = a_color0;\n  #endif\n  gl_Position = mvp * vec4(a_position, 1);\n}",
+                "frag": "\nprecision highp float;\nuniform sampler2D texture;\nvarying vec2 v_uv0;\nvarying vec4 v_light;\n#if USE_TINT\n  varying vec4 v_dark;\n#endif\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvoid main () {\n  vec4 texColor = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_TEXTURE\n      texColor.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  vec4 finalColor;\n  #if USE_TINT\n    finalColor.a = v_light.a * texColor.a;\n    finalColor.rgb = ((texColor.a - 1.0) * v_dark.a + 1.0 - texColor.rgb) * v_dark.rgb + texColor.rgb * v_light.rgb;\n  #else\n    finalColor = texColor * v_light;\n  #endif\n  ALPHA_TEST(finalColor);\n  gl_FragColor = finalColor;\n}"
+            },
+            "builtins": {
+                "globals": {
+                    "blocks": [{
+                        "name": "CCGlobal",
+                        "defines": []
+                    }],
+                    "samplers": []
+                },
+                "locals": {
+                    "blocks": [{
+                        "name": "CCLocal",
+                        "defines": []
+                    }],
+                    "samplers": []
+                }
+            },
+            "defines": [{
+                "name": "USE_TINT",
+                "type": "boolean",
+                "defines": []
+            }, {
+                "name": "CC_USE_MODEL",
+                "type": "boolean",
+                "defines": []
+            }, {
+                "name": "USE_ALPHA_TEST",
+                "type": "boolean",
+                "defines": []
+            }, {
+                "name": "CC_USE_ALPHA_ATLAS_TEXTURE",
+                "type": "boolean",
+                "defines": []
+            }],
+            "blocks": [{
+                "name": "ALPHA_TEST",
+                "members": [{
+                    "name": "alphaThreshold",
+                    "type": 13,
+                    "count": 1
+                }],
+                "defines": ["USE_ALPHA_TEST"],
+                "binding": 0
+            }],
+            "samplers": [{
+                "name": "texture",
+                "type": 29,
+                "count": 1,
+                "defines": [],
+                "binding": 30
+            }],
+            "record": null,
+            "name": "builtin-2d-spine|vs|fs"
+        }]
+    }, {
+        "__type__": "cc.EffectAsset",
+        "_name": "builtin-2d-sprite",
+        "techniques": [{
+            "passes": [{
+                "blendState": {
+                    "targets": [{
+                        "blend": true
+                    }]
+                },
+                "rasterizerState": {
+                    "cullMode": 0
+                },
+                "properties": {
+                    "texture": {
+                        "value": "white",
+                        "type": 29
+                    },
+                    "alphaThreshold": {
+                        "value": [0.5],
+                        "type": 13
+                    }
+                },
+                "program": "builtin-2d-sprite|vs|fs"
+            }]
+        }],
+        "shaders": [{
+            "hash": 4188224455,
+            "glsl3": {
+                "vert": "\nprecision highp float;\nuniform CCGlobal {\n  highp   vec4 cc_time;\n  mediump vec4 cc_screenSize;\n  mediump vec4 cc_screenScale;\n  mediump vec4 cc_nativeSize;\n  highp   mat4 cc_matView;\n  mediump mat4 cc_matViewInv;\n  mediump mat4 cc_matProj;\n  mediump mat4 cc_matProjInv;\n  mediump mat4 cc_matViewProj;\n  mediump mat4 cc_matViewProjInv;\n  mediump vec4 cc_cameraPos;\n};\nuniform CCLocal {\n  mat4 cc_matWorld;\n  mat4 cc_matWorldIT;\n};\nin vec3 a_position;\nin vec4 a_color;\nout vec4 v_color;\n#if USE_TEXTURE\nin vec2 a_uv0;\nout vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                "frag": "\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform ALPHA_TEST {\n    float alphaThreshold;\n  };\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nin vec4 v_color;\n#if USE_TEXTURE\nin vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  o *= texture(texture, v_uv0);\n    #if CC_USE_ALPHA_ATLAS_TEXTURE\n    o.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n    #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  gl_FragColor = o;\n}"
+            },
+            "glsl1": {
+                "vert": "\nprecision highp float;\nuniform mediump mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                "frag": "\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  o *= texture2D(texture, v_uv0);\n    #if CC_USE_ALPHA_ATLAS_TEXTURE\n    o.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n    #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  gl_FragColor = o;\n}"
+            },
+            "builtins": {
+                "globals": {
+                    "blocks": [{
+                        "name": "CCGlobal",
+                        "defines": []
+                    }],
+                    "samplers": []
+                },
+                "locals": {
+                    "blocks": [{
+                        "name": "CCLocal",
+                        "defines": []
+                    }],
+                    "samplers": []
+                }
+            },
+            "defines": [{
+                "name": "USE_TEXTURE",
+                "type": "boolean",
+                "defines": []
+            }, {
+                "name": "CC_USE_MODEL",
+                "type": "boolean",
+                "defines": []
+            }, {
+                "name": "USE_ALPHA_TEST",
+                "type": "boolean",
+                "defines": []
+            }, {
+                "name": "CC_USE_ALPHA_ATLAS_TEXTURE",
+                "type": "boolean",
+                "defines": ["USE_TEXTURE"]
+            }],
+            "blocks": [{
+                "name": "ALPHA_TEST",
+                "members": [{
+                    "name": "alphaThreshold",
+                    "type": 13,
+                    "count": 1
+                }],
+                "defines": ["USE_ALPHA_TEST"],
+                "binding": 0
+            }],
+            "samplers": [{
+                "name": "texture",
+                "type": 29,
+                "count": 1,
+                "defines": ["USE_TEXTURE"],
+                "binding": 30
+            }],
+            "record": null,
+            "name": "builtin-2d-sprite|vs|fs"
+        }]
+    }, {
+        "__type__": "cc.Texture2D",
+        "content": "0,9729,9729,33071,33071,0,0,1"
+    }, {
+        "__type__": "sp.SkeletonData",
+        "_name": "xiaoloading",
+        "_skeletonJson": {
+            "skeleton": {
+                "width": 113,
+                "height": 104.65,
+                "fps": 24,
+                "hash": " ",
+                "name": "Armature"
+            },
+            "bones": [{
+                "x": -16.6254,
+                "y": 26.8137,
+                "name": "root"
+            }, {
+                "x": 17.15,
+                "y": -59.05,
+                "rotation": -90,
+                "name": "yingzi",
+                "parent": "root"
+            }, {
+                "x": 16.3,
+                "y": -53.7,
+                "name": "jiao",
+                "parent": "root"
+            }, {
+                "length": 13,
+                "x": 16.2721,
+                "y": -40.15,
+                "rotation": 92.6063,
+                "name": "shenzi",
+                "parent": "root"
+            }, {
+                "length": 15,
+                "x": 18.5458,
+                "y": -20.2193,
+                "rotation": -52.6152,
+                "name": "ygebo",
+                "parent": "shenzi"
+            }, {
+                "length": 17,
+                "x": 22.4987,
+                "y": 26.1653,
+                "rotation": 178.6966,
+                "name": "zgebo",
+                "parent": "shenzi"
+            }, {
+                "length": 19,
+                "x": 14.1057,
+                "y": 0.0102,
+                "rotation": 5.939,
+                "name": "shenzi1",
+                "parent": "shenzi"
+            }, {
+                "length": 12,
+                "x": 19.75,
+                "rotation": 4.2726,
+                "name": "shenzi2",
+                "parent": "shenzi1"
+            }, {
+                "x": 31.229,
+                "y": 20.7662,
+                "rotation": -24.1614,
+                "name": "fengche",
+                "parent": "ygebo"
+            }, {
+                "length": 9,
+                "x": 15.4,
+                "y": -0.5,
+                "rotation": 11.7327,
+                "name": "touguan",
+                "parent": "shenzi2"
+            }, {
+                "length": 7,
+                "x": 9.8,
+                "rotation": 11.669,
+                "name": "touguan1",
+                "parent": "touguan"
+            }, {
+                "length": 5,
+                "x": 7.55,
+                "y": -0.25,
+                "rotation": 16.1439,
+                "name": "touguan2",
+                "parent": "touguan1"
+            }],
+            "slots": [{
+                "name": "yingzi",
+                "bone": "yingzi",
+                "attachment": "xiao-loading/yingzi"
+            }, {
+                "name": "jiao",
+                "bone": "jiao",
+                "attachment": "xiao-loading/jiao"
+            }, {
+                "name": "ygebo",
+                "bone": "ygebo",
+                "attachment": "xiao-loading/ygebo"
+            }, {
+                "name": "touguan",
+                "bone": "touguan2",
+                "attachment": "xiao-loading/touguan"
+            }, {
+                "name": "zgebo",
+                "bone": "zgebo",
+                "attachment": "xiao-loading/zgebo"
+            }, {
+                "name": "shenzi",
+                "bone": "shenzi2",
+                "attachment": "xiao-loading/shenzi"
+            }, {
+                "name": "fengche",
+                "bone": "fengche",
+                "attachment": "xiao-loading/fengche"
+            }],
+            "skins": {
+                "default": {
+                    "jiao": {
+                        "xiao-loading/jiao": {
+                            "name": "xiao-loading/jiao",
+                            "width": 42,
+                            "height": 20,
+                            "x": 0.7,
+                            "y": 4.7
+                        }
+                    },
+                    "zgebo": {
+                        "xiao-loading/zgebo": {
+                            "name": "xiao-loading/zgebo",
+                            "width": 18,
+                            "height": 30,
+                            "x": 7.98,
+                            "y": 1.51,
+                            "rotation": 104.97
+                        }
+                    },
+                    "touguan": {
+                        "xiao-loading/touguan": {
+                            "name": "xiao-loading/touguan",
+                            "width": 12,
+                            "height": 28,
+                            "hull": 12,
+                            "triangles": [9, 10, 4, 6, 7, 5, 7, 8, 5, 9, 4, 5, 8, 9, 5, 4, 10, 3, 10, 11, 3, 0, 1, 2, 11, 0, 2, 3, 11, 2],
+                            "uvs": [0.10833, 1, 0.86667, 1, 1, 0.76786, 1, 0.55893, 1, 0.39107, 1, 0.17143, 0.90417, 0, 0.11667, 0, 0, 0.16429, 0, 0.37679, 0, 0.54107, 0, 0.73036],
+                            "edges": [0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 22, 0],
+                            "vertices": [3, 9, -2.1, 4.7, 0.814551, 10, -11.9, 4.7, 0.131861, 11, -19, 6.45, 0.053588, 3, 9, -2.1, -4.4, 0.827976, 10, -11.9, -4.4, 0.122265, 11, -19.71, -2.62, 0.049759, 3, 9, 4.4, -6, 0.577434, 10, -5.4, -6, 0.319024, 11, -13.36, -4.72, 0.103542, 3, 9, 10.25, -6, 0.401059, 10, 0.45, -6, 0.418466, 11, -7.53, -5.18, 0.180476, 3, 9, 14.95, -6, 0.207357, 10, 5.15, -6, 0.411272, 11, -2.84, -5.55, 0.381371, 3, 9, 21.1, -6, 0.106695, 11, 3.29, -6.03, 0.536133, 10, 11.3, -6, 0.357172, 3, 9, 25.9, -4.85, 0.082466, 11, 8.17, -5.25, 0.677786, 10, 16.1, -4.85, 0.239748, 3, 9, 25.9, 4.6, 0.074849, 11, 8.9, 4.17, 0.704304, 10, 16.1, 4.6, 0.220847, 3, 9, 21.3, 6, 0.103427, 11, 4.43, 5.92, 0.552204, 10, 11.5, 6, 0.34437, 3, 9, 15.35, 6, 0.204397, 10, 5.55, 6, 0.433336, 11, -1.51, 6.39, 0.362267, 3, 9, 10.75, 6, 0.390953, 10, 0.95, 6, 0.424211, 11, -6.09, 6.75, 0.184836, 3, 9, 5.45, 6, 0.539164, 10, -4.35, 6, 0.353405, 11, -11.38, 7.16, 0.107431],
+                            "type": "mesh"
+                        }
+                    },
+                    "yingzi": {
+                        "xiao-loading/yingzi": {
+                            "name": "xiao-loading/yingzi",
+                            "width": 113,
+                            "height": 30,
+                            "x": -3.05,
+                            "y": -0.65,
+                            "rotation": 90
+                        }
+                    },
+                    "ygebo": {
+                        "xiao-loading/ygebo": {
+                            "name": "xiao-loading/ygebo",
+                            "width": 28,
+                            "height": 40,
+                            "x": 13.34,
+                            "y": 7.39,
+                            "rotation": -24.16
+                        }
+                    },
+                    "fengche": {
+                        "xiao-loading/fengche": {
+                            "name": "xiao-loading/fengche",
+                            "width": 37,
+                            "height": 37,
+                            "x": -0.34,
+                            "y": -0.03
+                        }
+                    },
+                    "shenzi": {
+                        "xiao-loading/shenzi": {
+                            "name": "xiao-loading/shenzi",
+                            "width": 54,
+                            "height": 61,
+                            "hull": 14,
+                            "triangles": [6, 7, 9, 9, 7, 8, 3, 6, 10, 2, 3, 10, 6, 9, 10, 13, 2, 10, 13, 10, 11, 12, 13, 11, 0, 1, 13, 1, 2, 13, 3, 5, 6, 3, 4, 5],
+                            "uvs": [0.05093, 0.00738, 0, 0.24754, 0, 0.42951, 0, 0.66311, 0, 0.88852, 0.26019, 1, 0.52778, 1, 0.83241, 1, 1, 0.88197, 1, 0.64508, 1, 0.4623, 1, 0.2623, 0.88241, 0.00738, 0.51574, 0],
+                            "edges": [0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 22, 24, 24, 26, 26, 0],
+                            "vertices": [3, 3, 50.94, 26.84, 0.160294, 7, 17.85, 25.75, 0.496559, 6, 37.6, 25.75, 0.343147, 3, 3, 36.22, 29.17, 0.227815, 7, 3.2, 28.5, 0.389765, 6, 22.95, 28.5, 0.382419, 3, 3, 25.12, 28.84, 0.300823, 6, 11.85, 28.5, 0.362522, 7, -7.9, 28.5, 0.336655, 3, 3, 10.88, 28.43, 0.383396, 6, -2.4, 28.5, 0.378784, 7, -22.15, 28.5, 0.23782, 3, 3, -2.87, 28.03, 0.472239, 6, -16.15, 28.5, 0.349342, 7, -35.9, 28.5, 0.178419, 3, 3, -9.25, 13.79, 0.662005, 6, -22.95, 14.45, 0.248171, 7, -42.7, 14.45, 0.089824, 3, 3, -8.83, -0.66, 0.83889, 6, -22.95, 0, 0.125001, 7, -42.7, 0, 0.03611, 3, 3, -8.36, -17.1, 0.614501, 6, -22.95, -16.45, 0.27919, 7, -42.7, -16.45, 0.106309, 3, 3, -0.9, -25.94, 0.475665, 6, -15.75, -25.5, 0.356642, 7, -35.5, -25.5, 0.167692, 3, 3, 13.55, -25.52, 0.38536, 6, -1.3, -25.5, 0.385046, 7, -21.05, -25.5, 0.229594, 3, 3, 24.69, -25.19, 0.310827, 6, 9.85, -25.5, 0.368736, 7, -9.9, -25.5, 0.320437, 3, 3, 36.89, -24.84, 0.216131, 7, 2.3, -25.5, 0.394718, 6, 22.05, -25.5, 0.389151, 3, 3, 52.25, -18.04, 0.120904, 7, 17.85, -19.15, 0.562591, 6, 37.6, -19.15, 0.316505, 3, 3, 52.12, 1.77, 0.023014, 7, 18.3, 0.65, 0.879848, 6, 38.05, 0.65, 0.097139],
+                            "type": "mesh"
+                        }
+                    }
+                }
+            },
+            "animations": {
+                "Animation": {
+                    "bones": {
+                        "shenzi": {
+                            "translate": [{
+                                "time": 0
+                            }, {
+                                "time": 0.375,
+                                "x": 0.33,
+                                "y": -0.66
+                            }, {
+                                "time": 0.75
+                            }],
+                            "rotate": [{
+                                "time": 0,
+                                "curve": [0.5390243902439025, 0.0375, 1, 1],
+                                "angle": 0
+                            }, {
+                                "time": 0.375,
+                                "angle": -9.22
+                            }, {
+                                "time": 0.4583,
+                                "angle": -12.19
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0,
+                                "curve": [0.5390243902439025, 0.0375, 1, 1]
+                            }, {
+                                "time": 0.375
+                            }, {
+                                "time": 0.4583
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "shenzi1": {
+                            "rotate": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 1, 1],
+                                "angle": 0
+                            }, {
+                                "time": 0.375,
+                                "curve": [0.4219512195121951, 0.73125, 1, 1],
+                                "angle": -6.85
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 1, 1]
+                            }, {
+                                "time": 0.375,
+                                "curve": [0.4219512195121951, 0.73125, 1, 1]
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "shenzi2": {
+                            "rotate": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 1, 1],
+                                "angle": 0
+                            }, {
+                                "time": 0.4583,
+                                "curve": [0.4560975609756098, 0.95625, 1, 1],
+                                "angle": -8.51
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 1, 1]
+                            }, {
+                                "time": 0.4583,
+                                "curve": [0.4560975609756098, 0.95625, 1, 1]
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "touguan": {
+                            "rotate": [{
+                                "time": 0,
+                                "angle": 0
+                            }, {
+                                "time": 0.375,
+                                "angle": -25.4
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0
+                            }, {
+                                "time": 0.375
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "touguan1": {
+                            "rotate": [{
+                                "time": 0,
+                                "angle": 0
+                            }, {
+                                "time": 0.4583,
+                                "angle": -35.19
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0
+                            }, {
+                                "time": 0.4583
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "touguan2": {
+                            "rotate": [{
+                                "time": 0,
+                                "angle": 0
+                            }, {
+                                "time": 0.5417,
+                                "angle": -34.45
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0
+                            }, {
+                                "time": 0.5417
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "zgebo": {
+                            "rotate": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 1, 1],
+                                "angle": 0
+                            }, {
+                                "time": 0.375,
+                                "curve": [0, 0, 1, 1],
+                                "angle": -35.93
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 1, 1]
+                            }, {
+                                "time": 0.375,
+                                "curve": [0, 0, 1, 1]
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "ygebo": {
+                            "translate": [{
+                                "time": 0
+                            }, {
+                                "time": 0.375,
+                                "y": -2.29
+                            }, {
+                                "time": 0.75
+                            }],
+                            "rotate": [{
+                                "time": 0,
+                                "angle": 0
+                            }, {
+                                "time": 0.375,
+                                "angle": 7.26
+                            }, {
+                                "time": 0.75,
+                                "angle": 0
+                            }],
+                            "shear": [{
+                                "time": 0
+                            }, {
+                                "time": 0.375
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "fengche": {
+                            "rotate": [{
+                                "time": 0,
+                                "angle": 7.46
+                            }, {
+                                "time": 0.125,
+                                "angle": -45.21
+                            }, {
+                                "time": 0.25,
+                                "angle": -111.7
+                            }, {
+                                "time": 0.375,
+                                "angle": -167.3
+                            }, {
+                                "time": 0.5,
+                                "angle": 147.14
+                            }, {
+                                "time": 0.625,
+                                "angle": 88.04
+                            }, {
+                                "time": 0.75,
+                                "angle": 37.67
+                            }],
+                            "shear": [{
+                                "time": 0
+                            }, {
+                                "time": 0.125
+                            }, {
+                                "time": 0.25
+                            }, {
+                                "time": 0.375
+                            }, {
+                                "time": 0.5
+                            }, {
+                                "time": 0.625
+                            }, {
+                                "time": 0.75
+                            }]
+                        }
+                    }
+                }
+            }
+        },
+        "_atlasText": "\nxiaoloading.png\nsize: 126,126\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nxiao-loading/yingzi\n  rotate: false\n  xy: 1, 1\n  size: 113, 30\n  orig: 113, 30\n  offset: 0, 0\n  index: -1\nxiao-loading/jiao\n  rotate: false\n  xy: 57, 75\n  size: 42, 20\n  orig: 42, 20\n  offset: 0, 0\n  index: -1\nxiao-loading/ygebo\n  rotate: false\n  xy: 96, 33\n  size: 28, 40\n  orig: 28, 40\n  offset: 0, 0\n  index: -1\nxiao-loading/touguan\n  rotate: false\n  xy: 1, 96\n  size: 12, 28\n  orig: 12, 28\n  offset: 0, 0\n  index: -1\nxiao-loading/zgebo\n  rotate: false\n  xy: 101, 75\n  size: 18, 30\n  orig: 18, 30\n  offset: 0, 0\n  index: -1\nxiao-loading/shenzi\n  rotate: false\n  xy: 1, 33\n  size: 54, 61\n  orig: 54, 61\n  offset: 0, 0\n  index: -1\nxiao-loading/fengche\n  rotate: false\n  xy: 57, 33\n  size: 37, 37\n  orig: 37, 37\n  offset: 0, 0\n  index: -1\n",
+        "textures": [{
+            "__uuid__": "3chCNgHGRB27cIisokIv6o"
+        }],
+        "textureNames": ["xiaoloading.png"]
+    },
+    [{
+        "__type__": "cc.SceneAsset",
+        "_name": "game",
+        "scene": {
+            "__id__": 1
+        },
+        "asyncLoadAssets": null
+    }, {
+        "__type__": "cc.Scene",
+        "_name": "New Node",
+        "_children": [{
+            "__id__": 2
+        }, {
+            "__id__": 6
+        }],
+        "_active": false,
+        "_anchorPoint": {
+            "__type__": "cc.Vec2"
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+        },
+        "autoReleaseAssets": false
+    }, {
+        "__type__": "cc.Node",
+        "_name": "Canvas",
+        "_parent": {
+            "__id__": 1
+        },
+        "_children": [{
+            "__id__": 3
+        }, {
+            "__id__": 4
+        }],
+        "_components": [{
+            "__type__": "cc.Canvas",
+            "node": {
+                "__id__": 2
+            },
+            "_designResolution": {
+                "__type__": "cc.Size",
+                "width": 640,
+                "height": 1135
+            },
+            "_fitWidth": true
+        }, {
+            "__type__": "cc.Widget",
+            "node": {
+                "__id__": 2
+            },
+            "_alignFlags": 45
+        }],
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 640,
+            "height": 1135
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [320, 567.5, 0, 0, 0, 0, 1, 1, 1, 1]
+        },
+        "_id": "abaOcca8VG0KgAV1egocXb"
+    }, {
+        "__type__": "cc.Node",
+        "_name": "Main Camera",
+        "_parent": {
+            "__id__": 2
+        },
+        "_components": [{
+            "__type__": "cc.Camera",
+            "node": {
+                "__id__": 3
+            },
+            "_clearFlags": 7,
+            "_depth": -1
+        }],
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 401.83578735597956, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "loading",
+        "_parent": {
+            "__id__": 2
+        },
+        "_children": [{
+            "__id__": 5
+        }],
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "wz",
+        "_parent": {
+            "__id__": 4
+        },
+        "_components": [{
+            "__type__": "cc.Label",
+            "node": {
+                "__id__": 5
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_useOriginalSize": false,
+            "_string": "Đang tải game...",
+            "_N$string": "Đang tải game...",
+            "_N$horizontalAlign": 1,
+            "_N$verticalAlign": 1
+        }],
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 233.34,
+            "height": 50.4
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [3.793, -487.41, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "game_app",
+        "_parent": {
+            "__id__": 1
+        },
+        "_children": [{
+            "__type__": "cc.Node",
+            "_name": "res_mgr",
+            "_parent": {
+                "__id__": 6
+            },
+            "_trs": {
+                "__type__": "TypedArray",
+                "ctor": "Float64Array",
+                "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+            }
+        }],
+        "_components": [{
+            "__type__": "c5677iYCfxFzozsYxkyNxQ8",
+            "node": {
+                "__id__": 6
+            },
+            "load_prefabs": {
+                "__uuid__": "cafVe5k1dASoOPzb18HVK1"
+            }
+        }],
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [320, 567.5, 0, 0, 0, 0, 1, 1, 1, 1]
+        },
+        "_id": "a44imYZolNRK5RLbfoLKVl"
+    }], {
+        "__type__": "cc.Material",
+        "_name": "builtin-2d-spine",
+        "_effectAsset": {
+            "__uuid__": "0ek66qC1NOQLjgYmi04HvX"
+        },
+        "_techniqueData": {}
+    }, {
+        "__type__": "cc.Texture2D",
+        "content": "0,9729,9729,33071,33071,0,0,1"
+    },
+    [{
+        "__type__": "cc.Prefab",
+        "_name": "loading_prefab",
+        "data": {
+            "__id__": 1
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "loading_prefab",
+        "_children": [{
+            "__id__": 2
+        }, {
+            "__id__": 3
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "cafVe5k1dASoOPzb18HVK1"
+            },
+            "fileId": "d1kq5i1y9H87KwS7Ra15aE"
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "loadingBg",
+        "_parent": {
+            "__id__": 1
+        },
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 2
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_spriteFrame": {
+                "__uuid__": "07QJe9AutDj7v7LszrZ+/e"
+            },
+            "_type": 1,
+            "_sizeMode": 0
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "cafVe5k1dASoOPzb18HVK1"
+            },
+            "fileId": "d5C4OtUgVA+Kd1+FJQJ7Hu"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 640,
+            "height": 1135
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1.935, 1.935, 1.935]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "xiaoloading",
+        "_parent": {
+            "__id__": 1
+        },
+        "_components": [{
+            "__type__": "sp.Skeleton",
+            "node": {
+                "__id__": 3
+            },
+            "_materials": [{
+                "__uuid__": "7a/QZLET9IDreTiBfRn2PD"
+            }],
+            "defaultAnimation": "Animation",
+            "_preCacheMode": 0,
+            "_animationName": "Animation",
+            "_N$skeletonData": {
+                "__uuid__": "47R70cKt9K6Z+WSZ0wLreG"
+            }
+        }, {
+            "__type__": "cc.Widget",
+            "node": {
+                "__id__": 3
+            },
+            "_alignFlags": 18,
+            "_left": -56.5,
+            "_right": -56.5,
+            "_top": -52.325,
+            "_bottom": -52.325,
+            "_originalWidth": 113,
+            "_originalHeight": 104.65
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "cafVe5k1dASoOPzb18HVK1"
+            },
+            "fileId": "f5+GXP5hxONq/KIaZpY26+"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 113,
+            "height": 104.65
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }], {
+        "__type__": "cc.Material",
+        "_name": "builtin-2d-sprite",
+        "_effectAsset": {
+            "__uuid__": "28dPjdQWxEQIG3VVl1Qm6T"
+        },
+        "_techniqueData": {
+            "0": {
+                "defines": {
+                    "USE_TEXTURE": true
+                }
+            }
+        }
+    }
+]

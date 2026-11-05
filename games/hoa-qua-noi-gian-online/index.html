@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta charset="utf-8">
+
+<title>Plants vs. Monsters</title>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script>
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+<script src="arcade-tool.js"></script>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, initial-scale=1.0, viewport-fit=cover">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="full-screen" content="yes">
+
+<meta name="screen-orientation" content="landscape">
+
+<meta name="x5-fullscreen" content="true">
+
+<meta name="360-fullscreen" content="true">
+
+<style>
+
+	html, body {
+
+		margin: 0;
+
+		padding: 0;
+
+		width: 100%;
+
+		height: 100%;
+
+		overflow: hidden;
+
+		background: #000;
+
+		touch-action: none;
+
+		-webkit-text-size-adjust: 100%;
+
+	}
+
+
+
+	body, canvas, div {
+
+		-moz-user-select: none;
+
+		-webkit-user-select: none;
+
+		-ms-user-select: none;
+
+		-khtml-user-select: none;
+
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	}
+
+
+
+	#gameCanvas {
+
+		display: block;
+
+		margin: 0 auto;
+
+		touch-action: none;
+
+		max-width: 100vw;
+
+		max-height: 100vh;
+
+	}
+
+
+
+	@font-face {
+
+		font-family: 'allerbold';
+
+		src: url('res/font/aller_bd-webfont.eot');
+
+		src: url('res/font/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+
+			url('res/font/aller_bd-webfont.woff') format('woff'),
+
+			url('res/font/aller_bd-webfont.ttf') format('truetype'),
+
+			url('res/font/aller_bd-webfont.svg#allerbold') format('svg');
+
+		font-weight: normal;
+
+		font-style: normal;
+
+	}
+
+
+
+	.hint {
+
+		display: none;
+
+		position: fixed;
+
+		top: 0;
+
+		left: 0;
+
+		right: 0;
+
+		bottom: 0;
+
+		z-index: 9000;
+
+		margin: 0;
+
+		padding: 24px;
+
+		box-sizing: border-box;
+
+		background: #000;
+
+		color: #fffffe;
+
+		font-size: 22px;
+
+		font-family: allerbold, Arial, sans-serif;
+
+		text-align: center;
+
+		/* căn giữa chữ */
+
+		align-items: center;
+
+		justify-content: center;
+
+		word-break: break-word;
+
+		pointer-events: none;
+
+	}
+
+
+
+	.hint.is-visible {
+
+		display: flex;
+
+	}
+
+
+
+	#sg-loadscrn {
+
+		position: fixed;
+
+		top: 0;
+
+		left: 0;
+
+		width: 100%;
+
+		height: 100%;
+
+		background-color: #fff;
+
+		z-index: 9999;
+
+	}
+
+
+
+	#sg-spinner {
+
+		position: absolute;
+
+		width: 150px;
+
+		height: 50px;
+
+		top: 50%;
+
+		left: 50%;
+
+		margin-top: -25px;
+
+		margin-left: -75px;
+
+		background-image: url('assets/sg-loader.gif');
+
+	}
+
+
+
+	#sg-spinner.no-img {
+
+		background: #ffffff;
+
+	}
+
+
+
+	#sg-loadtext {
+
+		position: absolute;
+
+		font-family: sans-serif;
+
+		top: 50%;
+
+		left: 50%;
+
+		width: 250px;
+
+		margin-left: -125px;
+
+		margin-top: -125px;
+
+		text-align: center;
+
+		line-height: 150%;
+
+		font-size: 16px;
+
+	}
+
+
+
+	/* Nút Xóa data — giống phong cách Bắt Đầu / Thông số */
+
+	.gv-menu-btn {
+
+		appearance: none;
+
+		-webkit-appearance: none;
+
+		border: 2px solid rgba(255, 255, 255, 0.22);
+
+		border-radius: 999px;
+
+		background: rgba(0, 0, 0, 0.55);
+
+		color: #ff6b6b;
+
+		font-family: allerbold, "Arial Black", Arial, sans-serif;
+
+		font-weight: bold;
+
+		letter-spacing: 0.5px;
+
+		cursor: pointer;
+
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+
+		touch-action: manipulation;
+
+		padding: 0;
+
+		margin: 0;
+
+		line-height: 1;
+
+	}
+
+
+
+	.gv-menu-btn:active {
+
+		transform: scale(0.96);
+
+		background: rgba(0, 0, 0, 0.7);
+
+	}
+
+
+
+	.gv-delete-btn {
+
+		color: #ff7a7a;
+
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+
+	}
+
+
+
+	/* Thông báo Xóa data — overlay trong game, không dùng popup trình duyệt */
+
+	#gv-confirm {
+
+		position: fixed;
+
+		top: 0;
+
+		left: 0;
+
+		right: 0;
+
+		bottom: 0;
+
+		z-index: 10010;
+
+		display: flex;
+
+		align-items: center;
+
+		justify-content: center;
+
+		padding: 16px;
+
+		background: rgba(0, 0, 0, 0.65);
+
+		font-family: Arial, sans-serif;
+
+		-webkit-tap-highlight-color: transparent;
+
+	}
+
+
+
+	#gv-confirm.gv-hidden {
+
+		display: none !important;
+
+	}
+
+
+
+	.gv-confirm-box {
+
+		box-sizing: border-box;
+
+		width: 100%;
+
+		max-width: 340px;
+
+		padding: 20px 18px 16px;
+
+		border-radius: 12px;
+
+		background: rgba(20, 24, 32, 0.96);
+
+		border: 2px solid rgba(255, 255, 255, 0.18);
+
+		color: #fff;
+
+		text-align: center;
+
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+
+	}
+
+
+
+	.gv-confirm-text {
+
+		margin: 0 0 18px;
+
+		font-size: 16px;
+
+		line-height: 1.45;
+
+		font-family: allerbold, Arial, sans-serif;
+
+	}
+
+
+
+	.gv-confirm-actions {
+
+		display: flex;
+
+		gap: 10px;
+
+		justify-content: center;
+
+	}
+
+
+
+	.gv-confirm-actions button {
+
+		flex: 1 1 0;
+
+		min-height: 44px;
+
+		padding: 0 14px;
+
+		border: 0;
+
+		border-radius: 999px;
+
+		font-size: 16px;
+
+		font-weight: bold;
+
+		font-family: allerbold, Arial, sans-serif;
+
+		cursor: pointer;
+
+		touch-action: manipulation;
+
+	}
+
+
+
+	.gv-confirm-cancel {
+
+		background: #2e9b4a;
+
+		color: #fff;
+
+	}
+
+
+
+	.gv-confirm-ok {
+
+		background: #d64545;
+
+		color: #fff;
+
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	window.gameLangs = ['en', 'de', 'es', 'fr', 'it', 'pt', 'ru', 'tr']; //ver from 29.9.14
+
+	window.gameJS = ['jquery-1.8.1.min.js', 'cocos2d.js'];
+
+	window.gameOnLoadScript = "startGame();";
+
+</script>
+
+<script type="text/javascript" src="assets/softgames-1.1.js"></script>
+
+<script type="text/javascript" src="assets/sg.hooks.js"></script>
+
+<script>
+
+	var lang;
+
+	var forceCocosResize = function () {
+
+		try {
+
+			if (typeof cc === "undefined" || !cc.EGLView) return;
+
+			var view = cc.EGLView.getInstance();
+
+			if (!view) return;
+
+			if (typeof view._resizeEvent === "function") {
+
+				view._resizeEvent();
+
+			} else if (typeof view.setDesignResolutionSize === "function") {
+
+				view.setDesignResolutionSize(800, 480, cc.RESOLUTION_POLICY.SHOW_ALL);
+
+			}
+
+		} catch (e) { /* ignore */ }
+
+	};
+
+	var startGame = function () {
+
+		lang = SG.lang;
+
+		SG_Hooks.setOrientationHandler(function () {});
+
+		SG_Hooks.setResizeHandler(function () {});
+
+
+
+		checkOrientation();
+
+		$(window).on("resize orientationchange", function () {
+
+			checkOrientation();
+
+			setTimeout(forceCocosResize, 150);
+
+			setTimeout(forceCocosResize, 400);
+
+		});
+
+
+
+		var s = document.createElement('script');
+
+		s.src = 'cocos2d.js';
+
+		document.body.appendChild(s);
+
+	};
+
+	var checkOrientation = function () {
+
+		var screenWidth = $(window).width();
+
+		var screenHeight = $(window).height();
+
+		var isLandscape = screenWidth > screenHeight;
+
+
+
+		/* Không ẩn canvas (visibility:hidden) — tránh Cocos boot size=0 → màn đen sau khi xoay */
+
+		if (!isLandscape) {
+
+			$('.hint').addClass('is-visible').css('display', 'flex');
+
+		} else {
+
+			$('.hint').removeClass('is-visible').css('display', 'none');
+
+			$('#gameCanvas').css('visibility', 'visible');
+
+			setTimeout(forceCocosResize, 50);
+
+		}
+
+	};
+
+</script>
+
+</head>
+
+<body>
+
+<h1 class="hint">Vui lòng xoay ngang thiết bị để chơi</h1>
+
+<canvas id="gameCanvas" width="800" height="480"></canvas>
+
+</body>
+
+</html>
+

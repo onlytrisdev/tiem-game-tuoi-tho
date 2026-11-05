@@ -1,0 +1,2406 @@
+[{
+        "__type__": "cc.SpriteFrame",
+        "content": {
+            "name": "bfBtn",
+            "texture": "f9l5Hv86NPB6Oxrfj9bFPz",
+            "rect": [0, 0, 225, 76],
+            "offset": [0, 0],
+            "originalSize": [225, 76],
+            "capInsets": [0, 0, 0, 0]
+        }
+    }, {
+        "__type__": "cc.SpriteFrame",
+        "content": {
+            "name": "ptBtn",
+            "texture": "10WWUJCH5HAqb+v6JVi5bQ",
+            "rect": [0, 0, 152, 53],
+            "offset": [0, 0],
+            "originalSize": [152, 53],
+            "capInsets": [0, 0, 0, 0]
+        }
+    }, {
+        "__type__": "sp.SkeletonData",
+        "_name": "ziyuanxiangopen",
+        "_skeletonJson": {
+            "skeleton": {
+                "width": 265.2,
+                "height": 236.4,
+                "fps": 24,
+                "hash": " ",
+                "name": "Armature"
+            },
+            "bones": [{
+                "name": "root"
+            }, {
+                "x": -87.31692000000001,
+                "y": -50.894400000000005,
+                "name": "guangdian",
+                "parent": "root"
+            }, {
+                "x": -0.8,
+                "y": -86.80000000000001,
+                "name": "xiangzi",
+                "parent": "root"
+            }, {
+                "x": 95.50852,
+                "y": -50.894400000000005,
+                "scaleY": -1,
+                "name": "guangdian1",
+                "parent": "root"
+            }, {
+                "x": -6.98316,
+                "y": -3.7434,
+                "rotation": 34.2888,
+                "scaleY": -1,
+                "name": "guangdian11",
+                "parent": "root"
+            }, {
+                "x": 6.719360000000001,
+                "y": 25.71284,
+                "scaleY": -1,
+                "name": "guangdian12",
+                "parent": "root"
+            }, {
+                "x": -102.32184,
+                "y": 10.897480000000002,
+                "scaleY": -1,
+                "name": "guangdian121",
+                "parent": "root"
+            }, {
+                "x": 105.57836,
+                "y": -22.12736,
+                "scaleY": -1,
+                "name": "guangdian1211",
+                "parent": "root"
+            }, {
+                "x": 10,
+                "y": 34,
+                "scaleX": 1.3665,
+                "scaleY": 1.3665,
+                "name": "guang",
+                "parent": "xiangzi"
+            }],
+            "slots": [{
+                "name": "xiangzi",
+                "bone": "xiangzi",
+                "attachment": "ziyuanbaoopen/xiangzi"
+            }, {
+                "name": "guang",
+                "bone": "guang",
+                "blend": "additive",
+                "attachment": "ziyuanbaoopen/guang"
+            }, {
+                "name": "guangdian",
+                "bone": "guangdian",
+                "blend": "additive",
+                "attachment": "ziyuanbaoopen/guangdian"
+            }, {
+                "name": "guangdian1",
+                "bone": "guangdian1",
+                "blend": "additive",
+                "attachment": "ziyuanbaoopen/guangdian"
+            }, {
+                "name": "guangdian11",
+                "bone": "guangdian11",
+                "blend": "additive",
+                "attachment": "ziyuanbaoopen/guangdian"
+            }, {
+                "name": "guangdian12",
+                "bone": "guangdian12",
+                "attachment": "ziyuanbaoopen/guangdian"
+            }, {
+                "name": "guangdian121",
+                "bone": "guangdian121",
+                "attachment": "ziyuanbaoopen/guangdian"
+            }, {
+                "name": "guangdian1211",
+                "bone": "guangdian1211",
+                "attachment": "ziyuanbaoopen/guangdian"
+            }],
+            "skins": {
+                "default": {
+                    "guangdian11": {
+                        "ziyuanbaoopen/guangdian": {
+                            "name": "ziyuanbaoopen/guangdian",
+                            "width": 50,
+                            "height": 50,
+                            "x": -0.33,
+                            "y": -0.13,
+                            "rotation": -1.09,
+                            "scaleX": 0.2107,
+                            "scaleY": 0.2107
+                        }
+                    },
+                    "guangdian12": {
+                        "ziyuanbaoopen/guangdian": {
+                            "name": "ziyuanbaoopen/guangdian",
+                            "width": 50,
+                            "height": 50,
+                            "x": -0.33,
+                            "y": -0.13,
+                            "rotation": -1.09,
+                            "scaleX": 0.2107,
+                            "scaleY": 0.2107
+                        }
+                    },
+                    "guang": {
+                        "ziyuanbaoopen/guang": {
+                            "name": "ziyuanbaoopen/guang",
+                            "width": 210,
+                            "height": 112,
+                            "x": -7.4,
+                            "y": 51
+                        }
+                    },
+                    "guangdian121": {
+                        "ziyuanbaoopen/guangdian": {
+                            "name": "ziyuanbaoopen/guangdian",
+                            "width": 50,
+                            "height": 50,
+                            "x": -0.33,
+                            "y": -0.13,
+                            "rotation": -1.09,
+                            "scaleX": 0.2107,
+                            "scaleY": 0.2107
+                        }
+                    },
+                    "guangdian1211": {
+                        "ziyuanbaoopen/guangdian": {
+                            "name": "ziyuanbaoopen/guangdian",
+                            "width": 50,
+                            "height": 50,
+                            "x": -0.33,
+                            "y": -0.13,
+                            "rotation": -1.09,
+                            "scaleX": 0.2107,
+                            "scaleY": 0.2107
+                        }
+                    },
+                    "guangdian": {
+                        "ziyuanbaoopen/guangdian": {
+                            "name": "ziyuanbaoopen/guangdian",
+                            "width": 50,
+                            "height": 50,
+                            "x": -0.33,
+                            "y": -0.13,
+                            "rotation": -1.09,
+                            "scaleX": 0.2107,
+                            "scaleY": 0.2107
+                        }
+                    },
+                    "xiangzi": {
+                        "ziyuanbaoopen/xiangzi": {
+                            "name": "ziyuanbaoopen/xiangzi",
+                            "width": 265,
+                            "height": 236,
+                            "hull": 14,
+                            "triangles": [6, 12, 4, 1, 2, 5, 13, 1, 5, 4, 12, 5, 12, 13, 5, 5, 2, 3, 11, 12, 6, 13, 0, 1, 14, 10, 11, 10, 14, 9, 14, 11, 6, 14, 6, 7, 9, 14, 8, 8, 14, 7],
+                            "uvs": [0, 0.81777, 0.04653, 1, 0.95618, 1, 0.99992, 0.80973, 0.99992, 0.68063, 0.99992, 0.76438, 0.94103, 0.44687, 0.97014, 0.11658, 0.84623, 0, 0.1095, 0, 0, 0.11091, 0.05264, 0.44272, 0, 0.6978, 0, 0.7588, 0.02738, 0.12081],
+                            "edges": [0, 2, 2, 4, 4, 6, 6, 10, 8, 10, 8, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 22, 24, 24, 26, 26, 0, 22, 12, 28, 14, 26, 10],
+                            "vertices": [-131.68, 11.68, -119.46, -31.4, 121.78, -31.4, 133.38, 13.58, 133.38, 44.1, 133.38, 24.3, 117.76, 99.36, 125.48, 177.44, 92.62, 205, -102.76, 205, -131.8, 178.78, -117.84, 100.34, -131.8, 40.04, -131.8, 25.62, -124.54, 176.44],
+                            "type": "mesh"
+                        }
+                    },
+                    "guangdian1": {
+                        "ziyuanbaoopen/guangdian": {
+                            "name": "ziyuanbaoopen/guangdian",
+                            "width": 50,
+                            "height": 50,
+                            "x": -0.33,
+                            "y": -0.13,
+                            "rotation": -1.09,
+                            "scaleX": 0.2107,
+                            "scaleY": 0.2107
+                        }
+                    }
+                }
+            },
+            "animations": {
+                "newAnimation": {
+                    "bones": {
+                        "guang": {
+                            "translate": [{
+                                "time": 0,
+                                "curve": "stepped"
+                            }, {
+                                "time": 0.3333,
+                                "y": -1.33
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 0.3333,
+                                "x": 1,
+                                "y": 1.03
+                            }, {
+                                "time": 0.875,
+                                "x": 1,
+                                "y": 1
+                            }]
+                        },
+                        "guangdian": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -2.48,
+                                "y": 35.62
+                            }, {
+                                "time": 0.5417,
+                                "x": -17.01,
+                                "y": 86.18
+                            }, {
+                                "time": 1.0417,
+                                "x": -29.07,
+                                "y": 113.43
+                            }]
+                        },
+                        "guangdian1": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -2.48,
+                                "y": 35.62
+                            }, {
+                                "time": 0.5417,
+                                "x": 5.27,
+                                "y": 62.9
+                            }, {
+                                "time": 1.0417,
+                                "x": 16.55,
+                                "y": 82.55
+                            }, {
+                                "time": 1.3334,
+                                "x": -7.93,
+                                "y": 129.72
+                            }, {
+                                "time": 1.5834,
+                                "x": -8.34,
+                                "y": 144.53
+                            }]
+                        },
+                        "guangdian11": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -2.48,
+                                "y": -44.97
+                            }, {
+                                "time": 0.5417,
+                                "x": 5.27,
+                                "y": -25.31
+                            }, {
+                                "time": 1.0417,
+                                "x": 12.62,
+                                "y": 18.36
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 1.0417,
+                                "x": 1.07,
+                                "y": 1.07
+                            }]
+                        },
+                        "guangdian12": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -8.34,
+                                "y": 109.75
+                            }, {
+                                "time": 0.1667,
+                                "x": -5.41,
+                                "y": 121.91
+                            }, {
+                                "time": 0.3334,
+                                "x": -2.48,
+                                "y": 35.62
+                            }, {
+                                "time": 0.5417,
+                                "x": -3.31,
+                                "y": 67.65
+                            }, {
+                                "time": 1.0417,
+                                "x": 1.57,
+                                "y": 87.92
+                            }, {
+                                "time": 1.3334,
+                                "x": -7.93,
+                                "y": 93.17
+                            }, {
+                                "time": 1.5834,
+                                "x": -8.34,
+                                "y": 109.75
+                            }]
+                        },
+                        "guangdian121": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -8.34,
+                                "y": 109.75
+                            }, {
+                                "time": 0.1667,
+                                "x": -5.41,
+                                "y": 121.91
+                            }, {
+                                "time": 0.3334,
+                                "x": -2.48,
+                                "y": 35.62
+                            }, {
+                                "time": 0.5417,
+                                "x": -3.31,
+                                "y": 67.65
+                            }, {
+                                "time": 1.0417,
+                                "x": 1.57,
+                                "y": 87.92
+                            }, {
+                                "time": 1.3334,
+                                "x": -7.93,
+                                "y": 93.17
+                            }, {
+                                "time": 1.5834,
+                                "x": -8.34,
+                                "y": 109.75
+                            }]
+                        },
+                        "guangdian1211": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -8.34,
+                                "y": 109.75
+                            }, {
+                                "time": 0.1667,
+                                "x": -5.41,
+                                "y": 121.91
+                            }, {
+                                "time": 0.3334,
+                                "x": -2.48,
+                                "y": 35.62
+                            }, {
+                                "time": 0.5417,
+                                "x": -3.31,
+                                "y": 67.65
+                            }, {
+                                "time": 1.0417,
+                                "x": 1.57,
+                                "y": 87.92
+                            }, {
+                                "time": 1.3334,
+                                "x": -7.93,
+                                "y": 93.17
+                            }, {
+                                "time": 1.5834,
+                                "x": -8.34,
+                                "y": 109.75
+                            }]
+                        }
+                    },
+                    "slots": {
+                        "guang": {
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFF36"
+                            }, {
+                                "time": 0.3333,
+                                "color": "FFFFFF40"
+                            }, {
+                                "time": 0.7083,
+                                "color": "FFFFFF26"
+                            }, {
+                                "time": 1.2083,
+                                "color": "FFFFFF26"
+                            }, {
+                                "time": 1.5833,
+                                "color": "FFFFFF36"
+                            }]
+                        },
+                        "guangdian": {
+                            "color": [{
+                                "time": 0,
+                                "color": "A3291AFF"
+                            }, {
+                                "time": 0.5417,
+                                "color": "E3DE6EFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian1": {
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.5417,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 1.3334,
+                                "color": "FFFFFF85"
+                            }, {
+                                "time": 1.5001,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.5834,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian11": {
+                            "color": [{
+                                "time": 0,
+                                "color": "E86161FF"
+                            }, {
+                                "time": 0.5417,
+                                "color": "DECF05FF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian12": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "ziyuanbaoopen/guangdian"
+                            }, {
+                                "time": 0.1667,
+                                "name": ""
+                            }, {
+                                "time": 0.3334,
+                                "name": "ziyuanbaoopen/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.1667,
+                                "color": "FFFFFF8A"
+                            }, {
+                                "time": 0.3334,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.5417,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 1.3334,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.5834,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian121": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "ziyuanbaoopen/guangdian"
+                            }, {
+                                "time": 0.1667,
+                                "name": ""
+                            }, {
+                                "time": 0.3334,
+                                "name": "ziyuanbaoopen/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.1667,
+                                "color": "FFFFFF8A"
+                            }, {
+                                "time": 0.3334,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.5417,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 1.3334,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.5834,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian1211": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "ziyuanbaoopen/guangdian"
+                            }, {
+                                "time": 0.1667,
+                                "name": ""
+                            }, {
+                                "time": 0.3334,
+                                "name": "ziyuanbaoopen/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.1667,
+                                "color": "FFFFFF8A"
+                            }, {
+                                "time": 0.3334,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.5417,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 1.3334,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.5834,
+                                "color": "FFFFFF00"
+                            }]
+                        }
+                    },
+                    "deform": {
+                        "default": {
+                            "xiangzi": {
+                                "ziyuanbaoopen/xiangzi": [{
+                                    "time": 0,
+                                    "offset": 29,
+                                    "vertices": [0]
+                                }, {
+                                    "time": 0.5417,
+                                    "offset": 15,
+                                    "vertices": [1.76, 0, 0.08, 0, 0.08, 0, 1.76, 0, 0, 0, 0, 0, 0, 0, 1.76]
+                                }, {
+                                    "time": 1.0417,
+                                    "offset": 29,
+                                    "vertices": [0]
+                                }]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "_atlasText": "\nziyuanxiangopen.png\nsize: 512,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nziyuanbaoopen/xiangzi\n  rotate: false\n  xy: 1, 1\n  size: 265, 236\n  orig: 265, 236\n  offset: 0, 0\n  index: -1\nziyuanbaoopen/guang\n  rotate: false\n  xy: 268, 1\n  size: 210, 112\n  orig: 210, 112\n  offset: 0, 0\n  index: -1\nziyuanbaoopen/guangdian\n  rotate: false\n  xy: 268, 115\n  size: 50, 50\n  orig: 50, 50\n  offset: 0, 0\n  index: -1\n",
+        "textures": [{
+            "__uuid__": "0fvTRvcdJJW7f6RDd1Y79u"
+        }],
+        "textureNames": ["ziyuanxiangopen.png"]
+    }, {
+        "__type__": "sp.SkeletonData",
+        "_name": "ziyuanbaoicon",
+        "_skeletonJson": {
+            "skeleton": {
+                "width": 144,
+                "height": 147,
+                "fps": 24,
+                "hash": " ",
+                "name": "Armature"
+            },
+            "bones": [{
+                "name": "root"
+            }, {
+                "x": 3,
+                "y": -9,
+                "name": "ditu",
+                "parent": "root"
+            }, {
+                "x": -31.8977,
+                "y": -25.7618,
+                "name": "tnt",
+                "parent": "root"
+            }, {
+                "x": -44.7362,
+                "y": 15.0315,
+                "name": "yan1",
+                "parent": "root"
+            }, {
+                "x": -23.8558,
+                "y": 51.6926,
+                "name": "jinbitx1",
+                "parent": "root"
+            }, {
+                "x": 78.4095,
+                "y": 53.667,
+                "scaleX": 0.8455,
+                "scaleY": 0.8455,
+                "name": "guangdian",
+                "parent": "root"
+            }, {
+                "x": -121.75,
+                "y": 18.65,
+                "name": "xingxing2",
+                "parent": "root"
+            }, {
+                "x": -27.9137,
+                "y": 49.3976,
+                "rotation": 4.4649,
+                "scaleX": 1.321,
+                "scaleY": 1.321,
+                "name": "xingxing1",
+                "parent": "root"
+            }, {
+                "x": 31.8167,
+                "y": -29.3141,
+                "scaleX": 0.7415,
+                "scaleY": 0.7415,
+                "name": "xingxing11",
+                "parent": "root"
+            }, {
+                "x": 78.4095,
+                "y": 53.667,
+                "name": "guangdian1",
+                "parent": "root"
+            }, {
+                "x": 78.4095,
+                "y": 44.1803,
+                "name": "guangdian11",
+                "parent": "root"
+            }, {
+                "x": 78.4095,
+                "y": 53.667,
+                "scaleX": 0.8455,
+                "scaleY": 0.8455,
+                "name": "guangdian2",
+                "parent": "root"
+            }, {
+                "x": 78.4095,
+                "y": 53.667,
+                "scaleX": 0.8455,
+                "scaleY": 0.8455,
+                "name": "guangdian3",
+                "parent": "root"
+            }, {
+                "x": -30.0955,
+                "y": -26.2668,
+                "name": "yan11",
+                "parent": "root"
+            }],
+            "slots": [{
+                "name": "ditu",
+                "bone": "ditu",
+                "attachment": "资源包道具图标/ditu"
+            }, {
+                "name": "xingxing2",
+                "bone": "xingxing2"
+            }, {
+                "name": "tnt",
+                "bone": "tnt"
+            }, {
+                "name": "jinbitx1",
+                "bone": "jinbitx1",
+                "blend": "additive"
+            }, {
+                "name": "yan1",
+                "bone": "yan1"
+            }, {
+                "name": "xingxing1",
+                "bone": "xingxing1",
+                "blend": "additive"
+            }, {
+                "name": "guangdian",
+                "bone": "guangdian",
+                "blend": "additive"
+            }, {
+                "name": "xingxing11",
+                "bone": "xingxing11",
+                "blend": "additive"
+            }, {
+                "name": "guangdian1",
+                "bone": "guangdian1",
+                "blend": "additive"
+            }, {
+                "name": "guangdian11",
+                "bone": "guangdian11",
+                "blend": "additive"
+            }, {
+                "name": "guangdian2",
+                "bone": "guangdian2",
+                "blend": "additive"
+            }, {
+                "name": "guangdian3",
+                "bone": "guangdian3",
+                "blend": "additive"
+            }, {
+                "name": "yan11",
+                "bone": "yan11"
+            }],
+            "skins": {
+                "default": {
+                    "guangdian11": {
+                        "资源包道具图标/guangdian": {
+                            "name": "资源包道具图标/guangdian",
+                            "width": 31,
+                            "height": 30,
+                            "x": 0.24,
+                            "y": 10.89
+                        }
+                    },
+                    "ditu": {
+                        "资源包道具图标/ditu": {
+                            "name": "资源包道具图标/ditu",
+                            "width": 144,
+                            "height": 147,
+                            "x": -2.5,
+                            "y": 9
+                        }
+                    },
+                    "xingxing2": {
+                        "资源包道具图标/xingxing2": {
+                            "name": "资源包道具图标/xingxing2",
+                            "width": 12,
+                            "height": 18,
+                            "x": 151.74,
+                            "y": -48.05
+                        }
+                    },
+                    "tnt": {
+                        "资源包道具图标/tnt": {
+                            "name": "资源包道具图标/tnt",
+                            "width": 124,
+                            "height": 103,
+                            "x": 30.4,
+                            "y": 32.64
+                        },
+                        "资源包道具图标/jinbi": {
+                            "name": "资源包道具图标/jinbi",
+                            "width": 118,
+                            "height": 120,
+                            "x": 32.95,
+                            "y": 37.66
+                        },
+                        "资源包道具图标/zidan": {
+                            "name": "资源包道具图标/zidan",
+                            "width": 141,
+                            "height": 111,
+                            "x": 38.78,
+                            "y": 34.83
+                        },
+                        "资源包道具图标/feiji": {
+                            "name": "资源包道具图标/feiji",
+                            "width": 174,
+                            "height": 137,
+                            "x": 30.93,
+                            "y": 38.34
+                        }
+                    },
+                    "jinbitx1": {
+                        "资源包道具图标/jinbitx1": {
+                            "name": "资源包道具图标/jinbitx1",
+                            "width": 48,
+                            "height": 31,
+                            "x": 0.09,
+                            "y": -4.16
+                        },
+                        "资源包道具图标/jinbitx3": {
+                            "name": "资源包道具图标/jinbitx3",
+                            "width": 105,
+                            "height": 90,
+                            "x": 25.15,
+                            "y": -43.05
+                        },
+                        "资源包道具图标/jinbitx5": {
+                            "name": "资源包道具图标/jinbitx5",
+                            "width": 70,
+                            "height": 29,
+                            "x": 37.65,
+                            "y": -79.55
+                        },
+                        "资源包道具图标/jinbitx6": {
+                            "name": "资源包道具图标/jinbitx6",
+                            "width": 18,
+                            "height": 9,
+                            "x": 48.65,
+                            "y": -87.55
+                        },
+                        "资源包道具图标/jinbitx4": {
+                            "name": "资源包道具图标/jinbitx4",
+                            "width": 78,
+                            "height": 49,
+                            "x": 38.65,
+                            "y": -69.55
+                        },
+                        "资源包道具图标/jinbitx2": {
+                            "name": "资源包道具图标/jinbitx2",
+                            "width": 76,
+                            "height": 55,
+                            "x": 10.65,
+                            "y": -16.55
+                        }
+                    },
+                    "yan1": {
+                        "资源包道具图标/yan1": {
+                            "name": "资源包道具图标/yan1",
+                            "width": 55,
+                            "height": 52,
+                            "x": 15.62,
+                            "y": -42.1
+                        },
+                        "资源包道具图标/yan3": {
+                            "name": "资源包道具图标/yan3",
+                            "width": 14,
+                            "height": 15,
+                            "x": 4.18,
+                            "y": -45.17
+                        },
+                        "资源包道具图标/yan2": {
+                            "name": "资源包道具图标/yan2",
+                            "width": 24,
+                            "height": 26,
+                            "x": 9.58,
+                            "y": -44.68
+                        }
+                    },
+                    "xingxing1": {
+                        "资源包道具图标/xingxing1": {
+                            "name": "资源包道具图标/xingxing1",
+                            "width": 25,
+                            "height": 41,
+                            "x": -0.61,
+                            "y": 0.32,
+                            "scaleX": 0.5713,
+                            "scaleY": 0.5713
+                        }
+                    },
+                    "guangdian": {
+                        "资源包道具图标/guangdian": {
+                            "name": "资源包道具图标/guangdian",
+                            "width": 31,
+                            "height": 30,
+                            "x": 0.24,
+                            "y": 1.4
+                        }
+                    },
+                    "xingxing11": {
+                        "资源包道具图标/xingxing1": {
+                            "name": "资源包道具图标/xingxing1",
+                            "width": 25,
+                            "height": 41,
+                            "x": -0.61,
+                            "y": 0.32,
+                            "scaleX": 0.5713,
+                            "scaleY": 0.5713
+                        }
+                    },
+                    "guangdian1": {
+                        "资源包道具图标/guangdian": {
+                            "name": "资源包道具图标/guangdian",
+                            "width": 31,
+                            "height": 30,
+                            "x": 0.24,
+                            "y": 1.4
+                        }
+                    },
+                    "yan11": {
+                        "资源包道具图标/yan1": {
+                            "name": "资源包道具图标/yan1",
+                            "width": 55,
+                            "height": 52,
+                            "x": 0.98,
+                            "y": -0.8
+                        },
+                        "资源包道具图标/yan3": {
+                            "name": "资源包道具图标/yan3",
+                            "width": 14,
+                            "height": 15,
+                            "x": -10.46,
+                            "y": -6.26
+                        },
+                        "资源包道具图标/yan2": {
+                            "name": "资源包道具图标/yan2",
+                            "width": 24,
+                            "height": 26,
+                            "x": -5.06,
+                            "y": -3.38
+                        }
+                    },
+                    "guangdian3": {
+                        "资源包道具图标/guangdian": {
+                            "name": "资源包道具图标/guangdian",
+                            "width": 31,
+                            "height": 30,
+                            "x": 0.24,
+                            "y": 1.4
+                        }
+                    },
+                    "guangdian2": {
+                        "资源包道具图标/guangdian": {
+                            "name": "资源包道具图标/guangdian",
+                            "width": 31,
+                            "height": 30,
+                            "x": 0.24,
+                            "y": 1.4
+                        }
+                    }
+                }
+            },
+            "animations": {
+                "item_2": {
+                    "bones": {
+                        "xingxing1": {
+                            "scale": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 1.0833,
+                                "x": 0.57,
+                                "y": 0.48
+                            }, {
+                                "time": 1.375,
+                                "x": 0.98,
+                                "y": 1.65
+                            }, {
+                                "time": 1.5,
+                                "x": 1,
+                                "y": 0.66
+                            }]
+                        },
+                        "xingxing11": {
+                            "scale": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 0.375,
+                                "x": 0.68,
+                                "y": 0.68
+                            }, {
+                                "time": 0.5833,
+                                "x": 1.25,
+                                "y": 3.49
+                            }, {
+                                "time": 0.75,
+                                "x": 2.82,
+                                "y": 0.97
+                            }, {
+                                "time": 0.8333,
+                                "x": 1,
+                                "y": 1
+                            }]
+                        }
+                    },
+                    "slots": {
+                        "xingxing1": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": ""
+                            }, {
+                                "time": 1.0833,
+                                "name": "资源包道具图标/xingxing1"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0833,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.375,
+                                "color": "FFC957FF"
+                            }, {
+                                "time": 1.5,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "tnt": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/jinbi"
+                            }]
+                        },
+                        "jinbitx1": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/jinbitx1"
+                            }, {
+                                "time": 0.125,
+                                "name": "资源包道具图标/jinbitx3"
+                            }, {
+                                "time": 0.25,
+                                "name": "资源包道具图标/jinbitx4"
+                            }, {
+                                "time": 0.375,
+                                "name": "资源包道具图标/jinbitx5"
+                            }, {
+                                "time": 0.5,
+                                "name": "资源包道具图标/jinbitx6"
+                            }, {
+                                "time": 0.5833,
+                                "name": ""
+                            }, {
+                                "time": 1.5,
+                                "name": "资源包道具图标/jinbitx1"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.2917,
+                                "color": "FFFFFF47"
+                            }, {
+                                "time": 0.5834,
+                                "color": "FFFFFFFF"
+                            }]
+                        },
+                        "xingxing11": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": ""
+                            }, {
+                                "time": 0.375,
+                                "name": "资源包道具图标/xingxing1"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.375,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.75,
+                                "color": "FFE800FF"
+                            }, {
+                                "time": 0.8333,
+                                "color": "FFFFFF00"
+                            }]
+                        }
+                    }
+                },
+                "item_3": {
+                    "bones": {
+                        "guangdian": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -36.88,
+                                "y": -51.12
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 2.6,
+                                "y": 2.6
+                            }, {
+                                "time": 0.3333,
+                                "x": 2.73,
+                                "y": 2.73
+                            }, {
+                                "time": 0.6666,
+                                "x": 2.6,
+                                "y": 2.6
+                            }, {
+                                "time": 1.0416,
+                                "x": 3.54,
+                                "y": 3.54
+                            }, {
+                                "time": 1.3749,
+                                "x": 2.6,
+                                "y": 2.6
+                            }]
+                        },
+                        "xingxing11": {
+                            "translate": [{
+                                "time": 0,
+                                "y": 4.97
+                            }]
+                        },
+                        "guangdian1": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -36.88,
+                                "y": -51.12
+                            }, {
+                                "time": 0.3333,
+                                "x": -30.63,
+                                "y": -21
+                            }, {
+                                "time": 0.6666,
+                                "x": -24.23,
+                                "y": -2.25
+                            }, {
+                                "time": 1.3749,
+                                "x": -34.09,
+                                "y": 28.29
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 1.13,
+                                "y": 1.13
+                            }, {
+                                "time": 0.3333,
+                                "x": 0.51,
+                                "y": 0.51
+                            }, {
+                                "time": 0.6666,
+                                "x": 0.46,
+                                "y": 0.46
+                            }, {
+                                "time": 1.0416,
+                                "x": 0.51,
+                                "y": 0.51
+                            }, {
+                                "time": 1.3749,
+                                "x": 0.46,
+                                "y": 0.46
+                            }]
+                        },
+                        "guangdian11": {
+                            "translate": [{
+                                "time": 0,
+                                "y": -3.6
+                            }, {
+                                "time": 0.3333,
+                                "x": -26.81,
+                                "y": -33.52
+                            }, {
+                                "time": 1.0416,
+                                "x": -23.34,
+                                "y": -8.54
+                            }],
+                            "rotate": [{
+                                "time": 0,
+                                "angle": 0
+                            }, {
+                                "time": 0.3333,
+                                "angle": -30.16
+                            }, {
+                                "time": 0.6666,
+                                "angle": -60.31
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 0.3333,
+                                "x": 1.13,
+                                "y": 1.13
+                            }, {
+                                "time": 0.6666,
+                                "x": 0.51,
+                                "y": 0.86
+                            }, {
+                                "time": 1.0416,
+                                "x": 0.46,
+                                "y": 0.46
+                            }, {
+                                "time": 1.2499,
+                                "x": 0.27,
+                                "y": 0.27
+                            }],
+                            "shear": [{
+                                "time": 0
+                            }, {
+                                "time": 0.3333
+                            }, {
+                                "time": 0.6666
+                            }]
+                        },
+                        "guangdian2": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -36.88,
+                                "y": -51.12
+                            }, {
+                                "time": 0.3333,
+                                "x": -36.88,
+                                "y": -160.2
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 2.6,
+                                "y": 2.6
+                            }, {
+                                "time": 0.3333,
+                                "x": 6.32,
+                                "y": 6.32
+                            }, {
+                                "time": 0.6666,
+                                "x": 2.6,
+                                "y": 2.6
+                            }, {
+                                "time": 1.0416,
+                                "x": 3.54,
+                                "y": 3.54
+                            }, {
+                                "time": 1.3749,
+                                "x": 2.6,
+                                "y": 2.6
+                            }]
+                        },
+                        "guangdian3": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -36.88,
+                                "y": -51.12
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 2.6,
+                                "y": 2.6
+                            }, {
+                                "time": 0.3333,
+                                "x": 6.32,
+                                "y": 6.32
+                            }, {
+                                "time": 0.6666,
+                                "x": 2.6,
+                                "y": 2.6
+                            }, {
+                                "time": 1.0416,
+                                "x": 3.54,
+                                "y": 3.54
+                            }, {
+                                "time": 1.3749,
+                                "x": 2.6,
+                                "y": 2.6
+                            }]
+                        }
+                    },
+                    "slots": {
+                        "tnt": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/tnt"
+                            }]
+                        },
+                        "guangdian": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/guangdian"
+                            }]
+                        },
+                        "guangdian1": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.375,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian11": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": ""
+                            }, {
+                                "time": 0.3333,
+                                "name": "资源包道具图标/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "curve": "stepped",
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.0417,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 1.25,
+                                "color": "FFFFFF00"
+                            }]
+                        },
+                        "guangdian3": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/guangdian"
+                            }]
+                        }
+                    }
+                },
+                "item_0": {
+                    "bones": {
+                        "tnt": {
+                            "translate": [{
+                                "time": 0,
+                                "curve": [0.5, 0, 0.5, 1]
+                            }, {
+                                "time": 0.125,
+                                "y": 5.7
+                            }, {
+                                "time": 0.375,
+                                "curve": [0.5, 0, 0.5, 1],
+                                "y": 2.43
+                            }, {
+                                "time": 0.75
+                            }]
+                        },
+                        "guangdian": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -138.18,
+                                "y": -73.69
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 1.34,
+                                "y": 1.34
+                            }, {
+                                "time": 0.375,
+                                "x": 1.34,
+                                "y": 2.61
+                            }, {
+                                "time": 0.75,
+                                "x": 1.34,
+                                "y": 1.34
+                            }]
+                        },
+                        "guangdian2": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -20.77,
+                                "y": -74.03
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 1.34,
+                                "y": 1.34
+                            }, {
+                                "time": 0.375,
+                                "x": 1.34,
+                                "y": 2.61
+                            }, {
+                                "time": 0.75,
+                                "x": 1.34,
+                                "y": 1.34
+                            }]
+                        },
+                        "guangdian3": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -78.97,
+                                "y": -101.94
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 2.14,
+                                "y": 1.34
+                            }, {
+                                "time": 0.375,
+                                "x": 2.52,
+                                "y": 2.61
+                            }, {
+                                "time": 0.75,
+                                "x": 1.34,
+                                "y": 1.34
+                            }]
+                        }
+                    },
+                    "slots": {
+                        "tnt": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/feiji"
+                            }]
+                        },
+                        "guangdian": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.375,
+                                "color": "FA6E6EFF"
+                            }, {
+                                "time": 0.75,
+                                "color": "FFFFFFFF"
+                            }]
+                        },
+                        "guangdian2": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.375,
+                                "color": "FA6E6EFF"
+                            }, {
+                                "time": 0.75,
+                                "color": "FFFFFFFF"
+                            }]
+                        },
+                        "guangdian3": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/guangdian"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.375,
+                                "color": "FA6E6EFF"
+                            }, {
+                                "time": 0.75,
+                                "color": "FFFFFFFF"
+                            }]
+                        }
+                    }
+                },
+                "item_1": {
+                    "bones": {
+                        "yan1": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -8.99,
+                                "y": 2.77
+                            }, {
+                                "time": 0.7917,
+                                "x": -12.76,
+                                "y": 5.75
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 0.7917,
+                                "x": 1.27,
+                                "y": 1.27
+                            }]
+                        },
+                        "xingxing2": {
+                            "translate": [{
+                                "time": 0,
+                                "x": 19.61,
+                                "y": 15.73
+                            }]
+                        },
+                        "xingxing11": {
+                            "translate": [{
+                                "time": 0,
+                                "x": 2.23,
+                                "y": 46.6
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 1,
+                                "y": 1
+                            }, {
+                                "time": 0.2917,
+                                "x": 1.38,
+                                "y": 1.38
+                            }, {
+                                "time": 0.5834,
+                                "x": 1,
+                                "y": 1
+                            }]
+                        },
+                        "yan11": {
+                            "translate": [{
+                                "time": 0,
+                                "x": -26.71,
+                                "y": 48.78
+                            }, {
+                                "time": 0.5,
+                                "x": -30.29,
+                                "y": 44
+                            }],
+                            "scale": [{
+                                "time": 0,
+                                "x": 0.33,
+                                "y": 0.33
+                            }, {
+                                "time": 0.5,
+                                "x": 0.43,
+                                "y": 0.43
+                            }]
+                        }
+                    },
+                    "slots": {
+                        "tnt": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/zidan"
+                            }]
+                        },
+                        "yan1": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/yan1"
+                            }, {
+                                "time": 0.2083,
+                                "name": "资源包道具图标/yan2"
+                            }, {
+                                "time": 0.4166,
+                                "name": "资源包道具图标/yan3"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.625,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.7917,
+                                "color": "FFFFFF9E"
+                            }]
+                        },
+                        "xingxing11": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/xingxing1"
+                            }],
+                            "color": [{
+                                "time": 0,
+                                "color": "FFFFFFFF"
+                            }, {
+                                "time": 0.2917,
+                                "color": "FFFFFF00"
+                            }, {
+                                "time": 0.5417,
+                                "color": "FFFFFFFF"
+                            }]
+                        },
+                        "yan11": {
+                            "attachment": [{
+                                "time": 0,
+                                "name": "资源包道具图标/yan1"
+                            }, {
+                                "time": 0.2083,
+                                "name": "资源包道具图标/yan2"
+                            }, {
+                                "time": 0.4166,
+                                "name": "资源包道具图标/yan3"
+                            }, {
+                                "time": 0.5833,
+                                "name": ""
+                            }]
+                        }
+                    }
+                }
+            }
+        },
+        "_atlasText": "\nziyuanbaoicon.png\nsize: 512,299\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n资源包道具图标/ditu\n  rotate: false\n  xy: 177, 1\n  size: 144, 147\n  orig: 144, 147\n  offset: 0, 0\n  index: -1\n资源包道具图标/xingxing2\n  rotate: false\n  xy: 493, 1\n  size: 12, 18\n  orig: 12, 18\n  offset: 0, 0\n  index: -1\n资源包道具图标/tnt\n  rotate: false\n  xy: 323, 123\n  size: 124, 103\n  orig: 124, 103\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbi\n  rotate: false\n  xy: 323, 1\n  size: 118, 120\n  orig: 118, 120\n  offset: 0, 0\n  index: -1\n资源包道具图标/zidan\n  rotate: false\n  xy: 1, 140\n  size: 141, 111\n  orig: 141, 111\n  offset: 0, 0\n  index: -1\n资源包道具图标/feiji\n  rotate: false\n  xy: 1, 1\n  size: 174, 137\n  orig: 174, 137\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbitx2\n  rotate: false\n  xy: 144, 242\n  size: 76, 55\n  orig: 76, 55\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbitx5\n  rotate: false\n  xy: 251, 204\n  size: 70, 29\n  orig: 70, 29\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbitx1\n  rotate: false\n  xy: 443, 1\n  size: 48, 31\n  orig: 48, 31\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbitx3\n  rotate: false\n  xy: 144, 150\n  size: 105, 90\n  orig: 105, 90\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbitx4\n  rotate: false\n  xy: 222, 242\n  size: 78, 49\n  orig: 78, 49\n  offset: 0, 0\n  index: -1\n资源包道具图标/jinbitx6\n  rotate: false\n  xy: 470, 62\n  size: 18, 9\n  orig: 18, 9\n  offset: 0, 0\n  index: -1\n资源包道具图标/yan3\n  rotate: false\n  xy: 496, 21\n  size: 14, 15\n  orig: 14, 15\n  offset: 0, 0\n  index: -1\n资源包道具图标/yan2\n  rotate: false\n  xy: 470, 34\n  size: 24, 26\n  orig: 24, 26\n  offset: 0, 0\n  index: -1\n资源包道具图标/yan1\n  rotate: false\n  xy: 251, 150\n  size: 55, 52\n  orig: 55, 52\n  offset: 0, 0\n  index: -1\n资源包道具图标/xingxing1\n  rotate: false\n  xy: 443, 34\n  size: 25, 41\n  orig: 25, 41\n  offset: 0, 0\n  index: -1\n资源包道具图标/guangdian\n  rotate: false\n  xy: 443, 77\n  size: 31, 30\n  orig: 31, 30\n  offset: 0, 0\n  index: -1\n",
+        "textures": [{
+            "__uuid__": "85XOjWABZKNr6mtzXZgE5/"
+        }],
+        "textureNames": ["ziyuanbaoicon.png"]
+    }, {
+        "__type__": "cc.SpriteFrame",
+        "content": {
+            "name": "commandbg",
+            "texture": "c9Ti1XI6xPQrH3v6PNh8nz",
+            "rect": [0, 0, 10, 10],
+            "offset": [0, 0],
+            "originalSize": [10, 10],
+            "capInsets": [0, 0, 0, 0]
+        }
+    },
+    [{
+        "__type__": "cc.Prefab",
+        "_name": "reward_window",
+        "data": {
+            "__id__": 1
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "reward_window",
+        "_children": [{
+            "__id__": 2
+        }, {
+            "__id__": 3
+        }, {
+            "__id__": 5
+        }, {
+            "__id__": 13
+        }, {
+            "__id__": 21
+        }],
+        "_components": [{
+            "__type__": "cc.Animation",
+            "node": {
+                "__id__": 1
+            },
+            "_defaultClip": {
+                "__uuid__": "ddoknwY2RDfYpCrmEmapM9"
+            },
+            "_clips": [{
+                "__uuid__": "ddoknwY2RDfYpCrmEmapM9"
+            }],
+            "playOnLoad": true
+        }, {
+            "__type__": "58686YGfB9GHpznzAbEsAl4",
+            "node": {
+                "__id__": 1
+            },
+            "left_icon": {
+                "__id__": 12
+            },
+            "right_icon": {
+                "__id__": 20
+            },
+            "left_btn": {
+                "__id__": 10
+            },
+            "right_btn": {
+                "__id__": 18
+            },
+            "left_title": {
+                "__id__": 7
+            },
+            "right_title": {
+                "__id__": 15
+            }
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "d7VMWKoGhDyZcqf8mFqGTg"
+        },
+        "_opacity": 0,
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 0.5, 0.5, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "commandbg",
+        "_parent": {
+            "__id__": 1
+        },
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 2
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_spriteFrame": {
+                "__uuid__": "a5AHC+rMZKq5ILVMR0soeh"
+            },
+            "_sizeMode": 0
+        }, {
+            "__type__": "cc.Button",
+            "node": {
+                "__id__": 2
+            },
+            "clickEvents": [{
+                "__type__": "cc.ClickEvent",
+                "target": {
+                    "__id__": 1
+                },
+                "_componentId": "58686YGfB9GHpznzAbEsAl4",
+                "handler": "back_ground_click"
+            }]
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "ecBP8hCmVEjIgAA8nCufc5"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 3000,
+            "height": 3000
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "dialogbg",
+        "_parent": {
+            "__id__": 1
+        },
+        "_children": [{
+            "__id__": 4
+        }],
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 3
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_sizeMode": 0
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "4aPE/Qs6BO+ahf6E8dq14C"
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 59.351, 0, 0, 0, 0, 1, 0.743, 0.565, 0.743]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "ziyuanxiangopen",
+        "_parent": {
+            "__id__": 3
+        },
+        "_components": [{
+            "__type__": "sp.Skeleton",
+            "node": {
+                "__id__": 4
+            },
+            "_materials": [{
+                "__uuid__": "7a/QZLET9IDreTiBfRn2PD"
+            }],
+            "defaultAnimation": "newAnimation",
+            "_preCacheMode": 0,
+            "_animationName": "newAnimation",
+            "_N$skeletonData": {
+                "__uuid__": "42S2rfyK9G8oC1xT1uQPJE"
+            }
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "a4eSvAQL5Ic4zp1/46oZK0"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 265.2,
+            "height": 236.4
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 3.191, 3.42, 3.191]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "xx_0",
+        "_parent": {
+            "__id__": 1
+        },
+        "_children": [{
+            "__id__": 6
+        }, {
+            "__id__": 8
+        }, {
+            "__id__": 11
+        }],
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 5
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_spriteFrame": {
+                "__uuid__": "cedjkrLu1OxbVSRP1TuN7t"
+            }
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "94NiWK1TVOm7vrdaM1Gr0X"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 258,
+            "height": 325
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [-147.637, 73.51, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "reward_title",
+        "_parent": {
+            "__id__": 5
+        },
+        "_components": [{
+            "__id__": 7
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "80VuOKWDtB255vRhl0/EPI"
+        },
+        "_color": {
+            "__type__": "cc.Color",
+            "r": 70,
+            "g": 42,
+            "b": 11
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 120,
+            "height": 37.8
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [12.631, 122.937, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Label",
+        "node": {
+            "__id__": 6
+        },
+        "_materials": [{
+            "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+        }],
+        "_useOriginalSize": false,
+        "_string": "x2 sát thương",
+        "_N$string": "x2 sát thương",
+        "_fontSize": 30,
+        "_lineHeight": 30,
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+    }, {
+        "__type__": "cc.Node",
+        "_name": "ptBtn",
+        "_parent": {
+            "__id__": 5
+        },
+        "_children": [{
+            "__id__": 9
+        }],
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 8
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_spriteFrame": {
+                "__uuid__": "2ddVpDHQVK0Jtsp6r/Cdro"
+            }
+        }, {
+            "__id__": 10
+        }, {
+            "__type__": "dbf989ZwyJF+L/Qdx5FQ5zt",
+            "node": {
+                "__id__": 8
+            }
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "f6SXmfhcFMx5q320PxzLOA"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 152,
+            "height": 53
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [11.654, -116.268, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "lq",
+        "_parent": {
+            "__id__": 8
+        },
+        "_components": [{
+            "__type__": "cc.Label",
+            "node": {
+                "__id__": 9
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_useOriginalSize": false,
+            "_string": "NHẬN",
+            "_N$string": "NHẬN",
+            "_fontSize": 30,
+            "_lineHeight": 30,
+            "_N$horizontalAlign": 1,
+            "_N$verticalAlign": 1
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "e0yuxrh5tAp4FjVhWN/p6q"
+        },
+        "_color": {
+            "__type__": "cc.Color",
+            "r": 90,
+            "g": 24,
+            "b": 24
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 60,
+            "height": 37.8
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Button",
+        "node": {
+            "__id__": 8
+        },
+        "clickEvents": [{
+            "__type__": "cc.ClickEvent",
+            "target": {
+                "__id__": 1
+            },
+            "_componentId": "58686YGfB9GHpznzAbEsAl4",
+            "handler": "left_btn_click"
+        }]
+    }, {
+        "__type__": "cc.Node",
+        "_name": "left_icon",
+        "_parent": {
+            "__id__": 5
+        },
+        "_components": [{
+            "__id__": 12
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "d9b0sq81JP4LDVS1GqO5w1"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 144,
+            "height": 147
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [11, 3, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "sp.Skeleton",
+        "node": {
+            "__id__": 11
+        },
+        "_materials": [{
+            "__uuid__": "7a/QZLET9IDreTiBfRn2PD"
+        }],
+        "defaultAnimation": "item_3",
+        "_preCacheMode": 0,
+        "_animationName": "item_3",
+        "_N$skeletonData": {
+            "__uuid__": "5dIiDYq/9DAYvS3h2pSgXa"
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "xx_1",
+        "_parent": {
+            "__id__": 1
+        },
+        "_children": [{
+            "__id__": 14
+        }, {
+            "__id__": 16
+        }, {
+            "__id__": 19
+        }],
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 13
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_spriteFrame": {
+                "__uuid__": "cedjkrLu1OxbVSRP1TuN7t"
+            }
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "79giDaYztCPZPvuQkyAVvs"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 258,
+            "height": 325
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [107.329, 73.51, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "reward_title",
+        "_parent": {
+            "__id__": 13
+        },
+        "_components": [{
+            "__id__": 15
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "980XATR8dHGIXq7v7tb+wl"
+        },
+        "_color": {
+            "__type__": "cc.Color",
+            "r": 70,
+            "g": 42,
+            "b": 11
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 120,
+            "height": 37.8
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [9.199, 122.937, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Label",
+        "node": {
+            "__id__": 14
+        },
+        "_materials": [{
+            "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+        }],
+        "_useOriginalSize": false,
+        "_string": "x2 sát thương",
+        "_N$string": "x2 sát thương",
+        "_fontSize": 30,
+        "_lineHeight": 30,
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+    }, {
+        "__type__": "cc.Node",
+        "_name": "bfBtn",
+        "_parent": {
+            "__id__": 13
+        },
+        "_children": [{
+            "__id__": 17
+        }],
+        "_components": [{
+            "__type__": "cc.Sprite",
+            "node": {
+                "__id__": 16
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_spriteFrame": {
+                "__uuid__": "0bpIORkXRE2L48SiEXQBof"
+            }
+        }, {
+            "__id__": 18
+        }, {
+            "__type__": "dbf989ZwyJF+L/Qdx5FQ5zt",
+            "node": {
+                "__id__": 16
+            }
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "67EjTeddZFSr8TIsaHVI7P"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 225,
+            "height": 76
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [16.442, -115.093, 0, 0, 0, 0, 1, 0.707, 0.707, 0.707]
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "lq",
+        "_parent": {
+            "__id__": 16
+        },
+        "_components": [{
+            "__type__": "cc.Label",
+            "node": {
+                "__id__": 17
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_useOriginalSize": false,
+            "_string": "NHẬN",
+            "_N$string": "NHẬN",
+            "_fontSize": 35,
+            "_lineHeight": 35,
+            "_N$horizontalAlign": 1,
+            "_N$verticalAlign": 1
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "6fQJarXUZAO7Yf9gs+bbKz"
+        },
+        "_color": {
+            "__type__": "cc.Color",
+            "r": 61,
+            "g": 15,
+            "b": 15
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 70,
+            "height": 44.1
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [5.814, 1.453, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "cc.Button",
+        "node": {
+            "__id__": 16
+        },
+        "clickEvents": [{
+            "__type__": "cc.ClickEvent",
+            "target": {
+                "__id__": 1
+            },
+            "_componentId": "58686YGfB9GHpznzAbEsAl4",
+            "handler": "right_btn_click"
+        }]
+    }, {
+        "__type__": "cc.Node",
+        "_name": "right_icon",
+        "_parent": {
+            "__id__": 13
+        },
+        "_components": [{
+            "__id__": 20
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "adH7C9IrBFG4Mx0BXNHCys"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 144,
+            "height": 147
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [16, 2, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }, {
+        "__type__": "sp.Skeleton",
+        "node": {
+            "__id__": 19
+        },
+        "_materials": [{
+            "__uuid__": "7a/QZLET9IDreTiBfRn2PD"
+        }],
+        "defaultAnimation": "item_2",
+        "_preCacheMode": 0,
+        "_animationName": "item_2",
+        "_N$skeletonData": {
+            "__uuid__": "5dIiDYq/9DAYvS3h2pSgXa"
+        }
+    }, {
+        "__type__": "cc.Node",
+        "_name": "biaoti",
+        "_parent": {
+            "__id__": 1
+        },
+        "_components": [{
+            "__type__": "cc.Label",
+            "node": {
+                "__id__": 21
+            },
+            "_materials": [{
+                "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }],
+            "_useOriginalSize": false,
+            "_string": "Chọn 1 trong 2",
+            "_N$string": "Chọn 1 trong 2",
+            "_fontSize": 50,
+            "_lineHeight": 50,
+            "_N$horizontalAlign": 1,
+            "_N$verticalAlign": 1
+        }, {
+            "__type__": "cc.LabelOutline",
+            "node": {
+                "__id__": 21
+            },
+            "_color": {
+                "__type__": "cc.Color",
+                "r": 104,
+                "g": 68,
+                "b": 68
+            },
+            "_width": 2
+        }],
+        "_prefab": {
+            "__type__": "cc.PrefabInfo",
+            "root": {
+                "__id__": 1
+            },
+            "asset": {
+                "__uuid__": "b3zkc6swZPGqB3EUhLm5cw"
+            },
+            "fileId": "d1c1Zz0ytBkLK4/bkR+J+z"
+        },
+        "_contentSize": {
+            "__type__": "cc.Size",
+            "width": 254,
+            "height": 67
+        },
+        "_trs": {
+            "__type__": "TypedArray",
+            "ctor": "Float64Array",
+            "array": [4.24, 334.771, 0, 0, 0, 0, 1, 1, 1, 1]
+        }
+    }], {
+        "__type__": "cc.SpriteFrame",
+        "content": {
+            "name": "_0003_ditu2",
+            "texture": "ea830ChA9EDILOZL2ejsV1",
+            "rect": [0, 0, 258, 325],
+            "offset": [0, 0],
+            "originalSize": [258, 325],
+            "capInsets": [0, 0, 0, 0]
+        }
+    }, {
+        "__type__": "cc.AnimationClip",
+        "_name": "rewardwindow",
+        "_duration": 0.5,
+        "curveData": {
+            "props": {
+                "scale": [{
+                    "frame": 0,
+                    "value": {
+                        "__type__": "cc.Vec2",
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                }, {
+                    "frame": 0.38333333333333336,
+                    "value": {
+                        "__type__": "cc.Vec2",
+                        "x": 1.2,
+                        "y": 1.2
+                    }
+                }, {
+                    "frame": 0.5,
+                    "value": {
+                        "__type__": "cc.Vec2",
+                        "x": 1,
+                        "y": 1
+                    }
+                }],
+                "opacity": [{
+                    "frame": 0,
+                    "value": 0
+                }, {
+                    "frame": 0.38333333333333336,
+                    "value": 255
+                }]
+            }
+        }
+    }
+]
