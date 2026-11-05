@@ -1,0 +1,981 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html style="height:100%;">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+
+<title>Làm đẹp cô dâu</title>
+
+<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+<meta name="robots" content="index,nofollow" />
+
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<meta name="mobile-web-app-capable" content="yes"/>
+
+<meta name="HandheldFriendly" content="true" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<script src="createjs.min.js"></script>
+
+<link  type="text/css" rel="stylesheet" href="preloader.css" />
+
+<script type="text/javascript">
+
+	var compId = "0F26DC2610BE9C46AE759B96AF6F6374";
+
+	var isvisible=true;	
+
+document.addEventListener("visibilitychange", handleVisibilityChange, false);	
+
+var blockcheck = {};
+
+blockcheck.config = {
+
+	active: false,
+
+	delay: 600, // time to wait for the test window to open or close (default 600)
+
+	timeout: 1500, // time from click untill the script fails (default 1500)
+
+	testpage: "", // url of the test page
+
+	button_id: "preload_play", // the id of the play button that is inserted in the page
+
+	failure_image: "",
+
+	debug: true // if true it outputs data to the console for debugging
+
+}
+
+// ************************************************************************************** //
+
+function checkMobile() {
+
+	var check = false;
+
+	(function (a) {
+
+		if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true
+
+	})(navigator.userAgent || navigator.vendor || window.opera);
+
+	return check;
+
+}
+
+blockcheck.vars = {
+
+	time: {
+
+		click: 0,
+
+		blur: 0,
+
+		focus: 0
+
+	},
+
+	timer: false,
+
+	evt: false,
+
+	url: "undetected"
+
+}
+
+blockcheck.blur = function() {
+
+	$(window).off("blur", blockcheck.blur);
+
+	blockcheck.vars.time.blur = blockcheck.time();
+
+	if(blockcheck.config.debug) console.log("blur:"+blockcheck.vars.time.blur+", "+(blockcheck.vars.time.blur - blockcheck.vars.time.click)+"ms delay");
+
+}
+
+blockcheck.focus = function() {
+
+	$(window).off("focus", blockcheck.focus);
+
+	blockcheck.vars.time.focus = blockcheck.time();
+
+	if(blockcheck.config.debug) console.log("focus:"+blockcheck.vars.time.focus+", "+(blockcheck.vars.time.focus - blockcheck.vars.time.blur)+"ms delay");
+
+	blockcheck.test();
+
+}
+
+blockcheck.done = function(result) {
+
+	clearTimeout(blockcheck.vars.timer);
+
+	var domain = url_domain(blockcheck.vars.url);
+
+	if(result) {
+
+		ga('send', 'event', 'blockcheck', domain, getGamename(), 0);
+
+		handleComplete(blockcheck.vars.evt);
+
+	}
+
+	else {
+
+		ga('send', 'event', 'blockcheck', domain, getGamename(), 1);
+
+		$("body").prepend('<div id="blockcheck_blocked"></div>');
+
+		$("#animation_container, #_preload_div_").hide();
+
+		setInterval(function() {
+
+			makeDivResponsive($("#blockcheck_blocked"));
+
+		}, 300)
+
+		makeDivResponsive($("#blockcheck_blocked"));
+
+		}
+
+}
+
+blockcheck.test = function() {
+
+	if(blockcheck.vars.time.click && blockcheck.vars.time.blur && blockcheck.vars.time.focus) {
+
+		if((blockcheck.vars.time.click + blockcheck.config.delay >= blockcheck.vars.time.blur) && (blockcheck.vars.time.blur + blockcheck.config.delay >= blockcheck.vars.time.focus)) {
+
+			if(blockcheck.config.debug) console.log("success");
+
+			blockcheck.done(true)
+
+		}
+
+		else {
+
+			if(blockcheck.config.debug) console.log("test failed: too slow");
+
+			blockcheck.done(false);
+
+		}
+
+	}
+
+	else {
+
+		if(blockcheck.config.debug) console.log("test failed: error");
+
+		blockcheck.done(false);
+
+	}
+
+}
+
+blockcheck.time = function() {
+
+	var d = new Date();
+
+	return d.getTime();
+
+}
+
+function getGamename() {
+
+	var url = window.location.href;
+
+	if(url.indexOf("127.0.0.1") >= 0) {
+
+		return "game-under-construction";
+
+	}
+
+	else {
+
+		url = url.split("?")[0];
+
+		var parts = url.split("/");
+
+		var last = parts[parts.length - 1];
+
+		if(!last || last.indexOf(".html") >= 0) {
+
+			return parts[parts.length - 2];
+
+		}
+
+		else return last;
+
+	}
+
+}
+
+function makeDivResponsive($div) {
+
+	//var $div = $("#_preload_div_");
+
+	if(!$div.attr("data-width")) $div.attr("data-width", $div.width());
+
+	if(!$div.attr("data-height")) $div.attr("data-height", $div.height());
+
+	var ratio_w = $(window).width() / $div.attr("data-width");
+
+	var ratio_h = $(window).height() / $div.attr("data-height");
+
+	if(ratio_w > ratio_h) {
+
+		$div.css("transform", "scale("+ratio_h+")");
+
+	}
+
+	else {
+
+		$div.css("transform", "scale("+ratio_w+")");
+
+	}
+
+	$div.css("left", ($(window).width() - $div[0].getBoundingClientRect().width) / 2);
+
+	$div.css("top", ($(window).height() - $div[0].getBoundingClientRect().height) / 2);
+
+}
+
+function showCheckURL(evt) {
+
+	var run_blockcheck = true;
+
+	if(typeof partners == "object") {
+
+		var iframe = (parent !== window);
+
+		var url = null;
+
+		if (iframe) url = document.referrer;
+
+		else url = window.location.href;
+
+		blockcheck.vars.url = url;
+
+	}
+
+	if(blockcheck.config.active && run_blockcheck && !checkMobile()) {
+
+		blockcheck.vars.evt = evt;
+
+		$("#preload_loading").hide();
+
+		$playBtn = $('<a id="'+blockcheck.config.button_id+'" href="'+blockcheck.config.testpage+'" target="blank"></a>');
+
+		$("#_preload_div_").append($playBtn);
+
+		$playBtn.on("click", function(event) {
+
+			event.stopPropagation();
+
+			$(this).off("click");
+
+			blockcheck.vars.time.click = blockcheck.time();
+
+			if(blockcheck.config.debug) console.log("click:"+blockcheck.vars.time.click);
+
+			blockcheck.vars.timer = setTimeout(function() {
+
+				$(window).off("blur", blockcheck.blur);
+
+				$(window).off("focus", blockcheck.focus);
+
+				if(blockcheck.config.debug) console.log("test failed: timeout reached");
+
+				blockcheck.done(false);
+
+			}, blockcheck.config.timeout)
+
+			$(window).on("blur", blockcheck.blur);
+
+			$(window).on("focus", blockcheck.focus);
+
+		})
+
+	}
+
+	else {
+
+		handleComplete(evt);
+
+	}
+
+}
+
+function url_domain(data) {
+
+	var a = document.createElement('a');
+
+	a.href = data;
+
+	return a.hostname;
+
+}
+
+$(document).ready(function() {
+
+	setInterval(function() {
+
+		makeDivResponsive($("#_preload_div_"));
+
+	}, 300)
+
+	makeDivResponsive($("#_preload_div_"));
+
+	//alert($(window).width())
+
+})
+
+$(document).ready(function() {
+
+	$("#_preload_div_, #_preload_div_ *").css({
+
+		"-webkit-user-select": "none",
+
+		"-moz-user-select": "none",
+
+		"-ms-user-select": "none",
+
+		"-o-user-select": "none",
+
+		"user-select": "none",
+
+		"-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+
+		"-moz-tap-highlight-color": "rgba(0, 0, 0, 0)",
+
+		"tap-highlight-color": "rgba(0, 0, 0, 0)"
+
+	}).attr("unselectable", "on");
+
+})
+
+var	preloaderUrl = "#";
+
+var sitedomain = detect_parent_Daria();
+
+
+
+var stringHostDaria = detect_parent_Daria();
+
+var QueryStringFlorin = function () {
+
+	var query_string = {};
+
+	var query = window.location.search.substring(1);
+
+	var vars = query.split("&");
+
+	for (var i = 0; i < vars.length; i++) {
+
+		var pair = vars[i].split("=");
+
+			if (typeof query_string[pair[0]] === "undefined") {
+
+				query_string[pair[0]] = decodeURIComponent(pair[1]);
+
+			} else if (typeof query_string[pair[0]] === "string") {
+
+				var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+
+				query_string[pair[0]] = arr;
+
+			} else {
+
+				query_string[pair[0]].push(decodeURIComponent(pair[1]));
+
+			}
+
+		}
+
+		return query_string;
+
+		}();
+
+var adsInGame = false;
+
+var gdAds = false;
+
+var tB = false;
+
+function detect_parent_Daria() {
+
+	var iframe = (parent !== window);
+
+	var url = null;
+
+	if (iframe) {
+
+		url = document.referrer;
+
+		ref = url.match(/:\/\/(.[^/]+)/)[1];
+
+		return ref;
+
+	}
+
+	return "daria";
+
+}
+
+if (stringHostDaria == "daria") {
+
+	stringHostDaria = window.location.hostname;
+
+}
+
+
+
+function realClick(a,b){b="undefined"!=typeof b?b:"canvas";var c=$("#rurl"),d=$(b);c.css({display:"block",top:d.offset().top,left:d.offset().left,width:d.width(),height:d.height()}),c.prop("href",a).prop("target","_blank"),fireEvent(document.getElementById("rurl"),"click"),setTimeout(function(){c.css({display:"none"})},100)}function fireEvent(a,b){var c;if(a.ownerDocument)c=a.ownerDocument;else{if(9!=a.nodeType)throw new Error("Invalid node passed to fireEvent: "+a.id);c=a}if(a.dispatchEvent){var d="";switch(b){case"click":case"mousedown":case"mouseup":d="MouseEvents";break;case"focus":case"change":case"blur":case"select":d="HTMLEvents";break;default:throw"fireEvent: Couldn't find an event class for event '"+b+"'."}var e=c.createEvent(d);e.initEvent(b,!0,!0),e.synthetic=!0,a.dispatchEvent(e,!0)}else if(a.fireEvent){var e=c.createEventObject();e.synthetic=!0,a.fireEvent("on"+b,e)}}
+
+// de aici inlocuit speedtest
+
+var speedtest_active = false;
+
+var bandwidthspeed = "high"; // default value in case everyting fails (high or low)
+
+var speedtest_image = "#"; // url of the testimage
+
+var speedtest_imagesize = 148.823; // the size of the image (20.811, 251.755, 148.823)
+
+var speedtest_tests = 3; // number of times to run the test
+
+var speedtest_cookie = 2; // cookie validity in seconds
+
+var speedtest_treshold = 256; // the speed treshold betwwen low and high in KB/s
+
+function speedtest(a, b) {
+
+	speedtest_scriptload = a, speedtest_runafter = b;
+
+	if(speedtest_active) {
+
+		var c = speedtest_override();
+
+		if (c) bandwidthspeed = c, speedtest_finish();
+
+		else {
+
+			var d = (document.cookie.match(/^(?:.*;\s)?bandwidthspeed=([^;]+)(?:.*)?$/) || [, null])[1];
+
+			d ? (bandwidthspeed = d, speedtest_finish()) : speedtest_run()
+
+		}
+
+	}
+
+	else {
+
+		console.log("skip speedtest");
+
+		speedtest_finish();
+
+	}
+
+}
+
+function speedtest_override() {
+
+	var a = {};
+
+	if (document.location.toString().indexOf("?") !== -1)
+
+		for (var b = document.location.toString().replace(/^.*?\?/, "").replace(/#.*$/, "").split("&"), c = 0, d = b.length; c < d; c++) {
+
+			var e = decodeURIComponent(b[c]).split("=");
+
+			a[e[0]] = e[1]
+
+		}
+
+	return !("undefined" == typeof a.bandwidthspeed || !a.bandwidthspeed || "low" != a.bandwidthspeed && "high" != a.bandwidthspeed) && a.bandwidthspeed
+
+}
+
+function speedtest_run() {
+
+	if (speedtest_results.length < speedtest_tests) {
+
+		var a = speedtest_time();
+
+		speedtest_placeholder.onload = function () {
+
+			var b = (speedtest_time() - a) / 1e3;
+
+			speedtest_results.push(speedtest_imagesize / b), speedtest_run()
+
+		}, speedtest_placeholder.src = speedtest_image + "?nocache=" + a
+
+	} else {
+
+		var b = 0;
+
+		for (var c in speedtest_results) b += speedtest_results[c];
+
+		var d = b / speedtest_results.length;
+
+		speedtest_treshold > d ? bandwidthspeed = "low" : bandwidthspeed = "high";
+
+		var e = new Date;
+
+		e.setTime(e.getTime() + 1e3 * speedtest_cookie);
+
+		var f = e.toUTCString();
+
+		document.cookie = "bandwidthspeed=" + bandwidthspeed + "; expires=" + f + "; path=/", speedtest_finish()
+
+	}
+
+}
+
+function speedtest_finish() {
+
+	if (speedtest_scriptload) {
+
+		var script = document.createElement("script");
+
+		script.src = speedtest_scriptload, script.onload = function () {
+
+			speedtest_runafter && eval(speedtest_runafter + "()")
+
+		}, document.head.appendChild(script)
+
+	} else speedtest_runafter && eval(speedtest_runafter + "()")
+
+}
+
+function speedtest_time() {
+
+	var a = new Date;
+
+	return a.getTime()
+
+}
+
+var speedtest_results = [],
+
+	speedtest_scriptload = !1,
+
+	speedtest_runafter = !1,
+
+	speedtest_placeholder = new Image;
+
+// pana aici inlocuit speedtest
+
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation, clickablePreloader = true,
+
+	gdApi;
+
+var showingAds = false;
+
+function handleVisibilityChange() {
+
+	if (!showingAds)
+
+	{
+
+		if(isvisible) {
+
+		isvisible=false;
+
+		try {exportRoot.checkSound();} catch (err) {console.log(err.message)}
+
+		} else {
+
+		isvisible=true;
+
+		try{exportRoot.checkSound2();}catch (err) {console.log(err.message)}
+
+		}
+
+	}
+
+}
+
+// de aici
+
+var manifestImagesTotal = 0;
+
+var manifestImagesLoaded = 0;
+
+var manifestImagesLoadedInterval;
+
+var comp, lib;
+
+function init() {
+
+	comp=AdobeAn.getComposition(compId);
+
+	lib=comp.getLibrary();
+
+	for(var i in lib.properties.manifest) {
+
+		var src = lib.properties.manifest[i].src.split("?")[0];
+
+		var ext = src.split(".").pop();
+
+		if(ext == "png" || ext == "jpg" || ext == "gif" || ext == "jpeg") {
+
+			manifestImagesTotal++;
+
+		}
+
+	}
+
+	loadNextImage(lib.properties.manifest, 0);
+
+}
+
+function loadNextImage(manifest, pos) {
+
+	if(manifest.length && manifest.length > pos && manifestImagesTotal > manifestImagesLoaded) {
+
+		var src = manifest[pos].src.split("?")[0];
+
+		var ext = src.split(".").pop();
+
+		if(ext == "png" || ext == "jpg" || ext == "gif" || ext == "jpeg") {
+
+			var img = new Image();
+
+			img.addEventListener("load", function() {
+
+				manifestImagesLoaded++;
+
+				var proc = Math.round(((manifestImagesLoaded + 1) * 100) / manifest.length);
+
+				if(proc > 100) proc = 100;
+
+				$("#progress_text").text(proc+" %");
+
+			})
+
+			img.src = manifest[pos].src;
+
+			loadNextImage(manifest, pos + 1);
+
+		}
+
+		else {
+
+			loadNextImage(manifest, pos + 1);
+
+		}
+
+	}
+
+	else {
+
+		//gameInit();
+
+		// wait for all images
+
+		manifestImagesLoadedInterval = setInterval(function() {
+
+			if(manifestImagesTotal == manifestImagesLoaded) {
+
+				clearInterval(manifestImagesLoadedInterval);
+
+				gameInit();
+
+			}
+
+		}, 50);
+
+	}
+
+}
+
+// pana aici
+
+function getManifestPosById(id, manifest) {
+
+	var pos = false;
+
+	for(var i=0; i<manifest.length; i++) {
+
+		if(manifest[i].id == id) return i;
+
+	}
+
+}
+
+function gameInit() {
+
+	canvas = document.getElementById("canvas");
+
+	anim_container = document.getElementById("animation_container");
+
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+
+	//var comp=AdobeAn.getComposition("F2F8D1BE8D3F2044BDEB117C36DB2536");
+
+	var lib=comp.getLibrary();
+
+	var loader = new createjs.LoadQueue(false);
+
+	loader.installPlugin(createjs.Sound);
+
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+
+	var lib=comp.getLibrary();
+
+	loader.loadManifest(lib.properties.manifest);
+
+}
+
+function handleFileLoad(evt, comp) {	
+
+	var images=comp.getImages();
+
+	if(evt && evt.item.type != "image") {
+
+		var pos = getManifestPosById(evt.item.id, lib.properties.manifest);
+
+		var proc = Math.round(((pos + 1) * 100) / lib.properties.manifest.length);
+
+		if(proc > 100) proc = 100;
+
+	}
+
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+
+}
+
+function handleComplete(evt, comp) {
+
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+
+	//var lib=comp.getLibrary();
+
+	var ss=comp.getSpriteSheet();
+
+	var queue = evt.target;
+
+	var ssMetadata = lib.ssMetadata;
+
+	for(i=0; i<ssMetadata.length; i++) {
+
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+
+	}
+
+	var preloaderDiv = document.getElementById("_preload_div_");
+
+	preloaderDiv.style.display = 'none';
+
+	$("#animation_container").show();
+
+	clickablePreloader = false;
+
+	preloaderDiv.style.cursor = "auto";
+
+	canvas.style.display = 'block';
+
+	exportRoot = new lib.game();
+
+	stage = new lib.Stage(canvas);
+
+	stage.addChild(exportRoot);	
+
+	//Registers the "tick" event listener.
+
+	fnStartAnimation = function() {
+
+		createjs.Ticker.setFPS(lib.properties.fps);
+
+		createjs.Ticker.addEventListener("tick", stage);
+
+	}	   
+
+	//Code to support hidpi screens and responsive scaling.
+
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+
+		var lastW, lastH, lastS=1;		
+
+		window.addEventListener('resize', resizeCanvas);		
+
+		resizeCanvas();		
+
+		function resizeCanvas() {			
+
+			var w = lib.properties.width, h = lib.properties.height;			
+
+			var iw = window.innerWidth, ih=window.innerHeight;			
+
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+
+			if(isResp) {                
+
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+
+					sRatio = lastS;                
+
+				}				
+
+				else if(!isScale) {					
+
+					if(iw<w || ih<h)						
+
+						sRatio = Math.min(xRatio, yRatio);				
+
+				}				
+
+				else if(scaleType==1) {					
+
+					sRatio = Math.min(xRatio, yRatio);				
+
+				}				
+
+				else if(scaleType==2) {					
+
+					sRatio = Math.max(xRatio, yRatio);				
+
+				}			
+
+			}			
+
+			canvas.width = w*pRatio*sRatio;			
+
+			canvas.height = h*pRatio*sRatio;
+
+			canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w*sRatio+'px';				
+
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h*sRatio+'px';
+
+			stage.scaleX = pRatio*sRatio;			
+
+			stage.scaleY = pRatio*sRatio;			
+
+			lastW = iw; lastH = ih; lastS = sRatio;		
+
+		}
+
+	}
+
+	makeResponsive(true,'both',true,1);
+
+	AdobeAn.compositionLoaded(lib.properties.id);
+
+	fnStartAnimation();
+
+}
+
+function playSound(id, loop) {
+
+	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+
+}
+
+if (typeof(preloaderUrl) === "undefined") {
+
+var	preloaderUrl = "#";
+
+}
+
+$(document).ready(function() {
+
+	$("body").on('click',  function(event) {
+
+		if(clickablePreloader){
+
+			//$("#rurl").on("click", function(event) {
+
+				//event.stopPropagation();
+
+			//})
+
+			//realClick(preloaderUrl+'?utm_campaign='+getGamename()+'&utm_medium=preloader&utm_content=preloader&utm_source='+stringHostDaria, "body");
+
+		}
+
+	});
+
+})
+
+function setGame() {
+
+	exportRoot.startSnd();
+
+}		
+
+	</script>
+
+        <script>       
+
+            var width = window.innerWidth;
+
+            if (width === 0) {
+
+                if (typeof document.body === "object" && document.body !== null){
+
+                    document.body.style.display = "none";
+
+                }
+
+            }
+
+            window.onresize = function() {
+
+                if (width== 0)  {
+
+                    if (typeof document.body === "object" && document.body !== null){
+
+                        document.body.style.display = "none";
+
+                    }
+
+                    window.location.reload();
+
+                }
+
+            };
+
+        </script>
+
+</head>
+
+<body onload="speedtest('game.js?v16', 'init')" style="padding:0; height:100%; width:100%; margin:0px;background-color: #f284cf;">
+
+  <div class="myWgLoader"></div>
+
+<div id="animation_container" style="width:800px; height:600px">
+
+  <canvas id="canvas" width="800" height="600" style="position: absolute; display: none;"></canvas>
+
+  <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:600px; position: absolute; left: 0px; top: 0px; display: none;"> </div>
+
+</div>
+
+<div id='_preload_div_' style='display: inline-block; background:url("preloader-daria.jpg"); height:600px; width: 800px; vertical-align=middle;position:absolute;left:0px;top:0px;text-align: center;cursor: pointer'><span style='display: inline-block; height: 100%; vertical-align: middle;'></span> <span id="preload_loading" style='vertical-align: bottom; margin-bottom: 10px; max-height: 100%; display: inline-block; position: relative'> <img  src="loading.gif" style="display: block" /> <span id="progress_text">0 %</span> </span> </div>
+
+<a id="rurl" href="#"></a>
+
+</body>
+
+</html>

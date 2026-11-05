@@ -1,0 +1,1 @@
+let ysdk;function myYanEcapAd(){YaGames.init().then(s=>{(ysdk=s).adv.showFullscreenAdv({callbacks:{onClose:s=>{console.info("Ad V2 close"),c2_callFunction("ResumeGamesEcaps")}}})})}

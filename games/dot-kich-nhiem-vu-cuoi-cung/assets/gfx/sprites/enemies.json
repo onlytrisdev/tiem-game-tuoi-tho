@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "droid.png",
+	"frame": {"x":105,"y":1,"w":65,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":122},
+	"sourceSize": {"w":65,"h":122}
+},
+{
+	"filename": "droid_gun.png",
+	"frame": {"x":98,"y":125,"w":66,"h":17},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":17},
+	"sourceSize": {"w":66,"h":17}
+},
+{
+	"filename": "dron.png",
+	"frame": {"x":1,"y":101,"w":95,"h":91},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":0,"w":95,"h":91},
+	"sourceSize": {"w":113,"h":113}
+},
+{
+	"filename": "dron2.png",
+	"frame": {"x":1,"y":1,"w":102,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":102,"h":98},
+	"sourceSize": {"w":116,"h":144}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemies.png",
+	"format": "RGBA8888",
+	"size": {"w":171,"h":193},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d187604d4682b841e5a0aeb223a90b07:7e2caf12703dbbbef4d7fab97e1574be:9b2a76c8b2a408b3f0547a4eddda1e06$"
+}
+}

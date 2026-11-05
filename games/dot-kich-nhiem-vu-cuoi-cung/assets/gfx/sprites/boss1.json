@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "gun1.png",
+	"frame": {"x":517,"y":57,"w":123,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":123,"h":36},
+	"sourceSize": {"w":123,"h":36}
+},
+{
+	"filename": "gun2.png",
+	"frame": {"x":639,"y":1,"w":95,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":48},
+	"sourceSize": {"w":95,"h":53}
+},
+{
+	"filename": "gun3.png",
+	"frame": {"x":517,"y":1,"w":120,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":54},
+	"sourceSize": {"w":120,"h":54}
+},
+{
+	"filename": "legs1.png",
+	"frame": {"x":1,"y":1,"w":317,"h":99},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":317,"h":99},
+	"sourceSize": {"w":317,"h":99}
+},
+{
+	"filename": "tower1.png",
+	"frame": {"x":320,"y":1,"w":195,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":195,"h":91},
+	"sourceSize": {"w":195,"h":91}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "boss1.png",
+	"format": "RGBA8888",
+	"size": {"w":735,"h":101},
+	"scale": "0.35",
+	"smartupdate": "$TexturePacker:SmartUpdate:29d700815f998695a22b5225d91d2453:a2b582b6797a2ab05a37709a4764f37b:9ddd5e1c67140cf70f1a1c1673b31818$"
+}
+}
