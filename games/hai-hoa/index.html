@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Hái hoa</title>
+
+  <script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+  <link rel="stylesheet" href="TemplateData/style.css">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+  <div id="unity-container" class="unity-desktop">
+
+    <canvas id="unity-canvas" width="411" height="657"></canvas>
+
+    <div id="unity-loading-bar">
+      <div id="unity-logo">Hái hoa</div>
+
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+
+      <p id="unity-progress-text">0%</p>
+    </div>
+
+    <div id="unity-warning"></div>
+
+    <div id="unity-error" hidden>
+      <div id="unity-error-box">
+        <p id="unity-error-title">Không tải được game</p>
+        <p id="unity-error-message"></p>
+        <p class="unity-error-hint">
+          Thử: xóa cache trang / mở tab mới. Nếu vẫn lỗi, hãy tải lại bản build đầy đủ (wasm + data cùng phiên bản).
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    var progressText = document.querySelector("#unity-progress-text");
+    var warningBanner = document.querySelector("#unity-warning");
+    var errorPanel = document.querySelector("#unity-error");
+    var errorMessage = document.querySelector("#unity-error-message");
+
+    function showFatalError(message) {
+      loadingBar.style.display = "none";
+      errorMessage.textContent = message || "WebAssembly load failed.";
+      errorPanel.hidden = false;
+      console.error("[Unity WebGL]", message);
+    }
+
+    function unityShowBanner(msg, type) {
+      function updateBannerVisibility() {
+        warningBanner.style.display =
+          warningBanner.children.length ? "block" : "none";
+      }
+
+      var div = document.createElement("div");
+      div.innerHTML = msg;
+      warningBanner.appendChild(div);
+
+      if (type === "error") {
+        div.style.background = "rgba(180,0,0,0.85)";
+      } else if (type === "warning") {
+        div.style.background = "rgba(255,140,0,0.85)";
+      } else {
+        div.style.background = "rgba(0,0,0,0.55)";
+      }
+
+      updateBannerVisibility();
+
+      setTimeout(function () {
+        if (warningBanner.contains(div)) {
+          warningBanner.removeChild(div);
+        }
+        updateBannerVisibility();
+      }, 5000);
+    }
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+      canvas.className = "unity-mobile";
+    }
+
+    var GAME_ASPECT = 10 / 16;
+
+    function applyGameViewportSize() {
+      var vw = window.innerWidth;
+      var vh = window.innerHeight;
+
+      var viewAspect = vw / vh;
+      var w, h;
+
+      if (viewAspect > GAME_ASPECT) {
+        h = vh;
+        w = h * GAME_ASPECT;
+      } else {
+        w = vw;
+        h = w / GAME_ASPECT;
+      }
+
+      container.style.width = Math.floor(w) + "px";
+      container.style.height = Math.floor(h) + "px";
+
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      canvas.style.width = Math.floor(w) + "px";
+      canvas.style.height = Math.floor(h) + "px";
+
+      canvas.width = Math.floor(w * dpr);
+      canvas.height = Math.floor(h * dpr);
+    }
+
+    window.addEventListener("resize", applyGameViewportSize);
+    window.addEventListener("orientationchange", applyGameViewportSize);
+    document.addEventListener("fullscreenchange", applyGameViewportSize);
+
+    applyGameViewportSize();
+
+    var buildUrl = "Build";
+
+    var loaderUrl =
+      buildUrl + "/73a14f5729b466859b45dcd767b1c8c3.loader.js";
+
+    var config = {
+      dataUrl: buildUrl + "/d37e9513a6c8d443bda8341edf70b9c0.data",
+      frameworkUrl: buildUrl + "/2c28fb861ac044369f043ee585188432.framework.js",
+      codeUrl: buildUrl + "/c30dfe053553971fa56720d4b44f116d.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "Arcade",
+      productName: "Kim Cuong",
+      productVersion: "1.0",
+      showBanner: unityShowBanner
+    };
+
+    loadingBar.style.display = "block";
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+
+    script.onerror = function () {
+      showFatalError(
+        "Không tải loader: " +
+        loaderUrl +
+        ". Kiểm tra upload Build/ và index.html cùng một bản build."
+      );
+    };
+
+    script.onload = function () {
+      Promise.all([
+        fetch(buildUrl + "/d37e9513a6c8d443bda8341edf70b9c0.data.part0").then(function(r){return r.arrayBuffer();}),
+        fetch(buildUrl + "/d37e9513a6c8d443bda8341edf70b9c0.data.part1").then(function(r){return r.arrayBuffer();})
+      ]).then(function(parts) {
+        config.dataUrl = URL.createObjectURL(new Blob(parts, {type: "application/octet-stream"}));
+        return createUnityInstance(
+        canvas,
+        config,
+        function (progress) {
+          var pct = Math.round(progress * 100);
+          progressBarFull.style.width = pct + "%";
+          progressText.textContent = pct + "%";
+        }
+      )
+      });
+      }).then(function () {
+        loadingBar.style.display = "none";
+        applyGameViewportSize();
+      })
+      .catch(function (message) {
+        showFatalError(message);
+      });
+    };
+
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>
