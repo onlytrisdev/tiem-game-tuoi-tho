@@ -1,0 +1,26 @@
+{
+    "version": 1.0,
+    "gameId": "MasterTournament",
+    "width": 960,
+    "height":640,
+    "landscape": true,
+    "languages": ["en","zh","de","fr","it","es","tr","pt","ru","th"],
+    "useFlaxRes": true,
+    "loading": "res/logo.png",
+    "rotateImg": "res/rotate.png",
+    "homeUrl": "",
+    "domainAllowed": [
+    ],
+
+    "project_type": "javascript",
+    "debugMode" : 1,
+    "showFPS" : false,
+    "frameRate" : 30,
+    "id" : "gameCanvas",
+    "renderMode" : 1,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d", "box2d"],
+
+    "jsList" : []
+}

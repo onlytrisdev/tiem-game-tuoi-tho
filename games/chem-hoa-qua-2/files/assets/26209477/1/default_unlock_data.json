@@ -1,0 +1,36 @@
+{
+    "categories": [
+        {
+            "themeName": "fruit",
+            "progress": 3,
+            "currentPercentage": 0,
+            "objects": [
+                { "id": 0,  "name": "banana",       "fileName": "icon_coloured_banana.png",         "levelsToUnlock": 0 }, 
+                { "id": 1,  "name": "apple",        "fileName": "icon_coloured_apple.png",          "levelsToUnlock": 0 }, 
+                { "id": 2,  "name": "orange",       "fileName": "icon_coloured_orange.png",         "levelsToUnlock": 0 }, 
+                { "id": 3,  "name": "watermelon",   "fileName": "icon_coloured_watermelon.png",     "levelsToUnlock": 2 }, 
+                { "id": 4,  "name": "starfruit",    "fileName": "icon_coloured_starfruit.png",      "levelsToUnlock": 3 }, 
+                { "id": 5,  "name": "coconut",      "fileName": "icon_coloured_coconut.png",        "levelsToUnlock": 4 }, 
+                { "id": 6,  "name": "lemon",        "fileName": "icon_coloured_lemon.png",          "levelsToUnlock": 5 },
+                { "id": 7,  "name": "fig",          "fileName": "icon_coloured_fig.png",            "levelsToUnlock": 5 },
+                { "id": 8,  "name": "kiwi",         "fileName": "icon_coloured_kiwi.png",           "levelsToUnlock": 5 }
+            ]
+        },
+        {
+            "themeName": "vegetables",
+            "progress": 3,
+            "currentPercentage": 0,
+            "objects": [
+                { "id": 0,  "name": "carrot",       "fileName": "icon_coloured_carrot.png",         "levelsToUnlock": 5  }, 
+                { "id": 1,  "name": "bellpepper",   "fileName": "icon_coloured_paprika.png",        "levelsToUnlock": 0  }, 
+                { "id": 2,  "name": "mushroom",     "fileName": "icon_coloured_mushroom.png",       "levelsToUnlock": 0  }, 
+                { "id": 3,  "name": "corn",         "fileName": "icon_coloured_corn.png",           "levelsToUnlock": 10 }, 
+                { "id": 4,  "name": "zucchini",     "fileName": "icon_coloured_zucchini.png",       "levelsToUnlock": 10 }, 
+                { "id": 5,  "name": "squash",       "fileName": "icon_coloured_squash.png",         "levelsToUnlock": 10 }, 
+                { "id": 6,  "name": "onion",        "fileName": "icon_coloured_onion.png",          "levelsToUnlock": 15 }, 
+                { "id": 7,  "name": "pepper",       "fileName": "icon_coloured_pepper.png",         "levelsToUnlock": 15 }, 
+                { "id": 8,  "name": "radish",       "fileName": "icon_coloured_radish.png",         "levelsToUnlock": 15 }      
+            ]
+        }
+    ]
+}

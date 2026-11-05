@@ -1,0 +1,12 @@
+body {
+	
+	background-color:black;
+	margin:0px;
+	padding:0px;
+	color:white;
+	font-family: 'Alfa Slab One', cursive;
+	
+	overscroll-behavior: none;
+	overscroll-behavior-y: none;
+	
+}

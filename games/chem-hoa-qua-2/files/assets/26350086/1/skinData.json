@@ -1,0 +1,103 @@
+{
+    "skins": [
+        {
+            "id": 0,
+            "name": "icon_knife_normal.png",
+            "model": "knife_01.json",
+            "material": "knife_01",
+            "position": {"x": 0.75, "y": 0.43, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 1,
+            "name": "icon_knife_butcher.png",
+            "model": "knife_02.json",
+            "material": "knife_02",
+            "position": {"x": 1.5, "y": 0.55, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -0.5, "y": 0.5, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 2,
+            "name": "icon_knife_ribble.png",
+            "model": "knife_03.json",
+            "material": "knife_03",
+            "position": {"x": 1, "y": 0, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 3,
+            "name": "icon_knife_pizza.png",
+            "model": "knife_04.json",
+            "material": "knife_04",
+            "position": {"x": 0, "y": 0.35, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 4,
+            "name": "icon_knife_spatula.png",
+            "model": "knife_05.json",
+            "material": "knife_05",
+            "position": {"x": 2, "y": 0, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 5,
+            "name": "icon_knife_katana.png",
+            "model": "knife_06.json",
+            "material": "knife_06",
+            "position": {"x": 1.5, "y": 0, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 6,
+            "name": "icon_knife_calculator.png",
+            "model": "knife_07.json",
+            "material": "knife_07",
+            "position": {"x": 0.5, "y": 0.85, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -4.14, "y": 3.35, "z": 0}
+        },
+        {
+            "id": 7,
+            "name": "icon_knife_flipflop.png",
+            "model": "knife_08.json",
+            "material": "knife_08",
+            "position": {"x": 0.5, "y": 0.4, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -1.5, "y": 0.1, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -3.76, "y": 2.69, "z": 0}
+        },
+        {
+            "id": 8,
+            "name": "icon_knife_paddle.png",
+            "model": "knife_09.json",
+            "material": "knife_09",
+            "position": {"x": 0.35, "y": 1.35, "z": 0},
+            "angles": {"min": 0, "max": 0},
+            "finishPosition": {"x": -0.5, "y": 0.5, "z": 0.5},
+            "finishAngle": {"x": -5, "y": 0, "z": 30},
+            "stunAnimPosition": {"x": -4.521, "y": 4.009, "z": 0}
+        }
+    ]
+}
