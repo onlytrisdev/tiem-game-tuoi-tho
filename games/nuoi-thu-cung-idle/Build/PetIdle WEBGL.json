@@ -1,0 +1,16 @@
+{
+"companyName": "Alphaquest",
+"productName": "Pet Idle",
+"productVersion": "2.07",
+"dataUrl": "PetIdle WEBGL.data.unityweb",
+"wasmCodeUrl": "PetIdle WEBGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "PetIdle WEBGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.27f1"
+}
