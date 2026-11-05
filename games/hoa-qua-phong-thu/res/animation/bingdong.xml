@@ -1,0 +1,59 @@
+<skeleton name="bingdong" frameRate="60" version="2.2">
+ <armatures>
+  <armature name="bingdong">
+   <b name="图层 10" x="-22.05" y="1.95" kX="-27.19" kY="-27.19" cX="0.07" cY="0.07" pX="1.6" pY="37.95" z="0">
+    <d name="bing2" pX="25" pY="46"/>
+   </b>
+   <b name="图层 19" x="17" y="-0.15" kX="39.67" kY="39.67" cX="0.05" cY="0.05" pX="1.6" pY="38.45" z="0">
+    <d name="bing2" pX="25" pY="46"/>
+   </b>
+   <b name="图层 20" x="0.35" y="1.35" kX="0" kY="0" cX="0.01" cY="0.01" pX="6.6" pY="85.7" z="0">
+    <d name="bing1" pX="50" pY="92.5"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bingdong">
+   <mov name="bingdong" dr="6" to="0" drTW="39" lp="0" twE="0.9999999999999999">
+    <b name="图层 10" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="-22.05" y="1.95" cocos2d_x="-23.3" cocos2d_y="-0.25" kX="-27.19" kY="-27.19" cX="0.07" cY="0.07" pX="1.6" pY="37.95" z="0" dI="0" dr="1"/>
+     <f x="-22.05" y="1.95" cocos2d_x="-37" cocos2d_y="-26.05" kX="-27.19" kY="-27.19" cX="0.29" cY="0.84" pX="1.75" pY="37.85" z="0" dI="0" dr="1"/>
+     <f x="-22" y="1.9" cocos2d_x="-41" cocos2d_y="-31.15" kX="-27.19" kY="-27.19" cX="1" cY="1" pX="1.8" pY="38.1" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="图层 19" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="17" y="-0.15" cocos2d_x="18.1" cocos2d_y="-1.6" kX="39.67" kY="39.67" cX="0.05" cY="0.05" pX="1.6" pY="38.45" z="0" dI="0" dr="1"/>
+     <f x="16.9" y="-0.25" cocos2d_x="37.75" cocos2d_y="-26.2" kX="39.67" kY="39.67" cX="0.36" cY="0.86" pX="1.45" pY="38.65" z="1" dI="0" dr="1"/>
+     <f x="16.95" y="-0.15" cocos2d_x="43" cocos2d_y="-33.15" kX="39.67" kY="39.67" cX="1.08" cY="1.08" pX="0.95" pY="38.8" z="1" dI="0" dr="2"/>
+    </b>
+    <b name="图层 20" sc="1" dl="0">
+     <f x="0.35" y="1.35" cocos2d_x="0.3" cocos2d_y="0.7" kX="0" kY="0" cX="0.01" cY="0.01" pX="6.6" pY="85.7" z="0" dI="0" dr="1"/>
+     <f x="0.3" y="1.35" cocos2d_x="-1.4" cocos2d_y="-72" kX="0" kY="0" cX="0.26" cY="0.85" pX="6.55" pY="85.95" z="0" dI="0" dr="1"/>
+     <f x="0.35" y="1.35" cocos2d_x="-4.65" cocos2d_y="-84.65" kX="0" kY="0" cX="1" cY="1" pX="5" pY="86" z="2" dI="0" dr="4"/>
+    </b>
+   </mov>
+   <mov name="xiaoshi" dr="3" to="0" drTW="26" lp="0" twE="0.9999999999999999">
+    <b name="图层 10" sc="1" dl="0">
+     <f x="-22" y="1.9" cocos2d_x="-41" cocos2d_y="-31.15" kX="-27.19" kY="-27.19" cX="1" cY="1" pX="1.8" pY="38.1" z="0" dI="0" dr="1"/>
+     <f x="-22" y="2" cocos2d_x="-22.95" cocos2d_y="0.45" kX="-27.18" kY="-27.18" cX="0.05" cY="0.05" pX="2.85" pY="38.1" z="0" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="图层 19" sc="1" dl="0">
+     <f x="16.95" y="-0.15" cocos2d_x="43" cocos2d_y="-33.15" kX="39.67" kY="39.67" cX="1.08" cY="1.08" pX="0.95" pY="38.8" z="1" dI="0" dr="1"/>
+     <f x="16.95" y="-0.15" cocos2d_x="18.7" cocos2d_y="-2.35" kX="39.68" kY="39.68" cX="0.07" cY="0.07" pX="0.8" pY="38.9" z="1" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="图层 20" sc="1" dl="0">
+     <f x="0.35" y="1.35" cocos2d_x="-4.65" cocos2d_y="-84.65" kX="0" kY="0" cX="1" cY="1" pX="5" pY="86" z="2" dI="0" dr="1"/>
+     <f x="0.35" y="1.35" cocos2d_x="0.25" cocos2d_y="-0.6" kX="0" kY="0" cX="0.02" cY="0.02" pX="4.45" pY="87" z="2" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="bingdong" width="256" height="256">
+  <SubTexture name="bing1" width="100" height="185" cocos2d_pX="50" cocos2d_pY="92.5" x="0" y="0"/>
+  <SubTexture name="bing2" width="50" height="92" cocos2d_pX="25" cocos2d_pY="46" x="102" y="0"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,662 @@
+{
+  "cn": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 240,
+          "ptY": 476
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "造成范围伤害",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "等级越高击晕\n敌人时间越长",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "消灭城墙附近的敌人",
+          "ptX": 200,
+          "ptY": 90
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "恢复城墙60%血量",
+          "ptX": 200,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "消灭全屏幕敌人",
+          "ptX": 200,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "冰冻全屏幕敌人",
+          "ptX": 200,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "en": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Tăng sát thương",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Làm choáng kẻ thù",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Phá hủy những kẻ thù đến\n gần tường chắn.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Phúc hồi 60% sức khỏe\n cho bức tường",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Phá hủy tất cả kẻ thù trên bản đồ",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Đóng băng tất cả kẻ thù trên bản đồ",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "de": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Schaden",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Betäubt Gegner in der \nNähe",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Zerstört Gegner in der Nähe der \nMauer",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Stellt 60% der Strukturpunkte der\nMauer wieder her",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Zerstört alle Gegner auf dem \nBildschirm",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Friert alle Gegner auf dem \nBildschirm ein",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "es": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Comerciar daños ",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Aturde a los enemigos \ncercanos.",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Destruye a los enemigos cerca del \nmuro.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Restaura el 60 % de la salud del \nmuro. ",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Destruye a todos los enemigos en \nla pantalla.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Congela a todos los enemigos en \nla pantalla.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "fr": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Traitement des dommages",
+          "ptX": 180,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Étourdit les ennemis à \nproximité",
+          "ptX": 180,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Détruit tous les ennemis à l'écran",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Restaure 60 % de l'état du mur",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Détruit tous les ennemis à l'écran",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Bloque tous les ennemis à l'écran",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "it": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Cura i danni",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Stordisce i nemici nelle \nvicinanze",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Distruggi i nemici vicino al muro.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Ripristina il 60% di salute del muro",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Distruggi tutti i nemici sullo schermo",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Congela tutti i nemici sullo schermo",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "pt": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Lidar com os prejuízos",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Atordoa os inimigos \npróximos",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Destrói os inimigos perto do muro.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Restaura 60% de saúde do muro",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Destrói todos os inimigos no ecrã",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Congela todos os inimigos no ecrã",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "ru": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Причинение ущерба",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Ослепляет врагов \nпоблизости ",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Уничтожает врагов около стены.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Восстанавливает 60% здоровья \nстены",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Уничтожает всех врагов на \nмониторе",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Замораживает всех врагов на \nмониторе ",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "tr": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 200,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Zararla başa çıkma",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Çevredeki düşmanları \nşaşkına uğratır",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Surların yakınındaki düşmanları yok \neder.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Surların sağlamlığını %60 düzeltir",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Ekrandaki tüm düşmanları yok eder",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Ekrandaki tüm düşmanları dondurur",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "th": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "สร้างความเสียหาย",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "ทำให้ศัตรูที่อยู่ใกล้มึนงง",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "ทำลายศัตรูที่อยู่ใกล้กำแพง",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "ฟื้นฟูความแข็งแกร่งของกำแพง 60%",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "ทำลายศัตรูทั้งหมดบนหน้าจอ",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "แช่แข็งศัตรูทั้งหมดบนหน้าจอ",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "nl": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Schade toebrengen",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Verlamt vijanden in de buurt",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Vernietigt vijanden in de buurt \nvan de muur.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Herstelt de gezondheid van de \nmuur voor 60%",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Vernietig alle vijanden op het scherm",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Bevriest alle vijanden op het scherm",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  },
+  "pl": {
+    "shucaiPanelText": {
+      "xiaofanfanPanel": {
+        "jineng": {
+          "text": "",
+          "ptX": 210,
+          "ptY": 385
+        }
+      },
+      "dachuPanel": {
+        "jineng": {
+          "text": "Obrażenia",
+          "ptX": 200,
+          "ptY": 50
+        }
+      },
+      "tianshiPanel": {
+        "jineng": {
+          "text": "Ogłusza wrogów w pobliżu",
+          "ptX": 200,
+          "ptY": 50
+        }
+      }
+    },
+    "daojuPanelText": {
+      "baoyanPanel": {
+        "jieshao": {
+          "text": "Niszczy wrogów blisko ściany.",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "yelvPanel": {
+        "jieshao": {
+          "text": "Odnawia 60%  ściany",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "baobaoPanel": {
+        "jieshao": {
+          "text": "Niszczy wszystkich wrogów \nna ekranie",
+          "ptX": 170,
+          "ptY": 80
+        }
+      },
+      "fengxiangPanel": {
+        "jieshao": {
+          "text": "Zamraża wszystkich wrogów \nna ekranie",
+          "ptX": 170,
+          "ptY": 80
+        }
+      }
+    }
+  }
+}

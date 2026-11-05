@@ -1,0 +1,116 @@
+{
+    "frameRate": 24,
+    "name": "fire",
+    "version": "5.5",
+    "compatibleVersion": "5.5",
+    "armature": [{
+        "type": "Armature",
+        "frameRate": 24,
+        "name": "火",
+        "aabb": {
+            "x": -20.25,
+            "y": -50.72,
+            "width": 40.5,
+            "height": 70
+        },
+        "bone": [{
+            "name": "root",
+            "transform": {
+                "scX": 1.2111,
+                "scY": 1.2111
+            }
+        }],
+        "slot": [{
+            "blendMode": "add",
+            "displayIndex": 1,
+            "name": "h1",
+            "parent": "root"
+        }],
+        "skin": [{
+            "slot": [{
+                "name": "h1",
+                "display": [{
+                    "name": "h1",
+                    "transform": {
+                        "x": -0.23,
+                        "y": -16.54,
+                        "scX": 1.008,
+                        "scY": 1.008
+                    }
+                }, {
+                    "name": "h8",
+                    "transform": {
+                        "y": -12.98,
+                        "scX": 0.9526,
+                        "scY": 0.9526
+                    }
+                }, {
+                    "name": "h7",
+                    "transform": {
+                        "y": -14.17
+                    }
+                }, {
+                    "name": "h6",
+                    "transform": {
+                        "y": -15.01
+                    }
+                }, {
+                    "name": "h5",
+                    "transform": {
+                        "y": -12.5
+                    }
+                }, {
+                    "name": "h4",
+                    "transform": {
+                        "y": -17.76
+                    }
+                }, {
+                    "name": "h3",
+                    "transform": {
+                        "y": -16.93
+                    }
+                }, {
+                    "name": "h2",
+                    "transform": {
+                        "y": -15.01
+                    }
+                }]
+            }]
+        }],
+        "animation": [{
+            "duration": 14,
+            "playTimes": 0,
+            "name": "newAnimation",
+            "slot": [{
+                "name": "h1",
+                "displayFrame": [{
+                    "duration": 2
+                }, {
+                    "duration": 2,
+                    "value": 7
+                }, {
+                    "duration": 2,
+                    "value": 6
+                }, {
+                    "duration": 2,
+                    "value": 5
+                }, {
+                    "duration": 2,
+                    "value": 4
+                }, {
+                    "duration": 2,
+                    "value": 3
+                }, {
+                    "duration": 2,
+                    "value": 2
+                }, {
+                    "duration": 0,
+                    "value": 1
+                }]
+            }]
+        }],
+        "defaultActions": [{
+            "gotoAndPlay": "newAnimation"
+        }]
+    }]
+}

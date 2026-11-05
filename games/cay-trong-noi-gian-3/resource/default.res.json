@@ -1,0 +1,276 @@
+{
+	"groups": [
+		{
+			"keys": "Tanks_tex_png,Zombies_tex_png,Tanks_tex_json,Zombies_tex_json,ui_json,effs_tex_json,effs_tex_png,font_0_png,Zombies_red_tex_png,SD_AllSeeds_json,font_fnt,effs_ske_json,Tanks_ske_json,Zombies_ske_json,cbr_png,fire_tex_png,fire_ske_json,fire_tex_json,winmusic_mp3,tone_mp3,splat1_mp3,points4_mp3,kernelpult_mp3,hugewave_mp3,flybox_mp3,crazydaveshort3_mp3,crazydaveshort1_mp3,crazydavelong3_mp3,crazydavelong1_mp3,buttonclick_mp3,cherrybomb_mp3,crazydavelong2_mp3,crazydaveshort2_mp3,losemusic_mp3,plant1_mp3,sell_mp3,siren_mp3,Faster_mp3,Middle_png,WateryGraves_mp3,t2_png,t3_png,t1_png,t4_png,disk_png,lower_png,bg_js_png,imgs_json,Middle_4399_png",
+			"name": "preload"
+		},
+		{
+			"keys": "covervivo_png,loading_bg_png,loading_fg_png",
+			"name": "loadingRes"
+		}
+	],
+	"resources": [
+		{
+			"url": "anim/Tanks_tex.png",
+			"type": "image",
+			"name": "Tanks_tex_png"
+		},
+		{
+			"url": "anim/Zombies_tex.png",
+			"type": "image",
+			"name": "Zombies_tex_png"
+		},
+		{
+			"url": "anim/Tanks_tex.json",
+			"type": "json",
+			"name": "Tanks_tex_json"
+		},
+		{
+			"url": "anim/Zombies_tex.json",
+			"type": "json",
+			"name": "Zombies_tex_json"
+		},
+		{
+			"url": "imgs/ui.json",
+			"type": "sheet",
+			"name": "ui_json",
+			"subkeys": "+_png,+a_png,+b_png,+d_png,-_png,-a_png,-b_png,-d_png,0_png,0a_png,0b_png,0d_png,1_png,1a_png,1b_png,1d_png,1x_png,2_png,2a_png,2b_png,2d_png,2x_png,3_png,3a_png,3b_png,3d_png,3x_png,4_png,4a_png,4b_png,4d_png,4x_png,51_Head_png,51_TankItem_png,51_button_png,51_cursor_png,51_epic_png,51_highTank_png,51_rare_png,51_skinHead_png,51_skin_png,51_turntableicon_png,5_png,5a_png,5b_png,5d_png,5x_png,6_png,6a_png,6b_png,6d_png,7_png,7a_png,7b_png,7d_png,8_png,8a_png,8b_png,8d_png,9_png,9a_png,9b_png,9d_png,Aim_png,Arrow_png,Attack gky value_png,Attack gky_png,Award Title_png,Award bottom_png,BOSS挑战_png,Blue box_png,Bottom value_png,Bottom1_png,Button blue_png,Button green_png,Button purple_png,Button red_png,Button-cancel_png,CheckBulletScreen_png,Composite box_png,Deposit Title_png,Diamonds_png,EXPB_png,EXP_png,Grade bottom_png,High-treasure-chest_png,HighTank_bjg_png,Hook_png,HotBack_png,King_png,MoneyBoxEffect_png,Page sign_png,Page-sign-off_png,Piggy bank_png,Platinum_png,Plus_png,Pointer_png,Return_png,Set up icon_png,ShareBtn_png,Sign in BottomD_png,Sign in Bottom_png,Sign in icon_png,Star icon_png,Stars_png,Superior-treasure-chest_png,Synthesisbuff_png,Treasure chest_png,UnCheckBulletScreen_png,a_png,aa_png,ab_png,adChallenge_png,ad_png,adbox_png,attack icon_png,attack value_png,attack_png,automatic_png,b_png,ba_png,bagIcon_png,baggreen_png,baghead_png,bb_png,bbottom_png,bd_png,big_moneybox_png,blood_png,bottom2_png,bottom_png,bronze_png,btnADIcon_png,btnEffect_png,c_png,ca_png,cb_png,cd_png,chart1_png,chart2_png,chart3_png,circle_png,clearance_png,close_png,d_png,da_png,db_png,dd_png,dk_bx1_png,dk_bx2_png,dk_lx_png,dot_png,doubleDot_png,e_png,ea_png,eb_png,ed_png,elitebag_png,elitebagstar_png,enter_png,f_png,fa_png,fb_png,fd_png,fladder_png,freepopo_png,gold_png,hand_png,hsFree_png,ht_png,icon_boxBg_png,k_png,ka_png,kb_png,kd_png,l1_png,l2_png,l3_png,l4_png,l5_png,ladder_png,lock_png,locked_png,luckybag_png,m_png,ma_png,master_png,mb_png,md_png,menu Open_png,menu bottom_png,menu_png,mfbk_png,mmaster_png,money bottom_png,money_png,moneyslider_png,moregame_png,mysbag_png,nDot_png,nDota_png,nDotb_png,nDotd_png,nativeAD_1_png,prize1_png,prize2_png,prize3_png,prize4_png,prize5_png,prize6_png,prizebuff_png,rank1_png,rank2_png,rank3_png,rank4_png,rank5_png,rank6_png,rank7_png,rank8_png,recovery_png,red dot_png,redslider_2_png,redslider_png,sbottom_png,secret Title_png,share_png,sharepoint_png,shock icon_png,shopFreeLucky_png,shop_png,sign_1_png,sign_2_png,sign_3_png,sign_4_png,sign_5_png,silver_png,spd+autoCompose_png,speedTitle_png,speedZ_png,speedbuff_png,store Bottom_png,t_png,ta_png,tails_png,taskIcon_1_png,taskIcon_2_png,taskIcon_3_png,taskIcon_4_png,taskIcon_5_png,taskIcon_6_png,task_png,tb_png,td_png,thunder_ball_png,toutiao_png,turntable icon_png,unfinished_png,video_png,voice icon_png,x_png,xa_png,xb_png,xd_png"
+		},
+		{
+			"url": "anim/effs_tex.json",
+			"type": "json",
+			"name": "effs_tex_json"
+		},
+		{
+			"url": "anim/effs_tex.png",
+			"type": "image",
+			"name": "effs_tex_png"
+		},
+		{
+			"url": "fonts/font_0.png",
+			"type": "image",
+			"name": "font_0_png"
+		},
+		{
+			"url": "anim/Zombies_red_tex.png",
+			"type": "image",
+			"name": "Zombies_red_tex_png"
+		},
+		{
+			"url": "data/SD_AllSeeds.json",
+			"type": "json",
+			"name": "SD_AllSeeds_json"
+		},
+		{
+			"url": "fonts/font.fnt",
+			"type": "font",
+			"name": "font_fnt"
+		},
+		{
+			"url": "anim/effs_ske.json",
+			"type": "json",
+			"name": "effs_ske_json"
+		},
+		{
+			"url": "anim/Tanks_ske.json",
+			"type": "json",
+			"name": "Tanks_ske_json"
+		},
+		{
+			"url": "anim/Zombies_ske.json",
+			"type": "json",
+			"name": "Zombies_ske_json"
+		},
+		{
+			"url": "covervivo.png",
+			"type": "image",
+			"name": "covervivo_png"
+		},
+		{
+			"url": "imgs/loading_fg.png",
+			"type": "image",
+			"name": "loading_fg_png"
+		},
+		{
+			"url": "imgs/loading_bg.png",
+			"type": "image",
+			"name": "loading_bg_png"
+		},
+		{
+			"url": "imgs/cbr.png",
+			"type": "image",
+			"name": "cbr_png"
+		},
+		{
+			"url": "anim/fire_tex.png",
+			"type": "image",
+			"name": "fire_tex_png"
+		},
+		{
+			"url": "anim/fire_ske.json",
+			"type": "json",
+			"name": "fire_ske_json"
+		},
+		{
+			"url": "anim/fire_tex.json",
+			"type": "json",
+			"name": "fire_tex_json"
+		},
+		{
+			"url": "imgs/sound/buttonclick.mp3",
+			"type": "sound",
+			"name": "buttonclick_mp3"
+		},
+		{
+			"url": "imgs/sound/cherrybomb.mp3",
+			"type": "sound",
+			"name": "cherrybomb_mp3"
+		},
+		{
+			"url": "imgs/sound/crazydavelong1.mp3",
+			"type": "sound",
+			"name": "crazydavelong1_mp3"
+		},
+		{
+			"url": "imgs/sound/crazydavelong2.mp3",
+			"type": "sound",
+			"name": "crazydavelong2_mp3"
+		},
+		{
+			"url": "imgs/sound/crazydavelong3.mp3",
+			"type": "sound",
+			"name": "crazydavelong3_mp3"
+		},
+		{
+			"url": "imgs/sound/crazydaveshort1.mp3",
+			"type": "sound",
+			"name": "crazydaveshort1_mp3"
+		},
+		{
+			"url": "imgs/sound/crazydaveshort2.mp3",
+			"type": "sound",
+			"name": "crazydaveshort2_mp3"
+		},
+		{
+			"url": "imgs/sound/crazydaveshort3.mp3",
+			"type": "sound",
+			"name": "crazydaveshort3_mp3"
+		},
+		{
+			"url": "imgs/sound/flybox.mp3",
+			"type": "sound",
+			"name": "flybox_mp3"
+		},
+		{
+			"url": "imgs/sound/hugewave.mp3",
+			"type": "sound",
+			"name": "hugewave_mp3"
+		},
+		{
+			"url": "imgs/sound/kernelpult.mp3",
+			"type": "sound",
+			"name": "kernelpult_mp3"
+		},
+		{
+			"url": "imgs/sound/losemusic.mp3",
+			"type": "sound",
+			"name": "losemusic_mp3"
+		},
+		{
+			"url": "imgs/sound/plant1.mp3",
+			"type": "sound",
+			"name": "plant1_mp3"
+		},
+		{
+			"url": "imgs/sound/points4.mp3",
+			"type": "sound",
+			"name": "points4_mp3"
+		},
+		{
+			"url": "imgs/sound/sell.mp3",
+			"type": "sound",
+			"name": "sell_mp3"
+		},
+		{
+			"url": "imgs/sound/siren.mp3",
+			"type": "sound",
+			"name": "siren_mp3"
+		},
+		{
+			"url": "imgs/sound/splat1.mp3",
+			"type": "sound",
+			"name": "splat1_mp3"
+		},
+		{
+			"url": "imgs/sound/tone.mp3",
+			"type": "sound",
+			"name": "tone_mp3"
+		},
+		{
+			"url": "imgs/sound/winmusic.mp3",
+			"type": "sound",
+			"name": "winmusic_mp3"
+		},
+		{
+			"url": "imgs/sound/Faster.mp3",
+			"type": "sound",
+			"name": "Faster_mp3"
+		},
+		{
+			"url": "imgs/Middle.png",
+			"type": "image",
+			"name": "Middle_png"
+		},
+		{
+			"url": "imgs/sound/WateryGraves.mp3",
+			"type": "sound",
+			"name": "WateryGraves_mp3"
+		},
+		{
+			"url": "imgs/t2.png",
+			"type": "image",
+			"name": "t2_png"
+		},
+		{
+			"url": "imgs/t3.png",
+			"type": "image",
+			"name": "t3_png"
+		},
+		{
+			"url": "imgs/t1.png",
+			"type": "image",
+			"name": "t1_png"
+		},
+		{
+			"url": "imgs/t4.png",
+			"type": "image",
+			"name": "t4_png"
+		},
+		{
+			"url": "imgs/disk.png",
+			"type": "image",
+			"name": "disk_png"
+		},
+		{
+			"url": "imgs/lower.png",
+			"type": "image",
+			"name": "lower_png"
+		},
+		{
+			"url": "imgs/bg_js.png",
+			"type": "image",
+			"name": "bg_js_png"
+		},
+		{
+			"url": "imgs/imgs.json",
+			"type": "sheet",
+			"name": "imgs_json",
+			"subkeys": "Demolition icon_png,EXPfull_png,FlyBox_png,Gold chart_png,MoneyBox_png,Promotion Title_png,Set upTitle_png,Sign in Title_png,Store Title_png,Sunillustration_png,Unlock Botany Title_png,df_png,fail_png,leave Title_png,light_png,prizeTitle_png,turntable Title_png,up_png"
+		},
+		{
+			"url": "imgs/Middle_4399.png",
+			"type": "image",
+			"name": "Middle_4399_png"
+		}
+	]
+}

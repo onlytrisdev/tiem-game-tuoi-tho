@@ -1,0 +1,29 @@
+{
+  "level_5": {
+    "start": [
+      { "start": {"x": 375, "y": 734},  "end": {"x": 395, "y": 734},  "scaleX": 1,  "angle": 0},
+      { "start": {"x": 510, "y": 724},  "end": {"x": 510, "y": 724},  "scaleX": 1,  "angle": -15},
+      { "start": {"x": 620, "y": 724},  "end": {"x": 620, "y": 724},  "scaleX": 1,  "angle": 15},
+      { "start": {"x": 725, "y": 734},  "end": {"x": 780, "y": 734},  "scaleX": 1,  "angle": 0}
+    ],
+    "laser": [
+      { "start": {"x": 870, "y": 734},  "end": {"x": 870, "y": 734},  "scaleX": 0.5,  "angle": 0},
+      { "start": {"x": 930, "y": 734},  "end": {"x": 930, "y": 734},  "scaleX": 0.4,  "angle": 0}
+    ],
+    "elevator": [
+      { "start": {"x": 870, "y": 739},  "end": {"x": 880, "y": 739},  "scaleX": 0.2, "angle": 90},
+      { "start": {"x": 875, "y": 794},  "end": {"x": 875, "y": 794},  "scaleX": 0.3, "angle": 90},
+      { "start": {"x": 905, "y": 839},  "end": {"x": 905, "y": 839},  "scaleX": 0.6, "angle": 0},
+      { "start": {"x": 968, "y": 851},  "end": {"x": 968, "y": 851},  "scaleX": 0.3, "angle": 90},
+      { "start": {"x": 968, "y": 919},  "end": {"x": 968, "y": 998},  "scaleX": 1,   "angle": 90}
+    ],
+    "door": [
+      { "start": {"x": 870, "y": 649},  "end": {"x": 880, "y": 649},  "scaleX": 0.4,  "angle": 90},
+      { "start": {"x": 890, "y": 589},  "end": {"x": 890, "y": 589},  "scaleX": 0.2,  "angle": 0},
+      { "start": {"x": 840, "y": 539},  "end": {"x": 840, "y": 539},  "scaleX": 1,    "angle": 0},
+      { "start": {"x": 690, "y": 439},  "end": {"x": 690, "y": 439},  "scaleX": 0.6,  "angle": 0},
+      { "start": {"x": 570, "y": 439},  "end": {"x": 570, "y": 439},  "scaleX": 0.6,  "angle": 0},
+      { "start": {"x": 525, "y": 514},  "end": {"x": 525, "y": 514},  "scaleX": 0.9,  "angle": 90}
+    ]
+  }
+}

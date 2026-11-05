@@ -1,0 +1,39 @@
+{
+  "resources": [
+    "./assets/sounds/music.ogg",
+    "./assets/sounds/music.m4a",
+    "./assets/sounds/music.mp3"
+  ],
+  "spritemap": {
+    "Game_loop": {
+      "start": 0,
+      "end": 58.156009070294786,
+      "loop": false
+    },
+    "Game_loop2": {
+      "start": 60,
+      "end": 120.01596371882087,
+      "loop": false
+    },
+    "Game_loop3": {
+      "start": 122,
+      "end": 181.9663492063492,
+      "loop": false
+    },
+    "Lose_mus": {
+      "start": 183,
+      "end": 186.62938775510204,
+      "loop": false
+    },
+    "Menu_loop": {
+      "start": 188,
+      "end": 220.67657596371882,
+      "loop": false
+    },
+    "Win_mus": {
+      "start": 222,
+      "end": 225.22145124716553,
+      "loop": false
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "daojuMaxCount": 99,
+  "zhuangbeiMaxLevel": 10,
+  "shucaiMaxLevel": 10,
+  "daojuLayer": {
+    "baoyanPanel": {
+      "xuyaoMoney": 800
+    },
+    "yelvPanel": {
+      "xuyaoMoney": 1300
+    },
+    "baobaoPanel": {
+      "xuyaoMoney": 1800
+    },
+    "fengxiangPanel": {
+      "xuyaoMoney": 500
+    }
+  },
+  "zhuangbeiLayer": {
+    "zhalanPanel": {
+      "1": {
+        "qianghuaValue": 100,
+        "xuyaoMoney": 100,
+        "useImage": "zhalan1.png",
+        "type": 1
+      },
+      "2": {
+        "qianghuaValue": 200,
+        "xuyaoMoney": 250,
+        "useImage": "zhalan1.png",
+        "type": 1
+      },
+      "3": {
+        "qianghuaValue": 300,
+        "xuyaoMoney": 550,
+        "useImage": "zhalan2.png",
+        "type": 2
+      },
+      "4": {
+        "qianghuaValue": 400,
+        "xuyaoMoney": 800,
+        "useImage": "zhalan2.png",
+        "type": 2
+      },
+      "5": {
+        "qianghuaValue": 500,
+        "xuyaoMoney": 1100,
+        "useImage": "zhalan3.png",
+        "type": 3
+      },
+      "6": {
+        "qianghuaValue": 600,
+        "xuyaoMoney": 1600,
+        "useImage": "zhalan3.png",
+        "type": 3
+      },
+      "7": {
+        "qianghuaValue": 700,
+        "xuyaoMoney": 2300,
+        "useImage": "zhalan3.png",
+        "type": 3
+      },
+      "8": {
+        "qianghuaValue": 800,
+        "xuyaoMoney": 3200,
+        "useImage": "zhalan4.png",
+        "type": 4
+      },
+      "9": {
+        "qianghuaValue": 900,
+        "xuyaoMoney": 4300,
+        "useImage": "zhalan4.png",
+        "type": 4
+      },
+      "10": {
+        "qianghuaValue": 1000,
+        "xuyaoMoney": 6000,
+        "useImage": "zhalan4.png",
+        "type": 4
+      }
+    },
+    "dangongPanel": {
+      "1": {
+        "qianghuaValue": 5,
+        "xuyaoMoney": 100,
+        "useImage": "dangongbang1.png",
+        "daiziuseImage": "dangongdaizi1.png"
+      },
+      "2": {
+        "qianghuaValue": 8,
+        "xuyaoMoney": 200,
+        "useImage": "dangongbang1.png",
+        "daiziuseImage": "dangongdaizi1.png"
+      },
+      "3": {
+        "qianghuaValue": 12,
+        "xuyaoMoney": 350,
+        "useImage": "dangongbang2.png",
+        "daiziuseImage": "dangongdaizi2.png"
+      },
+      "4": {
+        "qianghuaValue": 15,
+        "xuyaoMoney": 550,
+        "useImage": "dangongbang2.png",
+        "daiziuseImage": "dangongdaizi2.png"
+      },
+      "5": {
+        "qianghuaValue": 19,
+        "xuyaoMoney": 880,
+        "useImage": "dangongbang3.png",
+        "daiziuseImage": "dangongdaizi3.png"
+      },
+      "6": {
+        "qianghuaValue": 22,
+        "xuyaoMoney": 1250,
+        "useImage": "dangongbang3.png",
+        "daiziuseImage": "dangongdaizi3.png"
+      },
+      "7": {
+        "qianghuaValue": 25,
+        "xuyaoMoney": 1680,
+        "useImage": "dangongbang3.png",
+        "daiziuseImage": "dangongdaizi3.png"
+      },
+      "8": {
+        "qianghuaValue": 29,
+        "xuyaoMoney": 2170,
+        "useImage": "dangongbang4.png",
+        "daiziuseImage": "dangongdaizi4.png"
+      },
+      "9": {
+        "qianghuaValue": 32,
+        "xuyaoMoney": 2690,
+        "useImage": "dangongbang4.png",
+        "daiziuseImage": "dangongdaizi4.png"
+      },
+      "10": {
+        "qianghuaValue": 36,
+        "xuyaoMoney": 3200,
+        "useImage": "dangongbang4.png",
+        "daiziuseImage": "dangongdaizi4.png"
+      }
+    }
+  },
+  "shucaiLayer": {
+    "xiaofanfanPanel": {
+      "1": {
+        "gongjili": 8,
+        "xuyaoMoney": 100,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "2": {
+        "gongjili": 10,
+        "xuyaoMoney": 300,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "3": {
+        "gongjili": 15,
+        "xuyaoMoney": 600,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "4": {
+        "gongjili": 24,
+        "xuyaoMoney": 1000,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "5": {
+        "gongjili": 43,
+        "xuyaoMoney": 1500,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "6": {
+        "gongjili": 68,
+        "xuyaoMoney": 2100,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "7": {
+        "gongjili": 99,
+        "xuyaoMoney": 2800,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "8": {
+        "gongjili": 145,
+        "xuyaoMoney": 3600,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "9": {
+        "gongjili": 190,
+        "xuyaoMoney": 4500,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      },
+      "10": {
+        "gongjili": 240,
+        "xuyaoMoney": 5500,
+        "useImage": "shop-xiaofanfan.png",
+        "jineng": "无"
+      }
+    },
+    "dachuPanel": {
+      "1": {
+        "gongjili": 5,
+        "xuyaoMoney": 100,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "2": {
+        "gongjili": 6,
+        "xuyaoMoney": 300,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "3": {
+        "gongjili": 8,
+        "xuyaoMoney": 600,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "4": {
+        "gongjili": 14,
+        "xuyaoMoney": 1000,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "5": {
+        "gongjili": 21,
+        "xuyaoMoney": 1500,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "6": {
+        "gongjili": 37,
+        "xuyaoMoney": 2100,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "7": {
+        "gongjili": 59,
+        "xuyaoMoney": 2800,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "8": {
+        "gongjili": 90,
+        "xuyaoMoney": 3600,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "9": {
+        "gongjili": 135,
+        "xuyaoMoney": 4500,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      },
+      "10": {
+        "gongjili": 180,
+        "xuyaoMoney": 5500,
+        "useImage": "shop-dachu.png",
+        "jineng": "造成范围伤害"
+      }
+    },
+    "tianshiPanel": {
+      "1": {
+        "gongjili": 1,
+        "xuyaoMoney": 100,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 2
+      },
+      "2": {
+        "gongjili": 2,
+        "xuyaoMoney": 300,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 2.4
+      },
+      "3": {
+        "gongjili": 2,
+        "xuyaoMoney": 600,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 2.8
+      },
+      "4": {
+        "gongjili": 3,
+        "xuyaoMoney": 1000,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 3.2
+      },
+      "5": {
+        "gongjili": 3,
+        "xuyaoMoney": 1500,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 3.6
+      },
+      "6": {
+        "gongjili": 4,
+        "xuyaoMoney": 2100,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 4.0
+      },
+      "7": {
+        "gongjili": 4,
+        "xuyaoMoney": 2800,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 4.4
+      },
+      "8": {
+        "gongjili": 5,
+        "xuyaoMoney": 3600,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 4.8
+      },
+      "9": {
+        "gongjili": 5,
+        "xuyaoMoney": 4500,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 5.2
+      },
+      "10": {
+        "gongjili": 6,
+        "xuyaoMoney": 5500,
+        "useImage": "shop-dachu.png",
+        "jiyunTime": 5.6
+      }
+    }
+  },
+  "sortTypeDuiyingLayer": {
+    "1": "daojuLayer",
+    "2": "zhuangbeiLayer",
+    "3": "shucaiLayer"
+  },
+  "string": "Hello World"
+}

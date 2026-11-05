@@ -1,0 +1,50 @@
+<skeleton name="youxifengmian" frameRate="24" version="2.2">
+ <armatures>
+  <armature name="fengmian_donghua">
+   <b name="图层 2" x="-6.65" y="-98.65" kX="-1.01" kY="-1.01" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="logo" pX="276.5" pY="74.5"/>
+   </b>
+   <b name="图层 6" x="174" y="-271.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="shuiguo2" pX="73" pY="78.5"/>
+   </b>
+   <b name="图层 7" x="0" y="-294.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="shuiguo1" pX="93" pY="84"/>
+   </b>
+   <b name="图层 8" x="-188.05" y="-260.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+    <d name="shuiguo3" pX="68" pY="75"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="fengmian_donghua">
+   <mov name="fengmian" dr="3" to="0" drTW="38" lp="1" twE="2">
+    <b name="图层 2" sc="2" dl="0">
+     <f x="-6.65" y="-98.65" cocos2d_x="-6.65" cocos2d_y="-98.65" kX="-1.01" kY="-1.01" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="-6.65" y="-98.65" cocos2d_x="-6.65" cocos2d_y="-98.65" kX="1.98" kY="1.98" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="-6.65" y="-98.65" cocos2d_x="-6.65" cocos2d_y="-98.65" kX="-1.01" kY="-1.01" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="图层 6" sc="1" dl="0.25">
+     <f x="174" y="-271.6" cocos2d_x="174" cocos2d_y="-271.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="202" y="-281.6" cocos2d_x="202" cocos2d_y="-281.6" kX="0" kY="0" cX="1.1" cY="1.1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="174" y="-271.6" cocos2d_x="174" cocos2d_y="-271.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="图层 7" sc="1" dl="0">
+     <f x="0" y="-294.1" cocos2d_x="0" cocos2d_y="-294.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+     <f x="0" y="-320.1" cocos2d_x="0" cocos2d_y="-320.1" kX="0" kY="0" cX="1.12" cY="1.12" pX="0" pY="0" z="2" dI="0" dr="1"/>
+     <f x="0" y="-294.1" cocos2d_x="0" cocos2d_y="-294.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+    </b>
+    <b name="图层 8" sc="1" dl="0.5">
+     <f x="-188.05" y="-260.6" cocos2d_x="-188.05" cocos2d_y="-260.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="-214.05" y="-272.6" cocos2d_x="-214.05" cocos2d_y="-272.6" kX="0" kY="0" cX="1.18" cY="1.18" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="-188.05" y="-260.6" cocos2d_x="-188.05" cocos2d_y="-260.6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="youxifengmian" width="1024" height="512">
+  <SubTexture name="shuiguo3" width="136" height="150" cocos2d_pX="68" cocos2d_pY="75" x="0" y="137"/>
+  <SubTexture name="shuiguo1" width="186" height="168" cocos2d_pX="93" cocos2d_pY="84" x="555" y="0"/>
+  <SubTexture name="shuiguo2" width="146" height="157" cocos2d_pX="73" cocos2d_pY="78.5" x="743" y="0"/>
+  <SubTexture name="logo" width="553" height="135" cocos2d_pX="276.5" cocos2d_pY="74.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

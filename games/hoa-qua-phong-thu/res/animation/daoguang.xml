@@ -1,0 +1,34 @@
+<skeleton name="daoguang" frameRate="60" version="2.2">
+ <armatures>
+  <armature name="daoguang">
+   <b name="图层 21" x="-50.5" y="-11.75" kX="120.68" kY="120.68" cX="0.03" cY="0.04" pX="0" pY="0" z="0">
+    <d name="daoguang1" pX="18.5" pY="77"/>
+   </b>
+   <b name="图层 20" x="-56.5" y="12.25" kX="78.71" kY="78.7" cX="0.03" cY="0.01" pX="0" pY="0" z="0">
+    <d name="daoguang1" pX="18.5" pY="77"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="daoguang">
+   <mov name="daoguang" dr="6" to="0" drTW="39" lp="0" twE="NaN">
+    <b name="图层 21" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="-50.5" y="-11.75" cocos2d_x="-50.5" cocos2d_y="-11.75" kX="120.68" kY="120.68" cX="0.03" cY="0.04" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="3.5" y="16.25" cocos2d_x="3.5" cocos2d_y="16.25" kX="120.68" kY="120.68" cX="0.57" cY="0.83" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="57.5" y="50.25" cocos2d_x="57.5" cocos2d_y="50.25" kX="120.67" kY="-59.32" cX="0.12" cY="0.03" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="图层 20" sc="1" dl="0">
+     <f x="-56.5" y="12.25" cocos2d_x="-56.5" cocos2d_y="12.25" kX="78.71" kY="78.7" cX="0.03" cY="0.01" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="3.5" y="0.25" cocos2d_x="3.5" cocos2d_y="0.25" kX="78.7" kY="78.7" cX="0.57" cY="0.83" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="63.5" y="-12.75" cocos2d_x="63.5" cocos2d_y="-12.75" kX="78.69" kY="-101.3" cX="0.03" cY="0.03" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f dr="3" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="daoguang" width="128" height="256">
+  <SubTexture name="daoguang1" width="37" height="154" cocos2d_pX="18.5" cocos2d_pY="77" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

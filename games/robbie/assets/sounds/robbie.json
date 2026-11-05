@@ -1,0 +1,984 @@
+{
+  "resources": [
+    "./assets/sounds/robbie.ogg",
+    "./assets/sounds/robbie.m4a",
+    "./assets/sounds/robbie.mp3"
+  ],
+  "spritemap": {
+    "Cards": {
+      "start": 0,
+      "end": 1.5334467120181405,
+      "loop": false
+    },
+    "Door_fall": {
+      "start": 3,
+      "end": 4.750045351473923,
+      "loop": false
+    },
+    "Elevator": {
+      "start": 6,
+      "end": 10.768684807256236,
+      "loop": false
+    },
+    "Elevator_Button": {
+      "start": 12,
+      "end": 12.340045351473924,
+      "loop": false
+    },
+    "Elevator_Button1": {
+      "start": 14,
+      "end": 14.240839002267574,
+      "loop": false
+    },
+    "Elevator_Button2": {
+      "start": 16,
+      "end": 16.343015873015872,
+      "loop": false
+    },
+    "Elevator_Stops": {
+      "start": 18,
+      "end": 21.121315192743765,
+      "loop": false
+    },
+    "Elevator_finish": {
+      "start": 23,
+      "end": 26.180612244897958,
+      "loop": false
+    },
+    "Elevator_starts": {
+      "start": 28,
+      "end": 30.618344671201815,
+      "loop": false
+    },
+    "Gear_bonus": {
+      "start": 32,
+      "end": 32.41,
+      "loop": false
+    },
+    "Rope_loop": {
+      "start": 34,
+      "end": 36.39283446712018,
+      "loop": false
+    },
+    "Rusty_Communicator": {
+      "start": 38,
+      "end": 38.71002267573696,
+      "loop": false
+    },
+    "Rusty_Landing": {
+      "start": 40,
+      "end": 40.91893424036281,
+      "loop": false
+    },
+    "Rusty_Voice": {
+      "start": 42,
+      "end": 43.117278911564625,
+      "loop": false
+    },
+    "Rusty_Voice_Angry(after bath)": {
+      "start": 45,
+      "end": 46.915736961451245,
+      "loop": false
+    },
+    "Rusty_drive": {
+      "start": 48,
+      "end": 48.42938775510204,
+      "loop": false
+    },
+    "Rusty_drive_end": {
+      "start": 50,
+      "end": 50.508866213151926,
+      "loop": false
+    },
+    "Rusty_drive_loop": {
+      "start": 52,
+      "end": 56.17156462585034,
+      "loop": false
+    },
+    "Rusty_drive_start": {
+      "start": 58,
+      "end": 58.64244897959183,
+      "loop": false
+    },
+    "Rusty_hit(before notising Robbie)": {
+      "start": 60,
+      "end": 60.42938775510204,
+      "loop": false
+    },
+    "Rusty_in_the_window": {
+      "start": 62,
+      "end": 62.56156462585034,
+      "loop": false
+    },
+    "Sleeping_bot": {
+      "start": 64,
+      "end": 66.46984126984127,
+      "loop": false
+    },
+    "Washing_Mashine": {
+      "start": 68,
+      "end": 73.97244897959183,
+      "loop": false
+    },
+    "Washing_Mashine_Broken": {
+      "start": 75,
+      "end": 87.9660544217687,
+      "loop": false
+    },
+    "Box_slide_loop": {
+      "start": 89,
+      "end": 91.31029478458049,
+      "loop": false
+    },
+    "Camera": {
+      "start": 93,
+      "end": 94.05614512471655,
+      "loop": false
+    },
+    "Fan_loop": {
+      "start": 96,
+      "end": 98.21,
+      "loop": false
+    },
+    "Robbie_glitch": {
+      "start": 100,
+      "end": 101.76253968253968,
+      "loop": false
+    },
+    "Box_1": {
+      "start": 103,
+      "end": 103.58074829931972,
+      "loop": false
+    },
+    "Box_2": {
+      "start": 105,
+      "end": 105.55687074829932,
+      "loop": false
+    },
+    "Box_3": {
+      "start": 107,
+      "end": 107.46433106575964,
+      "loop": false
+    },
+    "Gear_11": {
+      "start": 109,
+      "end": 109.60353741496598,
+      "loop": false
+    },
+    "Cards_Appear_Insert": {
+      "start": 111,
+      "end": 117.33619047619048,
+      "loop": false
+    },
+    "Gear_12": {
+      "start": 119,
+      "end": 119.64473922902495,
+      "loop": false
+    },
+    "Machine_Fixed": {
+      "start": 121,
+      "end": 124.34315192743765,
+      "loop": false
+    },
+    "Rusty_Fixed": {
+      "start": 126,
+      "end": 127.51845804988662,
+      "loop": false
+    },
+    "Rusty_Happy": {
+      "start": 129,
+      "end": 131.45816326530613,
+      "loop": false
+    },
+    "Rusty_Sad_voice": {
+      "start": 133,
+      "end": 137.23712018140588,
+      "loop": false
+    },
+    "2_level_gear": {
+      "start": 139,
+      "end": 140.50850340136054,
+      "loop": false
+    },
+    "Helper_bot_blinks": {
+      "start": 142,
+      "end": 142.17145124716552,
+      "loop": false
+    },
+    "Helper_bot_button_press": {
+      "start": 144,
+      "end": 145.29598639455781,
+      "loop": false
+    },
+    "Helper_bot_sleeping": {
+      "start": 147,
+      "end": 151.82650793650794,
+      "loop": false
+    },
+    "Helper_bot_wake_up": {
+      "start": 153,
+      "end": 153.6008843537415,
+      "loop": false
+    },
+    "Nail_rotate": {
+      "start": 155,
+      "end": 155.85954648526078,
+      "loop": false
+    },
+    "Platform_Button": {
+      "start": 157,
+      "end": 157.32278911564626,
+      "loop": false
+    },
+    "Platform_mooving_down": {
+      "start": 159,
+      "end": 164.26299319727892,
+      "loop": false
+    },
+    "Radar": {
+      "start": 166,
+      "end": 168.10326530612244,
+      "loop": false
+    },
+    "Robbie_communicator": {
+      "start": 170,
+      "end": 170.86630385487527,
+      "loop": false
+    },
+    "Robbie_falls_into_water": {
+      "start": 172,
+      "end": 174.8469387755102,
+      "loop": false
+    },
+    "Robbie_pickup_coomunicator": {
+      "start": 176,
+      "end": 176.34310657596373,
+      "loop": false
+    },
+    "Water_ambience_loop": {
+      "start": 178,
+      "end": 207.4948299319728,
+      "loop": false
+    },
+    "Waterfall_loop": {
+      "start": 209,
+      "end": 227.21537414965985,
+      "loop": false
+    },
+    "3_level_find_gear": {
+      "start": 229,
+      "end": 229.88408163265305,
+      "loop": false
+    },
+    "Big_Evil_Robot_Jaws": {
+      "start": 231,
+      "end": 231.41061224489795,
+      "loop": false
+    },
+    "Big_Evil_Robot_Jaws_1": {
+      "start": 233,
+      "end": 233.41061224489795,
+      "loop": false
+    },
+    "Big_Evil_Robot_drive_loop": {
+      "start": 235,
+      "end": 244.0033560090703,
+      "loop": false
+    },
+    "Big_Evil_Robot_hanging_loop": {
+      "start": 246,
+      "end": 250.50913832199547,
+      "loop": false
+    },
+    "Big_Evil_Robot_idle_loop": {
+      "start": 252,
+      "end": 259.4931292517007,
+      "loop": false
+    },
+    "Big_Evil_Robot_voice_angry": {
+      "start": 261,
+      "end": 262.2780045351474,
+      "loop": false
+    },
+    "Big_Evil_Robot_voice_hanging": {
+      "start": 264,
+      "end": 269.24750566893425,
+      "loop": false
+    },
+    "Big_Evil_Robot_voice_magnet": {
+      "start": 271,
+      "end": 271.9994557823129,
+      "loop": false
+    },
+    "Big_Robot_Attacks_Robbie": {
+      "start": 273,
+      "end": 273.87557823129254,
+      "loop": false
+    },
+    "Container_sides_fading": {
+      "start": 275,
+      "end": 275.8840816326531,
+      "loop": false
+    },
+    "Evil_robot_attacks_robbie": {
+      "start": 277,
+      "end": 277.8656009070295,
+      "loop": false
+    },
+    "Helper_close_door": {
+      "start": 279,
+      "end": 280.5997052154195,
+      "loop": false
+    },
+    "Helper_opens_door": {
+      "start": 282,
+      "end": 283.02829931972786,
+      "loop": false
+    },
+    "Magnet_button": {
+      "start": 285,
+      "end": 285.1322448979592,
+      "loop": false
+    },
+    "Magnet_move_loop": {
+      "start": 287,
+      "end": 287.6122222222222,
+      "loop": false
+    },
+    "Chip": {
+      "start": 289,
+      "end": 291.3144671201814,
+      "loop": false
+    },
+    "Door_opens": {
+      "start": 293,
+      "end": 294.6520408163265,
+      "loop": false
+    },
+    "Electricity_wires_loop": {
+      "start": 296,
+      "end": 304.9934693877551,
+      "loop": false
+    },
+    "Gears_loop": {
+      "start": 306,
+      "end": 309.1114739229025,
+      "loop": false
+    },
+    "Rotate_wires": {
+      "start": 311,
+      "end": 311.1691836734694,
+      "loop": false
+    },
+    "Rotating_Platform_end": {
+      "start": 313,
+      "end": 313.15086167800456,
+      "loop": false
+    },
+    "Rotating_Platform_loop": {
+      "start": 315,
+      "end": 315.890022675737,
+      "loop": false
+    },
+    "Rotating_Platform_start": {
+      "start": 317,
+      "end": 317.13596371882085,
+      "loop": false
+    },
+    "Stone": {
+      "start": 319,
+      "end": 319.56226757369615,
+      "loop": false
+    },
+    "Tall_Evil_Explode": {
+      "start": 321,
+      "end": 322.2135827664399,
+      "loop": false
+    },
+    "Tall_Evil_Notice_Robbie": {
+      "start": 324,
+      "end": 324.788231292517,
+      "loop": false
+    },
+    "Tall_Evil_Robot_idle": {
+      "start": 326,
+      "end": 333.78145124716553,
+      "loop": false
+    },
+    "Tall_Evil_Robot_open_mouth": {
+      "start": 335,
+      "end": 336.0781179138322,
+      "loop": false
+    },
+    "Tall_Robot_attack": {
+      "start": 338,
+      "end": 339.17850340136056,
+      "loop": false
+    },
+    "Tall_Robot_attack_drive_loop": {
+      "start": 341,
+      "end": 345.28192743764174,
+      "loop": false
+    },
+    "Valve_loop": {
+      "start": 347,
+      "end": 348.33419501133784,
+      "loop": false
+    },
+    "5_level_Ambinece": {
+      "start": 350,
+      "end": 392.4234240362812,
+      "loop": false
+    },
+    "Black_Box": {
+      "start": 394,
+      "end": 394.1128344671202,
+      "loop": false
+    },
+    "Bot_shooting_through_pipe": {
+      "start": 396,
+      "end": 396.9466213151928,
+      "loop": false
+    },
+    "Box_shooting_through_pipe": {
+      "start": 398,
+      "end": 398.60784580498864,
+      "loop": false
+    },
+    "Bridge": {
+      "start": 400,
+      "end": 401.62079365079364,
+      "loop": false
+    },
+    "Palm": {
+      "start": 403,
+      "end": 403.1504081632653,
+      "loop": false
+    },
+    "Rope": {
+      "start": 405,
+      "end": 432.16707482993195,
+      "loop": false
+    },
+    "Rotate_puzzle": {
+      "start": 434,
+      "end": 434.55755102040814,
+      "loop": false
+    },
+    "Wheel": {
+      "start": 436,
+      "end": 438.81095238095236,
+      "loop": false
+    },
+    "6_lever_gear": {
+      "start": 440,
+      "end": 440.55510204081634,
+      "loop": false
+    },
+    "Bot_drive_loop": {
+      "start": 442,
+      "end": 443.9101133786848,
+      "loop": false
+    },
+    "Bot_explodes": {
+      "start": 445,
+      "end": 445.55054421768705,
+      "loop": false
+    },
+    "Box_Fall": {
+      "start": 447,
+      "end": 447.36378684807255,
+      "loop": false
+    },
+    "Count_Down": {
+      "start": 449,
+      "end": 449.0633786848073,
+      "loop": false
+    },
+    "Garbage": {
+      "start": 451,
+      "end": 451.5169387755102,
+      "loop": false
+    },
+    "Lever_down": {
+      "start": 453,
+      "end": 453.4714965986395,
+      "loop": false
+    },
+    "Lever_up": {
+      "start": 455,
+      "end": 456.44204081632654,
+      "loop": false
+    },
+    "Mooving_Platform": {
+      "start": 458,
+      "end": 459.6225396825397,
+      "loop": false
+    },
+    "Press_hit": {
+      "start": 461,
+      "end": 462.09791383219954,
+      "loop": false
+    },
+    "Press_move_back": {
+      "start": 464,
+      "end": 465.12632653061223,
+      "loop": false
+    },
+    "Press_move_forward": {
+      "start": 467,
+      "end": 467.98848072562356,
+      "loop": false
+    },
+    "Road_block_moving_down": {
+      "start": 469,
+      "end": 469.21721088435373,
+      "loop": false
+    },
+    "Robbie_Explode": {
+      "start": 471,
+      "end": 471.8819501133787,
+      "loop": false
+    },
+    "Robbie_speed_up": {
+      "start": 473,
+      "end": 475.534716553288,
+      "loop": false
+    },
+    "Stone_slide": {
+      "start": 477,
+      "end": 478.3306349206349,
+      "loop": false
+    },
+    "Stones_Explode": {
+      "start": 480,
+      "end": 481.04433106575965,
+      "loop": false
+    },
+    "Tall_Bot_drive_loop": {
+      "start": 483,
+      "end": 485.07814058956916,
+      "loop": false
+    },
+    "Tall_Bot_snoring": {
+      "start": 487,
+      "end": 491.7727664399093,
+      "loop": false
+    },
+    "Tall_Bot_wake_up": {
+      "start": 493,
+      "end": 493.7207256235828,
+      "loop": false
+    },
+    "7_level_gear": {
+      "start": 495,
+      "end": 495.23773242630386,
+      "loop": false
+    },
+    "Electricity_loop": {
+      "start": 669,
+      "end": 676.4295238095239,
+      "loop": false
+    },
+    "Elevator_Ding": {
+      "start": 516,
+      "end": 516.9121088435375,
+      "loop": false
+    },
+    "Grey_Button": {
+      "start": 518,
+      "end": 518.2255555555555,
+      "loop": false
+    },
+    "Moving_platforms_loop": {
+      "start": 520,
+      "end": 539.2767346938775,
+      "loop": false
+    },
+    "Negative": {
+      "start": 541,
+      "end": 541.13589569161,
+      "loop": false
+    },
+    "Platform": {
+      "start": 543,
+      "end": 543.2629024943311,
+      "loop": false
+    },
+    "Robbie_Electricuted": {
+      "start": 545,
+      "end": 546.9968027210884,
+      "loop": false
+    },
+    "Shape_Puzzle_Button_1": {
+      "start": 548,
+      "end": 548.1046258503401,
+      "loop": false
+    },
+    "Shape_Puzzle_Button_2": {
+      "start": 550,
+      "end": 550.101814058957,
+      "loop": false
+    },
+    "Shape_Puzzle_Button_3": {
+      "start": 552,
+      "end": 552.0964852607709,
+      "loop": false
+    },
+    "Shape_Puzzle_Button_4": {
+      "start": 554,
+      "end": 554.097664399093,
+      "loop": false
+    },
+    "8_level_Gear": {
+      "start": 556,
+      "end": 556.1978458049887,
+      "loop": false
+    },
+    "8_level_Mooving_Platform": {
+      "start": 558,
+      "end": 561.2791156462586,
+      "loop": false
+    },
+    "Coals_fall": {
+      "start": 563,
+      "end": 564.4138095238095,
+      "loop": false
+    },
+    "Coals_through_the_pipe": {
+      "start": 566,
+      "end": 566.5299319727891,
+      "loop": false
+    },
+    "Lava_Freezing": {
+      "start": 568,
+      "end": 570.0983446712019,
+      "loop": false
+    },
+    "Lava_Rise": {
+      "start": 572,
+      "end": 573.0591156462585,
+      "loop": false
+    },
+    "Lava_Rise_1": {
+      "start": 575,
+      "end": 576.3366893424036,
+      "loop": false
+    },
+    "Lava_loop": {
+      "start": 578,
+      "end": 590.185328798186,
+      "loop": false
+    },
+    "Pipe_rotate": {
+      "start": 592,
+      "end": 592.5643310657597,
+      "loop": false
+    },
+    "Rolling_Snowball_loop": {
+      "start": 594,
+      "end": 595.3309297052155,
+      "loop": false
+    },
+    "Snowball_Fall": {
+      "start": 597,
+      "end": 597.1631519274376,
+      "loop": false
+    },
+    "Door_slide": {
+      "start": 599,
+      "end": 599.30589569161,
+      "loop": false
+    },
+    "Lever": {
+      "start": 601,
+      "end": 601.4544897959183,
+      "loop": false
+    },
+    "Lever_Platforms": {
+      "start": 603,
+      "end": 604.3368480725624,
+      "loop": false
+    },
+    "Ring": {
+      "start": 606,
+      "end": 613.7004761904761,
+      "loop": false
+    },
+    "Cutscene_1": {
+      "start": 615,
+      "end": 639.2336054421769,
+      "loop": false
+    },
+    "Cutscene_2": {
+      "start": 641,
+      "end": 653.973492063492,
+      "loop": false
+    },
+    "Cutscene_3": {
+      "start": 655,
+      "end": 667.7734013605442,
+      "loop": false
+    },
+    "Electricity_off": {
+      "start": 678,
+      "end": 678.1960090702947,
+      "loop": false
+    },
+    "Electricity_on": {
+      "start": 680,
+      "end": 680.2174376417233,
+      "loop": false
+    },
+    "Elevator_loop": {
+      "start": 682,
+      "end": 684.4361224489796,
+      "loop": false
+    },
+    "Elevator_start": {
+      "start": 686,
+      "end": 686.6807256235828,
+      "loop": false
+    },
+    "Elevator_stop": {
+      "start": 688,
+      "end": 688.8025623582766,
+      "loop": false
+    },
+    "Magnet_Attach_Robot": {
+      "start": 690,
+      "end": 690.4769387755102,
+      "loop": false
+    },
+    "Pop-up": {
+      "start": 692,
+      "end": 692.5761451247165,
+      "loop": false
+    },
+    "PopupActiveLoop": {
+      "start": 694,
+      "end": 695.604126984127,
+      "loop": false
+    },
+    "PopupHide": {
+      "start": 697,
+      "end": 697.4028571428571,
+      "loop": false
+    },
+    "Bonus": {
+      "start": 699,
+      "end": 699.9837641723356,
+      "loop": false
+    },
+    "Bonus_Bot": {
+      "start": 701,
+      "end": 701.2698185941043,
+      "loop": false
+    },
+    "Bonus_Gear": {
+      "start": 703,
+      "end": 703.3348979591836,
+      "loop": false
+    },
+    "Loose_window_appears": {
+      "start": 705,
+      "end": 706.3304988662131,
+      "loop": false
+    },
+    "Pause": {
+      "start": 708,
+      "end": 708.4551700680272,
+      "loop": false
+    },
+    "Robbie_Happy_Jump": {
+      "start": 710,
+      "end": 711.8302721088436,
+      "loop": false
+    },
+    "Robbie_level_succes": {
+      "start": 713,
+      "end": 713.5267120181406,
+      "loop": false
+    },
+    "Rusty_Laughter": {
+      "start": 715,
+      "end": 716.9639682539682,
+      "loop": false
+    },
+    "Win_window_appear": {
+      "start": 718,
+      "end": 718.6268253968254,
+      "loop": false
+    },
+    "Click_in_Robbie": {
+      "start": 720,
+      "end": 720.0819954648526,
+      "loop": false
+    },
+    "Robbie_Attacked_by_Robot": {
+      "start": 722,
+      "end": 723.7545351473923,
+      "loop": false
+    },
+    "Robbie_Drive_Loop": {
+      "start": 725,
+      "end": 730.5927437641724,
+      "loop": false
+    },
+    "Robbie_Drive_end": {
+      "start": 732,
+      "end": 732.4888888888889,
+      "loop": false
+    },
+    "Robbie_Drive_start": {
+      "start": 734,
+      "end": 734.3599092970521,
+      "loop": false
+    },
+    "Robbie_Jump": {
+      "start": 736,
+      "end": 736.1656916099773,
+      "loop": false
+    },
+    "Robbie_Voice": {
+      "start": 738,
+      "end": 738.6571428571428,
+      "loop": false
+    },
+    "Robbie_Voice_Afraid": {
+      "start": 740,
+      "end": 740.709365079365,
+      "loop": false
+    },
+    "Robbie_Voice_thoughtful": {
+      "start": 742,
+      "end": 742.2932199546485,
+      "loop": false
+    },
+    "Robbie_Voice_thoughtful_1": {
+      "start": 744,
+      "end": 744.7103174603175,
+      "loop": false
+    },
+    "Robbie_falling": {
+      "start": 746,
+      "end": 748.0516099773242,
+      "loop": false
+    },
+    "Robbie_hand": {
+      "start": 750,
+      "end": 750.6606802721088,
+      "loop": false
+    },
+    "Robbie_landing_in_water": {
+      "start": 752,
+      "end": 753.3540589569161,
+      "loop": false
+    },
+    "Robbie_voice_excited_2": {
+      "start": 755,
+      "end": 755.7885260770975,
+      "loop": false
+    },
+    "Robbie_voice_scared_12": {
+      "start": 757,
+      "end": 757.5287301587301,
+      "loop": false
+    },
+    "Robbie_voice_singing_5": {
+      "start": 759,
+      "end": 760.0169841269841,
+      "loop": false
+    },
+    "Robie_win_Jump": {
+      "start": 762,
+      "end": 763.8302721088436,
+      "loop": false
+    },
+    "Robots_Appear": {
+      "start": 765,
+      "end": 765.7827437641723,
+      "loop": false
+    },
+    "MenuRobotsSlidingIn": {
+      "start": 767,
+      "end": 767.7827437641723,
+      "loop": false
+    },
+    "Menu_Slide_Loop": {
+      "start": 769,
+      "end": 771.1401133786848,
+      "loop": false
+    },
+    "Menu_Slide_Start": {
+      "start": 773,
+      "end": 773.1965079365079,
+      "loop": false
+    },
+    "Menu_Slide_end": {
+      "start": 775,
+      "end": 775.0708616780046,
+      "loop": false
+    },
+    "Menu_blue_button": {
+      "start": 777,
+      "end": 777.1349659863946,
+      "loop": false
+    },
+    "Menu_green_button": {
+      "start": 779,
+      "end": 779.369365079365,
+      "loop": false
+    },
+    "Menu_red_button": {
+      "start": 781,
+      "end": 781.1873696145125,
+      "loop": false
+    },
+    "RobbieAppear": {
+      "start": 783,
+      "end": 783.3606575963719,
+      "loop": false
+    },
+    "Robbie_Blink": {
+      "start": 785,
+      "end": 785.5005668934241,
+      "loop": false
+    },
+    "Robbie_Blink_1": {
+      "start": 787,
+      "end": 787.5005668934241,
+      "loop": false
+    },
+    "Robbie_Fall_Menu": {
+      "start": 789,
+      "end": 789.224739229025,
+      "loop": false
+    },
+    "Rusty_Blink_menu": {
+      "start": 791,
+      "end": 791.2174149659864,
+      "loop": false
+    },
+    "Rusty_Fall_menu": {
+      "start": 793,
+      "end": 793.2251020408163,
+      "loop": false
+    },
+    "Rusty_Menu_Voice(appears)": {
+      "start": 795,
+      "end": 795.5324489795919,
+      "loop": false
+    },
+    "Scrolling_Level_Buttons": {
+      "start": 797,
+      "end": 797.4697732426304,
+      "loop": false
+    },
+    "Showing_Scrolling_Buttons": {
+      "start": 799,
+      "end": 799.6507482993197,
+      "loop": false
+    }
+  }
+}

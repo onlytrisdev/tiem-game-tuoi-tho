@@ -1,0 +1,48 @@
+<skeleton name="zidan1" frameRate="60" version="2.2">
+ <armatures>
+  <armature name="zidan1_dongzuo">
+   <b name="图层 1" x="0.35" y="0.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="zidan1_1" pX="42.5" pY="44"/>
+   </b>
+   <b name="图层 2" x="-0.65" y="0.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="zidan1_2" pX="42.5" pY="44"/>
+   </b>
+   <b name="图层 3" x="0.35" y="0.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="zidan1_3" pX="42.5" pY="44"/>
+   </b>
+   <b name="图层 4" x="-0.65" y="1.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="zidan1_4" pX="42.5" pY="44"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="zidan1_dongzuo">
+   <mov name="zidan" dr="4" to="0" drTW="26" lp="1" twE="NaN">
+    <b name="图层 1" sc="1" dl="0">
+     <f x="0.35" y="0.35" cocos2d_x="0.35" cocos2d_y="0.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="3" dI="-1"/>
+    </b>
+    <b name="图层 2" sc="1" dl="0">
+     <f dr="1" dI="-1"/>
+     <f x="-0.65" y="0.35" cocos2d_x="-0.65" cocos2d_y="0.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="2" dI="-1"/>
+    </b>
+    <b name="图层 3" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="0.35" y="0.35" cocos2d_x="0.35" cocos2d_y="0.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f dr="1" dI="-1"/>
+    </b>
+    <b name="图层 4" sc="1" dl="0">
+     <f dr="3" dI="-1"/>
+     <f x="-0.65" y="1.35" cocos2d_x="-0.65" cocos2d_y="1.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="zidan1" width="256" height="256">
+  <SubTexture name="zidan1_4" width="85" height="88" cocos2d_pX="42.5" cocos2d_pY="44" x="0" y="90"/>
+  <SubTexture name="zidan1_3" width="85" height="88" cocos2d_pX="42.5" cocos2d_pY="44" x="87" y="90"/>
+  <SubTexture name="zidan1_2" width="85" height="88" cocos2d_pX="42.5" cocos2d_pY="44" x="0" y="0"/>
+  <SubTexture name="zidan1_1" width="85" height="88" cocos2d_pX="42.5" cocos2d_pY="44" x="87" y="0"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,58 @@
+{
+"skeleton": { "hash": "77RbwyCFvGHLVZamL736hwuPc2U", "spine": "3.5.51", "width": 500, "height": 213, "images": "./ASSETS/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "effect_lightning_horizontal", "bone": "root", "attachment": "effect_lightning_horizontal_00" }
+],
+"skins": {
+	"default": {
+		"effect_lightning_horizontal": {
+			"effect_lightning_horizontal_00": { "x": 1, "y": 1, "width": 500, "height": 213 },
+			"effect_lightning_horizontal_02": { "x": 1, "y": 1, "width": 500, "height": 213 },
+			"effect_lightning_horizontal_04": { "x": 1, "y": 1, "width": 500, "height": 213 },
+			"effect_lightning_horizontal_06": { "x": 1, "y": 1, "width": 500, "height": 213 },
+			"effect_lightning_horizontal_09": { "x": 1, "y": 1, "width": 500, "height": 213 },
+			"effect_lightning_horizontal_11": { "x": 1, "y": 1, "width": 500, "height": 213 }
+		}
+	}
+},
+"animations": {
+	"loop": {
+		"slots": {
+			"effect_lightning_horizontal": {
+				"attachment": [
+					{ "time": 0, "name": "effect_lightning_horizontal_00" },
+					{ "time": 0.0333, "name": null },
+					{ "time": 0.0667, "name": "effect_lightning_horizontal_02" },
+					{ "time": 0.1, "name": null },
+					{ "time": 0.1333, "name": "effect_lightning_horizontal_04" },
+					{ "time": 0.1667, "name": null },
+					{ "time": 0.2, "name": "effect_lightning_horizontal_06" },
+					{ "time": 0.2333, "name": null },
+					{ "time": 0.3, "name": "effect_lightning_horizontal_09" },
+					{ "time": 0.3333, "name": null },
+					{ "time": 0.3667, "name": "effect_lightning_horizontal_11" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 }
+		]
+	}
+}
+}

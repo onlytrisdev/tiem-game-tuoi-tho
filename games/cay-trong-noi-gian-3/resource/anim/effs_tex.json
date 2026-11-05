@@ -1,0 +1,47 @@
+{
+    "imagePath": "effs_tex.png",
+    "width": 256,
+    "height": 256,
+    "name": "effs",
+    "SubTexture": [{
+        "frameY": -2,
+        "y": 1,
+        "frameWidth": 111,
+        "frameHeight": 98,
+        "width": 111,
+        "height": 91,
+        "name": "1",
+        "frameX": 0,
+        "x": 1
+    }, {
+        "width": 70,
+        "y": 1,
+        "height": 71,
+        "name": "2",
+        "x": 114
+    }, {
+        "width": 13,
+        "y": 94,
+        "height": 11,
+        "name": "3",
+        "x": 75
+    }, {
+        "width": 72,
+        "y": 147,
+        "height": 51,
+        "name": "4",
+        "x": 1
+    }, {
+        "width": 72,
+        "y": 94,
+        "height": 51,
+        "name": "5",
+        "x": 1
+    }, {
+        "width": 70,
+        "y": 74,
+        "height": 71,
+        "name": "6",
+        "x": 114
+    }]
+}
