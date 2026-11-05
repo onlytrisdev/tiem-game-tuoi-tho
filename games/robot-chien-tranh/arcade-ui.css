@@ -1,0 +1,201 @@
+/* Arcade overlay — §7 xoá data, §8 bảng xếp hạng, §11 logo */
+
+.gv-canvas-overlay {
+	position: fixed;
+	z-index: 10001;
+	box-sizing: border-box;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Ẩn cho tới khi loader Construct 2 chạy xong */
+.gv-canvas-overlay.gv-not-ready {
+	display: none !important;
+}
+
+/* Ẩn theo trạng thái game (trong màn chơi / Intro) */
+.gv-hidden {
+	display: none !important;
+}
+
+/* §8 — nút BXH: chỉ là ảnh, không bo tròn, không nền đặc */
+#gv-leaderboard-button,
+#gv-delete-button {
+	width: 44px;
+	height: 44px;
+	background: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	cursor: pointer;
+	overflow: visible;
+	touch-action: manipulation;
+}
+
+#gv-leaderboard-button img,
+#gv-delete-button img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	background: transparent;
+	pointer-events: none;
+}
+
+#gv-leaderboard-fallback {
+	display: none;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	color: #f6b400;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* §7 — popup xác nhận xoá data */
+#gv-confirm {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10010;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.65);
+	font-family: Arial, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.gv-confirm-box {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 340px;
+	padding: 20px 18px 16px;
+	border-radius: 10px;
+	background: #1e2430;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.gv-confirm-text {
+	margin: 0 0 18px;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.gv-confirm-actions {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.gv-confirm-actions button {
+	flex: 1 1 0;
+	min-height: 44px;
+	padding: 0 14px;
+	border: 0;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	touch-action: manipulation;
+}
+
+.gv-confirm-cancel {
+	background: #3a4353;
+	color: #fff;
+}
+
+.gv-confirm-ok {
+	background: #f6b400;
+	color: #1e2430;
+}
+
+.gv-confirm-actions button[disabled] {
+	opacity: 0.6;
+	cursor: default;
+}
+
+/*
+ * §11 — logo Arcade:
+ * - nền trong suốt, không glow / box-shadow / filter quanh viền
+ * - 5s hiện kèm một vệt sáng quét ngang toàn bộ logo, 5s ẩn, lặp vô hạn
+ * - pointer-events: none để không chặn thao tác chơi
+ */
+#gv-logo {
+	position: fixed;
+	width: 120px;
+	height: auto;
+	background: transparent;
+	overflow: hidden;
+	pointer-events: none;
+	cursor: default;
+	box-shadow: none;
+	filter: none;
+	animation: gv-logo-visibility 10s linear infinite;
+}
+
+#gv-logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+	background: transparent;
+	border: 0;
+	pointer-events: none;
+	box-shadow: none;
+	filter: none;
+}
+
+/* Vệt sáng hẹp, cắt gọn trong khung logo — không phải glow viền */
+#gv-logo::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: 100%;
+	pointer-events: none;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.95) 45%,
+		rgba(255, 255, 255, 0.95) 55%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	animation: gv-logo-shine 10s linear infinite;
+}
+
+@keyframes gv-logo-visibility {
+	0%,
+	49.999% {
+		opacity: 1;
+		visibility: visible;
+	}
+	50%,
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+/* Một lượt quét trọn logo trong nửa chu kỳ hiện */
+@keyframes gv-logo-shine {
+	0% {
+		transform: translateX(-120%);
+	}
+	45% {
+		transform: translateX(420%);
+	}
+	50%,
+	100% {
+		transform: translateX(420%);
+	}
+}
