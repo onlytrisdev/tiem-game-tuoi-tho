@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	
+<!-- Localization Settings -->
+	<localization>
+<language>default</language>
+<defaultFont>arial</defaultFont>
+	</localization>
+	<!-- Nick Service Settings -->
+	<services>
+<!-- Set to FALSE to disable all Nick Services completely. TRUE will follow the specific service settings. -->
+<enableServices>true</enableServices> 
+<!-- Enable Tracking ? -->
+<enableTracking>true</enableTracking>
+<!-- Determines Piracy Control feature is activated or not. A value of 'true' activates it.-->
+<enablePiracyControl>false</enablePiracyControl>
+<!-- Piracy Control Redirect Url-->
+<piracyControlRedirectURL>http://www.nick.com/games/power-rangers-dino-super-charge-monster-fighting-frenzy.html</piracyControlRedirectURL>
+<!-- Enable Delta DNA.-->
+<enableDeltaDNA>true</enableDeltaDNA>
+<!-- Delta DNA mode. If 'dev' or 'live'.-->
+<deltaDNAMode>dev</deltaDNAMode>
+	</services>
+	
+	<!-- Game specific settings -->
+	<gameSettings>
+		<!-- State if debug mode. Enables/disables trace log -->
+		<debugMode>false</debugMode>
+		<!-- Place other game specific settings here -->
+		<properties>
+			<achievement>5</achievement>
+			<achievementGoals>1,1,1,1,1</achievementGoals>
+		</properties>
+	</gameSettings>
+	
+</config>

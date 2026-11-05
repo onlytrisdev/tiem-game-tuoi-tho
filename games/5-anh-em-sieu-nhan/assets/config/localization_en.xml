@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<strings defaultFont="default">
+	<!--Screen Headings-->
+	<string id="STR_SCR_TITLE_NAME_MOBILE" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[BẤM ĐỂ CHƠI]]></string>
+	<string id="STR_SCR_TITLE_NAME_DESKTOP" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[BẤM ĐỂ CHƠI]]></string>
+	
+	<!--Game Screen-->
+	<string id="STR_GAME_LIFE" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="STR_GAME_WAVE_INDICATOR" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="STR_GAME_WAVE_WARNING" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[BÀI %i]]></string>
+	<string id="STR_GAME_WAVE_FINAL_WARNING" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[BÀI CUỐI]]></string>
+	<string id="STR_GAME_WAVE_TUTORIAL" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[HƯỚNG DẪN]]></string>
+	
+	<string id="STR_GAME_BUTTON_SUPER" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[SUPER]]></string>
+	<string id="STR_GAME_BUTTON_ZORD" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[ZORD]]></string>
+	<string id="STR_GAME_BUTTON_VIVIX" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[VIVIX]]></string>
+	<string id="STR_GAME_BUTTON_ENEMY" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[ENEMY]]></string>
+	
+	<string id="STR_GAME_MESSAGE_KENDALL" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" offsetY="0"><![CDATA[Hồi màu cho các thành viên!]]></string>
+	<string id="STR_GAME_MESSAGE_KEEPER" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" offsetY="0"><![CDATA[Cung cấp sức mạnh cho bạn!]]></string>
+	<string id="STR_GAME_MESSAGE_ZOTAC_MOBILE" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" offsetY="0"><![CDATA[Phong tỏa các kĩ năng của Siêu nhân]]></string>
+	<string id="STR_GAME_MESSAGE_ZOTAC_DESKTOP" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" offsetY="0"><![CDATA[Phong tỏa các kĩ năng của Siêu nhân.]]></string>
+	
+	<string id="STR_GAME_CHARACTER_DAMAGE" fontName="orbitron-bold" fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="STR_GAME_CHARACTER_DAMAGE_GIANT" fontName="orbitron-bold" fontScale="1.2"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="STR_GAME_HARD_MODE" fontName="aarcover-regular" fontScale="0.9"	offsetX="0" offsetY="0"><![CDATA[CHẾ ĐỘ KHÓ]]></string>
+	
+	<!--TUTORIAL-->
+	<string id="STR_TUTORIAL_MESSAGE0" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Các Siêu nhân sẽ tự động tấn công kẻ thù gần đó.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE1" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Bạn có thể sử dụng kĩ năng đặc biệt của từng siêu nhân.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE2_MOBILE" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" 	offsetY="0"><![CDATA[Bấm vào chân dung của một Siêu nhân để triển khai kĩ năng đó.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE2_DESKTOP" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 	offsetY="0"><![CDATA[Bấm vào chân dung của một Siêu nhân để triển khai kĩ năng đó.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE3_MOBILE" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" 	offsetY="0"><![CDATA[Bấm vào các tia sét khi đã đánh bại được kẻ địch để giảm sát thương.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE3_DESKTOP" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 	offsetY="0"><![CDATA[Bấm vào các tia sét khi đã đánh bại được kẻ địch để giảm sát thương.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE4_MOBILE" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 	offsetY="0"><![CDATA[Hãy cẩn thận! Vivix đôi khi sẽ xuất hiện trên một bức chân dung của Siêu nhân. Bấm vào đó sẽ mất kĩ năng.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE4_DESKTOP" fontName="orbitron-bold" fontScale="0.75" offsetX="0"	offsetY="0"><![CDATA[Hãy cẩn thận! Vivix đôi khi sẽ xuất hiện trên một bức chân dung của Siêu nhân. Bấm vào đó sẽ mất kĩ năng.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE5" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Chờ 3s các kĩ năng sẽ trở lại.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE6_MOBILE" fontName="orbitron-bold" fontScale="0.75"	offsetX="0" 	offsetY="0"><![CDATA[Triệu tập Megazord, hãy bấm vào Megazord.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE6_DESKTOP" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 	offsetY="0"><![CDATA[Triệu tập Megazord, hãy bấm vào Megazord.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE7_MOBILE" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 	offsetY="0"><![CDATA[Chạm vào các biểu tượng để nhận được sự trợ giúp.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE7_DESKTOP" fontName="orbitron-bold" fontScale="0.75" offsetX="0"	offsetY="0"><![CDATA[Chạm vào các biểu tượng để nhận được sự trợ giúp.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE8" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Kendall hồi phục một lượng máu đã mất. Bấm để kích hoạt.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE9" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Tăng khả năng tấn công thêm 50%. Bấm để kích hoạt.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE10" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Vô hiệu hóa kĩ năng!]]></string>
+	<string id="STR_TUTORIAL_MESSAGE11" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 			offsetY="0"><![CDATA[Hạ gục kẻ địch sẽ nạp đầy năng lượng ánh sáng.]]></string>
+	<string id="STR_TUTORIAL_MESSAGE12_DESKTOP" fontName="orbitron-bold" fontScale="0.75" offsetX="0"	offsetY="0"><![CDATA[Nhấn vào nút tia chớp để sử dụng kĩ năng của nhóm!]]></string>
+	<string id="STR_TUTORIAL_MESSAGE12_MOBILE" fontName="orbitron-bold" fontScale="0.75" offsetX="0" 	offsetY="0"><![CDATA[Nhấn vào nút tia chớp để sử dụng kĩ năng của nhóm!]]></string>
+	
+	<string id="STR_HTP_PAGE1_MESSAGE1" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Các Siêu nhân sẽ tự động tấn công kẻ thù gần đó.]]></string>
+	<string id="STR_HTP_PAGE1_MESSAGE2" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Bạn có thể sử dụng những kĩ năng đặc biệt của từng siêu nhân.]]></string>
+																									
+	<string id="STR_HTP_PAGE2_MESSAGE1" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Vivix đôi khi sẽ xuất hiện trên một bức chân dung của Siêu nhân. Bấm vào đó sẽ mất kĩ năng.]]></string>
+	<string id="STR_HTP_PAGE2_MESSAGE2" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Sử dụng các nút Megazord sẽ triệu hồi Megazord với quyền hạn siêu độc đáo.]]></string>
+	
+	<string id="STR_HTP_PAGE3_MESSAGE1" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Nạp đầy năng lượn ánh sáng]]></string>
+	<string id="STR_HTP_PAGE3_MESSAGE2" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Năng lượng ánh sáng đầy bạn có thể kết hợp sự tấn công cả team]]></string>
+	
+	<string id="STR_HTP_PAGE4_MESSAGE1" fontName="orbitron-bold" fontScale="0.75" offsetX="0" offsetY="0"><![CDATA[Keeper tăng khả năng tấn công thêm 50%.]]></string>
+	<string id="STR_HTP_PAGE4_MESSAGE2" fontName="orbitron-bold" fontScale="0.75" offsetX="0" offsetY="0"><![CDATA[Kendall phục hồi màu.]]></string>
+	<string id="STR_HTP_PAGE4_MESSAGE3" fontName="orbitron-bold" fontScale="0.75" offsetX="0" offsetY="0"><![CDATA[Vô hiệu hóa tất cả các Siêu nhân.]]></string>
+	<string id="STR_HTP_PAGE4_MESSAGE4" fontName="orbitron-bold" fontScale="0.75" offsetX="0" offsetY="0"><![CDATA[Giảm thời gian hồi của các kĩ năng.]]></string>
+	
+	<string id="STR_HTP_PAGE5_MESSAGE1" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Kích hoạt chế độ Dino Spike.]]></string>
+	
+	<!-- PAUSE POPUP -->
+	<string id="STR_GAME_PAUSE_TITLE" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[TẠM DỪNG]]></string>
+	
+	<!-- PAUSE POPUP -->
+	<string id="STR_GAME_END_CLEAR_TUTORIAL" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[HOÀN THÀNH HƯỚNG DẪN!]]></string>
+	<string id="STR_GAME_END_CLEAR" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[CHƠI LẠI TỪ ĐẦU!]]></string>
+	<string id="STR_GAME_END_DEFEAT" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[BẠN ĐÃ BỊ ĐÁNH BẠI!]]></string>
+	<string id="STR_GAME_END_SCORE_LABEL" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[ĐIỂM]]></string>
+	<string id="STR_STAGE_BUTTON_SCORE" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[KỶ LỤC]]></string>
+	<string id="STR_STAGE_NEW_HIGH_SCORE" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[KỶ LỤC MỚI!]]></string>
+	<string id="STR_GAME_END_SCORE" fontName="orbitron-bold" fontScale="1.2"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	
+	<!-- LEVEL SELECT SCREEN -->
+	
+	<!-- EXIT CONFIRM POPUP -->
+	<string id="STR_EXIT_TUTORIAL_CONFIRM_TITLE" fontName="orbitron-bold" fontScale="1.2"	offsetX="0" offsetY="0"><![CDATA[THOÁT HƯỚNG DẪN?]]></string>
+	<string id="STR_EXIT_CONFIRM_TITLE" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[THOÁT?]]></string>
+	<string id="STR_EXIT_CONFIRM_MESSAGE" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[BẠN CÓ THỰC SỰC MUỐN THOÁT?]]></string>
+	<string id="STR_EXIT_TUTORIAL_CONFIRM_MESSAGE" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[BẠN CÓ CHẮC MUỐN THOÁT HƯỚNG DẪN NÀY?]]></string>
+	
+	<string id="STR_ACH_TITLE" fontName="orbitron-bold" fontScale="1.5" offsetX="0" offsetY="0"><![CDATA[THÀNH TÍCH]]></string>
+	
+	<!-- HTP POPUP -->
+	<string id="STR_HTP_TITLE" fontName="orbitron-bold" fontScale="1.5" offsetX="0" offsetY="0"><![CDATA[HƯỚNG DẪN CHƠI]]></string>
+	
+	<string id="STR_ACH_NAME_1" fontName="orbitron-bold" fontScale="1.3" offsetX="0" offsetY="0"><![CDATA[Dino Power!]]></string>
+	<string id="STR_ACH_NAME_2" fontName="orbitron-bold" fontScale="1.3" offsetX="0" offsetY="0"><![CDATA[Megazord]]></string>
+	<string id="STR_ACH_NAME_3" fontName="orbitron-bold" fontScale="1.3" offsetX="0" offsetY="0"><![CDATA[Rangers Unite!]]></string>
+	<string id="STR_ACH_NAME_4" fontName="orbitron-bold" fontScale="1.3" offsetX="0" offsetY="0"><![CDATA[Pink Power Boost!]]></string>
+	<string id="STR_ACH_NAME_5" fontName="orbitron-bold" fontScale="1.3" offsetX="0" offsetY="0"><![CDATA[Dino Super Chargers]]></string>
+	
+	<string id="STR_ACH_DESC_1" fontName="orbitron-bold" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ ]]></string>
+	<string id="STR_ACH_DESC_2" fontName="orbitron-bold" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ ]]></string>
+	<string id="STR_ACH_DESC_3" fontName="orbitron-bold" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ ]]></string>
+	<string id="STR_ACH_DESC_4" fontName="orbitron-bold" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ ]]></string>
+	<string id="STR_ACH_DESC_5" fontName="orbitron-bold" fontScale="0.8" offsetX="0" offsetY="0"><![CDATA[ ]]></string>
+	
+	<!-- CODE POPUP -->
+	<string id="STR_CODE_TITLE" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[ENTER CODE]]></string>
+	<string id="STR_CODE_TEXT" fontName="orbitron-bold" fontScale="1.2"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+		<!-- KEYS -->
+		<string id="STR_CODE_KEY_1" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[1]]></string>
+		<string id="STR_CODE_KEY_2" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[2]]></string>
+		<string id="STR_CODE_KEY_3" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[3]]></string>
+		<string id="STR_CODE_KEY_4" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[4]]></string>
+		<string id="STR_CODE_KEY_5" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[5]]></string>
+		<string id="STR_CODE_KEY_6" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[6]]></string>
+		<string id="STR_CODE_KEY_7" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[7]]></string>
+		<string id="STR_CODE_KEY_8" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[8]]></string>
+		<string id="STR_CODE_KEY_9" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[9]]></string>
+		<string id="STR_CODE_KEY_10" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[0]]></string>
+		<string id="STR_CODE_KEY_11" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Q]]></string>
+		<string id="STR_CODE_KEY_12" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[W]]></string>
+		<string id="STR_CODE_KEY_13" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[E]]></string>
+		<string id="STR_CODE_KEY_14" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[R]]></string>
+		<string id="STR_CODE_KEY_15" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[T]]></string>
+		<string id="STR_CODE_KEY_16" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Y]]></string>
+		<string id="STR_CODE_KEY_17" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[U]]></string>
+		<string id="STR_CODE_KEY_18" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[I]]></string>
+		<string id="STR_CODE_KEY_19" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[O]]></string>
+		<string id="STR_CODE_KEY_20" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[P]]></string>
+		<string id="STR_CODE_KEY_21" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[A]]></string>
+		<string id="STR_CODE_KEY_22" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[S]]></string>
+		<string id="STR_CODE_KEY_23" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[D]]></string>
+		<string id="STR_CODE_KEY_24" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[F]]></string>
+		<string id="STR_CODE_KEY_25" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[G]]></string>
+		<string id="STR_CODE_KEY_26" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[H]]></string>
+		<string id="STR_CODE_KEY_27" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[J]]></string>
+		<string id="STR_CODE_KEY_28" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[K]]></string>
+		<string id="STR_CODE_KEY_29" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[L]]></string>
+		<string id="STR_CODE_KEY_30" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[Z]]></string>
+		<string id="STR_CODE_KEY_31" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[X]]></string>
+		<string id="STR_CODE_KEY_32" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[C]]></string>
+		<string id="STR_CODE_KEY_33" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[V]]></string>
+		<string id="STR_CODE_KEY_34" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[B]]></string>
+		<string id="STR_CODE_KEY_35" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[N]]></string>
+		<string id="STR_CODE_KEY_36" fontName="orbitron-bold" fontScale="1" offsetX="0" offsetY="0"><![CDATA[M]]></string>
+	
+	<!-- CODE POPUP RESULT -->
+	<string id="STR_CODE_RESULT_MESSAGE_INCORRECT" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[MÃ KHÔNG ĐÚNG!]]></string>
+	<string id="STR_CODE_RESULT_MESSAGE_CORRECT_DESKTOP" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[BẤM ĐỂ KÍCH HOẠT CHẾ ĐỘ KHÓ.]]></string>
+	<string id="STR_CODE_RESULT_MESSAGE_CORRECT_MOBILE" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[BẤM ĐỂ KÍCH HOẠT CHẾ ĐỘ KHÓ.]]></string>
+	<string id="STR_CODE_RESULT_CORRECT_TITLE" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[ĐÚNG!]]></string>
+	<string id="STR_CODE_RESULT_INCORRECT_TITLE" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[SAI]]></string>
+	
+	<!-- CODE POPUP RESULT -->
+	<string id="STR_LEVEL_SELECT_TITLE" fontName="orbitron-bold" fontScale="2"	offsetX="0" offsetY="0"><![CDATA[CHỌN TRẬN ĐÁNH]]></string>
+	
+	<string id="STR_LEVEL_NAME1" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Dino Museum]]></string>
+	<string id="STR_LEVEL_NAME2" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Rock Quarry]]></string>
+	<string id="STR_LEVEL_NAME3" fontName="orbitron-bold" fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Wrecked Ship]]></string>
+	
+	<string id="STR_CURRENTPAGE" fontName="orbitron-bold" fontScale="2" offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="STR_TOTALPAGE" fontName="orbitron-bold" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[]]></string>
+	
+	<string id="STR_HARD_MODE_TITLE" fontName="orbitron-bold" fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[CHẾ ĐỘ KHÓ]]></string>
+	<string id="STR_HARD_MODE_MESSAGE" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[KÍCH HOẠT CHẾ ĐỘ KHÓ?]]></string>
+	<string id="STR_HARD_MODE_MESSAGE2" fontName="orbitron-bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[TẮT CHẾ ĐỘ KHÓ?]]></string>
+	
+</strings>
