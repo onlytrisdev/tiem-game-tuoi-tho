@@ -1,0 +1,209 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+canvas {
+    display: block;
+}
+body {
+    margin: 0;
+}
+#unity-container {
+    width: 100%;
+    height: 100%;
+	position: relative;
+}
+#unity-canvas {
+    width: 100%;
+    height: 100%;
+    background: #231F20;
+}
+#loading-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#unity-loading-bar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#unity-logo {
+    text-align: center;
+}
+#unity-logo img {
+    max-width: 100%;
+	max-height: 100%;
+}
+#unity-progress-bar-empty {
+    width: 40%;
+    height: 24px;
+    margin: 10px 20px 20px 10px;
+    text-align: left;
+    border: 1px solid white;
+    padding: 2px;
+}
+#unity-progress-bar-full {
+    width: 0%;
+    height: 100%;
+    background: white;
+}
+.light #unity-progress-bar-empty {
+    border-color: black;
+}
+.light #unity-progress-bar-full {
+    background: black;
+}
+
+.spinner,
+.spinner:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+.spinner {
+  margin: 10px;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  transform: translateZ(0);
+  animation: spinner-spin 1.1s infinite linear;
+}
+@keyframes spinner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* Arcade actions: icon-only, on the actual Unity canvas at bottom-right. */
+#gv-hud-actions {
+    position: fixed;
+    z-index: 9998;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    transform-origin: top left;
+    user-select: none;
+    -webkit-user-select: none;
+}
+#gv-hud-actions button {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .18s ease, opacity .18s ease;
+}
+#gv-hud-actions button:hover { transform: translateY(-3px); }
+#gv-hud-actions button:active { transform: translateY(-1px); opacity: .8; }
+#gv-hud-actions img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+#gv-reset-modal[hidden] { display: none !important; }
+#gv-reset-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.70);
+    padding: 18px;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.gv-modal-panel {
+    width: min(420px, 100%);
+    background: #fff;
+    color: #222;
+    padding: 22px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+.gv-modal-panel h2 { font-size: 22px; margin: 0 0 10px; }
+.gv-modal-panel p { margin: 0 0 12px; line-height: 1.5; font-size: 15px; }
+#gv-reset-error { color: #c62828; font-weight: 600; }
+.gv-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+.gv-modal-buttons button {
+    cursor: pointer;
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    min-width: 110px;
+    min-height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#gv-reset-cancel { background: #18834a; }
+#gv-reset-confirm { background: #d32f2f; }
+#gv-reset-confirm:disabled { opacity: .55; cursor: wait; }
+
+
+#gv-auth-gate[hidden] { display: none !important; }
+#gv-auth-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #141414;
+    color: #fff;
+    text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.gv-auth-panel { max-width: 440px; }
+.gv-auth-panel h2 { font-size: 24px; }
+.gv-auth-panel p { line-height: 1.5; }
+.gv-auth-panel a {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 8px;
+    color: #fff;
+    background: #1468bf;
+    text-decoration: none;
+    font-weight: 700;
+}
