@@ -1,0 +1,172 @@
+{"frames": {
+
+"crane/Crane_Attack2_02":
+{
+	"frame": {"x":1594,"y":1474,"w":391,"h":392},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":0,"w":391,"h":392},
+	"sourceSize": {"w":459,"h":392}
+},
+"crane/Crane_Knockdown_02":
+{
+	"frame": {"x":1316,"y":1873,"w":532,"h":156},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":294,"w":532,"h":156},
+	"sourceSize": {"w":532,"h":450}
+},
+"kai/Attack2_02":
+{
+	"frame": {"x":2,"y":2,"w":839,"h":693},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":0,"w":839,"h":693},
+	"sourceSize": {"w":932,"h":695}
+},
+"kai/JumpAttack_2":
+{
+	"frame": {"x":828,"y":699,"w":777,"h":672},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":777,"h":672},
+	"sourceSize": {"w":785,"h":672}
+},
+"kai/Jumpattack_Land":
+{
+	"frame": {"x":2,"y":697,"w":824,"h":666},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":0,"w":824,"h":666},
+	"sourceSize": {"w":932,"h":695}
+},
+"kai/Kai_Jump_02":
+{
+	"frame": {"x":843,"y":2,"w":824,"h":695},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":824,"h":695},
+	"sourceSize": {"w":824,"h":695}
+},
+"kai/Kai_Knockdown":
+{
+	"frame": {"x":2,"y":1365,"w":697,"h":609},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":86,"w":697,"h":609},
+	"sourceSize": {"w":932,"h":695}
+},
+"kai/Victory":
+{
+	"frame": {"x":2,"y":2,"w":839,"h":693},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":0,"w":839,"h":693},
+	"sourceSize": {"w":932,"h":695}
+},
+"mantis/D - Jumping/Jump_02":
+{
+	"frame": {"x":701,"y":1910,"w":101,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":3,"w":101,"h":126},
+	"sourceSize": {"w":121,"h":151}
+},
+"mantis/E - Attack 1/Attack1_02":
+{
+	"frame": {"x":2,"y":1976,"w":124,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":13,"w":124,"h":69},
+	"sourceSize": {"w":125,"h":131}
+},
+"mantis/H - Knockdown/Mantis":
+{
+	"frame": {"x":128,"y":1976,"w":114,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":29,"w":114,"h":57},
+	"sourceSize": {"w":114,"h":86}
+},
+"meimei/Block":
+{
+	"frame": {"x":1669,"y":487,"w":371,"h":474},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":23,"w":371,"h":474},
+	"sourceSize": {"w":500,"h":500}
+},
+"meimei/MeiMei_Unravel":
+{
+	"frame": {"x":819,"y":1373,"w":495,"h":505},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":495,"h":505},
+	"sourceSize": {"w":505,"h":509}
+},
+"meimei/Moving_02":
+{
+	"frame": {"x":1669,"y":2,"w":365,"h":483},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":13,"w":365,"h":483},
+	"sourceSize": {"w":500,"h":500}
+},
+"po/PoJump_01":
+{
+	"frame": {"x":1607,"y":963,"w":415,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":40,"y":0,"w":415,"h":509},
+	"sourceSize": {"w":496,"h":509}
+},
+"shifu/A - Rocking/Rocking_03":
+{
+	"frame": {"x":1850,"y":1868,"w":195,"h":177},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":18,"w":195,"h":177},
+	"sourceSize": {"w":288,"h":216}
+},
+"shifu/J - Victory/Victory_Shifu":
+{
+	"frame": {"x":701,"y":1701,"w":107,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":107,"h":207},
+	"sourceSize": {"w":107,"h":207}
+},
+"tigress/Tigress_Knockdown_02":
+{
+	"frame": {"x":810,"y":1880,"w":478,"h":149},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":245,"w":478,"h":149},
+	"sourceSize": {"w":478,"h":395}
+},
+"tigress/Tigress_Special_01":
+{
+	"frame": {"x":1316,"y":1373,"w":276,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":276,"h":498},
+	"sourceSize": {"w":276,"h":498}
+},
+"viper/Viper_Jump_2":
+{
+	"frame": {"x":701,"y":1365,"w":116,"h":334},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":334},
+	"sourceSize": {"w":116,"h":334}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "chars1.png",
+	"format": "INDEXED",
+	"size": {"w":2047,"h":2047},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:57147fe83b893e9464242ad64a83e1f8:106eb79ce4b198748565815b00b158a8:13abaa8cbe72d3eec07edf34fb7c63fd$"
+}
+}

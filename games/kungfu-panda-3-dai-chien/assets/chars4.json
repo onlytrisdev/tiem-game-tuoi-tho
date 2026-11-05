@@ -1,0 +1,316 @@
+{"frames": {
+
+"crane/CraneSpin":
+{
+	"frame": {"x":429,"y":2,"w":448,"h":441},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":441},
+	"sourceSize": {"w":448,"h":441}
+},
+"crane/Crane_Attack1_01":
+{
+	"frame": {"x":881,"y":423,"w":429,"h":404},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":429,"h":404},
+	"sourceSize": {"w":429,"h":404}
+},
+"crane/Crane_Attack2_01":
+{
+	"frame": {"x":881,"y":423,"w":429,"h":404},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":429,"h":404},
+	"sourceSize": {"w":429,"h":404}
+},
+"crane/Crane_Jump_01":
+{
+	"frame": {"x":2,"y":484,"w":459,"h":434},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":9,"w":459,"h":434},
+	"sourceSize": {"w":459,"h":450}
+},
+"crane/Crane_Jump_02":
+{
+	"frame": {"x":463,"y":445,"w":416,"h":433},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":416,"h":433},
+	"sourceSize": {"w":459,"h":450}
+},
+"mantis/A - Rocking/Rocking_02":
+{
+	"frame": {"x":1727,"y":672,"w":98,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":86},
+	"sourceSize": {"w":98,"h":86}
+},
+"mantis/A - Rocking/Rocking_03":
+{
+	"frame": {"x":1827,"y":672,"w":98,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":86},
+	"sourceSize": {"w":98,"h":86}
+},
+"mantis/A - Rocking/Rocking_04":
+{
+	"frame": {"x":1927,"y":672,"w":98,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":86},
+	"sourceSize": {"w":98,"h":86}
+},
+"mantis/G - Hit/Mantis_Hit":
+{
+	"frame": {"x":1727,"y":399,"w":113,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":113,"h":102},
+	"sourceSize": {"w":113,"h":102}
+},
+"mantis/MantisSpin":
+{
+	"frame": {"x":1557,"y":321,"w":176,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":176,"h":76},
+	"sourceSize": {"w":176,"h":76}
+},
+"mantis/Mantis_Block":
+{
+	"frame": {"x":1842,"y":411,"w":142,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":76},
+	"sourceSize": {"w":142,"h":76}
+},
+"mantis/Mantis_SideSlam":
+{
+	"frame": {"x":1735,"y":321,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":56,"w":99,"h":76},
+	"sourceSize": {"w":165,"h":137}
+},
+"meimei/Hit":
+{
+	"frame": {"x":861,"y":880,"w":421,"h":417},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":4,"w":421,"h":417},
+	"sourceSize": {"w":500,"h":500}
+},
+"meimei/Jump_":
+{
+	"frame": {"x":879,"y":2,"w":423,"h":419},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":423,"h":419},
+	"sourceSize": {"w":500,"h":500}
+},
+"meimei/MeiMei_Attack02_01":
+{
+	"frame": {"x":2,"y":920,"w":423,"h":466},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":0,"w":423,"h":466},
+	"sourceSize": {"w":500,"h":500}
+},
+"meimei/MeiMei_Knockdown_02":
+{
+	"frame": {"x":2,"y":2,"w":425,"h":480},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":18,"w":425,"h":480},
+	"sourceSize": {"w":500,"h":500}
+},
+"meimei/MeiMei_Whip4":
+{
+	"frame": {"x":1284,"y":829,"w":363,"h":468},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":8,"w":363,"h":468},
+	"sourceSize": {"w":500,"h":500}
+},
+"monkey/MonkeySpin":
+{
+	"frame": {"x":449,"y":1347,"w":427,"h":414},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":427,"h":414},
+	"sourceSize": {"w":427,"h":414}
+},
+"monkey/Monkey_Special_01":
+{
+	"frame": {"x":1119,"y":1747,"w":517,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":206,"w":517,"h":288},
+	"sourceSize": {"w":629,"h":521}
+},
+"po/Attack1_01":
+{
+	"frame": {"x":427,"y":920,"w":432,"h":425},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":93,"w":432,"h":425},
+	"sourceSize": {"w":496,"h":518}
+},
+"po/Attack2_01":
+{
+	"frame": {"x":427,"y":920,"w":432,"h":425},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":93,"w":432,"h":425},
+	"sourceSize": {"w":496,"h":518}
+},
+"po/Attack2_02":
+{
+	"frame": {"x":2,"y":1388,"w":445,"h":430},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":51,"y":88,"w":445,"h":430},
+	"sourceSize": {"w":496,"h":518}
+},
+"po/KickTransition":
+{
+	"frame": {"x":878,"y":1299,"w":353,"h":446},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":353,"h":446},
+	"sourceSize": {"w":353,"h":446}
+},
+"po/Moving_2":
+{
+	"frame": {"x":1649,"y":761,"w":331,"h":494},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":7,"w":331,"h":494},
+	"sourceSize": {"w":496,"h":518}
+},
+"po/PoBlock":
+{
+	"frame": {"x":1233,"y":1299,"w":369,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":100,"w":369,"h":418},
+	"sourceSize": {"w":496,"h":518}
+},
+"shifu/A - Rocking/Rocking_04":
+{
+	"frame": {"x":1847,"y":233,"w":191,"h":176},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":19,"w":191,"h":176},
+	"sourceSize": {"w":288,"h":216}
+},
+"shifu/B - Moving/Moving_02":
+{
+	"frame": {"x":1847,"y":233,"w":191,"h":176},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":19,"w":191,"h":176},
+	"sourceSize": {"w":288,"h":216}
+},
+"shifu/E - Attack 1/Attack1_01":
+{
+	"frame": {"x":1847,"y":2,"w":156,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":0,"w":156,"h":229},
+	"sourceSize": {"w":288,"h":229}
+},
+"shifu/E - Attack 1/Jump_1":
+{
+	"frame": {"x":1847,"y":2,"w":156,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":0,"w":156,"h":229},
+	"sourceSize": {"w":288,"h":229}
+},
+"shifu/H - Knockdown/Shifu_KnockedOut_Tail2":
+{
+	"frame": {"x":1727,"y":503,"w":283,"h":167},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":38,"w":283,"h":167},
+	"sourceSize": {"w":288,"h":258}
+},
+"shifu/H - Knockdown/Shifu_KnockedOut_Tail3":
+{
+	"frame": {"x":284,"y":1820,"w":300,"h":167},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":38,"w":300,"h":167},
+	"sourceSize": {"w":304,"h":258}
+},
+"tigress/Attack1_02":
+{
+	"frame": {"x":1304,"y":2,"w":541,"h":317},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":47,"w":541,"h":317},
+	"sourceSize": {"w":626,"h":395}
+},
+"tigress/Moving_1":
+{
+	"frame": {"x":1638,"y":1660,"w":404,"h":369},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":404,"h":369},
+	"sourceSize": {"w":404,"h":369}
+},
+"tigress/Rocking_02":
+{
+	"frame": {"x":1604,"y":1299,"w":421,"h":359},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":34,"w":421,"h":359},
+	"sourceSize": {"w":555,"h":395}
+},
+"tigress/Rocking_03":
+{
+	"frame": {"x":1312,"y":400,"w":413,"h":359},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":34,"w":413,"h":359},
+	"sourceSize": {"w":555,"h":395}
+},
+"tigress/jumpkick_2":
+{
+	"frame": {"x":586,"y":1763,"w":531,"h":283},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":531,"h":283},
+	"sourceSize": {"w":531,"h":283}
+},
+"viper/Viper_Knockdown":
+{
+	"frame": {"x":2,"y":1820,"w":280,"h":212},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":280,"h":212},
+	"sourceSize": {"w":280,"h":212}
+},
+"viper/Viper_Knockdown_2":
+{
+	"frame": {"x":1304,"y":321,"w":251,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":76,"w":251,"h":77},
+	"sourceSize": {"w":251,"h":153}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "chars4.png",
+	"format": "INDEXED",
+	"size": {"w":2044,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:57147fe83b893e9464242ad64a83e1f8:106eb79ce4b198748565815b00b158a8:13abaa8cbe72d3eec07edf34fb7c63fd$"
+}
+}

@@ -1,0 +1,170 @@
+/* Arcade overlay — logo đáy màn; Xóa data chỉ trong Cài đặt */
+#gv-ui-root {
+  position: fixed;
+  z-index: 99990;
+  pointer-events: none;
+  inset: 0;
+  font-family: "Roboto", "Roboto Bold", Arial, sans-serif;
+}
+
+#gv-logo-wrap {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 28px;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  animation: none;
+}
+
+/* Chỉ bật sau khi vào hall / gameplay */
+#gv-logo-wrap.gv-logo-ready {
+  visibility: visible;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+#gv-logo-wrap.gv-logo-ready::after {
+  animation: gv-shine 10s ease-in-out infinite;
+}
+
+#gv-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+}
+
+#gv-logo-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 60%
+  );
+  transform: translateX(-120%);
+  animation: none;
+  pointer-events: none;
+}
+
+@keyframes gv-logo-cycle {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes gv-shine {
+  0%, 5% { transform: translateX(-120%); }
+  25%, 45% { transform: translateX(120%); }
+  50%, 100% { transform: translateX(-120%); }
+}
+
+/* Nút Xóa data — neo trong khung Cài đặt (top/left do JS) */
+#gv-settings-del {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: none;
+  pointer-events: auto;
+  z-index: 99995;
+}
+
+#gv-settings-del.open {
+  display: block;
+}
+
+.gv-btn-del {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  line-height: 0;
+}
+
+.gv-btn-del img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.gv-btn-del:active {
+  transform: scale(0.96);
+}
+
+.gv-btn {
+  min-width: 52px;
+  height: 32px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(20, 20, 28, 0.72);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.gv-btn:active {
+  transform: scale(0.96);
+}
+
+.gv-btn-danger {
+  background: rgba(160, 40, 40, 0.85);
+}
+
+#gv-modal {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  z-index: 99999;
+}
+
+#gv-modal.open {
+  display: flex;
+}
+
+#gv-modal-box {
+  max-width: 320px;
+  margin: 16px;
+  padding: 18px 16px;
+  border-radius: 10px;
+  background: #1e1e28;
+  color: #fff;
+  text-align: center;
+}
+
+#gv-modal-box p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#gv-modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#gv-modal-actions .gv-btn {
+  min-width: 88px;
+}

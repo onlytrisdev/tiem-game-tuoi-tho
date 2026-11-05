@@ -1,0 +1,1607 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}[hidden]{display:none!important}.pure-img{max-width:100%;height:auto;display:block}
+
+*,
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+html {
+    font-family: Open Sans, sans-serif;
+    background: url(ui/bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100%;
+
+    width: 100%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+html, body { overflow: hidden; }
+
+a, .button { outline: none !important; }
+
+.main { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; max-width: 1110px; max-height: 644px; font-size: 100px; }
+.main {
+    box-shadow: 0px 0px 10px 3px #694618;
+    outline: 1px solid #025936;
+    background: #051;
+}
+.main .screen { position: absolute; width: 100%; height: 100%; background: url(ui/commonbg.png); z-index: 2; overflow: hidden; }
+
+.flash {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    opacity: 0;
+}
+
+.a-hcenter {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.a-top {
+    top: 0;
+}
+.a-right {
+    right: 0;
+}
+
+.a-bottom {
+    bottom: 0;
+}
+
+.a-top, .a-vcenter, .a-bottom {
+    position: absolute;
+}
+
+.a-hcenter.a-bottom, .a-hcenter.a-top {
+    transform: translate(-50%, 0%);
+}
+.a-vcenter {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.a-hcenter.a-vcenter {
+  transform: translate(-50%, -50%) ;
+}
+
+.logo-rd.a-left {
+    background: url(ui/smear_logo_left.png) 100% 100% no-repeat;
+    background-size: 100%;
+}
+.logo-rd.a-right {
+    background: url(ui/smear_logo_right.png) 0 100% no-repeat;
+    background-size: 100%;
+}
+.logo-rd {
+    background: url(ui/smear_logo_center.png) 50% 100% no-repeat;
+}
+
+.screen.top-loader {
+    background-color: black;
+    background-image: none;
+}
+.top-loader .progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+}
+
+.main > .top-game {
+    z-index: 1;
+}
+.top-game > * { position: absolute; width: 100%; height: 100%; }
+.top-game { background-image: none !important; }
+
+.hud { z-index: 2; }
+.game-view { z-index: 1; }
+.game-view canvas { width: 100%; height: 100%; }
+
+
+.hud {
+    color: white;
+}
+
+.hud .p1 {
+    background: url(ui/smear_green_left.png) -100px 0 no-repeat;
+    background-size: 80%;
+}
+.hud .p2 {
+    background: url(ui/smear_green_right.png) 100% 0 no-repeat;
+    background-size: 80%;
+}
+
+.hud > .p1, .hud > .p2 {
+    width: 37%;
+    padding-top: 9%;
+    font-family: sf_comic_script_extendedRg;
+    line-height: 1.321;
+    letter-spacing: -0.009em;
+}
+
+.meter-inner {
+    top: 5%;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    height: 100%;
+}
+
+.meter-inner .portrait {
+    width: 31%;
+    position: relative;
+    z-index: 2;
+    padding-top: 31%;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center center;
+}
+
+.meter-inner .portrait img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.p1 .char-name {
+    position: absolute;
+    left: 31%;
+    text-transform: uppercase;
+    font-size: 20%;
+    top: 0;
+}
+.p2 .char-name {
+    position: absolute;
+    right: 31%;
+    text-transform: uppercase;
+    font-size: 20%;
+    top: 0;
+}
+
+.lifeflash {
+    background: url(ui/lifeflash.png);
+    position: absolute;
+    width: 6%;
+    padding-top: 13%;
+    background-size: 100% 100%;
+    margin-left: -3%;
+    opacity: 0;
+}
+
+.life .meter {
+    background: url(ui/lifemeter.png) no-repeat;
+    width: 113%;
+    position: absolute;
+    padding-top: 14%;
+    left: -12%;
+    background-size: 100%;
+}
+
+.life .fill {
+    background: url(ui/lifefill.png);
+    position: absolute;
+    width: 100%;
+    padding-top: 11%;
+    background-size: 100%;
+    top: 7%;
+}
+
+.p1 .life {
+    position: absolute;
+    left: 27%;
+    right: 0%;
+    top: 25%;
+    height: 33%;
+}
+
+.p1 .chi {
+    position: absolute;
+    top: 68%;
+    width: 65%;
+    left: 28%;
+    height: 18%;
+    z-index: 1;
+}
+.p2 .chi {
+    position: absolute;
+    top: 68%;
+    width: 65%;
+    right: 28%;
+    height: 18%;
+}
+.p2 .chi {
+    transform: scale(-1,1);
+}
+
+.chi.arc::after {
+    background: url(ui/chifull3.png) 0 0 no-repeat;
+    position: absolute;
+    left: -12%;
+    right: -3%;
+    top: -64%;
+    bottom: -65%;
+    z-index: 2;
+    content: "";
+    background-size: 100% 100%;
+}
+.chi.arc1::after {
+    background-image: url(ui/chifull3.png)
+}
+.chi.arc2::after {
+    background-image: url(ui/chifull2.png)
+}
+.chi.arc3::after {
+    background-image: url(ui/chifull1.png)
+}
+
+.inst.desktop .chi-meter::after, .inst.touch .chi-meter::after, .move-mobile::after, .attack-mobile::after, .special-mobile::after {
+    content: "";
+    background: url(ui/instarrow1.png) no-repeat;
+    width: 8%;
+    height: 380%;
+    position: absolute;
+    bottom: 91%;
+    left: 40%;
+    background-size: 100% 100%;
+}
+
+.inst.touch .chi-meter::after {
+    height: 90%;
+    width: 24%;
+    bottom: 60%;
+    left: 20%;
+}
+.move-mobile::after, .attack-mobile::after, .special-mobile::after {
+    bottom: auto;
+    height: 70%;
+    transform: scale(-1,-1);
+    top: 154%;
+}
+.attack-mobile::after {
+    transform: scale(1.5,-1.5) rotate(50deg);
+    left: 90%;
+}
+.special-mobile::after {
+    transform: scale(1,-1) rotate(10deg);
+    left: 55%;
+    top: 170%;
+    height: 44%
+}
+.move-mobile::after {
+    transform: scale(-1,-1) rotate(39deg);
+}
+
+.chi .meter {
+    background: url(ui/chimeter.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    mix-blend-mode: overlay;
+}
+
+.chi .fill {
+    background: url(ui/chifill.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    opacity: 0.9;
+}
+
+.p2 .life {
+    position: absolute;
+    left: 0%;
+    right: 27%;
+    top: 25%;
+    height: 33%;
+}
+
+.p2 .meter-inner .portrait {
+    position: absolute;
+    right: 0;
+}
+
+.p2 .life {
+    transform: scale(-1,1);
+}
+
+.select-char.locked.picked > div img.ring {
+    background: rgba(0,55,10,0.8);
+}
+
+.win {
+    background: url(ui/victorydot.png) no-repeat;
+    width: 7%;
+    padding-top: 7%;
+    background-size: contain;
+    display: none;
+    margin: 1%;
+}
+
+.victories {
+    position: absolute;
+    top: 14%;
+    width: 96%;
+    left: 28%;
+}
+
+.victorybox { z-index: 3; }
+.victorytext { pointer-events: none; transition: none !important; }
+
+.p1wins0 .win {
+    display: none;
+}
+
+.p1wins1 .win:first-child {
+    display: inline-block;
+}
+
+.p2wins0 .win {
+    display: none;
+}
+
+.p2wins1 .win:first-child {
+    display: inline-block;
+}
+
+
+.p2 .victories {
+    left: auto;
+    right: 28%;
+    text-align: right;
+}
+
+
+.menu {
+    z-index: 3;
+    top: 100%;
+    bottom: 0px;
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+
+.menu-tab {
+    position: absolute;
+    left: 50%;
+    margin-left: -54px;
+    top: -40px;
+}
+.menu-tab {
+    background: url(ui/menutab.png) top center;
+    width: 108px;
+    height: 40px;
+    text-align: center;
+    line-height: 53px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu::after {
+    background: url(ui/menuborder.png);
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    height: 18px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menu-tab {
+    z-index: 2;
+}
+
+.paused .menu::after {
+    opacity: 1;
+}
+
+.main > .top-game {
+    background-color: black;
+}
+
+.paused .game-view {
+    opacity: 0.5;
+}
+
+.paused .menu {
+    top: calc(100% - 320px);
+}
+
+.menu {
+    transition: top 0.5s ease;
+}
+
+.menu-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.game-view {
+    /*transition: 0.5s opacity ease;*/
+}
+
+.menu {
+    color: white;
+}
+
+.menu-container > * {
+    float: left;
+    width: 33%;
+        min-height: 222px;
+        height: 266px;
+}
+
+.menu-container > .menu-legal {
+    float: none;
+    clear: both;
+    width: 100%;
+}
+
+.menu-container {
+    background-color: #003f16;
+}
+
+.menu-legal {
+    background-color: #068f34;
+}
+
+.pause, .mute {
+    width: 34px;
+    height: 34px;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: #0bac41;
+    color: white;
+    z-index: 4;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.pause {
+    right: 55px;
+}
+
+.mute {
+    right: 10px;
+}
+
+.mute:hover, .pause:hover {
+    background-color: #1bbc55;
+}
+
+.top-game .inst {
+    background: url(ui/instructions.png) center center no-repeat;
+    z-index: 4;
+    top: 10%;
+    background-size: 100%;
+}
+
+.inst-title.button {
+    background-image: url(ui/smear_yellow1.png);
+    left: 50%;
+    position: absolute;
+    top: 23%;
+}
+
+.inst-ok.button.a-hcenter.a-bottom {
+    bottom: 18%;
+}
+
+.inst {
+  display: none;
+
+}
+.inst.showing {
+  display: block;
+}
+.inst > div span {
+    font-size: 18%;
+    color: white;
+}
+
+.inst > div span:first-child {
+    font-family: sf_comic_script_ExtendedRg;
+    font-size: 36%;
+    letter-spacing: -0.08em;
+    padding: 4%;
+}
+
+.inst > div.chi-meter span {
+    font-size: 22%;
+    width: 33%;
+    color: #fc2;
+}
+
+.inst.desktop .move-mobile, .inst.desktop .attack-mobile, .inst.desktop .special-mobile {
+    display: none;
+}
+.inst.touch .move-desktop, .inst.touch .attack-desktop, .inst.touch .special-desktop {
+    display: none;
+}
+
+.inst.desktop {
+    padding-top: 13%;
+    padding-left: 22%;
+    padding-right: 22%;
+    line-height: 0.8;
+}
+
+.inst.desktop div span {
+    line-height: 1.5;
+    display: inline-block;
+    max-width: 58%;
+}
+
+.inst.desktop div span {
+    position: relative;
+}
+
+.legal-mid {
+    height: 54px;
+    font-size: 10px;
+    text-align: center;
+}
+.legal-mid span {
+    display: block;
+    padding-top: 12px;
+}
+.menu-left a, .menu-right a {
+    font-family: sf_comic_script_ExtendedRg;
+    font-weight: 400;
+    letter-spacing: -0.08em;
+}
+
+.legal-mid a {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 11px
+}
+
+.menu-legal > * {
+    display: inline-block;
+    vertical-align: top;
+    height: 54px;
+}
+
+.hud > .logo-rd {
+    left: 50%;
+    width: 222px;
+    transform: translate(-50%,0);
+    top: 5px;
+}
+
+.menu-mid img {
+    width: 100%;
+    padding-top: 18px;
+}
+
+.menu-legal > img {
+    height: 40px;
+    margin: 7px;
+}
+
+.legal-mid a {
+    color: #041;
+}
+
+.legal-share a {
+    color: #080;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    margin: 10px 5px;
+    width: 34px;
+    text-align: center;
+}
+
+.payoff-sharelinks a {
+    color: white;
+    background-color: #080;
+    border-radius: 50%;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    margin: 10px 5px;
+    width: 34px;
+    text-align: center;
+}
+
+.legal-mid {
+    width: 47%;
+}
+
+.menu-left a, .menu-right a {
+    display: block;
+    border-radius: 5px;
+    color: white;
+    background-color: #068f34;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.menu-left a:hover, .menu-right a:hover {
+    color: #068f34;
+    background-color: white;
+}
+
+.menu-left a {
+    background-color: #24c149;
+}
+
+.menu-left, .menu-right {
+    padding-top: 50px;
+}
+
+
+.menu-mid img {
+    position: absolute;
+    /* width: 100%; */
+    top: 50%;
+    left: 50%;
+    max-width: 312px;
+    transform: translate(-50%,-50%);
+}
+
+.menu-mid {
+    position: relative;
+}
+
+
+.food.animate {
+    color: #fe2;
+    transition: none;
+    padding-top: 12px;
+}
+
+.top-scrim, .bottom-scrim {
+  position: absolute; width: 100%;
+    background: url('ui/topscrim.png');
+    height: 36px;
+    width: 1141px;
+    z-index: 5;
+    top: -36px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.bottom-scrim {
+    background: url('ui/bottomscrim.png');
+    top: auto;
+    bottom: -36px;
+}
+
+body {
+    overflow: hidden;
+}
+
+.button:hover {
+    transform: scale(1.09);
+}
+.a-hcenter.a-vcenter.button:hover {
+    transform: translate(-50%, -50%) scale(1.09);
+}
+.button {
+    display: inline-block;
+    background: url('ui/smear_red1.png') no-repeat;
+    background-size: 100% 100%;
+    font-family: sf_comic_script_extendedRg;
+
+    min-width: 328px;
+    line-height: 90px;
+    text-align: center;
+    color: white;
+    font-size: 32%;
+    padding: 0 20px;
+    text-decoration: none;
+    letter-spacing: -0.085em;
+    text-transform: uppercase;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0, 1.68);
+}
+
+.top-payoff > img {
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+}
+
+.top-payoff .content {
+    font-size: 30%;
+    font-family: sf_comic_script_extendedRg;
+    letter-spacing: -0.08em;
+    width: 60%;
+    text-align: center;
+}
+
+.top-payoff {
+    color: white;
+}
+
+.top-payoff .prize-content {
+    font-size: 16%;
+    text-align: center;
+    width: 60%;
+}
+
+.top-payoff .content .awesome {
+    text-shadow: 5px 5px black;
+    font-size: 250%;
+}
+
+.top-payoff > img {
+    display: block;
+    height: 100%;
+    bottom: 0;
+}
+
+.top-payoff .proven {
+    background: url(ui/smear_green1.png);
+    background-size: 100% 100%;
+    padding: 2% 10%;
+}
+
+.top-payoff .brag, .top-payoff .canyoumaster {
+    background: url(ui/smear_black1.png);
+    background-size: 110% 100%;
+    padding: 1% 5%;
+}
+.top-payoff .canyoumaster {
+    text-shadow: 5px 5px black;
+    color: #c00;
+
+}
+
+.top-title > img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.top-title img.gamelogo {
+    bottom: 36%;
+    height: 57%;
+    left: 50%;
+}
+
+.top-title .buttons {
+    margin-bottom: 4%;
+}
+
+.top-title .button {
+  font-size: 39%;
+  padding: 0% 10%;
+}
+
+.top-vs .vs {
+  transition: none;
+  pointer-events: none;
+}
+
+.screen > img {
+    max-width: 100%;
+}
+
+.select-char img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.select-char {
+    width: 33%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.select-char > div {
+    position: relative;
+    margin: 5%;
+    padding: 0;
+}
+
+.select-grid {
+    width: 50%;
+    height: 100%;
+    padding: 8%;
+    line-height: 0;
+}
+
+.select-char.locked {
+  pointer-events: none;
+}
+.select-char.locked > div img.ring {
+    background: rgba(0,55,10,0.9) url(ui/lock.png) center center no-repeat;
+    border-radius: 50%;
+}
+
+.top-bg .select-grid {
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    height: auto;
+}
+
+.top-bg .select-char {
+    padding: 2%;
+    cursor: pointer;
+}
+
+.top-bg .select-char.active img {
+background-color: rgba(255,255,251,0.2);
+}
+
+.top-bg .select-char.locked::after {
+    background: rgba(0,55,10,0.5) url(ui/lock.png) center center no-repeat;
+    content: "";
+    position: absolute;
+    left: 9%;
+    right: 9%;
+    z-index: 1;
+    top: 11%;
+    bottom: 26%;
+}
+
+.top-bg .select-char.locked {
+    pointer-events: none;
+}
+
+.super {
+    background-color: black;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.super .top {
+    background: url(ui/commonbg_red.png) 50% 50%;
+    height: 50%;
+    border-bottom: 9px solid black;
+}
+
+.super > * {
+    overflow: hidden;
+    height: 50%;
+}
+
+.bottom {
+    background: url(ui/commonbg.png);
+}
+
+.super > * > img {
+    margin-top: -3%;
+}
+
+.super .bottom {
+    transform: scale(-1, 1);
+}
+
+.super {
+    overflow: hidden;
+}
+
+.a-vcenter {
+    transform: translate(0, -50%);
+}
+
+.select-char img:first-child {
+    position: static;
+}
+
+.top-vs .p2 {
+    transform: scale(-1,1) translate(0,-50%);
+}
+
+.top-vs img {
+    display: block;
+}
+.active-char {
+    width: 100%;
+}
+.top-select .active-char img {
+    display: block;
+    max-width: 60%;
+}
+
+.top-game .logo-rd {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.logo-rd .rd {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 11.8%;
+    margin-bottom: 4%;
+    margin-top: 6%;
+}
+
+.logo-rd {
+    width: 20%;
+    z-index: 40;
+}
+
+.logo-rd img {
+    width: 100%;
+        display: block;
+}
+
+
+.top-title .button:last-child {
+    background-image: url(ui/smear_yellow1.png);
+}
+
+.top-select .char-title {
+    background-image: url(ui/smear_red_right.png);
+    width: 50%;
+}
+
+.button.char-nameplate, .button.bg-nameplate {
+    background-image: url(ui/smear_red2.png);
+    margin-bottom: 3%;
+    pointer-events: none;
+}
+
+.button.bg-title {
+    background-image: url(ui/smear_red4.png);
+    width: 70%;
+    left: 57%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    pointer-events: none;
+}
+.top-vs .button {
+  background-image: url(ui/smear_red2.png);
+  pointer-events: none;
+}
+.top-vs .button.vs {
+  background-image: url(ui/smear_red3.png);
+}
+
+.button.back {
+    background-image: url(ui/smear_green_left.png);
+}
+
+.button.next:last-child {
+    background-image: url(ui/smear_green_right.png);
+}
+
+.inst-title {
+    pointer-events: none;
+}
+
+.inst-ok:hover {
+    transform: translate(-50%, 0) scale(1.1);
+}
+
+.inst-ok:hover {
+    cursor: pointer;
+}
+
+.inst-ok {
+    background-image: url(ui/smear_red2.png);
+}
+
+.inst > div span:first-child {
+    width: 30%;
+    padding: 2%;
+    vertical-align: middle;
+}
+
+.inst > div span {
+    vertical-align: middle;
+}
+
+.inst.desktop {
+    padding-top: 15%;
+}
+
+.inst.desktop .chi-meter {
+    position: absolute;
+    top: 55%;
+    width: 50%;
+    text-align: center;
+    left: -11%;
+}
+
+.move-mobile, .special-mobile, .attack-mobile {
+    width: 33%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 10%;
+    padding-top: 21%;
+    vertical-align: top;
+}
+
+.move-mobile span, .special-mobile span, .attack-mobile span {
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    width: 100% !important;
+}
+
+.inst.touch {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.inst.touch .chi-meter {
+    top: 16%;
+    left: 13%;
+    position: absolute;
+}
+
+.top-payoff .gamelogo {
+    width: 50%;
+    margin-top: -23%;
+}
+
+.top-payoff .content .button.next {
+    background-image: url(ui/smear_red_right.png);
+    font-size: 100%;
+    bottom: -50%;
+        width: 70%;
+}
+
+.top-payoff .prize-content {
+    padding: 3% 9%;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px black, 1px 1px 5px black;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
+}
+
+.top-payoff .prize-content .prizeword {
+    font-size: 250%;
+}
+
+.top-payoff .prize-content a {
+    color: #25a56a;
+}
+
+.payoff-box .gj {
+    font-size: 290%;
+}
+
+.payoff-box {
+    color: #051;
+    font-size: 16px;
+}
+
+.payoff-box .unlocked {
+    font-weight: 600;
+}
+
+.payoff-box .prizeword {
+    font-size: 210%;
+    color: #512;
+}
+
+.payoff-box .copy {
+    font-weight: 600;
+    font-size: 85%;
+    color: #512;
+}
+
+
+.payoff-box .score {
+    font-size: 250%;
+}
+
+.payoff-0 .score {
+    text-align: right;
+    width: 40%;
+    display: inline-block;
+}
+.payoff-1 .score {
+    margin-right: 5%;
+}
+
+.payoff-0 .new-high-score {
+    width: 13%;
+    position: absolute;
+    bottom: 31%;
+    right: 1%;
+}
+
+.payoff-1 .new-high-score {
+    position: absolute;
+    top: -8%;
+    right: 1%;
+    width: 25%;
+}
+
+.payoff-box.payoff-0 > div {
+    text-align: left;
+}
+
+span.score-x {
+    font-size: 40%;
+    font-weight: 600;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.payoff-0 > div > span:first-child {
+    width: 60%;
+    display: inline-block;
+    font-size: 150%;
+}
+
+.payoff-0 > div {
+    padding: 0 10%;
+    height: 20%;
+}
+
+.payoff-0 > div.your-score {
+    font-size: 120%;
+}
+
+.payoff-0 + .button {
+    top: 78%;
+}
+
+.payoff-box .copy a {
+    color: #3a5;
+    font-weight: 700;
+}
+
+.payoff-box .copy {
+    line-height: 1.5;
+}
+
+.hr { max-width: 100%; }
+
+
+.touch-dpad {
+    background: url(ui/mobile_dpad.png) 50% 50% no-repeat;
+    width: 16%;
+    padding-top: 16%;
+    background-size: 100% 100%;
+    left: 1%;
+    bottom: 2%;
+}
+
+.touch-controls > * {
+    position: absolute;
+    z-index: 4;
+    opacity: 0.8;
+}
+.touch-controls {
+    z-index: 32;
+    background: url(ui/smear_green_right.png) 100% 112% no-repeat;
+    background-size: 35%;
+}
+.inst.showing ~ .touch-controls {
+    pointer-events: none;
+}
+.touch-controls span {
+    display: block;
+    font-size: 15%;
+    color: white;
+    font-family: sf_comic_script_extendedRg;
+    letter-spacing: -0.08em;
+    text-align: center;
+}
+
+.touch-special {
+    right: 20%;
+    bottom: 0.5%;
+    background: url(ui/mobile_special_disabled.png) 50% 0% no-repeat;
+    width: 8%;
+    padding-top: 9%;
+    background-size: 100% 81%;
+}
+
+.touch-attack {
+    right: 9%;
+    bottom: 0.5%;
+    background: url(ui/mobile_attack.png) 50% 0% no-repeat;
+    width: 8%;
+    padding-top: 9%;
+    background-size: 100% 81%;
+}
+
+.touch-special.ready {
+    background-image: url(ui/mobile_special_ready.png);
+}
+
+
+@media only screen and (max-device-width: 1024px) and (orientation:portrait) {
+body {
+transform: rotate(90deg) translate(0, -100vw);
+width: 100vh;
+height: 100vw;
+ overflow: hidden;
+ position: absolute;
+ top: 0
+ left: 0;
+transform-origin: top left;
+}}
+
+@media only screen and (max-width: 767px) {
+  .top-title .button:last-child {
+      top: -22px;
+      position: relative;
+  }
+  .top-vs .p1 img, .top-vs .p2 img {
+      max-width: 66%;
+      margin-top: 5%;
+  }
+  .inst-ok.button.a-hcenter.a-bottom {
+    bottom: 9%;
+  }
+  .pause, .mute { display: none; }
+  .paused .pause, .paused .mute { display: block; }
+
+  .unlock img.char {
+      max-width: 60%;
+  }
+
+  .top-payoff .active-char img {
+      max-width: 100%;
+  }
+
+  .top-payoff .content .button.next {
+      top: 110%;
+  }
+  .unlock .a-vcenter, .unlock .char-nameplate {
+      margin-top: -6%;
+      margin-bottom: 5%;
+  }
+
+  .hud > * {
+      /*transform: scale(0.5);*/
+  }
+  .main {
+      font-size: 10vw;
+  }
+  .hud > .logo-rd {
+      transform: translate(-50%,0) scale(0.5);
+      transform-origin: top center;
+  }
+
+  .menu-left a, .menu-right a {
+      font-size: 14px;
+      line-height: 50px;
+  }
+
+  .legal-mid {
+      width: 35%;
+  }
+  .menu-legal {
+      position: relative;
+      top: -51px;
+  }
+
+  .logo-rd .rd {
+
+      font-weight: 600;
+  }
+  .top-game .logo-rd .rd {
+      font-size: 14px;
+      font-weight: 600;
+  }
+  .button { min-width: 248px; line-height: 70px; }
+  .payoff-box {
+      font-size: 2vw;
+  }
+
+  .top-inst > img + div {
+      font-size: 2vw;
+  }
+
+  .inst-box {
+      font-size: 1.7vw;
+  }
+
+  .inst-box > div > img {
+      max-height: 70%;
+  }
+
+  .legal-share {
+      margin-left: 7px;
+  }
+  .top-scrim, .bottom-scrim { display: none; }
+  .menu::after { display: none; }
+  .paused .menu::after { display: block; }
+}
+
+/* address bar stuff */
+@media screen and (max-width: 736px) {
+  .gamelogo {
+      width: 70%;
+  }
+  .inst.touch {
+      top: 4%;
+      /* bottom: 10%; */
+      /* background-size: 100% 100%; */
+      /* height: auto; */
+      transform: scale(0.95,0.85);
+  }
+  .super > * > img {
+
+      max-width: 60%;
+      margin-top: -5%;
+
+  }
+  .paused .menu {
+      top: calc(100% - 300px);
+  }
+
+  .top-inst > img {
+      position: absolute;
+      bottom: 0;
+  }
+
+  .inst-box {
+      top: auto;
+      bottom: 20%;
+  }
+
+  .payoff-box {
+      font-size: 2.6vh;
+      bottom: 26%;
+      right: 5%;
+  }
+  .top-payoff .button {
+      font-size: 5.5vh;
+      top: 84%;
+  }
+  .payoff-box .copy {display:none;}
+
+
+  .top-inst .button {
+      top: 78%;
+      font-size: 10vh;
+  }
+
+  .button {
+      min-width: 220px;
+      line-height: 18vh;
+  }
+}
+
+
+.top-payoff .content .button.next {
+    background-image: url(ui/smear_red_right.png);
+    font-size: 120%;
+    bottom: -50%;
+}
+
+.top-payoff .prize-content {
+    padding: 3% 9%;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px black, 1px 1px 5px black;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
+}
+
+.top-payoff .prize-content .prizeword {
+    font-size: 250%;
+}
+
+.top-payoff .prize-content a {
+    color: #25a56a;
+}
+
+.top-payoff .canyoumaster {
+    padding: 3% 5%;
+    background-size: 153% 239%;
+    font-size: 81%;
+    padding: 4%;
+    background-position: 0 78%;
+}
+.top-payoff .content {
+    padding-top: 2%;
+}
+
+.top-payoff .active-char {
+    z-index: 3;
+    max-width: 50%;
+}
+
+.top-payoff .active-char img {
+margin-left: -21%;
+margin-bottom: -11%;
+}
+
+.inst.desktop {
+    padding-top: 17%;
+    line-height: 0.01;
+    padding-right: 5%;
+}
+.chi-meter span { white-space: nowrap; }
+.inst > div span:first-child {
+    width: 33%;
+}
+
+.inst > .move-desktop span:first-child::before {
+    content: "";
+    background: url(ui/inst_keys.png);
+    display: inline-block;
+    width: 90px;
+    height: 52px;
+    background-size: 100% 100%;
+    margin-right: 7%;
+    vertical-align: middle;
+}
+
+.inst > .attack-desktop span:first-child::before {
+    content: "";
+    background: url(ui/inst_keyz.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    margin-right: 15%;
+    margin-left: 8%;
+    vertical-align: middle;
+}
+.inst > .special-desktop span:first-child::before {
+    content: "";
+    background: url(ui/inst_keyx.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    margin-right: 15%;
+    margin-left: 8%;
+    vertical-align: middle;
+}
+
+.inst.desktop .chi-meter::after {
+    height: 570%;
+    bottom: 110%;
+}
+
+.attack-desktop {
+    height: 16%;
+}
+
+.unlock {
+    background: url(ui/commonbg.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.unlock-caption {
+    font-family: sf_comic_script_extendedRg;
+    font-size: 40%;
+}
+
+.unlock img.kai {
+    min-width: 30%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 15px rgba(250,255,243,1);
+    border: 3px solid #361;
+}
+
+.unlock-caption {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    letter-spacing: -0.08em;
+}
+
+/* bumper */
+.bumper {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background: #0bac41;
+    text-align: center;
+    display: none;
+}
+
+#exit_img img {
+    max-width: 100%;
+}
+
+#exit_txt {
+    position: absolute;
+    max-width: 100%;
+    width: 1283px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+}
+
+#exit_logo {
+    width: 50%;
+    margin-top: 8%;
+}
+
+#exit_sub {
+    width: 50%;
+    color: white;
+    font-size: 122%;
+}
+
+#exit_title {
+    width: 50%;
+}
+#exit_title {
+    margin: 2% 0;
+}
+
+#exit_title img {
+    max-width: 41%;
+}
+
+.exit_btn, .exit_btnb {
+    background: #0bac41;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 23px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.exit_btn {
+    margin-left: -50%;
+}
+
+#exit_logo img {
+    max-width: 33%;
+}
+
+@media screen and (min-width:1110px) {
+.top-select .active-char, .top-select .active-char img {
+    height: 100%;
+}
+}
+.main .screen {
+    background-size: 100% 100%;
+}
+
+/* HIDE SHARE */
+.legal-share, .brag {
+    display: none;
+}
+/* HIDE CONTEST */
+.top-payoff .prize-content {
+    display: none;
+}
