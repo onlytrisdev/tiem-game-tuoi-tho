@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+	
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	
+
+	<title>Pokemon đại chiến 3</title>
+
+	<script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	
+
+	
+
+	<script type="text/javascript" src="./lib/soundjs.min.js"></script>
+
+	<script type="text/javascript" src="./Dynamons2.js"></script>
+
+	<script type="text/javascript" src="api_v2.js"></script>
+
+	<script>
+
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false);
+
+		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+
+			var meta = document.getElementById ("viewport");
+
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=0');
+
+		}
+
+	</script>
+
+	
+
+	<style>
+
+		html,body { margin: 0; padding: 0; height: 100%; }
+
+		#content { background: #000000; width: 100%; height: 100%; z-index: 1; overflow: visible; position: fixed;}
+
+		canvas { display: inherit;}
+
+		
+
+	</style>
+
+	
+
+</head>
+
+<body>
+
+	
+
+
+
+
+
+	<div id="content"></div>
+
+	
+
+	<script type="text/javascript">
+
+		
+
+		// Embed application, fit to best window size
+
+		var getSize = function() {
+
+			
+
+			var orientation = "portrait";
+
+			var element = document.getElementById("content");
+
+			var clientWidth = element.clientWidth;
+
+			var clientHeight = element.clientHeight;
+
+			var minWidth = 320 ;
+
+			var minHeight = 480 ;
+
+			var finalWidth = minWidth;
+
+			var finalHeight = minHeight;
+
+
+
+			if (orientation == "portrait")
+
+			{
+
+				var currRatio = clientHeight / clientWidth;
+
+				var minRatio = minHeight / finalWidth;
+
+				var maxHeight = 568 ;
+
+				if (maxHeight == null) maxHeight = finalHeight;
+
+				var maxRatio = maxHeight / finalWidth;
+
+				if (currRatio <= minRatio)
+
+				{
+
+					finalHeight = minHeight;
+
+				}
+
+				else if (currRatio >= maxRatio)
+
+				{
+
+					finalHeight = maxHeight;
+
+				}
+
+				else
+
+				{
+
+					finalHeight = Math.floor(finalWidth * currRatio);
+
+				}
+
+			}
+
+			else if (orientation == "landscape")
+
+			{
+
+				var currRatio = clientWidth / clientHeight;
+
+				var minRatio = minWidth / finalHeight;
+
+				var maxWidth = null ;
+
+				console.log(maxWidth);
+
+				if (maxWidth == null) maxWidth = finalWidth;
+
+				var maxRatio = maxWidth / finalHeight;
+
+				if (currRatio <= minRatio)
+
+				{
+
+					finalWidth = minWidth;
+
+				}
+
+				else if (currRatio >= maxRatio)
+
+				{
+
+					finalWidth = maxWidth;
+
+				}
+
+				else
+
+				{
+
+					finalWidth = Math.floor(finalHeight * currRatio);
+
+				}
+
+			}
+
+
+
+			return {width: finalWidth, height: finalHeight};
+
+		}
+
+
+
+		var size = getSize();
+
+		
+
+		
+
+		lime.embed ("content", size.width, size.height, "000000");
+
+				
+
+
+
+		// Resize document width to fix Samsung Galaxy stock-browser render freeze on touch bug:
+
+		if (/Android/.test(navigator.userAgent) && !(/Chrome/.test(navigator.userAgent)))
+
+		{
+
+			var ds = document.documentElement.style;
+
+			var origW = ds.width;
+
+			ds.width = "101%";
+
+			setTimeout(function() { ds.width = origW; }, 500);
+
+		}
+
+		// Add padding to allow minimal-ui in iOS8+:
+
+		else if (/iPhone/.test(navigator.userAgent) && (/Safari/.test(navigator.userAgent)))
+
+		{
+
+			document.documentElement.style.paddingBottom = "80px";
+
+		}
+
+
+
+	</script>
+
+	
+
+
+</body>
+
+</html>

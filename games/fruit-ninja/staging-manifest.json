@@ -1,0 +1,86 @@
+{
+  "game": [
+    {
+      "path": "public/games/fruit-ninja/index.html",
+      "bytes": 22500,
+      "sha256": "0645608e85c6c8b084f37ee7bba0b07366835ebce82d3c12674eb3fc2a952076"
+    },
+    {
+      "path": "public/games/fruit-ninja/fruit-ninja-d036d173.js",
+      "bytes": 290073,
+      "sha256": "d036d173018d6935b97342effc28acdf3599987abffadc48fef163b91666c609"
+    },
+    {
+      "path": "public/games/fruit-ninja/fruit-ninja-6c15e8ec.wasm",
+      "bytes": 1762933,
+      "sha256": "6c15e8ecdb9a5195a6988e9eff506a6511c2f2f0cea14870dfde49c237371057"
+    },
+    {
+      "path": "public/games/fruit-ninja/fruit-ninja-654323ae.data",
+      "bytes": 8123855,
+      "sha256": "654323ae33f8aca1b7b9ae4423f070887519fcc1424b175dca00dbc340a9d3dc"
+    },
+    {
+      "path": "public/games/fruit-ninja/manifest.webmanifest",
+      "bytes": 830,
+      "sha256": "6ef1e0c7f9a4d4963767409d84791191d265ecfba69fcb630d243824609784d5"
+    },
+    {
+      "path": "public/games/fruit-ninja/favicon.ico",
+      "bytes": 10652,
+      "sha256": "ededfb5bdfb3bafb5424ab9d6a5f549602dddef92dc499fd923a9cc2d89d9c71"
+    },
+    {
+      "path": "public/games/fruit-ninja/icons/icon-16.png",
+      "bytes": 916,
+      "sha256": "22f8e589e86ddfbbd188c2480bbd2715bfd2a480b02bded60d7c48ee8b2a69e9"
+    },
+    {
+      "path": "public/games/fruit-ninja/icons/icon-32.png",
+      "bytes": 3101,
+      "sha256": "6a1ca4524b9a43b7bdf0e08d76729538ef5316a624056a99ed6a3fc24e8b20ad"
+    },
+    {
+      "path": "public/games/fruit-ninja/icons/icon-180.png",
+      "bytes": 70561,
+      "sha256": "b12f61bccd38cf5986cb714fcb86ed09f9b472ce277f8d9309fb476ca1edd700"
+    },
+    {
+      "path": "public/games/fruit-ninja/icons/icon-192.png",
+      "bytes": 79189,
+      "sha256": "2f901baaadc84357572c72d735a013598dd4ae7ff5b2593f3b854428d788c5ed"
+    },
+    {
+      "path": "public/games/fruit-ninja/icons/icon-512.png",
+      "bytes": 474737,
+      "sha256": "d19a21125ac3a57ed72b52e47d7febdaef95d007bed160e7ef8a6434c823c689"
+    },
+    {
+      "path": "public/games/fruit-ninja/icons/icon-maskable-512.png",
+      "bytes": 474737,
+      "sha256": "d19a21125ac3a57ed72b52e47d7febdaef95d007bed160e7ef8a6434c823c689"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "public/assets/fruit-ninja/main-menu-wide.png",
+      "bytes": 682071,
+      "sha256": "4bb948d4c4ebf230e36064db59fa0f10ef4400847db95ddd62595b8b0376e6a2"
+    },
+    {
+      "path": "public/assets/fruit-ninja/arcade-wide.png",
+      "bytes": 906728,
+      "sha256": "0887e089fb8c7f61a6a6475cab2e05726c2c2929ce6e9dd4d509d9b31dc162c4"
+    },
+    {
+      "path": "public/assets/fruit-ninja/main-menu.png",
+      "bytes": 627498,
+      "sha256": "bc3a74d1a58b7a3ebee4cb0816aee767848774d8db88fa126b0807e7bf05d4dd"
+    },
+    {
+      "path": "public/assets/fruit-ninja/arcade-frenzy.png",
+      "bytes": 557112,
+      "sha256": "01b3f28001ca47d766d3c04af81365bcf909ea0ac2cfadca392a66fa0dc3e35d"
+    }
+  ]
+}
