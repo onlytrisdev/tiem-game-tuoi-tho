@@ -1,0 +1,257 @@
+/* Arcade UI — logo, HUD gửi điểm, xóa data */
+
+.arcade-logo {
+  position: fixed;
+  left: max(12px, env(safe-area-inset-left));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 10040;
+  width: 52px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  box-shadow: none;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  display: block;
+  overflow: hidden;
+  animation: gv-logo-cycle 10s ease-in-out infinite;
+}
+
+.arcade-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+.arcade-logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.15) 44%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.15) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  mask-image: url("https://localhost/themes/default/images/logo-2022.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  animation: gv-logo-sweep 10s linear infinite;
+}
+
+@keyframes gv-logo-cycle {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  45% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes gv-logo-sweep {
+  0%,
+  4% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  6% { opacity: 1; }
+  22% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  24% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+  28% { opacity: 1; }
+  44% {
+    background-position: -120% 0;
+    opacity: 1;
+  }
+  46%,
+  100% {
+    background-position: 120% 0;
+    opacity: 0;
+  }
+}
+
+#gv-delete-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10060;
+  background: rgba(0, 0, 0, 0.55);
+  align-items: center;
+  justify-content: center;
+}
+
+#gv-delete-overlay.show {
+  display: flex;
+}
+
+#gv-delete-dialog {
+  background: #1e2430;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 18px;
+  max-width: 320px;
+  width: 86%;
+  text-align: center;
+  font-family: Arial, "Segoe UI", Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+#gv-delete-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+#gv-delete-actions button {
+  min-width: 88px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#gv-delete-cancel {
+  background: #4a5568;
+  color: #fff;
+}
+
+#gv-delete-ok {
+  background: #e53e3e;
+  color: #fff;
+}
+
+#gv-btn-clear-data {
+  position: fixed;
+  left: max(10px, env(safe-area-inset-left));
+  top: max(10px, env(safe-area-inset-top));
+  z-index: 10046;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+}
+
+#gv-btn-clear-data img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+#gv-hud-right {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top, 0px) + 8px);
+  right: max(8px, env(safe-area-inset-right, 0px) + 6px);
+  z-index: 10045;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  pointer-events: none;
+}
+
+#gv-hud-right[hidden] {
+  display: none !important;
+}
+
+#gv-hud-right.gv-visible {
+  pointer-events: auto;
+}
+
+#gv-btn-score {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  pointer-events: auto;
+  transform-origin: center center;
+  touch-action: manipulation;
+}
+
+#gv-btn-score img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  transform: scale(0.8);
+  opacity: 0.85;
+  transform-origin: center center;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+#gv-btn-score:hover img,
+#gv-btn-score:focus-visible img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arcade-logo,
+  .arcade-logo::after {
+    animation: none;
+  }
+}
+
+#gv-score-toast {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: max(80px, env(safe-area-inset-bottom, 0px) + 72px);
+  transform: translateX(-50%);
+  z-index: 10055;
+  max-width: min(90vw, 340px);
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  font-family: Arial, "Segoe UI", Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  pointer-events: none;
+}
+
+#gv-score-toast.show {
+  display: block;
+}

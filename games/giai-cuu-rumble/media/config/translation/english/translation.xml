@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--strings defaultFont="fonts/ARIALUNI_0.TTF"-->
+<strings defaultFont="Komika Display Regular">
+	<string id="STR_IDENTIFIER" fontName="Komika Display Bold" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[1.0.10]]></string>
+	<string id="STR_STRING_TEST_1" fontName="CC Zoinks Medium" fontScale="0.7"	offsetX="0" offsetY="0"><![CDATA[ìòùýśźćńÜüññ¡¿ßëëïïÿÿæœğøőűÄäöüßåâî дДжЖзЗиИйЙлЛпПфФцЦчЧшШщЩяЯьЬюЮвкмнтУъЪыЫэЭёЁ]]></string>
+	<string id="STR_STRING_TEST_2" fontName="Komika Display Regular" fontScale="0.7"	offsetX="0" offsetY="0"><![CDATA[​ìòùýśźćńÜüññ¡¿ßëëïïÿÿæœğøőűÄäöüßåâî дДжЖзЗиИйЙлЛпПфФцЦчЧшШщЩяЯьЬюЮвкмнтУъЪыЫэЭёЁ]]></string>
+	<string id="STR_STRING_TEST_3" fontName="Komika Display Bold" fontScale="0.7"	offsetX="0" offsetY="0"><![CDATA[​ìòùýśźćńÜüññ¡¿ßëëïïÿÿæœğøőűÄäöüßåâî дДжЖзЗиИйЙлЛпПфФцЦчЧшШщЩяЯьЬюЮвкмнтУъЪыЫэЭёЁ]]></string>
+	
+	<!--TITLE SCREEN-->
+	<string id="STR_SCR_TITLE_TEST2" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[HENRY DANGER RESCUE RUMBLE]]></string>
+	
+	<string id="STR_SCR_TITLE_NAME_MOBILE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Nhấn Để Bắt Đầu]]></string>
+	<string id="STR_SCR_TITLE_NAME_DESKTOP" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Nhấn Để Bắt Đầu]]></string>
+	
+	<!--UPGRADE SCREEN-->
+	<string id="STR_SCR_UPGRADE_HEADER" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[JUNK-N-STUFF]]></string>
+	
+	<!--LOADING SCREEN-->
+	<string id="STR_SCR_LOADING_FORMAT" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	
+	<!--STAGE SELECT-->
+	<string id="STR_SCR_STAGE_HEADER" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[CHỌN MÀN CHƠI]]></string>
+	<string id="STR_SCR_STAGE_FORMAT" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="STR_SCR_STAGE_0_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[JUNK 'N STUFF]]></string>
+	<string id="STR_SCR_STAGE_1_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[SWELLVIEW PARK]]></string>
+	<string id="STR_SCR_STAGE_2_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[HENRY HART'S HOUSE]]></string>
+	<string id="STR_SCR_STAGE_3_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[SWELLVIEW JUNIOR HIGH]]></string>
+	<string id="STR_SCR_STAGE_4_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[MAN CAVE]]></string>
+	<string id="STR_SCR_STAGE_5_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[HENRY HART'S HOUSE]]></string>
+	<string id="STR_SCR_STAGE_0_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: DR. MINYAK]]></string>
+	<string id="STR_SCR_STAGE_1_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: MAD GRANNY]]></string>
+	<string id="STR_SCR_STAGE_2_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: DRILL FINGER]]></string>
+	<string id="STR_SCR_STAGE_3_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: JEFF]]></string>
+	<string id="STR_SCR_STAGE_4_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: INVISIBLE BRAD]]></string>
+	<string id="STR_SCR_STAGE_5_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: ALL VILLAINS!]]></string>
+	<string id="STR_SCR_STAGE_VILLAIN" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[VILLAIN: ???]]></string>
+	
+	<string id="STR_SCR_STAGE_RECENT_SCORE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[ĐIỂM GẦN ĐÂY]]></string>
+	<string id="STR_SCR_STAGE_TOP_SCORE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[ĐIỂM CAO]]></string>
+	
+	<!--Code Popup-->
+	<string id="STR_SCR_CODE_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[MÃ MỞ KHÓA]]></string>
+	<string id="CODE_ENTRY" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[]]></string>
+
+	<string id="CODE_WINNER" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[BẠN ĐÃ MỞ KHÓA TẤT CẢ CÁC MÀN CHƠI!]]></string>
+	<string id="CODE_VILLAIN" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[BẠN ĐÃ MỞ KHÓA MÀN CHƠI VỚI TẤT CẢ CÁC ÁC NHÂN!]]></string>
+	<string id="CODE_WRONG" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[MÃ KHÔNG HỢP LỆ!]]></string>
+	
+	<string id="CODE_ALREADY_WINNER" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[TẤT CẢ CÁC MÀN CHƠI ĐÃ ĐƯỢC MỞ KHÓA!]]></string>
+	<string id="CODE_ALREADY_VILLAIN" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[MÀN CHƠI CỦA ÁC NHÂN ĐÃ ĐƯỢC MỞ KHÓA!]]></string>
+	
+	<string id="KEY_1" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[1]]></string>
+	<string id="KEY_2" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[2]]></string>
+	<string id="KEY_3" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[3]]></string>
+	<string id="KEY_4" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[4]]></string>
+	<string id="KEY_5" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[5]]></string>
+	<string id="KEY_6" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[6]]></string>
+	<string id="KEY_7" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[7]]></string>
+	<string id="KEY_8" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[8]]></string>
+	<string id="KEY_9" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[9]]></string>
+	<string id="KEY_10" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[0]]></string>
+	<string id="KEY_11" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Q]]></string>
+	<string id="KEY_12" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[W]]></string>
+	<string id="KEY_13" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[E]]></string>
+	<string id="KEY_14" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[R]]></string>
+	<string id="KEY_15" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[T]]></string>
+	<string id="KEY_16" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Y]]></string>
+	<string id="KEY_17" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[U]]></string>
+	<string id="KEY_18" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[I]]></string>
+	<string id="KEY_19" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[O]]></string>
+	<string id="KEY_20" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[P]]></string>
+	<string id="KEY_21" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[A]]></string>
+	<string id="KEY_22" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[S]]></string>
+	<string id="KEY_23" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[D]]></string>
+	<string id="KEY_24" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[F]]></string>
+	<string id="KEY_25" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[G]]></string>
+	<string id="KEY_26" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[H]]></string>
+	<string id="KEY_27" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[J]]></string>
+	<string id="KEY_28" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[K]]></string>
+	<string id="KEY_29" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[L]]></string>
+	<string id="KEY_30" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Z]]></string>
+	<string id="KEY_31" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[X]]></string>
+	<string id="KEY_32" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[C]]></string>
+	<string id="KEY_33" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[V]]></string>
+	<string id="KEY_34" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[B]]></string>
+	<string id="KEY_35" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[N]]></string>
+	<string id="KEY_36" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[M]]></string>
+	
+	<!--Unlock Codes-->
+	<string id="CODE_1" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[CHIẾN THẮNG]]></string>
+	<string id="CODE_2" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[ÁC NHÂN]]></string>
+	
+	<string id="CODE_PREVIEW" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[NHẬP MÃ "VILLAIN" ĐỂ MỞ KHÓA CÁC MÀN CHƠI ĐẶC BIỆT!]]></string>
+	
+	<!--PAUSE-->
+	<string id="STR_POPUP_PAUSE_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[TẠM DỪNG]]></string>
+	
+	<!--How To Play-->
+	<string id="STR_POP_HOW_TITLE" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[HƯỚNG DẪN CHƠI]]></string>
+	
+	<string id="STR_POP_HOW_TEXT_1_DESKTOP" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Nhấp vào bên trái hoặc bên phải của màn hình để tấn công. Kid Danger có thể tấn công kẻ thù khi chúng ở bên trong các thanh ở phía dưới.<br/> <br/>Những kẻ phản diện có hai đầu lâu cần hai lần đánh để hạ gục.]]></string>
+	<string id="STR_POP_HOW_TEXT_1_MOBILE" 	fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Chạm vào bên trái hoặc bên phải của màn hình để tấn công. Kid Danger có thể tấn công kẻ thù khi chúng ở bên trong các thanh ở phía dưới.<br/><br/>Những kẻ phản diện có hai đầu lâu cần hai lần đánh để hạ gục.]]></string>
+	<string id="STR_POP_HOW_TEXT_2" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Thu thập Bubblegum để vào Chế độ Bubblegum! <br/><br/>Ở chế độ Bubblegum, các thanh được mở rộng để có phạm vi tiếp cận lớn hơn, Kid Danger có thể tấn công kẻ thù ở xa hơn.]]></string>
+	<string id="STR_POP_HOW_TEXT_3" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Thu thập bánh pizza sushi để phục hồi sức khỏe của bạn.]]></string>
+	<string id="STR_POP_HOW_TEXT_4" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Nếu Kid Danger bị đánh bại, thì Captain Man sẽ bước vào!]]></string>
+	<string id="STR_POP_HOW_TEXT_5" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Đánh bại những ác nhân để<br/>giải cứu Jasper!]]></string>
+	
+	<!--Game Screen-->
+	<string id="STR_SCR_GAME_STAGE_TITLE" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[MÀN CHƠI ]]></string>
+	<string id="STR_SCR_GAME_CM_TURN" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[ĐẾN LƯỢT CAPTAIN MAN!]]></string>
+	<string id="STR_SCR_GAME_BB_MODE" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[CHẾ ĐỘ BUBBLEGUM !]]></string>
+	<string id="STR_SCR_GAME_TUT_SKIP" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Bỏ qua]]></string>
+	
+	<!--Exit Confirm Popup-->
+	<string id="STR_EXIT_POP_CONFIRM" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Bạn có chắc bạn muốn thoát?]]></string>
+	
+	<!--Tutorial Hud-->
+	<string id="STR_TUT_HUD_0_DESKTOP" 	fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Nhấp vào bên trái hoặc bên phải của màn hình để tấn công.]]></string>
+	<string id="STR_TUT_HUD_0_MOBILE" 	fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Nhấn vào bên trái hoặc bên phải của màn hình để tấn công.]]></string>
+	<string id="STR_TUT_HUD_1" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Kid Danger có thể tấn công kẻ thù khi chúng ở bên trong các thanh<br/>ở phía dưới.]]></string>
+	<string id="STR_TUT_HUD_2" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Thu thập bubblegum để vào Chế độ Bubblegum!]]></string>
+	<string id="STR_TUT_HUD_3" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="20"><![CDATA[Trong chế độ Bubblegum, các thanh được mở rộng để có phạm vi tiếp cận lớn hơn, Kid Danger có thể tấn công kẻ thù<br/>ở xa hơn.]]></string>
+	<string id="STR_TUT_HUD_4" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Sushi Pizza mang lại cho bạn <br/>nhiều máu hơn!]]></string>
+	<string id="STR_TUT_HUD_5" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Nếu Kid Danger bị đánh bại, thì Captain Man sẽ bước vào!]]></string>
+	<string id="STR_TUT_HUD_6" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Ác nhân có nhiều đầu lâu cần nhiều lần tấn công<br/>để đánh bại!]]></string>
+	<string id="STR_TUT_HUD_7" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Defeat the villains to rescue Jasper!]]></string>
+	
+	<!--ACHIEVEMENT-->
+	<string id="STR_POPUP_ACHIEVEMENT_HEADER" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[THÀNH TỰU]]></string>
+	
+	<string id="STR_POPUP_ACHIEVEMENT_UNLOCK" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[Mở khóa thành tựu]]></string>
+	
+	<string id="STR_POPUP_ACHIEVEMENT_TITLE_0" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[CHUYÊN GIA BUBBLEGUM]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_TITLE_1" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[THỊ TRẤN ANH HÙNG]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_TITLE_2" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[HOÀN TOÀN CÓ THỂ]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_TITLE_3" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[BẠN TỐT]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_TITLE_4" fontName="Troika Regular" fontScale="1.0" offsetX="0" offsetY="0"><![CDATA[ÁC NHÂN KẾT HỢP]]></string>
+	
+	<string id="STR_POPUP_ACHIEVEMENT_DESCRIPTION_0" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Kích hoạt chế độ bubblegum 2 lần trong một màn chơi.]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_DESCRIPTION_1" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Đánh bại Doctor Minyak.]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_DESCRIPTION_2" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Đánh bại Invisible Brad.]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_DESCRIPTION_3" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Giải cứu Jasper ít nhất một lần trong cả năm màn chơi.]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_DESCRIPTION_4" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Mở khóa màn chơi đặc biệt]]></string>
+	<string id="STR_POPUP_ACHIEVEMENT_DESCRIPTION_4_NO_CODE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Đánh bại tất cả ác nhân.]]></string>
+	
+	<!--End Screen-->
+	<string id="STR_POPUP_END_COMBO_HEADER" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[COMBOS:]]></string>
+	<string id="STR_POPUP_END_SCORE_HEADER" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[TỔNG ĐIỂM:]]></string>
+	<string id="STR_POPUP_END_SCORE_FORMAT" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	
+	<string id="STR_POPUP_END_JUNK_HEADER" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[JUNK 'N STUFF:]]></string>
+	<string id="STR_POPUP_END_JUNK_FORMAT" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	
+	<string id="STR_POPUP_WIN_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[BẠN ĐÃ GIẢI CỨU JASPER]]></string>
+	<string id="STR_POPUP_LOSE_TITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[BẠN ĐÃ THẤT BẠI]]></string>
+	
+	<string id="STR_POPUP_WIN_SUBTITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[XIN CHÚC MỪNG!]]></string>
+	<string id="STR_POPUP_LOSE_SUBTITLE" fontName="Troika Regular" fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[THỬ LẠI!]]></string>
+	
+</strings>

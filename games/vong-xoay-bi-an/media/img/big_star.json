@@ -1,0 +1,35 @@
+﻿{"frames": {
+
+"BigStar0000":
+{
+	"frame": {"x":5,"y":5,"w":112,"h":107},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":112,"h":107},
+	"sourceSize": {"w":112,"h":107}
+},
+"BigStar0001":
+{
+	"frame": {"x":122,"y":5,"w":112,"h":107},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":112,"h":107},
+	"sourceSize": {"w":112,"h":107}
+},
+"BigStar0002":
+{
+	"frame": {"x":5,"y":117,"w":112,"h":107},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":112,"h":107},
+	"sourceSize": {"w":112,"h":107}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "13.1.0.226",
+	"image": "big_star.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":256},
+	"scale": "1"
+}
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "Id": 1,
+        "Desc": "Tổng thời lượng trò chơi (x giờ)",
+        "Value": "2,4,6,8",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 2,
+        "Desc": "Thu thập x gỗ",
+        "Value": "50,100,150,200",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 3,
+        "Desc": "Thu thập x Tài nguyên gỗ",
+        "Value": "10000,100000,1000000,10000000",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 4,
+        "Desc": "Tuyển x thành viên",
+        "Value": "2,4,6,8",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 5,
+        "Desc": "Chứa x thú cưng",
+        "Value": "1,2,3,4",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 6,
+        "Desc": "Nhặt x rương vàng",
+        "Value": "30,50,100,200",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 7,
+        "Desc": "Sử dụng suốt đêm x lần",
+        "Value": "30,50,100,200",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 8,
+        "Desc": "Tăng tốc tài nguyên người dùng x lần",
+        "Value": "30,50,100,200",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 9,
+        "Desc": "Xây dựng x tàu",
+        "Value": "300,600,900,1200",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 10,
+        "Desc": "Tổng số chuyến đi đạt được x lần",
+        "Value": "4,6,8,10",
+        "Reward": "15,15,15,20"
+    },
+    {
+        "Id": 11,
+        "Desc": "Xem quảng cáo x lần",
+        "Value": "5,20,50,200",
+        "Reward": "15,15,15,20"
+    }
+]

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini Clash War</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Construct 3">
+
+	<link rel="deprecated-manifest" href="yandex-manifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Yandex Games SDK -->
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+	<script type="text/javascript">
+	if (YaGames) 
+	{
+		YaGames.init(
+		{
+			screen: 
+			{	
+			    fullscreen: false
+			},
+			yandexApp: {
+	        	enabled: false
+	    	},
+			adv: 
+			{
+		        onAdvClose: wasShown => 
+		        {
+		            console.info('adv closed!');
+		            console.log("Reanude game");
+		            cr_setSuspended(false);
+		            flgPlay = true;flgRPlay = true;
+		        }
+		    }
+		}).then(function (ysdk) 
+		{
+			window.ysdk = ysdk;
+		});
+	}
+
+
+	function closeAdsYandex()
+	{
+		console.log("");
+	}
+
+	function showAds()
+	{
+
+		console.log("Show Ads Yandex");
+		////////////////////////////////////////////////
+		try 
+		{
+			////////////////////////////////////////////////
+			ysdk.adv.showFullscreenAdv(
+			{
+				callbacks: 
+				{
+					onClose: function(wasShown){  console.log("Close Ads Yandex : "+wasShown);flgPlay = true;flgRPlay = true;},
+					onOpen: function(open)
+					{ 
+						console.log("Open Ads Yandex : "+open);
+						cr_setSuspended(true);
+						console.log("Prepare Action SDK yandx : ");flgPlay = false;flgRPlay = false; 
+					},
+					onError: function(error){ console.log("Error Ads Yandex : "+error);flgPlay = true;flgRPlay = true; },
+					onOffline: function(offline){ console.log("Offline Ads Yandex : "+offline);flgPlay = true;flgRPlay = true; }
+				}
+			});
+		}
+		catch(err) 
+		{
+			console.log("Reanude game for Ads Error");
+			flgPlay = true;flgRPlay = true;
+		}
+		////////////////////////////////////////////////
+	}	
+	</script>	
+</head>
+<body>
+<div id="fb-root"></div>
+
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	
+	
+
+</body>
+</html>

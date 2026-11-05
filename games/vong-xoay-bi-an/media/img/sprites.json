@@ -1,0 +1,35 @@
+﻿{"frames": [
+
+{
+	"filename": "hobbes0000",
+	"frame": {"x":5,"y":5,"w":162,"h":276},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":276},
+	"sourceSize": {"w":162,"h":276}
+}
+,{
+	"filename": "play_btn0000",
+	"frame": {"x":5,"y":286,"w":109,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":109,"h":110},
+	"sourceSize": {"w":109,"h":110}
+}
+,{
+	"filename": "settings_btn0000",
+	"frame": {"x":119,"y":286,"w":70,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":72},
+	"sourceSize": {"w":70,"h":72}
+}],
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "13.1.0.226",
+	"image": "sprites.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":512},
+	"scale": "1"
+}
+}

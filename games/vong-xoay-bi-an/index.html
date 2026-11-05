@@ -1,0 +1,453 @@
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+<script>
+
+		var GAME_WIDTH =750;
+
+		var GAME_HEIGHT = 500;
+
+	</script>
+
+<meta name="robots" content="noindex,nofollow" />
+
+
+
+<script src="js/phaser/phaser.js"></script>
+
+<script src='js/utils.js'></script>
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+
+
+
+<script src='js/main.js'></script>
+
+<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+
+<link rel="stylesheet" href="css/fonts_joe.css" type="text/css" charset="utf-8" />
+
+<link href="common.css" rel="stylesheet" type="text/css" />
+
+<script>
+
+	
+
+	
+
+	
+
+	
+
+	var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+
+	
+
+	bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+	
+
+	
+
+	
+
+	$.fn.textWidth = function(){
+
+	  var html_org = $(this).html();
+
+	  var html_calc = '<span>' + html_org + '</span>';
+
+	  $(this).html(html_calc);
+
+	  var width = $(this).find('span:first').width();
+
+	  $(this).html(html_org);
+
+	  return width;
+
+	};
+
+
+
+	function getSupportedProp(proparray){
+
+		var root=document.documentElement //reference root element of document
+
+		for (var i=0; i<proparray.length; i++){ //loop through possible properties
+
+			if (typeof root.style[proparray[i]]=="string"){ //if the property value is a string (versus undefined)
+
+				return proparray[i] //return that string
+
+			}
+
+		}
+
+	}
+
+
+
+	function getURLParameter(name) {
+
+			return decodeURI(
+
+				(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+
+			);
+
+	}
+
+
+
+	var scaleProp=getSupportedProp(['transform', '-ms-transform', '-webkit-transform','-o-transform','-moz-transform']) //get CSS3 property
+
+	
+
+	var isMobile = {
+
+		Android: function() {
+
+			return navigator.userAgent.match(/Android/i);
+
+		},
+
+		BlackBerry: function() {
+
+			return navigator.userAgent.match(/BlackBerry/i);
+
+		},
+
+		iOS: function() {
+
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+
+		},
+
+		Opera: function() {
+
+			return navigator.userAgent.match(/Opera Mini/i);
+
+		},
+
+		Windows: function() {
+
+			return navigator.userAgent.match(/IEMobile/i);
+
+		},
+
+		any: function() {
+
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+
+		}
+
+	};
+
+
+
+	var TOUCH_DEVICE = 'ontouchstart' in document.documentElement;
+
+	
+
+	if(isMobile.any()){
+
+		// Mobile!
+
+		TOUCH_DEVICE = true;
+
+	} else {
+
+		// Not mobile
+
+		
+
+		TOUCH_DEVICE = false;
+
+	}
+
+	if(TOUCH_DEVICE) {
+
+		SHOW_TOUCH_CONTROLS = true;
+
+	}else{
+
+		SHOW_TOUCH_CONTROLS = false;
+
+	}
+
+	//TOUCH_DEVICE = true;
+
+	//SHOW_TOUCH_CONTROLS = true;
+
+	var LANGUAGE;
+
+	var ENGLISH  = "en";
+
+	var WELSH = "cy";
+
+
+
+	var languageFromUrl = getURLParameter("lan");
+
+	var DEBUG_MODE = getURLParameter("debug");
+
+	DEBUG_MODE = "null";
+
+	
+
+	var lanFile;
+
+
+
+	var PLAYER_SCORE;
+
+	var SOUND_ON = true;
+
+
+
+	var MAX_SCALE;
+
+	MAX_SCALE = 8;
+
+
+
+	var cookieName = "SB_1";
+
+	
+
+	function getViewportSize(){
+
+		var e = window
+
+		, a = 'inner';
+
+		if ( !( 'innerWidth' in window ) ){
+
+			a = 'client';
+
+			e = document.documentElement || document.body;
+
+		}
+
+		return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+
+	}
+
+
+
+	var gameScale;
+
+	function setGameSize() {
+
+			
+
+		var screenSize = getViewportSize();
+
+		var scaleToUse = 1;
+
+		var scaleH = screenSize.width/GAME_WIDTH;
+
+		var scaleV = screenSize.height/GAME_HEIGHT;
+
+		//scaleToUse = Math.min(scaleH, scaleV);
+
+		scaleToUse = scaleV;
+
+			
+
+		if(!TOUCH_DEVICE) {
+
+			scaleH = Math.min(scaleH,1);
+
+			scaleV = Math.min(scaleH,1);
+
+		}
+
+		
+
+		
+
+		var scaleProp=getsupportedprop(['transform', '-ms-transform', '-webkit-transform','-o-transform','-moz-transform']) //get CSS3 property
+
+		
+
+		gameScale = scaleToUse;
+
+		
+
+		var warning = Dom.get("rotate");
+
+		var scaleH = screenSize.width/GAME_HEIGHT;
+
+		var scaleV = screenSize.height/GAME_WIDTH;
+
+		scaleToUse =scaleH
+
+		
+
+		warning.style.top =screenSize.height/2 + "px";
+
+		warning.style.left =  screenSize.width/2 + "px";
+
+		
+
+		warning.style.zIndex = 10000;
+
+		warning.style[scaleProp] = "translate(-50%,-50%) scale("+scaleToUse+")";
+
+		
+
+
+
+	}
+
+	
+
+	function setCheckRotation() {
+
+		window.addEventListener("resize", checkRotation, false);
+
+		window.addEventListener("orientationchange", checkRotation, false);
+
+		$('#rotate').hide();
+
+		checkRotation();
+
+	}
+
+	
+
+	function checkRotation() {
+
+		var screenSize = getViewportSize();
+
+	
+
+		//var r = Dom.get("rotate");
+
+		//var g = Dom.get("gameHolder");
+
+		/*
+
+		if(TOUCH_DEVICE) {
+
+			if(screenSize.width<screenSize.height) {
+
+				$(r).show();
+
+				$(g).hide();
+
+				
+
+			}else{
+
+				$(r).hide();
+
+				$(g).show();
+
+			}
+
+		}else{
+
+			$(r).hide();
+
+			$(g).show();
+
+		}
+
+		
+
+		window.scroll(0,1);*/
+
+		setGameSize();
+
+	}
+
+	
+
+	</script>
+
+</head>
+
+<body bgColor='#000000'>
+
+<div id="rotate" class="rotate">
+
+<img src="media/img/rotate.gif" />
+
+</div>
+
+<div id='fontPreload1' style='position:absolute;left:5000px;font-family:Conv_PlacardGFMod-Bold'>LOAD</div>
+
+<div id='fontPreload2' style='position:absolute;left:5000px;font-family:Conv_Joe_Font'>LOAD</div>
+
+<script>
+
+		function getQueryVariable(variable)
+
+			{
+
+				   var query = window.location.search.substring(1);
+
+				   var vars = query.split("&");
+
+				   for (var i=0;i<vars.length;i++) {
+
+						   var pair = vars[i].split("=");
+
+						   if(pair[0] == variable){return pair[1];}
+
+				   }
+
+				   return(false);
+
+			}
+
+		var LEVEL_WARP = null;
+
+		var languageFromUrl = getURLParameter("lan");
+
+		lanId = languageFromUrl;
+
+			
+
+			
+
+		$(document).ready(function(){
+
+		
+
+				lanId = getQueryVariable('lan');
+
+				var levelId = getQueryVariable('levelId');
+
+				if(levelId!==false) {
+
+					LEVEL_WARP = levelId;
+
+				}
+
+					
+
+				setCheckRotation();
+
+				init();
+
+				$('#fontPreload1').hide();
+
+				$('#fontPreload2').hide();
+
+		});
+
+	</script>
+
+	
+
+
+</body>
+
+</html>
+

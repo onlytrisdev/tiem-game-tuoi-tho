@@ -1,0 +1,27 @@
+﻿{"frames": {
+
+"MovingPlatform0000":
+{
+	"frame": {"x":5,"y":5,"w":50,"h":27},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":27},
+	"sourceSize": {"w":50,"h":27}
+},
+"MovingPlatform0001":
+{
+	"frame": {"x":5,"y":37,"w":50,"h":26},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":50,"h":27},
+	"sourceSize": {"w":50,"h":27}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "13.1.0.226",
+	"image": "moving_platform.png",
+	"format": "RGBA8888",
+	"size": {"w":64,"h":128},
+	"scale": "1"
+}
+}

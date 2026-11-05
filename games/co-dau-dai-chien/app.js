@@ -1,0 +1,37 @@
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'theGame');
+var bgmusic;
+var isMuted = false;
+var isMuted1 = false;
+var firsts = true;
+var canvas;
+var thumbCount = 0;
+var i = 0;
+var sname;
+var sno;
+game.state.add('boot', bootState);
+game.state.add('preload', Preload);
+game.state.add('titlescreen', titlescreen);
+game.state.add('levelselect', levelselect);
+game.state.add('level1_2', level1_2);
+game.state.add('level1_1', level1_1);
+game.state.add('level2_1', level2_1);
+game.state.add('level2_2', level2_2);
+game.state.add('level3_1', level3_1);
+game.state.add('level3_2', level3_2);
+game.state.add('thumb', thumb);
+game.state.add('endscreen', endscreen);
+game.state.add('settingfile', setFilenaming);
+game.state.start('boot');
+var canvas;
+function exportCanvasAsPNG(id, fileName, dataUr) {
+    var canvasElement = document.getElementById(id);
+    var MIME_TYPE = "image/png";
+    var imgURL = dataUr;
+    var dlLink = document.createElement('a');
+    dlLink.download = fileName;
+    dlLink.href = imgURL;
+    dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
+    document.body.appendChild(dlLink);
+    dlLink.click();
+    document.body.removeChild(dlLink);
+}
