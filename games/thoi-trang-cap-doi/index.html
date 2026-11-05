@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+
+<html style="height:100%;width:100%;" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, user-scalable=0" />
+
+	<meta name="apple-touch-fullscreen" content="yes">
+
+    <title>Thời trang cặp đôi</title>
+
+    <!-- <script type="text/javascript" src="js/game.js"></script> -->
+
+   
+
+    <script src="lib/kiwi.js"></script> 
+
+    <script src="lib/gl-matrix-min.js"></script>
+
+	<script src="lib/plugins/bitmapText/bitmapText-1.0.2.min.js"></script>
+
+    <script type="text/javascript" src="showState.js"></script>
+
+    <script type="text/javascript" src="playState.js"></script>
+
+    <script type="text/javascript" src="introState.js"></script>
+
+    <script type="text/javascript" src="loadingState.js"></script>
+
+    <script type="text/javascript" src="splashState.js"></script>
+
+    <script type="text/javascript" src="preloader.js"></script>
+
+    <script type="text/javascript" src="DressUp.js"></script>
+
+  <script src="../../assets/vendor/jquery-1.9.1.min.js"></script> 
+
+	<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+
+    
+
+<style>	
+
+#content, #content canvas {
+
+    position: relative;
+
+    left: 0;
+
+    right: 0;
+
+	top:0;
+
+    margin: auto;
+
+	/*max-width:98%;*/
+
+	z-index:50;
+
+	max-height:98%;
+
+}
+
+
+
+		
+
+#spilgames-splash-screen{
+
+            width: 100%;
+
+            height: 100%;
+
+        /*    background: url(assets/Splash_Image_GGG.png') top center no-repeat;*/ 
+
+            position: absolute;
+
+            z-index: 10000; /* Make sure its on top of the game */
+
+            background-size: 90%;
+
+            background-color:#FFF; /* Change to #FFF for GGG or Zibbo branded games */
+
+        }
+
+.spilgames-splash-screen-gone{
+
+            display:none !important;
+
+        }
+
+		
+
+.spilgames-branding-image{
+
+    display: block;
+
+	width:20%;
+
+    left: 5%;
+
+    bottom: 20%;
+
+    position: absolute;
+
+	z-index:60;
+
+}
+
+
+
+#spilgames-more-games-btn {
+
+	width:30%;
+
+	height:25%;
+
+	position:absolute;
+
+	bottom:8%;
+
+	right:3%;
+
+	z-index:65;
+
+    background-color: none;
+
+}
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+<body style="background-color: #000;margin: 0;padding: 0;height:100%;width:100%;" onblur="stopMusic()" onFocus="toggleMusic()">
+
+    <div id="spilgames-splash-screen" class="spilgames-splash-screen-gone"></div>
+
+    <div id="content"></div>
+
+    
+
+   
+
+   
+
+  <!-- declare the 'SpilData' object and the app ID property -->
+
+    <!-- Load the HTML5 API -->
+
+    <script type="text/javascript">
+
+	
+
+	
+
+    var SpilData = {
+
+        id: '576742227280291979' // You receive this value from Spil Games - DRESSUP 
+
+    };
+
+	var logoData = "logoData";
+
+	var splashData = "splashData";
+
+	var buttonProperties = "buttonProperties";
+
+	var oldaudio = true;
+
+	
+
+     /*GameAPI.loadAPI (function (apiInstance) {
+
+        // The API is ready for use.
+
+        console.log('GameAPI version ' + apiInstance.version + ' loaded!');
+
+		
+
+		// Checks if splash screen is enabled and if it has an 'action' method
+
+       //apiInstance.Branding.displaySplashScreen(continueGame);
+
+       
+
+			
+
+			 // Retrieves the logo from Spil
+
+     //logoData = apiInstance.Branding.getLogo();
+
+
+
+    
+
+	
+
+	//buttonProperties = apiInstance.Branding.getLink('more_games');
+
+		
+
+    }, SpilData); */
+
+	
+
+	function continueGame(){
+
+            // display game menu
+
+			game.states.switchState("IntroState");
+
+        };
+
+    </script>
+
+    
+
+    <script type="text/javascript">
+
+	
+
+/*	function splashScreen() {
+
+	 if(splashData.show && splashData.action) {
+
+            
+
+        var splashScreen = document.getElementById('spilgames-splash-screen');
+
+            splashScreen.addEventListener('click', splashData.action);
+
+            splashScreen.classList.remove('spilgames-splash-screen-gone');
+
+			
+
+			
+
+			var gggLogo = document.createElement("img");
+
+			gggLogo.setAttribute("src", "Splash_Image_GGG.png");
+
+			gggLogo.setAttribute("crossOrigin", "Anonymous");
+
+			gggLogo.setAttribute("width", "100%");
+
+			document.getElementById("spilgames-splash-screen").appendChild(gggLogo);*/
+
+			
+
+           /* var gggLogo = document.getElementById('spilgames-splash-screen').appendChild(img);
+
+			gggLogo.crossOrigin = "Anonymous";
+
+			gggLogo.src = "Splash_Image_GGG.png";*/
+
+            // Displays the splash screen for 2 seconds,
+
+       /*     window.setTimeout(function() {
+
+                splashScreen.classList.add('spilgames-splash-screen-gone');
+
+				game.states.switchState("IntroState");
+
+            }, 5000);
+
+
+
+            }	
+
+	}*/
+
+	
+
+	function createImage() {
+
+	    	window.setTimeout(function() {
+
+				var img = this.game.stage.canvas.toDataURL("image/octet-stream");
+
+				window.location.href = img;
+
+            }, 1000);	
+
+	}
+
+	
+
+	function printPage() {
+
+		window.setTimeout(function() {
+
+		var dataUrl = this.game.stage.canvas.toDataURL("image/png");
+
+	
+
+		var windowContent = '<!DOCTYPE html>';
+
+   	 	windowContent += '<html>'
+
+   		windowContent += '<head><title>Print canvas</title></head>';
+
+    	windowContent += '<body>'
+
+    	windowContent += '<img src="' + dataUrl + '">';
+
+    	windowContent += '</body>';
+
+    	windowContent += '</html>';
+
+    
+
+		var printWin = window.open();
+
+    	var printWinDoc = printWin.document;
+
+    	printWinDoc.write(windowContent);
+
+    	printWinDoc.close();
+
+	
+
+    	printWin.focus();
+
+    	printWin.print();
+
+    	printWin.close();
+
+		
+
+		showState.printBtn.visible = true;
+
+    	showState.saveBtn.visible = true;
+
+    	showState.backBtn.visible = true;
+
+		}, 1000);	
+
+	}
+
+	
+
+	function addMoreGames() {
+
+		 var link = document.createElement('a');
+
+   		 // Creates a link element    
+
+   		 // assign the outgoing click     
+
+   		  link.href = "http://localhost";
+
+//window.open("http://localhost");
+
+   		 link.onclick = buttonProperties.action;
+
+   		 link.ontouchend = buttonProperties.action;
+
+   		 link.setAttribute("id", "spilgames-more-games-btn");
+
+		link.setAttribute("target", "_blank");
+
+    	// Adds the element to the document
+
+   		 document.body.appendChild(link);
+
+	}
+
+	
+
+	function removeMoreGames() {
+
+		 var link = document.getElementById("spilgames-more-games-btn");
+
+		 document.body.removeChild(link);
+
+	}
+
+	
+
+	function stopMusic(){
+
+		game.audio.mute=true;	
+
+	}
+
+	
+
+	function toggleMusic(){
+
+		if(oldaudio)
+
+		{game.audio.mute=false;}
+
+		else 
+
+		{game.audio.mute=true;}
+
+		
+
+	}
+
+	        	
+
+	function pauseGame() {
+
+    // Insert here the logic to pause your game
+
+	stopMusic();
+
+    console.log('The advertisement is about to show, you should pause your game');
+
+}
+
+
+
+function resumeGame() {
+
+    // Insert here the logic to resume your game
+
+	toggleMusic();
+
+    console.log('The advertisment is shown and your game can now be resumed');
+
+}
+
+
+
+
+
+//GameAPI.GameBreak.request(pauseGame, resumeGame);  Add this to game to show ads
+
+    </script>
+
+</body>
+
+</html>

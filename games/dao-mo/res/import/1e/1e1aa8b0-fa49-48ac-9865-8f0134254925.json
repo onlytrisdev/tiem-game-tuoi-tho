@@ -1,0 +1,371 @@
+{
+    "__type__": "cc.JsonAsset",
+    "_name": "en",
+    "json": {
+        "ship": [{
+            "id": 0,
+            "name": "Initial Drill",
+            "info": "The first drill machine owned."
+        }, {
+            "id": 1,
+            "name": "Brass Drill",
+            "info": "Initial drill improved version, slightly increased power."
+        }, {
+            "id": 2,
+            "name": "Cat Claw Drill",
+            "info": "Lovely painting and can bring luck."
+        }, {
+            "id": 3,
+            "name": "Spaceship I",
+            "info": "A drill modified from a spacecraft."
+        }, {
+            "id": 4,
+            "name": "Chainsaw Drill",
+            "info": "Flexible and lightweight, strong excavation ability."
+        }, {
+            "id": 5,
+            "name": "Jade Drill",
+            "info": "Powered by Jade Gems, continuous power stronger."
+        }, {
+            "id": 6,
+            "name": "Spaceship II",
+            "info": "Further improved spacecraft model."
+        }, {
+            "id": 7,
+            "name": "Umbrella",
+            "info": "An umbrella drill that rains when moving, not leaking oil."
+        }, {
+            "id": 8,
+            "name": "Dark Crystal",
+            "info": "A dark body decorated with a large number of crystals."
+        }, {
+            "id": 9,
+            "name": "Beetle Drill",
+            "info": "It is as hard as a beetle and very fuel efficient."
+        }, {
+            "id": 10,
+            "name": "Gear Drill",
+            "info": "The gears are just decorations, the designer said."
+        }, {
+            "id": 11,
+            "name": "Robot Bear",
+            "info": "A drill like a teddy bear."
+        }, {
+            "id": 12,
+            "name": "Supersonic Drill",
+            "info": "It is easier to detect treasures using smashes rocks with shock waves."
+        }, {
+            "id": 13,
+            "name": "Cordon Drill",
+            "info": "Yellow-black painting drill machine seems to warn of the danger."
+        }, {
+            "id": 14,
+            "name": "Venom Drill",
+            "info": "Can corrode rocks, dig ability improved a lot."
+        }, {
+            "id": 15,
+            "name": "Fanatic Crystal",
+            "info": "Made by hard crystal and it is easy to crush the rocks."
+        }, {
+            "id": 16,
+            "name": "Composite Bow",
+            "info": "Bow arrow shape drill, very flexible and lightweight."
+        }, {
+            "id": 17,
+            "name": "Pulse Blue",
+            "info": "Upgraded engine, increase  power output."
+        }, {
+            "id": 18,
+            "name": "Rune Crystal",
+            "info": "Powered by crystals, almost need no fuel."
+        }, {
+            "id": 19,
+            "name": "Bat Drill",
+            "info": "With extremely high detection capabilities, easy to find treasures."
+        }, {
+            "id": 20,
+            "name": "Moth Drill",
+            "info": "Ability balance and powerful, no short board."
+        }, {
+            "id": 21,
+            "name": "Lava Drill",
+            "info": "Excavate rocks, melt rocks, and the strongest drill."
+        }],
+        "chest": [{
+            "id": 0,
+            "name": "White Gem",
+            "info": "White gems, can change small amount of money."
+        }, {
+            "id": 1,
+            "name": "Blue Gem",
+            "info": "Blue gems, can change some money."
+        }, {
+            "id": 2,
+            "name": "Green Gem",
+            "info": "Green gems, can change more money."
+        }, {
+            "id": 3,
+            "name": "Pink Gem",
+            "info": "Pink gems, can change a lot of money."
+        }, {
+            "id": 4,
+            "name": "Gold Gem",
+            "info": "Gold gems, very valuable."
+        }, {
+            "id": 5,
+            "name": "White Gem Mine",
+            "info": "A pile of white gems."
+        }, {
+            "id": 6,
+            "name": "Blue Gem Mine",
+            "info": "A pile of blue gems."
+        }, {
+            "id": 7,
+            "name": "Green Gem Mine",
+            "info": "A pile of green gems."
+        }, {
+            "id": 8,
+            "name": "Pink Gem Mine",
+            "info": "A pile of pink gems."
+        }, {
+            "id": 9,
+            "name": "Gold Gem Mine",
+            "info": "A pile of gold gems."
+        }, {
+            "id": 10,
+            "name": "Cheap Potion",
+            "info": "Abandoned cheap potion."
+        }, {
+            "id": 11,
+            "name": "Green Potion",
+            "info": "Green potion, very common."
+        }, {
+            "id": 12,
+            "name": "HP Potion",
+            "info": "Recover HP quickly, expensive potion."
+        }, {
+            "id": 13,
+            "name": "Potion Punch",
+            "info": "Illusion, can change a lot of money."
+        }, {
+            "id": 14,
+            "name": "Golden Dragon Potion",
+            "info": "Made by the lost ancient technology, unknown ingredients"
+        }, {
+            "id": 15,
+            "name": "Ancient Scroll I",
+            "info": "Contain a hint of magic."
+        }, {
+            "id": 16,
+            "name": "Ancient Scroll II",
+            "info": "Ancient scroll made by senior magician."
+        }, {
+            "id": 17,
+            "name": "Ancient Scroll III",
+            "info": "Ancient scroll with a small amount of magic."
+        }, {
+            "id": 18,
+            "name": "Ancient Scroll IV",
+            "info": "Ancient scroll with a lot of magic."
+        }, {
+            "id": 19,
+            "name": "Ancient Scroll V",
+            "info": "High quality reel, seal with the upper magic."
+        }, {
+            "id": 20,
+            "name": "Common Cap",
+            "info": "Cap that throw into the chest."
+        }, {
+            "id": 21,
+            "name": "Blue Cap",
+            "info": "Cap that may have a little value."
+        }, {
+            "id": 22,
+            "name": "Green Cap",
+            "info": "Less common green cap."
+        }, {
+            "id": 23,
+            "name": "Purple Cap",
+            "info": "Famous brand cap, rare finite version."
+        }, {
+            "id": 24,
+            "name": "Gold Cap",
+            "info": "Made by gold, one and only."
+        }, {
+            "id": 25,
+            "name": "Round Orb",
+            "info": "Plain transparent orb."
+        }, {
+            "id": 26,
+            "name": "Heart Orb",
+            "info": "With heart sharp."
+        }, {
+            "id": 27,
+            "name": "Forest Orb",
+            "info": "With forest wind."
+        }, {
+            "id": 28,
+            "name": "Star Orb",
+            "info": "With stars sharp."
+        }, {
+            "id": 29,
+            "name": "Gold Orb",
+            "info": "Quả cầu làm bằng vàng."
+        }, {
+            "id": 30,
+            "name": "Easter Egg",
+            "info": "Trứng gà, để làm gì chứ."
+        }, {
+            "id": 31,
+            "name": "Blue Egg",
+            "info": "Trứng xanh lá cây, bị mốc rồi!"
+        }, {
+            "id": 32,
+            "name": "Green Egg",
+            "info": "Trứng xanh của Hulk?"
+        }, {
+            "id": 33,
+            "name": "Pink Egg",
+            "info": "Trứng màu hồng?"
+        }, {
+            "id": 34,
+            "name": "Gold Egg",
+            "info": "Trứng mạ vàng, cũng chả ai muốn có nó."
+        }, {
+            "id": 35,
+            "name": "Brick",
+            "info": "Gạch xây nhà?"
+        }, {
+            "id": 36,
+            "name": "Gift Scroll",
+            "info": "Giấy vệ sinh."
+        }, {
+            "id": 37,
+            "name": "Ancient Engine",
+            "info": "Đá ma thuật cổ đại, rất có giá trị về mặt lịch sử, nhưng không ai biết cách dùng nó."
+        }, {
+            "id": 38,
+            "name": "Pink Mushroom",
+            "info": "Nấm độc, không nên ăn."
+        }, {
+            "id": 39,
+            "name": "Gold Mushroom",
+            "info": "Nấm bằng vàng, rõ ràng là không nên ăn."
+        }, {
+            "id": 40,
+            "name": "Abandoned Letter",
+            "info": "Chỉ là 1 mảnh giấy."
+        }, {
+            "id": 41,
+            "name": "Clover",
+            "info": "Cần sa, rất dễ tìm."
+        }, {
+            "id": 42,
+            "name": "Lucky Clover",
+            "info": "Cỏ ba lá may mắn trong truyền thuyết."
+        }, {
+            "id": 43,
+            "name": "Commemorative Badge",
+            "info": "Vô giá hay không có giá?."
+        }, {
+            "id": 44,
+            "name": "Gold Apple",
+            "info": "Kho báu nổi tiếng trong thần thoại Hy Lạp."
+        }, {
+            "id": 45,
+            "name": "Subfebrile Stone",
+            "info": "Tạo ra ảo ảnh?"
+        }, {
+            "id": 46,
+            "name": "Crystal Coral",
+            "info": "Pha lê đáy biển."
+        }, {
+            "id": 47,
+            "name": "Power Crown",
+            "info": "Vương miện của công chúa."
+        }, {
+            "id": 48,
+            "name": "Surprise Box",
+            "info": "Rất đẹp, nhưng không có giá trị gì."
+        }, {
+            "id": 49,
+            "name": "Courage Badge",
+            "info": "Huy hiệu của lòng dũng cảm."
+        }, {
+            "id": 50,
+            "name": "Rune Stone",
+            "info": "1 mảnh của loại đá quý."
+        }, {
+            "id": 51,
+            "name": "Triangularsymbol",
+            "info": "Dùng để đánh dấu."
+        }, {
+            "id": 52,
+            "name": "Soldier Honor",
+            "info": "Rất dũng cảm."
+        }, {
+            "id": 53,
+            "name": "Silver Trophy",
+            "info": "Rất nhiều loại đá quý."
+        }, {
+            "id": 54,
+            "name": "Gold Compass",
+            "info": "Chỉ hướng đến hòm kho máu."
+        }, {
+            "id": 55,
+            "name": "Fishbone",
+            "info": "Cá thối."
+        }, {
+            "id": 56,
+            "name": "Tush",
+            "info": "Răng của loài quái vật nào đó."
+        }, {
+            "id": 57,
+            "name": "Air Fang",
+            "info": "Có chứa chất độc, không nên chạm vào."
+        }, {
+            "id": 58,
+            "name": "Soul Bone",
+            "info": "Phát ra ánh sáng kỳ lạ, sẽ nghe được âm thanh từ phía bên kia thế giới."
+        }, {
+            "id": 59,
+            "name": "Throne Trophy",
+            "info": "Kho báu quý hiếm, phải rất may mắn mới nhận được."
+        }, {
+            "id": 0
+        }],
+        "item": [{
+            "id": 0,
+            "name": "POWER UPGRADE",
+            "info": "Thêm sức mạnh {{0}} điểm và đào nhanh hơn."
+        }, {
+            "id": 1,
+            "name": "OIL UPGRADE",
+            "info": "Thêm nhiên liệu {{0}} hoạt động lâu hơn."
+        }, {
+            "id": 2,
+            "name": "LUCK UPGRADE",
+            "info": "Tăng tỉ lệ {{0}} nhận thêm điểm và vàng."
+        }, {
+            "id": 3,
+            "name": "NAIL REWARD ",
+            "info": "Nhận đinh gim {{0}}, bóp vỡ bong bóng và nhận thưởng."
+        }, {
+            "id": 4,
+            "name": "CHEST KEY",
+            "info": "Chìa khóa {{0}}, mở hòm kho báu."
+        }, {
+            "id": 5,
+            "name": "BOMB",
+            "info": "Nhận Bom {{0}}, phá hủy đá và các loại chất rắn khác."
+        }, {
+            "id": 6,
+            "name": "OVERTIMER",
+            "info": "Thêm thời gian {{0}}, đào lâu hơn."
+        }],
+        "tutorial": {
+            "bubble": ["Hãy chọn 1 bong bóng.\nPhá vỡ nó để nhận quà."],
+            "shop": ["Đã có đủ kim cương! Vào Shop và mua mũi khoan mới.", "Chọn mũi khoan muốn mua.", "Mua và sử dụng nó."]
+        }
+    }
+}

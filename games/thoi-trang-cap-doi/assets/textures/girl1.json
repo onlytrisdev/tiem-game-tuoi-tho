@@ -1,0 +1,191 @@
+{
+	"name":"girl1",
+	"cells": [
+		{"file": "accessory1.png", "x":618, "y":1916, "w":84, "h":102, "orgX":211, "orgY":269},
+		{"file": "accessory10.png", "x":280, "y":1944, "w":156, "h":102, "orgX":158, "orgY":69},
+		{"file": "accessory11.png", "x":628, "y":1828, "w":126, "h":72, "orgX":171, "orgY":82},
+		{"file": "accessory12.png", "x":438, "y":1916, "w":178, "h":108, "orgX":174, "orgY":97},
+		{"file": "accessory13.png", "x":184, "y":1948, "w":94, "h":88, "orgX":259, "orgY":113},
+		{"file": "accessory14.png", "x":798, "y":1106, "w":48, "h":44, "orgX":285, "orgY":128},
+		{"file": "accessory15.png", "x":1234, "y":1744, "w":110, "h":162, "orgX":124, "orgY":262},
+		{"file": "accessory2.png", "x":398, "y":1640, "w":228, "h":274, "orgX":225, "orgY":280},
+		{"file": "accessory3.png", "x":798, "y":1210, "w":132, "h":142, "orgX":193, "orgY":35},
+		{"file": "accessory4.png", "x":708, "y":1594, "w":134, "h":44, "orgX":188, "orgY":183},
+		{"file": "accessory5.png", "x":930, "y":1828, "w":108, "h":60, "orgX":203, "orgY":84},
+		{"file": "accessory6.png", "x":756, "y":1828, "w":172, "h":62, "orgX":177, "orgY":84},
+		{"file": "accessory7.png", "x":2, "y":1948, "w":180, "h":90, "orgX":172, "orgY":65},
+		{"file": "accessory8.png", "x":248, "y":1376, "w":114, "h":240, "orgX":123, "orgY":281},
+		{"file": "accessory9.png", "x":980, "y":1632, "w":160, "h":176, "orgX":296, "orgY":544},
+
+		{"file": "bikini.png", "x":700, "y":1354, "w":150, "h":190, "orgX":191, "orgY":330},
+
+		{"file": "bottom1.png", "x":1092, "y":1436, "w":216, "h":144, "orgX":201, "orgY":406},
+		{"file": "bottom10.png", "x":1236, "y":1582, "w":176, "h":160, "orgX":212, "orgY":422},
+		{"file": "bottom2.png", "x":704, "y":1902, "w":216, "h":144, "orgX":201, "orgY":406},
+		{"file": "bottom3.png", "x":922, "y":1892, "w":214, "h":152, "orgX":195, "orgY":406},
+		{"file": "bottom4.png", "x":2, "y":946, "w":258, "h":138, "orgX":161, "orgY":406},
+		{"file": "bottom5.png", "x":1212, "y":354, "w":190, "h":162, "orgX":206, "orgY":406},
+		{"file": "bottom6.png", "x":1204, "y":518, "w":208, "h":146, "orgX":196, "orgY":405},
+		{"file": "bottom7.png", "x":252, "y":1220, "w":248, "h":154, "orgX":173, "orgY":406},
+		{"file": "bottom8.png", "x":932, "y":1210, "w":188, "h":148, "orgX":200, "orgY":405},
+		{"file": "bottom9.png", "x":220, "y":1646, "w":176, "h":296, "orgX":213, "orgY":424},
+
+		{"file": "dress1.png", "x":312, "y":2, "w":302, "h":334, "orgX":137, "orgY":257},
+		{"file": "dress10.png", "x":1152, "y":666, "w":264, "h":304, "orgX":162, "orgY":262},
+		{"file": "dress2.png", "x":2, "y":2, "w":308, "h":320, "orgX":139, "orgY":263},
+		{"file": "dress3.png", "x":2, "y":324, "w":300, "h":308, "orgX":139, "orgY":262},
+		{"file": "dress4.png", "x":866, "y":896, "w":266, "h":312, "orgX":156, "orgY":259},
+		{"file": "dress5.png", "x":284, "y":936, "w":262, "h":282, "orgX":155, "orgY":262},
+		{"file": "dress6.png", "x":1134, "y":972, "w":264, "h":286, "orgX":161, "orgY":272},
+		{"file": "dress7.png", "x":2, "y":1646, "w":216, "h":300, "orgX":190, "orgY":259},
+		{"file": "dress8.png", "x":2, "y":1344, "w":244, "h":300, "orgX":172, "orgY":262},
+		{"file": "dress9.png", "x":616, "y":2, "w":296, "h":304, "orgX":140, "orgY":258},
+
+		{"file": "eye_01/01_aqua.png", "x":1308, "y":1992, "w":80, "h":40, "orgX":199, "orgY":182},
+		{"file": "eye_01/01_blue.png", "x":1308, "y":1950, "w":80, "h":40, "orgX":199, "orgY":182},
+		{"file": "eye_01/01_green.png", "x":1226, "y":1992, "w":80, "h":40, "orgX":199, "orgY":182},
+		{"file": "eye_01/01_honey.png", "x":1226, "y":1950, "w":80, "h":40, "orgX":199, "orgY":182},
+		{"file": "eye_01/01_pink.png", "x":1308, "y":1908, "w":80, "h":40, "orgX":199, "orgY":182},
+		{"file": "eye_01/01_tinto.png", "x":1226, "y":1908, "w":80, "h":40, "orgX":199, "orgY":182},
+
+		{"file": "eye_02/02_aqua.png", "x":1138, "y":1826, "w":90, "h":38, "orgX":196, "orgY":182},
+		{"file": "eye_02/02_blue.png", "x":1142, "y":1786, "w":90, "h":38, "orgX":196, "orgY":182},
+		{"file": "eye_02/02_green.png", "x":1142, "y":1746, "w":90, "h":38, "orgX":196, "orgY":182},
+		{"file": "eye_02/02_honey.png", "x":1142, "y":1706, "w":90, "h":38, "orgX":196, "orgY":182},
+		{"file": "eye_02/02_pink.png", "x":1142, "y":1666, "w":90, "h":38, "orgX":196, "orgY":182},
+		{"file": "eye_02/02_tinto.png", "x":1142, "y":1626, "w":90, "h":38, "orgX":196, "orgY":182},
+		
+		{"file": "eye_03/03_aqua.png", "x":1040, "y":1810, "w":96, "h":42, "orgX":195, "orgY":179},
+		{"file": "eye_03/03_blue.png", "x":1310, "y":1524, "w":96, "h":42, "orgX":195, "orgY":179},
+		{"file": "eye_03/03_green.png", "x":1310, "y":1480, "w":96, "h":42, "orgX":195, "orgY":179},
+		{"file": "eye_03/03_honey.png", "x":1310, "y":1436, "w":96, "h":42, "orgX":195, "orgY":179},
+		{"file": "eye_03/03_pink.png", "x":1138, "y":1582, "w":96, "h":42, "orgX":195, "orgY":179},
+		{"file": "eye_03/03_tinto.png", "x":844, "y":1594, "w":96, "h":42, "orgX":195, "orgY":179},
+		
+		{"file": "eye_04/04_aqua.png", "x":1138, "y":1992, "w":86, "h":40, "orgX":195, "orgY":180},
+		{"file": "eye_04/04_blue.png", "x":1138, "y":1950, "w":86, "h":40, "orgX":195, "orgY":180},
+		{"file": "eye_04/04_green.png", "x":1138, "y":1908, "w":86, "h":40, "orgX":195, "orgY":180},
+		{"file": "eye_04/04_honey.png", "x":1138, "y":1866, "w":86, "h":40, "orgX":195, "orgY":180},
+		{"file": "eye_04/04_pink.png", "x":620, "y":1598, "w":86, "h":40, "orgX":195, "orgY":180},
+		{"file": "eye_04/04_tinto.png", "x":532, "y":1598, "w":86, "h":40, "orgX":195, "orgY":180},
+		
+		{"file": "eye_05/05_aqua.png", "x":1040, "y":1584, "w":96, "h":46, "orgX":194, "orgY":185},
+		{"file": "eye_05/05_blue.png", "x":994, "y":1536, "w":96, "h":46, "orgX":194, "orgY":185},
+		{"file": "eye_05/05_green.png", "x":942, "y":1584, "w":96, "h":46, "orgX":194, "orgY":185},
+		{"file": "eye_05/05_honey.png", "x":896, "y":1536, "w":96, "h":46, "orgX":194, "orgY":185},
+		{"file": "eye_05/05_pink.png", "x":798, "y":1546, "w":96, "h":46, "orgX":194, "orgY":185},
+		{"file": "eye_05/05_tinto.png", "x":700, "y":1546, "w":96, "h":46, "orgX":194, "orgY":185},
+		
+		{"file": "eyebrow1.png", "x":364, "y":1602, "w":82, "h":14, "orgX":199, "orgY":175},
+		{"file": "eyebrow2.png", "x":342, "y":1618, "w":92, "h":20, "orgX":196, "orgY":175},
+		{"file": "eyebrow3.png", "x":798, "y":1096, "w":56, "h":8, "orgX":207, "orgY":175},
+		{"file": "eyebrow4.png", "x":248, "y":1618, "w":92, "h":20, "orgX":197, "orgY":178},
+		{"file": "eyebrow5.png", "x":502, "y":1354, "w":94, "h":16, "orgX":197, "orgY":174},
+		
+		{"file": "hair1.png", "x":804, "y":1640, "w":174, "h":186, "orgX":185, "orgY":102},
+		{"file": "hair10.png", "x":1212, "y":178, "w":202, "h":174, "orgX":158, "orgY":102},
+		{"file": "hair11.png", "x":548, "y":1096, "w":248, "h":256, "orgX":139, "orgY":103},
+		{"file": "hair12.png", "x":2, "y":1086, "w":248, "h":256, "orgX":139, "orgY":103},
+		{"file": "hair13.png", "x":586, "y":856, "w":278, "h":238, "orgX":146, "orgY":99},
+		{"file": "hair14.png", "x":872, "y":656, "w":278, "h":238, "orgX":146, "orgY":99},
+		{"file": "hair15.png", "x":910, "y":394, "w":292, "h":260, "orgX":123, "orgY":93},
+		{"file": "hair16.png", "x":616, "y":308, "w":292, "h":260, "orgX":123, "orgY":93},
+		{"file": "hair17.png", "x":532, "y":1372, "w":166, "h":224, "orgX":184, "orgY":102},
+		{"file": "hair18.png", "x":364, "y":1376, "w":166, "h":224, "orgX":184, "orgY":102},
+		{"file": "hair19.png", "x":588, "y":570, "w":282, "h":284, "orgX":120, "orgY":91},
+		{"file": "hair2.png", "x":628, "y":1640, "w":174, "h":186, "orgX":185, "orgY":102},
+		{"file": "hair20.png", "x":304, "y":338, "w":282, "h":284, "orgX":120, "orgY":91},
+		{"file": "hair3.png", "x":852, "y":1360, "w":232, "h":174, "orgX":172, "orgY":91},
+		{"file": "hair4.png", "x":1122, "y":1260, "w":232, "h":174, "orgX":172, "orgY":91},
+		{"file": "hair5.png", "x":914, "y":198, "w":296, "h":194, "orgX":136, "orgY":99},
+		{"file": "hair6.png", "x":914, "y":2, "w":296, "h":194, "orgX":136, "orgY":99},
+		{"file": "hair7.png", "x":2, "y":634, "w":280, "h":310, "orgX":132, "orgY":98},
+		{"file": "hair8.png", "x":304, "y":624, "w":280, "h":310, "orgX":132, "orgY":98},
+		{"file": "hair9.png", "x":1212, "y":2, "w":202, "h":174, "orgX":158, "orgY":102}
+	],
+	"sequences" : [
+		{
+			"name":"Accessory",
+			"cells":[
+				0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"Bottom",
+			"cells":[
+				16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"Dress",
+			"cells":[
+				26, 27, 28, 29, 30, 31, 32, 33, 34, 35
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"eyes_1",
+			"cells":[
+				36, 37, 38, 39, 40, 41
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"eyes_2",
+			"cells":[
+				42, 43, 44, 45, 46, 47
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"eyes_3",
+			"cells":[
+				48, 49, 50, 51, 52, 53
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"eyes_4",
+			"cells":[
+				54, 55, 56, 57, 58, 59
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"eyes_5",
+			"cells":[
+				60, 61, 62, 63, 64, 65
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"Eyebrows",
+			"cells":[
+				66, 67, 68, 69, 70
+			],
+			"loop":false,
+			"speed":0.1
+		},
+		{
+			"name":"Hair",
+			"cells":[
+				71, 72, 73, 74, 75,
+				76, 77, 78, 79, 80,
+				81, 82, 83, 84, 85,
+				86, 87, 88, 89, 90
+			],
+			"loop":false,
+			"speed":0.1
+		}
+	]
+}
