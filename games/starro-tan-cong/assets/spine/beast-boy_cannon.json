@@ -1,0 +1,19 @@
+{
+    "skeleton": { "hash": "qQkxB25tgHI", "spine": "4.0.58", "x": -107.5, "y": -0.02, "width": 215, "height": 181, "images": "./images_cannon/", "audio": "" },
+    "bones": [{ "name": "root" }],
+    "slots": [{ "name": "beast-boy_cannon_blinking", "bone": "root", "attachment": "beast-boy_cannon_01" }],
+    "skins": [{ "name": "default", "attachments": { "beast-boy_cannon_blinking": { "beast-boy_cannon_01": { "y": 90.48, "width": 215, "height": 181 }, "beast-boy_cannon_02": { "y": 90.48, "width": 215, "height": 182 } } } }],
+    "animations": {
+        "anim": {
+            "slots": {
+                "beast-boy_cannon_blinking": {
+                    "attachment": [
+                        { "time": 0.8333, "name": "beast-boy_cannon_02" },
+                        { "time": 0.9, "name": "beast-boy_cannon_01" },
+                        { "time": 1.6, "name": "beast-boy_cannon_01" }
+                    ]
+                }
+            }
+        }
+    }
+}

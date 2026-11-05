@@ -1,0 +1,67 @@
+{
+	"shop": {
+			"T1_ru": "Красный командир",
+			"D1_ru": "Один из главных командиров, квадрат четко следит за правилами игры и карает всех, кто их нарушает",
+			"P1_ru": "",
+
+			"T2_ru": "Лютый БОСС",
+			"D2_ru": "Злой и сердитый тайный БОСС игры, от него никто не уйдет безнаказанным, он следит за всеми, и стреляет наповал",
+			"P2_ru": "Цена: 10000 Очков и 35 Звезд",
+
+			"T3_ru": "Робот Кукла",
+			"D3_ru": "Робот, созданный злыми гениями для контроля игроков, безжалостно карает всех, кто нарушает правила игры",
+			"P3_ru": "Цена: 30000 Очков и 60 Звезд",
+
+			"T4_ru": "Всякие штуки для покупки",
+			"D41_ru": "Можно превысить лимит на 2 выстрела",
+			"D42_ru": "Получить 500 очков, которые пригодятся для покупки персонажей",
+			
+			"S_ru": "В запасе: ",
+			
+			
+			"T1_en": "Chiến binh đỏ",
+			"D1_en": "Một trong những chỉ huy chính, hình vuông tuân thủ rõ ràng luật chơi và trừng phạt bất cứ ai vi phạm chúng",
+			"P1_en": "",
+
+			"T2_en": "Ông trùm áo đen",
+			"D2_en": "BOSS bí mật của trò chơi, không ai có thể qua mắt được nó, hắn ta quan sát mọi người và bắn ngay tại chỗ",
+			"P2_en": "Giá: 10000 Điểm và 35 Sao",
+
+			"T3_en": "Robot Búp bê",
+			"D3_en": "Một con robot được tạo ra bởi những thiên tài độc ác để điều khiển người chơi, trừng phạt không thương tiếc bất cứ ai vi phạm luật chơi",
+			"P3_en": "Giá: 30000 Điểm và 60 Sao",
+
+			"T4_en": "Tất cả những thứ có thể mua",
+			"D41_en": "Bạn có thể vượt quá giới hạn 2 lần bắn",
+			"D42_en": "Nhận 500 điểm sẽ hữu ích khi mua nhân vật",
+			
+			"S_en": "Trong kho: "
+	
+	
+			},
+	
+	"game": {
+			"id1_ru": "",
+			"id2_ru": "",
+			"id3_ru": "",
+			"id4_ru": "",
+			
+			"id1_en": "",
+			"id2_en": "",
+			"id3_en": "",
+			"id4_en": ""
+	
+	
+			},
+	"end_score": {
+			"s_ru": "Очки",
+			"d_ru": "Удвоенные очки!",
+						
+			"s_en": "Điểm",
+			"d_en": "Nhân đôi điểm!"
+		
+	
+	
+			}
+	
+}

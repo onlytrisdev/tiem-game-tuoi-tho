@@ -1,0 +1,134 @@
+{
+    "skeleton": {
+        "hash": "Wohddwf4XV0",
+        "spine": "4.0.56",
+        "x": -389.88,
+        "y": -307.51,
+        "width": 703.55,
+        "height": 1046.06,
+        "images": "./images_flying/",
+        "audio": "/Users/dabntz/Creative Cloud Files/CARTOON NETWORK/CN TTG & DC Superhero Girls - Alien Attack/CHARACTERS/HEROES/BEAST BOY/Spine"
+    },
+    "bones": [
+        { "name": "root" },
+        { "name": "shoe_right", "parent": "root", "length": 109.23, "rotation": 72.72, "x": 22.94, "y": -8.81 },
+        { "name": "shoe_left", "parent": "root", "length": 92.63, "rotation": 121.7, "x": -201.89, "y": 19.01 },
+        { "name": "arm_right", "parent": "root", "length": 249.14, "rotation": -102.36, "x": -25.73, "y": 171.98 },
+        { "name": "arm_left", "parent": "root", "length": 210.02, "rotation": -100.81, "x": -92.95, "y": 158.08 },
+        { "name": "hand_left", "parent": "arm_left", "length": 114.73, "rotation": 18.94, "x": 235.06, "y": 4.78 },
+        { "name": "hand_right", "parent": "arm_right", "length": 139.55, "rotation": 23.85, "x": 259.97, "y": 4.74 },
+        { "name": "leg_right", "parent": "root", "length": 170.15, "rotation": 52.19, "x": 66.98, "y": -80.66 },
+        { "name": "head", "parent": "root", "length": 136.34, "rotation": 107.82, "x": -30.37, "y": 162.71 },
+        { "name": "ear", "parent": "head", "length": 141.46, "rotation": -105.94, "x": 154.54, "y": -56.98 },
+        { "name": "hair", "parent": "head", "x": 197.22, "y": -196.56 },
+        { "name": "hair_bottom", "parent": "hair", "length": 46.37, "rotation": -121.12, "x": 45.31, "y": -69.53 },
+        { "name": "hair_top", "parent": "hair", "length": 37.37, "rotation": 70, "x": 233.48, "y": 81.36 },
+        { "name": "eyebrow_right", "parent": "head", "rotation": 63.34, "x": 368.38, "y": -54.74 },
+        { "name": "eyebrow_left", "parent": "head", "rotation": 63.34, "x": 475.56, "y": 40.09 },
+        { "name": "leg_left", "parent": "root", "length": 56.92, "rotation": 130.6, "x": -32, "y": 35.85 },
+        { "name": "hair_toupee", "parent": "hair", "length": 65.66, "rotation": 36.1, "x": 258.39, "y": 64.15 }
+    ],
+    "slots": [
+        { "name": "body", "bone": "root", "attachment": "body" },
+        { "name": "leg_right", "bone": "leg_right", "attachment": "leg_right" },
+        { "name": "leg_left", "bone": "leg_left", "attachment": "leg_left" },
+        { "name": "shoe_left", "bone": "shoe_left", "attachment": "shoe_left" },
+        { "name": "arm_right", "bone": "arm_right", "attachment": "arm_right" },
+        { "name": "arm_left", "bone": "arm_left", "attachment": "arm_left" },
+        { "name": "hand_left", "bone": "hand_left", "attachment": "hand_left" },
+        { "name": "hand_right", "bone": "hand_right", "attachment": "hand_right" },
+        { "name": "head", "bone": "head", "attachment": "head" },
+        { "name": "hair", "bone": "hair", "attachment": "hair" },
+        { "name": "eye_base_right", "bone": "head", "attachment": "eye_base_right" },
+        { "name": "eye_base_left", "bone": "head", "attachment": "eye_base_left" },
+        { "name": "eye_left", "bone": "head", "attachment": "eye_left" },
+        { "name": "eye_right", "bone": "head", "attachment": "eye_right" },
+        { "name": "eyebrow_left", "bone": "eyebrow_left", "attachment": "eyebrow_left" },
+        { "name": "eyebrow_right", "bone": "eyebrow_right", "attachment": "eyebrow_right" },
+        { "name": "ear", "bone": "ear", "attachment": "ear" },
+        { "name": "hair_toupee", "bone": "hair_toupee", "attachment": "hair_toupee" },
+        { "name": "hair_top", "bone": "hair_top", "attachment": "hair_top" },
+        { "name": "hair_bottom", "bone": "hair_bottom", "attachment": "hair_bottom" },
+        { "name": "shoe_right", "bone": "shoe_right", "attachment": "shoe_right" }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "arm_left": { "arm_left": { "x": 100.16, "y": 1.95, "rotation": 100.81, "width": 97, "height": 288 } },
+                "arm_right": { "arm_right": { "x": 120.03, "y": -0.98, "rotation": 102.36, "width": 109, "height": 323 } },
+                "body": { "body": { "x": -54.61, "y": 138.15, "width": 72, "height": 139 } },
+                "ear": { "ear": { "x": 178.12, "y": -17.18, "rotation": -1.88, "width": 317, "height": 157 } },
+                "eyebrow_left": { "eyebrow_left": { "x": 4.37, "y": 9.56, "rotation": -171.16, "width": 75, "height": 88 } },
+                "eyebrow_right": { "eyebrow_right": { "x": -9.65, "y": -0.41, "rotation": -171.16, "width": 182, "height": 87 } },
+                "eye_base_left": { "eye_base_left": { "x": 447.23, "y": 102.56, "rotation": -107.82, "width": 102, "height": 105 } },
+                "eye_base_right": { "eye_base_right": { "x": 312.84, "y": -26.78, "rotation": -107.82, "width": 158, "height": 122 } },
+                "eye_left": { "eye_left": { "x": 455.12, "y": 79.61, "rotation": -107.82, "width": 42, "height": 42 } },
+                "eye_right": { "eye_right": { "x": 344.46, "y": -19.78, "rotation": -107.82, "width": 47, "height": 59 } },
+                "hair": { "hair": { "x": 136.11, "y": 19.39, "rotation": -107.82, "width": 263, "height": 376 } },
+                "hair_bottom": { "hair_bottom": { "x": 46.62, "y": -10.99, "rotation": 13.3, "width": 132, "height": 95 } },
+                "hair_top": { "hair_top": { "x": 24.54, "y": 12.79, "rotation": -177.82, "width": 146, "height": 64 } },
+                "hair_toupee": { "hair_toupee": { "x": 99.15, "y": 28.86, "rotation": -143.91, "width": 223, "height": 133 } },
+                "hand_left": { "hand_left": { "x": 87.68, "y": -2.89, "rotation": 81.87, "width": 90, "height": 195 } },
+                "hand_right": { "hand_right": { "x": 123.24, "y": 11.26, "rotation": 78.5, "width": 151, "height": 212 } },
+                "head": { "head": { "x": 284.63, "y": 27.22, "rotation": -107.82, "width": 493, "height": 461 } },
+                "leg_left": { "leg_left": { "x": 71.41, "y": 59.46, "rotation": -130.6, "width": 172, "height": 99 } },
+                "leg_right": { "leg_right": { "x": 79.63, "y": 10.93, "rotation": -52.19, "width": 195, "height": 236 } },
+                "shoe_left": { "shoe_left": { "x": 58.54, "y": -7.45, "rotation": -121.7, "width": 144, "height": 228 } },
+                "shoe_right": { "shoe_right": { "x": 79.8, "y": -8.4, "rotation": -72.72, "width": 200, "height": 331 } }
+            }
+        }
+    ],
+    "animations": {
+        "flying": {
+            "bones": {
+                "head": { "rotate": [{ "curve": [0.044, 0, 0.056, 1.19] }, { "time": 0.1, "value": 1.19 }, { "time": 0.2 }] },
+                "hand_left": {
+                    "rotate": [
+                        { "value": 2.2, "curve": [0.044, 2.2, 0.056, -3.09] },
+                        { "time": 0.1, "value": -3.09 },
+                        { "time": 0.2, "value": 2.2 }
+                    ]
+                },
+                "hand_right": { "rotate": [{ "curve": [0.044, 0, 0.056, -8.43] }, { "time": 0.1, "value": -8.43 }, { "time": 0.2 }] },
+                "ear": {
+                    "rotate": [
+                        { "curve": [0.067, 0, 0, -4.51] },
+                        { "time": 0.0667, "value": -4.51, "curve": [0.089, -4.51, 0.078, 0] },
+                        { "time": 0.1, "curve": [0.167, 0, 0.1, -4.51] },
+                        { "time": 0.1667, "value": -4.51, "curve": [0.189, -4.51, 0.178, 0] },
+                        { "time": 0.2 }
+                    ]
+                },
+                "eyebrow_right": {
+                    "translate": [
+                        { "x": 2.63, "y": -3.96 },
+                        { "time": 0.1, "x": -2.16, "y": 3.1 },
+                        { "time": 0.2, "x": 2.63, "y": -3.96 }
+                    ]
+                },
+                "eyebrow_left": {
+                    "translate": [
+                        { "x": 0.03, "y": -2.35 },
+                        { "time": 0.1, "x": -3.9, "y": 9.2 },
+                        { "time": 0.2, "x": 0.03, "y": -2.35 }
+                    ]
+                },
+                "shoe_right": { "rotate": [{}, { "time": 0.1, "value": 6.43 }, { "time": 0.2 }] },
+                "shoe_left": { "rotate": [{}, { "time": 0.1, "value": 10.71 }, { "time": 0.2 }] },
+                "arm_right": { "rotate": [{}, { "time": 0.1, "value": 2.15 }, { "time": 0.2, "value": 2.98 }] },
+                "arm_left": { "rotate": [{ "value": 2.92 }, { "time": 0.1, "value": 0.87 }, { "time": 0.2, "value": 2.92 }] },
+                "leg_right": { "rotate": [{}, { "time": 0.1, "value": 5.47 }, { "time": 0.2 }] },
+                "hair_bottom": {
+                    "rotate": [{}, { "time": 0.0333, "value": -13.5 }, { "time": 0.1 }, { "time": 0.1333, "value": -13.5 }, { "time": 0.2 }],
+                    "translate": [{}, { "time": 0.0333, "x": -0.02, "y": 4.01 }, { "time": 0.1 }, { "time": 0.1333, "x": -0.02, "y": 4.01 }, { "time": 0.2 }]
+                },
+                "hair_top": {
+                    "rotate": [{}, { "time": 0.0333, "value": -9.88 }, { "time": 0.1 }, { "time": 0.1333, "value": -9.88 }, { "time": 0.2 }],
+                    "translate": [{ "x": -3.36 }, { "time": 0.0333, "x": -1.14, "y": -10.68 }, { "time": 0.1, "x": -2.85 }, { "time": 0.1333, "x": -1.14, "y": -10.68 }, { "time": 0.2, "x": -3.36 }]
+                },
+                "hair_toupee": { "rotate": [{ "value": 1.23 }, { "time": 0.0333, "value": -1.38 }, { "time": 0.0667, "value": -0.2 }, { "time": 0.1, "value": 1.23 }, { "time": 0.1333, "value": -1.38 }, { "time": 0.2, "value": 2.91 }] }
+            }
+        }
+    }
+}

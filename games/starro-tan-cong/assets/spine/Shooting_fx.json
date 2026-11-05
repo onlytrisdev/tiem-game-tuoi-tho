@@ -1,0 +1,234 @@
+{
+    "skeleton": {
+        "hash": "HAzsa4d0fKY",
+        "spine": "4.0.62",
+        "x": -449.98,
+        "y": -32.6,
+        "width": 872.71,
+        "height": 880.05,
+        "images": "./images/",
+        "audio": "/Volumes/TOSHIBA EXT/CREATIVE CLOUD/CARTOON NETWORK/APPLE & ONION/DANIEL PROJECT/5. VFX/../1. Characters"
+    },
+    "bones": [
+        { "name": "root" },
+        { "name": "vfx_pickups_effect_01", "parent": "root", "x": -7.32, "y": 366.88 },
+        { "name": "vfx_pickups_effect_03", "parent": "root", "x": 133.3, "y": 578.75 },
+        { "name": "vfx_pickups_effect_02", "parent": "root", "x": -196.7, "y": 402.5 },
+        { "name": "vfx_pickups_effect_04", "parent": "root", "x": -101.45, "y": 577.85 },
+        { "name": "vfx_pickups_effect_05", "parent": "root", "x": 92.82, "y": 129.97 },
+        { "name": "vfx_pickups_effect_06", "parent": "root", "x": -7.32, "y": 366.88 },
+        { "name": "smoke", "parent": "root", "x": -2.26, "y": 363.4 },
+        { "name": "vfx_pickups_effect_02Copy", "parent": "root", "x": -196.7, "y": 402.5 },
+        { "name": "smoke_behind", "parent": "root", "x": -2.26, "y": 363.4 }
+    ],
+    "slots": [
+        { "name": "smoke", "bone": "smoke", "attachment": "smoke_anim09" },
+        { "name": "smoke_behind", "bone": "smoke_behind", "attachment": "smoke_behind_10" },
+        { "name": "vfx_pickups_effect_01", "bone": "vfx_pickups_effect_01", "attachment": "vfx_pickups_effect_01" },
+        { "name": "vfx_pickups_effect_06", "bone": "vfx_pickups_effect_06", "attachment": "vfx_pickups_effect_06" },
+        { "name": "vfx_pickups_effect_02", "bone": "vfx_pickups_effect_02", "attachment": "vfx_pickups_effect_02" },
+        { "name": "vfx_pickups_effect_02Copy", "bone": "vfx_pickups_effect_02Copy", "attachment": "vfx_pickups_effect_02" },
+        { "name": "vfx_pickups_effect_03", "bone": "vfx_pickups_effect_03", "attachment": "vfx_pickups_effect_03" },
+        { "name": "vfx_pickups_effect_04", "bone": "vfx_pickups_effect_04", "attachment": "vfx_pickups_effect_04" },
+        { "name": "vfx_pickups_effect_05", "bone": "vfx_pickups_effect_05", "attachment": "vfx_pickups_effect_05" }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "smoke": {
+                    "smoke_anim00": { "x": -43.85, "y": 57.42, "width": 850, "height": 792 },
+                    "smoke_anim01": { "width": 850, "height": 792 },
+                    "smoke_anim02": { "width": 850, "height": 792 },
+                    "smoke_anim03": { "width": 850, "height": 792 },
+                    "smoke_anim04": { "width": 850, "height": 792 },
+                    "smoke_anim05": { "width": 850, "height": 792 },
+                    "smoke_anim06": { "width": 850, "height": 792 },
+                    "smoke_anim07": { "width": 850, "height": 792 },
+                    "smoke_anim08": { "width": 850, "height": 792 },
+                    "smoke_anim09": { "width": 850, "height": 792 },
+                    "smoke_anim10": { "width": 850, "height": 792 },
+                    "smoke_anim11": { "width": 850, "height": 792 },
+                    "smoke_anim12": { "width": 850, "height": 792 },
+                    "smoke_anim13": { "width": 850, "height": 792 },
+                    "smoke_anim14": { "width": 850, "height": 792 },
+                    "smoke_anim15": { "width": 850, "height": 792 },
+                    "smoke_anim16": { "width": 850, "height": 792 }
+                },
+                "smoke_behind": {
+                    "smoke_behind_01": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_02": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_03": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_04": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_05": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_06": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_07": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_08": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_09": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 },
+                    "smoke_behind_10": { "x": 0.5, "y": 0.5, "width": 475, "height": 485 }
+                },
+                "vfx_pickups_effect_01": { "vfx_pickups_effect_01": { "x": -17.65, "y": 84.57, "width": 850, "height": 792 } },
+                "vfx_pickups_effect_02": { "vfx_pickups_effect_02": { "x": -3.77, "y": -2.28, "width": 90, "height": 94 } },
+                "vfx_pickups_effect_02Copy": { "vfx_pickups_effect_02": { "x": -3.77, "y": -2.28, "width": 90, "height": 94 } },
+                "vfx_pickups_effect_03": { "vfx_pickups_effect_03": { "x": 4.14, "y": -6.23, "width": 84, "height": 122 } },
+                "vfx_pickups_effect_04": { "vfx_pickups_effect_04": { "x": 1.81, "y": 0.36, "width": 30, "height": 51 } },
+                "vfx_pickups_effect_05": { "vfx_pickups_effect_05": { "x": 1.08, "y": 0.16, "width": 49, "height": 79 } },
+                "vfx_pickups_effect_06": { "vfx_pickups_effect_06": { "x": 0.5, "y": 0.5, "width": 251, "height": 251 } }
+            }
+        }
+    ],
+    "animations": {
+        "Shooting Fx": {
+            "slots": {
+                "smoke": {
+                    "attachment": [
+                        { "name": "smoke_anim00" },
+                        { "time": 0.0333, "name": "smoke_anim01" },
+                        { "time": 0.0667, "name": "smoke_anim02" },
+                        { "time": 0.1, "name": "smoke_anim03" },
+                        { "time": 0.1333, "name": "smoke_anim04" },
+                        { "time": 0.1667, "name": "smoke_anim05" },
+                        { "time": 0.2, "name": "smoke_anim06" },
+                        { "time": 0.2333, "name": "smoke_anim07" },
+                        { "time": 0.2667, "name": "smoke_anim08" },
+                        { "time": 0.3, "name": "smoke_anim09" },
+                        { "time": 0.3333, "name": "smoke_anim10" },
+                        { "time": 0.3667, "name": "smoke_anim11" },
+                        { "time": 0.4, "name": "smoke_anim12" },
+                        { "time": 0.4333, "name": "smoke_anim13" },
+                        { "time": 0.4667, "name": "smoke_anim14" },
+                        { "time": 0.5, "name": "smoke_anim15" },
+                        { "time": 0.5333, "name": "smoke_anim16" },
+                        { "time": 0.5667, "name": null }
+                    ]
+                },
+                "smoke_behind": {
+                    "rgba": [
+                        { "color": "ffffff00", "curve": "stepped" },
+                        { "time": 0.2667, "color": "ffffff00" },
+                        { "time": 0.3, "color": "ffffffff", "curve": "stepped" },
+                        { "time": 0.9, "color": "ffffffff" },
+                        { "time": 0.9333, "color": "ffffff00" }
+                    ],
+                    "attachment": [
+                        { "time": 0.2667, "name": "smoke_behind_01" },
+                        { "time": 0.3667, "name": "smoke_behind_02" },
+                        { "time": 0.4333, "name": "smoke_behind_03" },
+                        { "time": 0.5, "name": "smoke_behind_04" },
+                        { "time": 0.5667, "name": "smoke_behind_05" },
+                        { "time": 0.6333, "name": "smoke_behind_06" },
+                        { "time": 0.7, "name": "smoke_behind_07" },
+                        { "time": 0.7667, "name": "smoke_behind_10" },
+                        { "time": 0.8333, "name": null }
+                    ]
+                },
+                "vfx_pickups_effect_01": {
+                    "rgba": [
+                        { "color": "ff0600ff", "curve": [0.025, 1, 0.075, 1, 0.025, 0.02, 0.075, 1, 0.025, 0, 0.075, 1, 0.025, 1, 0.075, 1] },
+                        { "time": 0.1, "color": "ffffffff", "curve": "stepped" },
+                        { "time": 0.3333, "color": "ffffffff" },
+                        { "time": 0.5, "color": "ffffff00" }
+                    ]
+                },
+                "vfx_pickups_effect_02": {
+                    "rgba": [
+                        { "time": 0.6667, "color": "ffffffff" },
+                        { "time": 0.9333, "color": "ffffff00" }
+                    ]
+                },
+                "vfx_pickups_effect_02Copy": {
+                    "rgba": [
+                        { "time": 0.6667, "color": "ffffffff" },
+                        { "time": 0.9333, "color": "ffffff00" }
+                    ]
+                },
+                "vfx_pickups_effect_03": {
+                    "rgba": [
+                        { "time": 0.5, "color": "ffffffff" },
+                        { "time": 0.6667, "color": "ffffff00" }
+                    ]
+                },
+                "vfx_pickups_effect_04": {
+                    "rgba": [
+                        { "time": 0.6667, "color": "ffffffff" },
+                        { "time": 0.8333, "color": "ffffff00" }
+                    ]
+                },
+                "vfx_pickups_effect_05": { "rgba": [{ "color": "000000ff" }, { "time": 0.1333, "color": "ffffffff", "curve": "stepped" }, { "time": 0.2333, "color": "ffffffff" }, { "time": 0.5, "color": "ffffff00" }] },
+                "vfx_pickups_effect_06": {
+                    "rgba": [
+                        { "color": "000000ff", "curve": [0.025, 0, 0.075, 1, 0.025, 0, 0.075, 1, 0.025, 0, 0.075, 1, 0.025, 1, 0.075, 1] },
+                        { "time": 0.1, "color": "ffffffff", "curve": "stepped" },
+                        { "time": 0.1333, "color": "ffffffff" },
+                        { "time": 0.3333, "color": "ffffff00" }
+                    ]
+                }
+            },
+            "bones": {
+                "vfx_pickups_effect_01": {
+                    "rotate": [{}, { "time": 0.5, "value": -9.17 }],
+                    "translate": [{ "x": 6.98, "y": -56.57 }],
+                    "scale": [{ "x": 0, "y": 0, "curve": [0.025, 0, 0.075, 1, 0.025, 0, 0.075, 1] }, { "time": 0.1 }, { "time": 0.2, "x": 1.5, "y": 1.5 }],
+                    "shear": [{ "x": -21.03, "y": -1.37 }, { "time": 0.5 }]
+                },
+                "vfx_pickups_effect_04": {
+                    "rotate": [{ "time": 0.1333, "value": -60 }, { "time": 0.8333 }],
+                    "translate": [
+                        { "time": 0.1333, "x": -3.21, "y": 40.1, "curve": [0.308, -3.21, 0.165, -87.3, 0.308, 40.1, 0.165, 177.82] },
+                        { "time": 0.8333, "x": -87.3, "y": 177.82 }
+                    ],
+                    "scale": [{ "x": 0, "y": 0, "curve": "stepped" }, { "time": 0.1, "x": 0, "y": 0, "curve": [0.2, 0, 0.4, 1, 0.2, 0, 0.4, 1] }, { "time": 0.5, "curve": "stepped" }, { "time": 0.6667 }, { "time": 0.8333, "x": 0, "y": 0 }]
+                },
+                "vfx_pickups_effect_05": {
+                    "translate": [
+                        { "x": -24.61, "y": 35.34, "curve": [0.125, -24.61, 0.058, 22.95, 0.125, 35.34, 0.058, -129.97] },
+                        { "time": 0.5, "x": 22.95, "y": -129.97 }
+                    ],
+                    "scale": [{ "x": 0, "y": 0, "curve": [0.033, 0, 0.1, 1, 0.033, 0, 0.1, 1] }, { "time": 0.1333, "curve": "stepped" }, { "time": 0.2333 }, { "time": 0.5, "x": 0, "y": 0 }]
+                },
+                "vfx_pickups_effect_03": {
+                    "rotate": [{ "value": -137.85, "curve": [0.208, -137.85, 0.625, 0] }, { "time": 0.8333 }],
+                    "translate": [
+                        { "x": -126.35, "y": -202.16, "curve": [0.208, -126.35, 0, 487.35, 0.208, -202.16, 0, 140.79] },
+                        { "time": 0.8333, "x": 487.35, "y": 140.79 }
+                    ],
+                    "scale": [{ "x": 0, "y": 0 }, { "time": 0.1667 }],
+                    "shear": [{ "x": 10.67, "y": 50.96 }, { "time": 0.8333 }]
+                },
+                "vfx_pickups_effect_06": { "translate": [{ "x": 10.46, "y": -62.78 }], "scale": [{ "x": 0 }, { "time": 0.1, "x": 1.198, "y": 0.855 }, { "time": 0.3333, "x": 1.872, "y": 1.307 }] },
+                "smoke": {
+                    "translate": [
+                        { "time": 0.0333, "x": -60.17, "y": 31.39 },
+                        { "time": 0.0667, "x": -41.86, "y": 31.39 },
+                        { "time": 0.1, "x": -31.39, "y": 20.93 }
+                    ],
+                    "scale": [{ "x": 2, "y": 2 }]
+                },
+                "vfx_pickups_effect_02": {
+                    "rotate": [{}, { "time": 0.9333, "value": 93.15 }],
+                    "translate": [
+                        { "x": 186, "y": -30.37, "curve": [0.25, 186, 0.018, -389.39, 0.25, -30.37, 0.018, 320.61] },
+                        { "time": 1, "x": -389.39, "y": 320.61 }
+                    ],
+                    "scale": [{ "x": 0, "y": 0 }, { "time": 0.1667, "curve": "stepped" }, { "time": 0.3333 }, { "time": 0.9333, "x": 0, "y": 0 }]
+                },
+                "vfx_pickups_effect_02Copy": {
+                    "rotate": [{}, { "time": 0.9333, "value": 93.15 }],
+                    "translate": [
+                        { "x": 186, "y": -30.37, "curve": [0.548, 186, 0, -190.33, 0.548, -30.37, 0, -511.01] },
+                        { "time": 1, "x": -190.33, "y": -511.01 }
+                    ],
+                    "scale": [{ "x": 0, "y": 0 }, { "time": 0.1667, "curve": "stepped" }, { "time": 0.3333 }, { "time": 0.9333, "x": 0, "y": 0 }]
+                },
+                "smoke_behind": {
+                    "translate": [
+                        { "time": 0.0333, "x": -60.17, "y": 31.39 },
+                        { "time": 0.0667, "x": -41.86, "y": 31.39 },
+                        { "time": 0.1, "x": -31.39, "y": 20.93 }
+                    ],
+                    "scale": [{ "x": 2, "y": 2 }]
+                }
+            }
+        }
+    }
+}
