@@ -1,0 +1,1 @@
+﻿var background = {	"_background_background_x": {		type: "bitmap",		asset: "_background_background_x",		scale: 1,		position: [-484.55, -715],	},};

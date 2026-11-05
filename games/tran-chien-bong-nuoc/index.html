@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+    <title>Craig of the creek - Hydro Assault</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+        html,
+        body,
+        webview {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: #333333;
+        }
+
+        canvas {
+            display: block;
+            margin: 0;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 100%;
+            background-color: #333333;
+        }
+    </style>
+
+    <script src="libs/pixi.js"></script>
+
+    <script src="assets/movieclips/background.js"></script>
+    <script src="assets/movieclips/bullets.js"></script>
+    <script src="assets/movieclips/charselection_view.js"></script>
+
+    <script src="assets/movieclips/craig_1.js"></script>
+    <script src="assets/movieclips/craig_2.js"></script>
+    <script src="assets/movieclips/craig_3.js"></script>
+    <script src="assets/movieclips/craig_4.js"></script>
+    <script src="assets/movieclips/craig_5.js"></script>
+    <script src="assets/movieclips/craig_6.js"></script>
+
+    <script src="assets/movieclips/enemy1.js"></script>
+    <script src="assets/movieclips/enemy2.js"></script>
+    <script src="assets/movieclips/enemy3.js"></script>
+    <script src="assets/movieclips/boss.js"></script>
+    <script src="assets/movieclips/mainmenu_view.js"></script>
+    <script src="assets/movieclips/popups.js"></script>
+    <script src="assets/movieclips/preloader_view.js"></script>
+    <script src="assets/movieclips/ui_ingame.js"></script>
+    <script src="assets/movieclips/items.js"></script>
+    <script src="assets/movieclips/summary.js"></script>
+    <script src="assets/movieclips/tutorial.js"></script>
+
+    <script src="libs/awclip.js"></script>
+    <script src="libs/howler.js"></script>
+    <script src="manifest.js"></script>
+    <script src="libs/achievements_manager.js"></script>
+    <script src="libs/analytics_manager.js"></script>
+
+    <script src="js/entities/entity.js"></script>
+    <script src="js/entities/bullet.js"></script>
+    <script src="js/entities/base_enemy.js"></script>
+    <script src="js/entities/enemy1.js"></script>
+    <script src="js/entities/enemy2.js"></script>
+    <script src="js/entities/enemy3.js"></script>
+    <script src="js/entities/boss.js"></script>
+    <script src="js/entities/player_bullet_bucket.js"></script>
+    <script src="js/entities/player_bullet_hose.js"></script>
+    <script src="js/entities/player_bullet_sling.js"></script>
+    <script src="js/entities/player_bullet_balloon.js"></script>
+    <script src="js/entities/player_wall.js"></script>
+    <script src="js/entities/prop.js"></script>
+    <script src="js/entities/vfx.js"></script>
+    <script src="js/entities/player.js"></script>
+    <script src="js/entities/water_impact.js"></script>
+    <script src="js/entities/balloon_impact.js"></script>
+    <script src="js/entities/ui_coin.js"></script>
+    <script src="js/entities/item.js"></script>
+    <script src="js/entities/item_bucket.js"></script>
+    <script src="js/entities/item_hose.js"></script>
+    <script src="js/entities/item_balloon.js"></script>
+    <script src="js/entities/item_lunchbox.js"></script>
+    <script src="js/entities/item_bullettime.js"></script>
+    <script src="js/entities/shadow.js"></script>
+    <script src="js/entities/enemy1_shield.js"></script>
+    <script src="js/entities/enemy1_bullet.js"></script>
+    <script src="js/entities/enemy2_shield.js"></script>
+    <script src="js/entities/enemy3_shield.js"></script>
+    <script src="js/entities/enemy_bullet_balloon.js"></script>
+    <script src="js/entities/enemy_boss_bullet.js"></script>
+    <script src="js/entities/boss_shot_muzzleflash.js"></script>
+    <script src="js/entities/boss_dust.js"></script>
+
+    <script src="js/config/app.js"></script>
+    <script src="js/config/gameplay.js"></script>
+    <script src="js/config/assets.js"></script>
+    <script src="js/config/screens.js"></script>
+    <script src="js/config/sfx.js"></script>
+    <script src="js/config/gameevents.js"></script>
+
+    <!-- nuevos -->
+
+    <script src="libs/bullettime.js"></script>
+    <script src="libs/button.js"></script>
+    <script src="libs/container_plus.js"></script>
+    <script src="libs/custom_input.js"></script>
+    <script src="libs/fsm.js"></script>
+    <script src="libs/misc.js"></script>
+    <script src="libs/physics.js"></script>
+    <script src="libs/screenmanager.js"></script>
+    <script src="libs/sound_button.js"></script>
+    <script src="libs/soundmanager.js"></script>
+    <script src="libs/superpool.js"></script>
+    <script src="libs/threedee.js"></script>
+    <script src="libs/tween.js"></script>
+    <script src="libs/tween_manager.js"></script>
+    <script src="libs/signal.js"></script>
+
+    <script src="js/save/save.js"></script>
+
+    <script src="js/screens/charselection.js"></script>
+    <script src="js/screens/game.js"></script>
+    <script src="js/screens/mainmenu.js"></script>
+    <script src="js/screens/middleloader.js"></script>
+    <script src="js/screens/settings_costume.js"></script>
+    <script src="js/screens/settings_gameplay.js"></script>
+    <script src="js/screens/settings_main.js"></script>
+    <script src="js/screens/summary.js"></script>
+    <script src="js/screens/sounddebug.js"></script>
+    <script src="js/screens/tutorial.js"></script>
+
+    <script src="js/misc/game_utils.js"></script>
+    <script src="js/misc/waves_manager.js"></script>
+
+    <script src="js/states/enemy/enemy_idle.js"></script>
+    <script src="js/states/enemy/enemy_run.js"></script>
+    <script src="js/states/enemy/enemy_defeat.js"></script>
+    <script src="js/states/enemy/enemy_shoot.js"></script>
+
+    <script src="js/states/player/player_idle.js"></script>
+    <script src="js/states/player/player_roll.js"></script>
+    <script src="js/states/player/player_run.js"></script>
+    <script src="js/states/player/player_throw.js"></script>
+    <script src="js/states/player/player_lose.js"></script>
+
+    <script src="js/states/boss/boss_enter.js"></script>
+    <script src="js/states/boss/boss_idle.js"></script>
+    <script src="js/states/boss/boss_turn.js"></script>
+    <script src="js/states/boss/boss_walk.js"></script>
+    <script src="js/states/boss/boss_die.js"></script>
+    <script src="js/states/boss/boss_turn_reverse.js"></script>
+
+    <script src="js/ui/ingame_ui.js"></script>
+
+    <script src="js/OrientationChecker.js"></script>
+    <script src="js/webfont.js"></script>
+
+</head>
+
+<body id="body">
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

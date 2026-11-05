@@ -1,0 +1,349 @@
+{
+	"groups": [
+		{
+			"keys": "fx_click,sound_bg,sound_game,fx_unlock,fx_photo,fx_penwu",
+			"name": "sounds"
+		},
+		{
+			"keys": "bgCon_1679,bgCon_2775,bgCon_4020,bgCon_4118,bgCon_4434,bgCon_7749,bgCon_8184,bgCon_8200,bgCon_8987,bgCon_9205",
+			"name": "preload"
+		},
+		{
+			"keys": "startBg,start_desktop_sheet,fx_click,sound_bg,sound_game",
+			"name": "start_desktop"
+		},
+		{
+			"keys": "transition_desktop_sheet",
+			"name": "transition_desktop"
+		},
+		{
+			"keys": "",
+			"name": "show_desktop"
+		},
+		{
+			"keys": "elogo_desktop_json,wedding_desktop_json",
+			"name": "loading_desktop"
+		},
+		{
+			"keys": "girl_desktop_sheet",
+			"name": "girl_desktop"
+		},
+		{
+			"keys": "startBg,start_mobile_sheet,fx_click,sound_bg,sound_game",
+			"name": "start_mobile"
+		},
+		{
+			"keys": "",
+			"name": "show_mobile"
+		},
+		{
+			"keys": "wedding_mobile_json,elogo_mobile_json",
+			"name": "loading_mobile"
+		},
+		{
+			"keys": "bsCon_desktop_sheet",
+			"name": "bsCon_desktop"
+		},
+		{
+			"keys": "dress_desktop_sheet",
+			"name": "dress_desktop"
+		},
+		{
+			"keys": "bsCon_mobile_sheet",
+			"name": "bsCon_mobile"
+		},
+		{
+			"keys": "dress_mobile_sheet",
+			"name": "dress_mobile"
+		},
+		{
+			"keys": "bgCon_9205,bgCon_8987,bgCon_8200,bgCon_8184,bgCon_7749,bgCon_4434,bgCon_4118,bgCon_4020,bgCon_2775,bgCon_1679",
+			"name": "bg_desktop"
+		},
+		{
+			"keys": "bgCon_9205,bgCon_8987,bgCon_8200,bgCon_8184,bgCon_7749,bgCon_4434,bgCon_4118,bgCon_4020,bgCon_2775,bgCon_1679",
+			"name": "bg_mobile"
+		},
+		{
+			"keys": "girl_mobile_sheet",
+			"name": "girl_mobile"
+		},
+		{
+			"keys": "transition_mobile_sheet",
+			"name": "transition_mobile"
+		}
+	],
+	"resources": [
+		{
+			"url": "sounds/fx_click.mp3",
+			"type": "sound",
+			"name": "fx_click"
+		},
+		{
+			"url": "sounds/sound_bg.mp3",
+			"type": "sound",
+			"name": "sound_bg"
+		},
+		{
+			"url": "sounds/sound_game.mp3",
+			"type": "sound",
+			"name": "sound_game"
+		},
+		{
+			"url": "sounds/unlock.mp3",
+			"type": "sound",
+			"name": "fx_unlock"
+		},
+		{
+			"url": "sounds/photo.mp3",
+			"type": "sound",
+			"name": "fx_photo"
+		},
+		{
+			"url": "assets/startBg.png",
+			"type": "image",
+			"name": "startBg"
+		},
+		{
+			"url": "assets/transition_desktop.json",
+			"type": "sheet",
+			"name": "transition_desktop_sheet",
+			"subkeys": "musicBg,musicSign"
+		},
+		{
+			"url": "default.res.json",
+			"type": "json",
+			"name": "default.res_json"
+		},
+		{
+			"url": "particle/penwu.json",
+			"type": "json",
+			"name": "penwu_json"
+		},
+		{
+			"url": "particle/penwu.png",
+			"type": "image",
+			"name": "penwu_png"
+		},
+		{
+			"url": "assets/show_desktop.json",
+			"type": "sheet",
+			"name": "show_desktop_sheet"
+		},
+		{
+			"url": "sounds/penwu.mp3",
+			"type": "sound",
+			"name": "fx_penwu"
+		},
+		{
+			"url": "assets/dressupwho_desktop.json",
+			"type": "sheet",
+			"name": "dressupwho_desktop_json"
+		},
+		{
+			"url": "assets/dressupwho_mobile.json",
+			"type": "sheet",
+			"name": "dressupwho_mobile_json"
+		},
+		{
+			"url": "assets/start_desktop.json",
+			"type": "sheet",
+			"name": "start_desktop_sheet",
+			"subkeys": "girl,moreBtn_9199,moreBtn_9447,playBtn,titleCon_6375,titleCon_9614"
+		},
+		{
+			"url": "assets/girl_desktop.json",
+			"type": "sheet",
+			"name": "girl_desktop_sheet",
+			"subkeys": "girl,ny1,ny2"
+		},
+		{
+			"url": "assets/bs1Con_desktop.json",
+			"type": "sheet",
+			"name": "bs1Con_desktop_sheet"
+		},
+		{
+			"url": "assets/bs2Con_desktop.json",
+			"type": "sheet",
+			"name": "bs2Con_desktop_sheet"
+		},
+		{
+			"url": "assets/girl1_desktop.json",
+			"type": "sheet",
+			"name": "girl1_desktop_sheet"
+		},
+		{
+			"url": "assets/showBg.png",
+			"type": "image",
+			"name": "showBg"
+		},
+		{
+			"url": "assets/start_mobile.json",
+			"type": "sheet",
+			"name": "start_mobile_sheet",
+			"subkeys": "girl,moreBtn_9199,moreBtn_9447,playBtn,titleCon_6375,titleCon_9614"
+		},
+		{
+			"url": "assets/transition_mobile.json",
+			"type": "sheet",
+			"name": "transition_mobile_sheet",
+			"subkeys": "musicBg,musicSign"
+		},
+		{
+			"url": "assets/bs1Con_mobile.json",
+			"type": "sheet",
+			"name": "bs1Con_mobile_sheet"
+		},
+		{
+			"url": "assets/bs2Con_mobile.json",
+			"type": "sheet",
+			"name": "bs2Con_mobile_sheet"
+		},
+		{
+			"url": "assets/girl_mobile.json",
+			"type": "sheet",
+			"name": "girl_mobile_sheet",
+			"subkeys": "girl,ny1,ny2"
+		},
+		{
+			"url": "assets/girl1_mobile.json",
+			"type": "sheet",
+			"name": "girl1_mobile_sheet"
+		},
+		{
+			"url": "assets/show_mobile.json",
+			"type": "sheet",
+			"name": "show_mobile_sheet"
+		},
+		{
+			"url": "assets/bs2Con_mobile.json",
+			"type": "sheet",
+			"name": "bs2Con_mobile_json"
+		},
+		{
+			"url": "assets/girl_mobile.json",
+			"type": "sheet",
+			"name": "girl_mobile_json",
+			"subkeys": "girl,ny1,ny2"
+		},
+		{
+			"url": "assets/girl1_mobile.json",
+			"type": "sheet",
+			"name": "girl1_mobile_json"
+		},
+		{
+			"url": "assets/show_mobile.json",
+			"type": "sheet",
+			"name": "show_mobile_json"
+		},
+		{
+			"url": "assets/transition_mobile.json",
+			"type": "sheet",
+			"name": "transition_mobile_json",
+			"subkeys": "musicBg,musicSign"
+		},
+		{
+			"url": "assets/bs1Con_mobile.json",
+			"type": "sheet",
+			"name": "bs1Con_mobile_json"
+		},
+		{
+			"url": "wedding/wedding_desktop.json",
+			"type": "sheet",
+			"name": "wedding_desktop_json",
+			"subkeys": "btnMore,btnPlay,light,logo,miniLogo"
+		},
+		{
+			"url": "wedding/wedding_mobile.json",
+			"type": "sheet",
+			"name": "wedding_mobile_json",
+			"subkeys": "btnMore,btnPlay,light,logo,miniLogo"
+		},
+		{
+			"url": "assets/bsCon_desktop.json",
+			"type": "sheet",
+			"name": "bsCon_desktop_sheet",
+			"subkeys": "bgMc,bs_b10_1575,bs_b10_9031,bs_b1_4583,bs_b1_9463,bs_b2_1722,bs_b2_7724,bs_b3_1286,bs_b3_4208,bs_b4_3566,bs_b4_5720,bs_b5_1296,bs_b5_8549,bs_b6_1638,bs_b6_8009,bs_b7_2713,bs_b7_4486,bs_b8_5571,bs_b8_7643,bs_b9_4883,bs_b9_5552,bs_g10_1,bs_g10_10,bs_g10_2,bs_g10_3,bs_g10_4,bs_g10_5,bs_g10_6,bs_g10_7,bs_g10_8,bs_g10_9,bs_g1_10_1,bs_g1_10_2,bs_g1_10_3,bs_g1_10_4,bs_g1_11_1,bs_g1_11_2,bs_g1_11_3,bs_g1_11_4,bs_g1_12_1,bs_g1_12_2,bs_g1_12_3,bs_g1_13_1,bs_g1_13_2,bs_g1_13_3,bs_g1_13_4,bs_g1_13_5,bs_g1_14_1,bs_g1_14_2,bs_g1_14_3,bs_g1_14_4,bs_g1_15_1,bs_g1_15_2,bs_g1_15_3,bs_g1_15_4,bs_g1_1_1,bs_g1_1_2,bs_g1_1_3,bs_g1_1_4,bs_g1_1_5,bs_g1_1_6,bs_g1_1_7,bs_g1_2_1,bs_g1_2_2,bs_g1_2_3,bs_g1_3_1,bs_g1_3_2,bs_g1_3_3,bs_g1_3_4,bs_g1_3_5,bs_g1_4_1,bs_g1_4_2,bs_g1_4_3,bs_g1_4_4,bs_g1_5_1,bs_g1_5_2,bs_g1_6_1,bs_g1_6_2,bs_g1_6_3,bs_g1_6_4,bs_g1_7_1,bs_g1_7_2,bs_g1_7_3,bs_g1_7_4,bs_g1_7_5,bs_g1_8_1,bs_g1_8_2,bs_g1_8_3,bs_g1_8_4,bs_g1_9_1,bs_g1_9_2,bs_g1_9_3,bs_g1_9_4,bs_g2_10_1,bs_g2_10_2,bs_g2_1_1,bs_g2_1_2,bs_g2_1_3,bs_g2_1_4,bs_g2_2_1,bs_g2_2_2,bs_g2_3_1,bs_g2_3_2,bs_g2_4_1,bs_g2_4_2,bs_g2_4_3,bs_g2_5_1_1,bs_g2_5_1_2,bs_g2_5_2,bs_g2_5_3,bs_g2_6_1,bs_g2_6_2,bs_g2_7_1,bs_g2_7_2,bs_g2_8_1_1,bs_g2_8_1_2,bs_g2_8_2,bs_g2_9_1,bs_g2_9_2,bs_g3_10_1,bs_g3_10_2,bs_g3_10_3,bs_g3_10_4,bs_g3_1_1,bs_g3_1_2,bs_g3_1_3,bs_g3_2_1,bs_g3_2_2,bs_g3_3_1,bs_g3_3_2,bs_g3_4_1,bs_g3_5_1,bs_g3_5_2,bs_g3_5_3,bs_g3_6_1,bs_g3_6_2,bs_g3_7_1,bs_g3_7_2,bs_g3_7_3,bs_g3_8_1,bs_g3_8_2,bs_g3_9_1,bs_g3_9_2,bs_g3_9_3,bs_g4_10_1,bs_g4_10_2,bs_g4_10_3,bs_g4_10_4,bs_g4_10_5_1,bs_g4_10_5_2,bs_g4_1_1,bs_g4_1_2,bs_g4_1_3,bs_g4_1_4,bs_g4_2_1,bs_g4_2_2,bs_g4_2_3,bs_g4_2_4,bs_g4_2_5,bs_g4_3_1,bs_g4_3_2,bs_g4_3_3,bs_g4_3_4,bs_g4_3_5,bs_g4_4_1,bs_g4_4_2_1,bs_g4_4_2_2,bs_g4_4_3,bs_g4_4_4,bs_g4_5_1_1,bs_g4_5_1_2,bs_g4_5_2_1,bs_g4_5_2_2,bs_g4_5_3,bs_g4_5_4,bs_g4_5_5,bs_g4_6_1,bs_g4_6_2,bs_g4_6_3,bs_g4_6_4,bs_g4_6_5_1,bs_g4_6_5_2,bs_g4_7_1,bs_g4_7_2,bs_g4_7_3,bs_g4_7_4,bs_g4_7_5,bs_g4_8_1,bs_g4_8_2_1,bs_g4_8_2_2,bs_g4_8_3,bs_g4_8_4,bs_g4_9_1,bs_g4_9_2,bs_g4_9_3,bs_g4_9_4,bs_g4_9_5,bs_g5_1,bs_g5_10,bs_g5_2,bs_g5_3,bs_g5_4,bs_g5_5,bs_g5_6,bs_g5_7,bs_g5_8,bs_g5_9,bs_g6_1,bs_g6_10,bs_g6_11,bs_g6_12,bs_g6_13,bs_g6_14,bs_g6_15,bs_g6_16_1_1,bs_g6_16_1_2,bs_g6_17,bs_g6_18,bs_g6_19,bs_g6_2,bs_g6_20,bs_g6_21,bs_g6_22,bs_g6_3,bs_g6_4,bs_g6_5,bs_g6_6,bs_g6_7,bs_g6_8,bs_g6_9,bs_g7_1,bs_g7_10,bs_g7_2,bs_g7_3,bs_g7_4,bs_g7_5,bs_g7_6,bs_g7_7,bs_g7_8,bs_g7_9,bs_g8_1,bs_g8_10,bs_g8_2,bs_g8_3,bs_g8_4,bs_g8_5,bs_g8_6,bs_g8_7,bs_g8_8,bs_g8_9,bs_g9_1,bs_g9_10,bs_g9_11,bs_g9_12,bs_g9_13,bs_g9_14,bs_g9_15,bs_g9_16,bs_g9_17,bs_g9_18,bs_g9_19,bs_g9_2,bs_g9_20,bs_g9_21,bs_g9_22,bs_g9_23,bs_g9_3,bs_g9_4,bs_g9_5,bs_g9_6_1,bs_g9_6_2,bs_g9_7,bs_g9_8,bs_g9_9,bs_selectB1,bs_selectB2,girl0001,girl0002,girl0003,girl0004,girl0005,girl0006,girl0007,girl0008,girl0009,girl0010,girl0011,girl0012,girl0013,girl0014,girl0015,maskMc,moreBtn,moreBtn1,replayBtn,resetBtn,saveBtn,showBtn"
+		},
+		{
+			"url": "assets/dress_desktop.json",
+			"type": "sheet",
+			"name": "dress_desktop_sheet",
+			"subkeys": "girl_g1_10_1,girl_g1_10_2,girl_g1_10_3,girl_g1_10_4,girl_g1_11_1,girl_g1_11_2,girl_g1_11_3,girl_g1_11_4,girl_g1_12_1,girl_g1_12_2,girl_g1_12_3,girl_g1_13_1,girl_g1_13_2,girl_g1_13_3,girl_g1_13_4,girl_g1_13_5,girl_g1_14_1,girl_g1_14_2,girl_g1_14_3,girl_g1_14_4,girl_g1_15_1,girl_g1_15_2,girl_g1_15_3,girl_g1_15_4,girl_g1_1_1,girl_g1_1_2,girl_g1_1_3,girl_g1_1_4,girl_g1_1_5,girl_g1_1_6,girl_g1_1_7,girl_g1_2_1,girl_g1_2_2,girl_g1_2_3,girl_g1_3_1,girl_g1_3_2,girl_g1_3_3,girl_g1_3_4,girl_g1_3_5,girl_g1_4_1,girl_g1_4_2,girl_g1_4_3,girl_g1_4_4,girl_g1_5_1,girl_g1_5_2,girl_g1_6_1,girl_g1_6_2,girl_g1_6_3,girl_g1_6_4,girl_g1_7_1,girl_g1_7_2,girl_g1_7_3,girl_g1_7_4,girl_g1_7_5,girl_g1_8_1,girl_g1_8_2,girl_g1_8_3,girl_g1_8_4,girl_g1_9_1,girl_g1_9_2,girl_g1_9_3,girl_g1_9_4,girl_g2_10_1,girl_g2_10_2,girl_g2_1_1,girl_g2_1_2,girl_g2_1_3,girl_g2_1_4,girl_g2_2_1,girl_g2_2_2,girl_g2_3_1,girl_g2_3_2,girl_g2_4_1,girl_g2_4_2,girl_g2_4_3,girl_g2_5_1_1,girl_g2_5_1_2,girl_g2_5_2,girl_g2_5_3,girl_g2_6_1,girl_g2_6_2,girl_g2_7_1,girl_g2_7_2,girl_g2_8_1_1,girl_g2_8_1_2,girl_g2_8_2,girl_g2_9_1,girl_g2_9_2,girl_g3_10_1,girl_g3_10_2,girl_g3_10_3,girl_g3_10_4,girl_g3_1_1,girl_g3_1_2,girl_g3_1_3,girl_g3_2_1,girl_g3_2_2,girl_g3_3_1,girl_g3_3_2,girl_g3_4_1,girl_g3_5_1,girl_g3_5_2,girl_g3_5_3,girl_g3_6_1,girl_g3_6_2,girl_g3_7_1,girl_g3_7_2,girl_g3_7_3,girl_g3_8_1,girl_g3_8_2,girl_g3_9_1,girl_g3_9_2,girl_g3_9_3,girl_g4_10_1,girl_g4_10_2,girl_g4_10_3,girl_g4_10_4,girl_g4_10_5_1,girl_g4_10_5_2,girl_g4_1_1,girl_g4_1_2,girl_g4_1_3,girl_g4_1_4,girl_g4_2_1,girl_g4_2_2,girl_g4_2_3,girl_g4_2_4,girl_g4_2_5,girl_g4_3_1,girl_g4_3_2,girl_g4_3_3,girl_g4_3_4,girl_g4_3_5,girl_g4_4_1,girl_g4_4_2_1,girl_g4_4_2_2,girl_g4_4_3,girl_g4_4_4,girl_g4_5_1_1,girl_g4_5_1_2,girl_g4_5_2_1,girl_g4_5_2_2,girl_g4_5_3,girl_g4_5_4,girl_g4_5_5,girl_g4_6_1,girl_g4_6_2,girl_g4_6_3,girl_g4_6_4,girl_g4_6_5_1,girl_g4_6_5_2,girl_g4_7_1,girl_g4_7_2,girl_g4_7_3,girl_g4_7_4,girl_g4_7_5,girl_g4_8_1,girl_g4_8_2_1,girl_g4_8_2_2,girl_g4_8_3,girl_g4_8_3562,girl_g4_8_4,girl_g4_9_1,girl_g4_9_2,girl_g4_9_3,girl_g4_9_4,girl_g4_9_5,girl_g5_1,girl_g5_10,girl_g5_2,girl_g5_3,girl_g5_4,girl_g5_5,girl_g5_6,girl_g5_7,girl_g5_8,girl_g5_9,girl_g6_1,girl_g6_10,girl_g6_11,girl_g6_12,girl_g6_13,girl_g6_14,girl_g6_15,girl_g6_16,girl_g6_16_2,girl_g6_17,girl_g6_18,girl_g6_19,girl_g6_2,girl_g6_20,girl_g6_21,girl_g6_22,girl_g6_3,girl_g6_4,girl_g6_5,girl_g6_6,girl_g6_7,girl_g6_8,girl_g6_9,girl_g7_1,girl_g7_10,girl_g7_2,girl_g7_3,girl_g7_4,girl_g7_5,girl_g7_6,girl_g7_7,girl_g7_8,girl_g7_9,girl_g8_1,girl_g8_10,girl_g8_2,girl_g8_3,girl_g8_4,girl_g8_5,girl_g8_6,girl_g8_7,girl_g8_8,girl_g8_9,girl_g9_1,girl_g9_10,girl_g9_11,girl_g9_12,girl_g9_13,girl_g9_14,girl_g9_15,girl_g9_16,girl_g9_17,girl_g9_18,girl_g9_19,girl_g9_2,girl_g9_20,girl_g9_21,girl_g9_22,girl_g9_23,girl_g9_3,girl_g9_4,girl_g9_5,girl_g9_6_1,girl_g9_6_2,girl_g9_7,girl_g9_8,girl_g9_9"
+		},
+		{
+			"url": "assets/elogo_desktop.json",
+			"type": "sheet",
+			"name": "elogo_desktop_json",
+			"subkeys": "arm,head,logoBg,logoBody,logoMask,thumbMask,thumb_b,thumb_t"
+		},
+		{
+			"url": "assets/elogo_mobile.json",
+			"type": "sheet",
+			"name": "elogo_mobile_json",
+			"subkeys": "arm,head,logoBg,logoBody,logoMask,thumbMask,thumb_b,thumb_t"
+		},
+		{
+			"url": "assets/bsCon_mobile.json",
+			"type": "sheet",
+			"name": "bsCon_mobile_sheet",
+			"subkeys": "bgMc,bs_b10_1575,bs_b10_9031,bs_b1_4583,bs_b1_9463,bs_b2_1722,bs_b2_7724,bs_b3_1286,bs_b3_4208,bs_b4_3566,bs_b4_5720,bs_b5_1296,bs_b5_8549,bs_b6_1638,bs_b6_8009,bs_b7_2713,bs_b7_4486,bs_b8_5571,bs_b8_7643,bs_b9_4883,bs_b9_5552,bs_g10_1,bs_g10_10,bs_g10_2,bs_g10_3,bs_g10_4,bs_g10_5,bs_g10_6,bs_g10_7,bs_g10_8,bs_g10_9,bs_g1_10_1,bs_g1_10_2,bs_g1_10_3,bs_g1_10_4,bs_g1_11_1,bs_g1_11_2,bs_g1_11_3,bs_g1_11_4,bs_g1_12_1,bs_g1_12_2,bs_g1_12_3,bs_g1_13_1,bs_g1_13_2,bs_g1_13_3,bs_g1_13_4,bs_g1_13_5,bs_g1_14_1,bs_g1_14_2,bs_g1_14_3,bs_g1_14_4,bs_g1_15_1,bs_g1_15_2,bs_g1_15_3,bs_g1_15_4,bs_g1_1_1,bs_g1_1_2,bs_g1_1_3,bs_g1_1_4,bs_g1_1_5,bs_g1_1_6,bs_g1_1_7,bs_g1_2_1,bs_g1_2_2,bs_g1_2_3,bs_g1_3_1,bs_g1_3_2,bs_g1_3_3,bs_g1_3_4,bs_g1_3_5,bs_g1_4_1,bs_g1_4_2,bs_g1_4_3,bs_g1_4_4,bs_g1_5_1,bs_g1_5_2,bs_g1_6_1,bs_g1_6_2,bs_g1_6_3,bs_g1_6_4,bs_g1_7_1,bs_g1_7_2,bs_g1_7_3,bs_g1_7_4,bs_g1_7_5,bs_g1_8_1,bs_g1_8_2,bs_g1_8_3,bs_g1_8_4,bs_g1_9_1,bs_g1_9_2,bs_g1_9_3,bs_g1_9_4,bs_g2_10_1,bs_g2_10_2,bs_g2_1_1,bs_g2_1_2,bs_g2_1_3,bs_g2_1_4,bs_g2_2_1,bs_g2_2_2,bs_g2_3_1,bs_g2_3_2,bs_g2_4_1,bs_g2_4_2,bs_g2_4_3,bs_g2_5_1_1,bs_g2_5_1_2,bs_g2_5_2,bs_g2_5_3,bs_g2_6_1,bs_g2_6_2,bs_g2_7_1,bs_g2_7_2,bs_g2_8_1_1,bs_g2_8_1_2,bs_g2_8_2,bs_g2_9_1,bs_g2_9_2,bs_g3_10_1,bs_g3_10_2,bs_g3_10_3,bs_g3_10_4,bs_g3_1_1,bs_g3_1_2,bs_g3_1_3,bs_g3_2_1,bs_g3_2_2,bs_g3_3_1,bs_g3_3_2,bs_g3_4_1,bs_g3_5_1,bs_g3_5_2,bs_g3_5_3,bs_g3_6_1,bs_g3_6_2,bs_g3_7_1,bs_g3_7_2,bs_g3_7_3,bs_g3_8_1,bs_g3_8_2,bs_g3_9_1,bs_g3_9_2,bs_g3_9_3,bs_g4_10_1,bs_g4_10_2,bs_g4_10_3,bs_g4_10_4,bs_g4_10_5_1,bs_g4_10_5_2,bs_g4_1_1,bs_g4_1_2,bs_g4_1_3,bs_g4_1_4,bs_g4_2_1,bs_g4_2_2,bs_g4_2_3,bs_g4_2_4,bs_g4_2_5,bs_g4_3_1,bs_g4_3_2,bs_g4_3_3,bs_g4_3_4,bs_g4_3_5,bs_g4_4_1,bs_g4_4_2_1,bs_g4_4_2_2,bs_g4_4_3,bs_g4_4_4,bs_g4_5_1_1,bs_g4_5_1_2,bs_g4_5_2_1,bs_g4_5_2_2,bs_g4_5_3,bs_g4_5_4,bs_g4_5_5,bs_g4_6_1,bs_g4_6_2,bs_g4_6_3,bs_g4_6_4,bs_g4_6_5_1,bs_g4_6_5_2,bs_g4_7_1,bs_g4_7_2,bs_g4_7_3,bs_g4_7_4,bs_g4_7_5,bs_g4_8_1,bs_g4_8_2_1,bs_g4_8_2_2,bs_g4_8_3,bs_g4_8_4,bs_g4_9_1,bs_g4_9_2,bs_g4_9_3,bs_g4_9_4,bs_g4_9_5,bs_g5_1,bs_g5_10,bs_g5_2,bs_g5_3,bs_g5_4,bs_g5_5,bs_g5_6,bs_g5_7,bs_g5_8,bs_g5_9,bs_g6_1,bs_g6_10,bs_g6_11,bs_g6_12,bs_g6_13,bs_g6_14,bs_g6_15,bs_g6_16_1_1,bs_g6_16_1_2,bs_g6_17,bs_g6_18,bs_g6_19,bs_g6_2,bs_g6_20,bs_g6_21,bs_g6_22,bs_g6_3,bs_g6_4,bs_g6_5,bs_g6_6,bs_g6_7,bs_g6_8,bs_g6_9,bs_g7_1,bs_g7_10,bs_g7_2,bs_g7_3,bs_g7_4,bs_g7_5,bs_g7_6,bs_g7_7,bs_g7_8,bs_g7_9,bs_g8_1,bs_g8_10,bs_g8_2,bs_g8_3,bs_g8_4,bs_g8_5,bs_g8_6,bs_g8_7,bs_g8_8,bs_g8_9,bs_g9_1,bs_g9_10,bs_g9_11,bs_g9_12,bs_g9_13,bs_g9_14,bs_g9_15,bs_g9_16,bs_g9_17,bs_g9_18,bs_g9_19,bs_g9_2,bs_g9_20,bs_g9_21,bs_g9_22,bs_g9_23,bs_g9_3,bs_g9_4,bs_g9_5,bs_g9_6_1,bs_g9_6_2,bs_g9_7,bs_g9_8,bs_g9_9,bs_selectB1,bs_selectB2,girl0001,girl0002,girl0003,girl0004,girl0005,girl0006,girl0007,girl0008,girl0009,girl0010,girl0011,girl0012,girl0013,girl0014,girl0015,maskMc,moreBtn,moreBtn1,replayBtn,resetBtn,saveBtn,showBtn"
+		},
+		{
+			"url": "assets/dress_mobile.json",
+			"type": "sheet",
+			"name": "dress_mobile_sheet",
+			"subkeys": "girl_g1_10_1,girl_g1_10_2,girl_g1_10_3,girl_g1_10_4,girl_g1_11_1,girl_g1_11_2,girl_g1_11_3,girl_g1_11_4,girl_g1_12_1,girl_g1_12_2,girl_g1_12_3,girl_g1_13_1,girl_g1_13_2,girl_g1_13_3,girl_g1_13_4,girl_g1_13_5,girl_g1_14_1,girl_g1_14_2,girl_g1_14_3,girl_g1_14_4,girl_g1_15_1,girl_g1_15_2,girl_g1_15_3,girl_g1_15_4,girl_g1_1_1,girl_g1_1_2,girl_g1_1_3,girl_g1_1_4,girl_g1_1_5,girl_g1_1_6,girl_g1_1_7,girl_g1_2_1,girl_g1_2_2,girl_g1_2_3,girl_g1_3_1,girl_g1_3_2,girl_g1_3_3,girl_g1_3_4,girl_g1_3_5,girl_g1_4_1,girl_g1_4_2,girl_g1_4_3,girl_g1_4_4,girl_g1_5_1,girl_g1_5_2,girl_g1_6_1,girl_g1_6_2,girl_g1_6_3,girl_g1_6_4,girl_g1_7_1,girl_g1_7_2,girl_g1_7_3,girl_g1_7_4,girl_g1_7_5,girl_g1_8_1,girl_g1_8_2,girl_g1_8_3,girl_g1_8_4,girl_g1_9_1,girl_g1_9_2,girl_g1_9_3,girl_g1_9_4,girl_g2_10_1,girl_g2_10_2,girl_g2_1_1,girl_g2_1_2,girl_g2_1_3,girl_g2_1_4,girl_g2_2_1,girl_g2_2_2,girl_g2_3_1,girl_g2_3_2,girl_g2_4_1,girl_g2_4_2,girl_g2_4_3,girl_g2_5_1_1,girl_g2_5_1_2,girl_g2_5_2,girl_g2_5_3,girl_g2_6_1,girl_g2_6_2,girl_g2_7_1,girl_g2_7_2,girl_g2_8_1_1,girl_g2_8_1_2,girl_g2_8_2,girl_g2_9_1,girl_g2_9_2,girl_g3_10_1,girl_g3_10_2,girl_g3_10_3,girl_g3_10_4,girl_g3_1_1,girl_g3_1_2,girl_g3_1_3,girl_g3_2_1,girl_g3_2_2,girl_g3_3_1,girl_g3_3_2,girl_g3_4_1,girl_g3_5_1,girl_g3_5_2,girl_g3_5_3,girl_g3_6_1,girl_g3_6_2,girl_g3_7_1,girl_g3_7_2,girl_g3_7_3,girl_g3_8_1,girl_g3_8_2,girl_g3_9_1,girl_g3_9_2,girl_g3_9_3,girl_g4_10_1,girl_g4_10_2,girl_g4_10_3,girl_g4_10_4,girl_g4_10_5_1,girl_g4_10_5_2,girl_g4_1_1,girl_g4_1_2,girl_g4_1_3,girl_g4_1_4,girl_g4_2_1,girl_g4_2_2,girl_g4_2_3,girl_g4_2_4,girl_g4_2_5,girl_g4_3_1,girl_g4_3_2,girl_g4_3_3,girl_g4_3_4,girl_g4_3_5,girl_g4_4_1,girl_g4_4_2_1,girl_g4_4_2_2,girl_g4_4_3,girl_g4_4_4,girl_g4_5_1_1,girl_g4_5_1_2,girl_g4_5_2_1,girl_g4_5_2_2,girl_g4_5_3,girl_g4_5_4,girl_g4_5_5,girl_g4_6_1,girl_g4_6_2,girl_g4_6_3,girl_g4_6_4,girl_g4_6_5_1,girl_g4_6_5_2,girl_g4_7_1,girl_g4_7_2,girl_g4_7_3,girl_g4_7_4,girl_g4_7_5,girl_g4_8_1,girl_g4_8_2_1,girl_g4_8_2_2,girl_g4_8_3,girl_g4_8_3562,girl_g4_8_4,girl_g4_9_1,girl_g4_9_2,girl_g4_9_3,girl_g4_9_4,girl_g4_9_5,girl_g5_1,girl_g5_10,girl_g5_2,girl_g5_3,girl_g5_4,girl_g5_5,girl_g5_6,girl_g5_7,girl_g5_8,girl_g5_9,girl_g6_1,girl_g6_10,girl_g6_11,girl_g6_12,girl_g6_13,girl_g6_14,girl_g6_15,girl_g6_16,girl_g6_16_2,girl_g6_17,girl_g6_18,girl_g6_19,girl_g6_2,girl_g6_20,girl_g6_21,girl_g6_22,girl_g6_3,girl_g6_4,girl_g6_5,girl_g6_6,girl_g6_7,girl_g6_8,girl_g6_9,girl_g7_1,girl_g7_10,girl_g7_2,girl_g7_3,girl_g7_4,girl_g7_5,girl_g7_6,girl_g7_7,girl_g7_8,girl_g7_9,girl_g8_1,girl_g8_10,girl_g8_2,girl_g8_3,girl_g8_4,girl_g8_5,girl_g8_6,girl_g8_7,girl_g8_8,girl_g8_9,girl_g9_1,girl_g9_10,girl_g9_11,girl_g9_12,girl_g9_13,girl_g9_14,girl_g9_15,girl_g9_16,girl_g9_17,girl_g9_18,girl_g9_19,girl_g9_2,girl_g9_20,girl_g9_21,girl_g9_22,girl_g9_23,girl_g9_3,girl_g9_4,girl_g9_5,girl_g9_6_1,girl_g9_6_2,girl_g9_7,girl_g9_8,girl_g9_9"
+		},
+		{
+			"url": "assets/bgCon_1679.png",
+			"type": "image",
+			"name": "bgCon_1679"
+		},
+		{
+			"url": "assets/bgCon_2775.png",
+			"type": "image",
+			"name": "bgCon_2775"
+		},
+		{
+			"url": "assets/bgCon_4020.png",
+			"type": "image",
+			"name": "bgCon_4020"
+		},
+		{
+			"url": "assets/bgCon_4118.png",
+			"type": "image",
+			"name": "bgCon_4118"
+		},
+		{
+			"url": "assets/bgCon_4434.png",
+			"type": "image",
+			"name": "bgCon_4434"
+		},
+		{
+			"url": "assets/bgCon_7749.png",
+			"type": "image",
+			"name": "bgCon_7749"
+		},
+		{
+			"url": "assets/bgCon_8184.png",
+			"type": "image",
+			"name": "bgCon_8184"
+		},
+		{
+			"url": "assets/bgCon_8200.png",
+			"type": "image",
+			"name": "bgCon_8200"
+		},
+		{
+			"url": "assets/bgCon_8987.png",
+			"type": "image",
+			"name": "bgCon_8987"
+		},
+		{
+			"url": "assets/bgCon_9205.png",
+			"type": "image",
+			"name": "bgCon_9205"
+		}
+	]
+}

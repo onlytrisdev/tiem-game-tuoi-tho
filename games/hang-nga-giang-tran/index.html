@@ -1,0 +1,65 @@
+
+<!DOCTYPE HTML>
+<html>
+<head><script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+<meta charset="utf-8">
+<title>Hằng nga giáng trần</title>
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="full-screen" content="true" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-fullscreen" content="true" />
+<meta name="360-fullscreen" content="true" />
+<style>
+        *{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+        html, body {
+
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+
+<script egret="lib" src="libs/modules/egret/egret.min.js"></script>
+<script egret="lib" src="libs/modules/egret/egret.web.min.js"></script>
+<script egret="lib" src="libs/modules/game/game.min.js"></script>
+<script egret="lib" src="libs/modules/res/res.min.js"></script>
+<script egret="lib" src="libs/modules/tween/tween.min.js"></script>
+<script egret="lib" src="libs/modules/particle/particle.min.js"></script>
+<script egret="lib" src="libs/modules/mouse/mouse.min.js"></script>
+
+
+
+<script egret="lib" src="libs/cgs/FileSaver.js"></script>
+<script egret="lib" src="libs/cgs/cgsBase.js"></script>
+<script src="jquery-1.11.3.min.js"></script>
+
+
+
+
+
+
+<script src="main.min.js"></script>
+
+</head>
+<body>
+<div id="mygame" style="position:absolute;height:100%;width:100%;top:0;left:0;z-index:9"><div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="landscapeFlipped" data-scale-mode="noScale" data-frame-rate="30" data-content-width="800" data-content-height="600" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div></div>
+<script>
+        /**
+         * {
+         * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+         * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+         * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+         * }
+         **/
+        egret.runEgret({renderMode:"webgl", audioType:0});
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+window.ge = {
+    DROP_COINS: 0,
+    ENEMY_HIT: 1,
+    BULLET_TIME: 3,
+    CN_OVERLAP_ACTIVE: 4,
+    PLAYER_BALLOON_IMPACT: 5,
+    SHOW_SUMMARY: 6,
+
+    UPDATE_INGAME_UI: 7,
+
+    PLAYER_LOSE: 8,
+
+    SHAKE: 9,
+
+    PAUSE: 10,
+}

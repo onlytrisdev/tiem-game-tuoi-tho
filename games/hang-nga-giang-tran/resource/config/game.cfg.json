@@ -1,0 +1,13 @@
+{
+    "entryPoint":"loading",
+    "resources":["loading_#platform#","start_#platform#","transition_#platform#","bsCon_#platform#","bg_#platform#","dress_#platform#","girl_#platform#"
+    ],
+    "resourceConfig":"resource/default.res.json",
+    "resourceRoot":"resource/",
+    "scenes":{
+        "loading":{"require":"loading_#platform#","class":"LoadingWedding"},
+        "start":{"require":"start_#platform#,transition_#platform#", "class":"StartScene"},
+        "game1":{"require":"bsCon_#platform#,girl_#platform#,dress_#platform#,bg_#platform#","class":"GameScene"}
+       
+    }
+}
