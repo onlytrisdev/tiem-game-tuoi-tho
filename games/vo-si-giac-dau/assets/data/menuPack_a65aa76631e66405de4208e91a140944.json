@@ -1,0 +1,60 @@
+{
+    "menuState": [{
+        "type": "audio",
+        "key": "music",
+        "urls": ["snd/music.ogg", "snd/music.m4a"],
+        "autoDecode": true
+    }, {
+        "type": "audio",
+        "key": "button",
+        "urls": ["snd/button.ogg", "snd/button.m4a"],
+        "autoDecode": true
+    }, {
+        "type": "audio",
+        "key": "start",
+        "urls": ["snd/start.ogg", "snd/start.m4a"],
+        "autoDecode": true
+    }, {
+        "type": "audio",
+        "key": "score",
+        "urls": ["snd/score.ogg", "snd/score.m4a"],
+        "autoDecode": true
+    }, {
+        "type": "audio",
+        "key": "swoosh",
+        "urls": ["snd/swoosh.ogg", "snd/swoosh.m4a"],
+        "autoDecode": true
+    }, {
+        "type": "audio",
+        "key": "victory",
+        "urls": ["snd/victory.ogg", "snd/victory.m4a"],
+        "autoDecode": true
+    }, {
+        "type": "layout",
+        "key": "layout_menu",
+        "url": "layout/start.json",
+        "overwrite": false
+    }, {
+        "type": "layout",
+        "key": "layout_end",
+        "url": "layout/end.json",
+        "overwrite": false
+    }, {
+        "type": "layout",
+        "key": "layout_name",
+        "url": "layout/nameEntry.json",
+        "overwrite": false
+    }, {
+        "type": "layout",
+        "key": "layout_highscore",
+        "url": "layout/highscore.json",
+        "overwrite": false
+    }],
+    "meta": {
+        "generated": "1508779004",
+        "version": "1.0",
+        "app": "Hand made",
+        "url": "https://localhost/",
+        "copyright": "Flying Sheep Studios GmbH 2017"
+    }
+}

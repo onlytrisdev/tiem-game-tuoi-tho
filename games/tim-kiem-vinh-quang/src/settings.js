@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scenes/loading.fire",orientation:"",jsList:["assets/plugin/OverwriteCocosFunctions.js","assets/scripts/plugins/howler.min.js"]};

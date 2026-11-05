@@ -1,0 +1,15 @@
+{
+    "base": [{
+        "type": "layout",
+        "key": "layout_preload",
+        "url": "layout/preload.json",
+        "overwrite": false
+    }],
+    "meta": {
+        "generated": "1508779004",
+        "version": "1.0",
+        "app": "Hand made",
+        "url": "https://localhost/",
+        "copyright": "Flying Sheep Studios GmbH 2017"
+    }
+}

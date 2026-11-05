@@ -1,0 +1,709 @@
+{
+    "name": "options",
+    "size": {
+        "width": 720,
+        "height": 1280
+    },
+    "resources": {
+        "options": [{
+            "type": "atlasJSONArray",
+            "key": "button",
+            "textureURL": "assets/atlas/button.png",
+            "atlasURL": "assets/atlas/button.json",
+            "atlasData": null
+        }, {
+            "type": "webFont",
+            "key": "options_fonts",
+            "urls": ["assets/font/RobotoCondensedBold.css"],
+            "families": ["Roboto Condensed Bold"],
+            "overwrite": false
+        }]
+    },
+    "children": [{
+        "id": "buttonContinue",
+        "type": "button",
+        "position": {
+            "x": 0,
+            "y": 220
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "key": "button",
+        "states": [{
+            "name": "default",
+            "baseFrame": "default_02",
+            "hoverFrame": "default_02_hover",
+            "downFrame": "default_02_down",
+            "baseText": {
+                "id": "buttonContinue-default-baseText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tiếp",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "hoverText": {
+                "id": "buttonContinue-default-hoverText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tiếp",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "downText": {
+                "id": "buttonContinue-default-downText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tiếp",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 50px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 50
+                }
+            }
+        }]
+    }, {
+        "id": "buttonRestart",
+        "type": "button",
+        "position": {
+            "x": 0,
+            "y": 73
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "key": "button",
+        "states": [{
+            "name": "default",
+            "baseFrame": "default_02",
+            "hoverFrame": "default_02_hover",
+            "downFrame": "default_02_down",
+            "baseText": {
+                "id": "buttonRestart-default-baseText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Chơi lại",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "hoverText": {
+                "id": "buttonRestart-default-hoverText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Chơi lại",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "downText": {
+                "id": "buttonRestart-default-downText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Chơi lại",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 50px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 50
+                }
+            }
+        }]
+    }, {
+        "id": "buttonTutorial",
+        "type": "button",
+        "position": {
+            "x": 0,
+            "y": -73
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "key": "button",
+        "states": [{
+            "name": "default",
+            "baseFrame": "default_02",
+            "hoverFrame": "default_02_hover",
+            "downFrame": "default_02_down",
+            "baseText": {
+                "id": "buttonTutorial-default-baseText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Thử lại",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "hoverText": {
+                "id": "buttonTutorial-default-hoverText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Thử lại",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "downText": {
+                "id": "buttonTutorial-default-downText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Thử lại",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 50px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 50
+                }
+            }
+        }]
+    }, {
+        "id": "buttonSound",
+        "type": "button",
+        "position": {
+            "x": 0,
+            "y": -220
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "key": "button",
+        "states": [{
+            "name": "default",
+            "baseFrame": "default_02",
+            "hoverFrame": "default_02_hover",
+            "downFrame": "default_02_down",
+            "baseText": {
+                "id": "buttonSound-default-baseText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tắt tiếng",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "hoverText": {
+                "id": "buttonSound-default-hoverText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tắt tiếng",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "downText": {
+                "id": "buttonSound-default-downText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tắt tiếng",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 50px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 50
+                }
+            }
+        }, {
+            "name": "muted",
+            "baseFrame": "default_02",
+            "hoverFrame": "default_02_hover",
+            "downFrame": "default_02_down",
+            "baseText": {
+                "id": "buttonSound-muted-baseText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tắt tiếng",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "hoverText": {
+                "id": "buttonSound-muted-hoverText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tắt tiếng",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "downText": {
+                "id": "buttonSound-muted-downText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 1
+                },
+                "text": "Tắt tiếng",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            }
+        }]
+    }],
+    "id": "8decf30e-aff1-4212-b0f0-99555ee5dde4",
+    "editor-version": "1.1.1",
+    "exporter-version": "1.2.1"
+}

@@ -1,0 +1,25 @@
+<level star1="10" star2="15" star3="20" total="30">
+  <character type="polar" posx="1" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <character type="panda" posx="5" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <character type="pardo" posx="9" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <semisolid type="solid" posx="0" posy="15" group="0" rotate="0" dirx="0" diry="0" width="42" height="1" timer="0"/>
+  <semisolid type="semisolid c" posx="8" posy="5" group="0" rotate="0" dirx="0" diry="0" width="4" height="11" timer="0"/>
+  <semisolid type="semisolid b" posx="10" posy="9" group="0" rotate="0" dirx="0" diry="0" width="8" height="7" timer="0"/>
+  <semisolid type="semisolid" posx="16" posy="10" group="0" rotate="0" dirx="0" diry="0" width="10" height="6" timer="0"/>
+  <semisolid type="semisolid c" posx="18" posy="5" group="0" rotate="0" dirx="0" diry="0" width="6" height="11" timer="0"/>
+  <semisolid type="semisolid b" posx="24" posy="9" group="0" rotate="0" dirx="0" diry="0" width="8" height="7" timer="0"/>
+  <semisolid type="semisolid c" posx="30" posy="5" group="0" rotate="0" dirx="0" diry="0" width="4" height="10" timer="0"/>
+  <pusher type="b" posx="14" posy="9" group="2" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <pusher type="b" posx="14" posy="15" group="4" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <pusher type="b" posx="26" posy="9" group="3" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <pusher type="b" posx="26" posy="15" group="5" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <stair type="d" posx="39" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <item type="a" posx="9" posy="1" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <item type="b" posx="20" posy="1" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <item type="c" posx="31" posy="1" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <jumper type="a" posx="31" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <exit type="a" posx="19" posy="6" group="1" rotate="0" dirx="0" diry="0" width="0" height="0" timer="1"/>
+  <exit type="d" posx="19" posy="11" group="2" rotate="0" dirx="0" diry="0" width="0" height="0" timer="2"/>
+  <pad type="a" posx="31" posy="3" group="1" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <box type="random" posx="9" posy="3" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+</level>

@@ -1,0 +1,938 @@
+{
+    "c2array": true,
+    "size": [
+        2,
+        154,
+        1
+    ],
+    "data": [
+        [
+            [
+                "МИССИЯ\nЗАВЕРШЕНА"
+            ],
+            [
+                "Магазин"
+            ],
+            [
+                "СПАСИ МЕНЯ!"
+            ],
+            [
+                "Купить"
+            ],
+            [
+                "Улучшить"
+            ],
+            [
+                "Урон"
+            ],
+            [
+                "Темп"
+            ],
+            [
+                "Крит"
+            ],
+            [
+                "Дальность"
+            ],
+            [
+                "Автомат"
+            ],
+            [
+                "Пулемёт"
+            ],
+            [
+                "Пистолет-Пулемёт"
+            ],
+            [
+                "Пистолет"
+            ],
+            [
+                "Револьвер"
+            ],
+            [
+                "Снайперская винтовка"
+            ],
+            [
+                "Дробовик"
+            ],
+            [
+                "Ближний бой"
+            ],
+            [
+                "Награда"
+            ],
+            [
+                "Нажмите, чтобы продолжить"
+            ],
+            [
+                "Успех!"
+            ],
+            [
+                "Неудача!"
+            ],
+            [
+                "Пауза"
+            ],
+            [
+                "Продолжить"
+            ],
+            [
+                "Заново"
+            ],
+            [
+                "Меню"
+            ],
+            [
+                "Заработано"
+            ],
+            [
+                "Тир"
+            ],
+            [
+                "День "
+            ],
+            [
+                "+20 сек!"
+            ],
+            [
+                "ВРЕМЯ ВЫШЛО!"
+            ],
+            [
+                "Выбрать"
+            ],
+            [
+                "Убрать"
+            ],
+            [
+                "Выберите ячейку"
+            ],
+            [
+                "Комбо!"
+            ],
+            [
+                "НАЧАТЬ МИССИЮ"
+            ],
+            [
+                "за"
+            ],
+            [
+                "Уничтожь"
+            ],
+            [
+                "Пройди"
+            ],
+            [
+                "Продержись"
+            ],
+            [
+                "Уничтожай"
+            ],
+            [
+                "и зарабатывай деньги!"
+            ],
+            [
+                "Каналы"
+            ],
+            [
+                "Лаборатория"
+            ],
+            [
+                "Улица"
+            ],
+            [
+                "Фабрика"
+            ],
+            [
+                "Подземка"
+            ],
+            [
+                "Кладбище"
+            ],
+            [
+                "НАЧАТЬ!"
+            ],
+            [
+                "Настройки"
+            ],
+            [
+                "Язык"
+            ],
+            [
+                "Звук"
+            ],
+            [
+                "Улучшите своё оружие или купите новое."
+            ],
+            [
+                "Сопроводите выжившего"
+            ],
+            [
+                "Цели"
+            ],
+            [
+                "Здоровье"
+            ],
+            [
+                "Скорость"
+            ],
+            [
+                "Диджей"
+            ],
+            [
+                "Рокси"
+            ],
+            [
+                "Самурай"
+            ],
+            [
+                "Хантер"
+            ],
+            [
+                "Диджей был в шоке, когда зомби ворвались в его квартиру. Ему впервые пришлось использовать свой пистолет.\n\nХорошо, что Рокси и её команда вовремя подоспели и помогли Диджею.\n\nКажется, Рокси ему очень нравится."
+            ],
+            [
+                "После того, как зомби забрали ее отца, она поклялась защищать людей от ходячих мертвецов.\n\nРокси собрала команду для спасения мира и теперь они очищают улицы от ужасных существ вместе."
+            ],
+            [
+                "Что? Его глаза действительно светятся?!\n\nЕщё недавно Самурай нарезал только фрукты, но теперь всё изменилось... Он не боится ничего, кроме крыс и черепах."
+            ],
+            [
+                "Хантер стал первым, кто присоединился к Рокси в команду по спасению мира. Он никогда не хотел быть героем, да и не стал им.\n\nИм движет лишь жажда мести за всех, кто пострадал от гнилых лап зомби."
+            ],
+            [
+                "Выбрать"
+            ],
+            [
+                "Выбрано"
+            ],
+            [
+                "Умения"
+            ],
+            [
+                "У него нет никаких уникальных способностей."
+            ],
+            [
+                "Восстанавливает здоровье:\n2% в секунду\n\n1.3x скорострельность и урон с пистолета и ПП"
+            ],
+            [
+                "1.2x урон в ближнем бою\n\n1.3x скорость атаки в ближнем бою\n\n1.4x дальность ближнего боя"
+            ],
+            [
+                "Восстанавливает здоровье:\n3% в секунду\n\n1.5x урон с дробовика, снайперских винтовок и пулемёта"
+            ],
+            [
+                "Жетон Возрождения"
+            ],
+            [
+                "Лёгкие Ботинки"
+            ],
+            [
+                "Сапоги Скороходы"
+            ],
+            [
+                "Деревянный Меч"
+            ],
+            [
+                "Стальной Меч"
+            ],
+            [
+                "Деревянный Щит"
+            ],
+            [
+                "Стальной Щит"
+            ],
+            [
+                "Лечебный Настой"
+            ],
+            [
+                "Военная Аптечка"
+            ],
+            [
+                "Большая Бомба"
+            ],
+            [
+                "Мгновенно восстанавливает 10 ОЗ\n\nПерезарядка: 8 сек"
+            ],
+            [
+                "Мгновенно восстанавливает 40 ОЗ\n\nПерезарядка: 15 сек"
+            ],
+            [
+                "Уничтожает всех зомби\n\nПерезарядка: 25 сек"
+            ],
+            [
+                "Увеличивает скорость передвижения на 50 ед\n\nДействует: 5 сек\n\nПерезарядка: 8 сек"
+            ],
+            [
+                "Увеличивает скорость передвижения на 100 ед\n\nДействует: 10 сек\n\nПерезарядка: 15 сек"
+            ],
+            [
+                "Увеличивает урон оружия на 15%\n\nДействует: 5 сек\n\nПерезарядка: 8 сек"
+            ],
+            [
+                "Увеличивает урон оружия на 30%\n\nДействует: 10 сек\n\nПерезарядка: 15 сек"
+            ],
+            [
+                "Увеличивает защиту на 15%\n\nДействует: 5 сек\n\nПерезарядка: 8 сек"
+            ],
+            [
+                "Увеличивает защиту на 50%\n\nДействует: 10 сек\n\nПерезарядка: 15 сек"
+            ],
+            [
+                "Возвращает солдата к жизни, полного силой и мотивацией продолжить миссию"
+            ],
+            [
+                "Для передвижения используй \nCтрелки/A и D"
+            ],
+            [
+                "Для передвижения используй \nCтрелки"
+            ],
+            [
+                "Чтобы выстрелить, зажми кнопку прицела"
+            ],
+            [
+                "Чтобы выстрелить, зажми пробел или зажми кнопку мыши"
+            ],
+            [
+                "Уничтожь всех уродов!"
+            ],
+            [
+                "Наш локатор засёк активность зомби в этих местах. Вперёд!"
+            ],
+            [
+                "Давай посмотрим, что есть в магазине."
+            ],
+            [
+                "Тебе нужно пробежать 15м, попутно уничтожая зомби!"
+            ],
+            [
+                "Ещё один день позади! Ты молодец! Локатор засёк ещё пару заданий!"
+            ],
+            [
+                "Теперь тебе нужно продержаться 25 сек. Ты справишься!"
+            ],
+            [
+                "Чтобы переключить оружие, нажми на иконку с ним"
+            ],
+            [
+                "Чтобы купить патроны, нажми на иконку выбранного оружия"
+            ],
+            [
+                "Отличная новость! Мы нашли выжившего! Мы должны помочь ему!"
+            ],
+            [
+                "Чтобы купить патроны, нажми на иконку выбранного оружия или Стрелка вверх/W"
+            ],
+            [
+                "Чтобы переключить оружие, нажми на иконку с ним или на цифру оружия на клавиатуре"
+            ],
+            [
+                "Мы обнаружили Тир в районе - идеальное место, чтобы заработать."
+            ],
+            [
+                "В районе были обнаружены страшные мутанты, непохожие на остальных зомби..."
+            ],
+            [
+                "Мы отлично справляемся, но зомби становится всё больше..."
+            ],
+            [
+                "Времени мало! Беги! Нужно успеть перебежать 55м за 1:15!"
+            ],
+            [
+                "Успей уничтожить всех зомби, пока не истекло время!"
+            ],
+            [
+                "Это не основное задание. Тут можно ТОЛЬКО заработать деньги!"
+            ],
+            [
+                "О нет! Активности зомби стало ещё больше! Нужно спешить!"
+            ],
+            [
+                "Уничтожить зомби: "
+            ],
+            [
+                "Пережить дни: "
+            ],
+            [
+                "Купить оружия: "
+            ],
+            [
+                "Открыть персонажей: "
+            ],
+            [
+                "Первая Кровь"
+            ],
+            [
+                "Опытный"
+            ],
+            [
+                "Отличное Начало"
+            ],
+            [
+                "Буйство"
+            ],
+            [
+                "Уничтожитель"
+            ],
+            [
+                "Зомбирубка"
+            ],
+            [
+                "Неостановимый"
+            ],
+            [
+                "Какого зомби?!"
+            ],
+            [
+                "Новичок"
+            ],
+            [
+                "Шоу должно продолжаться!"
+            ],
+            [
+                "Акробат"
+            ],
+            [
+                "Везунчик"
+            ],
+            [
+                "Это невозможно!"
+            ],
+            [
+                "Выживший"
+            ],
+            [
+                "Стрелок"
+            ],
+            [
+                "Любитель Пушек"
+            ],
+            [
+                "Коллекционер"
+            ],
+            [
+                "Начнём!"
+            ],
+            [
+                "Вместе - мы сила"
+            ],
+            [
+                "Большая Семья"
+            ],
+            [
+                "Получить"
+            ],
+            [
+                "Достижения"
+            ],
+            [
+                "Выполнено"
+            ],
+            [
+                "Не выполнено"
+            ],
+            [
+                "Русский"
+            ],
+            [
+                "СТРЕЛЯЙ И ЗАРАБАТЫВАЙ"
+            ],
+            [
+                "Оружие"
+            ],
+            [
+                "Усиления"
+            ],
+            [
+                "Скины"
+            ],
+            [
+                "Ур."
+            ],
+            [
+                "Призы"
+            ],
+            [
+                "ЗомБокс Удачи"
+            ],
+            [
+                "Шанс"
+            ],
+            [
+                "Эта коробка позволяет выиграть 1 случайный приз"
+            ],
+            [
+                "Открыть сейчас"
+            ],
+            [
+                "ч. "
+            ],
+            [
+                " мин."
+            ]
+        ],
+        [
+            [
+                "MISSION\nCOMPLETED"
+            ],
+            [
+                "Shop"
+            ],
+            [
+                "SAVE ME!"
+            ],
+            [
+                "Buy"
+            ],
+            [
+                "Upgrade"
+            ],
+            [
+                "Damage"
+            ],
+            [
+                "Fire Rate"
+            ],
+            [
+                "Crit"
+            ],
+            [
+                "Range"
+            ],
+            [
+                "Automatic Rifle"
+            ],
+            [
+                "Machine Gun"
+            ],
+            [
+                "Submachine Gun"
+            ],
+            [
+                "Pistol"
+            ],
+            [
+                "Revolver"
+            ],
+            [
+                "Sniper Rifle"
+            ],
+            [
+                "Shotgun"
+            ],
+            [
+                "Melee"
+            ],
+            [
+                "Reward"
+            ],
+            [
+                "Tap to continue"
+            ],
+            [
+                "Victory!"
+            ],
+            [
+                "Defeat!"
+            ],
+            [
+                "Pause"
+            ],
+            [
+                "Continue"
+            ],
+            [
+                "Restart"
+            ],
+            [
+                "Menu"
+            ],
+            [
+                "Earned"
+            ],
+            [
+                "Shooting Range"
+            ],
+            [
+                "Day "
+            ],
+            [
+                "+20 sec!"
+            ],
+            [
+                "TIME IS OVER!"
+            ],
+            [
+                "Equip"
+            ],
+            [
+                "Unequip"
+            ],
+            [
+                "Select slot"
+            ],
+            [
+                "Combo!"
+            ],
+            [
+                "START MISSION"
+            ],
+            [
+                "for"
+            ],
+            [
+                "Destroy"
+            ],
+            [
+                "Run"
+            ],
+            [
+                "Hold on for "
+            ],
+            [
+                "Destroy"
+            ],
+            [
+                "and earn money!"
+            ],
+            [
+                "Canals"
+            ],
+            [
+                "Laboratory"
+            ],
+            [
+                "Street"
+            ],
+            [
+                "Factory"
+            ],
+            [
+                "Subway"
+            ],
+            [
+                "Cemetery"
+            ],
+            [
+                "START!"
+            ],
+            [
+                "Settings"
+            ],
+            [
+                "Language"
+            ],
+            [
+                "Sound"
+            ],
+            [
+                "Upgrade your weapon or buy a new one."
+            ],
+            [
+                "Escort the survivor"
+            ],
+            [
+                "Targets"
+            ],
+            [
+                "Health"
+            ],
+            [
+                "Speed"
+            ],
+            [
+                "DJ"
+            ],
+            [
+                "Roxy"
+            ],
+            [
+                "Samurai"
+            ],
+            [
+                "Hunter"
+            ],
+            [
+                "DJ was shocked when zombies broke into his apartment. It was the first time he had to use his gun.\n\nIt's good that Roxy and her team arrived in time and helped DJ.\n\nHe seems to really like Roxy."
+            ],
+            [
+                "After zombies took her father, she vowed to protect people from the walking dead.\n\nRoxy has assembled the team to save the world and now they are clearing the streets of terrible creatures together."
+            ],
+            [
+                "What? Are his eyes really glowing?!\n\nUntil recently, Samurai only cut fruit, but now everything has changed... He is not afraid of anything except rats and turtles."
+            ],
+            [
+                "Hunter became the first to join Roxy in the team to save the world. He never wanted to be a hero, and he never became one.\n\nHe is driven only by a thirst for revenge for all those who suffered from the rotten clutches of zombies."
+            ],
+            [
+                "Choose"
+            ],
+            [
+                "Chosen"
+            ],
+            [
+                "Skills"
+            ],
+            [
+                "He doesn't have any unique abilities."
+            ],
+            [
+                "Restores health:\n2% per second\n\n1.3x fire rate and damage from pistol and SMG"
+            ],
+            [
+                "1.2x melee damage\n\n1.3x melee attack speed\n\n1.4x melee range"
+            ],
+            [
+                "Restores health:\n3% per second\n\n1.5x damage from shotgun, sniper rifles and machine gun"
+            ],
+            [
+                "Respawn Token"
+            ],
+            [
+                "Light Boots"
+            ],
+            [
+                "Seven-league Boots"
+            ],
+            [
+                "Wooden Sword"
+            ],
+            [
+                "Steel Sword"
+            ],
+            [
+                "Wooden Shield"
+            ],
+            [
+                "Steel Shield"
+            ],
+            [
+                "Healing Flask"
+            ],
+            [
+                "Military First Aid Kit"
+            ],
+            [
+                "Big Bomb"
+            ],
+            [
+                "Instantly restores 10 HP\n\nCooldown: 8 sec"
+            ],
+            [
+                "Instantly restores 40 HP\n\nCooldown: 15 sec"
+            ],
+            [
+                "Destroys all zombies\n\nCooldown: 25 sec"
+            ],
+            [
+                "Increases movement speed by 50 units\n\nLasts: 5 sec\n\nCooldown: 8 sec"
+            ],
+            [
+                "Increases movement speed by 100 units\n\nLasts: 10 sec\n\nCooldown: 15 sec"
+            ],
+            [
+                "Increases weapon damage by 15%\n\nLasts: 5 sec\n\nCooldown: 8 sec"
+            ],
+            [
+                "Increases weapon damage by 30%\n\nLasts: 10 sec\n\nCooldown: 15 sec"
+            ],
+            [
+                "Increases defense by 15%\n\nLasts: 5 sec\n\nCooldown: 8 sec"
+            ],
+            [
+                "Increases defense by 50%\n\nLasts: 10 sec\n\nCooldown: 15 sec"
+            ],
+            [
+                "Brings the soldier back to life, full of strength and motivation to continue the mission"
+            ],
+            [
+                "To move use\nArrows/A and D"
+            ],
+            [
+                "To move use\nArrows"
+            ],
+            [
+                "To shoot, hold the aim button"
+            ],
+            [
+                "To shoot, hold down the spacebar or hold down the mouse button"
+            ],
+            [
+                "Destroy all the freaks!"
+            ],
+            [
+                "Our locator detected zombie activity in these places. Let's go!"
+            ],
+            [
+                "Let's see what's in store."
+            ],
+            [
+                "You need to run 15m, destroying zombies along the way!"
+            ],
+            [
+                "Another day is over! Well done! The locator spotted a couple more tasks!"
+            ],
+            [
+                "Now you need to hold out for 25 seconds. You can do it!"
+            ],
+            [
+                "To switch weapons, click on the icon with it"
+            ],
+            [
+                "To buy ammunition, click on the icon of the selected weapon"
+            ],
+            [
+                "Great news! We found the survivor! We must help him!"
+            ],
+            [
+                "To buy ammunition, click on the icon of the selected weapon or Up Arrow/W"
+            ],
+            [
+                "To switch weapons, click on the icon with it or on the weapon number on the keyboard"
+            ],
+            [
+                "We discovered a Shooting Range in the area - the perfect place to make money."
+            ],
+            [
+                "Terrible mutants, unlike other zombies, were discovered in the area..."
+            ],
+            [
+                "We're doing great, but there are more and more zombies..."
+            ],
+            [
+                "Time is short! Run! You need to run 55m in 1:15!"
+            ],
+            [
+                "Hurry up to destroy all the zombies before time runs out!"
+            ],
+            [
+                "This is not the main mission. Here you can ONLY make money!"
+            ],
+            [
+                "Oh no! There is even more zombie activity! We need to hurry!"
+            ],
+            [
+                "Destroy zombies: "
+            ],
+            [
+                "Survive the days: "
+            ],
+            [
+                "Buy weapons: "
+            ],
+            [
+                "Unlock Characters: "
+            ],
+            [
+                "First Blood"
+            ],
+            [
+                "Experienced"
+            ],
+            [
+                "Great Start"
+            ],
+            [
+                "Rampage"
+            ],
+            [
+                "Destroyer"
+            ],
+            [
+                "Zombie Grinder"
+            ],
+            [
+                "Unstoppable"
+            ],
+            [
+                "What the zombie?!"
+            ],
+            [
+                "Newbie"
+            ],
+            [
+                "Show must go on!"
+            ],
+            [
+                "Acrobat"
+            ],
+            [
+                "Lucky"
+            ],
+            [
+                "This is impossible!"
+            ],
+            [
+                "Survivor"
+            ],
+            [
+                "Shooter"
+            ],
+            [
+                "Gun Lover"
+            ],
+            [
+                "Collector"
+            ],
+            [
+                "Let's get it started!"
+            ],
+            [
+                "Together - we are force"
+            ],
+            [
+                "Big Family"
+            ],
+            [
+                "Reward"
+            ],
+            [
+                "Achievements"
+            ],
+            [
+                "Completed"
+            ],
+            [
+                "Not completed"
+            ],
+            [
+                "English"
+            ],
+            [
+                "SHOOT AND EARN MONEY"
+            ],
+            [
+                "Weapons"
+            ],
+            [
+                "Powerups"
+            ],
+            [
+                "Skins"
+            ],
+            [
+                "LVL"
+            ],
+            [
+                "Prizes"
+            ],
+            [
+                "Lucky ZomBox"
+            ],
+            [
+                "Chance"
+            ],
+            [
+                "This box allows to win 1 random prize"
+            ],
+            [
+                "Open now"
+            ],
+            [
+                "h "
+            ],
+            [
+                " min"
+            ]
+        ]
+    ]
+}

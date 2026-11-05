@@ -1,0 +1,156 @@
+{
+    "rankLimits": [
+        0, 60, 100, 175, 300, 400, 500, 650, 840, 1100, 1425, 1850, 2400, 3125, 4065, 5285
+    ],
+    
+    "allCharacters": [
+        "ChibiBlue",
+        "ChibiRed",
+        "ChibiGreen",
+        "ChibiPink",
+        "ChibiPurple",
+        "ChibiGrey",
+        "ChibiYellow",
+        "ChibiOrange",
+        "Trump", "Putin", "Kim", "Dog", "Wildebeest", "Buffalo", "Snake", "Shark", "Dragon", "AgentSmith", "Kardashian", "Kanye", "Queen", "Hipster", "Gaga"
+    ],
+        
+    "availablePlayerCharacters": [
+        "ChibiBlue", "ChibiGreen", "ChibiRed", "Trump", "Putin", "Kim", "Dog", "Wildebeest", "Buffalo", "Snake", "Shark", "Dragon", "Kardashian", "Kanye", "Queen", "AgentSmith", "Hipster", "Gaga",
+        "HooliganBlue", "HooliganRed", "Clown", "FlagUSA", "FlagRussia", "FlagGreatBritain"
+    ],
+   
+	"characterData": {
+		"Trump": {
+            "category": "WorldLeader",
+			"price": 1500,
+            "canBeBought": false,
+			"achievement": "Achievement1"
+		},
+        "Putin": {
+            "category": "WorldLeader",
+			"price": 2000,
+            "canBeBought": false,
+			"achievement": "Achievement2"
+		},
+        "Kim": {
+            "category": "WorldLeader",
+			"price": 5000,
+            "canBeBought": false,
+			"achievement": "Achievement3"
+		},
+            
+        "Dog": {
+            "category": "Animals",
+			"price": 1500,
+            "canBeBought": false,
+			"achievement": "Achievement4"
+		},
+        "Wildebeest": {
+            "category": "Animals",
+			"price": 2000,
+            "canBeBought": false,
+			"achievement": "Achievement5"
+		},
+        "Buffalo": {
+            "category": "Animals",
+			"price": 5000,
+            "canBeBought": false,
+			"achievement": "Achievement6"
+		},
+            
+        "Snake": {
+            "category": "Creatures",
+			"price": 1500,
+            "canBeBought": false,
+			"achievement": "Achievement7"
+		},
+        "Shark": {
+            "category": "Creatures",
+			"price": 2000,
+            "canBeBought": false,
+			"achievement": "Achievement8"
+		},
+        "Dragon": {
+            "category": "Creatures",
+			"price": 5000,
+            "canBeBought": false,
+			"achievement": "Achievement9"
+		},
+
+        "AgentSmith": {
+            "category": "Celebrities",
+			"price": 1500,
+            "canBeBought": false,
+			"achievement": "Achievement10"
+		},
+        "Kardashian": {
+            "category": "Celebrities",
+			"price": 4000,
+            "canBeBought": true,
+			"achievement": "Achievement11"
+		},
+        "Kanye": {
+            "category": "Celebrities",
+			"price": 8000,
+            "canBeBought": true,
+			"achievement": "Achievement12"
+		},
+        "Queen": {
+            "category": "Celebrities",
+			"price": 12000,
+            "canBeBought": true,
+			"achievement": "Achievement13"
+		},
+        "Hipster": {
+            "category": "Celebrities",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement14"
+		},
+        "Gaga": {
+            "category": "Celebrities",
+			"price": 15000,
+            "canBeBought": false,
+			"achievement": "Achievement15"
+		},
+            
+       "HooliganBlue": {
+            "category": "Misc",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement16"
+		},
+        "HooliganRed": {
+            "category": "Misc",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement17"
+		},
+        "Clown": {
+            "category": "Misc",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement18"
+		},
+            
+         "FlagUSA": {
+            "category": "Flags",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement19"
+		},
+        "FlagRussia": {
+            "category": "Flags",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement20"
+		},
+        "FlagGreatBritain": {
+            "category": "Flags",
+			"price": 10000,
+            "canBeBought": false,
+			"achievement": "Achievement21"
+		}
+	}
+}

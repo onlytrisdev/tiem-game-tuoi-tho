@@ -1,0 +1,316 @@
+{
+    "name": "tutorial",
+    "size": {
+        "width": 720,
+        "height": 1280
+    },
+    "resources": {
+        "tutorial": [{
+            "type": "atlasJSONArray",
+            "key": "button",
+            "textureURL": "assets/atlas/button.png",
+            "atlasURL": "assets/atlas/button.json",
+            "atlasData": null
+        }, {
+            "type": "atlasJSONArray",
+            "key": "label",
+            "textureURL": "assets/atlas/label.png",
+            "atlasURL": "assets/atlas/label.json",
+            "atlasData": null
+        }, {
+            "type": "atlasJSONArray",
+            "key": "frame",
+            "textureURL": "assets/atlas/frame.png",
+            "atlasURL": "assets/atlas/frame.json",
+            "atlasData": null
+        }, {
+            "type": "webFont",
+            "key": "tutorial_fonts",
+            "urls": ["assets/font/RobotoCondensedBold.css"],
+            "families": ["Roboto Condensed Bold"],
+            "overwrite": false
+        }]
+    },
+    "children": [{
+        "id": "frameTutorial",
+        "type": "image",
+        "position": {
+            "x": -10,
+            "y": -10
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1.1,
+            "y": 1.1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "frame": "tutorial",
+        "key": "frame"
+    }, {
+        "id": "varTextTutorial",
+        "type": "text",
+        "position": {
+            "x": 0,
+            "y": -15
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "text": "Text of the story saying what is happening in the situation of the game.  It can have up to three lines.",
+        "lineSpacing": 0,
+        "padding": {
+            "type": 25,
+            "x": 0,
+            "y": 0
+        },
+        "style": {
+            "align": "center",
+            "backgroundColor": null,
+            "boundsAlignH": "left",
+            "boundsAlignV": "top",
+            "fill": "rgba(62,47,41,1)",
+            "font": "700 42px 'Roboto Condensed Bold'",
+            "fontStyle": "normal",
+            "fontWeight": 700,
+            "maxLines": 0,
+            "shadowBlur": 0,
+            "shadowColor": "rgba(0,0,0,0)",
+            "shadowFill": true,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0,
+            "shadowStroke": true,
+            "stroke": "rgba(62,47,41,1)",
+            "strokeThickness": 0,
+            "tabs": 0,
+            "wordWrap": true,
+            "wordWrapWidth": 600
+        }
+    }, {
+        "id": "labelMouse",
+        "type": "image",
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "frame": "mouse",
+        "key": "label"
+    }, {
+        "id": "labelArrow",
+        "type": "image",
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "frame": "arrow",
+        "key": "label"
+    }, {
+        "id": "labelArrowDown",
+        "type": "image",
+        "position": {
+            "x": 0,
+            "y": -240
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 1
+        },
+        "frame": "arrowDown",
+        "key": "label"
+    }, {
+        "id": "button_1",
+        "type": "button",
+        "position": {
+            "x": 0,
+            "y": 230
+        },
+        "angle": 0,
+        "scale": {
+            "x": 1,
+            "y": 1
+        },
+        "anchor": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "align": {
+            "x": 0.5,
+            "y": 0.5
+        },
+        "key": "button",
+        "states": [{
+            "name": "default",
+            "baseFrame": "default",
+            "hoverFrame": "default_hover",
+            "downFrame": "default_down",
+            "baseText": {
+                "id": "button_1-default-baseText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "text": "Tiếp",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "hoverText": {
+                "id": "button_1-default-hoverText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "text": "Tiếp",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            },
+            "downText": {
+                "id": "button_1-default-downText",
+                "type": "text",
+                "position": {
+                    "x": 0,
+                    "y": 2
+                },
+                "text": "Tiếp",
+                "lineSpacing": 0,
+                "padding": {
+                    "type": 25,
+                    "x": 0,
+                    "y": 0
+                },
+                "style": {
+                    "align": "center",
+                    "backgroundColor": null,
+                    "boundsAlignH": "center",
+                    "boundsAlignV": "middle",
+                    "fill": "rgba(255,255,255,1)",
+                    "font": "700 52px 'Roboto Condensed Bold'",
+                    "fontStyle": "normal",
+                    "fontWeight": 700,
+                    "maxLines": 0,
+                    "shadowBlur": 0,
+                    "shadowColor": "rgba(0,0,0,0)",
+                    "shadowFill": true,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowStroke": true,
+                    "stroke": "rgba(0,0,0,1)",
+                    "strokeThickness": 0,
+                    "tabs": 0,
+                    "wordWrap": true,
+                    "wordWrapWidth": 400,
+                    "fontSize": 52
+                }
+            }
+        }]
+    }],
+    "id": "0a84c813-6154-4d47-bac8-80bcf0c43340",
+    "editor-version": "1.1.1",
+    "exporter-version": "1.2.1"
+}

@@ -1,0 +1,9 @@
+<level star1="10" star2="15" star3="20" total="30">
+  <character type="polar" posx="6" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <character type="panda" posx="10" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <character type="pardo" posx="14" posy="14" group="0" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <semisolid type="solid" posx="0" posy="15" group="0" rotate="0" dirx="0" diry="0" width="42" height="1" timer="0"/>
+  <semisolid type="semisolid" posx="22" posy="10" group="0" rotate="0" dirx="0" diry="0" width="6" height="5" timer="0"/>
+  <pusher type="b" posx="18" posy="15" group="1" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+  <exit type="a" posx="23" posy="11" group="1" rotate="0" dirx="0" diry="0" width="0" height="0" timer="0"/>
+</level>
