@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>Vệ binh cung thủ</title>
+		<script src="../../assets/vendor/clean-runtime.js?v=4"></script>
+		<script type="text/javascript" src="arcade-save.js?v=5"></script>
+		<link rel="stylesheet" href="TemplateData/style.css" />
+		<style>
+			#gv-hud-actions {
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 9999;
+				display: none;
+				pointer-events: none;
+				user-select: none;
+				-webkit-user-select: none;
+				-webkit-touch-callout: none;
+			}
+			#gv-hud-actions .gv-icon-btn {
+				pointer-events: auto;
+				display: block;
+				padding: 0;
+				border: none;
+				background: transparent;
+				cursor: pointer;
+				-webkit-tap-highlight-color: transparent;
+				line-height: 0;
+			}
+			#gv-hud-actions .gv-icon-btn img {
+				display: block;
+				width: 64px;
+				height: 64px;
+				min-width: 56px;
+				min-height: 56px;
+				object-fit: contain;
+				pointer-events: none;
+				-webkit-user-drag: none;
+			}
+			#gv-reset-modal {
+				position: fixed;
+				inset: 0;
+				z-index: 10000;
+				display: none;
+				align-items: center;
+				justify-content: center;
+				background: rgba(0, 0, 0, 0.55);
+				padding: 16px;
+			}
+			#gv-reset-modal .gv-reset-card {
+				width: min(420px, 100%);
+				background: #fff;
+				border-radius: 14px;
+				padding: 22px 20px 16px;
+				font-family: "Segoe UI", Tahoma, sans-serif;
+				color: #111;
+				text-align: center;
+			}
+			#gv-reset-modal p {
+				margin: 0 0 10px;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			#gv-reset-modal .gv-reset-note {
+				font-size: 15px;
+				font-weight: 400;
+				margin-bottom: 18px;
+			}
+			#gv-reset-modal .gv-reset-actions {
+				display: flex;
+				gap: 10px;
+				justify-content: center;
+			}
+			#gv-reset-modal button {
+				border: none;
+				border-radius: 8px;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 700;
+				padding: 10px 16px;
+				min-width: 120px;
+				cursor: pointer;
+			}
+			#gv-reset-confirm { background: #d32f2f; }
+			#gv-reset-cancel { background: #2e7d32; }
+		</style>
+	</head>
+	<body class="dark">
+		<div id="unity-container" class="unity-desktop">
+			<canvas id="unity-canvas"></canvas>
+		</div>
+		<div id="loading-cover" style="display: none">
+			<div id="unity-loading-bar">
+				<div id="unity-progress-bar-empty" style="display: none">
+					<div id="unity-progress-bar-full"></div>
+				</div>
+			</div>
+		</div>
+		<div id="gv-hud-actions">
+			<button type="button" class="gv-icon-btn" id="gv-reset-btn" title="Xóa dữ liệu" aria-label="Xóa dữ liệu">
+				<img src="reset-data.png" alt="" draggable="false" />
+			</button>
+			<button type="button" class="gv-icon-btn" id="gv-send-score-btn" title="Gửi điểm" aria-label="Gửi điểm">
+				<img src="save-score.png" alt="" draggable="false" />
+			</button>
+		</div>
+		<div id="gv-reset-modal">
+			<div class="gv-reset-card" role="dialog" aria-modal="true" aria-labelledby="gv-reset-title">
+				<p id="gv-reset-title">Bạn có chắc chắn xóa không?</p>
+				<p class="gv-reset-note">Mọi dữ liệu sẽ bị xóa vĩnh viễn và không thể khôi phục.</p>
+				<div class="gv-reset-actions">
+					<button type="button" id="gv-reset-confirm">Xác nhận</button>
+					<button type="button" id="gv-reset-cancel">Hủy</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			const buildUrl = 'Build';
+			const loaderUrl = buildUrl + '/heroic_archers_v.0.10.loader.js';
+			const config = {
+				dataUrl: buildUrl + '/heroic_archers_v.0.10.data.br',
+				frameworkUrl: buildUrl + '/heroic_archers_v.0.10.framework.js.br?v=5',
+				codeUrl: buildUrl + '/heroic_archers_v.0.10.wasm.br',
+				streamingAssetsUrl: '',
+				companyName: 'Nuts Puzzle: Sort By Color',
+				productName: 'Nuts Puzzle',
+				productVersion: '1.0',
+			};
+
+			const container = document.querySelector('#unity-container');
+			const canvas = document.querySelector('#unity-canvas');
+			const loadingCover = document.querySelector('#loading-cover');
+			const progressBarEmpty = document.querySelector('#unity-progress-bar-empty');
+			const progressBarFull = document.querySelector('#unity-progress-bar-full');
+			const hud = document.getElementById('gv-hud-actions');
+			const resetModal = document.getElementById('gv-reset-modal');
+
+			config.devicePixelRatio = 1;
+			if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+				container.className = 'unity-mobile';
+			}
+
+			function loadingVisible() {
+				return loadingCover && loadingCover.style.display !== 'none';
+			}
+
+			function syncHud() {
+				if (!hud || !canvas) return;
+				if (loadingVisible()) {
+					hud.style.display = 'none';
+					return;
+				}
+				var rect = canvas.getBoundingClientRect();
+				if (!rect.width || !rect.height) {
+					hud.style.display = 'none';
+					return;
+				}
+				var shortSide = Math.min(rect.width, rect.height);
+				var icon = Math.max(56, Math.round(64 * (shortSide / 720)));
+				var buttons = hud.querySelectorAll('.gv-icon-btn img');
+				for (var i = 0; i < buttons.length; i++) {
+					buttons[i].style.width = icon + 'px';
+					buttons[i].style.height = icon + 'px';
+				}
+				hud.style.display = 'flex';
+				hud.style.flexDirection = 'row';
+				hud.style.alignItems = 'center';
+				hud.style.gap = Math.max(6, Math.round(icon * 0.12)) + 'px';
+				var pad = 12;
+				hud.style.left = Math.round(rect.right - pad - hud.offsetWidth) + 'px';
+				hud.style.top = Math.round(rect.bottom - pad - hud.offsetHeight) + 'px';
+			}
+
+			var hudBurst = 0;
+			function burstSync() {
+				var start = performance.now();
+				if (hudBurst) return;
+				function frame() {
+					syncHud();
+					if (performance.now() - start < 400) hudBurst = requestAnimationFrame(frame);
+					else hudBurst = 0;
+				}
+				hudBurst = requestAnimationFrame(frame);
+			}
+
+			window.addEventListener('resize', burstSync);
+			window.addEventListener('orientationchange', burstSync);
+			document.addEventListener('fullscreenchange', burstSync);
+			if (window.visualViewport) {
+				window.visualViewport.addEventListener('resize', burstSync);
+				window.visualViewport.addEventListener('scroll', burstSync);
+			}
+			if (window.ResizeObserver) {
+				new ResizeObserver(burstSync).observe(canvas);
+			}
+
+			document.getElementById('gv-send-score-btn').addEventListener('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				var send = function (n) {
+					try {
+						if (typeof GV !== 'undefined') new GV().saveScore(n);
+					} catch (err) {}
+				};
+				if (window.ArcadeSave && ArcadeSave.getScoreToSend) {
+					ArcadeSave.getScoreToSend().then(send, function () { send(0); });
+				} else {
+					send(0);
+				}
+			});
+
+			function closeResetModal() {
+				resetModal.style.display = 'none';
+			}
+			document.getElementById('gv-reset-btn').addEventListener('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				resetModal.style.display = 'flex';
+			});
+			document.getElementById('gv-reset-cancel').addEventListener('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				closeResetModal();
+			});
+			document.getElementById('gv-reset-confirm').addEventListener('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				closeResetModal();
+				if (window.ArcadeSave && ArcadeSave.reset) ArcadeSave.reset();
+			});
+
+			loadingCover.style.display = '';
+			burstSync();
+
+			var unityStarted = false;
+			function startUnity() {
+				if (unityStarted) return;
+				unityStarted = true;
+				window.__gvUnityBooted = true;
+				const script = document.createElement('script');
+				script.src = loaderUrl;
+				script.onload = function () {
+					createUnityInstance(canvas, config, function (progress) {
+						progressBarEmpty.style.display = '';
+						progressBarFull.style.width = `${100 * progress}%`;
+					})
+						.then(function (unityInstance) {
+							window.unityInstance = unityInstance;
+							loadingCover.style.display = 'none';
+							burstSync();
+							if (window.ArcadeSave && ArcadeSave.onUnityStarted) ArcadeSave.onUnityStarted();
+						})
+						.catch(function (message) {
+							alert(message);
+						});
+				};
+				document.body.appendChild(script);
+			}
+
+			// Watchdog must outlast the cloud load timeout (5s) so seeding finishes before Unity reads IDBFS.
+			setTimeout(startUnity, 7000);
+			var gvsaveOff = /(?:\?|&)gvsave=0(?:&|$)/.test(location.search);
+			function afterInit(result) {
+				startUnity();
+				try {
+					if (result && result.lateSeed) {
+						if (!sessionStorage.getItem('gv_seed_reload')) {
+							sessionStorage.setItem('gv_seed_reload', '1');
+							console.log('GV_SEED_RELOAD');
+							location.reload();
+						}
+					} else if (result && result.seeded) {
+						sessionStorage.removeItem('gv_seed_reload');
+					}
+				} catch (e) {}
+			}
+			if (gvsaveOff || !window.ArcadeSave) startUnity();
+			else ArcadeSave.init().then(afterInit, function () { afterInit(null); });
+		</script>
+	</body>
+</html>
